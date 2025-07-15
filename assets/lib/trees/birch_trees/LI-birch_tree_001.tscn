@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqekopjac7itx"]
+
+[ext_resource type="PackedScene" uid="uid://b78r8u8wl1evw" path="res://assets/lib/trees/birch_trees/LI-birch_tree_001.gltf" id="1_il1gt"]
+[ext_resource type="Script" uid="uid://dkg08i1qnhu6b" path="res://source/obstacles/trees.gd" id="2_s1r6w"]
+
+[node name="LI-birch_tree_001" type="Node3D"]
+
+[node name="LI-birch_tree_001-IMPORT" parent="." instance=ExtResource("1_il1gt")]
+collision_layer = 64
+script = ExtResource("2_s1r6w")

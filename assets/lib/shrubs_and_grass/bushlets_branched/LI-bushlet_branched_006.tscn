@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4kckmtahnrsx"]
+
+[ext_resource type="PackedScene" uid="uid://14jll2d14mjq" path="res://assets/lib/shrubs_and_grass/bushlets_branched/LI-bushlet_branched_006.gltf" id="1_756rt"]
+[ext_resource type="Script" uid="uid://dw6ysrlodecpb" path="res://source/obstacles/shrubs.gd" id="2_1i2dk"]
+
+[node name="LI-bushlet_branched_006" type="Node3D"]
+
+[node name="LI-bushlet_branched_006-IMPORT" parent="." instance=ExtResource("1_756rt")]
+script = ExtResource("2_1i2dk")

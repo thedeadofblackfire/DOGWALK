@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://rceaym3svhps"]
+
+[ext_resource type="PackedScene" path="res://assets/lib/signs/LI-fence_sign-right.gltf" id="1_0yvwg"]
+
+[node name="LI-fence_sign-right" type="Node3D"]
+
+[node name="LI-fence_sign-right-IMPORT" type="StaticBody3D" parent="." instance=ExtResource("1_0yvwg")]

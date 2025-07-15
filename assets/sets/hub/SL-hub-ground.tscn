@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bs4jjcaq6cdge"]
+
+[ext_resource type="PackedScene" uid="uid://conqgs3q6oy38" path="res://assets/sets/hub/SL-hub-ground.gltf" id="1_4rusq"]
+
+[node name="SL-hub-ground" type="Node3D"]
+
+[node name="SL-hub-ground-IMPORT" parent="." instance=ExtResource("1_4rusq")]
+collision_layer = 512

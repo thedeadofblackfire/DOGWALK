@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvgbkrbvb1c5d"]
+
+[ext_resource type="PackedScene" uid="uid://gw50ue8rv3x1" path="res://assets/sets/fence/SE-fence.gltf" id="1_3nock"]
+
+[node name="SE-fence" type="Node3D"]
+
+[node name="SE-fence-IMPORT" parent="." instance=ExtResource("1_3nock")]

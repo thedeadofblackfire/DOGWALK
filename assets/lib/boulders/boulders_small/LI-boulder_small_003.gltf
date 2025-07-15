@@ -1,0 +1,250 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 2,
+                    "append_parent_collection": 1,
+                    "asset_name": "LI-boulder_small_003"
+                },
+                "asset_type": "ASSET",
+                "root_type": "PASS_THROUGH",
+                "asset_id": "bdf82503a3f6dbb0"
+            },
+            "name": "LI-boulder_small_003",
+            "nodes": [
+                0,
+                1
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 0,
+            "name": "GEO-boulder_small_003",
+            "translation": [
+                0,
+                0.05660641938447952,
+                0
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {},
+                "booleans": {},
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.1899999976158142,
+                    "height": 0.19000005722045898,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-boulder_small_003"
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "584980e58f667fce",
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "roughness": 0.4000000059604645,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "wear_strength": 0.0,
+                    "wear_start": 0.15000000596046448,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.10000000149011612,
+                    "wear_distortion_scale": 64.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.20000000298023224,
+                    "normal_use_uv2": 1.0
+                }
+            },
+            "name": "boulder_cut",
+            "normalTexture": {
+                "index": 0,
+                "texCoord": 1
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "boulders_albedo_01.012",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2,
+                        "TEXCOORD_1": 3
+                    },
+                    "indices": 4,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/textures/paper_rough_256.png"
+            },
+            "mimeType": "image/png",
+            "name": "paper_rough_256",
+            "uri": "../../../textures/paper_rough_256.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/boulders_cut_albedo.png"
+            },
+            "mimeType": "image/png",
+            "name": "boulders_cut_albedo",
+            "uri": "../../textures/boulders_cut_albedo.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 143,
+            "max": [
+                0.1600080132484436,
+                0.038645148277282715,
+                0.17093141376972198
+            ],
+            "min": [
+                -0.18288695812225342,
+                -0.059527888894081116,
+                -0.18776141107082367
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 143,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 143,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5126,
+            "count": 143,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5123,
+            "count": 345,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 1716,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1716,
+            "byteOffset": 1716,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1144,
+            "byteOffset": 3432,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1144,
+            "byteOffset": 4576,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 690,
+            "byteOffset": 5720,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 6412,
+            "uri": "LI-boulder_small_003.bin"
+        }
+    ]
+}

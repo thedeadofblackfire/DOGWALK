@@ -1,0 +1,264 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.14",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 2,
+                    "append_parent_collection": 1,
+                    "asset_name": "LI-snow_ripped_pile_002"
+                },
+                "asset_type": "ASSET",
+                "root_type": "PASS_THROUGH",
+                "asset_id": "8921ba9fcb56882b"
+            },
+            "name": "LI-snow_ripped_pile_002",
+            "nodes": [
+                0,
+                1
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 0,
+            "name": "GEO-snow_ripped_pile-002",
+            "scale": [
+                2.799999952316284,
+                2.799999952316284,
+                2.799999952316284
+            ]
+        },
+        {
+            "extras": {
+                "collision_info": {
+                    "type": "MESH",
+                    "concave": true
+                }
+            },
+            "mesh": 1,
+            "name": "COL-snow_ripped_pile_002"
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "name": "snow_ripped_piles_albedo_01",
+            "normalTexture": {
+                "index": 0,
+                "scale": 0.5
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                },
+                "metallicFactor": 0,
+                "roughnessFactor": 0.5
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "snow_ripped_piles_albedo_01.002",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "Circle.001",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 4,
+                        "NORMAL": 5,
+                        "TEXCOORD_0": 6
+                    },
+                    "indices": 7
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 1,
+            "source": 1
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/snow_ripped_piles_normal_01.png"
+            },
+            "mimeType": "image/png",
+            "name": "snow_ripped_piles_normal_01",
+            "uri": "../../textures/snow_ripped_piles_normal_01.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/snow_ripped_piles_albedo_01.png"
+            },
+            "mimeType": "image/png",
+            "name": "snow_ripped_piles_albedo_01",
+            "uri": "../../textures/snow_ripped_piles_albedo_01.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 112,
+            "max": [
+                0.7239151000976562,
+                0.12494345754384995,
+                0.611435055732727
+            ],
+            "min": [
+                -0.6792886257171631,
+                0,
+                -0.7353062629699707
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 112,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 112,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5123,
+            "count": 594,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5126,
+            "count": 192,
+            "max": [
+                1.7720319032669067,
+                1,
+                1.567563772201538
+            ],
+            "min": [
+                -1.6927845478057861,
+                0,
+                -1.8036165237426758
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5126,
+            "count": 192,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 6,
+            "componentType": 5126,
+            "count": 192,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 7,
+            "componentType": 5123,
+            "count": 372,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 1344,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1344,
+            "byteOffset": 1344,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 896,
+            "byteOffset": 2688,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1188,
+            "byteOffset": 3584,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2304,
+            "byteOffset": 4772,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2304,
+            "byteOffset": 7076,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1536,
+            "byteOffset": 9380,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 744,
+            "byteOffset": 10916,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        },
+        {
+            "magFilter": 9729,
+            "minFilter": 9987,
+            "wrapS": 33071,
+            "wrapT": 33071
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 11660,
+            "uri": "LI-snow_ripped_pile_002.bin"
+        }
+    ]
+}

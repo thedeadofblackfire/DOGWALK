@@ -1,0 +1,252 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 2,
+                    "append_parent_collection": 1,
+                    "asset_name": "LI-reed_014"
+                },
+                "asset_type": "ASSET",
+                "root_type": "PASS_THROUGH",
+                "asset_id": "70df56c24e7079d2"
+            },
+            "name": "LI-reed_014",
+            "nodes": [
+                0,
+                1
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "mesh": 0,
+            "name": "GEO-reed_014",
+            "rotation": [
+                0.5,
+                -0.5,
+                0.4999999403953552,
+                0.5000000596046448
+            ]
+        },
+        {
+            "extras": {
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 1,
+                    "radius": 0.4000000059604645,
+                    "height": 1.0,
+                    "size": [
+                        0.49500003457069397,
+                        0.1899999976158142,
+                        0.7099999785423279
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.072",
+            "translation": [
+                0,
+                0.3550547957420349,
+                0
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "e905485113b92d0c",
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "metallic": 0.0,
+                    "displacement_strength": 1.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        0.9215658903121948,
+                        0.9215658903121948,
+                        0.8879102468490601,
+                        1.0
+                    ],
+                    "wear_strength": 0.0,
+                    "wear_start": 0.0,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.5,
+                    "wear_distortion_scale": 100.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.009999999776482582,
+                    "normal_use_uv2": 0.0
+                }
+            },
+            "name": "reed",
+            "normalTexture": {
+                "index": 0
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                },
+                "metallicRoughnessTexture": {
+                    "index": 2
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "grass_and_bushlets_albedo_01.017",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        },
+        {
+            "sampler": 0,
+            "source": 2
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/reeds_normal.png"
+            },
+            "mimeType": "image/png",
+            "name": "reeds_normal",
+            "uri": "../../textures/reeds_normal.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/reeds_albedo.png"
+            },
+            "mimeType": "image/png",
+            "name": "reeds_albedo",
+            "uri": "../../textures/reeds_albedo.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/reeds_roughness.png"
+            },
+            "mimeType": "image/png",
+            "name": "reeds_roughness",
+            "uri": "../../textures/reeds_roughness.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 38,
+            "max": [
+                0.08378340303897858,
+                0.32260313630104065,
+                0.05749824643135071
+            ],
+            "min": [
+                -0.20174723863601685,
+                -0.32706406712532043,
+                -0.5714637041091919
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 38,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 38,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5123,
+            "count": 90,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 456,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 456,
+            "byteOffset": 456,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 304,
+            "byteOffset": 912,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 180,
+            "byteOffset": 1216,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987,
+            "wrapS": 33071,
+            "wrapT": 33071
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 1396,
+            "uri": "LI-reed_014.bin"
+        }
+    ]
+}

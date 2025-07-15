@@ -1,0 +1,392 @@
+[gd_scene load_steps=51 format=3 uid="uid://fe281sx015sp"]
+
+[ext_resource type="Script" uid="uid://ol606fq2fi8e" path="res://source/entities/player_entities/chocomel.gd" id="1_ri30j"]
+[ext_resource type="PackedScene" uid="uid://cn48a7exjspdl" path="res://source/entities/player_entities/emote_bubble.tscn" id="3_jj5wy"]
+[ext_resource type="Script" uid="uid://81oxvfyvd2x0" path="res://source/entities/player_entities/terrain_detector.gd" id="5_08460"]
+[ext_resource type="Script" uid="uid://b7533wg1ao53n" path="res://source/utility/value_slicer.gd" id="5_mgcxi"]
+[ext_resource type="Script" uid="uid://uda18dn88lpy" path="res://source/entities/player_entities/touch_detector.gd" id="6_du5k4"]
+[ext_resource type="PackedScene" uid="uid://qh1jstqjb43k" path="res://source/fx/snow_fx/snow_interaction.tscn" id="8_k125o"]
+[ext_resource type="PackedScene" uid="uid://kdg0uxosek8r" path="res://source/fx/footstep_fx/footsteps.tscn" id="8_xmkxq"]
+[ext_resource type="Material" uid="uid://dciumyr7h3vst" path="res://source/fx/footstep_fx/footsteps-chocomel.tres" id="9_1lx14"]
+[ext_resource type="Script" uid="uid://dv6lk6da7i6d1" path="res://source/audio/sfx/chocomel/chocomel_sfx.gd" id="11_du5k4"]
+[ext_resource type="AudioStream" uid="uid://cjjvfw5874maa" path="res://source/audio/sfx/chocomel/chocomel-bark-sfx.tres" id="12_0mskq"]
+[ext_resource type="AudioStream" uid="uid://b8lf2b2ydngol" path="res://source/audio/sfx/chocomel/chocomel-panting-sfx.tres" id="15_4jvto"]
+[ext_resource type="AudioStream" uid="uid://dta03ytnyts1e" path="res://assets/sfx/chocomel/LOOP-chocomel-dig-0.ogg" id="16_aneg3"]
+[ext_resource type="AudioStream" uid="uid://s6t47283clsa" path="res://source/audio/sfx/chocomel/chocomel-footstep-sfx.tres" id="16_du5k4"]
+[ext_resource type="AudioStream" uid="uid://cpp5vi30nv8v6" path="res://assets/sfx/chocomel/LOOP-chocomel-dig-1.ogg" id="17_hugin"]
+[ext_resource type="AudioStream" uid="uid://ca6w131kwbdv5" path="res://assets/sfx/chocomel/LOOP-chocomel-dig-2.ogg" id="18_j5t6d"]
+[ext_resource type="AudioStream" uid="uid://cuq3xoi6ebfqt" path="res://assets/sfx/chocomel/LOOP-chocomel-dig-3.ogg" id="19_slyis"]
+[ext_resource type="AudioStream" uid="uid://py7sg8u0u3wq" path="res://assets/sfx/chocomel/LOOP-chocomel-run-0.ogg" id="20_j5t6d"]
+[ext_resource type="AudioStream" uid="uid://dngxhq2m4y3u2" path="res://assets/sfx/chocomel/LOOP-chocomel-run-1.ogg" id="21_slyis"]
+[ext_resource type="AudioStream" uid="uid://ctll7yq46y1kt" path="res://assets/sfx/chocomel/LOOP-chocomel-run-2.ogg" id="22_4m7he"]
+[ext_resource type="AudioStream" uid="uid://dslg4b0wlpgbh" path="res://assets/sfx/chocomel/LOOP-chocomel-run-3.ogg" id="23_g3ofn"]
+[ext_resource type="AudioStream" uid="uid://52s1xrmxf4gf" path="res://source/audio/sfx/chocomel/chocomel-lick-sfx.tres" id="24_0mskq"]
+[ext_resource type="AudioStream" uid="uid://b2erhhgbo2rfi" path="res://assets/sfx/chocomel/LOOP-chocomel-bush_touching.ogg" id="24_g3ofn"]
+[ext_resource type="AudioStream" uid="uid://chjtpajcta6hs" path="res://assets/sfx/chocomel/SYNC-chocomel-superlick.ogg" id="26_dtyv6"]
+[ext_resource type="AudioStream" uid="uid://i14nw3wph1x8" path="res://assets/sfx/chocomel/LOOP-chocomel-sleeping-0.ogg" id="27_brgbq"]
+[ext_resource type="AudioStream" uid="uid://cuol4bbjvk0a1" path="res://assets/sfx/chocomel/LOOP-chocomel-sleeping-1.ogg" id="28_kw02v"]
+[ext_resource type="AudioStream" uid="uid://i2fpy3lsfh5y" path="res://assets/sfx/chocomel/LOOP-chocomel-sleeping-2.ogg" id="29_vlo28"]
+[ext_resource type="AudioStream" uid="uid://cimqgmebpwtjq" path="res://assets/sfx/chocomel/LOOP-chocomel-sleeping-3.ogg" id="30_0mskq"]
+[ext_resource type="AudioStream" uid="uid://cjp4ns4mg4kv2" path="res://assets/sfx/chocomel/ACTN-chocomel-wakeup-alt.wav" id="31_kw02v"]
+[ext_resource type="PackedScene" uid="uid://bnovi25sslvkf" path="res://assets/char/chocomel/Chocomel.tscn" id="31_vlo28"]
+[ext_resource type="AudioStream" uid="uid://c650cgfoltkrk" path="res://assets/sfx/chocomel/ACTN-chocomel-pant-mouth-close.ogg" id="32_0mskq"]
+[ext_resource type="PackedScene" uid="uid://dtmf7m54cb5d3" path="res://source/entities/player_entities/terrain_detector.tscn" id="32_vlo28"]
+[ext_resource type="AnimationNodeStateMachine" uid="uid://b84pavhgdlape" path="res://source/entities/player_entities/chocomel_animation_tree/chocomel_animtree_states.tres" id="33_0mskq"]
+[ext_resource type="AudioStream" uid="uid://cw6tonhv2b07a" path="res://assets/sfx/chocomel/SYNC-chocomel-treat-catch.ogg" id="33_du5k4"]
+[ext_resource type="AudioStream" uid="uid://cm77gt682pct8" path="res://assets/sfx/chocomel/SYNC-chocomel-treat-buildup.ogg" id="34_4jvto"]
+[ext_resource type="AudioStream" uid="uid://cm614ukx66bga" path="res://assets/sfx/ui/UI-emote-move_mouse.ogg" id="35_4jvto"]
+[ext_resource type="AudioStream" uid="uid://4mt23uixqryb" path="res://source/audio/sfx/chocomel/chocomel-pull-whince-sfx.tres" id="36_dof8c"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_p8wgk"]
+radius = 0.7
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_kgmbp"]
+radius = 0.74
+
+[sub_resource type="AnimationNodeTimeSeek" id="AnimationNodeTimeSeek_4daja"]
+
+[sub_resource type="AnimationNodeAdd2" id="AnimationNodeAdd2_4daja"]
+filter_enabled = true
+filters = ["../..", "../../SoundEffects/BarkSound", "../../SoundEffects/DigSound", "../../SoundEffects/IdlePantSound", "../../SoundEffects/LickSound", "../../SoundEffects/RunSound", "../../SoundEffects/WalkSound", "RIG-Chocomel/Skeleton3D:BARK-head", "RIG-Chocomel/Skeleton3D:BARK-neck", "RIG-Chocomel/Skeleton3D:DEF-head", "RIG-Chocomel/Skeleton3D:DEF-neck"]
+
+[sub_resource type="AnimationNodeTimeSeek" id="AnimationNodeTimeSeek_dtyv6"]
+
+[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_dtyv6"]
+filter_enabled = true
+filters = ["../..", "../../SoundEffects/BarkSound", "../../SoundEffects/DigSound", "../../SoundEffects/IdlePantSound", "../../SoundEffects/LickSound", "../../SoundEffects/RunSound", "../../SoundEffects/WalkSound", "RIG-Chocomel/Skeleton3D:P-ear-1-L", "RIG-Chocomel/Skeleton3D:P-ear-1-R", "RIG-Chocomel/Skeleton3D:P-mustache-1-L", "RIG-Chocomel/Skeleton3D:P-mustache-1-R", "RIG-Chocomel/Skeleton3D:P-mustache-2-L", "RIG-Chocomel/Skeleton3D:P-mustache-2-R", "RIG-Chocomel/Skeleton3D:P-mustache-3-L", "RIG-Chocomel/Skeleton3D:P-mustache-3-R", "RIG-Chocomel/Skeleton3D:P-mustache-4-L", "RIG-Chocomel/Skeleton3D:P-mustache-4-R", "RIG-Chocomel/Skeleton3D:P-nape_1-L", "RIG-Chocomel/Skeleton3D:P-nape_1-R", "RIG-Chocomel/Skeleton3D:P-nape_2-L", "RIG-Chocomel/Skeleton3D:P-nape_2-R", "RIG-Chocomel/Skeleton3D:T-nape_1-R", "RIG-Chocomel/Skeleton3D:T-nape_2-R", "RIG-Chocomel/Skeleton3D:beard-1", "RIG-Chocomel/Skeleton3D:beard-2-L", "RIG-Chocomel/Skeleton3D:beard-2-R", "RIG-Chocomel/Skeleton3D:beard-3-L", "RIG-Chocomel/Skeleton3D:beard-3-R", "RIG-Chocomel/Skeleton3D:beard-4-L", "RIG-Chocomel/Skeleton3D:beard-4-R", "RIG-Chocomel/Skeleton3D:ear-1-L", "RIG-Chocomel/Skeleton3D:ear-1-R", "RIG-Chocomel/Skeleton3D:ear-2-L", "RIG-Chocomel/Skeleton3D:ear-2-R", "RIG-Chocomel/Skeleton3D:ear-3-L", "RIG-Chocomel/Skeleton3D:ear-3-R", "RIG-Chocomel/Skeleton3D:hair", "RIG-Chocomel/Skeleton3D:hair_lock_left-1", "RIG-Chocomel/Skeleton3D:hair_lock_left-2", "RIG-Chocomel/Skeleton3D:hair_lock_right-1", "RIG-Chocomel/Skeleton3D:hair_lock_right-2", "RIG-Chocomel/Skeleton3D:jaw", "RIG-Chocomel/Skeleton3D:mustache-1-L", "RIG-Chocomel/Skeleton3D:mustache-1-R", "RIG-Chocomel/Skeleton3D:mustache-2-L", "RIG-Chocomel/Skeleton3D:mustache-2-R", "RIG-Chocomel/Skeleton3D:mustache-3-L", "RIG-Chocomel/Skeleton3D:mustache-3-R", "RIG-Chocomel/Skeleton3D:mustache-4-L", "RIG-Chocomel/Skeleton3D:mustache-4-R", "RIG-Chocomel/Skeleton3D:nape", "RIG-Chocomel/Skeleton3D:nape_1-L", "RIG-Chocomel/Skeleton3D:nape_1-R", "RIG-Chocomel/Skeleton3D:nape_2-L", "RIG-Chocomel/Skeleton3D:nape_2-R", "RIG-Chocomel/Skeleton3D:nape_3", "RIG-Chocomel/Skeleton3D:nape_stretch-L", "RIG-Chocomel/Skeleton3D:nape_stretch-R", "RIG-Chocomel/Skeleton3D:napehook_1-L", "RIG-Chocomel/Skeleton3D:napehook_1-R", "RIG-Chocomel/Skeleton3D:napehook_2-L", "RIG-Chocomel/Skeleton3D:napehook_2-R", "RIG-Chocomel/Skeleton3D:nose", "RIG-Chocomel/Skeleton3D:snout", "RIG-Chocomel/Skeleton3D:snout_side-L", "RIG-Chocomel/Skeleton3D:snout_side-R", "RIG-Chocomel/Skeleton3D:tongue-1", "RIG-Chocomel/Skeleton3D:tongue-2", "RIG-Chocomel/Skeleton3D:tongue-3"]
+
+[sub_resource type="AnimationNodeTimeSeek" id="AnimationNodeTimeSeek_duvk0"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_du5k4"]
+animation = &"Chocomel-anim_lib/ACTN-chocomel-bark"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_4daja"]
+animation = &"Chocomel-anim_lib/ACTN-chocomel-bark"
+
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_dof8c"]
+"nodes/Bark Adding/node" = SubResource("AnimationNodeAdd2_4daja")
+"nodes/Bark Adding/position" = Vector2(0, 60)
+"nodes/Bark Adding TimeSeek/node" = SubResource("AnimationNodeTimeSeek_4daja")
+"nodes/Bark Adding TimeSeek/position" = Vector2(-280, 260)
+"nodes/Bark Blending/node" = SubResource("AnimationNodeBlend2_dtyv6")
+"nodes/Bark Blending/position" = Vector2(180, 160)
+"nodes/Bark Blending TimeSeek/node" = SubResource("AnimationNodeTimeSeek_dtyv6")
+"nodes/Bark Blending TimeSeek/position" = Vector2(-280, 420)
+nodes/TimeSeek/node = SubResource("AnimationNodeTimeSeek_duvk0")
+nodes/TimeSeek/position = Vector2(660, 220)
+"nodes/animation states/node" = ExtResource("33_0mskq")
+"nodes/animation states/position" = Vector2(-460, 40)
+"nodes/bark anim adding/node" = SubResource("AnimationNodeAnimation_du5k4")
+"nodes/bark anim adding/position" = Vector2(-760, 280)
+"nodes/bark anim blending/node" = SubResource("AnimationNodeAnimation_4daja")
+"nodes/bark anim blending/position" = Vector2(-760, 460)
+nodes/output/position = Vector2(820, 160)
+node_connections = [&"Bark Adding", 0, &"animation states", &"Bark Adding", 1, &"Bark Adding TimeSeek", &"Bark Adding TimeSeek", 0, &"bark anim adding", &"Bark Blending", 0, &"Bark Adding", &"Bark Blending", 1, &"Bark Blending TimeSeek", &"Bark Blending TimeSeek", 0, &"bark anim blending", &"TimeSeek", 0, &"Bark Blending", &"output", 0, &"TimeSeek"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_kw02v"]
+random_pitch = 1.03
+streams_count = 4
+stream_0/stream = ExtResource("16_aneg3")
+stream_1/stream = ExtResource("17_hugin")
+stream_2/stream = ExtResource("18_j5t6d")
+stream_3/stream = ExtResource("19_slyis")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_4m7he"]
+random_pitch = 1.05
+streams_count = 4
+stream_0/stream = ExtResource("20_j5t6d")
+stream_1/stream = ExtResource("21_slyis")
+stream_2/stream = ExtResource("22_4m7he")
+stream_2/weight = 2.0
+stream_3/stream = ExtResource("23_g3ofn")
+stream_3/weight = 2.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_du5k4"]
+streams_count = 4
+stream_0/stream = ExtResource("27_brgbq")
+stream_1/stream = ExtResource("28_kw02v")
+stream_2/stream = ExtResource("29_vlo28")
+stream_3/stream = ExtResource("30_0mskq")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_vlo28"]
+random_pitch = 1.05
+streams_count = 1
+stream_0/stream = ExtResource("32_0mskq")
+
+[node name="Chocomel" type="CharacterBody3D" node_paths=PackedStringArray("model", "animation_tree", "skeleton", "touch_detector", "terrain_detector", "RotationSlicerSlow", "RotationSlicerRegular", "RotationSlicerFast", "AngularVelocitySlicer", "TurningSlicer", "MovementSpeedSlicer", "footstep_fx", "sound_effects") groups=["Signaling"]]
+collision_layer = 4
+collision_mask = 587
+wall_min_slide_angle = 0.0
+script = ExtResource("1_ri30j")
+model = NodePath("ChocomelAsset")
+animation_tree = NodePath("AnimationTree")
+skeleton = NodePath("ChocomelAsset/Chocomel-IMPORT/RIG-Chocomel/Skeleton3D")
+touch_detector = NodePath("TouchDetector")
+terrain_detector = NodePath("TerrainDetector")
+RotationSlicerSlow = NodePath("ValueSlicers/CharacterRotationSlicer_slow")
+RotationSlicerRegular = NodePath("ValueSlicers/CharacterRotationSlicer_regular")
+RotationSlicerFast = NodePath("ValueSlicers/CharacterRotationSlicer_fast")
+AngularVelocitySlicer = NodePath("ValueSlicers/AngularVelocitySlicer")
+TurningSlicer = NodePath("ValueSlicers/TurningBlendSlicer")
+MovementSpeedSlicer = NodePath("ValueSlicers/MovementSpeedSlicer")
+footstep_fx = NodePath("CharacterFX/Footsteps")
+sound_effects = NodePath("SoundEffects")
+
+[node name="ChocomelAsset" parent="." instance=ExtResource("31_vlo28")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.24)
+
+[node name="EmoteBubble" parent="." node_paths=PackedStringArray("character") instance=ExtResource("3_jj5wy")]
+character = NodePath("../ChocomelAsset")
+y_offset = 0.25
+
+[node name="CollisionShape" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.75, -0.24)
+shape = SubResource("SphereShape3D_p8wgk")
+
+[node name="TerrainDetector" parent="." instance=ExtResource("32_vlo28")]
+script = ExtResource("5_08460")
+
+[node name="TouchDetector" type="ShapeCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, -0.24)
+shape = SubResource("SphereShape3D_kgmbp")
+target_position = Vector3(0, 0, 0)
+margin = 0.1
+max_results = 8
+collision_mask = 74
+script = ExtResource("6_du5k4")
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+root_node = NodePath("../ChocomelAsset/Chocomel-IMPORT")
+callback_mode_process = 0
+tree_root = SubResource("AnimationNodeBlendTree_dof8c")
+advance_expression_base_node = NodePath("..")
+anim_player = NodePath("../ChocomelAsset/AnimationPlayer")
+"parameters/Bark Adding/add_amount" = 1.0
+"parameters/Bark Adding TimeSeek/seek_request" = -1.0
+"parameters/Bark Blending/blend_amount" = 1.0
+"parameters/Bark Blending TimeSeek/seek_request" = -1.0
+parameters/TimeSeek/seek_request = -1.0
+"parameters/animation states/Lay Down/blend_position" = 0.00127554
+"parameters/animation states/Moving/adding_bend/add_amount" = 0.0
+"parameters/animation states/Moving/bending_factor/seek_request" = -1.0
+"parameters/animation states/Moving/is_right/blend_amount" = 0.0
+"parameters/animation states/Moving/movement_speed/blend_position" = 1.0
+"parameters/animation states/Moving/movement_speed_scale/scale" = 1.0
+"parameters/animation states/Petting Loops/Petting Loops BlendSpace1D/blend_position" = 0
+"parameters/animation states/Petting Loops/TimeSeek/seek_request" = -1.0
+"parameters/animation states/Pulling/Time Scale/scale" = 1.0
+"parameters/animation states/Pushing/Time Scale/scale" = 1.0
+"parameters/animation states/Pushing Pinda/Speed Scale/scale" = 1.0
+
+[node name="ValueSlicers" type="Node" parent="."]
+
+[node name="CharacterRotationSlicer_slow" type="Node" parent="ValueSlicers"]
+script = ExtResource("5_mgcxi")
+_range_minimum = -3.142
+_range_maximum = 3.142
+_slice_numbers = 32
+_threshold_factor = 0.25
+_use_looping_range = true
+
+[node name="CharacterRotationSlicer_regular" type="Node" parent="ValueSlicers"]
+script = ExtResource("5_mgcxi")
+_range_minimum = -3.142
+_range_maximum = 3.142
+_slice_numbers = 16
+_threshold_factor = 0.25
+_use_looping_range = true
+
+[node name="CharacterRotationSlicer_fast" type="Node" parent="ValueSlicers"]
+script = ExtResource("5_mgcxi")
+_range_minimum = -3.142
+_range_maximum = 3.142
+_slice_numbers = 8
+_threshold_factor = 0.25
+_use_looping_range = true
+
+[node name="AngularVelocitySlicer" type="Node" parent="ValueSlicers"]
+script = ExtResource("5_mgcxi")
+_range_maximum = 1.5
+_slice_numbers = 8
+_threshold_factor = 0.25
+
+[node name="TurningBlendSlicer" type="Node" parent="ValueSlicers"]
+script = ExtResource("5_mgcxi")
+_slice_numbers = 5
+_threshold_factor = 0.15
+
+[node name="MovementSpeedSlicer" type="Node" parent="ValueSlicers"]
+script = ExtResource("5_mgcxi")
+_slice_numbers = 20
+_threshold_factor = 0.05
+
+[node name="CharacterFX" type="Node3D" parent="."]
+
+[node name="Footsteps" parent="CharacterFX" node_paths=PackedStringArray("entity") instance=ExtResource("8_xmkxq")]
+entity = NodePath("../..")
+size = 0.35
+material = ExtResource("9_1lx14")
+
+[node name="SnowInteraction-R" parent="CharacterFX" node_paths=PackedStringArray("entity") instance=ExtResource("8_k125o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.175, 0, 0)
+entity = NodePath("../..")
+
+[node name="SnowInteraction-L" parent="CharacterFX" node_paths=PackedStringArray("entity") instance=ExtResource("8_k125o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.175, 0, 0)
+entity = NodePath("../..")
+
+[node name="SoundEffects" type="Node3D" parent="." node_paths=PackedStringArray("footstep_snow_sfx", "emote_move_mouse_sfx", "whince_sfx")]
+script = ExtResource("11_du5k4")
+footstep_snow_sfx = NodePath("FootstepSound")
+emote_move_mouse_sfx = NodePath("EmoteSounds/EmoteMoveMouse")
+whince_sfx = NodePath("WhinceSounds")
+
+[node name="BarkSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = ExtResource("12_0mskq")
+volume_db = 1.5
+unit_size = 15.0
+max_db = 1.5
+pitch_scale = 1.05
+max_distance = 45.0
+max_polyphony = 2
+panning_strength = 2.5
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 3000.0
+attenuation_filter_db = -15.0
+
+[node name="PantingSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = ExtResource("15_4jvto")
+unit_size = 15.0
+max_db = 0.0
+pitch_scale = 0.9
+max_distance = 40.0
+max_polyphony = 3
+panning_strength = 2.5
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 10000.0
+attenuation_filter_db = -18.0
+
+[node name="FootstepSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = ExtResource("16_du5k4")
+pitch_scale = 1.2
+max_distance = 40.0
+max_polyphony = 2
+panning_strength = 3.0
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 7500.0
+attenuation_filter_db = -18.0
+
+[node name="DigSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = SubResource("AudioStreamRandomizer_kw02v")
+volume_db = -3.0
+max_distance = 40.0
+max_polyphony = 3
+panning_strength = 1.5
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 7500.0
+attenuation_filter_db = -18.0
+
+[node name="RunSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = SubResource("AudioStreamRandomizer_4m7he")
+max_distance = 40.0
+panning_strength = 2.0
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 2000.0
+attenuation_filter_db = -12.0
+
+[node name="BushTouchingSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+transform = Transform3D(0.994593, 0.0773131, -0.0693306, -0.0801569, 0.996011, -0.0392144, 0.0660223, 0.0445597, 0.996823, 0, 0, 0)
+stream = ExtResource("24_g3ofn")
+volume_db = 12.0
+unit_size = 5.0
+max_db = 6.0
+max_distance = 40.0
+attenuation_filter_db = -36.0
+
+[node name="LickSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = ExtResource("24_0mskq")
+volume_db = 3.0
+unit_size = 7.0
+max_db = 0.0
+pitch_scale = 1.25
+max_distance = 40.0
+max_polyphony = 5
+panning_strength = 2.0
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 10000.0
+attenuation_filter_db = -12.0
+
+[node name="SuperlickSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = ExtResource("26_dtyv6")
+volume_db = 6.0
+max_distance = 40.0
+max_polyphony = 2
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="SleepingSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = SubResource("AudioStreamRandomizer_du5k4")
+volume_db = -3.0
+max_db = 0.0
+pitch_scale = 0.85
+max_distance = 40.0
+max_polyphony = 2
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="WakeUpSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = ExtResource("31_kw02v")
+max_db = 0.0
+pitch_scale = 0.75
+max_distance = 40.0
+panning_strength = 2.0
+
+[node name="PantMouthSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = SubResource("AudioStreamRandomizer_vlo28")
+max_db = 0.0
+max_distance = 40.0
+max_polyphony = 2
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="TreatCatchSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = ExtResource("33_du5k4")
+volume_db = 3.0
+max_distance = 40.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="TreatBuildupSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = ExtResource("34_4jvto")
+volume_db = -6.0
+max_db = 0.0
+max_distance = 40.0
+panning_strength = 1.5
+bus = &"SFX"
+
+[node name="EmoteSounds" type="AudioStreamPlayer3D" parent="SoundEffects"]
+volume_db = 3.0
+panning_strength = 2.5
+bus = &"SFX"
+
+[node name="EmoteMoveMouse" type="AudioStreamPlayer3D" parent="SoundEffects/EmoteSounds"]
+stream = ExtResource("35_4jvto")
+volume_db = 3.0
+max_db = 0.0
+panning_strength = 2.5
+bus = &"SFX"
+
+[node name="WhinceSounds" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = ExtResource("36_dof8c")
+volume_db = -3.0
+unit_size = 6.0
+max_db = 0.0
+pitch_scale = 0.95
+max_distance = 35.0
+max_polyphony = 3
+panning_strength = 1.5
+bus = &"SFX"
+
+[connection signal="body_entered" from="TouchDetector" to="." method="_on_touch_detector_body_entered"]
+[connection signal="body_exited" from="TouchDetector" to="." method="_on_touch_detector_body_exited"]
+[connection signal="mixer_applied" from="AnimationTree" to="." method="_on_animation_tree_mixer_applied"]

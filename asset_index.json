@@ -1,0 +1,1624 @@
+{
+    "assets": {
+        "d47ad644d7595eed": {
+            "name": "LI-birch_tree_004",
+            "filepath": "assets/lib/trees/birch_trees/LI-birch_tree_004.gltf"
+        },
+        "d932b92ab839f542": {
+            "name": "LI-birch_tree_001",
+            "filepath": "assets/lib/trees/birch_trees/LI-birch_tree_001.gltf"
+        },
+        "40ccf3953b2f49b9": {
+            "name": "LI-birch_tree_002",
+            "filepath": "assets/lib/trees/birch_trees/LI-birch_tree_002.gltf"
+        },
+        "ae49ba618d53b883": {
+            "name": "LI-birch_tree_003",
+            "filepath": "assets/lib/trees/birch_trees/LI-birch_tree_003.gltf"
+        },
+        "72364ff6211bcdd7": {
+            "name": "LI-birch_tree_005",
+            "filepath": "assets/lib/trees/birch_trees/LI-birch_tree_005.gltf"
+        },
+        "0a72ecfd0c7ef019": {
+            "name": "LI-pine_tree_001",
+            "filepath": "assets/lib/trees/pine_trees/LI-pine_tree_001.gltf"
+        },
+        "5c72a741fb809d11": {
+            "name": "LI-pine_tree_002",
+            "filepath": "assets/lib/trees/pine_trees/LI-pine_tree_002.gltf"
+        },
+        "7665b9ec9a84b6d4": {
+            "name": "LI-pine_tree_003",
+            "filepath": "assets/lib/trees/pine_trees/LI-pine_tree_003.gltf"
+        },
+        "45d269fcbfdd983d": {
+            "name": "LI-pine_tree_004",
+            "filepath": "assets/lib/trees/pine_trees/LI-pine_tree_004.gltf"
+        },
+        "3dd59b4d623d1db0": {
+            "name": "LI-pine_tree_005",
+            "filepath": "assets/lib/trees/pine_trees/LI-pine_tree_005.gltf"
+        },
+        "d278266dbbfb6231": {
+            "name": "LI-pine_tree_alt_001",
+            "filepath": "assets/lib/trees/pine_trees/LI-pine_tree_alt_001.gltf"
+        },
+        "97b7c55b817ebc46": {
+            "name": "LI-pine_tree_alt_002",
+            "filepath": "assets/lib/trees/pine_trees/LI-pine_tree_alt_002.gltf"
+        },
+        "e1b3a046adefadd1": {
+            "name": "LI-log_001",
+            "filepath": "assets/lib/trees/logs/LI-log_001.gltf"
+        },
+        "7b83a2ca99f2b487": {
+            "name": "LI-log_002",
+            "filepath": "assets/lib/trees/logs/LI-log_002.gltf"
+        },
+        "121d935b409a0663": {
+            "name": "LI-birch_branch_001",
+            "filepath": "assets/lib/trees/birch_branches/LI-birch_branch_001.gltf"
+        },
+        "e51059b835bfe286": {
+            "name": "LI-birch_branch_002",
+            "filepath": "assets/lib/trees/birch_branches/LI-birch_branch_002.gltf"
+        },
+        "1a0503041468c0c9": {
+            "name": "LI-birch_branch_003",
+            "filepath": "assets/lib/trees/birch_branches/LI-birch_branch_003.gltf"
+        },
+        "f00d1db7f3d6fe20": {
+            "name": "LI-birch_branch_004",
+            "filepath": "assets/lib/trees/birch_branches/LI-birch_branch_004.gltf"
+        },
+        "776f5943259395e3": {
+            "name": "LI-birch_branch_005",
+            "filepath": "assets/lib/trees/birch_branches/LI-birch_branch_005.gltf"
+        },
+        "d5bf525176cbfe10": {
+            "name": "LI-birch_branch_006",
+            "filepath": "assets/lib/trees/birch_branches/LI-birch_branch_006.gltf"
+        },
+        "62655acd1659068e": {
+            "name": "LI-birch_branch_007",
+            "filepath": "assets/lib/trees/birch_branches/LI-birch_branch_007.gltf"
+        },
+        "a44da2fbf036362e": {
+            "name": "LI-birch_branch_008",
+            "filepath": "assets/lib/trees/birch_branches/LI-birch_branch_008.gltf"
+        },
+        "319cd1972a910bac": {
+            "name": "LI-birch_branch_009",
+            "filepath": "assets/lib/trees/birch_branches/LI-birch_branch_009.gltf"
+        },
+        "050d1b2c82f03a7e": {
+            "name": "LI-birch_branch_010",
+            "filepath": "assets/lib/trees/birch_branches/LI-birch_branch_010.gltf"
+        },
+        "18a24b219451c68a": {
+            "name": "LI-birch_branch_011",
+            "filepath": "assets/lib/trees/birch_branches/LI-birch_branch_011.gltf"
+        },
+        "305fc54be4d78c2e": {
+            "name": "LI-birch_branch_012",
+            "filepath": "assets/lib/trees/birch_branches/LI-birch_branch_012.gltf"
+        },
+        "90c3f1592f9c1209": {
+            "name": "LI-birch_branch_013",
+            "filepath": "assets/lib/trees/birch_branches/LI-birch_branch_013.gltf"
+        },
+        "5852bd116def4c10": {
+            "name": "LI-birch_branch_014",
+            "filepath": "assets/lib/trees/birch_branches/LI-birch_branch_014.gltf"
+        },
+        "a555a345f4348b4e": {
+            "name": "LI-birch_branch_015",
+            "filepath": "assets/lib/trees/birch_branches/LI-birch_branch_015.gltf"
+        },
+        "046830ebc130a427": {
+            "name": "LI-pine_cut_patch_001",
+            "filepath": "assets/lib/trees/pine_cuts/LI-pine_cut_patch_001.gltf"
+        },
+        "6a08df34a6b9af4e": {
+            "name": "LI-pine_cut_patch_002",
+            "filepath": "assets/lib/trees/pine_cuts/LI-pine_cut_patch_002.gltf"
+        },
+        "403ac40e27997520": {
+            "name": "LI-pine_cut_patch_003",
+            "filepath": "assets/lib/trees/pine_cuts/LI-pine_cut_patch_003.gltf"
+        },
+        "0788345bdfadbdd9": {
+            "name": "LI-pine_cut_patch_004",
+            "filepath": "assets/lib/trees/pine_cuts/LI-pine_cut_patch_004.gltf"
+        },
+        "f766ffba2a643bd4": {
+            "name": "LI-pine_cut_patch_005",
+            "filepath": "assets/lib/trees/pine_cuts/LI-pine_cut_patch_005.gltf"
+        },
+        "deeda8204bcf0309": {
+            "name": "LI-pine_cut_patch_006",
+            "filepath": "assets/lib/trees/pine_cuts/LI-pine_cut_patch_006.gltf"
+        },
+        "331451c8b5c62d45": {
+            "name": "LI-pine_cut_patch_007",
+            "filepath": "assets/lib/trees/pine_cuts/LI-pine_cut_patch_007.gltf"
+        },
+        "7f97804ec1f235bd": {
+            "name": "LI-pine_cut_patch_008",
+            "filepath": "assets/lib/trees/pine_cuts/LI-pine_cut_patch_008.gltf"
+        },
+        "fb7662ff3a594ac1": {
+            "name": "LI-pine_cut_patch_009",
+            "filepath": "assets/lib/trees/pine_cuts/LI-pine_cut_patch_009.gltf"
+        },
+        "8aa2f41e660cecb5": {
+            "name": "LI-pine_cut_patch_010",
+            "filepath": "assets/lib/trees/pine_cuts/LI-pine_cut_patch_010.gltf"
+        },
+        "93583805f51dc5fc": {
+            "name": "LI-pine_cut_patch_011",
+            "filepath": "assets/lib/trees/pine_cuts/LI-pine_cut_patch_011.gltf"
+        },
+        "f29d3e59ba5cc8c1": {
+            "name": "LI-pine_cut_patch_012",
+            "filepath": "assets/lib/trees/pine_cuts/LI-pine_cut_patch_012.gltf"
+        },
+        "2362b7f9eeda924f": {
+            "name": "LI-pine_cut_patch_013",
+            "filepath": "assets/lib/trees/pine_cuts/LI-pine_cut_patch_013.gltf"
+        },
+        "fda49851059b769a": {
+            "name": "LI-tree_foliage-square_002",
+            "filepath": "assets/lib/trees/pine_leaves/LI-tree_foliage-square_002.gltf"
+        },
+        "8ef7cb9f0e34f528": {
+            "name": "LI-tree_foliage_large_001",
+            "filepath": "assets/lib/trees/pine_leaves/LI-tree_foliage_large_001.gltf"
+        },
+        "0caaee73b825aae1": {
+            "name": "LI-tree_foliage-square_001",
+            "filepath": "assets/lib/trees/pine_leaves/LI-tree_foliage-square_001.gltf"
+        },
+        "2362a775900c99b1": {
+            "name": "LI-tree_foliage_branch_small_003",
+            "filepath": "assets/lib/trees/pine_leaves/LI-tree_foliage_branch_small_003.gltf"
+        },
+        "f579b4c914b2da4c": {
+            "name": "LI-tree_foliage_branch_small_002",
+            "filepath": "assets/lib/trees/pine_leaves/LI-tree_foliage_branch_small_002.gltf"
+        },
+        "4a24a910ec49a35e": {
+            "name": "LI-tree_foliage_large_002",
+            "filepath": "assets/lib/trees/pine_leaves/LI-tree_foliage_large_002.gltf"
+        },
+        "7187bc2ddf9a7fc6": {
+            "name": "LI-tree_foliage_branch_medium_001",
+            "filepath": "assets/lib/trees/pine_leaves/LI-tree_foliage_branch_medium_001.gltf"
+        },
+        "a81cdefff9fce375": {
+            "name": "LI-tree_foliage_branch_large_001",
+            "filepath": "assets/lib/trees/pine_leaves/LI-tree_foliage_branch_large_001.gltf"
+        },
+        "253d87c345e6fe4a": {
+            "name": "LI-tree_foliage_branch_small_001",
+            "filepath": "assets/lib/trees/pine_leaves/LI-tree_foliage_branch_small_001.gltf"
+        },
+        "73a2f830116937dc": {
+            "name": "LI-tree_foliage_branch_medium_002",
+            "filepath": "assets/lib/trees/pine_leaves/LI-tree_foliage_branch_medium_002.gltf"
+        },
+        "a0478eb4fa03f469": {
+            "name": "LI-tree_foliage_large_003",
+            "filepath": "assets/lib/trees/pine_leaves/LI-tree_foliage_large_003.gltf"
+        },
+        "50b276cbc5323f4a": {
+            "name": "LI-tree_foliage-medium_002",
+            "filepath": "assets/lib/trees/pine_leaves/LI-tree_foliage-medium_002.gltf"
+        },
+        "1ddd61a2bf41c861": {
+            "name": "LI-tree_foliage-medium_003",
+            "filepath": "assets/lib/trees/pine_leaves/LI-tree_foliage-medium_003.gltf"
+        },
+        "6e253326d06f25a7": {
+            "name": "LI-tree_foliage-branch_medium_002",
+            "filepath": "assets/lib/trees/pine_leaves/LI-tree_foliage-branch_medium_002.gltf"
+        },
+        "ef0d3535aa22d70b": {
+            "name": "LI-tree_foliage_branch_large_002",
+            "filepath": "assets/lib/trees/pine_leaves/LI-tree_foliage_branch_large_002.gltf"
+        },
+        "2f61786f56cef42f": {
+            "name": "LI-grass_001",
+            "filepath": "assets/lib/shrubs_and_grass/grass/LI-grass_001.gltf"
+        },
+        "26836d6c14b7315f": {
+            "name": "LI-grass_002",
+            "filepath": "assets/lib/shrubs_and_grass/grass/LI-grass_002.gltf"
+        },
+        "875ee1a6d6445425": {
+            "name": "LI-grass_003",
+            "filepath": "assets/lib/shrubs_and_grass/grass/LI-grass_003.gltf"
+        },
+        "56ea6b882b5fdf97": {
+            "name": "LI-grass_004",
+            "filepath": "assets/lib/shrubs_and_grass/grass/LI-grass_004.gltf"
+        },
+        "f78010b834118766": {
+            "name": "LI-grass_005",
+            "filepath": "assets/lib/shrubs_and_grass/grass/LI-grass_005.gltf"
+        },
+        "51880055ba9596e4": {
+            "name": "LI-grass_006",
+            "filepath": "assets/lib/shrubs_and_grass/grass/LI-grass_006.gltf"
+        },
+        "ddb1b248cb771881": {
+            "name": "LI-grass_007",
+            "filepath": "assets/lib/shrubs_and_grass/grass/LI-grass_007.gltf"
+        },
+        "8f4c1d7797af8dc1": {
+            "name": "LI-grass_008",
+            "filepath": "assets/lib/shrubs_and_grass/grass/LI-grass_008.gltf"
+        },
+        "16c087954a9bf299": {
+            "name": "LI-grass_009",
+            "filepath": "assets/lib/shrubs_and_grass/grass/LI-grass_009.gltf"
+        },
+        "f0f1d907be9235ae": {
+            "name": "LI-grass_010",
+            "filepath": "assets/lib/shrubs_and_grass/grass/LI-grass_010.gltf"
+        },
+        "2901e4e95b5fc66d": {
+            "name": "LI-grass_011",
+            "filepath": "assets/lib/shrubs_and_grass/grass/LI-grass_011.gltf"
+        },
+        "9194be720e38e46d": {
+            "name": "LI-grass_012",
+            "filepath": "assets/lib/shrubs_and_grass/grass/LI-grass_012.gltf"
+        },
+        "fcae32abcc75ea00": {
+            "name": "LI-grass_013",
+            "filepath": "assets/lib/shrubs_and_grass/grass/LI-grass_013.gltf"
+        },
+        "dabfa2a6a84a6daf": {
+            "name": "LI-grass_014",
+            "filepath": "assets/lib/shrubs_and_grass/grass/LI-grass_014.gltf"
+        },
+        "37913a3de4615bd3": {
+            "name": "LI-grass_015",
+            "filepath": "assets/lib/shrubs_and_grass/grass/LI-grass_015.gltf"
+        },
+        "e32e2c1336f97a05": {
+            "name": "LI-grass_016",
+            "filepath": "assets/lib/shrubs_and_grass/grass/LI-grass_016.gltf"
+        },
+        "6087be38bd458673": {
+            "name": "LI-grass_017",
+            "filepath": "assets/lib/shrubs_and_grass/grass/LI-grass_017.gltf"
+        },
+        "d3b0ff511a729ce7": {
+            "name": "LI-grass_018",
+            "filepath": "assets/lib/shrubs_and_grass/grass/LI-grass_018.gltf"
+        },
+        "4950b2133c4549e8": {
+            "name": "LI-grass_019",
+            "filepath": "assets/lib/shrubs_and_grass/grass/LI-grass_019.gltf"
+        },
+        "1c54b285e3492d47": {
+            "name": "LI-grass_020",
+            "filepath": "assets/lib/shrubs_and_grass/grass/LI-grass_020.gltf"
+        },
+        "8ffe1c91fb8f6b5f": {
+            "name": "LI-bush_small_flat_005",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets/LI-bush_small_flat_005.gltf"
+        },
+        "6819ba51eef36041": {
+            "name": "LI-bush_small_flat_001",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets/LI-bush_small_flat_001.gltf"
+        },
+        "5f7e658d3918ea76": {
+            "name": "LI-bush_small_flat_002",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets/LI-bush_small_flat_002.gltf"
+        },
+        "ade9f0218e51f668": {
+            "name": "LI-bush_small_flat_003",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets/LI-bush_small_flat_003.gltf"
+        },
+        "71de574750794fe4": {
+            "name": "LI-bush_small_flat_004",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets/LI-bush_small_flat_004.gltf"
+        },
+        "8f79868dd836651b": {
+            "name": "LI-reed_001",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_001.gltf"
+        },
+        "d8cdc9504ec27a85": {
+            "name": "LI-reed_002",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_002.gltf"
+        },
+        "05b20d85811615db": {
+            "name": "LI-reed_003",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_003.gltf"
+        },
+        "3b48924e92070a68": {
+            "name": "LI-reed_004",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_004.gltf"
+        },
+        "722e1c9498612907": {
+            "name": "LI-reed_005",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_005.gltf"
+        },
+        "10c3f0181379d68b": {
+            "name": "LI-reed_006",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_006.gltf"
+        },
+        "74f59a79b3943cae": {
+            "name": "LI-reed_007",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_007.gltf"
+        },
+        "5f0ca6e01e48119f": {
+            "name": "LI-reed_008",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_008.gltf"
+        },
+        "26573a01462876a8": {
+            "name": "LI-reed_009",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_009.gltf"
+        },
+        "d196418c6df18d87": {
+            "name": "LI-reed_010",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_010.gltf"
+        },
+        "31411dd072f5d12f": {
+            "name": "LI-reed_011",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_011.gltf"
+        },
+        "d3fceddae70be5f1": {
+            "name": "LI-reed_012",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_012.gltf"
+        },
+        "bd382c2238737239": {
+            "name": "LI-reed_013",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_013.gltf"
+        },
+        "70df56c24e7079d2": {
+            "name": "LI-reed_014",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_014.gltf"
+        },
+        "ad4939d39ed86df3": {
+            "name": "LI-reed_015",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_015.gltf"
+        },
+        "58f6b7036084edbc": {
+            "name": "LI-reed_016",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_016.gltf"
+        },
+        "8cca58268a0aea3a": {
+            "name": "LI-reed_017",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_017.gltf"
+        },
+        "48d15af48cebee82": {
+            "name": "LI-reed_018",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_018.gltf"
+        },
+        "c2bdb3c60b328351": {
+            "name": "LI-reed_019",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_019.gltf"
+        },
+        "11bc9470413291ca": {
+            "name": "LI-reed_020",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_020.gltf"
+        },
+        "6ac61dd583b9b592": {
+            "name": "LI-reed_021",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_021.gltf"
+        },
+        "95e8374d65a65d51": {
+            "name": "LI-reed_022",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_022.gltf"
+        },
+        "7544fdb0f01e7976": {
+            "name": "LI-reed_023",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_023.gltf"
+        },
+        "d3a286f20bd45cfc": {
+            "name": "LI-reed_024",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_024.gltf"
+        },
+        "09d2c8ee5b958a84": {
+            "name": "LI-reed_025",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_025.gltf"
+        },
+        "0b1e4812c9b03491": {
+            "name": "LI-reed_026",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_026.gltf"
+        },
+        "f99d2aa13860b229": {
+            "name": "LI-reed_027",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_027.gltf"
+        },
+        "9975a0b79906e13d": {
+            "name": "LI-reed_028",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_028.gltf"
+        },
+        "200f4c52be6fc25f": {
+            "name": "LI-reed_029",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_029.gltf"
+        },
+        "f54fd90b83a65a80": {
+            "name": "LI-reed_030",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_030.gltf"
+        },
+        "924c0dba69a0543b": {
+            "name": "LI-reed_031",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_031.gltf"
+        },
+        "767043c0e14f78a4": {
+            "name": "LI-reed_032",
+            "filepath": "assets/lib/shrubs_and_grass/reeds/LI-reed_032.gltf"
+        },
+        "45de49be9c951da3": {
+            "name": "LI-boulder_001",
+            "filepath": "assets/lib/boulders/boulders_medium/LI-boulder_001.gltf"
+        },
+        "fd952c5800f8048c": {
+            "name": "LI-boulder_002",
+            "filepath": "assets/lib/boulders/boulders_medium/LI-boulder_002.gltf"
+        },
+        "18cca85f559429eb": {
+            "name": "LI-boulder_003",
+            "filepath": "assets/lib/boulders/boulders_medium/LI-boulder_003.gltf"
+        },
+        "35d44fdfae0ea05d": {
+            "name": "LI-boulder_004",
+            "filepath": "assets/lib/boulders/boulders_medium/LI-boulder_004.gltf"
+        },
+        "ff5ad63598bc35b6": {
+            "name": "LI-boulder_005",
+            "filepath": "assets/lib/boulders/boulders_medium/LI-boulder_005.gltf"
+        },
+        "75538c1244bbc583": {
+            "name": "LI-boulder_006",
+            "filepath": "assets/lib/boulders/boulders_medium/LI-boulder_006.gltf"
+        },
+        "ec56c359fbbc73fe": {
+            "name": "LI-boulder_007",
+            "filepath": "assets/lib/boulders/boulders_medium/LI-boulder_007.gltf"
+        },
+        "e02e46d6a49c982c": {
+            "name": "LI-boulder_small_001",
+            "filepath": "assets/lib/boulders/boulders_small/LI-boulder_small_001.gltf"
+        },
+        "2f5eb1ba200a9bb6": {
+            "name": "LI-boulder_small_002",
+            "filepath": "assets/lib/boulders/boulders_small/LI-boulder_small_002.gltf"
+        },
+        "bdf82503a3f6dbb0": {
+            "name": "LI-boulder_small_003",
+            "filepath": "assets/lib/boulders/boulders_small/LI-boulder_small_003.gltf"
+        },
+        "850976140794f7fb": {
+            "name": "LI-boulder_small_004",
+            "filepath": "assets/lib/boulders/boulders_small/LI-boulder_small_004.gltf"
+        },
+        "f59931bd35ef9648": {
+            "name": "LI-boulder_small_005",
+            "filepath": "assets/lib/boulders/boulders_small/LI-boulder_small_005.gltf"
+        },
+        "90c4608896794f7b": {
+            "name": "PR-willow_tree",
+            "filepath": "assets/props/willow_tree/PR-willow_tree.gltf"
+        },
+        "01e6c8ba2c418b26": {
+            "name": "SE-asset_zoo",
+            "filepath": "assets/sets/asset_zoo/SE-asset_zoo.gltf"
+        },
+        "fa0d7693ecb2c870": {
+            "name": "LI-bush_001",
+            "filepath": "assets/lib/bushes/bushes_medium/LI-bush_001.gltf"
+        },
+        "5f72cec3d1a5b7eb": {
+            "name": "LI-bush_002",
+            "filepath": "assets/lib/bushes/bushes_medium/LI-bush_002.gltf"
+        },
+        "6d254e23658c386e": {
+            "name": "LI-bush_003",
+            "filepath": "assets/lib/bushes/bushes_medium/LI-bush_003.gltf"
+        },
+        "15b86fd9a2600b93": {
+            "name": "LI-bush_004",
+            "filepath": "assets/lib/bushes/bushes_medium/LI-bush_004.gltf"
+        },
+        "7f759969aa3df6eb": {
+            "name": "LI-bush_small_001",
+            "filepath": "assets/lib/bushes/bushes_small/LI-bush_small_001.gltf"
+        },
+        "031b8de0cde45dbc": {
+            "name": "LI-bush_small_002",
+            "filepath": "assets/lib/bushes/bushes_small/LI-bush_small_002.gltf"
+        },
+        "9972fdda3fee7e71": {
+            "name": "LI-bush_small_003",
+            "filepath": "assets/lib/bushes/bushes_small/LI-bush_small_003.gltf"
+        },
+        "2bd9a5338fe586dc": {
+            "name": "LI-log_003",
+            "filepath": "assets/lib/trees/logs/LI-log_003.gltf"
+        },
+        "80b3f438ab3b3e7f": {
+            "name": "LI-bush_foliage_small_001",
+            "filepath": "assets/lib/bushes/bush_elements/LI-bush_foliage_small_001.gltf"
+        },
+        "f4e5405b25dd0ff1": {
+            "name": "LI-bush_foliage_small_002",
+            "filepath": "assets/lib/bushes/bush_elements/LI-bush_foliage_small_002.gltf"
+        },
+        "997dfeb524413bb6": {
+            "name": "LI-bush_foliage_small_003",
+            "filepath": "assets/lib/bushes/bush_elements/LI-bush_foliage_small_003.gltf"
+        },
+        "ea6394358fddf458": {
+            "name": "LI-bush_foliage_small_004",
+            "filepath": "assets/lib/bushes/bush_elements/LI-bush_foliage_small_004.gltf"
+        },
+        "d2262d1a26f5318f": {
+            "name": "LI-bush_foliage-snowy_small_001",
+            "filepath": "assets/lib/bushes/bush_elements/LI-bush_foliage-snowy_small_001.gltf"
+        },
+        "2bba1754415341de": {
+            "name": "LI-bush_foliage-snowy_small_002",
+            "filepath": "assets/lib/bushes/bush_elements/LI-bush_foliage-snowy_small_002.gltf"
+        },
+        "c214735b87dbaa3e": {
+            "name": "LI-bush_foliage-snowy_small_003",
+            "filepath": "assets/lib/bushes/bush_elements/LI-bush_foliage-snowy_small_003.gltf"
+        },
+        "2daa1622f0d91e0d": {
+            "name": "LI-bush_foliage_001",
+            "filepath": "assets/lib/bushes/bush_elements/LI-bush_foliage_001.gltf"
+        },
+        "f1f18f98abffe6c3": {
+            "name": "LI-bush_foliage_002",
+            "filepath": "assets/lib/bushes/bush_elements/LI-bush_foliage_002.gltf"
+        },
+        "f195a46b3c7f3e4a": {
+            "name": "LI-bush_foliage_003",
+            "filepath": "assets/lib/bushes/bush_elements/LI-bush_foliage_003.gltf"
+        },
+        "d60f45e23c5056a1": {
+            "name": "LI-bush_foliage_004",
+            "filepath": "assets/lib/bushes/bush_elements/LI-bush_foliage_004.gltf"
+        },
+        "85d44454e501824c": {
+            "name": "LI-bush_foliage_005",
+            "filepath": "assets/lib/bushes/bush_elements/LI-bush_foliage_005.gltf"
+        },
+        "3ac1288678f4e459": {
+            "name": "LI-bush_foliage_006",
+            "filepath": "assets/lib/bushes/bush_elements/LI-bush_foliage_006.gltf"
+        },
+        "4e314a8a5b90167d": {
+            "name": "LI-bush_foliage_007",
+            "filepath": "assets/lib/bushes/bush_elements/LI-bush_foliage_007.gltf"
+        },
+        "21d541d68c11a3fb": {
+            "name": "LI-bush_foliage_008",
+            "filepath": "assets/lib/bushes/bush_elements/LI-bush_foliage_008.gltf"
+        },
+        "0550aa40443cf8d6": {
+            "name": "LI-bush_foliage_009",
+            "filepath": "assets/lib/bushes/bush_elements/LI-bush_foliage_009.gltf"
+        },
+        "536430516ba93204": {
+            "name": "LI-bush_foliage_010",
+            "filepath": "assets/lib/bushes/bush_elements/LI-bush_foliage_010.gltf"
+        },
+        "d6aa433279e1de9d": {
+            "name": "LI-bush_foliage_011",
+            "filepath": "assets/lib/bushes/bush_elements/LI-bush_foliage_011.gltf"
+        },
+        "08f94693f8e87518": {
+            "name": "LI-bush_foliage_012",
+            "filepath": "assets/lib/bushes/bush_elements/LI-bush_foliage_012.gltf"
+        },
+        "66139b2d1f37ba2d": {
+            "name": "LI-bush_foliage-snowy_001",
+            "filepath": "assets/lib/bushes/bush_elements/LI-bush_foliage-snowy_001.gltf"
+        },
+        "b7decde420feba47": {
+            "name": "LI-bush_foliage-snowy_002",
+            "filepath": "assets/lib/bushes/bush_elements/LI-bush_foliage-snowy_002.gltf"
+        },
+        "60e4567c4746648d": {
+            "name": "LI-bush_foliage-snowy_003",
+            "filepath": "assets/lib/bushes/bush_elements/LI-bush_foliage-snowy_003.gltf"
+        },
+        "d8f6faec60b1b402": {
+            "name": "LI-bush_foliage-snowy_004",
+            "filepath": "assets/lib/bushes/bush_elements/LI-bush_foliage-snowy_004.gltf"
+        },
+        "667162a51744cc52": {
+            "name": "LI-bush_foliage-snowy_005",
+            "filepath": "assets/lib/bushes/bush_elements/LI-bush_foliage-snowy_005.gltf"
+        },
+        "8347e50d8d8fbade": {
+            "name": "LI-bush_foliage-snowy_006",
+            "filepath": "assets/lib/bushes/bush_elements/LI-bush_foliage-snowy_006.gltf"
+        },
+        "9eeb18911b26f291": {
+            "name": "LI-bush_foliage_top_001",
+            "filepath": "assets/lib/bushes/bush_elements/LI-bush_foliage_top_001.gltf"
+        },
+        "4f0943b557de5433": {
+            "name": "LI-bush_foliage_top_002",
+            "filepath": "assets/lib/bushes/bush_elements/LI-bush_foliage_top_002.gltf"
+        },
+        "5b8a1387d79d10ff": {
+            "name": "LI-bush_foliage_top_003",
+            "filepath": "assets/lib/bushes/bush_elements/LI-bush_foliage_top_003.gltf"
+        },
+        "faeba6940bc21e38": {
+            "name": "LI-bush_foliage_top_004",
+            "filepath": "assets/lib/bushes/bush_elements/LI-bush_foliage_top_004.gltf"
+        },
+        "d829607052532999": {
+            "name": "PR-creek_bridge",
+            "filepath": "assets/props/creek_bridge/PR-creek_bridge.gltf"
+        },
+        "25aa32201d806f22": {
+            "name": "PR-snowman",
+            "filepath": "assets/props/snowman/PR-snowman.gltf"
+        },
+        "134af72c5ba83338": {
+            "name": "LI-snow_ripped_pile_001",
+            "filepath": "assets/lib/snow/ripped_snow_piles/LI-snow_ripped_pile_001.gltf"
+        },
+        "8921ba9fcb56882b": {
+            "name": "LI-snow_ripped_pile_002",
+            "filepath": "assets/lib/snow/ripped_snow_piles/LI-snow_ripped_pile_002.gltf"
+        },
+        "b7ee2568eca57862": {
+            "name": "LI-snow_ripped_pile_003",
+            "filepath": "assets/lib/snow/ripped_snow_piles/LI-snow_ripped_pile_003.gltf"
+        },
+        "b3e8ec1e2af9174a": {
+            "name": "LI-snow_ripped_pile_004",
+            "filepath": "assets/lib/snow/ripped_snow_piles/LI-snow_ripped_pile_004.gltf"
+        },
+        "84374a84aac7abdf": {
+            "name": "LI-snow_ripped_pile_005",
+            "filepath": "assets/lib/snow/ripped_snow_piles/LI-snow_ripped_pile_005.gltf"
+        },
+        "b9c7499f000ae38f": {
+            "name": "LI-snow_ripped_pile_006",
+            "filepath": "assets/lib/snow/ripped_snow_piles/LI-snow_ripped_pile_006.gltf"
+        },
+        "86ed2a557ae964ea": {
+            "name": "LI-snow_ripped_pile_007",
+            "filepath": "assets/lib/snow/ripped_snow_piles/LI-snow_ripped_pile_007.gltf"
+        },
+        "d3554b3b510fe5e8": {
+            "name": "LI-snow_ripped_pile_008",
+            "filepath": "assets/lib/snow/ripped_snow_piles/LI-snow_ripped_pile_008.gltf"
+        },
+        "e0e24c506386798c": {
+            "name": "LI-snow_ripped_pile_009",
+            "filepath": "assets/lib/snow/ripped_snow_piles/LI-snow_ripped_pile_009.gltf"
+        },
+        "d25c560e59948909": {
+            "name": "LI-snow_ripped_pile_012",
+            "filepath": "assets/lib/snow/ripped_snow_piles/LI-snow_ripped_pile_012.gltf"
+        },
+        "07a77943e539238e": {
+            "name": "LI-snow_ripped_pile_010",
+            "filepath": "assets/lib/snow/ripped_snow_piles/LI-snow_ripped_pile_010.gltf"
+        },
+        "c103d0eab1323583": {
+            "name": "LI-snow_ripped_pile_011",
+            "filepath": "assets/lib/snow/ripped_snow_piles/LI-snow_ripped_pile_011.gltf"
+        },
+        "64128de7d91a3247": {
+            "name": "SE-vertical_slice",
+            "filepath": "assets/sets/vertical_slice/SE-vertical_slice.gltf"
+        },
+        "46a48d29f9a6c06f": {
+            "name": "SE-asset_ikea",
+            "filepath": "assets/sets/asset_ikea/SE-asset_ikea.gltf"
+        },
+        "8a9566cc4d0a4b40": {
+            "name": "LI-birch_outgrowth_001",
+            "filepath": "assets/lib/trees/birch_outgrowth/LI-birch_outgrowth_001.gltf"
+        },
+        "194b3426792d5b89": {
+            "name": "LI-birch_outgrowth_002",
+            "filepath": "assets/lib/trees/birch_outgrowth/LI-birch_outgrowth_002.gltf"
+        },
+        "cc7e543eee7da945": {
+            "name": "LI-birch_outgrowth_003",
+            "filepath": "assets/lib/trees/birch_outgrowth/LI-birch_outgrowth_003.gltf"
+        },
+        "f81bc73195c45080": {
+            "name": "LI-birch_outgrowth_004",
+            "filepath": "assets/lib/trees/birch_outgrowth/LI-birch_outgrowth_004.gltf"
+        },
+        "f0430de57950d75f": {
+            "name": "LI-birch_outgrowth_005",
+            "filepath": "assets/lib/trees/birch_outgrowth/LI-birch_outgrowth_005.gltf"
+        },
+        "d38d3e55dd2381a2": {
+            "name": "LI-birch_outgrowth_006",
+            "filepath": "assets/lib/trees/birch_outgrowth/LI-birch_outgrowth_006.gltf"
+        },
+        "7e9bee88a63978bf": {
+            "name": "LI-stone_wall_001",
+            "filepath": "assets/lib/stone_walls/stone_walls/LI-stone_wall_001.gltf"
+        },
+        "4266c2f9d716d135": {
+            "name": "LI-stone_wall_002",
+            "filepath": "assets/lib/stone_walls/stone_walls/LI-stone_wall_002.gltf"
+        },
+        "0444667a733e9b37": {
+            "name": "LI-stone_wall_003",
+            "filepath": "assets/lib/stone_walls/stone_walls/LI-stone_wall_003.gltf"
+        },
+        "3b36775e9abdceeb": {
+            "name": "LI-stone_wall_004",
+            "filepath": "assets/lib/stone_walls/stone_walls/LI-stone_wall_004.gltf"
+        },
+        "44f737f209569f74": {
+            "name": "LI-stone_wall_005",
+            "filepath": "assets/lib/stone_walls/stone_walls/LI-stone_wall_005.gltf"
+        },
+        "5831805a30cec7ba": {
+            "name": "LI-stone_wall_006",
+            "filepath": "assets/lib/stone_walls/stone_walls/LI-stone_wall_006.gltf"
+        },
+        "7603b9c823f42ae1": {
+            "name": "LI-stone_wall_007",
+            "filepath": "assets/lib/stone_walls/stone_walls/LI-stone_wall_007.gltf"
+        },
+        "e680e55a3319f39d": {
+            "name": "LI-stone_wall_008",
+            "filepath": "assets/lib/stone_walls/stone_walls/LI-stone_wall_008.gltf"
+        },
+        "8bd3c614a47e9795": {
+            "name": "LI-stone_wall_009",
+            "filepath": "assets/lib/stone_walls/stone_walls/LI-stone_wall_009.gltf"
+        },
+        "75fee1c3e9d5927c": {
+            "name": "LI-stone_wall_010",
+            "filepath": "assets/lib/stone_walls/stone_walls/LI-stone_wall_010.gltf"
+        },
+        "fb536f3652df89a8": {
+            "name": "LI-stone_wall_0011",
+            "filepath": "assets/lib/stone_walls/stone_walls/LI-stone_wall_0011.gltf"
+        },
+        "15dce7d0631c4fd9": {
+            "name": "LI-stone_wall_012",
+            "filepath": "assets/lib/stone_walls/stone_walls/LI-stone_wall_012.gltf"
+        },
+        "893370f85020f98b": {
+            "name": "LI-stone_wall_013",
+            "filepath": "assets/lib/stone_walls/stone_walls/LI-stone_wall_013.gltf"
+        },
+        "55540ba42dc11ddc": {
+            "name": "LI-tree_stump_001",
+            "filepath": "assets/lib/trees/tree_stumps/LI-tree_stump_001.gltf"
+        },
+        "37c7037998d21ec2": {
+            "name": "SL-trees",
+            "filepath": "assets/sets/vertical_slice/SL-trees.gltf"
+        },
+        "ef66183bf8efc5cf": {
+            "name": "SL-bushes",
+            "filepath": "assets/sets/vertical_slice/SL-bushes.gltf"
+        },
+        "f7b29f291be0990b": {
+            "name": "SL-boulders",
+            "filepath": "assets/sets/vertical_slice/SL-boulders.gltf"
+        },
+        "3a5f27d0b9ce2296": {
+            "name": "SL-cliff",
+            "filepath": "assets/sets/vertical_slice/SL-cliff.gltf"
+        },
+        "f633ef8821a8449d": {
+            "name": "SL-snow_patches",
+            "filepath": "assets/sets/vertical_slice/SL-snow_patches.gltf"
+        },
+        "6036582749ee69eb": {
+            "name": "SL-pond",
+            "filepath": "assets/sets/vertical_slice/SL-pond.gltf"
+        },
+        "4b8ecb89599095f2": {
+            "name": "SL-ground",
+            "filepath": "assets/sets/vertical_slice/SL-ground.gltf"
+        },
+        "3c1a85fff576bf98": {
+            "name": "SL-paths",
+            "filepath": "assets/sets/vertical_slice/SL-paths.gltf"
+        },
+        "779a5c67ed435e05": {
+            "name": "SL-bridges",
+            "filepath": "assets/sets/vertical_slice/SL-bridges.gltf"
+        },
+        "5be1b824777e0137": {
+            "name": "SL-tripping_hazards",
+            "filepath": "assets/sets/vertical_slice/SL-tripping_hazards.gltf"
+        },
+        "263fb0fe34e640d3": {
+            "name": "SL-props",
+            "filepath": "assets/sets/vertical_slice/SL-props.gltf"
+        },
+        "83fe4bb0f5fa3f2f": {
+            "name": "PR-camping_table",
+            "filepath": "assets/props/camping_table/PR-camping_table.gltf"
+        },
+        "2ccdd0322f96edb0": {
+            "name": "LI-root_01",
+            "filepath": "assets/lib/roots/roots_simple/LI-root_01.gltf"
+        },
+        "7bb1434f1706b4c6": {
+            "name": "LI-root_02",
+            "filepath": "assets/lib/roots/roots_simple/LI-root_02.gltf"
+        },
+        "c1ff9ce0d17b158d": {
+            "name": "LI-root_03",
+            "filepath": "assets/lib/roots/roots_simple/LI-root_03.gltf"
+        },
+        "6e2582a0e051d4e2": {
+            "name": "LI-root_04",
+            "filepath": "assets/lib/roots/roots_simple/LI-root_04.gltf"
+        },
+        "7ed0f7ad81e6dc86": {
+            "name": "LI-root_05",
+            "filepath": "assets/lib/roots/roots_simple/LI-root_05.gltf"
+        },
+        "54dad74ed5730b5f": {
+            "name": "LI-root_06",
+            "filepath": "assets/lib/roots/roots_simple/LI-root_06.gltf"
+        },
+        "abad49e407a34f28": {
+            "name": "LI-tree_stump_002",
+            "filepath": "assets/lib/trees/tree_stumps/LI-tree_stump_002.gltf"
+        },
+        "74c128782a0f4f30": {
+            "name": "LI-tree_stump_003",
+            "filepath": "assets/lib/trees/tree_stumps/LI-tree_stump_003.gltf"
+        },
+        "e36b5f2a7516b37f": {
+            "name": "SL-creek",
+            "filepath": "assets/sets/vertical_slice/SL-creek.gltf"
+        },
+        "b3d196a0226e5a33": {
+            "name": "PR-traffic_cone",
+            "filepath": "assets/props/traffic_cone/PR-traffic_cone.gltf"
+        },
+        "0b402603d31d4e8b": {
+            "name": "PR-tennis_ball",
+            "filepath": "assets/props/tennis_ball/PR-tennis_ball.gltf"
+        },
+        "386fe98cb4cea60a": {
+            "name": "PR-shovel",
+            "filepath": "assets/props/shovel/PR-shovel.gltf"
+        },
+        "24f6a617a24c00cb": {
+            "name": "LI-pine_tree_alt_003",
+            "filepath": "assets/lib/trees/pine_alt_trees/LI-pine_tree_alt_003.gltf"
+        },
+        "e14cdb4d35ee4ffb": {
+            "name": "LI-pine_tree_alt_004",
+            "filepath": "assets/lib/trees/pine_alt_trees/LI-pine_tree_alt_004.gltf"
+        },
+        "298836e4bb96c370": {
+            "name": "LI-pine_tree_alt_005",
+            "filepath": "assets/lib/trees/pine_alt_trees/LI-pine_tree_alt_005.gltf"
+        },
+        "e66e8d0ff0c62f16": {
+            "name": "PR-leash_handle",
+            "filepath": "assets/props/leash_handle/PR-leash_handle.gltf"
+        },
+        "d642b4dd2cf0fb1e": {
+            "name": "PR-ear_muffs",
+            "filepath": "assets/props/ear_muffs/PR-ear_muffs.gltf"
+        },
+        "08032d31fa1ec6ef": {
+            "name": "LI-bushlet_branched_001",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets_branched/LI-bushlet_branched_001.gltf"
+        },
+        "95f249d5332c0f18": {
+            "name": "LI-bushlet_branched_002",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets_branched/LI-bushlet_branched_002.gltf"
+        },
+        "78f6146f05996dca": {
+            "name": "LI-bushlet_branched_003",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets_branched/LI-bushlet_branched_003.gltf"
+        },
+        "3c4b43daf4bbc72a": {
+            "name": "LI-bushlet_branched_004",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets_branched/LI-bushlet_branched_004.gltf"
+        },
+        "67c7d8a1bc83115c": {
+            "name": "LI-bushlet_branched_005",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets_branched/LI-bushlet_branched_005.gltf"
+        },
+        "986703d8439c39fd": {
+            "name": "LI-bushlet_branched_006",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets_branched/LI-bushlet_branched_006.gltf"
+        },
+        "34ededc23685a7ac": {
+            "name": "LI-bushlet_blue_fan_001",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets_blue_fan/LI-bushlet_blue_fan_001.gltf"
+        },
+        "fa9f88aa0f83eaa5": {
+            "name": "LI-bushlet_blue_fan_002",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets_blue_fan/LI-bushlet_blue_fan_002.gltf"
+        },
+        "0ccb551ea36ec1db": {
+            "name": "LI-bushlet_blue_fan_003",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets_blue_fan/LI-bushlet_blue_fan_003.gltf"
+        },
+        "fc845aac9d04d079": {
+            "name": "LI-bushlet_blue_fan_004",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets_blue_fan/LI-bushlet_blue_fan_004.gltf"
+        },
+        "a5477358dfd1e3cf": {
+            "name": "LI-bushlet_blue_fan_005",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets_blue_fan/LI-bushlet_blue_fan_005.gltf"
+        },
+        "eebc8934a605abff": {
+            "name": "LI-bushlet_blue_fan_006",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets_blue_fan/LI-bushlet_blue_fan_006.gltf"
+        },
+        "197dadd136b4dd6e": {
+            "name": "LI-bushlet_white_garland_001",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets_white_garland/LI-bushlet_white_garland_001.gltf"
+        },
+        "f2bff50c24ba6428": {
+            "name": "LI-bushlet_white_garland_002",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets_white_garland/LI-bushlet_white_garland_002.gltf"
+        },
+        "be4832d39acd6197": {
+            "name": "LI-bushlet_white_garland_003",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets_white_garland/LI-bushlet_white_garland_003.gltf"
+        },
+        "4fde8c015b1e9be7": {
+            "name": "LI-bushlet_white_garland_004",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets_white_garland/LI-bushlet_white_garland_004.gltf"
+        },
+        "bb883b10a3c5e1be": {
+            "name": "LI-bushlet_white_garland_005",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets_white_garland/LI-bushlet_white_garland_005.gltf"
+        },
+        "f1f0c2bd86da0aa2": {
+            "name": "LI-bushlet_white_garland_006",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets_white_garland/LI-bushlet_white_garland_006.gltf"
+        },
+        "89300dc4c60e4a18": {
+            "name": "LI-bushlet_white_garland_007",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets_white_garland/LI-bushlet_white_garland_007.gltf"
+        },
+        "fbcad448223ed6f8": {
+            "name": "LI-bushlet_white_garland_008",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets_white_garland/LI-bushlet_white_garland_008.gltf"
+        },
+        "7daf1a88ef3c4175": {
+            "name": "LI-bushlet_blue_delicate_001",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets_blue_delicate/LI-bushlet_blue_delicate_001.gltf"
+        },
+        "96b120aa8277fb6b": {
+            "name": "LI-bushlet_blue_delicate_002",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets_blue_delicate/LI-bushlet_blue_delicate_002.gltf"
+        },
+        "218ae41b06bbcce3": {
+            "name": "LI-bushlet_blue_delicate_003",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets_blue_delicate/LI-bushlet_blue_delicate_003.gltf"
+        },
+        "f2aa72d5918c26a0": {
+            "name": "LI-bushlet_blue_delicate_004",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets_blue_delicate/LI-bushlet_blue_delicate_004.gltf"
+        },
+        "fae26a3047162dca": {
+            "name": "LI-bushlet_blue_delicate_005",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets_blue_delicate/LI-bushlet_blue_delicate_005.gltf"
+        },
+        "c5f08da18134b566": {
+            "name": "LI-dogwood_001",
+            "filepath": "assets/lib/shrubs_and_grass/dogwood/LI-dogwood_001.gltf"
+        },
+        "3b4dc7bda84f0a64": {
+            "name": "LI-dogwood_002",
+            "filepath": "assets/lib/shrubs_and_grass/dogwood/LI-dogwood_002.gltf"
+        },
+        "2c39d8edeb4f0195": {
+            "name": "LI-dogwood_003",
+            "filepath": "assets/lib/shrubs_and_grass/dogwood/LI-dogwood_003.gltf"
+        },
+        "68bcd05e1be2fda6": {
+            "name": "LI-dogwood_004",
+            "filepath": "assets/lib/shrubs_and_grass/dogwood/LI-dogwood_004.gltf"
+        },
+        "ba0b2272cde8b111": {
+            "name": "LI-dogwood_005",
+            "filepath": "assets/lib/shrubs_and_grass/dogwood/LI-dogwood_005.gltf"
+        },
+        "09000fa03ed6e94f": {
+            "name": "LI-dogwood_006",
+            "filepath": "assets/lib/shrubs_and_grass/dogwood/LI-dogwood_006.gltf"
+        },
+        "ac3d78a86c38036e": {
+            "name": "LI-dogwood_007",
+            "filepath": "assets/lib/shrubs_and_grass/dogwood/LI-dogwood_007.gltf"
+        },
+        "8e0e029357cc6f7c": {
+            "name": "LI-dogwood_008",
+            "filepath": "assets/lib/shrubs_and_grass/dogwood/LI-dogwood_008.gltf"
+        },
+        "944547a797706d2c": {
+            "name": "LI-pine_tree_alt_002",
+            "filepath": "assets/lib/trees/pine_alt_trees/LI-pine_tree_alt_002.gltf"
+        },
+        "3404230787f7f448": {
+            "name": "LI-pine_knothole_001",
+            "filepath": "assets/lib/trees/pines_knotholes/LI-pine_knothole_001.gltf"
+        },
+        "b68e6acd42c5ee7d": {
+            "name": "LI-pine_knothole_002",
+            "filepath": "assets/lib/trees/pines_knotholes/LI-pine_knothole_002.gltf"
+        },
+        "f8e59c944b01f3b7": {
+            "name": "LI-pine_knothole_003",
+            "filepath": "assets/lib/trees/pines_knotholes/LI-pine_knothole_003.gltf"
+        },
+        "13504cb8aec79c50": {
+            "name": "LI-pine_knothole_004",
+            "filepath": "assets/lib/trees/pines_knotholes/LI-pine_knothole_004.gltf"
+        },
+        "d688356fb2e6fad4": {
+            "name": "LI-pine_knothole_005",
+            "filepath": "assets/lib/trees/pines_knotholes/LI-pine_knothole_005.gltf"
+        },
+        "c3f76dda58c3f620": {
+            "name": "SE-world",
+            "filepath": "assets/sets/world/SE-world.gltf"
+        },
+        "8a730ec53f81253e": {
+            "name": "SL-world-trees",
+            "filepath": "assets/sets/world/SL-world-trees.gltf"
+        },
+        "e027d1a11956291e": {
+            "name": "SL-world-bushes",
+            "filepath": "assets/sets/world/SL-world-bushes.gltf"
+        },
+        "739a62ddbdabe200": {
+            "name": "SL-world-boulders",
+            "filepath": "assets/sets/world/SL-world-boulders.gltf"
+        },
+        "2d2f8b78d7ec2532": {
+            "name": "SL-world-cliff",
+            "filepath": "assets/sets/world/SL-world-cliff.gltf"
+        },
+        "8168a9a0a95b86fd": {
+            "name": "SL-world-snow_patches",
+            "filepath": "assets/sets/world/SL-world-snow_patches.gltf"
+        },
+        "037fd844a88fa24d": {
+            "name": "SL-world-creek",
+            "filepath": "assets/sets/world/SL-world-creek.gltf"
+        },
+        "0aa96680a326c9f3": {
+            "name": "SL-world-pond",
+            "filepath": "assets/sets/world/SL-world-pond.gltf"
+        },
+        "abac80c4f3ab7d1e": {
+            "name": "SL-world-ground",
+            "filepath": "assets/sets/world/SL-world-ground.gltf"
+        },
+        "3205db547f76ba8b": {
+            "name": "SL-world-paths",
+            "filepath": "assets/sets/world/SL-world-paths.gltf"
+        },
+        "5d32c4437c3ea0e2": {
+            "name": "SL-world-bridges",
+            "filepath": "assets/sets/world/SL-world-bridges.gltf"
+        },
+        "36692e54b52b8083": {
+            "name": "SL-world-tripping_hazards",
+            "filepath": "assets/sets/world/SL-world-tripping_hazards.gltf"
+        },
+        "ad892bf6692f6673": {
+            "name": "SL-world-props",
+            "filepath": "assets/sets/world/SL-world-props.gltf"
+        },
+        "9a3c6641f071307c": {
+            "name": "Chocomel",
+            "filepath": "assets/char/chocomel/Chocomel.gltf"
+        },
+        "54aa2feb76140501": {
+            "name": "Pinda",
+            "filepath": "assets/char/pinda/Pinda.gltf"
+        },
+        "51710804afbe2686": {
+            "name": "LI-pine_tree_alt_001",
+            "filepath": "assets/lib/trees/pine_alt_trees/LI-pine_tree_alt_001.gltf"
+        },
+        "e3af00f3f6c0868a": {
+            "name": "LI-pine_cut_patch_002 1",
+            "filepath": "assets/lib/trees/LI-pine_cut_patch_002/LI-pine_cut_patch_002 1.gltf"
+        },
+        "7b19ff5b4252bb6b": {
+            "name": "LI-pine_cut_tip_001",
+            "filepath": "assets/lib/trees/pine_tips/LI-pine_cut_tip_001.gltf"
+        },
+        "69accd380e9d9c36": {
+            "name": "LI-tree_stump_002",
+            "filepath": "assets/lib/trees/tree_stumps/LI-tree_stump_002.gltf"
+        },
+        "92fa6a75039334f8": {
+            "name": "LI-tree_stump_003",
+            "filepath": "assets/lib/trees/tree_stumps/LI-tree_stump_003.gltf"
+        },
+        "4af55e6227b99be6": {
+            "name": "SL-world-fence",
+            "filepath": "assets/sets/world/SL-world-fence.gltf"
+        },
+        "945b5f78864455c8": {
+            "name": "PR-fence_gate",
+            "filepath": "assets/props/fence_gate/PR-fence_gate.gltf"
+        },
+        "4b0eb6b3a67259c4": {
+            "name": "LI-fence_plank_03",
+            "filepath": "assets/lib/fence_parts/fence_planks/LI-fence_plank_03.gltf"
+        },
+        "4a102cc53d0e0d35": {
+            "name": "LI-fence_plank_04",
+            "filepath": "assets/lib/fence_parts/fence_planks/LI-fence_plank_04.gltf"
+        },
+        "ded7ddccf6d9323d": {
+            "name": "LI-fence_plank_05",
+            "filepath": "assets/lib/fence_parts/fence_planks/LI-fence_plank_05.gltf"
+        },
+        "3fe4b80d5775dd96": {
+            "name": "LI-fence_plank_06",
+            "filepath": "assets/lib/fence_parts/fence_planks/LI-fence_plank_06.gltf"
+        },
+        "1f37d82cdd8d99fe": {
+            "name": "LI-fence_plank_01",
+            "filepath": "assets/lib/fence_parts/fence_planks/LI-fence_plank_01.gltf"
+        },
+        "8d3c41d2951f5bdd": {
+            "name": "LI-fence_plank_02",
+            "filepath": "assets/lib/fence_parts/fence_planks/LI-fence_plank_02.gltf"
+        },
+        "604f20ea55e0abd2": {
+            "name": "LI-fence_pole_01",
+            "filepath": "assets/lib/fence_parts/fence_poles/LI-fence_pole_01.gltf"
+        },
+        "a91995ac5d9fef47": {
+            "name": "LI-fence_pole_02",
+            "filepath": "assets/lib/fence_parts/fence_poles/LI-fence_pole_02.gltf"
+        },
+        "bbc01384a8112539": {
+            "name": "LI-fence_pole_03",
+            "filepath": "assets/lib/fence_parts/fence_poles/LI-fence_pole_03.gltf"
+        },
+        "18b24ec915c86cf6": {
+            "name": "LI-fence_pole_04",
+            "filepath": "assets/lib/fence_parts/fence_poles/LI-fence_pole_04.gltf"
+        },
+        "69e7aebe027105e0": {
+            "name": "LI-fence_nail_01",
+            "filepath": "assets/lib/fence_parts/fence_nails/LI-fence_nail_01.gltf"
+        },
+        "5b60a1796d737ed2": {
+            "name": "LI-fence_nail_02",
+            "filepath": "assets/lib/fence_parts/fence_nails/LI-fence_nail_02.gltf"
+        },
+        "ccf8b693f416cf90": {
+            "name": "LI-fence_nail_03",
+            "filepath": "assets/lib/fence_parts/fence_nails/LI-fence_nail_03.gltf"
+        },
+        "a9e618e160b13026": {
+            "name": "LI-fence_nail_04",
+            "filepath": "assets/lib/fence_parts/fence_nails/LI-fence_nail_04.gltf"
+        },
+        "bf72642572a560e4": {
+            "name": "PR-shed",
+            "filepath": "assets/props/shed/PR-shed.gltf"
+        },
+        "457afb3bb1eee88e": {
+            "name": "LI-snow_piece-008",
+            "filepath": "assets/lib/snow/snow_pieces/LI-snow_piece-008.gltf"
+        },
+        "6e7485d343f9e7ed": {
+            "name": "LI-snow_piece-007",
+            "filepath": "assets/lib/snow/snow_pieces/LI-snow_piece-007.gltf"
+        },
+        "bb83c2627aeaa47d": {
+            "name": "LI-snow_piece-006",
+            "filepath": "assets/lib/snow/snow_pieces/LI-snow_piece-006.gltf"
+        },
+        "3d61c970a752d615": {
+            "name": "LI-snow_piece-005",
+            "filepath": "assets/lib/snow/snow_pieces/LI-snow_piece-005.gltf"
+        },
+        "62ab661fbba9b534": {
+            "name": "LI-snow_piece-004",
+            "filepath": "assets/lib/snow/snow_pieces/LI-snow_piece-004.gltf"
+        },
+        "ef01fb8e4673ed9c": {
+            "name": "LI-snow_piece-003",
+            "filepath": "assets/lib/snow/snow_pieces/LI-snow_piece-003.gltf"
+        },
+        "7688787a0b04670a": {
+            "name": "LI-snow_piece-002",
+            "filepath": "assets/lib/snow/snow_pieces/LI-snow_piece-002.gltf"
+        },
+        "e8555d2cb8acf38c": {
+            "name": "LI-snow_piece-001",
+            "filepath": "assets/lib/snow/snow_pieces/LI-snow_piece-001.gltf"
+        },
+        "07994d110bacd598": {
+            "name": "bird_03",
+            "filepath": "assets/char/birds/bird_03.gltf"
+        },
+        "f472443560dd2db7": {
+            "name": "bird_02",
+            "filepath": "assets/char/birds/bird_02.gltf"
+        },
+        "859f548f63ef6803": {
+            "name": "bird_01",
+            "filepath": "assets/char/birds/bird_01.gltf"
+        },
+        "8a48dbf5d8355baf": {
+            "name": "PR-emote_bubble",
+            "filepath": "assets/props/emote_bubble/PR-emote_bubble.gltf"
+        },
+        "868c2289863dfb65": {
+            "name": "PR-branch",
+            "filepath": "assets/props/branch/PR-branch.gltf"
+        },
+        "2d69b37ce1521f39": {
+            "name": "PR-pinda_camera",
+            "filepath": "assets/props/pinda_camera/PR-pinda_camera.gltf"
+        },
+        "b24526db0972b38c": {
+            "name": "SL-world-utility",
+            "filepath": "assets/sets/world/SL-world-utility.gltf"
+        },
+        "0f6ace4dd900fb77": {
+            "name": "LI-pine_tree_alpha",
+            "filepath": "assets/lib/pine_tree_alpha/LI-pine_tree_alpha.gltf"
+        },
+        "fd8b778a39efaeec": {
+            "name": "PR-treat",
+            "filepath": "assets/props/treat/PR-treat.gltf"
+        },
+        "9457d8f3c685dbe0": {
+            "name": "PR-sign_board",
+            "filepath": "assets/props/sign_board/PR-sign_board.gltf"
+        },
+        "260adf34cdee8140": {
+            "name": "LI-fireplace_sign-left",
+            "filepath": "assets/lib/signs/LI-fireplace_sign-left.gltf"
+        },
+        "23c2995b99e5d799": {
+            "name": "LI-fireplace_sign-right",
+            "filepath": "assets/lib/signs/LI-fireplace_sign-right.gltf"
+        },
+        "263f28f5235b5572": {
+            "name": "LI-stone_plateau_001",
+            "filepath": "assets/lib/stone_plateaus/LI-stone_plateau_001.gltf"
+        },
+        "8f92b93f1cf721c7": {
+            "name": "LI-stone_plateau_002",
+            "filepath": "assets/lib/stone_plateaus/LI-stone_plateau_002.gltf"
+        },
+        "0b1e742262818bf4": {
+            "name": "LI-stone_plateau_003",
+            "filepath": "assets/lib/stone_plateaus/LI-stone_plateau_003.gltf"
+        },
+        "0cc65f112b04c6ff": {
+            "name": "SE-hub",
+            "filepath": "assets/sets/hub/SE-hub.gltf"
+        },
+        "b6553729cd15ad99": {
+            "name": "SL-hub-trees",
+            "filepath": "assets/sets/hub/SL-hub-trees.gltf"
+        },
+        "c11bdf1407d40816": {
+            "name": "SL-hub-bushes",
+            "filepath": "assets/sets/hub/SL-hub-bushes.gltf"
+        },
+        "aea49a7028dfb8c9": {
+            "name": "SL-hub-boulders",
+            "filepath": "assets/sets/hub/SL-hub-boulders.gltf"
+        },
+        "3635bd2838acb671": {
+            "name": "SL-hub-cliff",
+            "filepath": "assets/sets/hub/SL-hub-cliff.gltf"
+        },
+        "955843fd55d00ed9": {
+            "name": "SL-hub-snow_patches",
+            "filepath": "assets/sets/hub/SL-hub-snow_patches.gltf"
+        },
+        "e769277e6436849e": {
+            "name": "SL-hub-ground",
+            "filepath": "assets/sets/hub/SL-hub-ground.gltf"
+        },
+        "77dab91a82a117ca": {
+            "name": "SL-hub-paths",
+            "filepath": "assets/sets/hub/SL-hub-paths.gltf"
+        },
+        "caf85cdb860d6251": {
+            "name": "SL-hub-tripping_hazards",
+            "filepath": "assets/sets/hub/SL-hub-tripping_hazards.gltf"
+        },
+        "9246ca90b1417585": {
+            "name": "SL-hub-props",
+            "filepath": "assets/sets/hub/SL-hub-props.gltf"
+        },
+        "4d72af77d6f76b71": {
+            "name": "SL-hub-utility",
+            "filepath": "assets/sets/hub/SL-hub-utility.gltf"
+        },
+        "403561ca3763359e": {
+            "name": "SE-fence",
+            "filepath": "assets/sets/fence/SE-fence.gltf"
+        },
+        "c85a514d3a63725f": {
+            "name": "SL-fence-trees",
+            "filepath": "assets/sets/fence/SL-fence-trees.gltf"
+        },
+        "efcc693a844cad90": {
+            "name": "SL-fence-bushes",
+            "filepath": "assets/sets/fence/SL-fence-bushes.gltf"
+        },
+        "da1b0b28e6c27349": {
+            "name": "SL-fence-boulders",
+            "filepath": "assets/sets/fence/SL-fence-boulders.gltf"
+        },
+        "3caba8e34d7e5dbc": {
+            "name": "SL-fence-cliff",
+            "filepath": "assets/sets/fence/SL-fence-cliff.gltf"
+        },
+        "919300ebf1bc4425": {
+            "name": "SL-fence-snow_patches",
+            "filepath": "assets/sets/fence/SL-fence-snow_patches.gltf"
+        },
+        "ad10cc119aa6c0db": {
+            "name": "SL-fence-ground",
+            "filepath": "assets/sets/fence/SL-fence-ground.gltf"
+        },
+        "a2ac4e63524af128": {
+            "name": "SL-fence-paths",
+            "filepath": "assets/sets/fence/SL-fence-paths.gltf"
+        },
+        "2ca5b15c8f83061b": {
+            "name": "SL-fence-tripping_hazards",
+            "filepath": "assets/sets/fence/SL-fence-tripping_hazards.gltf"
+        },
+        "8a677646d7593c69": {
+            "name": "SL-fence-props",
+            "filepath": "assets/sets/fence/SL-fence-props.gltf"
+        },
+        "75096dc95dc57002": {
+            "name": "SL-fence-fence",
+            "filepath": "assets/sets/fence/SL-fence-fence.gltf"
+        },
+        "e0a65e7543c0624c": {
+            "name": "SL-fence-utility",
+            "filepath": "assets/sets/fence/SL-fence-utility.gltf"
+        },
+        "d076fe35917f6eec": {
+            "name": "PR-snowman_emotes",
+            "filepath": "assets/props/snowman_emotes/PR-snowman_emotes.gltf"
+        },
+        "bec5c4e43cae9a2f": {
+            "name": "PR-fireplace",
+            "filepath": "assets/props/fireplace/PR-fireplace.gltf"
+        },
+        "6e47fcf8a34ee969": {
+            "name": "LI-snow_patch_01",
+            "filepath": "assets/lib/snow_patches/LI-snow_patch_01.gltf"
+        },
+        "524f1e0b87364583": {
+            "name": "LI-snow_patch_02",
+            "filepath": "assets/lib/snow_patches/LI-snow_patch_02.gltf"
+        },
+        "de6afdea04ae4f77": {
+            "name": "LI-paths",
+            "filepath": "assets/lib/paths/LI-paths.gltf"
+        },
+        "48a9103788c155d1": {
+            "name": "SE-clearing",
+            "filepath": "assets/sets/clearing/SE-clearing.gltf"
+        },
+        "7f3a5c09d5d6c508": {
+            "name": "SL-clearing-path",
+            "filepath": "assets/sets/clearing/SL-clearing-path.gltf"
+        },
+        "e9a3882d5f838c35": {
+            "name": "SL-clearing-bushes",
+            "filepath": "assets/sets/clearing/SL-clearing-bushes.gltf"
+        },
+        "5e98153208e7609e": {
+            "name": "SL-clearing-trees",
+            "filepath": "assets/sets/clearing/SL-clearing-trees.gltf"
+        },
+        "d27aa6af3528e861": {
+            "name": "SL-clearing-snow",
+            "filepath": "assets/sets/clearing/SL-clearing-snow.gltf"
+        },
+        "032fec079a1019ce": {
+            "name": "SL-clearing_boulders",
+            "filepath": "assets/sets/clearing/SL-clearing_boulders.gltf"
+        },
+        "892b0ceb80e3299f": {
+            "name": "SL-clearing_terrain",
+            "filepath": "assets/sets/clearing/SL-clearing_terrain.gltf"
+        },
+        "1ac36aa324cf90af": {
+            "name": "SL-clearing_roots",
+            "filepath": "assets/sets/clearing/SL-clearing_roots.gltf"
+        },
+        "61da3a686ee31586": {
+            "name": "SL-clearing_logs",
+            "filepath": "assets/sets/clearing/SL-clearing_logs.gltf"
+        },
+        "76cb4292e859862c": {
+            "name": "SL-clearing_shrubs",
+            "filepath": "assets/sets/clearing/SL-clearing_shrubs.gltf"
+        },
+        "70c36195a5268c47": {
+            "name": "SL-clearing_tree_stumps",
+            "filepath": "assets/sets/clearing/SL-clearing_tree_stumps.gltf"
+        },
+        "88a99e4ad4b1a4b7": {
+            "name": "SL-clearing_stone_plateaus",
+            "filepath": "assets/sets/clearing/SL-clearing_stone_plateaus.gltf"
+        },
+        "e6978566e72468a1": {
+            "name": "SL-clearing-props",
+            "filepath": "assets/sets/clearing/SL-clearing-props.gltf"
+        },
+        "43ebfbf7022b3b10": {
+            "name": "LI-tree_stump_004",
+            "filepath": "assets/lib/trees/tree_stumps/LI-tree_stump_004.gltf"
+        },
+        "d36eb8ec4b7e496c": {
+            "name": "LI-tree_stump_sitting_006",
+            "filepath": "assets/lib/trees/tree_stumps/LI-tree_stump_sitting_006.gltf"
+        },
+        "a31bc6fa579dc00e": {
+            "name": "LI-tree_stump_sitting_005",
+            "filepath": "assets/lib/trees/tree_stumps/LI-tree_stump_sitting_005.gltf"
+        },
+        "121cec50f3c9715b": {
+            "name": "LI-pine_tree_alpha_02",
+            "filepath": "assets/lib/pine_tree_alpha/LI-pine_tree_alpha_02.gltf"
+        },
+        "b85f7aa3c271722a": {
+            "name": "SL-clearing-reeds",
+            "filepath": "assets/sets/clearing/clearing/SL-clearing-reeds.gltf"
+        },
+        "dab07b0df4c6ca75": {
+            "name": "PR-sign_board_pin",
+            "filepath": "assets/props/sign_board/PR-sign_board_pin.gltf"
+        },
+        "b7861949b3abc85c": {
+            "name": "SL-hub-vegetation",
+            "filepath": "assets/sets/hub/SL-hub-vegetation.gltf"
+        },
+        "7aa975c70fcb91d0": {
+            "name": "SL-fence-vegetation",
+            "filepath": "assets/sets/fence/SL-fence-vegetation.gltf"
+        },
+        "dd239433acbdb1ee": {
+            "name": "SL-world-pond_ice_detection",
+            "filepath": "assets/sets/world/SL-world-pond_ice_detection.gltf"
+        },
+        "e0593d0520c1b48a": {
+            "name": "PR-snow_piles",
+            "filepath": "assets/props/snow_piles/PR-snow_piles.gltf"
+        },
+        "923be85dac17cd68": {
+            "name": "SL-clearing-reeds",
+            "filepath": "assets/sets/clearing/SL-clearing-reeds.gltf"
+        },
+        "2ab784a2bea1b112": {
+            "name": "SL-clearing-fence",
+            "filepath": "assets/sets/clearing/SL-clearing-fence.gltf"
+        },
+        "f46588e049165804": {
+            "name": "PR-logo",
+            "filepath": "assets/props/logo/PR-logo.gltf"
+        },
+        "eddb0002a034d9e0": {
+            "name": "fish",
+            "filepath": "assets/char/fish/fish.gltf"
+        },
+        "7cfd7f36d511a65c": {
+            "name": "LI-tree_shroom_01",
+            "filepath": "assets/lib/tree_shrooms/LI-tree_shroom_01.gltf"
+        },
+        "b89eba7227fa02c0": {
+            "name": "LI-tree_shroom_02",
+            "filepath": "assets/lib/tree_shrooms/LI-tree_shroom_02.gltf"
+        },
+        "b39c35e747a6dd72": {
+            "name": "LI-tree_shroom_03",
+            "filepath": "assets/lib/tree_shrooms/LI-tree_shroom_03.gltf"
+        },
+        "be4eeebdcf5383bf": {
+            "name": "PR-bug_hotel",
+            "filepath": "assets/props/bug_hotel/PR-bug_hotel.gltf"
+        },
+        "5417f145bb0c7b1a": {
+            "name": "LI-pond_sign-left",
+            "filepath": "assets/lib/signs/LI-pond_sign-left.gltf"
+        },
+        "ecfc6832335122b2": {
+            "name": "LI-pond_sign-right",
+            "filepath": "assets/lib/signs/LI-pond_sign-right.gltf"
+        },
+        "8b765cc5ce1fc78b": {
+            "name": "LI-forest_sign-left",
+            "filepath": "assets/lib/signs/LI-forest_sign-left.gltf"
+        },
+        "ca4db492fd100382": {
+            "name": "LI-forest_sign-right",
+            "filepath": "assets/lib/signs/LI-forest_sign-right.gltf"
+        },
+        "7bb014d34fd290b0": {
+            "name": "LI-sign_stem",
+            "filepath": "assets/lib/signs/LI-sign_stem.gltf"
+        },
+        "44ea9af08b2c8db5": {
+            "name": "LI-fence_sign-left",
+            "filepath": "assets/lib/signs/LI-fence_sign-left.gltf"
+        },
+        "56f78f4fe46e292e": {
+            "name": "LI-fence_sign-right",
+            "filepath": "assets/lib/signs/LI-fence_sign-right.gltf"
+        },
+        "3b5554c34de78b7f": {
+            "name": "LI-bird_house-tall_blue_01",
+            "filepath": "assets/lib/bird_houses/LI-bird_house-tall_blue_01.gltf"
+        },
+        "7c4d7d9671e83422": {
+            "name": "LI-bird_house-tall_blue_02",
+            "filepath": "assets/lib/bird_houses/LI-bird_house-tall_blue_02.gltf"
+        },
+        "6784792ba112560d": {
+            "name": "LI-bird_house-tall_yellow_01",
+            "filepath": "assets/lib/bird_houses/LI-bird_house-tall_yellow_01.gltf"
+        },
+        "da41fcf07e6417b7": {
+            "name": "LI-bird_house-tall_yellow_02",
+            "filepath": "assets/lib/bird_houses/LI-bird_house-tall_yellow_02.gltf"
+        },
+        "7c665fe2620b2fc1": {
+            "name": "LI-bird_house-tall_pink_01",
+            "filepath": "assets/lib/bird_houses/LI-bird_house-tall_pink_01.gltf"
+        },
+        "53b3b922b2734d39": {
+            "name": "LI-bird_house-tall_pink_02",
+            "filepath": "assets/lib/bird_houses/LI-bird_house-tall_pink_02.gltf"
+        },
+        "8d7fb11696b3b01e": {
+            "name": "LI-bird_house-small_orange_01",
+            "filepath": "assets/lib/bird_houses/LI-bird_house-small_orange_01.gltf"
+        },
+        "b40b1b75acde8282": {
+            "name": "LI-bird_house-small_orange_02",
+            "filepath": "assets/lib/bird_houses/LI-bird_house-small_orange_02.gltf"
+        },
+        "949dca4c4b3a7e53": {
+            "name": "LI-bird_house-small_green_01",
+            "filepath": "assets/lib/bird_houses/LI-bird_house-small_green_01.gltf"
+        },
+        "e8f5371987e60331": {
+            "name": "LI-bird_house-small_green_02",
+            "filepath": "assets/lib/bird_houses/LI-bird_house-small_green_02.gltf"
+        }
+    }
+}

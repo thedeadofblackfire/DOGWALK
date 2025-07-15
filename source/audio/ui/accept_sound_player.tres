@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://btekn3c0j5pxm"]
+
+[ext_resource type="AudioStream" uid="uid://7j8gsjr2tvsc" path="res://assets/sfx/ui/UI_AcceptSound.ogg" id="1_310ti"]
+
+[resource]
+random_pitch = 1.04
+streams_count = 1
+stream_0/stream = ExtResource("1_310ti")

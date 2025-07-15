@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://ccvbfl0f7xfb6"]
+
+[ext_resource type="PackedScene" uid="uid://c05g2egdfuak1" path="res://assets/sets/fence/SL-fence-ground.gltf" id="1_ijnke"]
+
+[node name="SL-fence-ground" type="Node3D"]
+
+[node name="SL-fence-ground-IMPORT" parent="." instance=ExtResource("1_ijnke")]
+collision_layer = 512

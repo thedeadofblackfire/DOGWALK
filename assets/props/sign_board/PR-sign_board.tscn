@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfmgub3cpiwov"]
+
+[ext_resource type="PackedScene" uid="uid://d2wxuysl8hq7p" path="res://assets/props/sign_board/PR-sign_board.gltf" id="1_gu0if"]
+[ext_resource type="Script" uid="uid://bj34k0ajpsopu" path="res://source/obstacles/generic_obstacle.gd" id="2_maqjv"]
+
+[node name="PR-sign_board" type="Node3D"]
+
+[node name="PR-sign_board-IMPORT" parent="." instance=ExtResource("1_gu0if")]
+script = ExtResource("2_maqjv")

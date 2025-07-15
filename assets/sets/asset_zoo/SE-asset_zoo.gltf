@@ -1,0 +1,2889 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.14",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 0,
+                    "append_parent_collection": 1,
+                    "asset_name": "SE-asset_zoo"
+                },
+                "asset_type": "ASSET",
+                "root_type": "NONE",
+                "asset_id": "01e6c8ba2c418b26"
+            },
+            "name": "SE-asset_zoo",
+            "nodes": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                15,
+                16,
+                17,
+                18,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66,
+                67,
+                68,
+                69,
+                70,
+                71,
+                72,
+                73,
+                74,
+                75,
+                76,
+                77,
+                78,
+                79,
+                80,
+                81,
+                82,
+                83,
+                84,
+                85,
+                86,
+                87,
+                88,
+                89,
+                90,
+                91,
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                98,
+                99,
+                100,
+                101,
+                102,
+                103,
+                104,
+                105,
+                106,
+                107,
+                108,
+                109,
+                110,
+                111,
+                112,
+                113,
+                114,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127,
+                128,
+                129,
+                130,
+                131,
+                132,
+                133,
+                134,
+                135,
+                136,
+                137,
+                138,
+                139,
+                140,
+                141,
+                142,
+                143,
+                144,
+                145,
+                146,
+                147,
+                148,
+                149,
+                150,
+                151,
+                152,
+                153,
+                154,
+                155,
+                156,
+                157,
+                158,
+                159,
+                160,
+                161,
+                162,
+                163,
+                164,
+                165,
+                166,
+                167,
+                168
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "mesh": 0,
+            "name": "GEO-ground_snow",
+            "scale": [
+                100,
+                100,
+                100
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "9a3c6641f071307c"
+            },
+            "name": "CH-Chocomel"
+        },
+        {
+            "extras": {
+                "instance_asset_id": "54aa2feb76140501"
+            },
+            "name": "CH-Pinda",
+            "translation": [
+                2,
+                0,
+                0
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "07994d110bacd598"
+            },
+            "name": "CH-bird_03",
+            "translation": [
+                5,
+                0,
+                1
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "f472443560dd2db7"
+            },
+            "name": "CH-bird_02",
+            "translation": [
+                4,
+                0,
+                1
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "859f548f63ef6803"
+            },
+            "name": "CH-bird_01",
+            "translation": [
+                3,
+                0,
+                1
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "90c4608896794f7b"
+            },
+            "name": "PR-willow_tree",
+            "translation": [
+                -5,
+                0,
+                -16.81881332397461
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "d829607052532999"
+            },
+            "name": "PR-creek_bridge",
+            "translation": [
+                0.9786529541015625,
+                0.060422517359256744,
+                -7.9312744140625
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "d642b4dd2cf0fb1e"
+            },
+            "name": "PR-ear_muffs",
+            "translation": [
+                7.437733173370361,
+                0.2961437404155731,
+                -1.968709945678711
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "386fe98cb4cea60a"
+            },
+            "name": "PR-shovel",
+            "translation": [
+                5.960680961608887,
+                0.00017833709716796875,
+                -1.968709945678711
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 1,
+            "name": "GEO-sneaker",
+            "rotation": [
+                0.338186651468277,
+                0.0036064807791262865,
+                0.003940938971936703,
+                0.9410638809204102
+            ],
+            "scale": [
+                0.09301614761352539,
+                0.09301614761352539,
+                0.09301614761352539
+            ],
+            "translation": [
+                8.440017700195312e-05,
+                -0.04846577346324921,
+                -0.09537582844495773
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 2,
+            "name": "NurbsPath",
+            "translation": [
+                0.04631757736206055,
+                0.41028159856796265,
+                0.017189063131809235
+            ]
+        },
+        {
+            "mesh": 3,
+            "name": "NurbsPath.001",
+            "translation": [
+                0.04631757736206055,
+                0.41028159856796265,
+                0.017189063131809235
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 4,
+            "name": "GEO-sneaker.001",
+            "rotation": [
+                0.06734981387853622,
+                0.47990551590919495,
+                0.8745038509368896,
+                0.019947674125432968
+            ],
+            "scale": [
+                -0.09301614761352539,
+                -0.09301614761352539,
+                -0.09301614761352539
+            ],
+            "translation": [
+                -0.004269599914550781,
+                0.15024256706237793,
+                -0.43616360425949097
+            ]
+        },
+        {
+            "mesh": 5,
+            "name": "NurbsPath.002",
+            "rotation": [
+                0.040751561522483826,
+                -0.9990992546081543,
+                -0.00553398160263896,
+                0.010457704775035381
+            ],
+            "translation": [
+                0.015715599060058594,
+                0.9178322553634644,
+                -0.5315073132514954
+            ]
+        },
+        {
+            "children": [
+                10,
+                11,
+                12,
+                13,
+                14
+            ],
+            "name": "PR-sneakers",
+            "translation": [
+                7.437733173370361,
+                0.010438397526741028,
+                0.03129005432128906
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "25aa32201d806f22"
+            },
+            "name": "PR-snowman",
+            "translation": [
+                3.9606809616088867,
+                0.00017833709716796875,
+                -1.968709945678711
+            ]
+        },
+        {
+            "name": "PR-tennis_ball",
+            "translation": [
+                3.9606809616088867,
+                0.09694255888462067,
+                0.03129005432128906
+            ]
+        },
+        {
+            "name": "PR-trafic_cone",
+            "translation": [
+                5.960680961608887,
+                0.00017833709716796875,
+                0.03129005432128906
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "Lattice",
+            "rotation": [
+                -0.30070579051971436,
+                0,
+                0,
+                0.9537169933319092
+            ],
+            "scale": [
+                0.4486091136932373,
+                0.2874632477760315,
+                0.24594943225383759
+            ],
+            "translation": [
+                0,
+                0,
+                -0.022205844521522522
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 6,
+            "name": "GEO-welding-goggles",
+            "rotation": [
+                -0.2832489609718323,
+                0,
+                0,
+                0.9590464234352112
+            ],
+            "translation": [
+                0,
+                0,
+                0.022205844521522522
+            ]
+        },
+        {
+            "children": [
+                19,
+                20
+            ],
+            "name": "PR-welding_goggles",
+            "translation": [
+                4.893222808837891,
+                0.18475981056690216,
+                0.03129005432128906
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "945b5f78864455c8"
+            },
+            "name": "PR-fence_gate",
+            "translation": [
+                10.304159164428711,
+                0,
+                -7.397577285766602
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "2d69b37ce1521f39"
+            },
+            "name": "PR-pinda_camera",
+            "translation": [
+                6.022932052612305,
+                0.16423970460891724,
+                -0.32305288314819336
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "bf72642572a560e4",
+                "ant_landscape": {}
+            },
+            "name": "PR-shed",
+            "translation": [
+                7.044765472412109,
+                0,
+                -12.379913330078125
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "d932b92ab839f542"
+            },
+            "name": "LI-birch_tree_001",
+            "translation": [
+                -5,
+                0,
+                -8
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "40ccf3953b2f49b9"
+            },
+            "name": "LI-birch_tree_002",
+            "translation": [
+                -11,
+                0,
+                -8
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "ae49ba618d53b883"
+            },
+            "name": "LI-birch_tree_003",
+            "translation": [
+                -17,
+                0,
+                -8
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "d47ad644d7595eed"
+            },
+            "name": "LI-birch_tree_004",
+            "translation": [
+                -23,
+                0,
+                -8
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "72364ff6211bcdd7"
+            },
+            "name": "LI-birch_tree_005",
+            "translation": [
+                -29,
+                0,
+                -8
+            ]
+        },
+        {
+            "name": "LI-birch_tree_006",
+            "translation": [
+                -36,
+                0,
+                -8
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "0a72ecfd0c7ef019"
+            },
+            "name": "LI-pine_tree_001",
+            "translation": [
+                -5,
+                0,
+                0
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "5c72a741fb809d11"
+            },
+            "name": "LI-pine_tree_002",
+            "translation": [
+                -11,
+                0,
+                0
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "45d269fcbfdd983d"
+            },
+            "name": "LI-pine_tree_004",
+            "translation": [
+                -23,
+                0,
+                0
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "3dd59b4d623d1db0"
+            },
+            "name": "LI-pine_tree_005",
+            "translation": [
+                -29,
+                0,
+                0
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {},
+                "instance_asset_id": "51710804afbe2686"
+            },
+            "name": "LI-pine_tree_alt_001",
+            "translation": [
+                -22.90271759033203,
+                0,
+                12.096067428588867
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "944547a797706d2c"
+            },
+            "name": "LI-pine_tree_alt_002",
+            "translation": [
+                -29.974260330200195,
+                0,
+                12.274110794067383
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "7665b9ec9a84b6d4"
+            },
+            "name": "LI-pine_tree_003",
+            "translation": [
+                -17,
+                0,
+                0
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "e14cdb4d35ee4ffb"
+            },
+            "name": "LI-pine_tree_alt_004",
+            "translation": [
+                -16.896390914916992,
+                -0.007778942584991455,
+                12.050477981567383
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "24f6a617a24c00cb"
+            },
+            "name": "LI-pine_tree_alt_003",
+            "translation": [
+                -10.989941596984863,
+                -0.02525952458381653,
+                12.01676082611084
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {},
+                "instance_asset_id": "298836e4bb96c370"
+            },
+            "name": "LI-pine_tree_alt_005",
+            "translation": [
+                -5.035059928894043,
+                -0.007884100079536438,
+                11.994924545288086
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {},
+                "instance_asset_id": "0f6ace4dd900fb77"
+            },
+            "name": "LI-pine_tree_alpha",
+            "rotation": [
+                0,
+                -0.7071068286895752,
+                0,
+                0.7071068286895752
+            ],
+            "scale": [
+                2.4000000953674316,
+                2.4000000953674316,
+                2.4000000953674316
+            ],
+            "translation": [
+                -38.30051040649414,
+                -0.05709713697433472,
+                0.020094454288482666
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "55540ba42dc11ddc"
+            },
+            "name": "LI-tree_stump_001",
+            "translation": [
+                -29.10987663269043,
+                -0.00012111663818359375,
+                3.517322063446045
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "69accd380e9d9c36"
+            },
+            "name": "LI-tree_stump_002",
+            "rotation": [
+                0,
+                -0.8420842885971069,
+                0,
+                0.5393460392951965
+            ],
+            "translation": [
+                -25.039562225341797,
+                -0.0002872943878173828,
+                3.5237486362457275
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "92fa6a75039334f8",
+                "ant_landscape": {}
+            },
+            "name": "LI-tree_stump_003",
+            "rotation": [
+                0,
+                0.8590848445892334,
+                0,
+                0.5118331909179688
+            ],
+            "translation": [
+                -21.257423400878906,
+                -0.0004899501800537109,
+                3.4665703773498535
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "45de49be9c951da3"
+            },
+            "name": "LI-boulder_001",
+            "translation": [
+                4,
+                0,
+                5
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "fd952c5800f8048c"
+            },
+            "name": "LI-boulder_002",
+            "translation": [
+                7,
+                0,
+                5
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "18cca85f559429eb"
+            },
+            "name": "LI-boulder_003",
+            "translation": [
+                10,
+                0,
+                5
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "35d44fdfae0ea05d"
+            },
+            "name": "LI-boulder_004",
+            "translation": [
+                13,
+                0,
+                5
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "ff5ad63598bc35b6"
+            },
+            "name": "LI-boulder_005",
+            "translation": [
+                16,
+                0,
+                5
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "75538c1244bbc583"
+            },
+            "name": "LI-boulder_006",
+            "translation": [
+                19,
+                0,
+                5
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "ec56c359fbbc73fe"
+            },
+            "name": "LI-boulder_007",
+            "translation": [
+                22,
+                0,
+                5
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "e02e46d6a49c982c"
+            },
+            "name": "LI-boulder_small_001",
+            "translation": [
+                4,
+                0,
+                9
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "bdf82503a3f6dbb0"
+            },
+            "name": "LI-boulder_small_003",
+            "translation": [
+                6,
+                0,
+                9
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "850976140794f7fb"
+            },
+            "name": "LI-boulder_small_004",
+            "translation": [
+                8,
+                0,
+                9
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "f59931bd35ef9648"
+            },
+            "name": "LI-boulder_small_005",
+            "translation": [
+                10,
+                0,
+                9
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "fa0d7693ecb2c870"
+            },
+            "name": "LI-bush_001",
+            "translation": [
+                4,
+                0,
+                13
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "5f72cec3d1a5b7eb"
+            },
+            "name": "LI-bush_002",
+            "translation": [
+                7,
+                0,
+                13
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "6d254e23658c386e"
+            },
+            "name": "LI-bush_003",
+            "translation": [
+                10,
+                0,
+                13
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "15b86fd9a2600b93"
+            },
+            "name": "LI-bush_004",
+            "translation": [
+                13,
+                0,
+                13
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "7f759969aa3df6eb"
+            },
+            "name": "LI-bush_small_001",
+            "translation": [
+                16,
+                0,
+                13
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "031b8de0cde45dbc"
+            },
+            "name": "LI-bush_small_002",
+            "translation": [
+                18,
+                0,
+                13
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "9972fdda3fee7e71"
+            },
+            "name": "LI-bush_small_003",
+            "translation": [
+                21,
+                0,
+                13
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "e1b3a046adefadd1"
+            },
+            "name": "LI-log_001",
+            "translation": [
+                -4.6386590003967285,
+                0.03714790567755699,
+                18.185077667236328
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "7b83a2ca99f2b487"
+            },
+            "name": "LI-log_002",
+            "translation": [
+                -9.081863403320312,
+                0.03199866786599159,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "2bd9a5338fe586dc"
+            },
+            "name": "LI-log_003",
+            "translation": [
+                -0.6094843745231628,
+                -0.002101898193359375,
+                18.35507583618164
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "2f61786f56cef42f"
+            },
+            "name": "LI-grass_001",
+            "translation": [
+                4,
+                0,
+                22
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "26836d6c14b7315f"
+            },
+            "name": "LI-grass_002",
+            "translation": [
+                6,
+                0,
+                22
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "875ee1a6d6445425"
+            },
+            "name": "LI-grass_003",
+            "translation": [
+                8,
+                0,
+                22
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "56ea6b882b5fdf97"
+            },
+            "name": "LI-grass_004",
+            "translation": [
+                10,
+                0,
+                22
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "f78010b834118766"
+            },
+            "name": "LI-grass_005",
+            "translation": [
+                12,
+                0,
+                22
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "51880055ba9596e4"
+            },
+            "name": "LI-grass_006",
+            "translation": [
+                14,
+                0,
+                22
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "ddb1b248cb771881"
+            },
+            "name": "LI-grass_007",
+            "translation": [
+                16,
+                0,
+                22
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "8f4c1d7797af8dc1"
+            },
+            "name": "LI-grass_008",
+            "translation": [
+                18,
+                0,
+                22
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "16c087954a9bf299"
+            },
+            "name": "LI-grass_009",
+            "translation": [
+                20,
+                0,
+                22
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "f0f1d907be9235ae"
+            },
+            "name": "LI-grass_010",
+            "translation": [
+                22,
+                0,
+                22
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "2901e4e95b5fc66d"
+            },
+            "name": "LI-grass_011",
+            "translation": [
+                24,
+                0,
+                22
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "9194be720e38e46d"
+            },
+            "name": "LI-grass_012",
+            "translation": [
+                26,
+                0,
+                22
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "fcae32abcc75ea00"
+            },
+            "name": "LI-grass_013",
+            "translation": [
+                28,
+                0,
+                22
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "dabfa2a6a84a6daf"
+            },
+            "name": "LI-grass_014",
+            "translation": [
+                30,
+                0,
+                22
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "37913a3de4615bd3"
+            },
+            "name": "LI-grass_015",
+            "translation": [
+                32,
+                0,
+                22
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "e32e2c1336f97a05"
+            },
+            "name": "LI-grass_016",
+            "translation": [
+                34,
+                0,
+                22
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "6087be38bd458673"
+            },
+            "name": "LI-grass_017",
+            "translation": [
+                36,
+                0,
+                22
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "d3b0ff511a729ce7"
+            },
+            "name": "LI-grass_018",
+            "translation": [
+                38,
+                0,
+                22
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "4950b2133c4549e8"
+            },
+            "name": "LI-grass_019",
+            "translation": [
+                40,
+                0,
+                22
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "1c54b285e3492d47"
+            },
+            "name": "LI-grass_020",
+            "translation": [
+                42,
+                0,
+                22
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "8f79868dd836651b"
+            },
+            "name": "LI-reed_001",
+            "translation": [
+                4,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "d8cdc9504ec27a85"
+            },
+            "name": "LI-reed_002",
+            "translation": [
+                5,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "05b20d85811615db"
+            },
+            "name": "LI-reed_003",
+            "translation": [
+                6,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "3b48924e92070a68"
+            },
+            "name": "LI-reed_004",
+            "translation": [
+                7,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "722e1c9498612907"
+            },
+            "name": "LI-reed_005",
+            "translation": [
+                8,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "10c3f0181379d68b"
+            },
+            "name": "LI-reed_006",
+            "translation": [
+                9,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "74f59a79b3943cae"
+            },
+            "name": "LI-reed_007",
+            "translation": [
+                10,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "5f0ca6e01e48119f"
+            },
+            "name": "LI-reed_008",
+            "translation": [
+                11,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "26573a01462876a8"
+            },
+            "name": "LI-reed_009",
+            "translation": [
+                12,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "d196418c6df18d87"
+            },
+            "name": "LI-reed_010",
+            "translation": [
+                13,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "31411dd072f5d12f"
+            },
+            "name": "LI-reed_011",
+            "translation": [
+                14,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "d3fceddae70be5f1"
+            },
+            "name": "LI-reed_012",
+            "translation": [
+                15,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "bd382c2238737239"
+            },
+            "name": "LI-reed_013",
+            "translation": [
+                16,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "70df56c24e7079d2"
+            },
+            "name": "LI-reed_014",
+            "translation": [
+                17,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "ad4939d39ed86df3"
+            },
+            "name": "LI-reed_015",
+            "translation": [
+                18,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "58f6b7036084edbc"
+            },
+            "name": "LI-reed_016",
+            "translation": [
+                19,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "8cca58268a0aea3a"
+            },
+            "name": "LI-reed_017",
+            "translation": [
+                20,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "48d15af48cebee82"
+            },
+            "name": "LI-reed_018",
+            "translation": [
+                21,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "c2bdb3c60b328351"
+            },
+            "name": "LI-reed_019",
+            "translation": [
+                22,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "11bc9470413291ca"
+            },
+            "name": "LI-reed_020",
+            "translation": [
+                23,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "6ac61dd583b9b592"
+            },
+            "name": "LI-reed_021",
+            "translation": [
+                24,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "95e8374d65a65d51"
+            },
+            "name": "LI-reed_022",
+            "translation": [
+                25,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "7544fdb0f01e7976"
+            },
+            "name": "LI-reed_023",
+            "translation": [
+                26,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "d3a286f20bd45cfc"
+            },
+            "name": "LI-reed_024",
+            "translation": [
+                27,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "09d2c8ee5b958a84"
+            },
+            "name": "LI-reed_025",
+            "translation": [
+                28,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "0b1e4812c9b03491"
+            },
+            "name": "LI-reed_026",
+            "translation": [
+                29,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "f99d2aa13860b229"
+            },
+            "name": "LI-reed_027",
+            "translation": [
+                30,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "9975a0b79906e13d"
+            },
+            "name": "LI-reed_028",
+            "translation": [
+                31,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "200f4c52be6fc25f"
+            },
+            "name": "LI-reed_029",
+            "translation": [
+                32,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "f54fd90b83a65a80"
+            },
+            "name": "LI-reed_030",
+            "translation": [
+                33,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "924c0dba69a0543b"
+            },
+            "name": "LI-reed_031",
+            "translation": [
+                34,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "767043c0e14f78a4"
+            },
+            "name": "LI-reed_032",
+            "translation": [
+                35,
+                0,
+                20
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "6819ba51eef36041"
+            },
+            "name": "LI-bush_small_flat_001",
+            "translation": [
+                4,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "5f7e658d3918ea76"
+            },
+            "name": "LI-bush_small_flat_002",
+            "translation": [
+                7,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "ade9f0218e51f668"
+            },
+            "name": "LI-bush_small_flat_003",
+            "translation": [
+                10,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "71de574750794fe4"
+            },
+            "name": "LI-bush_small_flat_004",
+            "translation": [
+                13,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "8ffe1c91fb8f6b5f"
+            },
+            "name": "LI-bush_small_flat_005",
+            "translation": [
+                16,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "7daf1a88ef3c4175"
+            },
+            "name": "LI-bushlet_blue_delicate_001",
+            "translation": [
+                4,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "96b120aa8277fb6b"
+            },
+            "name": "LI-bushlet_blue_delicate_002",
+            "translation": [
+                6,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "218ae41b06bbcce3"
+            },
+            "name": "LI-bushlet_blue_delicate_003",
+            "translation": [
+                8,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "f2aa72d5918c26a0"
+            },
+            "name": "LI-bushlet_blue_delicate_004",
+            "translation": [
+                9,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "fae26a3047162dca"
+            },
+            "name": "LI-bushlet_blue_delicate_005",
+            "translation": [
+                10,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "9c53197a476fa552"
+            },
+            "name": "LI-bushlet_blue_delicate_006",
+            "translation": [
+                11.263121604919434,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "34ededc23685a7ac"
+            },
+            "name": "LI-bushlet_blue_fan_001",
+            "translation": [
+                14,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "fa9f88aa0f83eaa5"
+            },
+            "name": "LI-bushlet_blue_fan_002",
+            "translation": [
+                16,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "0ccb551ea36ec1db"
+            },
+            "name": "LI-bushlet_blue_fan_003",
+            "translation": [
+                18,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "fc845aac9d04d079"
+            },
+            "name": "LI-bushlet_blue_fan_004",
+            "translation": [
+                20,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "a5477358dfd1e3cf"
+            },
+            "name": "LI-bushlet_blue_fan_005",
+            "translation": [
+                22,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "eebc8934a605abff"
+            },
+            "name": "LI-bushlet_blue_fan_006",
+            "translation": [
+                24,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "08032d31fa1ec6ef"
+            },
+            "name": "LI-bushlet_branched_001",
+            "translation": [
+                27,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "95f249d5332c0f18"
+            },
+            "name": "LI-bushlet_branched_002",
+            "translation": [
+                28.35649299621582,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "78f6146f05996dca"
+            },
+            "name": "LI-bushlet_branched_003",
+            "translation": [
+                29.35649299621582,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "3c4b43daf4bbc72a"
+            },
+            "name": "LI-bushlet_branched_004",
+            "translation": [
+                30.35649299621582,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "67c7d8a1bc83115c"
+            },
+            "name": "LI-bushlet_branched_005",
+            "translation": [
+                31.35649299621582,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "986703d8439c39fd"
+            },
+            "name": "LI-bushlet_branched_006",
+            "translation": [
+                32.35649108886719,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "197dadd136b4dd6e"
+            },
+            "name": "LI-bushlet_white_garland_001",
+            "translation": [
+                36.295372009277344,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "f2bff50c24ba6428"
+            },
+            "name": "LI-bushlet_white_garland_002",
+            "translation": [
+                38,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "be4832d39acd6197"
+            },
+            "name": "LI-bushlet_white_garland_003",
+            "translation": [
+                39,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "4fde8c015b1e9be7"
+            },
+            "name": "LI-bushlet_white_garland_004",
+            "translation": [
+                40.607845306396484,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "bb883b10a3c5e1be"
+            },
+            "name": "LI-bushlet_white_garland_005",
+            "translation": [
+                42.33723068237305,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "f1f0c2bd86da0aa2"
+            },
+            "name": "LI-bushlet_white_garland_006",
+            "translation": [
+                43.607845306396484,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "89300dc4c60e4a18"
+            },
+            "name": "LI-bushlet_white_garland_007",
+            "translation": [
+                44.82512664794922,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "fbcad448223ed6f8"
+            },
+            "name": "LI-bushlet_white_garland_008",
+            "translation": [
+                46.660369873046875,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "c5f08da18134b566"
+            },
+            "name": "LI-dogwood_001",
+            "translation": [
+                50,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "3b4dc7bda84f0a64"
+            },
+            "name": "LI-dogwood_002",
+            "translation": [
+                51,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "2c39d8edeb4f0195"
+            },
+            "name": "LI-dogwood_003",
+            "translation": [
+                52,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "68bcd05e1be2fda6"
+            },
+            "name": "LI-dogwood_004",
+            "translation": [
+                53,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "ba0b2272cde8b111"
+            },
+            "name": "LI-dogwood_005",
+            "translation": [
+                54,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "09000fa03ed6e94f"
+            },
+            "name": "LI-dogwood_006",
+            "translation": [
+                55,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "ac3d78a86c38036e"
+            },
+            "name": "LI-dogwood_007",
+            "translation": [
+                56,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "8e0e029357cc6f7c"
+            },
+            "name": "LI-dogwood_008",
+            "translation": [
+                57,
+                0,
+                18
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "2ccdd0322f96edb0"
+            },
+            "name": "LI-root_01",
+            "rotation": [
+                0,
+                -0.7071067094802856,
+                0,
+                0.7071068286895752
+            ],
+            "translation": [
+                -3.092647075653076,
+                0.05557744950056076,
+                14.972578048706055
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "7bb1434f1706b4c6"
+            },
+            "name": "LI-root_02",
+            "rotation": [
+                0,
+                -0.7071067094802856,
+                0,
+                0.7071068286895752
+            ],
+            "translation": [
+                -4.089188575744629,
+                0.04243110120296478,
+                14.981155395507812
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "c1ff9ce0d17b158d"
+            },
+            "name": "LI-root_03",
+            "rotation": [
+                0,
+                -0.7071067094802856,
+                0,
+                0.7071068286895752
+            ],
+            "translation": [
+                -5.098661422729492,
+                0.029345978051424026,
+                14.980786323547363
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "6e2582a0e051d4e2"
+            },
+            "name": "LI-root_04",
+            "rotation": [
+                0,
+                -0.7071067094802856,
+                0,
+                0.7071068286895752
+            ],
+            "translation": [
+                -6.110877990722656,
+                0.020900877192616463,
+                14.984375
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "7ed0f7ad81e6dc86"
+            },
+            "name": "LI-root_05",
+            "rotation": [
+                0,
+                -0.7071067094802856,
+                0,
+                0.7071068286895752
+            ],
+            "translation": [
+                -7.015783309936523,
+                0,
+                14.51050090789795
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "54dad74ed5730b5f"
+            },
+            "name": "LI-root_06",
+            "rotation": [
+                0,
+                -0.7071067094802856,
+                0,
+                0.7071068286895752
+            ],
+            "translation": [
+                -6.978599548339844,
+                0,
+                15.491098403930664
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "8a9566cc4d0a4b40"
+            },
+            "name": "LI-birch_outgrowth_001",
+            "translation": [
+                -1.9929825067520142,
+                -0.0012636184692382812,
+                3.1612064838409424
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "194b3426792d5b89"
+            },
+            "name": "LI-birch_outgrowth_002",
+            "translation": [
+                -4.898260116577148,
+                0.000395776703953743,
+                3.8234288692474365
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "cc7e543eee7da945"
+            },
+            "name": "LI-birch_outgrowth_003",
+            "translation": [
+                -8.04703426361084,
+                0.0006742477416992188,
+                3.7589776515960693
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "f81bc73195c45080"
+            },
+            "name": "LI-birch_outgrowth_004",
+            "translation": [
+                -10.934804916381836,
+                0.0006380081176757812,
+                3.9165008068084717
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "f0430de57950d75f"
+            },
+            "name": "LI-birch_outgrowth_005",
+            "rotation": [
+                0.0015555144054815173,
+                -0.007333358284085989,
+                -0.03876499831676483,
+                0.9992202520370483
+            ],
+            "translation": [
+                -13.95720100402832,
+                0.00040531158447265625,
+                3.913872003555298
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "d38d3e55dd2381a2",
+                "ant_landscape": {}
+            },
+            "name": "LI-birch_outgrowth_006",
+            "translation": [
+                -17.068477630615234,
+                0.0006265640258789062,
+                4.11265754699707
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "doubleSided": true,
+            "extras": {
+                "asset_id": "0d0053e129ab4c3d"
+            },
+            "name": "asset_zoo-ground_snow",
+            "normalTexture": {
+                "index": 0,
+                "scale": 0.6599999666213989
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                },
+                "metallicFactor": 0,
+                "roughnessFactor": 0.7567975521087646
+            }
+        },
+        {
+            "doubleSided": true,
+            "name": "shoe",
+            "pbrMetallicRoughness": {
+                "metallicFactor": 0,
+                "roughnessFactor": 0.5
+            }
+        },
+        {
+            "doubleSided": true,
+            "name": "dark_cyan",
+            "normalTexture": {
+                "index": 2,
+                "scale": 0.800000011920929
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 3
+                },
+                "metallicFactor": 0,
+                "roughnessFactor": 0.5
+            }
+        },
+        {
+            "doubleSided": true,
+            "name": "black",
+            "normalTexture": {
+                "index": 4,
+                "scale": 0.699999988079071
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 5
+                },
+                "metallicFactor": 0,
+                "roughnessFactor": 0.5
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Plane",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "Plane",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 4,
+                        "NORMAL": 5,
+                        "TEXCOORD_0": 6,
+                        "COLOR_0": 7,
+                        "COLOR_1": 8
+                    },
+                    "indices": 9,
+                    "material": 1
+                }
+            ]
+        },
+        {
+            "name": "NurbsPath",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 10,
+                        "NORMAL": 11,
+                        "TEXCOORD_0": 12
+                    },
+                    "indices": 13
+                }
+            ]
+        },
+        {
+            "name": "NurbsPath.001",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 14,
+                        "NORMAL": 15,
+                        "TEXCOORD_0": 16
+                    },
+                    "indices": 17
+                }
+            ]
+        },
+        {
+            "name": "Plane",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 18,
+                        "NORMAL": 19,
+                        "TEXCOORD_0": 20,
+                        "COLOR_0": 21,
+                        "COLOR_1": 22
+                    },
+                    "indices": 9,
+                    "material": 1
+                }
+            ]
+        },
+        {
+            "name": "NurbsPath.002",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 23,
+                        "NORMAL": 24,
+                        "TEXCOORD_0": 25
+                    },
+                    "indices": 17
+                }
+            ]
+        },
+        {
+            "name": "Circle.009",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 26,
+                        "NORMAL": 27,
+                        "TEXCOORD_0": 28
+                    },
+                    "indices": 29,
+                    "material": 2
+                },
+                {
+                    "attributes": {
+                        "POSITION": 30,
+                        "NORMAL": 31,
+                        "TEXCOORD_0": 32
+                    },
+                    "indices": 33,
+                    "material": 3
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        },
+        {
+            "sampler": 0,
+            "source": 2
+        },
+        {
+            "sampler": 0,
+            "source": 3
+        },
+        {
+            "sampler": 0,
+            "source": 2
+        },
+        {
+            "sampler": 0,
+            "source": 3
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/textures/snow_gen_normal-01.png"
+            },
+            "mimeType": "image/png",
+            "name": "snow_gen_normal-01",
+            "uri": "../../textures/snow_gen_normal-01.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/textures/snow_gen_albedo-01.png"
+            },
+            "mimeType": "image/png",
+            "name": "snow_gen_albedo-01",
+            "uri": "../../textures/snow_gen_albedo-01.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/sets/textures/paper_crumpled-normal.png"
+            },
+            "mimeType": "image/png",
+            "name": "paper_crumpled-normal",
+            "uri": "../textures/paper_crumpled-normal.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/textures/paper_crumpled_albedo.png"
+            },
+            "mimeType": "image/png",
+            "name": "paper_crumpled_albedo",
+            "uri": "../../textures/paper_crumpled_albedo.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 4,
+            "max": [
+                1,
+                0,
+                1
+            ],
+            "min": [
+                -1,
+                0,
+                -1
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 4,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 4,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5123,
+            "count": 6,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5126,
+            "count": 380,
+            "max": [
+                1.0311222076416016,
+                2.569831609725952,
+                2.2454073429107666
+            ],
+            "min": [
+                -1.0311222076416016,
+                0,
+                -1.1965808868408203
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5126,
+            "count": 380,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 6,
+            "componentType": 5126,
+            "count": 380,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 7,
+            "componentType": 5121,
+            "count": 380,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 8,
+            "componentType": 5123,
+            "count": 380,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 9,
+            "componentType": 5123,
+            "count": 1680,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 10,
+            "componentType": 5126,
+            "count": 98,
+            "max": [
+                -0.023907529190182686,
+                0.7531237602233887,
+                0.04020395502448082
+            ],
+            "min": [
+                -0.11516809463500977,
+                -0.44470518827438354,
+                -0.575689435005188
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 11,
+            "componentType": 5126,
+            "count": 98,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 12,
+            "componentType": 5126,
+            "count": 98,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 13,
+            "componentType": 5123,
+            "count": 468,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 14,
+            "componentType": 5126,
+            "count": 194,
+            "max": [
+                0.10201063752174377,
+                0.34737953543663025,
+                0.15708550810813904
+            ],
+            "min": [
+                -0.2076175957918167,
+                -0.4984365701675415,
+                -0.013460901565849781
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 15,
+            "componentType": 5126,
+            "count": 194,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 16,
+            "componentType": 5126,
+            "count": 194,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 17,
+            "componentType": 5123,
+            "count": 804,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 18,
+            "componentType": 5126,
+            "count": 380,
+            "max": [
+                1.0311222076416016,
+                2.569831609725952,
+                2.2454073429107666
+            ],
+            "min": [
+                -1.0311222076416016,
+                0,
+                -1.1965808868408203
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 19,
+            "componentType": 5126,
+            "count": 380,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 20,
+            "componentType": 5126,
+            "count": 380,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 21,
+            "componentType": 5121,
+            "count": 380,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 22,
+            "componentType": 5123,
+            "count": 380,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 23,
+            "componentType": 5126,
+            "count": 194,
+            "max": [
+                0.16344590485095978,
+                0.0366961695253849,
+                0.14672592282295227
+            ],
+            "min": [
+                -0.1461823284626007,
+                -0.804906964302063,
+                -0.01607959344983101
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 24,
+            "componentType": 5126,
+            "count": 194,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 25,
+            "componentType": 5126,
+            "count": 194,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 26,
+            "componentType": 5126,
+            "count": 472,
+            "max": [
+                0.21897992491722107,
+                0.12824763357639313,
+                0.008280204609036446
+            ],
+            "min": [
+                -0.21920862793922424,
+                -0.11202753335237503,
+                -0.1353643387556076
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 27,
+            "componentType": 5126,
+            "count": 472,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 28,
+            "componentType": 5126,
+            "count": 472,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 29,
+            "componentType": 5123,
+            "count": 1764,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 30,
+            "componentType": 5126,
+            "count": 886,
+            "max": [
+                0.22926804423332214,
+                0.10086695104837418,
+                0.04337165504693985
+            ],
+            "min": [
+                -0.22448597848415375,
+                -0.10081792622804642,
+                -0.040616944432258606
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 31,
+            "componentType": 5126,
+            "count": 886,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 32,
+            "componentType": 5126,
+            "count": 886,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 33,
+            "componentType": 5123,
+            "count": 3552,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 48,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 48,
+            "byteOffset": 48,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 32,
+            "byteOffset": 96,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 12,
+            "byteOffset": 128,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 4560,
+            "byteOffset": 140,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 4560,
+            "byteOffset": 4700,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 3040,
+            "byteOffset": 9260,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1520,
+            "byteOffset": 12300,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 3040,
+            "byteOffset": 13820,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 3360,
+            "byteOffset": 16860,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1176,
+            "byteOffset": 20220,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1176,
+            "byteOffset": 21396,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 784,
+            "byteOffset": 22572,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 936,
+            "byteOffset": 23356,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2328,
+            "byteOffset": 24292,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2328,
+            "byteOffset": 26620,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1552,
+            "byteOffset": 28948,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1608,
+            "byteOffset": 30500,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 4560,
+            "byteOffset": 32108,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 4560,
+            "byteOffset": 36668,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 3040,
+            "byteOffset": 41228,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1520,
+            "byteOffset": 44268,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 3040,
+            "byteOffset": 45788,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2328,
+            "byteOffset": 48828,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2328,
+            "byteOffset": 51156,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1552,
+            "byteOffset": 53484,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 5664,
+            "byteOffset": 55036,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 5664,
+            "byteOffset": 60700,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 3776,
+            "byteOffset": 66364,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 3528,
+            "byteOffset": 70140,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 10632,
+            "byteOffset": 73668,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 10632,
+            "byteOffset": 84300,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 7088,
+            "byteOffset": 94932,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 7104,
+            "byteOffset": 102020,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 109124,
+            "uri": "SE-asset_zoo.bin"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://ded8ho7fydttc"]
+
+[ext_resource type="PackedScene" uid="uid://ch6vit0yy8227" path="res://assets/lib/trees/tree_stumps/LI-tree_stump_sitting_005.gltf" id="1_p804a"]
+[ext_resource type="Script" uid="uid://bj34k0ajpsopu" path="res://source/obstacles/generic_obstacle.gd" id="2_18jrj"]
+
+[node name="LI-tree_stump_sitting_005" type="Node3D"]
+
+[node name="LI-tree_stump_sitting_005-IMPORT" parent="." instance=ExtResource("1_p804a")]
+script = ExtResource("2_18jrj")

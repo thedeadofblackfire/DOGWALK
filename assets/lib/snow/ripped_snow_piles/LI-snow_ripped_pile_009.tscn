@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://ddn2m5nhkyjcu"]
+
+[ext_resource type="PackedScene" uid="uid://7ufiqchyr4v5" path="res://assets/lib/snow/ripped_snow_piles/LI-snow_ripped_pile_009.gltf" id="1_lr0cb"]
+[ext_resource type="Script" uid="uid://bbdaeayyvnb1e" path="res://source/obstacles/snow.gd" id="2_gia7x"]
+
+[node name="LI-snow_ripped_pile_009" type="Node3D"]
+
+[node name="LI-snow_ripped_pile_009-IMPORT" type="Area3D" parent="." instance=ExtResource("1_lr0cb")]
+script = ExtResource("2_gia7x")

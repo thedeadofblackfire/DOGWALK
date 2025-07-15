@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bsxq0j232fhoq"]
+
+[ext_resource type="PackedScene" uid="uid://c4fowdtktw428" path="res://assets/lib/stone_plateaus/LI-stone_plateau_002.gltf" id="1_8ddht"]
+[ext_resource type="Script" uid="uid://bj34k0ajpsopu" path="res://source/obstacles/generic_obstacle.gd" id="2_paain"]
+
+[node name="LI-stone_plateau_002" type="Node3D"]
+
+[node name="LI-stone_plateau_002-IMPORT" parent="." instance=ExtResource("1_8ddht")]
+script = ExtResource("2_paain")

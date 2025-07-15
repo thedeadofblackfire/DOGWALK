@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dyejg4rfqou84"]
+
+[ext_resource type="Texture2D" uid="uid://va738vy0khuk" path="res://assets/textures/pond_underwater.png" id="1_dfkp7"]
+
+[resource]
+render_priority = -12
+disable_fog = true
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_dfkp7")
+metallic_specular = 0.22
+roughness = 0.5
+disable_receive_shadows = true

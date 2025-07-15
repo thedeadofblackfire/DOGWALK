@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dqnrgq8nrbccr"]
+
+[ext_resource type="PackedScene" path="res://assets/sets/clearing/SL-clearing-props.gltf" id="1_npvqt"]
+
+[node name="SL-clearing-props" type="Node3D"]
+
+[node name="SL-clearing-props-IMPORT" type="StaticBody3D" parent="." instance=ExtResource("1_npvqt")]

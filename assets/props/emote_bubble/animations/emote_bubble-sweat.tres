@@ -1,0 +1,18 @@
+[gd_resource type="SpriteFrames" load_steps=3 format=3 uid="uid://hrjac8e138fg"]
+
+[ext_resource type="Texture2D" uid="uid://dpixfbft61fyx" path="res://assets/props/emote_bubble/animations/sweat/sweat_1.png" id="1_wclod"]
+[ext_resource type="Texture2D" uid="uid://bijybupfbs5y0" path="res://assets/props/emote_bubble/animations/sweat/sweat_2.png" id="2_yutac"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_wclod")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_yutac")
+}],
+"loop": true,
+"name": &"Loop",
+"speed": 2.0
+}]

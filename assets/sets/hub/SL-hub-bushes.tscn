@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dlcoc6txpysu2"]
+
+[ext_resource type="PackedScene" path="res://assets/sets/hub/SL-hub-bushes.gltf" id="1_mvx0l"]
+
+[node name="SL-hub-bushes" type="Node3D"]
+
+[node name="SL-hub-bushes-IMPORT" type="Area3D" parent="." instance=ExtResource("1_mvx0l")]

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://hi4bx68e5r8n"]
+
+[ext_resource type="PackedScene" uid="uid://dwjcrsmc8mww4" path="res://assets/lib/stone_walls/stone_walls/LI-stone_wall_012.gltf" id="1_db18e"]
+[ext_resource type="Script" uid="uid://vxna5piwf7rl" path="res://source/obstacles/stone_wall.gd" id="2_i434r"]
+
+[node name="LI-stone_wall_012" type="Node3D"]
+
+[node name="LI-stone_wall_012-IMPORT" type="StaticBody3D" parent="." instance=ExtResource("1_db18e")]
+script = ExtResource("2_i434r")

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://da1qivm2bh4kj"]
+
+[ext_resource type="PackedScene" uid="uid://b1vx7v1gqpvub" path="res://assets/sets/clearing/SL-clearing-snow.gltf" id="1_2wjb1"]
+[ext_resource type="Script" uid="uid://bbdaeayyvnb1e" path="res://source/obstacles/snow.gd" id="2_1u8cj"]
+
+[node name="SL-clearing-snow" type="Node3D"]
+
+[node name="SL-clearing-snow-IMPORT" parent="." instance=ExtResource("1_2wjb1")]
+script = ExtResource("2_1u8cj")

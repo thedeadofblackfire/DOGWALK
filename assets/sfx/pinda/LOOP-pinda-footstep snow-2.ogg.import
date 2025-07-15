@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://mct3fnhnfekp"
+path="res://.godot/imported/LOOP-pinda-footstep snow-2.ogg-7856e75ddfba279fcb99336ac137a858.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sfx/pinda/LOOP-pinda-footstep snow-2.ogg"
+dest_files=["res://.godot/imported/LOOP-pinda-footstep snow-2.ogg-7856e75ddfba279fcb99336ac137a858.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

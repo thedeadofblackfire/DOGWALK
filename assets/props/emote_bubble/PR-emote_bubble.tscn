@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://qp2qtokjdyhk"]
+
+[ext_resource type="PackedScene" uid="uid://b6jtbivooedkk" path="res://assets/props/emote_bubble/PR-emote_bubble.gltf" id="1_5gr5y"]
+
+[node name="PR-emote_bubble" type="Node3D"]
+
+[node name="PR-emote_bubble-IMPORT" parent="." instance=ExtResource("1_5gr5y")]

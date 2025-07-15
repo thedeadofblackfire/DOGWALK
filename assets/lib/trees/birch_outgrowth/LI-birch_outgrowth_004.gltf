@@ -1,0 +1,397 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 1,
+                    "append_parent_collection": 1,
+                    "asset_name": "LI-birch_outgrowth_004"
+                },
+                "asset_type": "ASSET",
+                "root_type": "STATIC",
+                "asset_id": "f81bc73195c45080"
+            },
+            "name": "LI-birch_outgrowth_004",
+            "nodes": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 0,
+            "name": "GEO-birch_outgrowth_004"
+        },
+        {
+            "extras": {
+                "instance_asset_id": "319cd1972a910bac"
+            },
+            "name": "LI-birch_branch_009.002",
+            "rotation": [
+                -0.6398603320121765,
+                0.48742812871932983,
+                0.5134977102279663,
+                0.29885226488113403
+            ],
+            "translation": [
+                -0.06965956836938858,
+                0.7485588192939758,
+                -0.1904735416173935
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "305fc54be4d78c2e"
+            },
+            "name": "LI-birch_branch_012.003",
+            "rotation": [
+                0.08777998387813568,
+                -0.13908050954341888,
+                -0.9686982035636902,
+                0.18594437837600708
+            ],
+            "scale": [
+                0.796719491481781,
+                0.796719491481781,
+                0.7967194318771362
+            ],
+            "translation": [
+                -0.039816662669181824,
+                0.21387693285942078,
+                0.05799633264541626
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "90c3f1592f9c1209"
+            },
+            "name": "LI-birch_branch_013.003",
+            "rotation": [
+                -0.6654784083366394,
+                0.2542099058628082,
+                0.21562129259109497,
+                0.6678498387336731
+            ],
+            "translation": [
+                0.16601653397083282,
+                0.6320993304252625,
+                0.16276924312114716
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {},
+                "booleans": {},
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.4000000059604645,
+                    "height": 1.5,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-birch_outgrowth_004",
+            "translation": [
+                0,
+                0.7312631607055664,
+                0
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.160",
+            "translation": [
+                0.050475843250751495,
+                0.4109526574611664,
+                0.16201473772525787
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.161",
+            "translation": [
+                0.09158007800579071,
+                0.4109526574611664,
+                -0.07010333240032196
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.162",
+            "translation": [
+                -0.05470266938209534,
+                0.4109526574611664,
+                -0.17407289147377014
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.163",
+            "translation": [
+                -0.1308664083480835,
+                0.4109526574611664,
+                -0.013282760977745056
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.164",
+            "translation": [
+                -0.0970158576965332,
+                0.4109526574611664,
+                0.09431363642215729
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        0.9063391089439392,
+                        0.8076674938201904,
+                        0.662623941898346,
+                        1.0
+                    ],
+                    "wear_strength": 1.0,
+                    "wear_start": 0.3700000047683716,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.7000000476837158,
+                    "wear_distortion_scale": 200.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.20000000298023224,
+                    "normal_use_uv2": 1.0
+                },
+                "asset_id": "5314e9e53b2ce6c1"
+            },
+            "name": "birch_tree_outgrowths",
+            "normalTexture": {
+                "index": 0,
+                "texCoord": 1
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                },
+                "metallicRoughnessTexture": {
+                    "index": 2
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "NurbsPath.004",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2,
+                        "TEXCOORD_1": 3,
+                        "COLOR_0": 4
+                    },
+                    "indices": 5,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        },
+        {
+            "sampler": 0,
+            "source": 2
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/textures/paper_rough_256.png"
+            },
+            "mimeType": "image/png",
+            "name": "paper_rough_256",
+            "uri": "../../../textures/paper_rough_256.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/birch_tree_albedo_01.png"
+            },
+            "mimeType": "image/png",
+            "name": "birch_tree_albedo_01",
+            "uri": "../../textures/birch_tree_albedo_01.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/birch_tree_roughness_01.png"
+            },
+            "mimeType": "image/png",
+            "name": "birch_tree_roughness_01",
+            "uri": "../../textures/birch_tree_roughness_01.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 205,
+            "max": [
+                0.1803051084280014,
+                0.8052707314491272,
+                0.1747525930404663
+            ],
+            "min": [
+                -0.11509625613689423,
+                -0.020011037588119507,
+                -0.22633446753025055
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 205,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 205,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5126,
+            "count": 205,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5123,
+            "count": 205,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5123,
+            "count": 1011,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 2460,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2460,
+            "byteOffset": 2460,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1640,
+            "byteOffset": 4920,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1640,
+            "byteOffset": 6560,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1640,
+            "byteOffset": 8200,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2022,
+            "byteOffset": 9840,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 11864,
+            "uri": "LI-birch_outgrowth_004.bin"
+        }
+    ]
+}

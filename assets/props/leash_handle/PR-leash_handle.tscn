@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqocfipacbfld"]
+
+[ext_resource type="PackedScene" uid="uid://cqdvkkmiursgl" path="res://assets/props/leash_handle/PR-leash_handle.gltf" id="1_4jp6t"]
+[ext_resource type="AnimationLibrary" uid="uid://b1yis75bna4ok" path="res://assets/props/leash_handle/PR-leash_handle-anim_lib.tres" id="2_33guw"]
+
+[node name="PR-leash_handle" type="Node3D"]
+
+[node name="PR-leash_handle-IMPORT" parent="." instance=ExtResource("1_4jp6t")]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../PR-leash_handle-IMPORT")
+libraries = {
+&"PR-leash_handle-anim_lib": ExtResource("2_33guw")
+}

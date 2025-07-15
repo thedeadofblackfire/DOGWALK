@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://j1qyuxkoobae"]
+
+[ext_resource type="PackedScene" path="res://assets/lib/signs/LI-pond_sign-right.gltf" id="1_f80sa"]
+
+[node name="LI-pond_sign-right" type="Node3D"]
+
+[node name="LI-pond_sign-right-IMPORT" type="StaticBody3D" parent="." instance=ExtResource("1_f80sa")]

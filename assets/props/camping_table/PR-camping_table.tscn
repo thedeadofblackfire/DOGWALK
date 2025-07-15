@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmbrjo063v2hr"]
+
+[ext_resource type="PackedScene" uid="uid://cy55787cj806h" path="res://assets/props/camping_table/PR-camping_table.gltf" id="1_5hsbf"]
+[ext_resource type="Script" uid="uid://bj34k0ajpsopu" path="res://source/obstacles/generic_obstacle.gd" id="2_v8atk"]
+
+[node name="PR-camping_table" type="Node3D"]
+
+[node name="PR-camping_table-IMPORT" parent="." instance=ExtResource("1_5hsbf")]
+script = ExtResource("2_v8atk")

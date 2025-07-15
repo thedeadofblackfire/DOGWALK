@@ -1,0 +1,1627 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 1,
+                    "append_parent_collection": 1,
+                    "asset_name": "LI-bush_small_003"
+                },
+                "asset_type": "ASSET",
+                "root_type": "STATIC",
+                "asset_id": "9972fdda3fee7e71"
+            },
+            "name": "LI-bush_small_003",
+            "nodes": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 0,
+            "name": "GEO-bush_foliage-snowy_small_001.007",
+            "rotation": [
+                -0.6260465979576111,
+                -0.16062474250793457,
+                -0.21031691133975983,
+                0.7335067987442017
+            ],
+            "translation": [
+                0.006082087755203247,
+                0.8519289493560791,
+                0.1689775139093399
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 1,
+            "name": "GEO-bush_foliage-snowy_small_002.003",
+            "rotation": [
+                -0.5507389307022095,
+                0.3442808985710144,
+                0.1736404001712799,
+                0.7402745485305786
+            ],
+            "translation": [
+                0.14092838764190674,
+                0.7365182042121887,
+                0.1298043429851532
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 2,
+            "name": "GEO-bush_foliage-snowy_small_003.005",
+            "rotation": [
+                -0.36836332082748413,
+                -0.6284233331680298,
+                -0.38563066720962524,
+                0.566287636756897
+            ],
+            "scale": [
+                0.8783261179924011,
+                0.8783261179924011,
+                0.8783261179924011
+            ],
+            "translation": [
+                -0.18308858573436737,
+                0.6954520344734192,
+                0.004328861832618713
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 3,
+            "name": "GEO-bush_foliage_small_001.005",
+            "rotation": [
+                -0.17925573885440826,
+                -0.750943660736084,
+                -0.5417847037315369,
+                0.33229556679725647
+            ],
+            "scale": [
+                0.8383290767669678,
+                0.8383291363716125,
+                0.8383290767669678
+            ],
+            "translation": [
+                -0.06565332412719727,
+                0.6593058705329895,
+                -0.34503084421157837
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 4,
+            "name": "GEO-bush_foliage_small_001.006",
+            "rotation": [
+                -0.12387391924858093,
+                -0.8493887186050415,
+                -0.4770559072494507,
+                0.18871064484119415
+            ],
+            "translation": [
+                0.11643093824386597,
+                0.5719672441482544,
+                -0.4003799557685852
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 5,
+            "name": "GEO-bush_foliage_small_002.005",
+            "rotation": [
+                -0.3401561677455902,
+                0.7037897706031799,
+                0.5212461352348328,
+                0.3424561619758606
+            ],
+            "scale": [
+                0.8950004577636719,
+                0.8950004577636719,
+                0.8950005769729614
+            ],
+            "translation": [
+                0.08837068825960159,
+                0.7160786390304565,
+                -0.06012127548456192
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 6,
+            "name": "GEO-bush_foliage_small_002.006",
+            "rotation": [
+                -0.44546979665756226,
+                0.1314001828432083,
+                0.15514257550239563,
+                0.8719067573547363
+            ],
+            "scale": [
+                0.782169759273529,
+                0.7821698188781738,
+                0.7821698784828186
+            ],
+            "translation": [
+                -0.005273222923278809,
+                0.615415096282959,
+                0.4155671000480652
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 7,
+            "name": "GEO-bush_foliage-snowy_small_001.008",
+            "rotation": [
+                0.028777500614523888,
+                -0.7349892854690552,
+                -0.6766918897628784,
+                0.03241545706987381
+            ],
+            "translation": [
+                -0.14749406278133392,
+                0.8759493231773376,
+                -0.06085190922021866
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 8,
+            "name": "GEO-bush_foliage_small_004.006",
+            "rotation": [
+                -0.24868841469287872,
+                0.7894375324249268,
+                0.15638647973537445,
+                0.5389673113822937
+            ],
+            "scale": [
+                0.7743855714797974,
+                0.7743855118751526,
+                0.7743855118751526
+            ],
+            "translation": [
+                0.43804872035980225,
+                0.5158353447914124,
+                0.1481991708278656
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 9,
+            "name": "GEO-bush_foliage_009.003",
+            "rotation": [
+                -0.2109251767396927,
+                -0.6922499537467957,
+                -0.22363503277301788,
+                0.6529073715209961
+            ],
+            "translation": [
+                -0.28572729229927063,
+                0.8489158749580383,
+                0.1422586292028427
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 10,
+            "name": "GEO-bush_foliage_004.010",
+            "rotation": [
+                -0.32287469506263733,
+                0.7264373898506165,
+                0.41664254665374756,
+                0.44096460938453674
+            ],
+            "scale": [
+                0.7249925136566162,
+                0.724992573261261,
+                0.7249925136566162
+            ],
+            "translation": [
+                0.42498311400413513,
+                0.7817263007164001,
+                0.13535499572753906
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 11,
+            "name": "GEO-bush_foliage_top_004.003",
+            "rotation": [
+                0.012672172859311104,
+                -0.006917700637131929,
+                0.08266686648130417,
+                0.9964726567268372
+            ],
+            "scale": [
+                1.1174445152282715,
+                1.1174445152282715,
+                1.1174445152282715
+            ],
+            "translation": [
+                -0.05740342289209366,
+                0.7547754645347595,
+                0.1681930422782898
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 12,
+            "name": "GEO-bush_foliage_small_002.007",
+            "rotation": [
+                -0.5931011438369751,
+                -0.28679609298706055,
+                -0.14225898683071136,
+                0.7387431263923645
+            ],
+            "scale": [
+                0.8950004577636719,
+                0.8950004577636719,
+                0.8950005769729614
+            ],
+            "translation": [
+                -0.06723137199878693,
+                0.5886878967285156,
+                -0.04682862013578415
+            ]
+        },
+        {
+            "extras": {
+                "booleans": {},
+                "ant_landscape": {},
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.5389999747276306,
+                    "height": 2.629999876022339,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-bush_small_003",
+            "translation": [
+                0.022663921117782593,
+                0,
+                0.016997942700982094
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "7bd0b7549400e298",
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        0.7246307134628296,
+                        0.8592348694801331,
+                        0.6143835783004761,
+                        1.0
+                    ],
+                    "wear_strength": 0.0,
+                    "wear_start": 0.0,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.5,
+                    "wear_distortion_scale": 100.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.15000000596046448,
+                    "normal_use_uv2": 1.0
+                },
+                "yp": {
+                    "active_ypaint_node": ""
+                }
+            },
+            "name": "bush",
+            "normalTexture": {
+                "index": 0,
+                "texCoord": 1
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                },
+                "metallicRoughnessTexture": {
+                    "index": 2
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "bush_foliage_atlas_albedo_01.115",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2,
+                        "TEXCOORD_1": 3
+                    },
+                    "indices": 4,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "bush_foliage_atlas_albedo_01.116",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 5,
+                        "NORMAL": 6,
+                        "TEXCOORD_0": 7,
+                        "TEXCOORD_1": 8
+                    },
+                    "indices": 9,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "bush_foliage_atlas_albedo_01.117",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 10,
+                        "NORMAL": 11,
+                        "TEXCOORD_0": 12,
+                        "TEXCOORD_1": 13
+                    },
+                    "indices": 14,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "bush_foliage_atlas_albedo_01.118",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 15,
+                        "NORMAL": 16,
+                        "TEXCOORD_0": 17,
+                        "TEXCOORD_1": 18,
+                        "COLOR_0": 19,
+                        "COLOR_1": 20
+                    },
+                    "indices": 21,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "bush_foliage_atlas_albedo_01.119",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 22,
+                        "NORMAL": 23,
+                        "TEXCOORD_0": 24,
+                        "TEXCOORD_1": 25
+                    },
+                    "indices": 26,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "bush_foliage_atlas_albedo_01.120",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 27,
+                        "NORMAL": 28,
+                        "TEXCOORD_0": 29,
+                        "TEXCOORD_1": 30
+                    },
+                    "indices": 31,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "bush_foliage_atlas_albedo_01.121",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 32,
+                        "NORMAL": 33,
+                        "TEXCOORD_0": 34,
+                        "TEXCOORD_1": 35
+                    },
+                    "indices": 36,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "bush_foliage_atlas_albedo_01.123",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 37,
+                        "NORMAL": 38,
+                        "TEXCOORD_0": 39,
+                        "TEXCOORD_1": 40
+                    },
+                    "indices": 41,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "bush_foliage_atlas_albedo_01.124",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 42,
+                        "NORMAL": 43,
+                        "TEXCOORD_0": 44,
+                        "TEXCOORD_1": 45
+                    },
+                    "indices": 46,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "bush_foliage_atlas_albedo_01.125",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 47,
+                        "NORMAL": 48,
+                        "TEXCOORD_0": 49,
+                        "TEXCOORD_1": 50
+                    },
+                    "indices": 51,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "bush_foliage_atlas_albedo_01.126",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 52,
+                        "NORMAL": 53,
+                        "TEXCOORD_0": 54,
+                        "TEXCOORD_1": 55
+                    },
+                    "indices": 56,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "bush_foliage_atlas_albedo_01.021",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 57,
+                        "NORMAL": 58,
+                        "TEXCOORD_0": 59,
+                        "TEXCOORD_1": 60,
+                        "COLOR_0": 61,
+                        "COLOR_1": 62
+                    },
+                    "indices": 63,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "bush_foliage_atlas_albedo_01.127",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 64,
+                        "NORMAL": 65,
+                        "TEXCOORD_0": 66,
+                        "TEXCOORD_1": 67
+                    },
+                    "indices": 68,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 1,
+            "source": 1
+        },
+        {
+            "sampler": 1,
+            "source": 2
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/textures/paper_rough_256.png"
+            },
+            "mimeType": "image/png",
+            "name": "paper_rough_256",
+            "uri": "../../../textures/paper_rough_256.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/bush_foliage_atlas_albedo_01.png"
+            },
+            "mimeType": "image/png",
+            "name": "bush_foliage_atlas_albedo_01",
+            "uri": "../../textures/bush_foliage_atlas_albedo_01.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/bush_foliage_atlas_roughness_01.png"
+            },
+            "mimeType": "image/png",
+            "name": "bush_foliage_atlas_roughness_01",
+            "uri": "../../textures/bush_foliage_atlas_roughness_01.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 40,
+            "max": [
+                0.28763720393180847,
+                0.023884043097496033,
+                -0.09894436597824097
+            ],
+            "min": [
+                -0.3856084942817688,
+                -0.6760246753692627,
+                -0.5763763189315796
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 40,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 40,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5126,
+            "count": 40,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5123,
+            "count": 123,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5126,
+            "count": 80,
+            "max": [
+                0.4526391327381134,
+                0.08977726846933365,
+                0.008014488965272903
+            ],
+            "min": [
+                -0.4714639186859131,
+                -0.7325785756111145,
+                -0.5345005989074707
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 6,
+            "componentType": 5126,
+            "count": 80,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 7,
+            "componentType": 5126,
+            "count": 80,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 8,
+            "componentType": 5126,
+            "count": 80,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 9,
+            "componentType": 5123,
+            "count": 156,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 10,
+            "componentType": 5126,
+            "count": 64,
+            "max": [
+                0.3304307460784912,
+                -0.022694211453199387,
+                0.08628015220165253
+            ],
+            "min": [
+                -0.39514851570129395,
+                -0.8024494647979736,
+                -0.44789060950279236
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 11,
+            "componentType": 5126,
+            "count": 64,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 12,
+            "componentType": 5126,
+            "count": 64,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 13,
+            "componentType": 5126,
+            "count": 64,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 14,
+            "componentType": 5123,
+            "count": 156,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 15,
+            "componentType": 5126,
+            "count": 120,
+            "max": [
+                0.6994736194610596,
+                0.004186686128377914,
+                0.01953664794564247
+            ],
+            "min": [
+                -0.3070320785045624,
+                -0.6680719256401062,
+                -0.494912713766098
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 16,
+            "componentType": 5126,
+            "count": 120,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 17,
+            "componentType": 5126,
+            "count": 120,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 18,
+            "componentType": 5126,
+            "count": 120,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 19,
+            "componentType": 5121,
+            "count": 120,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 20,
+            "componentType": 5123,
+            "count": 120,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 21,
+            "componentType": 5123,
+            "count": 186,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 22,
+            "componentType": 5126,
+            "count": 120,
+            "max": [
+                0.6986137628555298,
+                0.03353673592209816,
+                0.030656848102808
+            ],
+            "min": [
+                -0.2888390123844147,
+                -0.6058555245399475,
+                -0.4482773542404175
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 23,
+            "componentType": 5126,
+            "count": 120,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 24,
+            "componentType": 5126,
+            "count": 120,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 25,
+            "componentType": 5126,
+            "count": 120,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 26,
+            "componentType": 5123,
+            "count": 186,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 27,
+            "componentType": 5126,
+            "count": 61,
+            "max": [
+                0.6204568147659302,
+                -0.17241860926151276,
+                -0.04202758148312569
+            ],
+            "min": [
+                -0.5235106348991394,
+                -0.6867689490318298,
+                -0.6683661937713623
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 28,
+            "componentType": 5126,
+            "count": 61,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 29,
+            "componentType": 5126,
+            "count": 61,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 30,
+            "componentType": 5126,
+            "count": 61,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 31,
+            "componentType": 5123,
+            "count": 135,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 32,
+            "componentType": 5126,
+            "count": 61,
+            "max": [
+                0.6737735867500305,
+                -0.11676274240016937,
+                -0.03869413584470749
+            ],
+            "min": [
+                -0.5313087105751038,
+                -0.6474382877349854,
+                -0.6516457200050354
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 33,
+            "componentType": 5126,
+            "count": 61,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 34,
+            "componentType": 5126,
+            "count": 61,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 35,
+            "componentType": 5126,
+            "count": 61,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 36,
+            "componentType": 5123,
+            "count": 135,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 37,
+            "componentType": 5126,
+            "count": 40,
+            "max": [
+                0.34963056445121765,
+                -0.007833195850253105,
+                -0.13914217054843903
+            ],
+            "min": [
+                -0.3856271803379059,
+                -0.7224541902542114,
+                -0.5287281274795532
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 38,
+            "componentType": 5126,
+            "count": 40,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 39,
+            "componentType": 5126,
+            "count": 40,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 40,
+            "componentType": 5126,
+            "count": 40,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 41,
+            "componentType": 5123,
+            "count": 123,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 42,
+            "componentType": 5126,
+            "count": 51,
+            "max": [
+                0.9086236953735352,
+                -0.010544715449213982,
+                -0.028048988431692123
+            ],
+            "min": [
+                -0.21380719542503357,
+                -0.6103543043136597,
+                -0.4322677254676819
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 43,
+            "componentType": 5126,
+            "count": 51,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 44,
+            "componentType": 5126,
+            "count": 51,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 45,
+            "componentType": 5126,
+            "count": 51,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 46,
+            "componentType": 5123,
+            "count": 141,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 47,
+            "componentType": 5126,
+            "count": 50,
+            "max": [
+                0.40710774064064026,
+                0.02030896581709385,
+                -0.10991667956113815
+            ],
+            "min": [
+                -0.4541643559932709,
+                -0.8107714653015137,
+                -0.5185222625732422
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 48,
+            "componentType": 5126,
+            "count": 50,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 49,
+            "componentType": 5126,
+            "count": 50,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 50,
+            "componentType": 5126,
+            "count": 50,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 51,
+            "componentType": 5123,
+            "count": 147,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 52,
+            "componentType": 5126,
+            "count": 43,
+            "max": [
+                0.9236146807670593,
+                0.33573010563850403,
+                -0.11223454773426056
+            ],
+            "min": [
+                0.07054545730352402,
+                -0.712645947933197,
+                -0.5866221189498901
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 53,
+            "componentType": 5126,
+            "count": 43,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 54,
+            "componentType": 5126,
+            "count": 43,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 55,
+            "componentType": 5126,
+            "count": 43,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 56,
+            "componentType": 5123,
+            "count": 114,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 57,
+            "componentType": 5126,
+            "count": 88,
+            "max": [
+                0.4805702269077301,
+                0.02723763883113861,
+                0.36440509557724
+            ],
+            "min": [
+                -0.4520423114299774,
+                -0.20165252685546875,
+                -0.5154914259910583
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 58,
+            "componentType": 5126,
+            "count": 88,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 59,
+            "componentType": 5126,
+            "count": 88,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 60,
+            "componentType": 5126,
+            "count": 88,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 61,
+            "componentType": 5121,
+            "count": 88,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 62,
+            "componentType": 5123,
+            "count": 88,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 63,
+            "componentType": 5123,
+            "count": 288,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 64,
+            "componentType": 5126,
+            "count": 61,
+            "max": [
+                0.6017202734947205,
+                -0.15854115784168243,
+                -0.030916400253772736
+            ],
+            "min": [
+                -0.4958002269268036,
+                -0.6846458911895752,
+                -0.593436062335968
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 65,
+            "componentType": 5126,
+            "count": 61,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 66,
+            "componentType": 5126,
+            "count": 61,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 67,
+            "componentType": 5126,
+            "count": 61,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 68,
+            "componentType": 5123,
+            "count": 135,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 480,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 480,
+            "byteOffset": 480,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 320,
+            "byteOffset": 960,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 320,
+            "byteOffset": 1280,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 246,
+            "byteOffset": 1600,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 960,
+            "byteOffset": 1848,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 960,
+            "byteOffset": 2808,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 640,
+            "byteOffset": 3768,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 640,
+            "byteOffset": 4408,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 312,
+            "byteOffset": 5048,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 768,
+            "byteOffset": 5360,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 768,
+            "byteOffset": 6128,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 512,
+            "byteOffset": 6896,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 512,
+            "byteOffset": 7408,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 312,
+            "byteOffset": 7920,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1440,
+            "byteOffset": 8232,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1440,
+            "byteOffset": 9672,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 960,
+            "byteOffset": 11112,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 960,
+            "byteOffset": 12072,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 480,
+            "byteOffset": 13032,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 960,
+            "byteOffset": 13512,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 372,
+            "byteOffset": 14472,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1440,
+            "byteOffset": 14844,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1440,
+            "byteOffset": 16284,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 960,
+            "byteOffset": 17724,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 960,
+            "byteOffset": 18684,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 372,
+            "byteOffset": 19644,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 732,
+            "byteOffset": 20016,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 732,
+            "byteOffset": 20748,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 488,
+            "byteOffset": 21480,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 488,
+            "byteOffset": 21968,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 270,
+            "byteOffset": 22456,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 732,
+            "byteOffset": 22728,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 732,
+            "byteOffset": 23460,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 488,
+            "byteOffset": 24192,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 488,
+            "byteOffset": 24680,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 270,
+            "byteOffset": 25168,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 480,
+            "byteOffset": 25440,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 480,
+            "byteOffset": 25920,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 320,
+            "byteOffset": 26400,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 320,
+            "byteOffset": 26720,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 246,
+            "byteOffset": 27040,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 612,
+            "byteOffset": 27288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 612,
+            "byteOffset": 27900,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 408,
+            "byteOffset": 28512,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 408,
+            "byteOffset": 28920,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 282,
+            "byteOffset": 29328,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 600,
+            "byteOffset": 29612,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 600,
+            "byteOffset": 30212,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 400,
+            "byteOffset": 30812,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 400,
+            "byteOffset": 31212,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 294,
+            "byteOffset": 31612,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 516,
+            "byteOffset": 31908,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 516,
+            "byteOffset": 32424,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 344,
+            "byteOffset": 32940,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 344,
+            "byteOffset": 33284,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 228,
+            "byteOffset": 33628,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1056,
+            "byteOffset": 33856,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1056,
+            "byteOffset": 34912,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 704,
+            "byteOffset": 35968,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 704,
+            "byteOffset": 36672,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 352,
+            "byteOffset": 37376,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 704,
+            "byteOffset": 37728,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 576,
+            "byteOffset": 38432,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 732,
+            "byteOffset": 39008,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 732,
+            "byteOffset": 39740,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 488,
+            "byteOffset": 40472,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 488,
+            "byteOffset": 40960,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 270,
+            "byteOffset": 41448,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        },
+        {
+            "magFilter": 9729,
+            "minFilter": 9987,
+            "wrapS": 33071,
+            "wrapT": 33071
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 41720,
+            "uri": "LI-bush_small_003.bin"
+        }
+    ]
+}

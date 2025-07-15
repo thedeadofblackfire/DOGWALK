@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://cv6pujg1oirn2"]
+
+[ext_resource type="Script" uid="uid://bhhhesqb2bcj6" path="res://source/audio/audio_manager.gd" id="1_06uo4"]
+[ext_resource type="PackedScene" uid="uid://bu2jjovd5toch" path="res://source/audio/ui_sound_manager.tscn" id="2_onsta"]
+[ext_resource type="PackedScene" uid="uid://baapcgt0f3uss" path="res://source/audio/music_manager.tscn" id="3_pmfl0"]
+
+[node name="AudioManager" type="Node" node_paths=PackedStringArray("music_manager", "ui_sound_manager")]
+script = ExtResource("1_06uo4")
+music_manager = NodePath("MusicManager")
+ui_sound_manager = NodePath("UISoundManager")
+
+[node name="MusicManager" parent="." instance=ExtResource("3_pmfl0")]
+
+[node name="UISoundManager" parent="." instance=ExtResource("2_onsta")]

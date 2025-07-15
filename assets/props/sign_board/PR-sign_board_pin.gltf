@@ -1,0 +1,214 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 1,
+                    "append_parent_collection": 1,
+                    "asset_name": "PR-sign_board_pin"
+                },
+                "asset_type": "ASSET",
+                "root_type": "STATIC",
+                "asset_id": "dab07b0df4c6ca75"
+            },
+            "name": "PR-sign_board_pin",
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "mesh": 0,
+            "name": "GEO-sign_board-pin"
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "56d7ce96acbedc97",
+                "material_info": {
+                    "albedo_color": [
+                        0.9237642288208008,
+                        1.0,
+                        0.8729403018951416,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "roughness": 0.699999988079071,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "wear_strength": 0.0,
+                    "wear_start": 0.6399999856948853,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.0,
+                    "wear_distortion_scale": 100.0,
+                    "emission_color": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_map": [
+                        0.5,
+                        0.5,
+                        1.0,
+                        1.0
+                    ],
+                    "normal_strength": 1.0,
+                    "normal_use_uv2": 0.0
+                }
+            },
+            "name": "sign_board-pin",
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 0
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Cylinder",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2,
+                        "COLOR_0": 3
+                    },
+                    "indices": 4,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/props/sign_board/textures/sign_board-albedo.png"
+            },
+            "mimeType": "image/png",
+            "name": "sign_board-albedo",
+            "uri": "textures/sign_board-albedo.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 42,
+            "max": [
+                0.06428005546331406,
+                0.11263415217399597,
+                0.05467991530895233
+            ],
+            "min": [
+                -0.06428010761737823,
+                -0.0015491209924221039,
+                -0.06758806109428406
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 42,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 42,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5123,
+            "count": 42,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5123,
+            "count": 132,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 504,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 504,
+            "byteOffset": 504,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 336,
+            "byteOffset": 1008,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 336,
+            "byteOffset": 1344,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 264,
+            "byteOffset": 1680,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 1944,
+            "uri": "PR-sign_board_pin.bin"
+        }
+    ]
+}

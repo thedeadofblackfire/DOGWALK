@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://ex3rvm02h8vw"]
+
+[ext_resource type="Script" uid="uid://d4ahvjm7dfv4" path="res://source/user_interface/menus/support_button.gd" id="1_2rev5"]
+[ext_resource type="Texture2D" uid="uid://cr51le1hor682" path="res://assets/textures/menu/user_interface/support_us.png" id="1_3rjeu"]
+[ext_resource type="Texture2D" uid="uid://cg3v5jbknummg" path="res://assets/textures/menu/user_interface/support_us_hover_1.png" id="3_dhw54"]
+[ext_resource type="Texture2D" uid="uid://daxcagru27pek" path="res://assets/textures/menu/user_interface/support_us_hover_2.png" id="4_jp30m"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_oguo2"]
+frames = 2
+frame_0/texture = ExtResource("3_dhw54")
+frame_0/duration = 0.5
+frame_1/texture = ExtResource("4_jp30m")
+frame_1/duration = 0.5
+
+[node name="Support" type="Control" node_paths=PackedStringArray("support_button")]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_2rev5")
+support_button = NodePath("SupportButton")
+
+[node name="SupportButton" type="TextureButton" parent="."]
+layout_mode = 2
+anchor_right = 96.0
+anchor_bottom = 54.0
+offset_left = 3314.0
+offset_top = 1922.0
+offset_right = 3758.0
+offset_bottom = 2092.0
+focus_mode = 1
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("1_3rjeu")
+texture_hover = SubResource("AnimatedTexture_oguo2")
+stretch_mode = 5
+
+[connection signal="pressed" from="SupportButton" to="." method="_on_support_button_pressed"]

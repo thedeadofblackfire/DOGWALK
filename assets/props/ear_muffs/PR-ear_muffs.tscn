@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bcqkd6f2hpk7x"]
+
+[ext_resource type="PackedScene" uid="uid://cnpyjnhsciw5k" path="res://assets/props/ear_muffs/PR-ear_muffs.gltf" id="1_qyido"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_sbr2d"]
+height = 1.23315
+radius = 0.341309
+
+[node name="PR-ear_muffs" type="Node3D"]
+
+[node name="PR-ear_muffs-IMPORT" parent="." instance=ExtResource("1_qyido")]
+
+[node name="TempCollisionShape" type="CollisionShape3D" parent="PR-ear_muffs-IMPORT"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.383423, 0)
+shape = SubResource("CylinderShape3D_sbr2d")

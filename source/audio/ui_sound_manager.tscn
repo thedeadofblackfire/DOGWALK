@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=3 uid="uid://bu2jjovd5toch"]
+
+[ext_resource type="Script" uid="uid://dgjngeftms555" path="res://source/audio/ui_sound_manager.gd" id="1_jp66f"]
+[ext_resource type="AudioStream" uid="uid://c463hgkd0ny20" path="res://source/audio/ui/nav_sound_player.tres" id="2_ftim5"]
+[ext_resource type="AudioStream" uid="uid://btekn3c0j5pxm" path="res://source/audio/ui/accept_sound_player.tres" id="3_jp66f"]
+[ext_resource type="AudioStream" uid="uid://btcxm10jy7ann" path="res://source/audio/ui/slider_sound_player.tres" id="4_ftim5"]
+[ext_resource type="AudioStream" uid="uid://cb4hrbi75ob5m" path="res://assets/sfx/ui/UI_click-5.ogg" id="4_jp66f"]
+[ext_resource type="AudioStream" uid="uid://d04belufl7uyj" path="res://assets/sfx/ui/UI_SaveSound.ogg" id="6_6x2dd"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_phbhe"]
+random_pitch = 1.05
+streams_count = 1
+stream_0/stream = ExtResource("4_jp66f")
+
+[node name="UISoundManager" type="Node" node_paths=PackedStringArray("nav_sound", "accept_sound", "cancel_sound", "save_sound", "slider_sound")]
+script = ExtResource("1_jp66f")
+nav_sound = NodePath("NavSound")
+accept_sound = NodePath("AcceptSound")
+cancel_sound = NodePath("CancelSound")
+save_sound = NodePath("SaveSound")
+slider_sound = NodePath("SliderSound")
+
+[node name="NavSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_ftim5")
+volume_db = -7.5
+pitch_scale = 1.35
+max_polyphony = 3
+bus = &"UI"
+
+[node name="AcceptSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_jp66f")
+volume_db = 3.0
+pitch_scale = 0.95
+max_polyphony = 3
+bus = &"UI"
+
+[node name="CancelSound" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamRandomizer_phbhe")
+pitch_scale = 0.85
+max_polyphony = 3
+bus = &"UI"
+
+[node name="SliderSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_ftim5")
+volume_db = -4.5
+pitch_scale = 0.7
+bus = &"UI"
+
+[node name="SaveSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_6x2dd")
+bus = &"UI"

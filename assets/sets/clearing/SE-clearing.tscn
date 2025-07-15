@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://2fykpfun3obh"]
+
+[ext_resource type="PackedScene" path="res://assets/sets/clearing/SE-clearing.gltf" id="1_r6h2p"]
+
+[node name="SE-clearing" type="Node3D"]
+
+[node name="SE-clearing-IMPORT" type="StaticBody3D" parent="." instance=ExtResource("1_r6h2p")]

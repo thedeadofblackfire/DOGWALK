@@ -1,0 +1,36 @@
+[gd_scene load_steps=14 format=3 uid="uid://5v7akxx535re"]
+
+[ext_resource type="Script" uid="uid://dn35w7fykvtqx" path="res://source/audio/sfx/ui/emote_sounds.gd" id="1_0x83y"]
+[ext_resource type="AudioStream" uid="uid://c1b50kx58g1up" path="res://source/audio/sfx/pinda/pinda-emote-cloudy.tres" id="2_wfnim"]
+[ext_resource type="AudioStream" uid="uid://cm614ukx66bga" path="res://assets/sfx/ui/UI-emote-move_mouse.ogg" id="4_jpci0"]
+[ext_resource type="AudioStream" uid="uid://dii317c6jbaj5" path="res://assets/sfx/ui/UI-emote-hearts.ogg" id="6_0cmik"]
+[ext_resource type="AudioStream" uid="uid://csk52u6i78dd7" path="res://assets/sfx/ui/UI-emote-sweat.ogg" id="7_wfnim"]
+[ext_resource type="AudioStream" uid="uid://d4bjfc7t4rle6" path="res://assets/sfx/ui/UI-emote-missing-arm.ogg" id="8_0cmik"]
+[ext_resource type="AudioStream" uid="uid://bdt6osiucsnh0" path="res://assets/sfx/ui/UI-emote-missing-hat.ogg" id="9_fibpr"]
+[ext_resource type="AudioStream" uid="uid://ctssaxo7ffexg" path="res://assets/sfx/ui/UI-emote-missing-nose.ogg" id="10_g2sbu"]
+[ext_resource type="AudioStream" uid="uid://h1cqqw0kvb0b" path="res://assets/sfx/pinda/ACTN-pinda-wow-wonder-02.ogg" id="10_gby44"]
+[ext_resource type="AudioStream" uid="uid://cq7vfkb535rqs" path="res://assets/sfx/pinda/ACTN-pinda-wow-wonder-03 2.ogg" id="11_0cmik"]
+[ext_resource type="AudioStream" uid="uid://dvmt7stcgfyq3" path="res://assets/sfx/ui/UI-emote-missing-cane.ogg" id="11_62tg4"]
+[ext_resource type="AudioStream" uid="uid://hjwn3jj40ccp" path="res://assets/sfx/ui/UI-emote-fireworks.ogg" id="12_fibpr"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_fibpr"]
+random_pitch = 1.05
+streams_count = 2
+stream_0/stream = ExtResource("10_gby44")
+stream_1/stream = ExtResource("11_0cmik")
+
+[node name="EmoteSounds" type="AudioStreamPlayer3D"]
+bus = &"SFX"
+script = ExtResource("1_0x83y")
+emote_sounds = Dictionary[int, AudioStream]({
+5: ExtResource("2_wfnim"),
+6: SubResource("AudioStreamRandomizer_fibpr"),
+7: ExtResource("6_0cmik"),
+10: ExtResource("7_wfnim"),
+17: ExtResource("4_jpci0"),
+18: ExtResource("12_fibpr"),
+19: ExtResource("8_0cmik"),
+20: ExtResource("9_fibpr"),
+21: ExtResource("10_g2sbu"),
+22: ExtResource("11_62tg4")
+})

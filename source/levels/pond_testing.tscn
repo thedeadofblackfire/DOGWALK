@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://u3lyg65mxxhs"]
+
+[ext_resource type="PackedScene" uid="uid://6uq8ndnl1t7e" path="res://source/user_interface/old_mouse_cursor.tscn" id="1_b8gof"]
+[ext_resource type="PackedScene" uid="uid://dnu1cw7xufgwv" path="res://source/user_interface/mouse_cursor.tscn" id="2_awosq"]
+[ext_resource type="PackedScene" uid="uid://cuxcvurbkofgn" path="res://source/levels/world.tscn" id="3_bum54"]
+
+[node name="PondTesting" type="Node3D"]
+
+[node name="DebugUI" parent="." instance=ExtResource("1_b8gof")]
+
+[node name="CursorUI" parent="." instance=ExtResource("2_awosq")]
+
+[node name="World" parent="." instance=ExtResource("3_bum54")]
+
+[node name="Player" parent="World" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40437, 3.8147e-06, 36.4384)
+
+[editable path="World"]
+[editable path="World/Player"]
+[editable path="World/MagnetZones/CameraMagnetZone_shovel"]
+[editable path="World/MagnetZones/CameraMagnetZone_traffic_cone"]
+[editable path="World/MagnetZones/CameraMagnetZone_tennis_ball"]
+[editable path="World/MagnetZones/CameraMagnetZone_muffs"]

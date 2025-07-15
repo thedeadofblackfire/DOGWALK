@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2ax1cmy8gjqu"]
+
+[ext_resource type="PackedScene" path="res://assets/sets/fence/SL-fence-bushes.gltf" id="1_q2gwk"]
+
+[node name="SL-fence-bushes" type="Node3D"]
+
+[node name="SL-fence-bushes-IMPORT" type="Area3D" parent="." instance=ExtResource("1_q2gwk")]

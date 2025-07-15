@@ -1,0 +1,9 @@
+[gd_resource type="AnimationLibrary" load_steps=2 format=3 uid="uid://b1yis75bna4ok"]
+
+[ext_resource type="Animation" uid="uid://8splderq6r4n" path="res://animations/hub/CINE-chars-outro/CINE-leash_handle-outro.tres" id="1_uuqw8"]
+
+[resource]
+resource_name = "PR-leash_handle Animation Library"
+_data = {
+&"CINE-leash_handle-outro": ExtResource("1_uuqw8")
+}

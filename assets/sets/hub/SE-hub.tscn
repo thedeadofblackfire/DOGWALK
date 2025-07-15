@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7n8wdp1ve12q"]
+
+[ext_resource type="PackedScene" path="res://assets/sets/hub/SE-hub.gltf" id="1_2iqi5"]
+
+[node name="SE-hub" type="Node3D"]
+
+[node name="SE-hub-IMPORT" type="Area3D" parent="." instance=ExtResource("1_2iqi5")]

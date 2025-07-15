@@ -1,0 +1,42 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://cgq7g5tnlsgfn"]
+
+[ext_resource type="Shader" uid="uid://dferjeijr7g3r" path="res://source/shaders/paper-default.gdshader" id="1_ddsxt"]
+[ext_resource type="Texture2D" uid="uid://80podr4srkut" path="res://assets/props/willow_tree/textures/willow_tree_leaves-frozen-albedo.png" id="2_ddsxt"]
+[ext_resource type="Texture2D" uid="uid://do232al6ygugw" path="res://assets/props/willow_tree/textures/willow_tree_leaves-frozen-normal.png" id="3_qoef0"]
+
+[resource]
+render_priority = 1
+shader = ExtResource("1_ddsxt")
+shader_parameter/fake_depth = true
+shader_parameter/flip_normals = false
+shader_parameter/depth_blend = true
+shader_parameter/paper_color = Color(1, 1, 1, 1)
+shader_parameter/backface_color = false
+shader_parameter/albedo_color = Color(1, 1, 1, 1)
+shader_parameter/albedo_texture = ExtResource("2_ddsxt")
+shader_parameter/edge_use_alpha = true
+shader_parameter/normal_texture = ExtResource("3_qoef0")
+shader_parameter/normal_strength = 0.1
+shader_parameter/invert_normal = false
+shader_parameter/normal_use_uv2 = false
+shader_parameter/albedo_texture_size = Vector2i(186, 2048)
+shader_parameter/point_size = 0.0
+shader_parameter/specular = 0.0
+shader_parameter/roughness = 0.787066
+shader_parameter/metallic = 0.0
+shader_parameter/wear_strength = 0.0
+shader_parameter/wear_start = 0.0
+shader_parameter/wear_end = 1.0
+shader_parameter/wear_distortion_scale = 100.0
+shader_parameter/wear_distortion_strength = 0.5
+shader_parameter/emission_strength = 0.0
+shader_parameter/emission_color = Color(1, 1, 1, 1)
+shader_parameter/displacement_strength = 0.2
+shader_parameter/displacemnent_scale = 1.0
+shader_parameter/heightmap_scale = 0.5
+shader_parameter/heightmap_min_layers = 4
+shader_parameter/heightmap_max_layers = 16
+shader_parameter/uv1_scale = Vector3(1, 1, 1)
+shader_parameter/uv1_offset = Vector3(0, 0, 0)
+shader_parameter/uv2_scale = Vector3(1, 1, 1)
+shader_parameter/uv2_offset = Vector3(0, 0, 0)

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cq7vfkb535rqs"
+path="res://.godot/imported/ACTN-pinda-wow-wonder-03 2.ogg-fd41808c4c81840a0a1388686393a021.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sfx/pinda/ACTN-pinda-wow-wonder-03 2.ogg"
+dest_files=["res://.godot/imported/ACTN-pinda-wow-wonder-03 2.ogg-fd41808c4c81840a0a1388686393a021.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

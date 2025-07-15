@@ -1,0 +1,243 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 2,
+                    "append_parent_collection": 1,
+                    "asset_name": "LI-bushlet_branched_005"
+                },
+                "asset_type": "ASSET",
+                "root_type": "PASS_THROUGH",
+                "asset_id": "67c7d8a1bc83115c"
+            },
+            "name": "LI-bushlet_branched_005",
+            "nodes": [
+                0,
+                1
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "mesh": 0,
+            "name": "GEO-bushlets_branched_005"
+        },
+        {
+            "extras": {
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 1,
+                    "radius": 0.3779999911785126,
+                    "height": 1.1799999475479126,
+                    "size": [
+                        0.48099997639656067,
+                        0.12000000476837158,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.029",
+            "rotation": [
+                0,
+                0.048369500786066055,
+                0,
+                0.9988295435905457
+            ],
+            "translation": [
+                0.04377880319952965,
+                0.501905620098114,
+                -0.013761550188064575
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "cb2b0cc5a9e3b4d5",
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        0.800000011920929,
+                        0.6601714491844177,
+                        0.5426713228225708,
+                        1.0
+                    ],
+                    "wear_strength": 0.0,
+                    "wear_start": 0.0,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.5,
+                    "wear_distortion_scale": 100.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_map": [
+                        0.5,
+                        0.5,
+                        1.0,
+                        1.0
+                    ],
+                    "normal_strength": 1.0,
+                    "normal_use_uv2": 0.0
+                }
+            },
+            "name": "bushlets_branched",
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 0
+                },
+                "metallicRoughnessTexture": {
+                    "index": 1
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "bushlets_branched_albedo.002",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/bushlets_branched_albedo.png"
+            },
+            "mimeType": "image/png",
+            "name": "bushlets_branched_albedo",
+            "uri": "../../textures/bushlets_branched_albedo.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/bushlets_branched_roughness.png"
+            },
+            "mimeType": "image/png",
+            "name": "bushlets_branched_roughness",
+            "uri": "../../textures/bushlets_branched_roughness.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 26,
+            "max": [
+                0.5087243318557739,
+                1.005223274230957,
+                4.741583836676e-08
+            ],
+            "min": [
+                -0.2654057443141937,
+                0.0006719566881656647,
+                -0.17698857188224792
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 26,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 26,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5123,
+            "count": 84,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 312,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 312,
+            "byteOffset": 312,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 208,
+            "byteOffset": 624,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 168,
+            "byteOffset": 832,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987,
+            "wrapS": 33071,
+            "wrapT": 33071
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 1000,
+            "uri": "LI-bushlet_branched_005.bin"
+        }
+    ]
+}

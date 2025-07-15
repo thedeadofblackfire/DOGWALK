@@ -1,0 +1,15 @@
+[gd_resource type="AnimationNodeBlendSpace1D" load_steps=3 format=3 uid="uid://cm31apv2plih2"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_4pnki"]
+animation = &"Pinda-anim_lib/LOOP-pinda-idle_tired"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_tfght"]
+animation = &"Pinda-anim_lib/LOOP-pinda-idle_happy"
+
+[resource]
+blend_point_0/node = SubResource("AnimationNodeAnimation_4pnki")
+blend_point_0/pos = 0.0
+blend_point_1/node = SubResource("AnimationNodeAnimation_tfght")
+blend_point_1/pos = 1.0
+blend_mode = 1
+sync = true

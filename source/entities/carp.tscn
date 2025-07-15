@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://byyiangupbrtn"]
+
+[ext_resource type="Script" uid="uid://dieplwlws24ct" path="res://source/entities/carp.gd" id="1_d40xx"]
+[ext_resource type="PackedScene" uid="uid://crtpc70dhj7i6" path="res://assets/char/fish/fish.tscn" id="2_d1wlb"]
+
+[sub_resource type="Curve3D" id="Curve3D_3vnqk"]
+closed = true
+_data = {
+"points": PackedVector3Array(2.07864, 0, 0.446915, -2.07864, 0, -0.446915, 0, 0, 0, -3.57685, 0.11084, 3.40837, 3.57685, -0.11084, -3.40837, -2, 0, -6, -3.4663, -0.000237465, 1.38939, 3.4663, 0.000237465, -1.38939, 10.5603, -0.000983238, -5.05067, 2.1728, -7.62939e-06, -0.0428791, -2.1728, 7.62939e-06, 0.0428791, 7.58647, 0, -9.07838, 1.42218, -1.81198e-05, -2.37738, -1.42218, 1.81198e-05, 2.37738, 3.10245, -0.000976562, -6.87525, 0, 0, -2, 0, 0, 2, 3.88002, 0.0209961, -2.57267),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0)
+}
+point_count = 6
+
+[node name="Carp" type="Node3D" node_paths=PackedStringArray("path_follow")]
+script = ExtResource("1_d40xx")
+path_follow = NodePath("Path/PathFollow3D")
+
+[node name="Path" type="Path3D" parent="."]
+curve = SubResource("Curve3D_3vnqk")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="Path"]
+transform = Transform3D(0.210197, 0, 0.977647, 0, 0.999998, 0, -0.977647, 0, 0.210197, 0, 0, 0)
+
+[node name="fish" parent="Path/PathFollow3D" instance=ExtResource("2_d1wlb")]

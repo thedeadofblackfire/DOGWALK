@@ -1,0 +1,282 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 1,
+                    "append_parent_collection": 1,
+                    "asset_name": "LI-bush_foliage_top_003"
+                },
+                "asset_type": "ASSET",
+                "root_type": "STATIC",
+                "asset_id": "5b8a1387d79d10ff"
+            },
+            "name": "LI-bush_foliage_top_003",
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 0,
+            "name": "GEO-bush_foliage_top_003",
+            "rotation": [
+                -0.05415160581469536,
+                -0.006333705969154835,
+                0.02073407731950283,
+                0.9982973337173462
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "7bd0b7549400e298",
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        0.7246307134628296,
+                        0.8592348694801331,
+                        0.6143835783004761,
+                        1.0
+                    ],
+                    "wear_strength": 0.0,
+                    "wear_start": 0.0,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.5,
+                    "wear_distortion_scale": 100.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.15000000596046448,
+                    "normal_use_uv2": 1.0
+                },
+                "yp": {
+                    "active_ypaint_node": ""
+                }
+            },
+            "name": "bush",
+            "normalTexture": {
+                "index": 0,
+                "texCoord": 1
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                },
+                "metallicRoughnessTexture": {
+                    "index": 2
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "bush_foliage_atlas_albedo_01.016",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2,
+                        "TEXCOORD_1": 3,
+                        "COLOR_0": 4,
+                        "COLOR_1": 5
+                    },
+                    "indices": 6,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 1,
+            "source": 1
+        },
+        {
+            "sampler": 1,
+            "source": 2
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/textures/paper_rough_256.png"
+            },
+            "mimeType": "image/png",
+            "name": "paper_rough_256",
+            "uri": "../../../textures/paper_rough_256.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/bush_foliage_atlas_albedo_01.png"
+            },
+            "mimeType": "image/png",
+            "name": "bush_foliage_atlas_albedo_01",
+            "uri": "../../textures/bush_foliage_atlas_albedo_01.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/bush_foliage_atlas_roughness_01.png"
+            },
+            "mimeType": "image/png",
+            "name": "bush_foliage_atlas_roughness_01",
+            "uri": "../../textures/bush_foliage_atlas_roughness_01.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 88,
+            "max": [
+                0.5253114104270935,
+                0.07323913276195526,
+                0.5316545963287354
+            ],
+            "min": [
+                -0.5045264959335327,
+                -0.1954868882894516,
+                -0.5284850001335144
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 88,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 88,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5126,
+            "count": 88,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5121,
+            "count": 88,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5123,
+            "count": 88,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 6,
+            "componentType": 5123,
+            "count": 297,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 1056,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1056,
+            "byteOffset": 1056,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 704,
+            "byteOffset": 2112,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 704,
+            "byteOffset": 2816,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 352,
+            "byteOffset": 3520,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 704,
+            "byteOffset": 3872,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 594,
+            "byteOffset": 4576,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        },
+        {
+            "magFilter": 9729,
+            "minFilter": 9987,
+            "wrapS": 33071,
+            "wrapT": 33071
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 5172,
+            "uri": "LI-bush_foliage_top_003.bin"
+        }
+    ]
+}

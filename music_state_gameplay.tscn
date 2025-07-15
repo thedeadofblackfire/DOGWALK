@@ -1,0 +1,40 @@
+[gd_scene load_steps=19 format=3 uid="uid://nbveim6ktmwh"]
+
+[ext_resource type="Script" uid="uid://7odmishjpj3u" path="res://source/audio/music/music_state_gameplay.gd" id="1_ohckt"]
+[ext_resource type="AudioStream" uid="uid://4gin0o37xv4k" path="res://source/audio/music/gameplay_synchronized_streams.tres" id="2_hhrbq"]
+[ext_resource type="Resource" uid="uid://6onjl14c5xpu" path="res://source/audio/music/music_setting_FENCE.tres" id="3_xv612"]
+[ext_resource type="Resource" uid="uid://c6wf74o5eebdv" path="res://source/audio/music/music_setting_FENCE_HINT.tres" id="4_hhrbq"]
+[ext_resource type="Resource" uid="uid://dbv6f7l4swhaw" path="res://source/audio/music/music_setting_FOREST.tres" id="4_hmrwm"]
+[ext_resource type="Resource" uid="uid://dlhjaw0g8gift" path="res://source/audio/music/music_setting_FOREST_HEART.tres" id="5_4f8g8"]
+[ext_resource type="Resource" uid="uid://fi8kyboceopf" path="res://source/audio/music/music_setting_NONE.tres" id="6_hyfny"]
+[ext_resource type="Resource" uid="uid://bytegx2xiis3d" path="res://source/audio/music/music_setting_POND.tres" id="7_c1yvk"]
+[ext_resource type="Resource" uid="uid://bga3b6g5yvgoe" path="res://source/audio/music/music_setting_POND_HINT.tres" id="8_yyabj"]
+[ext_resource type="Resource" uid="uid://dacxsf3lhsamu" path="res://source/audio/music/music_setting_SNOWMAN.tres" id="9_0qu8p"]
+[ext_resource type="Resource" uid="uid://dfg6ud7xmbivs" path="res://source/audio/music/music_setting_IDLE.tres" id="10_1ppyr"]
+[ext_resource type="Resource" uid="uid://bhq4odslrbait" path="res://source/audio/music/music_setting_WALK.tres" id="11_qjruk"]
+[ext_resource type="Resource" uid="uid://5pn836yelol3" path="res://source/audio/music/music_setting_RUN.tres" id="12_ygyqe"]
+[ext_resource type="Resource" uid="uid://8g52ob0mfs6m" path="res://source/audio/music/music_setting_SPRINT.tres" id="13_sjp3o"]
+[ext_resource type="Resource" uid="uid://c832lfsi4eqr3" path="res://source/audio/music/music_setting_PULL.tres" id="14_qiq8v"]
+[ext_resource type="Resource" uid="uid://dh2lg1byvv1cu" path="res://source/audio/music/music_setting_REST.tres" id="15_1po2h"]
+[ext_resource type="Resource" uid="uid://cafgh6djwcpss" path="res://source/audio/music/music_setting_MEDITATE.tres" id="16_dnybx"]
+[ext_resource type="Resource" uid="uid://jf1grn62ymo8" path="res://source/audio/music/music_setting_HEAL.tres" id="17_2qnfr"]
+
+[node name="MusicState_Gameplay" type="Node"]
+script = ExtResource("1_ohckt")
+gameplay_sync_stream_player = ExtResource("2_hhrbq")
+fence_music_zone_setting = ExtResource("3_xv612")
+fence_hint_music_zone_setting = ExtResource("4_hhrbq")
+forest_music_zone_setting = ExtResource("4_hmrwm")
+forest_heart_music_zone_setting = ExtResource("5_4f8g8")
+no_music_zone_setting = ExtResource("6_hyfny")
+pond_music_zone_setting = ExtResource("7_c1yvk")
+pond_hint_music_zone_setting = ExtResource("8_yyabj")
+snowman_music_zone_setting = ExtResource("9_0qu8p")
+idle_movement_state_setting = ExtResource("10_1ppyr")
+walking_movement_state_setting = ExtResource("11_qjruk")
+running_movement_state_setting = ExtResource("12_ygyqe")
+sprinting_movement_state_setting = ExtResource("13_sjp3o")
+pulling_movement_state_setting = ExtResource("14_qiq8v")
+resting_movement_state_setting = ExtResource("15_1po2h")
+meditating_movement_state_setting = ExtResource("16_dnybx")
+healing_movement_state_setting = ExtResource("17_2qnfr")

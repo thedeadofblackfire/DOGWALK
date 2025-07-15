@@ -1,0 +1,31 @@
+[gd_scene load_steps=10 format=3 uid="uid://wxvr54kymnjf"]
+
+[ext_resource type="AudioStream" uid="uid://bgnhyhcgwk1gd" path="res://assets/sfx/world/ACTN-bush-melody-1.ogg" id="1_bct7e"]
+[ext_resource type="AudioStream" uid="uid://kgya55ceqqnd" path="res://assets/sfx/world/ACTN-bush-melody-2.ogg" id="2_vt8af"]
+[ext_resource type="AudioStream" uid="uid://bt1pxqtl4p0yx" path="res://assets/sfx/world/ACTN-bush-melody-3.ogg" id="3_nnrbr"]
+[ext_resource type="AudioStream" uid="uid://cffxe504eh52t" path="res://assets/sfx/world/ACTN-bush-melody-4.ogg" id="4_5rnq7"]
+[ext_resource type="AudioStream" uid="uid://dwujwgun8rqx3" path="res://assets/sfx/world/ACTN-bush-melody-5.ogg" id="5_ng0k3"]
+[ext_resource type="AudioStream" uid="uid://bgohq6wcpr34e" path="res://assets/sfx/world/ACTN-bush-melody-6.ogg" id="6_1g0lh"]
+[ext_resource type="AudioStream" uid="uid://b5oatmpgj3cby" path="res://assets/sfx/world/ACTN-bush-melody-7.ogg" id="7_dfgnx"]
+[ext_resource type="AudioStream" uid="uid://cob31frx0m3ku" path="res://assets/sfx/world/ACTN-bush-melody-8.ogg" id="8_ghnmf"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_m438o"]
+streams_count = 8
+stream_0/stream = ExtResource("1_bct7e")
+stream_1/stream = ExtResource("2_vt8af")
+stream_2/stream = ExtResource("3_nnrbr")
+stream_3/stream = ExtResource("4_5rnq7")
+stream_4/stream = ExtResource("5_ng0k3")
+stream_5/stream = ExtResource("6_1g0lh")
+stream_6/stream = ExtResource("7_dfgnx")
+stream_7/stream = ExtResource("8_ghnmf")
+
+[node name="BushSfxPlayer" type="AudioStreamPlayer3D"]
+stream = SubResource("AudioStreamRandomizer_m438o")
+volume_db = 9.0
+max_db = 6.0
+max_distance = 50.0
+panning_strength = 2.0
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 2500.0
+attenuation_filter_db = -36.0

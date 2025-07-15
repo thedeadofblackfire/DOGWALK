@@ -1,0 +1,175 @@
+[gd_resource type="AnimationNodeStateMachine" load_steps=36 format=3 uid="uid://c6khg20sq14sk"]
+
+[ext_resource type="AnimationNodeBlendSpace2D" uid="uid://wbi4xgvrwe3r" path="res://source/entities/player_entities/pinda_animation_tree/pinda_animtree_regular_moving_blend2D.tres" id="2_uldcn"]
+[ext_resource type="AnimationNodeStateMachine" uid="uid://5m7o0b7qdcss" path="res://source/entities/player_entities/pinda_animation_tree/pinda_animtree_regular_stuck_tree.tres" id="3_rags6"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_s1ng5"]
+animation = &"Pinda-anim_lib/ACTN-Pinda-react_bark"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_b8fq3"]
+animation = &"Pinda-anim_lib/ACTN-Pinda-calling_far"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_h4o6p"]
+animation = &"Pinda-anim_lib/ACTN-pinda-pick_up"
+
+[sub_resource type="AnimationNodeAdd2" id="AnimationNodeAdd2_br5yc"]
+filters = ["RIG-Pinda/Skeleton3D:DEF_forearm-L", "RIG-Pinda/Skeleton3D:DEF_forearm-R", "RIG-Pinda/Skeleton3D:DEF_forearm_cap-L", "RIG-Pinda/Skeleton3D:DEF_forearm_cap-R", "RIG-Pinda/Skeleton3D:DEF_hand-L", "RIG-Pinda/Skeleton3D:DEF_upperarm-L", "RIG-Pinda/Skeleton3D:DEF_upperarm-R", "RIG-Pinda/Skeleton3D:FK_forearm-L", "RIG-Pinda/Skeleton3D:FK_forearm-R", "RIG-Pinda/Skeleton3D:FK_hand-L", "RIG-Pinda/Skeleton3D:FK_hand-R", "RIG-Pinda/Skeleton3D:FK_upperarm-L", "RIG-Pinda/Skeleton3D:FK_upperarm-R", "RIG-Pinda/Skeleton3D:FK_upperarm_master-L", "RIG-Pinda/Skeleton3D:FK_upperarm_master-R", "RIG-Pinda/Skeleton3D:GDT-mouth", "RIG-Pinda/Skeleton3D:IK_forearm-L", "RIG-Pinda/Skeleton3D:IK_forearm-R", "RIG-Pinda/Skeleton3D:IK_forearm-stretch-L", "RIG-Pinda/Skeleton3D:IK_forearm-stretch-R", "RIG-Pinda/Skeleton3D:IK_upperarm-L", "RIG-Pinda/Skeleton3D:IK_upperarm-R", "RIG-Pinda/Skeleton3D:P-grab-L", "RIG-Pinda/Skeleton3D:arm_master-L", "RIG-Pinda/Skeleton3D:arm_master-R", "RIG-Pinda/Skeleton3D:eye-L", "RIG-Pinda/Skeleton3D:eye-R", "RIG-Pinda/Skeleton3D:eyebrow-1-L", "RIG-Pinda/Skeleton3D:eyebrow-1-R", "RIG-Pinda/Skeleton3D:eyebrow-2-L", "RIG-Pinda/Skeleton3D:eyebrow-2-R", "RIG-Pinda/Skeleton3D:eyebrow-3-L", "RIG-Pinda/Skeleton3D:eyebrow-3-R", "RIG-Pinda/Skeleton3D:eyebrow-4-L", "RIG-Pinda/Skeleton3D:eyebrow-4-R", "RIG-Pinda/Skeleton3D:eyebrow-L", "RIG-Pinda/Skeleton3D:eyebrow-R", "RIG-Pinda/Skeleton3D:finger_middle1-L", "RIG-Pinda/Skeleton3D:finger_middle2-L", "RIG-Pinda/Skeleton3D:finger_thumb1-L", "RIG-Pinda/Skeleton3D:finger_thumb2-L", "RIG-Pinda/Skeleton3D:grab-L", "RIG-Pinda/Skeleton3D:hair-1", "RIG-Pinda/Skeleton3D:hat_ball", "RIG-Pinda/Skeleton3D:hat_flap-L", "RIG-Pinda/Skeleton3D:hat_flap-R", "RIG-Pinda/Skeleton3D:head", "RIG-Pinda/Skeleton3D:head_master", "RIG-Pinda/Skeleton3D:knee_pole-L", "RIG-Pinda/Skeleton3D:knee_pole-R", "RIG-Pinda/Skeleton3D:knee_pole-line-L", "RIG-Pinda/Skeleton3D:knee_pole-line-R", "RIG-Pinda/Skeleton3D:knee_pole-parent-L", "RIG-Pinda/Skeleton3D:knee_pole-parent-R", "RIG-Pinda/Skeleton3D:mouth", "RIG-Pinda/Skeleton3D:mouth-01", "RIG-Pinda/Skeleton3D:mouth-03", "RIG-Pinda/Skeleton3D:mouth-04", "RIG-Pinda/Skeleton3D:mouth-05", "RIG-Pinda/Skeleton3D:mouth-07", "RIG-Pinda/Skeleton3D:mouth-08", "RIG-Pinda/Skeleton3D:mouth-09", "RIG-Pinda/Skeleton3D:mouth-10", "RIG-Pinda/Skeleton3D:mouth-12", "RIG-Pinda/Skeleton3D:mouth-13", "RIG-Pinda/Skeleton3D:mouth-14", "RIG-Pinda/Skeleton3D:mouth-15", "RIG-Pinda/Skeleton3D:mouth_target", "RIG-Pinda/Skeleton3D:nose", "RIG-Pinda/Skeleton3D:shoulder-L", "RIG-Pinda/Skeleton3D:shoulder-R", "RIG-Pinda/Skeleton3D:shoulder_master-L", "RIG-Pinda/Skeleton3D:shoulder_master-R", "RIG-Pinda/Skeleton3D:wrist-L", "RIG-Pinda/Skeleton3D:wrist-R"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_br5yc"]
+animation = &"Pinda-anim_lib/POSE-pinda-turn_left"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ndye6"]
+animation = &"Pinda-anim_lib/POSE-pinda-turn_right"
+
+[sub_resource type="AnimationNodeBlendSpace1D" id="AnimationNodeBlendSpace1D_b8fq3"]
+blend_point_0/node = SubResource("AnimationNodeAnimation_br5yc")
+blend_point_0/pos = -1.0
+blend_point_1/node = SubResource("AnimationNodeAnimation_ndye6")
+blend_point_1/pos = 1.0
+
+[sub_resource type="AnimationNodeTimeSeek" id="AnimationNodeTimeSeek_br5yc"]
+
+[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_ndye6"]
+
+[sub_resource type="AnimationNodeOneShot" id="AnimationNodeOneShot_br5yc"]
+
+[sub_resource type="AnimationNodeTimeScale" id="AnimationNodeTimeScale_br5yc"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_uldcn"]
+animation = &"Pinda-anim_lib/ACTN-Pinda-tripping"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_rags6"]
+animation = &"Pinda-anim_lib/ACTN-Pinda-rolling"
+
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_br5yc"]
+graph_offset = Vector2(-692.915, -38.3444)
+"nodes/Adding Blend/node" = SubResource("AnimationNodeAdd2_br5yc")
+"nodes/Adding Blend/position" = Vector2(40, 80)
+nodes/BendingDirection/node = SubResource("AnimationNodeBlendSpace1D_b8fq3")
+nodes/BendingDirection/position = Vector2(-400, -80)
+nodes/BendingFactor/node = SubResource("AnimationNodeTimeSeek_br5yc")
+nodes/BendingFactor/position = Vector2(-160, -20)
+"nodes/Moving Blend2D/node" = ExtResource("2_uldcn")
+"nodes/Moving Blend2D/position" = Vector2(-600, 120)
+nodes/Tripping/node = SubResource("AnimationNodeOneShot_br5yc")
+nodes/Tripping/position = Vector2(260, 160)
+"nodes/Tripping Type/node" = SubResource("AnimationNodeBlend2_ndye6")
+"nodes/Tripping Type/position" = Vector2(-100, 380)
+"nodes/Walking Speed/node" = SubResource("AnimationNodeTimeScale_br5yc")
+"nodes/Walking Speed/position" = Vector2(-400, 120)
+nodes/output/position = Vector2(480, 140)
+"nodes/tripping regular/node" = SubResource("AnimationNodeAnimation_uldcn")
+"nodes/tripping regular/position" = Vector2(-480, 400)
+"nodes/tripping rolling/node" = SubResource("AnimationNodeAnimation_rags6")
+"nodes/tripping rolling/position" = Vector2(-480, 560)
+node_connections = [&"Adding Blend", 0, &"Walking Speed", &"Adding Blend", 1, &"BendingFactor", &"BendingFactor", 0, &"BendingDirection", &"Tripping", 0, &"Adding Blend", &"Tripping", 1, &"Tripping Type", &"Tripping Type", 0, &"tripping regular", &"Tripping Type", 1, &"tripping rolling", &"Walking Speed", 0, &"Moving Blend2D", &"output", 0, &"Tripping"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_g0e0p"]
+animation = &"Pinda-anim_lib/SYNC-pinda-push_slowly"
+
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_g0e0p"]
+graph_offset = Vector2(-490.13, 0)
+nodes/Animation/node = SubResource("AnimationNodeAnimation_g0e0p")
+nodes/Animation/position = Vector2(-93.3333, 120)
+node_connections = [&"output", 0, &"Animation"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_7xcaq"]
+animation = &"Pinda-anim_lib/SYNC-pinda-treat"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_7248o"]
+animation = &"Pinda-anim_lib/LOOP-pinda-waiting"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_h4o6p"]
+advance_mode = 2
+advance_expression = "(current_character_state == character_states.CATCHING_UP
+or current_character_state == character_states.SEEKING)"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_s1ng5"]
+advance_mode = 2
+advance_expression = "current_character_state == character_states.STUCK
+"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_g0e0p"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_br5yc"]
+advance_mode = 2
+advance_expression = "(current_character_state == character_states.IDLE
+and (current_idle_type == idle_types.ANNOUNCE_DISCOVERY or current_idle_type == idle_types.ANNOUNCE_INTERACTION))"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_uldcn"]
+advance_mode = 2
+advance_expression = "(current_character_state != character_states.IDLE
+or (current_idle_type != idle_types.ANNOUNCE_DISCOVERY and current_idle_type != idle_types.ANNOUNCE_INTERACTION))"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_rags6"]
+advance_mode = 2
+advance_expression = "(current_character_state == character_states.INTERACTION
+and current_interaction_type == interaction_types.ITEM_PICKUP)"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ndye6"]
+advance_mode = 2
+advance_expression = "(current_character_state != character_states.INTERACTION
+or current_interaction_type != interaction_types.ITEM_PICKUP)"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_7xcaq"]
+advance_mode = 2
+advance_expression = "(current_character_state == character_states.IDLE
+and current_idle_type == idle_types.BARK_REACTION)"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_47vx5"]
+advance_mode = 2
+advance_expression = "(current_character_state != character_states.IDLE
+or current_idle_type != idle_types.BARK_REACTION)"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_gevu5"]
+advance_mode = 2
+advance_expression = "(current_character_state == character_states.IDLE
+and current_idle_type == idle_types.WAITING)"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_r81ne"]
+advance_mode = 2
+advance_expression = "(current_character_state != character_states.IDLE
+or current_idle_type != idle_types.WAITING)"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ugilc"]
+advance_mode = 2
+advance_expression = "(current_character_state == character_states.INTERACTION
+and current_interaction_type == interaction_types.CHOCOMEL_REWARD)"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_5df23"]
+advance_mode = 2
+advance_expression = "(current_character_state != character_states.INTERACTION
+or current_interaction_type != interaction_types.CHOCOMEL_REWARD)"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_b8fq3"]
+advance_mode = 2
+advance_expression = "(current_character_state == character_states.INTERACTION
+and current_interaction_type == interaction_types.CHOCOMEL_PUSH)"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_7248o"]
+advance_mode = 2
+advance_expression = "(current_character_state != character_states.INTERACTION
+or current_interaction_type != interaction_types.CHOCOMEL_PUSH)"
+
+[resource]
+"states/Bark React/node" = SubResource("AnimationNodeAnimation_s1ng5")
+"states/Bark React/position" = Vector2(105.594, -28.0365)
+"states/Calling Out/node" = SubResource("AnimationNodeAnimation_b8fq3")
+"states/Calling Out/position" = Vector2(292.428, -53.5714)
+states/End/position = Vector2(114.116, 468.333)
+"states/Item Pickup/node" = SubResource("AnimationNodeAnimation_h4o6p")
+"states/Item Pickup/position" = Vector2(499.017, -53.5714)
+states/Moving/node = SubResource("AnimationNodeBlendTree_br5yc")
+states/Moving/position = Vector2(404, 100)
+states/Pushed/node = SubResource("AnimationNodeBlendTree_g0e0p")
+states/Pushed/position = Vector2(586.728, 222.184)
+states/Reward/node = SubResource("AnimationNodeAnimation_7xcaq")
+states/Reward/position = Vector2(-12.549, 60.6969)
+states/STUCK/node = ExtResource("3_rags6")
+states/STUCK/position = Vector2(404, 232)
+states/Start/position = Vector2(114.667, 384.333)
+states/Waiting/node = SubResource("AnimationNodeAnimation_7248o")
+states/Waiting/position = Vector2(653.451, 100)
+transitions = ["STUCK", "Moving", SubResource("AnimationNodeStateMachineTransition_h4o6p"), "Moving", "STUCK", SubResource("AnimationNodeStateMachineTransition_s1ng5"), "Start", "Moving", SubResource("AnimationNodeStateMachineTransition_g0e0p"), "Moving", "Calling Out", SubResource("AnimationNodeStateMachineTransition_br5yc"), "Calling Out", "Moving", SubResource("AnimationNodeStateMachineTransition_uldcn"), "Moving", "Item Pickup", SubResource("AnimationNodeStateMachineTransition_rags6"), "Item Pickup", "Moving", SubResource("AnimationNodeStateMachineTransition_ndye6"), "Moving", "Bark React", SubResource("AnimationNodeStateMachineTransition_7xcaq"), "Bark React", "Moving", SubResource("AnimationNodeStateMachineTransition_47vx5"), "Moving", "Waiting", SubResource("AnimationNodeStateMachineTransition_gevu5"), "Waiting", "Moving", SubResource("AnimationNodeStateMachineTransition_r81ne"), "Moving", "Reward", SubResource("AnimationNodeStateMachineTransition_ugilc"), "Reward", "Moving", SubResource("AnimationNodeStateMachineTransition_5df23"), "Moving", "Pushed", SubResource("AnimationNodeStateMachineTransition_b8fq3"), "Pushed", "Moving", SubResource("AnimationNodeStateMachineTransition_7248o")]
+graph_offset = Vector2(-139.605, -102.341)

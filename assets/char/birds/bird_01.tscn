@@ -1,0 +1,108 @@
+[gd_scene load_steps=9 format=3 uid="uid://b8thnyftghduc"]
+
+[ext_resource type="PackedScene" uid="uid://du4iiyt7uwrlt" path="res://assets/char/birds/bird_01.gltf" id="1_lu1u7"]
+[ext_resource type="Script" uid="uid://clak2gm3c1on4" path="res://assets/char/birds/bird.gd" id="1_wm6li"]
+[ext_resource type="AnimationLibrary" uid="uid://bqgbqk4x78avw" path="res://assets/char/birds/bird_01-anim_lib.tres" id="2_cvy5o"]
+[ext_resource type="AnimationNodeStateMachine" uid="uid://bbbks73fwhjdn" path="res://assets/char/birds/animationtree/BirdStateMachine.tres" id="3_crqah"]
+
+[sub_resource type="Animation" id="Animation_wm6li"]
+length = 0.001
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../ChirpSounds")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0)
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../ChirpSounds:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 8.21212, 20.9712)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_w46xq"]
+_data = {
+&"RESET": SubResource("Animation_wm6li")
+}
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_wm6li"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.06
+radial_segments = 16
+rings = 0
+cap_bottom = false
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w46xq"]
+transparency = 1
+albedo_color = Color(0.359069, 0.359069, 0.359069, 0.227451)
+emission_enabled = true
+emission = Color(0.5125, 1, 0.25, 1)
+
+[node name="bird_01" type="Node3D" node_paths=PackedStringArray("animation_player", "animation_tree", "debug_radius")]
+script = ExtResource("1_wm6li")
+animation_player = NodePath("AnimationPlayer")
+animation_tree = NodePath("AnimationTree")
+debug_radius = NodePath("DebugRadius")
+
+[node name="CH-bird_01-IMPORT" parent="." instance=ExtResource("1_lu1u7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00596595, 0, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../CH-bird_01-IMPORT")
+libraries = {
+&"": SubResource("AnimationLibrary_w46xq"),
+&"bird_01-anim_lib": ExtResource("2_cvy5o")
+}
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+root_node = NodePath("../CH-bird_01-IMPORT")
+tree_root = ExtResource("3_crqah")
+anim_player = NodePath("../AnimationPlayer")
+"parameters/Fly Away/blend_position" = 0
+"parameters/Idle Loops/blend_position" = 0.0
+
+[node name="DebugRadius" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0310374, 0)
+mesh = SubResource("CylinderMesh_wm6li")
+surface_material_override/0 = SubResource("StandardMaterial3D_w46xq")
+
+[node name="PitterPatterSounds" type="AudioStreamPlayer3D" parent="."]
+volume_db = -6.0
+unit_size = 6.0
+max_db = -3.0
+pitch_scale = 1.2
+max_distance = 35.0
+panning_strength = 2.0
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 3000.0
+attenuation_filter_db = -30.0
+
+[node name="ChirpSounds" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.21212, 20.9712)
+volume_db = -6.0
+unit_size = 6.0
+max_db = -3.0
+pitch_scale = 1.2
+max_distance = 40.0
+panning_strength = 2.0
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 3000.0
+attenuation_filter_db = -30.0
+
+[node name="FlySounds" type="AudioStreamPlayer3D" parent="."]
+volume_db = -6.0
+unit_size = 6.0
+max_db = -3.0
+pitch_scale = 1.2
+max_distance = 35.0
+panning_strength = 2.0
+attenuation_filter_cutoff_hz = 3000.0
+attenuation_filter_db = -30.0

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhpk7gyptnies"]
+
+[ext_resource type="PackedScene" uid="uid://m703alpkfhip" path="res://assets/lib/shrubs_and_grass/dogwood/LI-dogwood_005.gltf" id="1_veyto"]
+[ext_resource type="Script" uid="uid://dw6ysrlodecpb" path="res://source/obstacles/shrubs.gd" id="2_nf0r2"]
+
+[node name="LI-dogwood_005" type="Node3D"]
+
+[node name="LI-dogwood_005-IMPORT" parent="." instance=ExtResource("1_veyto")]
+script = ExtResource("2_nf0r2")

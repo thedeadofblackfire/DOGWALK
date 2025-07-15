@@ -1,0 +1,30 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://bcjc8lpm011ax"]
+
+[ext_resource type="Texture2D" uid="uid://bs5patqwxbeht" path="res://assets/props/emote_bubble/animations/crash/crash_1.png" id="1_ygn4q"]
+[ext_resource type="Texture2D" uid="uid://bkyk86772f4rg" path="res://assets/props/emote_bubble/animations/crash/crash_2.png" id="2_lyvyu"]
+[ext_resource type="Texture2D" uid="uid://c0nc4k1rsjgof" path="res://assets/props/emote_bubble/animations/crash/crash_3.png" id="3_s0dy3"]
+[ext_resource type="Texture2D" uid="uid://rotlfts1aslc" path="res://assets/props/emote_bubble/animations/crash/crash_4.png" id="4_hlasl"]
+[ext_resource type="Texture2D" uid="uid://ul8lv0o0gayw" path="res://assets/props/emote_bubble/animations/crash/crash_5.png" id="5_52thc"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ygn4q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_lyvyu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_s0dy3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_hlasl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_52thc")
+}],
+"loop": false,
+"name": &"In",
+"speed": 10.0
+}]

@@ -1,0 +1,483 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 1,
+                    "append_parent_collection": 1,
+                    "asset_name": "LI-fence_pole_02"
+                },
+                "asset_type": "ASSET",
+                "root_type": "STATIC",
+                "asset_id": "a91995ac5d9fef47"
+            },
+            "name": "LI-fence_pole_02",
+            "nodes": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "mesh": 0,
+            "name": "GEO-fence_pole_02"
+        },
+        {
+            "extras": {
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.17299997806549072,
+                    "height": 1.4459999799728394,
+                    "size": [
+                        0.41200000047683716,
+                        0.41200000047683716,
+                        1.437000036239624
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.007",
+            "translation": [
+                0.010667930357158184,
+                0.711893618106842,
+                0
+            ]
+        },
+        {
+            "name": "HLP-leash_point.008",
+            "translation": [
+                0.1696971356868744,
+                0.6000000238418579,
+                0.17919376492500305
+            ]
+        },
+        {
+            "name": "HLP-leash_point.009",
+            "translation": [
+                0.16799688339233398,
+                0.6000000238418579,
+                -0.1522209197282791
+            ]
+        },
+        {
+            "name": "HLP-leash_point.010",
+            "translation": [
+                -0.1257958710193634,
+                0.6000000238418579,
+                -0.1691238433122635
+            ]
+        },
+        {
+            "name": "HLP-leash_point.011",
+            "translation": [
+                -0.15498743951320648,
+                0.6000000238418579,
+                0.17484807968139648
+            ]
+        },
+        {
+            "name": "HLP-leash_point.012",
+            "translation": [
+                0.005173484794795513,
+                0.6000000238418579,
+                0.21029351651668549
+            ]
+        },
+        {
+            "name": "HLP-leash_point.013",
+            "translation": [
+                0.22309738397598267,
+                0.6000000238418579,
+                0.005497559905052185
+            ]
+        },
+        {
+            "name": "HLP-leash_point.014",
+            "translation": [
+                0.03011658787727356,
+                0.6000000238418579,
+                -0.19667279720306396
+            ]
+        },
+        {
+            "name": "HLP-leash_point.015",
+            "translation": [
+                -0.18124333024024963,
+                0.6000000238418579,
+                -0.005004793405532837
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "roughness": 0.9369496703147888,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "wear_strength": 0.20000000298023224,
+                    "wear_start": 0.429999977350235,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.009999999776482582,
+                    "wear_distortion_scale": 100.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.07999999821186066,
+                    "normal_use_uv2": 0.0
+                },
+                "asset_id": "11271e8932030dc8",
+                "yp": {
+                    "active_ypaint_node": ""
+                }
+            },
+            "name": "fence_parts-wood",
+            "normalTexture": {
+                "index": 0
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                }
+            }
+        },
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "roughness": 0.8870129585266113,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "wear_strength": 0.0,
+                    "wear_start": 0.0,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.5,
+                    "wear_distortion_scale": 100.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.20000000298023224,
+                    "normal_use_uv2": 0.0
+                },
+                "asset_id": "ab857b0a7c159b93",
+                "yp": {}
+            },
+            "name": "fence_parts-snow",
+            "normalTexture": {
+                "index": 2
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 3
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Cube.001",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2,
+                        "COLOR_0": 3
+                    },
+                    "indices": 4,
+                    "material": 0
+                },
+                {
+                    "attributes": {
+                        "POSITION": 5,
+                        "NORMAL": 6,
+                        "TEXCOORD_0": 7,
+                        "COLOR_0": 8
+                    },
+                    "indices": 9,
+                    "material": 1
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        },
+        {
+            "sampler": 0,
+            "source": 2
+        },
+        {
+            "sampler": 0,
+            "source": 3
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/textures/wood_frosted-normal.png"
+            },
+            "mimeType": "image/png",
+            "name": "wood_frosted-normal",
+            "uri": "../../../textures/wood_frosted-normal.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/textures/wood_frosted-albedo.png"
+            },
+            "mimeType": "image/png",
+            "name": "wood_frosted-albedo",
+            "uri": "../../../textures/wood_frosted-albedo.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/textures/snow_gen_normal-01.png"
+            },
+            "mimeType": "image/png",
+            "name": "snow_gen_normal-01",
+            "uri": "../../../textures/snow_gen_normal-01.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/textures/snow_gen_albedo-01.png"
+            },
+            "mimeType": "image/png",
+            "name": "snow_gen_albedo-01",
+            "uri": "../../../textures/snow_gen_albedo-01.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 62,
+            "max": [
+                0.18651865422725677,
+                1.2878228425979614,
+                0.18124933540821075
+            ],
+            "min": [
+                -0.16475312411785126,
+                0,
+                -0.1743507981300354
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 62,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 62,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5123,
+            "count": 62,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5123,
+            "count": 144,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5126,
+            "count": 65,
+            "max": [
+                0.2017812579870224,
+                1.3366072177886963,
+                0.20909333229064941
+            ],
+            "min": [
+                -0.19245535135269165,
+                1.1221792697906494,
+                -0.1946786642074585
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 6,
+            "componentType": 5126,
+            "count": 65,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 7,
+            "componentType": 5126,
+            "count": 65,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 8,
+            "componentType": 5123,
+            "count": 65,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 9,
+            "componentType": 5123,
+            "count": 126,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 744,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 744,
+            "byteOffset": 744,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 496,
+            "byteOffset": 1488,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 496,
+            "byteOffset": 1984,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 288,
+            "byteOffset": 2480,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 780,
+            "byteOffset": 2768,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 780,
+            "byteOffset": 3548,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 520,
+            "byteOffset": 4328,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 520,
+            "byteOffset": 4848,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 252,
+            "byteOffset": 5368,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 5620,
+            "uri": "LI-fence_pole_02.bin"
+        }
+    ]
+}

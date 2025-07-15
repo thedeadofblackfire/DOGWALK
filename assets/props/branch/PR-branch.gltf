@@ -1,0 +1,432 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 2,
+                    "append_parent_collection": 1,
+                    "asset_name": "PR-branch"
+                },
+                "asset_type": "ASSET",
+                "root_type": "PASS_THROUGH",
+                "asset_id": "868c2289863dfb65"
+            },
+            "name": "PR-branch",
+            "nodes": [
+                0,
+                10
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "extras": {
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 0,
+                    "radius": 0.5,
+                    "height": 2.0,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive"
+        },
+        {
+            "name": "Arm_Left-3",
+            "rotation": [
+                -0.035979531705379486,
+                0.0006207333062775433,
+                0.07501032948493958,
+                0.9965332746505737
+            ],
+            "translation": [
+                -6.257323548197746e-10,
+                0.16939590871334076,
+                2.3283064365386963e-10
+            ]
+        },
+        {
+            "name": "Arm_Left-4",
+            "rotation": [
+                -0.1378139853477478,
+                0.026648493483662605,
+                -0.2298021763563156,
+                0.9630618691444397
+            ],
+            "scale": [
+                0.9999999403953552,
+                1,
+                1
+            ],
+            "translation": [
+                0.010673719458281994,
+                0.0666533038020134,
+                -0.0060018799267709255
+            ]
+        },
+        {
+            "children": [
+                1,
+                2
+            ],
+            "name": "Arm_Left-2",
+            "rotation": [
+                0.01047090906649828,
+                0.00028052949346601963,
+                -0.0033471316564828157,
+                0.9999395608901978
+            ],
+            "scale": [
+                0.9999998807907104,
+                1,
+                0.9999999403953552
+            ],
+            "translation": [
+                -1.0477378964424133e-09,
+                0.1593041867017746,
+                -1.9226717995479703e-09
+            ]
+        },
+        {
+            "children": [
+                3
+            ],
+            "name": "Arm_Left-1",
+            "rotation": [
+                1.9166328968367452e-07,
+                -2.988963743177919e-08,
+                1.3707905033299994e-08,
+                1
+            ],
+            "scale": [
+                0.9999999403953552,
+                1,
+                0.9999999403953552
+            ],
+            "translation": [
+                -4.016328603029251e-09,
+                -4.220055416226387e-08,
+                -2.0372681319713593e-09
+            ]
+        },
+        {
+            "children": [
+                4
+            ],
+            "name": "Arm_Left-0",
+            "rotation": [
+                -0.5237883925437927,
+                -0.47094056010246277,
+                -0.48259392380714417,
+                0.5205419659614563
+            ],
+            "translation": [
+                -0.27317655086517334,
+                0.015508496202528477,
+                0.01680748350918293
+            ]
+        },
+        {
+            "children": [
+                5
+            ],
+            "name": "branch",
+            "rotation": [
+                0,
+                1.1920927533992653e-07,
+                0,
+                1
+            ],
+            "scale": [
+                1,
+                0.9999999403953552,
+                1
+            ]
+        },
+        {
+            "children": [
+                6
+            ],
+            "name": "SubRoot"
+        },
+        {
+            "children": [
+                7
+            ],
+            "name": "Root"
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 0,
+            "name": "GEO-snowman-stick_arm.L",
+            "skin": 0
+        },
+        {
+            "children": [
+                9,
+                8
+            ],
+            "extras": {
+                "cloudrig": {},
+                "ant_landscape": {}
+            },
+            "name": "RIG-branch"
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "yp": {},
+                "asset_id": "f698ff6da1941010",
+                "material_info": {
+                    "albedo_color": [
+                        0.1735599935054779,
+                        0.12374100089073181,
+                        0.08312200009822845,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "roughness": 0.8999999761581421,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "wear_strength": 0.0,
+                    "wear_start": 0.0,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.5,
+                    "wear_distortion_scale": 100.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.20000000298023224
+                }
+            },
+            "name": "branch_snowman",
+            "normalTexture": {
+                "index": 0,
+                "texCoord": 1
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Plane.004",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2,
+                        "TEXCOORD_1": 3,
+                        "JOINTS_0": 4,
+                        "WEIGHTS_0": 5
+                    },
+                    "indices": 6,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/textures/paper_rough_medium-normal.png"
+            },
+            "mimeType": "image/png",
+            "name": "paper_rough_medium-normal",
+            "uri": "../../textures/paper_rough_medium-normal.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/textures/paper_crumpled_albedo.png"
+            },
+            "mimeType": "image/png",
+            "name": "paper_crumpled_albedo",
+            "uri": "../../textures/paper_crumpled_albedo.png"
+        }
+    ],
+    "skins": [
+        {
+            "inverseBindMatrices": 7,
+            "joints": [
+                8,
+                7,
+                6,
+                5,
+                4,
+                3,
+                1,
+                2
+            ],
+            "name": "RIG-branch"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 221,
+            "max": [
+                0.2757422924041748,
+                0.08049125969409943,
+                0.09065558761358261
+            ],
+            "min": [
+                -0.28144243359565735,
+                -0.06133799999952316,
+                -0.07392536103725433
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 221,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 221,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5126,
+            "count": 221,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5121,
+            "count": 221,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5126,
+            "count": 221,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 6,
+            "componentType": 5123,
+            "count": 1008,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 7,
+            "componentType": 5126,
+            "count": 8,
+            "type": "MAT4"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 2652,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2652,
+            "byteOffset": 2652,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1768,
+            "byteOffset": 5304,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1768,
+            "byteOffset": 7072,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 884,
+            "byteOffset": 8840,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 3536,
+            "byteOffset": 9724,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2016,
+            "byteOffset": 13260,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 512,
+            "byteOffset": 15276
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 15788,
+            "uri": "PR-branch.bin"
+        }
+    ]
+}

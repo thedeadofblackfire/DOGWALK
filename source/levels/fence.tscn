@@ -1,0 +1,139 @@
+[gd_scene load_steps=12 format=3 uid="uid://dm0261ouxl4gc"]
+
+[ext_resource type="CompressedTexture3D" uid="uid://utrpmymid8n4" path="res://assets/textures/lut_world_01.png" id="1_m6shj"]
+[ext_resource type="PackedScene" uid="uid://d04q83ru8ixv5" path="res://source/entities/player.tscn" id="2_an2lk"]
+[ext_resource type="PackedScene" uid="uid://lm1mcout5ae3" path="res://assets/props/snowman/PR-snowman.tscn" id="3_an2lk"]
+[ext_resource type="PackedScene" uid="uid://dvgbkrbvb1c5d" path="res://assets/sets/fence/SE-fence.tscn" id="3_em4mj"]
+
+[sub_resource type="Gradient" id="Gradient_ib4q8"]
+offsets = PackedFloat32Array(0.34773, 0.602436, 0.614618)
+colors = PackedColorArray(0, 0, 0, 1, 0.0765307, 0.0765307, 0.0765307, 1, 1, 1, 1, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_ccari"]
+frequency = 0.0047
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_q073b"]
+invert = true
+seamless = true
+seamless_blend_skirt = 0.073
+normalize = false
+color_ramp = SubResource("Gradient_ib4q8")
+noise = SubResource("FastNoiseLite_ccari")
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_p1say"]
+sky_top_color = Color(0.4042, 0.502957, 0.86, 1)
+sky_horizon_color = Color(0.605372, 0.847798, 1, 1)
+sky_curve = 0.166435
+sky_cover = SubResource("NoiseTexture2D_q073b")
+sun_angle_max = 5.91
+sun_curve = 0.344609
+use_debanding = false
+energy_multiplier = 5.0
+
+[sub_resource type="Sky" id="Sky_12gwf"]
+sky_material = SubResource("ProceduralSkyMaterial_p1say")
+radiance_size = 2
+
+[sub_resource type="Environment" id="Environment_q4ik7"]
+background_mode = 2
+background_color = Color(0.28, 0.484, 1, 1)
+background_energy_multiplier = 0.5
+sky = SubResource("Sky_12gwf")
+ambient_light_source = 3
+reflected_light_source = 2
+tonemap_mode = 4
+ssr_enabled = true
+ssr_max_steps = 128
+ssr_fade_in = 0.166435
+ssr_fade_out = 1.51572
+ssr_depth_tolerance = 0.21
+ssao_radius = 1.78
+ssao_intensity = 2.09
+ssao_power = 3.32871
+ssao_sharpness = 0.77
+ssao_light_affect = 0.75
+ssao_ao_channel_affect = 0.76
+sdfgi_use_occlusion = true
+sdfgi_bounce_feedback = 1.0
+sdfgi_min_cell_size = 0.146484
+sdfgi_cascade0_distance = 9.375
+sdfgi_max_distance = 150.0
+glow_enabled = true
+glow_levels/3 = 1.43
+glow_levels/5 = 0.0
+glow_normalized = true
+glow_strength = 0.71
+glow_bloom = 0.09
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.01
+volumetric_fog_albedo = Color(0.909804, 0.639216, 0.541176, 1)
+volumetric_fog_emission = Color(0.89, 0.653408, 0.4005, 1)
+volumetric_fog_emission_energy = 2.0
+volumetric_fog_length = 21.24
+volumetric_fog_ambient_inject = 1.08
+adjustment_enabled = true
+adjustment_color_correction = ExtResource("1_m6shj")
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_bhl10"]
+
+[node name="Fence" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_q4ik7")
+
+[node name="Sun" type="DirectionalLight3D" parent="WorldEnvironment"]
+transform = Transform3D(0.690542, 0.520513, -0.502213, -8.25892e-08, 0.694344, 0.719644, 0.723292, -0.496944, 0.479474, 0.129636, 4.42771, 0)
+light_color = Color(1, 0.938667, 0.08, 1)
+light_energy = 1.2
+light_indirect_energy = 1.075
+light_volumetric_fog_energy = 0.0
+shadow_enabled = true
+shadow_bias = 0.04
+shadow_blur = 1.349
+directional_shadow_split_2 = 0.196
+directional_shadow_split_3 = 0.416
+directional_shadow_blend_splits = true
+directional_shadow_max_distance = 25.0
+
+[node name="SunSoft" type="DirectionalLight3D" parent="WorldEnvironment"]
+transform = Transform3D(0.690542, 0.520513, -0.502213, -8.25892e-08, 0.694344, 0.719644, 0.723292, -0.496944, 0.479474, 0.129636, 4.42771, 0)
+light_color = Color(1, 0.727, 0.09, 1)
+light_energy = 0.656
+light_indirect_energy = 1.075
+light_volumetric_fog_energy = 0.0
+shadow_enabled = true
+shadow_bias = 0.04
+shadow_blur = 7.107
+directional_shadow_mode = 0
+directional_shadow_split_2 = 0.196
+directional_shadow_split_3 = 0.416
+directional_shadow_blend_splits = true
+directional_shadow_max_distance = 25.0
+
+[node name="EnvironmentLights" type="DirectionalLight3D" parent="WorldEnvironment"]
+transform = Transform3D(0.953307, 6.76419e-09, -0.302004, 0.301986, 0.0108208, 0.953251, 0.00326793, -0.999941, 0.0103155, -0.418202, 3.90937, 1.63599)
+light_color = Color(0.0693, 0.483615, 0.99, 1)
+light_energy = 0.29
+shadow_blur = 6.84
+directional_shadow_mode = 0
+
+[node name="EnvironmentLights2" type="DirectionalLight3D" parent="WorldEnvironment"]
+transform = Transform3D(-0.979654, -0.00113128, 0.20069, 0.0355604, -0.98514, 0.168032, 0.197518, 0.17175, 0.965137, -3.79557, 2.75271, 0.979935)
+light_color = Color(0.6693, 0.799603, 0.97, 1)
+light_energy = 0.45
+shadow_blur = 6.84
+directional_shadow_mode = 0
+
+[node name="GroundCollider" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GroundCollider"]
+shape = SubResource("WorldBoundaryShape3D_bhl10")
+
+[node name="PR-snowman" parent="." instance=ExtResource("3_an2lk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.9262, 0, 34.3248)
+
+[node name="Player" parent="." instance=ExtResource("2_an2lk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.9363, 0, 34.2092)
+maxmimum_leash_length = 6.0
+
+[node name="SE-fence" parent="." instance=ExtResource("3_em4mj")]

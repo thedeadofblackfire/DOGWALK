@@ -1,0 +1,47 @@
+[gd_resource type="AudioStreamSynchronized" load_steps=15 format=3 uid="uid://4gin0o37xv4k"]
+
+[ext_resource type="AudioStream" uid="uid://bw2qm5l40b2qj" path="res://assets/music/IDLE_WALK_RUN_SPRINT.ogg" id="1_l6q78"]
+[ext_resource type="AudioStream" uid="uid://b4kw1o6go20fr" path="res://assets/music/IDLE_WALK_RUN.ogg" id="2_q1tqh"]
+[ext_resource type="AudioStream" uid="uid://dqq5jgf86dbts" path="res://assets/music/FOREST.ogg" id="3_dvli5"]
+[ext_resource type="AudioStream" uid="uid://gdqbmt3s2y71" path="res://assets/music/FENCE.ogg" id="4_vjkh8"]
+[ext_resource type="AudioStream" uid="uid://b4ekxfoe5r21t" path="res://assets/music/POND.ogg" id="5_lhani"]
+[ext_resource type="AudioStream" uid="uid://dupecstexh5um" path="res://assets/music/POND_EXTRA.ogg" id="6_d7x4w"]
+[ext_resource type="AudioStream" uid="uid://dwhmonehlm0s8" path="res://assets/music/WALK.ogg" id="7_j5ese"]
+[ext_resource type="AudioStream" uid="uid://mvi8xxplfthl" path="res://assets/music/WALK_RUN_SPRINT.ogg" id="8_8jsht"]
+[ext_resource type="AudioStream" uid="uid://ccb1f7d5i8eht" path="res://assets/music/RUN_SPRINT.ogg" id="9_0ig5f"]
+[ext_resource type="AudioStream" uid="uid://dhgo44f1x8hg1" path="res://assets/music/SPRINT.ogg" id="10_051te"]
+[ext_resource type="AudioStream" uid="uid://burrt7euesine" path="res://assets/music/PULL.ogg" id="11_lgixx"]
+[ext_resource type="AudioStream" uid="uid://hweb42281v6w" path="res://assets/music/REST_MEDITATE_HEAL.ogg" id="12_4v3mc"]
+[ext_resource type="AudioStream" uid="uid://cj8erk66b8xvy" path="res://assets/music/MEDITATE_HEAL.ogg" id="13_tc6ew"]
+[ext_resource type="AudioStream" uid="uid://bkwksvef7iwqy" path="res://assets/music/HEAL.ogg" id="14_4p1fh"]
+
+[resource]
+stream_count = 14
+stream_0/stream = ExtResource("1_l6q78")
+stream_0/volume = 0.0
+stream_1/stream = ExtResource("2_q1tqh")
+stream_1/volume = 0.0
+stream_2/stream = ExtResource("7_j5ese")
+stream_2/volume = -60.0
+stream_3/stream = ExtResource("8_8jsht")
+stream_3/volume = -60.0
+stream_4/stream = ExtResource("9_0ig5f")
+stream_4/volume = -60.0
+stream_5/stream = ExtResource("10_051te")
+stream_5/volume = -60.0
+stream_6/stream = ExtResource("11_lgixx")
+stream_6/volume = -60.0
+stream_7/stream = ExtResource("12_4v3mc")
+stream_7/volume = -60.0
+stream_8/stream = ExtResource("13_tc6ew")
+stream_8/volume = -60.0
+stream_9/stream = ExtResource("14_4p1fh")
+stream_9/volume = -60.0
+stream_10/stream = ExtResource("3_dvli5")
+stream_10/volume = -60.0
+stream_11/stream = ExtResource("4_vjkh8")
+stream_11/volume = -60.0
+stream_12/stream = ExtResource("5_lhani")
+stream_12/volume = -60.0
+stream_13/stream = ExtResource("6_d7x4w")
+stream_13/volume = -60.0

@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dl40jf3lyg03i"]
+
+[ext_resource type="Script" uid="uid://cgvpqscmnb7oi" path="res://source/utility/collectable_item.gd" id="1_gdifp"]
+[ext_resource type="PackedScene" uid="uid://xrnpp3bmfs1e" path="res://assets/props/tennis_ball/PR-tennis_ball.gltf" id="1_xme56"]
+[ext_resource type="AnimationLibrary" uid="uid://bmvb615r71eh1" path="res://assets/props/tennis_ball/PR-tennis_ball-anim_lib.tres" id="3_nd214"]
+
+[node name="PR-tennis_ball" type="Node3D"]
+
+[node name="PR-tennis_ball-IMPORT" parent="." node_paths=PackedStringArray("collision_shape", "skeleton", "anim_player") instance=ExtResource("1_xme56")]
+script = ExtResource("1_gdifp")
+item_id = 12
+collision_shape = NodePath("COL-collision_primitive")
+skeleton = NodePath("RIG-tennis_ball/Skeleton3D")
+anim_player = NodePath("../AnimationPlayer")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../PR-tennis_ball-IMPORT")
+libraries = {
+&"PR-tennis_ball-anim_lib": ExtResource("3_nd214")
+}

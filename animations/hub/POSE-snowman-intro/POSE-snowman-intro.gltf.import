@@ -1,0 +1,60 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://5mdqx2e0xklx"
+path="res://.godot/imported/POSE-snowman-intro.gltf-84dd77f83845db6eb5155e2f4fa23168.scn"
+
+[deps]
+
+source_file="res://animations/hub/POSE-snowman-intro/POSE-snowman-intro.gltf"
+dest_files=["res://.godot/imported/POSE-snowman-intro.gltf-84dd77f83845db6eb5155e2f4fa23168.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=24
+animation/trimming=false
+animation/remove_immutable_tracks=false
+animation/import_rest_as_RESET=false
+import_script/path="uid://gtfffogvk6gb"
+_subresources={
+"animations": {
+"LOOP-chocomel-sleeping": {
+"save_to_file/enabled": true,
+"save_to_file/keep_custom_tracks": true,
+"save_to_file/path": "res://animations/hub/POSE-snowman-intro/LOOP-chocomel-sleeping.tres",
+"settings/loop_mode": 0
+},
+"POSE-snowman-intro": {
+"save_to_file/enabled": true,
+"save_to_file/keep_custom_tracks": true,
+"save_to_file/path": "res://animations/hub/POSE-snowman-intro/POSE-snowman-intro.tres",
+"settings/loop_mode": 0
+}
+},
+"nodes": {
+"PATH:AnimationPlayer": {
+"optimizer/enabled": false,
+"optimizer/max_angular_error": 0.1,
+"optimizer/max_velocity_error": 0.1
+}
+}
+}
+file_path="res://animations/hub/POSE-snowman-intro/POSE-snowman-intro.gltf"
+gltf/naming_version=0
+gltf/embedded_image_handling=1

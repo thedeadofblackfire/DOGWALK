@@ -1,0 +1,23 @@
+[gd_resource type="AudioStreamSynchronized" load_steps=7 format=3 uid="uid://swt2yl36e2fu"]
+
+[ext_resource type="AudioStream" uid="uid://cquy0bsg8oowy" path="res://assets/sfx/world/LOOP-object-hint.ogg" id="1_fa06a"]
+[ext_resource type="AudioStream" uid="uid://lv364kl0f5cc" path="res://assets/sfx/world/LOOP-object-location-hint-melody-1.ogg" id="2_lbkcn"]
+[ext_resource type="AudioStream" uid="uid://ry3j75e4dgos" path="res://assets/sfx/world/LOOP-object-location-hint-melody-2.ogg" id="3_stf14"]
+[ext_resource type="AudioStream" uid="uid://do486m87u3bu7" path="res://assets/sfx/world/LOOP-object-location-hint-melody-3.ogg" id="4_snrra"]
+[ext_resource type="AudioStream" uid="uid://ceo3wtc6514k0" path="res://assets/sfx/world/LOOP-object-location-hint-melody-4.ogg" id="5_r18wc"]
+[ext_resource type="AudioStream" uid="uid://vihy6x2y075" path="res://assets/sfx/world/LOOP-object-location-hint-melody-5.ogg" id="6_utl2x"]
+
+[resource]
+stream_count = 6
+stream_0/stream = ExtResource("1_fa06a")
+stream_0/volume = -30.0
+stream_1/stream = ExtResource("2_lbkcn")
+stream_1/volume = 0.0
+stream_2/stream = ExtResource("3_stf14")
+stream_2/volume = 0.0
+stream_3/stream = ExtResource("4_snrra")
+stream_3/volume = 0.0
+stream_4/stream = ExtResource("5_r18wc")
+stream_4/volume = 0.0
+stream_5/stream = ExtResource("6_utl2x")
+stream_5/volume = 0.0

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2276tusne3r"]
+
+[ext_resource type="PackedScene" uid="uid://do0vl23bp2gpo" path="res://assets/lib/trees/tree_stumps/LI-tree_stump_001.gltf" id="1_k0rqi"]
+[ext_resource type="Script" uid="uid://bj34k0ajpsopu" path="res://source/obstacles/generic_obstacle.gd" id="2_8wv72"]
+
+[node name="LI-tree_stump_001" type="Node3D"]
+
+[node name="LI-tree_stump_001-IMPORT" parent="." instance=ExtResource("1_k0rqi")]
+script = ExtResource("2_8wv72")

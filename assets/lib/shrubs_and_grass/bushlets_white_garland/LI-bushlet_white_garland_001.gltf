@@ -1,0 +1,243 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 2,
+                    "append_parent_collection": 1,
+                    "asset_name": "LI-bushlet_white_garland_001"
+                },
+                "asset_type": "ASSET",
+                "root_type": "PASS_THROUGH",
+                "asset_id": "197dadd136b4dd6e"
+            },
+            "name": "LI-bushlet_white_garland_001",
+            "nodes": [
+                0,
+                1
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "mesh": 0,
+            "name": "GEO-bushlets_white_garland_001"
+        },
+        {
+            "extras": {
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 1,
+                    "radius": 0.43799999356269836,
+                    "height": 1.1799999475479126,
+                    "size": [
+                        0.7490000128746033,
+                        0.22000004351139069,
+                        1.1100000143051147
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.037",
+            "rotation": [
+                0,
+                -0.030459512025117874,
+                0,
+                0.9995359778404236
+            ],
+            "translation": [
+                0.1967264711856842,
+                0.5482715368270874,
+                -0.005271460860967636
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "d1f69e03f81856bf",
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "metallic": 0.0,
+                    "displacement_strength": 1.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        0.800000011920929,
+                        0.660744309425354,
+                        0.5630130171775818,
+                        1.0
+                    ],
+                    "wear_strength": 0.0,
+                    "wear_start": 0.0,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.5,
+                    "wear_distortion_scale": 100.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_map": [
+                        0.5,
+                        0.5,
+                        1.0,
+                        1.0
+                    ],
+                    "normal_strength": 1.0,
+                    "normal_use_uv2": 0.0
+                }
+            },
+            "name": "bushlets_white_garland",
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 0
+                },
+                "metallicRoughnessTexture": {
+                    "index": 1
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "bushlets_white_garland_albedo",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/bushlets_white_garland_albedo.png"
+            },
+            "mimeType": "image/png",
+            "name": "bushlets_white_garland_albedo",
+            "uri": "../../textures/bushlets_white_garland_albedo.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/bushlets_white_garland_roughness.png"
+            },
+            "mimeType": "image/png",
+            "name": "bushlets_white_garland_roughness",
+            "uri": "../../textures/bushlets_white_garland_roughness.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 24,
+            "max": [
+                0.7376722693443298,
+                1.0982723236083984,
+                0.08437469601631165
+            ],
+            "min": [
+                -0.42790284752845764,
+                -0.005734883248806,
+                -0.16996462643146515
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5123,
+            "count": 57,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 288,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 288,
+            "byteOffset": 288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 192,
+            "byteOffset": 576,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 114,
+            "byteOffset": 768,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987,
+            "wrapS": 33071,
+            "wrapT": 33071
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 884,
+            "uri": "LI-bushlet_white_garland_001.bin"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+[gd_resource type="AnimationNodeBlendSpace2D" load_steps=5 format=3 uid="uid://ymoyfye8pd3k"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_64kyq"]
+animation = &"Pinda-anim_lib/LOOP-pinda-stuck_snow"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_sq2k7"]
+animation = &"Pinda-anim_lib/LOOP-pinda-fallen"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_yhsnv"]
+animation = &"Pinda-anim_lib/LOOP-pinda-fallen_dragged"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_37xdy"]
+animation = &"Pinda-anim_lib/LOOP-pinda-snow_dragged"
+
+[resource]
+blend_point_0/node = SubResource("AnimationNodeAnimation_64kyq")
+blend_point_0/pos = Vector2(0, 0)
+blend_point_1/node = SubResource("AnimationNodeAnimation_sq2k7")
+blend_point_1/pos = Vector2(1, 0)
+blend_point_2/node = SubResource("AnimationNodeAnimation_yhsnv")
+blend_point_2/pos = Vector2(1, 1)
+blend_point_3/node = SubResource("AnimationNodeAnimation_37xdy")
+blend_point_3/pos = Vector2(0, 1)

@@ -1,0 +1,484 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 1,
+                    "append_parent_collection": 0,
+                    "asset_name": "SL-clearing_terrain"
+                },
+                "root_type": "STATIC",
+                "asset_type": "ASSET",
+                "asset_id": "892b0ceb80e3299f"
+            },
+            "name": "SL-clearing_terrain",
+            "nodes": [
+                0,
+                1,
+                2,
+                3
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "extras": {
+                "ant_landscape": {},
+                "collision_info": {
+                    "type": "MESH",
+                    "concave": true
+                },
+                "visibility_info": {
+                    "shadow": false
+                }
+            },
+            "mesh": 0,
+            "name": "COL-bounds",
+            "rotation": [
+                0,
+                -0.611457347869873,
+                0,
+                0.7912774085998535
+            ],
+            "translation": [
+                -1.6191505193710327,
+                0,
+                81.6096420288086
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {},
+                "collision_info": {
+                    "type": "MESH",
+                    "concave": true
+                },
+                "visibility_info": {
+                    "shadow": false
+                }
+            },
+            "mesh": 1,
+            "name": "COL-terrain",
+            "translation": [
+                -53.7458381652832,
+                0,
+                39.645565032958984
+            ]
+        },
+        {
+            "extras": {
+                "visibility_info": {
+                    "shadow": false
+                },
+                "ant_landscape": {}
+            },
+            "mesh": 2,
+            "name": "GEO-ground"
+        },
+        {
+            "extras": {
+                "ant_landscape": {},
+                "instance_asset_id": "e0593d0520c1b48a"
+            },
+            "name": "PR-snow_piles",
+            "rotation": [
+                0.003922122064977884,
+                0.022263789549469948,
+                0.04851938411593437,
+                0.9985663890838623
+            ],
+            "translation": [
+                -55.3222541809082,
+                -0.034540753811597824,
+                40.65651321411133
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "doubleSided": true,
+            "extras": {
+                "asset_id": "670df0950921f9ec"
+            },
+            "name": "DUMMY-snow_gen",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    1
+                ],
+                "metallicFactor": 0,
+                "roughnessFactor": 0.4000000059604645
+            }
+        },
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "yp": {
+                    "active_ypaint_node": ""
+                },
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "roughness": 0.5,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "wear_strength": 0.0,
+                    "wear_start": 0.0,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.5,
+                    "wear_distortion_scale": 100.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.4000000059604645,
+                    "normal_use_uv2": 0.0
+                },
+                "asset_id": "c8d06f94a1cbdca0"
+            },
+            "name": "ground_snow-clearing",
+            "normalTexture": {
+                "index": 0
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Plane",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3
+                }
+            ]
+        },
+        {
+            "name": "Plane.001",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 4,
+                        "NORMAL": 5,
+                        "TEXCOORD_0": 6,
+                        "TEXCOORD_1": 7,
+                        "COLOR_0": 8,
+                        "COLOR_1": 9
+                    },
+                    "indices": 10,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "B\u00e9zierCircle.034",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 11,
+                        "NORMAL": 12,
+                        "TEXCOORD_0": 13
+                    },
+                    "indices": 14,
+                    "material": 1
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/textures/snow_gen_normal-01.png"
+            },
+            "mimeType": "image/png",
+            "name": "snow_gen_normal-01",
+            "uri": "../../textures/snow_gen_normal-01.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/textures/snow_gen_albedo-01.png"
+            },
+            "mimeType": "image/png",
+            "name": "snow_gen_albedo-01",
+            "uri": "../../textures/snow_gen_albedo-01.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 488,
+            "max": [
+                0.06412887573242188,
+                3.2698116302490234,
+                71.7457275390625
+            ],
+            "min": [
+                -104.86998748779297,
+                -0.92132169008255,
+                -1.1972806453704834
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 488,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 488,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5123,
+            "count": 948,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5126,
+            "count": 2424,
+            "max": [
+                55.71699523925781,
+                6.795816898345947,
+                43.608558654785156
+            ],
+            "min": [
+                -32.440032958984375,
+                -0.8923286199569702,
+                -54.09812545776367
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5126,
+            "count": 2424,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 6,
+            "componentType": 5126,
+            "count": 2424,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 7,
+            "componentType": 5126,
+            "count": 2424,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 8,
+            "componentType": 5121,
+            "count": 2424,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 9,
+            "componentType": 5123,
+            "count": 2424,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 10,
+            "componentType": 5123,
+            "count": 14001,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 11,
+            "componentType": 5126,
+            "count": 6182,
+            "max": [
+                2.0293660163879395,
+                6.767449378967285,
+                86.79452514648438
+            ],
+            "min": [
+                -89.6091537475586,
+                -0.8854786157608032,
+                -18.38663101196289
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 12,
+            "componentType": 5126,
+            "count": 6182,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 13,
+            "componentType": 5126,
+            "count": 6182,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 14,
+            "componentType": 5123,
+            "count": 35499,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 5856,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 5856,
+            "byteOffset": 5856,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 3904,
+            "byteOffset": 11712,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1896,
+            "byteOffset": 15616,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 29088,
+            "byteOffset": 17512,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 29088,
+            "byteOffset": 46600,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 19392,
+            "byteOffset": 75688,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 19392,
+            "byteOffset": 95080,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 9696,
+            "byteOffset": 114472,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 19392,
+            "byteOffset": 124168,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 28002,
+            "byteOffset": 143560,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 74184,
+            "byteOffset": 171564,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 74184,
+            "byteOffset": 245748,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 49456,
+            "byteOffset": 319932,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 70998,
+            "byteOffset": 369388,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 440388,
+            "uri": "SL-clearing_terrain.bin"
+        }
+    ]
+}

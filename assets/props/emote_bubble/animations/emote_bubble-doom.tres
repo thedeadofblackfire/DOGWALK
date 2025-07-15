@@ -1,0 +1,48 @@
+[gd_resource type="SpriteFrames" load_steps=8 format=3 uid="uid://bv0oeorabeo26"]
+
+[ext_resource type="Texture2D" uid="uid://dn83n75aaymgu" path="res://assets/props/emote_bubble/animations/doom/doom_3.png" id="1_kn448"]
+[ext_resource type="Texture2D" uid="uid://lxx5ck3x7i8c" path="res://assets/props/emote_bubble/animations/doom/doom_1.png" id="1_svwwm"]
+[ext_resource type="Texture2D" uid="uid://c8v3byra2vcfu" path="res://assets/props/emote_bubble/animations/doom/doom_2.png" id="2_m5x02"]
+[ext_resource type="Texture2D" uid="uid://bftwkfhfrngj" path="res://assets/props/emote_bubble/animations/doom/doom_4.png" id="2_tioqg"]
+[ext_resource type="Texture2D" uid="uid://bu7hlloagaokk" path="res://assets/props/emote_bubble/animations/doom/doom_5.png" id="3_1teif"]
+[ext_resource type="Texture2D" uid="uid://bvah5hi0shvq" path="res://assets/props/emote_bubble/animations/doom/doom_6.png" id="6_xydhb"]
+[ext_resource type="Texture2D" uid="uid://bqealtgbtc5k7" path="res://assets/props/emote_bubble/animations/doom/doom_7.png" id="7_h2cge"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_svwwm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_m5x02")
+}],
+"loop": true,
+"name": &"In",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_kn448")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_tioqg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_1teif")
+}],
+"loop": true,
+"name": &"Loop",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_xydhb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_h2cge")
+}],
+"loop": true,
+"name": &"Out",
+"speed": 8.0
+}]

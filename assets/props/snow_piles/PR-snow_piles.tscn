@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://01skskvvp560"]
+
+[ext_resource type="PackedScene" path="res://assets/props/snow_piles/PR-snow_piles.gltf" id="1_w26de"]
+
+[node name="PR-snow_piles" type="Node3D"]
+
+[node name="PR-snow_piles-IMPORT" type="Area3D" parent="." instance=ExtResource("1_w26de")]

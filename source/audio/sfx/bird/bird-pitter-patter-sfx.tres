@@ -1,0 +1,11 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=3 format=3 uid="uid://dwfi3j473on3h"]
+
+[ext_resource type="AudioStream" uid="uid://rreebcd11wx8" path="res://assets/sfx/world/ACTN-bird-tip-tap-01.ogg" id="1_m6evx"]
+[ext_resource type="AudioStream" uid="uid://d1fvt33v7hrwv" path="res://assets/sfx/world/ACTN-bird-tip-tap-02.ogg" id="2_bxosr"]
+
+[resource]
+random_pitch = 1.2
+random_volume_offset_db = 0.5
+streams_count = 2
+stream_0/stream = ExtResource("1_m6evx")
+stream_1/stream = ExtResource("2_bxosr")

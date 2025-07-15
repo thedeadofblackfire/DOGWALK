@@ -1,0 +1,681 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.32",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 0,
+                    "append_parent_collection": 1,
+                    "asset_name": "PR-snowman_emotes"
+                },
+                "asset_type": "ASSET",
+                "root_type": "NONE",
+                "asset_id": "d076fe35917f6eec"
+            },
+            "name": "PR-snowman_emotes",
+            "nodes": [
+                8
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "mesh": 0,
+            "name": "GEO-snowman_emotes-fireworks",
+            "rotation": [
+                0.3959890604019165,
+                -1.09464544095772e-07,
+                4.720557456039387e-08,
+                0.9182552695274353
+            ],
+            "scale": [
+                2.4639787673950195,
+                2.4639790058135986,
+                2.4639790058135986
+            ],
+            "translation": [
+                -0.13283370435237885,
+                0.8084166049957275,
+                0.0034655018243938684
+            ]
+        },
+        {
+            "mesh": 1,
+            "name": "GEO-snowman_emotes-missing_arm",
+            "rotation": [
+                0.3959890604019165,
+                -1.0946455120119936e-07,
+                4.720557456039387e-08,
+                0.9182552695274353
+            ],
+            "scale": [
+                1.3057091236114502,
+                1.3057091236114502,
+                1.3057091236114502
+            ],
+            "translation": [
+                0.6474409699440002,
+                0.11067789793014526,
+                -0.19969548285007477
+            ]
+        },
+        {
+            "mesh": 2,
+            "name": "GEO-snowman_emotes-missing_cane",
+            "rotation": [
+                0.5558156371116638,
+                0.10832519829273224,
+                -0.029341910034418106,
+                0.8236950635910034
+            ],
+            "scale": [
+                1.3057091236114502,
+                1.3057091236114502,
+                1.3057091236114502
+            ],
+            "translation": [
+                0.6191534996032715,
+                0.05256587266921997,
+                0.04938574880361557
+            ]
+        },
+        {
+            "mesh": 3,
+            "name": "GEO-snowman_emotes-missing_hat",
+            "rotation": [
+                0.558524489402771,
+                -9.888267982205434e-08,
+                6.658130757841718e-08,
+                0.8294880390167236
+            ],
+            "scale": [
+                1.3057091236114502,
+                1.3057091236114502,
+                1.3057091236114502
+            ],
+            "translation": [
+                -0.1041005328297615,
+                0.8747439384460449,
+                0.017578577622771263
+            ]
+        },
+        {
+            "mesh": 4,
+            "name": "GEO-snowman_emotes-missing_nose",
+            "rotation": [
+                0.4465554654598236,
+                0.011308356188237667,
+                0.04894828051328659,
+                0.8933444619178772
+            ],
+            "scale": [
+                1.1732984781265259,
+                1.1732982397079468,
+                1.1732982397079468
+            ],
+            "translation": [
+                0.14783206582069397,
+                0.6792804002761841,
+                0.13590329885482788
+            ]
+        },
+        {
+            "children": [
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "name": "bubble",
+            "rotation": [
+                0,
+                1.1920928955078125e-07,
+                0,
+                1
+            ],
+            "translation": [
+                0,
+                0.7408607006072998,
+                0
+            ]
+        },
+        {
+            "children": [
+                5
+            ],
+            "name": "SubRoot"
+        },
+        {
+            "children": [
+                6
+            ],
+            "name": "Root"
+        },
+        {
+            "children": [
+                7
+            ],
+            "extras": {
+                "cloudrig": {},
+                "ant_landscape": {}
+            },
+            "name": "RIG-snowman_emotes"
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "extras": {
+                "yp": {
+                    "active_ypaint_node": ""
+                },
+                "asset_id": "cde71f1f8b377adf"
+            },
+            "name": "emote_bubble-fireworks",
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 0
+                },
+                "metallicFactor": 0,
+                "roughnessFactor": 0.9290909171104431
+            }
+        },
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "extras": {
+                "yp": {
+                    "active_ypaint_node": ""
+                },
+                "asset_id": "e07a1ff32edad548"
+            },
+            "name": "emote_bubble-missing_arm",
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                },
+                "metallicFactor": 0,
+                "roughnessFactor": 0.9290909171104431
+            }
+        },
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "extras": {
+                "yp": {
+                    "active_ypaint_node": ""
+                },
+                "asset_id": "70c35d1b1877aae1"
+            },
+            "name": "emote_bubble-missing_cane",
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 2
+                },
+                "metallicFactor": 0,
+                "roughnessFactor": 0.9290909171104431
+            }
+        },
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "extras": {
+                "yp": {
+                    "active_ypaint_node": ""
+                },
+                "asset_id": "9395b0617e5d6387"
+            },
+            "name": "emote_bubble-missing_hat",
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 3
+                },
+                "metallicFactor": 0,
+                "roughnessFactor": 0.885454535484314
+            }
+        },
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "extras": {
+                "yp": {
+                    "active_ypaint_node": ""
+                },
+                "asset_id": "d7e260c5cb13c74b"
+            },
+            "name": "emote_bubble-missing_nose",
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 4
+                },
+                "metallicFactor": 0,
+                "roughnessFactor": 0.9109090566635132
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "GEO-snowman_emotes-missing_arm.002",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "GEO-snowman_emotes-missing_arm",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 4,
+                        "NORMAL": 5,
+                        "TEXCOORD_0": 6
+                    },
+                    "indices": 3,
+                    "material": 1
+                }
+            ]
+        },
+        {
+            "name": "GEO-snowman_emotes-missing_arm.001",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 7,
+                        "NORMAL": 8,
+                        "TEXCOORD_0": 9
+                    },
+                    "indices": 3,
+                    "material": 2
+                }
+            ]
+        },
+        {
+            "name": "GEO-snowman_emotes-missing_hat",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 10,
+                        "NORMAL": 11,
+                        "TEXCOORD_0": 12
+                    },
+                    "indices": 3,
+                    "material": 3
+                }
+            ]
+        },
+        {
+            "name": "GEO-snowman_emotes-missing_hat.001",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 13,
+                        "NORMAL": 14,
+                        "TEXCOORD_0": 15
+                    },
+                    "indices": 3,
+                    "material": 4
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        },
+        {
+            "sampler": 0,
+            "source": 2
+        },
+        {
+            "sampler": 0,
+            "source": 3
+        },
+        {
+            "sampler": 0,
+            "source": 4
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/props/snowman_emotes/textures/fireworks/fireworks_4.png"
+            },
+            "mimeType": "image/png",
+            "name": "fireworks_4",
+            "uri": "textures/fireworks/fireworks_4.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/props/snowman_emotes/textures/missing_arm/missing_arm_1.png"
+            },
+            "mimeType": "image/png",
+            "name": "missing_arm_1",
+            "uri": "textures/missing_arm/missing_arm_1.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/props/snowman_emotes/textures/missing_cane/missing_cane_2.png"
+            },
+            "mimeType": "image/png",
+            "name": "missing_cane_2",
+            "uri": "textures/missing_cane/missing_cane_2.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/props/snowman_emotes/textures/missing_hat/missing_hat_1.png"
+            },
+            "mimeType": "image/png",
+            "name": "missing_hat_1",
+            "uri": "textures/missing_hat/missing_hat_1.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/props/snowman_emotes/textures/missing_nose/missing_nose_2.png"
+            },
+            "mimeType": "image/png",
+            "name": "missing_nose_2",
+            "uri": "textures/missing_nose/missing_nose_2.png"
+        }
+    ],
+    "skins": [
+        {
+            "inverseBindMatrices": 16,
+            "joints": [
+                7,
+                6,
+                5
+            ],
+            "name": "RIG-snowman_emotes"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 4,
+            "max": [
+                0.5093985199928284,
+                0,
+                0.5
+            ],
+            "min": [
+                -0.5093985199928284,
+                0,
+                -0.5
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 4,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 4,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5123,
+            "count": 6,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5126,
+            "count": 4,
+            "max": [
+                0.5093985199928284,
+                0,
+                0.5
+            ],
+            "min": [
+                -0.5093985199928284,
+                0,
+                -0.5
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5126,
+            "count": 4,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 6,
+            "componentType": 5126,
+            "count": 4,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 7,
+            "componentType": 5126,
+            "count": 4,
+            "max": [
+                0.5093985199928284,
+                0,
+                0.5
+            ],
+            "min": [
+                -0.5093985199928284,
+                0,
+                -0.5
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 8,
+            "componentType": 5126,
+            "count": 4,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 9,
+            "componentType": 5126,
+            "count": 4,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 10,
+            "componentType": 5126,
+            "count": 4,
+            "max": [
+                0.5093985199928284,
+                0,
+                0.5
+            ],
+            "min": [
+                -0.5093985199928284,
+                0,
+                -0.5
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 11,
+            "componentType": 5126,
+            "count": 4,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 12,
+            "componentType": 5126,
+            "count": 4,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 13,
+            "componentType": 5126,
+            "count": 4,
+            "max": [
+                0.5093985199928284,
+                0,
+                0.5
+            ],
+            "min": [
+                -0.5093985199928284,
+                0,
+                -0.5
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 14,
+            "componentType": 5126,
+            "count": 4,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 15,
+            "componentType": 5126,
+            "count": 4,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 16,
+            "componentType": 5126,
+            "count": 3,
+            "type": "MAT4"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 48,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 48,
+            "byteOffset": 48,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 32,
+            "byteOffset": 96,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 12,
+            "byteOffset": 128,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 48,
+            "byteOffset": 140,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 48,
+            "byteOffset": 188,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 32,
+            "byteOffset": 236,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 48,
+            "byteOffset": 268,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 48,
+            "byteOffset": 316,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 32,
+            "byteOffset": 364,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 48,
+            "byteOffset": 396,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 48,
+            "byteOffset": 444,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 32,
+            "byteOffset": 492,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 48,
+            "byteOffset": 524,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 48,
+            "byteOffset": 572,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 32,
+            "byteOffset": 620,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 192,
+            "byteOffset": 652
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987,
+            "wrapS": 33071,
+            "wrapT": 33071
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 844,
+            "uri": "PR-snowman_emotes.bin"
+        }
+    ]
+}

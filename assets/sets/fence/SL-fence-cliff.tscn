@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cug1p57lxy87j"]
+
+[ext_resource type="PackedScene" path="res://assets/sets/fence/SL-fence-cliff.gltf" id="1_1un2a"]
+
+[node name="SL-fence-cliff" type="Node3D"]
+
+[node name="SL-fence-cliff-IMPORT" type="Area3D" parent="." instance=ExtResource("1_1un2a")]

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcvd47r6m2n5u"]
+
+[ext_resource type="PackedScene" uid="uid://vg2k8y6hsv0i" path="res://assets/sets/clearing/SL-clearing-fence.gltf" id="1_r8mxi"]
+
+[node name="SL-clearing-fence" type="Node3D"]
+
+[node name="SL-clearing-fence-IMPORT" type="StaticBody3D" parent="." instance=ExtResource("1_r8mxi")]

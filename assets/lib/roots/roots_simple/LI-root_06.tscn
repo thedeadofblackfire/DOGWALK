@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwkefxc8xqs3v"]
+
+[ext_resource type="PackedScene" uid="uid://c1pklmorbot0w" path="res://assets/lib/roots/roots_simple/LI-root_06.gltf" id="1_2rldm"]
+[ext_resource type="Script" uid="uid://02uuusjb26e5" path="res://source/obstacles/generic_tripping_hazard.gd" id="2_3nm58"]
+
+[node name="LI-root_06" type="Node3D"]
+
+[node name="LI-root_06-IMPORT" parent="." instance=ExtResource("1_2rldm")]
+script = ExtResource("2_3nm58")

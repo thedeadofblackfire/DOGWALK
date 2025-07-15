@@ -1,0 +1,392 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 1,
+                    "append_parent_collection": 1,
+                    "asset_name": "LI-pine_cut_patch_012"
+                },
+                "asset_type": "ASSET",
+                "root_type": "STATIC",
+                "asset_id": "f29d3e59ba5cc8c1"
+            },
+            "name": "LI-pine_cut_patch_012",
+            "nodes": [
+                0,
+                1,
+                2
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "Lattice.009",
+            "scale": [
+                0.8923512101173401,
+                0.9931120276451111,
+                0.25978392362594604
+            ],
+            "translation": [
+                0,
+                -0.33132946491241455,
+                0.03079269640147686
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 0,
+            "name": "GEO-pine_cut_patch.002",
+            "rotation": [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071068286895752
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 1,
+            "name": "GEO-pine_cut_patch-009.003",
+            "rotation": [
+                0.6820727586746216,
+                0.10299102216959,
+                0.045382414013147354,
+                0.722571849822998
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "25330e66f650d1ec",
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "metallic": 0.0,
+                    "displacement_strength": 1.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        0.5481292009353638,
+                        0.608286440372467,
+                        0.5053419470787048,
+                        1.0
+                    ],
+                    "wear_strength": 0.0,
+                    "wear_start": 0.0,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.5,
+                    "wear_distortion_scale": 100.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.20000000298023224,
+                    "normal_use_uv2": 1.0
+                }
+            },
+            "name": "pine_cuts_atlas_albedo_01",
+            "normalTexture": {
+                "index": 0,
+                "texCoord": 1
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                },
+                "metallicRoughnessTexture": {
+                    "index": 2
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "pine_cuts_atlas_albedo_01.001",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2,
+                        "TEXCOORD_1": 3,
+                        "COLOR_0": 4
+                    },
+                    "indices": 5,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "pine_cuts_atlas_albedo_01.005",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 6,
+                        "NORMAL": 7,
+                        "TEXCOORD_0": 8,
+                        "TEXCOORD_1": 9,
+                        "COLOR_0": 10
+                    },
+                    "indices": 11,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 1,
+            "source": 1
+        },
+        {
+            "sampler": 0,
+            "source": 2
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/textures/paper_fine_normal.png"
+            },
+            "mimeType": "image/png",
+            "name": "paper_fine_normal",
+            "uri": "../../../textures/paper_fine_normal.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/pine_cuts_atlas_albedo_01.png"
+            },
+            "mimeType": "image/png",
+            "name": "pine_cuts_atlas_albedo_01",
+            "uri": "../../textures/pine_cuts_atlas_albedo_01.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/pine_cuts_atlas_roughness_01.png"
+            },
+            "mimeType": "image/png",
+            "name": "pine_cuts_atlas_roughness_01",
+            "uri": "../../textures/pine_cuts_atlas_roughness_01.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 100,
+            "max": [
+                0.07963194698095322,
+                0.41076377034187317,
+                0.6279553771018982
+            ],
+            "min": [
+                -0.16643857955932617,
+                -0.04196607321500778,
+                -0.0142445033416152
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 100,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 100,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5126,
+            "count": 100,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5123,
+            "count": 100,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5123,
+            "count": 297,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 6,
+            "componentType": 5126,
+            "count": 67,
+            "max": [
+                0.09303035587072372,
+                0.28387251496315,
+                0.5623811483383179
+            ],
+            "min": [
+                -0.06906253844499588,
+                -0.05150036886334419,
+                -0.017204327508807182
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 7,
+            "componentType": 5126,
+            "count": 67,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 8,
+            "componentType": 5126,
+            "count": 67,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 9,
+            "componentType": 5126,
+            "count": 67,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 10,
+            "componentType": 5123,
+            "count": 67,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 11,
+            "componentType": 5123,
+            "count": 192,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 1200,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1200,
+            "byteOffset": 1200,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 800,
+            "byteOffset": 2400,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 800,
+            "byteOffset": 3200,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 800,
+            "byteOffset": 4000,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 594,
+            "byteOffset": 4800,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 804,
+            "byteOffset": 5396,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 804,
+            "byteOffset": 6200,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 536,
+            "byteOffset": 7004,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 536,
+            "byteOffset": 7540,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 536,
+            "byteOffset": 8076,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 384,
+            "byteOffset": 8612,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        },
+        {
+            "magFilter": 9729,
+            "minFilter": 9987,
+            "wrapS": 33071,
+            "wrapT": 33071
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 8996,
+            "uri": "LI-pine_cut_patch_012.bin"
+        }
+    ]
+}

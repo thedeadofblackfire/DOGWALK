@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://da3qysvmg7ott"]
+
+[ext_resource type="PackedScene" uid="uid://b7dajuh6fgbja" path="res://assets/props/treat/PR-treat.gltf" id="1_r241i"]
+[ext_resource type="AnimationLibrary" uid="uid://b72vxhttm4ft" path="res://assets/props/treat/PR-treat-anim_lib.tres" id="2_cdccc"]
+
+[node name="PR-treat" type="Node3D"]
+
+[node name="PR-treat-IMPORT" parent="." instance=ExtResource("1_r241i")]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../PR-treat-IMPORT")
+libraries = {
+&"PR-treat-anim_lib": ExtResource("2_cdccc")
+}

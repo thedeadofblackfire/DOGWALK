@@ -1,0 +1,48 @@
+[gd_resource type="SpriteFrames" load_steps=8 format=3 uid="uid://btcfgfyd4lekp"]
+
+[ext_resource type="Texture2D" uid="uid://uqi6kvpx4den" path="res://assets/props/emote_bubble/animations/snowman/snowman_1.png" id="1_12s8b"]
+[ext_resource type="Texture2D" uid="uid://bpp2hw66ioda7" path="res://assets/props/emote_bubble/animations/snowman/snowman_2.png" id="2_x8ejn"]
+[ext_resource type="Texture2D" uid="uid://c12c2mp0qt5ta" path="res://assets/props/emote_bubble/animations/snowman/snowman_3.png" id="3_da2vi"]
+[ext_resource type="Texture2D" uid="uid://dlgf4vd02qt6a" path="res://assets/props/emote_bubble/animations/snowman/snowman_4.png" id="4_umi0t"]
+[ext_resource type="Texture2D" uid="uid://c5yd63l6su5kk" path="res://assets/props/emote_bubble/animations/snowman/snowman_5.png" id="5_j7foh"]
+[ext_resource type="Texture2D" uid="uid://bep5jbqis3no0" path="res://assets/props/emote_bubble/animations/snowman/snowman_6.png" id="6_vl7yb"]
+[ext_resource type="Texture2D" uid="uid://bjqtdcr8i0axk" path="res://assets/props/emote_bubble/animations/snowman/snowman_7.png" id="7_5ekas"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_12s8b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_x8ejn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_da2vi")
+}],
+"loop": false,
+"name": &"In",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_umi0t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_j7foh")
+}],
+"loop": true,
+"name": &"Loop",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_vl7yb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_5ekas")
+}],
+"loop": false,
+"name": &"Out",
+"speed": 6.0
+}]

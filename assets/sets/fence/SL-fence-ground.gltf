@@ -1,0 +1,308 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 1,
+                    "append_parent_collection": 1,
+                    "asset_name": "SL-fence-ground"
+                },
+                "asset_type": "ASSET",
+                "root_type": "STATIC",
+                "asset_id": "ad10cc119aa6c0db"
+            },
+            "name": "SL-fence-ground",
+            "nodes": [
+                0,
+                1
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "extras": {
+                "collision_info": {
+                    "type": "MESH",
+                    "concave": true
+                },
+                "visibility_info": {
+                    "shadow": false
+                }
+            },
+            "mesh": 0,
+            "name": "COL-ground-fence",
+            "translation": [
+                -0.3069734573364258,
+                0,
+                0.2558112144470215
+            ]
+        },
+        {
+            "mesh": 1,
+            "name": "GEO-ground-fence",
+            "translation": [
+                -0.3069734573364258,
+                0,
+                0.2558112144470215
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "yp": {
+                    "active_ypaint_node": ""
+                },
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "roughness": 0.5,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "wear_strength": 0.0,
+                    "wear_start": 0.0,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.5,
+                    "wear_distortion_scale": 100.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.6600000262260437,
+                    "normal_use_uv2": 0.0
+                },
+                "asset_id": "1245e4d25be3fea3"
+            },
+            "name": "ground_snow-fence",
+            "normalTexture": {
+                "index": 0
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "B\u00e9zierCircle.010",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "B\u00e9zierCircle.007",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 4,
+                        "NORMAL": 5,
+                        "TEXCOORD_0": 6
+                    },
+                    "indices": 7,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/textures/snow_gen_normal-01.png"
+            },
+            "mimeType": "image/png",
+            "name": "snow_gen_normal-01",
+            "uri": "../../textures/snow_gen_normal-01.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/textures/snow_gen_albedo-01.png"
+            },
+            "mimeType": "image/png",
+            "name": "snow_gen_albedo-01",
+            "uri": "../../textures/snow_gen_albedo-01.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 214,
+            "max": [
+                85.0497817993164,
+                1.1570827629370228e-11,
+                86.90257263183594
+            ],
+            "min": [
+                2.791635751724243,
+                -5.105404987659767e-10,
+                -47.93324661254883
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 214,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 214,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5123,
+            "count": 852,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5126,
+            "count": 939,
+            "max": [
+                85.0497817993164,
+                0,
+                86.90257263183594
+            ],
+            "min": [
+                3.041287899017334,
+                -5.194791263818388e-10,
+                -47.93324661254883
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5126,
+            "count": 939,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 6,
+            "componentType": 5126,
+            "count": 939,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 7,
+            "componentType": 5123,
+            "count": 4659,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 2568,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2568,
+            "byteOffset": 2568,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1712,
+            "byteOffset": 5136,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1704,
+            "byteOffset": 6848,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 11268,
+            "byteOffset": 8552,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 11268,
+            "byteOffset": 19820,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 7512,
+            "byteOffset": 31088,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 9318,
+            "byteOffset": 38600,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 47920,
+            "uri": "SL-fence-ground.bin"
+        }
+    ]
+}

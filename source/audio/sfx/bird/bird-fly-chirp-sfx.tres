@@ -1,0 +1,17 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=6 format=3 uid="uid://ubi2jyxyfmr5"]
+
+[ext_resource type="AudioStream" uid="uid://cya54jux703po" path="res://assets/sfx/world/ACTN-bird-chirp-fly.ogg" id="1_kflke"]
+[ext_resource type="AudioStream" uid="uid://cbstdwnn8pbsl" path="res://assets/sfx/world/ACTN-bird-chirp-fly-02.ogg" id="2_ejcoo"]
+[ext_resource type="AudioStream" uid="uid://h6d3xmstxtp4" path="res://assets/sfx/world/ACTN-bird-chirp-fly-03.ogg" id="3_5oer8"]
+[ext_resource type="AudioStream" uid="uid://djnj7yf6gd55u" path="res://assets/sfx/world/ACTN-bird-chirp-fly-04.ogg" id="4_sa48k"]
+[ext_resource type="AudioStream" uid="uid://cxyk2qjyc7e3b" path="res://assets/sfx/pinda/LOOP-pause.ogg" id="5_wrror"]
+
+[resource]
+random_pitch = 1.2
+streams_count = 5
+stream_0/stream = ExtResource("1_kflke")
+stream_1/stream = ExtResource("2_ejcoo")
+stream_2/stream = ExtResource("3_5oer8")
+stream_3/stream = ExtResource("4_sa48k")
+stream_4/stream = ExtResource("5_wrror")
+stream_4/weight = 4.0

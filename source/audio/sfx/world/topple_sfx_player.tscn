@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=3 uid="uid://cdqsnu8qup17g"]
+
+[ext_resource type="AudioStream" uid="uid://bp05tyxrde65t" path="res://assets/sfx/world/LI-ToppleEntity-topple-0.ogg" id="1_e18b0"]
+[ext_resource type="AudioStream" uid="uid://bs2xvpbmkedan" path="res://assets/sfx/world/LI-ToppleEntity-topple-1.ogg" id="2_o3doy"]
+[ext_resource type="AudioStream" uid="uid://bbqmv3s86jqqa" path="res://assets/sfx/world/LI-ToppleEntity-topple-2.ogg" id="3_pudxv"]
+[ext_resource type="AudioStream" uid="uid://d4mxus8l145h1" path="res://assets/sfx/world/LI-ToppleEntity-topple-3.ogg" id="4_iuwtl"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_rhvf3"]
+random_pitch = 1.3
+streams_count = 4
+stream_0/stream = ExtResource("1_e18b0")
+stream_1/stream = ExtResource("2_o3doy")
+stream_2/stream = ExtResource("3_pudxv")
+stream_3/stream = ExtResource("4_iuwtl")
+
+[node name="ToppleSfxPlayer" type="AudioStreamPlayer3D"]
+stream = SubResource("AudioStreamRandomizer_rhvf3")
+volume_db = 6.0
+max_db = 6.0
+pitch_scale = 1.25
+max_distance = 40.0
+panning_strength = 2.0
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 2500.0

@@ -1,0 +1,49 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://wp3b1nm8vik5"
+path="res://.godot/imported/LI-stone_plateau_001.gltf-81ce09b4a5ed8da31a696426534976cf.scn"
+
+[deps]
+
+source_file="res://assets/lib/stone_plateaus/LI-stone_plateau_001.gltf"
+dest_files=["res://.godot/imported/LI-stone_plateau_001.gltf-81ce09b4a5ed8da31a696426534976cf.scn"]
+
+[params]
+
+nodes/root_type="StaticBody3D"
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path="uid://gtfffogvk6gb"
+_subresources={
+"materials": {
+"snow_edge_plateau": {
+"use_external/enabled": true,
+"use_external/path": "res://assets/lib/stone_plateaus/snow_edge_plateau.tres"
+},
+"stone_wall_snowy": {
+"use_external/enabled": true,
+"use_external/path": "res://assets/lib/stone_plateaus/stone_wall_snowy.tres"
+}
+}
+}
+file_path="res://assets/lib/stone_plateaus/LI-stone_plateau_001.gltf"
+gltf/naming_version=0
+gltf/embedded_image_handling=1

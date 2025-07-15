@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bk86j3vh4td6f"]
+
+[ext_resource type="PackedScene" uid="uid://duxin1tygo4ro" path="res://assets/lib/trees/birch_outgrowth/LI-birch_outgrowth_005.gltf" id="1_o38xm"]
+
+[node name="LI-birch_outgrowth_005" type="Node3D"]
+
+[node name="LI-birch_outgrowth_005-IMPORT" type="StaticBody3D" parent="." instance=ExtResource("1_o38xm")]

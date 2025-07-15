@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://euslrjo0ighx"]
+
+[ext_resource type="Material" uid="uid://c5l2o1a78xl85" path="res://assets/testing/materials/material_bush.tres" id="1_2wbvj"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_11hkw"]
+height = 1.65137
+radius = 1.2
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_e2oc5"]
+top_radius = 0.6
+bottom_radius = 1.2
+height = 1.5
+
+[node name="Bush" type="RigidBody3D"]
+collision_layer = 32
+collision_mask = 8
+freeze = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.786977, 0)
+shape = SubResource("CylinderShape3D_11hkw")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.728493, 0)
+material_override = ExtResource("1_2wbvj")
+mesh = SubResource("CylinderMesh_e2oc5")

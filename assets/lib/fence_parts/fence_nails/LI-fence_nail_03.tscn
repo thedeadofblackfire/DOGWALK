@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://euwynyqu22t4"]
+
+[ext_resource type="PackedScene" path="res://assets/lib/fence_parts/fence_nails/LI-fence_nail_03.gltf" id="1_txhxu"]
+
+[node name="LI-fence_nail_03" type="Node3D"]
+
+[node name="LI-fence_nail_03-IMPORT" type="Node3D" parent="." instance=ExtResource("1_txhxu")]

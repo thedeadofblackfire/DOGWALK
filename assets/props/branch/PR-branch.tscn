@@ -1,0 +1,51 @@
+[gd_scene load_steps=7 format=3 uid="uid://dt77wsed3atoa"]
+
+[ext_resource type="PackedScene" uid="uid://vbatyawd6cj7" path="res://assets/props/branch/PR-branch.gltf" id="1_opexi"]
+[ext_resource type="Script" uid="uid://cgvpqscmnb7oi" path="res://source/utility/collectable_item.gd" id="1_rqb8w"]
+[ext_resource type="AnimationLibrary" uid="uid://deyderjc607ro" path="res://assets/props/branch/PR-branch-anim_lib.tres" id="3_cpabm"]
+[ext_resource type="PackedScene" uid="uid://cn48a7exjspdl" path="res://source/entities/player_entities/emote_bubble.tscn" id="4_pvngw"]
+
+[sub_resource type="Animation" id="Animation_pvngw"]
+resource_name = "RESET"
+length = 0.001
+step = 0.0416667
+tracks/0/type = "position_3d"
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/path = NodePath("RIG-branch/Skeleton3D:SubRoot")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0)
+tracks/1/type = "rotation_3d"
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/path = NodePath("RIG-branch/Skeleton3D:SubRoot")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1vjfb"]
+_data = {
+&"RESET": SubResource("Animation_pvngw")
+}
+
+[node name="PR-branch" type="Node3D"]
+
+[node name="PR-branch-IMPORT" parent="." node_paths=PackedStringArray("collision_shape", "skeleton", "anim_player") instance=ExtResource("1_opexi")]
+script = ExtResource("1_rqb8w")
+item_id = 11
+collision_shape = NodePath("COL-collision_primitive")
+skeleton = NodePath("RIG-branch/Skeleton3D")
+anim_player = NodePath("../AnimationPlayer")
+
+[node name="EmoteBubble_Prompt" parent="PR-branch-IMPORT" node_paths=PackedStringArray("character") instance=ExtResource("4_pvngw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.210022, 0)
+character = NodePath("..")
+parent_to_head_bone = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../PR-branch-IMPORT")
+libraries = {
+&"": SubResource("AnimationLibrary_1vjfb"),
+&"PR-branch-anim_lib": ExtResource("3_cpabm")
+}

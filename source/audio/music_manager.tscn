@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://baapcgt0f3uss"]
+
+[ext_resource type="Script" uid="uid://c5ptmuyuhu3t1" path="res://source/audio/music_manager.gd" id="1_0rsql"]
+[ext_resource type="AudioStream" uid="uid://c75kjuo2rby81" path="res://source/audio/music/music_manager_stream_player.tres" id="1_stmof"]
+[ext_resource type="PackedScene" uid="uid://nbveim6ktmwh" path="res://music_state_gameplay.tscn" id="3_stmof"]
+
+[node name="MusicManager" type="AudioStreamPlayer" node_paths=PackedStringArray("gameplay_state")]
+stream = ExtResource("1_stmof")
+volume_db = 4.5
+bus = &"Music"
+script = ExtResource("1_0rsql")
+gameplay_state = NodePath("MusicState_Gameplay")
+
+[node name="MusicState_Gameplay" parent="." instance=ExtResource("3_stmof")]

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dnbvytus6lvsm"]
+
+[ext_resource type="PackedScene" uid="uid://cjwkw1xutu5d0" path="res://assets/lib/trees/birch_branches/LI-birch_branch_010.gltf" id="1_votim"]
+
+[node name="LI-birch_branch_010" type="Node3D"]
+
+[node name="LI-birch_branch_010-IMPORT" type="StaticBody3D" parent="." instance=ExtResource("1_votim")]

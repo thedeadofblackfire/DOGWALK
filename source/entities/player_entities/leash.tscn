@@ -1,0 +1,87 @@
+[gd_scene load_steps=12 format=3 uid="uid://nmoufaf2akp6"]
+
+[ext_resource type="Script" uid="uid://butvkgmw4qwo3" path="res://source/entities/player_entities/leash.gd" id="1_m23p3"]
+[ext_resource type="Script" uid="uid://5ijejf6yyhs8" path="res://addons/lines_and_trails_3d/line_3d.gd" id="2_lp5yk"]
+[ext_resource type="PackedScene" uid="uid://dqocfipacbfld" path="res://assets/props/leash_handle/PR-leash_handle.tscn" id="3_rlu7y"]
+[ext_resource type="AudioStream" uid="uid://b0bp7mm06h5cx" path="res://source/audio/sfx/leash/leash-limit-sfx.tres" id="4_g4yhm"]
+[ext_resource type="AudioStream" uid="uid://lr3wko4txffh" path="res://assets/sfx/world/LEASH-limit-just-reached-bounce-01.ogg" id="5_3cdp8"]
+[ext_resource type="AudioStream" uid="uid://diatjjnxd7rlc" path="res://assets/sfx/world/LEASH-limit-just-reached-bounce-02.ogg" id="6_mmh2n"]
+[ext_resource type="AudioStream" uid="uid://3bhs0ljgdxrk" path="res://assets/sfx/world/LEASH-limit-just-reached-bounce-03.ogg" id="7_ytnly"]
+[ext_resource type="AudioStream" uid="uid://cncykbqxtblrg" path="res://assets/sfx/world/LEASH-limit-just-reached-bounce-04.ogg" id="8_mmh2n"]
+
+[sub_resource type="Curve" id="Curve_v6u6m"]
+_data = [Vector2(0, 1), 0.0, 0.0, 1, 0, Vector2(1, 1), 0.0, 0.0, 1, 0]
+point_count = 2
+
+[sub_resource type="Gradient" id="Gradient_v7rc1"]
+interpolation_mode = 1
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(1, 0.61, 0.55, 1)
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_7iit3"]
+random_pitch = 1.2
+streams_count = 4
+stream_0/stream = ExtResource("5_3cdp8")
+stream_1/stream = ExtResource("6_mmh2n")
+stream_2/stream = ExtResource("7_ytnly")
+stream_3/stream = ExtResource("8_mmh2n")
+
+[node name="Leash" type="Node3D" node_paths=PackedStringArray("line_3d", "visual_leash_line", "leash_handle", "leash_handle_skeleton", "leash_limit_sound", "leash_bounce_sound") groups=["Signaling"]]
+script = ExtResource("1_m23p3")
+line_3d = NodePath("Line3D")
+visual_leash_line = NodePath("VisualLeashLine")
+leash_handle = NodePath("PR-leash_handle")
+leash_handle_skeleton = NodePath("PR-leash_handle/PR-leash_handle-IMPORT/RIG-leash_handle/Skeleton3D")
+leash_limit_sound = NodePath("PR-leash_handle/LeashLimitSound")
+leash_bounce_sound = NodePath("PR-leash_handle/LeashBounceSound")
+
+[node name="Line3D" type="MeshInstance3D" parent="."]
+visible = false
+skeleton = NodePath("../../Chocomel")
+script = ExtResource("2_lp5yk")
+width = 0.03
+width_curve = SubResource("Curve_v6u6m")
+color = Color(0.259283, 0.659853, 0.738716, 1)
+gradient = SubResource("Gradient_v7rc1")
+use_global_space = true
+texture_tile_mode = 1
+material_type = 0
+points = PackedVector3Array(-0.135, 0.625, 0, 0.28, 0.24, 3.03)
+metadata/_custom_type_script = "uid://5ijejf6yyhs8"
+
+[node name="VisualLeashLine" type="MeshInstance3D" parent="."]
+skeleton = NodePath("../../Chocomel")
+script = ExtResource("2_lp5yk")
+width = 0.03
+width_curve = SubResource("Curve_v6u6m")
+color = Color(1, 0.341333, 0.24, 1)
+gradient = SubResource("Gradient_v7rc1")
+use_global_space = true
+texture_tile_mode = 1
+material_type = 0
+points = PackedVector3Array(-0.135, 1.635, 0, 0.28, 0.24, 3.03)
+metadata/_custom_type_script = "uid://5ijejf6yyhs8"
+
+[node name="PR-leash_handle" parent="." instance=ExtResource("3_rlu7y")]
+
+[node name="LeashLimitSound" type="AudioStreamPlayer3D" parent="PR-leash_handle"]
+stream = ExtResource("4_g4yhm")
+volume_db = 6.0
+unit_size = 8.0
+max_db = 6.0
+max_distance = 50.0
+panning_strength = 2.5
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 8000.0
+attenuation_filter_db = -12.0
+
+[node name="LeashBounceSound" type="AudioStreamPlayer3D" parent="PR-leash_handle"]
+stream = SubResource("AudioStreamRandomizer_7iit3")
+max_db = 0.0
+pitch_scale = 1.25
+max_distance = 40.0
+max_polyphony = 2
+panning_strength = 2.0
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 8000.0
+attenuation_filter_db = -12.0

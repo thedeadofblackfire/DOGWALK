@@ -1,0 +1,773 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 1,
+                    "append_parent_collection": 1,
+                    "asset_name": "LI-stone_wall_001"
+                },
+                "asset_type": "ASSET",
+                "root_type": "STATIC",
+                "asset_id": "7e9bee88a63978bf"
+            },
+            "name": "LI-stone_wall_001",
+            "nodes": [
+                0,
+                1,
+                2
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "extras": {
+                "ant_landscape": {},
+                "booleans": {}
+            },
+            "mesh": 0,
+            "name": "GEO-stone_wall_001",
+            "scale": [
+                0.9878222942352295,
+                0.9878222942352295,
+                0.9878222942352295
+            ],
+            "translation": [
+                -0.028013959527015686,
+                0.06482458114624023,
+                -0.0049152672290802
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 1,
+            "name": "GEO-stone_wall_snow_001",
+            "scale": [
+                0.9878222942352295,
+                0.9878222942352295,
+                0.9878222942352295
+            ],
+            "translation": [
+                -0.028013959527015686,
+                0.06482458114624023,
+                -0.0049152672290802
+            ]
+        },
+        {
+            "extras": {
+                "collision_info": {
+                    "type": "MESH",
+                    "concave": false
+                },
+                "ant_landscape": {}
+            },
+            "mesh": 2,
+            "name": "COL-stone_wall_001",
+            "translation": [
+                -0.028013959527015686,
+                0.06482458114624023,
+                -0.0049152672290802
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "55cee31db7bc98ca",
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "wear_strength": 1.0,
+                    "wear_start": 0.23000000417232513,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 1.0,
+                    "wear_distortion_scale": 0.010002285242080688,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.20000000298023224,
+                    "normal_use_uv2": 1.0
+                }
+            },
+            "name": "stone_wall",
+            "normalTexture": {
+                "index": 0,
+                "texCoord": 1
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                },
+                "metallicRoughnessTexture": {
+                    "index": 2
+                }
+            }
+        },
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "f8d92897471b516e",
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "roughness": 0.5,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        0.9929977655410767,
+                        0.9929977655410767,
+                        0.9929977655410767,
+                        1.0
+                    ],
+                    "wear_strength": 0.0,
+                    "wear_start": 0.3799999952316284,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.10000000149011612,
+                    "wear_distortion_scale": 32.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.10000000149011612,
+                    "normal_use_uv2": 1.0
+                }
+            },
+            "name": "snow_wall_top",
+            "normalTexture": {
+                "index": 3,
+                "texCoord": 1
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 4
+                }
+            }
+        },
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "bb0cb28735b2bfb9",
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "roughness": 0.5,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "wear_strength": 0.0,
+                    "wear_start": 0.23000000417232513,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 1.0,
+                    "wear_distortion_scale": 0.010002285242080688,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.10000000149011612,
+                    "normal_use_uv2": 1.0
+                }
+            },
+            "name": "snow_edge_stone_wall",
+            "normalTexture": {
+                "index": 5,
+                "texCoord": 1
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 6
+                }
+            }
+        },
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "55cee31db7bc98ca",
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "wear_strength": 1.0,
+                    "wear_start": 0.23000000417232513,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 1.0,
+                    "wear_distortion_scale": 0.010002285242080688,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.20000000298023224,
+                    "normal_use_uv2": 1.0
+                }
+            },
+            "name": "stone_wall",
+            "normalTexture": {
+                "index": 0
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                },
+                "metallicRoughnessTexture": {
+                    "index": 2
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Plane",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2,
+                        "TEXCOORD_1": 3,
+                        "COLOR_0": 4,
+                        "COLOR_1": 5
+                    },
+                    "indices": 6,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "Plane.019",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 7,
+                        "NORMAL": 8,
+                        "TEXCOORD_0": 9,
+                        "TEXCOORD_1": 10,
+                        "COLOR_0": 11
+                    },
+                    "indices": 12,
+                    "material": 1
+                },
+                {
+                    "attributes": {
+                        "POSITION": 13,
+                        "NORMAL": 14,
+                        "TEXCOORD_0": 15,
+                        "TEXCOORD_1": 16,
+                        "COLOR_0": 17
+                    },
+                    "indices": 18,
+                    "material": 2
+                }
+            ]
+        },
+        {
+            "name": "Cube",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 19,
+                        "NORMAL": 20
+                    },
+                    "indices": 21,
+                    "material": 3
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        },
+        {
+            "sampler": 0,
+            "source": 2
+        },
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 3
+        },
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 4
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/textures/paper_rough_256.png"
+            },
+            "mimeType": "image/png",
+            "name": "paper_rough_256",
+            "uri": "../../../textures/paper_rough_256.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/cliff_albedo_01.png"
+            },
+            "mimeType": "image/png",
+            "name": "cliff_albedo_01",
+            "uri": "../../textures/cliff_albedo_01.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/cliff_roughness_01.png"
+            },
+            "mimeType": "image/png",
+            "name": "cliff_roughness_01",
+            "uri": "../../textures/cliff_roughness_01.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/textures/snow_gen_albedo-01.png"
+            },
+            "mimeType": "image/png",
+            "name": "snow_gen_albedo-01",
+            "uri": "../../../textures/snow_gen_albedo-01.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/textures/snow_edge_plateaus-albedo.png"
+            },
+            "mimeType": "image/png",
+            "name": "snow_edge_plateaus-albedo",
+            "uri": "../../../textures/snow_edge_plateaus-albedo.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 289,
+            "max": [
+                10.905753135681152,
+                3.5683915615081787,
+                8.987257957458496
+            ],
+            "min": [
+                -10.6587495803833,
+                -0.14496684074401855,
+                -8.737443923950195
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 289,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 289,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5126,
+            "count": 289,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5123,
+            "count": 289,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5123,
+            "count": 289,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 6,
+            "componentType": 5123,
+            "count": 1446,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 7,
+            "componentType": 5126,
+            "count": 160,
+            "max": [
+                12.240840911865234,
+                6.159456253051758,
+                7.671263217926025
+            ],
+            "min": [
+                -10.019466400146484,
+                3.5082309246063232,
+                -8.689726829528809
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 8,
+            "componentType": 5126,
+            "count": 160,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 9,
+            "componentType": 5126,
+            "count": 160,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 10,
+            "componentType": 5126,
+            "count": 160,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 11,
+            "componentType": 5123,
+            "count": 160,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 12,
+            "componentType": 5123,
+            "count": 360,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 13,
+            "componentType": 5126,
+            "count": 265,
+            "max": [
+                12.676008224487305,
+                5.408575057983398,
+                8.626755714416504
+            ],
+            "min": [
+                -10.904922485351562,
+                2.5830607414245605,
+                -8.919363975524902
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 14,
+            "componentType": 5126,
+            "count": 265,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 15,
+            "componentType": 5126,
+            "count": 265,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 16,
+            "componentType": 5126,
+            "count": 265,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 17,
+            "componentType": 5123,
+            "count": 265,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 18,
+            "componentType": 5123,
+            "count": 531,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 19,
+            "componentType": 5126,
+            "count": 64,
+            "max": [
+                10.77294635772705,
+                3.5249366760253906,
+                8.877813339233398
+            ],
+            "min": [
+                -10.528950691223145,
+                -0.14320147037506104,
+                -8.631041526794434
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 20,
+            "componentType": 5126,
+            "count": 64,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 21,
+            "componentType": 5123,
+            "count": 372,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 3468,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 3468,
+            "byteOffset": 3468,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2312,
+            "byteOffset": 6936,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2312,
+            "byteOffset": 9248,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2312,
+            "byteOffset": 11560,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2312,
+            "byteOffset": 13872,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2892,
+            "byteOffset": 16184,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1920,
+            "byteOffset": 19076,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1920,
+            "byteOffset": 20996,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1280,
+            "byteOffset": 22916,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1280,
+            "byteOffset": 24196,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1280,
+            "byteOffset": 25476,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 720,
+            "byteOffset": 26756,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 3180,
+            "byteOffset": 27476,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 3180,
+            "byteOffset": 30656,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2120,
+            "byteOffset": 33836,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2120,
+            "byteOffset": 35956,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2120,
+            "byteOffset": 38076,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1062,
+            "byteOffset": 40196,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 768,
+            "byteOffset": 41260,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 768,
+            "byteOffset": 42028,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 744,
+            "byteOffset": 42796,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 43540,
+            "uri": "LI-stone_wall_001.bin"
+        }
+    ]
+}

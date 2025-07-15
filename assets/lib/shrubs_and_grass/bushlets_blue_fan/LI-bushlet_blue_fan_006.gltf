@@ -1,0 +1,332 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 2,
+                    "append_parent_collection": 1,
+                    "asset_name": "LI-bushlet_blue_fan_006"
+                },
+                "asset_type": "ASSET",
+                "root_type": "PASS_THROUGH",
+                "asset_id": "eebc8934a605abff"
+            },
+            "name": "LI-bushlet_blue_fan_006",
+            "nodes": [
+                1,
+                2
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "mesh": 0,
+            "name": "GEO-bushlets_blue_fan_006_01",
+            "rotation": [
+                -0.03566306084394455,
+                -0.6651366353034973,
+                -0.07015484571456909,
+                0.7425629496574402
+            ],
+            "scale": [
+                0.8394138216972351,
+                0.8394137620925903,
+                0.8394138216972351
+            ],
+            "translation": [
+                -0.027204275131225586,
+                0,
+                0
+            ]
+        },
+        {
+            "children": [
+                0
+            ],
+            "mesh": 1,
+            "name": "GEO-bushlets_blue_fan_006"
+        },
+        {
+            "extras": {
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.23499998450279236,
+                    "height": 1.1799999475479126,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.036",
+            "translation": [
+                0,
+                0.5623279809951782,
+                0
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "43bf9b9fd1438782",
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        0.800000011920929,
+                        0.6763429641723633,
+                        0.571722149848938,
+                        1.0
+                    ],
+                    "wear_strength": 0.0,
+                    "wear_start": 0.0,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.5,
+                    "wear_distortion_scale": 100.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_map": [
+                        0.5,
+                        0.5,
+                        1.0,
+                        1.0
+                    ],
+                    "normal_strength": 1.0,
+                    "normal_use_uv2": 0.0
+                }
+            },
+            "name": "bushlets_blue_fan",
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 0
+                },
+                "metallicRoughnessTexture": {
+                    "index": 1
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "bushlets_blue_fan_albedo",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "bushlets_blue_fan_albedo.002",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 4,
+                        "NORMAL": 5,
+                        "TEXCOORD_0": 6
+                    },
+                    "indices": 7,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/bushlets_blue_fan_albedo.png"
+            },
+            "mimeType": "image/png",
+            "name": "bushlets_blue_fan_albedo",
+            "uri": "../../textures/bushlets_blue_fan_albedo.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/bushlets_blue_fan_roughness.png"
+            },
+            "mimeType": "image/png",
+            "name": "bushlets_blue_fan_roughness",
+            "uri": "../../textures/bushlets_blue_fan_roughness.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 133,
+            "max": [
+                0.524466872215271,
+                1.204605221748352,
+                0.16216149926185608
+            ],
+            "min": [
+                -0.6951086521148682,
+                -0.001453995704650879,
+                -0.22440658509731293
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 133,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 133,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5123,
+            "count": 276,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5126,
+            "count": 71,
+            "max": [
+                0.47293031215667725,
+                1.0112090110778809,
+                0.15243428945541382
+            ],
+            "min": [
+                -0.4327910542488098,
+                -0.005780249834060669,
+                -0.10698753595352173
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5126,
+            "count": 71,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 6,
+            "componentType": 5126,
+            "count": 71,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 7,
+            "componentType": 5123,
+            "count": 153,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 1596,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1596,
+            "byteOffset": 1596,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1064,
+            "byteOffset": 3192,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 552,
+            "byteOffset": 4256,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 852,
+            "byteOffset": 4808,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 852,
+            "byteOffset": 5660,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 568,
+            "byteOffset": 6512,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 306,
+            "byteOffset": 7080,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987,
+            "wrapS": 33071,
+            "wrapT": 33071
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 7388,
+            "uri": "LI-bushlet_blue_fan_006.bin"
+        }
+    ]
+}

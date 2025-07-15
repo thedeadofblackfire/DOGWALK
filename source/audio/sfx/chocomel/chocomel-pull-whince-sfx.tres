@@ -1,0 +1,14 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=4 format=3 uid="uid://4mt23uixqryb"]
+
+[ext_resource type="AudioStream" uid="uid://bean0h1bdvhfc" path="res://assets/sfx/chocomel/ACTN-chocomel-pull-whine-01.ogg" id="1_pbgih"]
+[ext_resource type="AudioStream" uid="uid://c1sp81134528j" path="res://assets/sfx/chocomel/ACTN-chocomel-pull-whine-02.ogg" id="2_ks7m7"]
+[ext_resource type="AudioStream" uid="uid://85yr7kcyquva" path="res://assets/sfx/chocomel/ACTN-chocomel-pull-whine-03.ogg" id="3_u1yye"]
+
+[resource]
+random_pitch = 1.1
+random_volume_offset_db = 0.25
+streams_count = 3
+stream_0/stream = ExtResource("1_pbgih")
+stream_1/stream = ExtResource("2_ks7m7")
+stream_2/stream = ExtResource("3_u1yye")
+stream_2/weight = 0.5

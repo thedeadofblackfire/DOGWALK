@@ -1,0 +1,59 @@
+[gd_scene load_steps=9 format=3 uid="uid://bg2f2jk1kxw7s"]
+
+[ext_resource type="Script" uid="uid://dcuoo0bsl0ugl" path="res://source/sequences/credits/credit_slide.gd" id="1_03im2"]
+[ext_resource type="Theme" uid="uid://dn50ucqdaqlr1" path="res://source/user_interface/menus/menu_theme.tres" id="1_4hgae"]
+[ext_resource type="PackedScene" uid="uid://kqgchf7xb740" path="res://source/sequences/credits/single_credits.tscn" id="3_4hgae"]
+[ext_resource type="PackedScene" uid="uid://cyt1ia1ttebdp" path="res://source/sequences/credits/group_credits.tscn" id="4_4hgae"]
+[ext_resource type="PackedScene" uid="uid://bytd6gj0m4rw2" path="res://source/sequences/credits/single_credit_item.tscn" id="4_t1dp2"]
+[ext_resource type="PackedScene" uid="uid://5u86prftir8c" path="res://source/sequences/credits/text_credits.tscn" id="5_0t41x"]
+[ext_resource type="Script" uid="uid://c7wiphd6tldtg" path="res://source/sequences/credits/credit_item.gd" id="5_o8ph6"]
+[ext_resource type="PackedScene" uid="uid://de57jfypa7iaa" path="res://source/sequences/credits/group_credit_item.tscn" id="7_3mctb"]
+
+[node name="CreditSlide" type="Control" node_paths=PackedStringArray("slide_timer")]
+layout_mode = 3
+anchor_right = 2.0
+anchor_bottom = 2.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("1_4hgae")
+script = ExtResource("1_03im2")
+slide_timer = NodePath("Timer")
+credits_lines = []
+metadata/_tab_index = 0
+
+[node name="SingleCredits" parent="." instance=ExtResource("3_4hgae")]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="@MarginContainer@22850" type="MarginContainer" parent="SingleCredits" instance=ExtResource("4_t1dp2")]
+layout_mode = 2
+theme_override_constants/margin_top = 200
+theme_override_constants/margin_bottom = 0
+script = ExtResource("5_o8ph6")
+
+[node name="GroupCredits" parent="." instance=ExtResource("4_4hgae")]
+visible = false
+layout_mode = 1
+offset_left = 193.0
+credits_data = {
+"Name": "Role"
+}
+
+[node name="@MarginContainer@22851" type="MarginContainer" parent="GroupCredits" instance=ExtResource("7_3mctb")]
+layout_mode = 2
+theme_override_constants/margin_top = 200
+theme_override_constants/margin_bottom = 0
+script = ExtResource("5_o8ph6")
+
+[node name="TextCredits" parent="." instance=ExtResource("5_0t41x")]
+visible = false
+layout_mode = 1
+offset_left = 0.0
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 4.6
+one_shot = true

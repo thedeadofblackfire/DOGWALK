@@ -1,0 +1,650 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 1,
+                    "append_parent_collection": 1,
+                    "asset_name": "PR-bug_hotel"
+                },
+                "asset_type": "ASSET",
+                "root_type": "STATIC",
+                "asset_id": "be4eeebdcf5383bf"
+            },
+            "name": "PR-bug_hotel",
+            "nodes": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "mesh": 0,
+            "name": "GEO-bug_hotel-poles"
+        },
+        {
+            "mesh": 1,
+            "name": "GEO-bug_hotel-roof",
+            "rotation": [
+                0.5,
+                0.49999988079071045,
+                0.5,
+                0.5000001192092896
+            ],
+            "scale": [
+                1.2000000476837158,
+                1.2000000476837158,
+                1.2000000476837158
+            ],
+            "translation": [
+                0.03714125603437424,
+                2.084153890609741,
+                0.08742833882570267
+            ]
+        },
+        {
+            "mesh": 2,
+            "name": "GEO-bug_hotel-house",
+            "rotation": [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071068286895752
+            ],
+            "scale": [
+                1.2000000476837158,
+                1.2000000476837158,
+                1.2000000476837158
+            ],
+            "translation": [
+                0.0248415470123291,
+                1.2583600282669067,
+                0.056436650454998016
+            ]
+        },
+        {
+            "mesh": 3,
+            "name": "GEO-bug_hotel-sign",
+            "rotation": [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071068286895752
+            ],
+            "scale": [
+                1.2000000476837158,
+                1.2000000476837158,
+                1.2000000476837158
+            ],
+            "translation": [
+                0.011982960626482964,
+                1.385102391242981,
+                0.2510439157485962
+            ]
+        },
+        {
+            "extras": {
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 1,
+                    "radius": 0.5,
+                    "height": 2.0,
+                    "size": [
+                        0.20600003004074097,
+                        0.8930000066757202,
+                        2.7100000381469727
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.001",
+            "rotation": [
+                0,
+                0,
+                -0.012389780953526497,
+                0.9999233484268188
+            ],
+            "translation": [
+                0.7468370199203491,
+                1.3518389463424683,
+                0
+            ]
+        },
+        {
+            "extras": {
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 1,
+                    "radius": 0.5,
+                    "height": 2.0,
+                    "size": [
+                        1.5920000076293945,
+                        0.2200000286102295,
+                        2.7100000381469727
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive",
+            "translation": [
+                0.01787290722131729,
+                1.3518389463424683,
+                0
+            ]
+        },
+        {
+            "extras": {
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 1,
+                    "radius": 0.5,
+                    "height": 2.0,
+                    "size": [
+                        0.20600003004074097,
+                        0.8930000066757202,
+                        2.7100000381469727
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.002",
+            "rotation": [
+                0,
+                0,
+                0.025904212146997452,
+                0.9996644258499146
+            ],
+            "translation": [
+                -0.7268789410591125,
+                1.3194891214370728,
+                0
+            ]
+        },
+        {
+            "name": "HLP-leash_point",
+            "translation": [
+                0.8251933455467224,
+                0.5049864649772644,
+                0.09888686239719391
+            ]
+        },
+        {
+            "name": "HLP-leash_point.001",
+            "translation": [
+                0.8251933455467224,
+                0.5049864649772644,
+                -0.08968903869390488
+            ]
+        },
+        {
+            "name": "HLP-leash_point.002",
+            "translation": [
+                -0.7873075008392334,
+                0.5049864649772644,
+                0.09888686239719391
+            ]
+        },
+        {
+            "name": "HLP-leash_point.003",
+            "translation": [
+                -0.7873075008392334,
+                0.5049864649772644,
+                -0.08968903869390488
+            ]
+        },
+        {
+            "name": "HLP-leash_point.004",
+            "translation": [
+                -0.5664089322090149,
+                0.5049864649772644,
+                0.1800069510936737
+            ]
+        },
+        {
+            "name": "HLP-leash_point.005",
+            "translation": [
+                0.6063888072967529,
+                0.5049864649772644,
+                0.1800069510936737
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "doubleSided": true,
+            "extras": {
+                "asset_id": "497737551aa6cc26"
+            },
+            "name": "DUMMY-sign_board-poles",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    1
+                ],
+                "metallicFactor": 0,
+                "roughnessFactor": 0.4000000059604645
+            }
+        },
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "50f99e2a62290829",
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "roughness": 0.5,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        0.5384305119514465,
+                        0.46736669540405273,
+                        0.4088131785392761,
+                        1.0
+                    ],
+                    "wear_strength": 0.0,
+                    "wear_start": 0.0,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.5,
+                    "wear_distortion_scale": 100.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.20000000298023224,
+                    "normal_use_uv2": 0.0
+                }
+            },
+            "name": "bug_hotel",
+            "normalTexture": {
+                "index": 0
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Cube",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2,
+                        "COLOR_0": 3
+                    },
+                    "indices": 4,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "Plane.001",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 5,
+                        "NORMAL": 6,
+                        "TEXCOORD_0": 7
+                    },
+                    "indices": 8,
+                    "material": 1
+                }
+            ]
+        },
+        {
+            "name": "Plane.002",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 9,
+                        "NORMAL": 10,
+                        "TEXCOORD_0": 11
+                    },
+                    "indices": 12,
+                    "material": 1
+                }
+            ]
+        },
+        {
+            "name": "Plane.003",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 13,
+                        "NORMAL": 14,
+                        "TEXCOORD_0": 15
+                    },
+                    "indices": 16,
+                    "material": 1
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/textures/paper_fine_normal.png"
+            },
+            "mimeType": "image/png",
+            "name": "paper_fine_normal",
+            "uri": "../../textures/paper_fine_normal.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/props/bug_hotel/textures/bug_hotel_albedo.png"
+            },
+            "mimeType": "image/png",
+            "name": "bug_hotel_albedo",
+            "uri": "textures/bug_hotel_albedo.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 310,
+            "max": [
+                0.8524183630943298,
+                1.3131983280181885,
+                0.4378049373626709
+            ],
+            "min": [
+                -0.834038496017456,
+                -0.0020684502087533474,
+                -0.4361322224140167
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 310,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 310,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5123,
+            "count": 310,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5123,
+            "count": 1200,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5126,
+            "count": 234,
+            "max": [
+                0.15480689704418182,
+                0.3315618932247162,
+                0.7498334050178528
+            ],
+            "min": [
+                -0.7496525645256042,
+                -0.4600552022457123,
+                -0.7904641032218933
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 6,
+            "componentType": 5126,
+            "count": 234,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 7,
+            "componentType": 5126,
+            "count": 234,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 8,
+            "componentType": 5123,
+            "count": 618,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 9,
+            "componentType": 5126,
+            "count": 47,
+            "max": [
+                0.5454365015029907,
+                0.10868336260318756,
+                0.6963039040565491
+            ],
+            "min": [
+                -0.561040997505188,
+                -0.043501533567905426,
+                -0.664208710193634
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 10,
+            "componentType": 5126,
+            "count": 47,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 11,
+            "componentType": 5126,
+            "count": 47,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 12,
+            "componentType": 5123,
+            "count": 132,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 13,
+            "componentType": 5126,
+            "count": 86,
+            "max": [
+                0.19644364714622498,
+                0.011320555582642555,
+                0.13720016181468964
+            ],
+            "min": [
+                -0.2029484361410141,
+                -0.04833674058318138,
+                -0.13736222684383392
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 14,
+            "componentType": 5126,
+            "count": 86,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 15,
+            "componentType": 5126,
+            "count": 86,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 16,
+            "componentType": 5123,
+            "count": 348,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 3720,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 3720,
+            "byteOffset": 3720,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2480,
+            "byteOffset": 7440,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2480,
+            "byteOffset": 9920,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2400,
+            "byteOffset": 12400,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2808,
+            "byteOffset": 14800,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2808,
+            "byteOffset": 17608,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1872,
+            "byteOffset": 20416,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1236,
+            "byteOffset": 22288,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 564,
+            "byteOffset": 23524,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 564,
+            "byteOffset": 24088,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 376,
+            "byteOffset": 24652,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 264,
+            "byteOffset": 25028,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1032,
+            "byteOffset": 25292,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1032,
+            "byteOffset": 26324,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 688,
+            "byteOffset": 27356,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 696,
+            "byteOffset": 28044,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 28740,
+            "uri": "PR-bug_hotel.bin"
+        }
+    ]
+}

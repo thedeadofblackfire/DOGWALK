@@ -1,0 +1,10 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=3 format=3 uid="uid://dfar5yg0b7qoh"]
+
+[ext_resource type="AudioStream" uid="uid://c1ydgcgdaeava" path="res://assets/sfx/ui/UI-cardboard-click-0.ogg" id="1_3jb5a"]
+[ext_resource type="AudioStream" uid="uid://c2e0m32oa06hk" path="res://assets/sfx/ui/UI-cardboard-click-1.ogg" id="2_vfvti"]
+
+[resource]
+random_pitch = 1.03
+streams_count = 2
+stream_0/stream = ExtResource("1_3jb5a")
+stream_1/stream = ExtResource("2_vfvti")

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://fau7ennfgiaf"]
+
+[ext_resource type="PackedScene" uid="uid://vleb0iqa2n5d" path="res://assets/lib/shrubs_and_grass/grass/LI-grass_016.gltf" id="1_holqv"]
+[ext_resource type="Script" uid="uid://cun58n6yke7qn" path="res://source/obstacles/grass.gd" id="2_fd2k4"]
+
+[node name="LI-grass_016" type="Node3D"]
+
+[node name="LI-grass_016-IMPORT" type="Area3D" parent="." instance=ExtResource("1_holqv")]
+script = ExtResource("2_fd2k4")

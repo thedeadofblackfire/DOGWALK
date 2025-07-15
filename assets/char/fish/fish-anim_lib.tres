@@ -1,0 +1,9 @@
+[gd_resource type="AnimationLibrary" load_steps=2 format=3 uid="uid://bp6kxhliuo8oh"]
+
+[ext_resource type="Animation" uid="uid://beaa0alx6h1pd" path="res://animations/world/LOOP-fish-swim/LOOP-fish-swim.tres" id="1_bmte6"]
+
+[resource]
+resource_name = "fish Animation Library"
+_data = {
+&"LOOP-fish-swim": ExtResource("1_bmte6")
+}

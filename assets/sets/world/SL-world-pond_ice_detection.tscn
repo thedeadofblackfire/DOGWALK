@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://qwiub4jnx5bn"]
+
+[ext_resource type="PackedScene" uid="uid://bk1wogjl1funj" path="res://assets/sets/world/SL-world-pond_ice_detection.gltf" id="1_4b3pw"]
+
+[node name="SL-world-pond_ice_detection" type="Node3D"]
+
+[node name="SL-world-pond_ice_detection-IMPORT" parent="." groups=["TerrainIce"] instance=ExtResource("1_4b3pw")]
+collision_layer = 16
+collision_mask = 12

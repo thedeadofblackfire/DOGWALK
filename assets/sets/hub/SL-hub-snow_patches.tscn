@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://g65l7d465gs5"]
+
+[ext_resource type="PackedScene" uid="uid://c1moe5vmwso8u" path="res://assets/sets/hub/SL-hub-snow_patches.gltf" id="1_lv11w"]
+[ext_resource type="Script" uid="uid://bbdaeayyvnb1e" path="res://source/obstacles/snow.gd" id="2_d0nr4"]
+
+[node name="SL-hub-snow_patches" type="Node3D"]
+
+[node name="SL-hub-snow_patches-IMPORT" parent="." instance=ExtResource("1_lv11w")]
+script = ExtResource("2_d0nr4")

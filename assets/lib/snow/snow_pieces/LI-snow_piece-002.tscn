@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://ddby5kto30mi1"]
+
+[ext_resource type="PackedScene" path="res://assets/lib/snow/snow_pieces/LI-snow_piece-002.gltf" id="1_mb6nt"]
+
+[node name="LI-snow_piece-002" type="Node3D"]
+
+[node name="LI-snow_piece-002-IMPORT" type="Area3D" parent="." instance=ExtResource("1_mb6nt")]

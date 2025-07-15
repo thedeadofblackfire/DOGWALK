@@ -1,0 +1,3097 @@
+[gd_scene load_steps=72 format=3 uid="uid://cuxcvurbkofgn"]
+
+[ext_resource type="PackedScene" uid="uid://d04q83ru8ixv5" path="res://source/entities/player.tscn" id="1_8s7uw"]
+[ext_resource type="Script" uid="uid://codoiaj3q4ls2" path="res://source/levels/world.gd" id="1_42mg1"]
+[ext_resource type="Script" uid="uid://cjmmyghe63y22" path="res://source/utility/light_area.gd" id="3_rfv24"]
+[ext_resource type="CompressedTexture3D" uid="uid://utrpmymid8n4" path="res://assets/textures/lut_world_01.png" id="4_3d4ir"]
+[ext_resource type="PackedScene" uid="uid://bsso5iykjkju2" path="res://assets/sets/world/SE-world.tscn" id="4_42mg1"]
+[ext_resource type="PackedScene" uid="uid://dsgxfi656617n" path="res://assets/lib/pine_tree_alpha/LI-pine_tree_alpha_02.tscn" id="4_q073b"]
+[ext_resource type="PackedScene" uid="uid://c3mg72q3g1ve8" path="res://assets/lib/pine_tree_alpha/LI-pine_tree_alpha.tscn" id="5_e66ug"]
+[ext_resource type="PackedScene" uid="uid://dt77wsed3atoa" path="res://assets/props/branch/PR-branch.tscn" id="6_3d4ir"]
+[ext_resource type="PackedScene" uid="uid://ct7x7fjrtg8va" path="res://source/entities/camera_magnet_zone.tscn" id="7_rfv24"]
+[ext_resource type="PackedScene" uid="uid://dl40jf3lyg03i" path="res://assets/props/tennis_ball/PR-tennis_ball.tscn" id="9_2qcqp"]
+[ext_resource type="PackedScene" uid="uid://bw6y1y17rqlev" path="res://assets/props/traffic_cone/PR-traffic_cone.tscn" id="10_weaee"]
+[ext_resource type="PackedScene" uid="uid://cmel4270aacuc" path="res://assets/props/shovel/PR-shovel.tscn" id="12_h5oi6"]
+[ext_resource type="PackedScene" uid="uid://byyiangupbrtn" path="res://source/entities/carp.tscn" id="12_kt701"]
+[ext_resource type="PackedScene" uid="uid://dh8ectufx18s3" path="res://source/entities/music_zone_trigger.tscn" id="14_apkox"]
+[ext_resource type="AudioStream" uid="uid://b4fwpehb48e4x" path="res://assets/sfx/world/LOOP-water.ogg" id="15_mrkiu"]
+[ext_resource type="PackedScene" uid="uid://kuvpx1r3sc7" path="res://source/audio/sfx_manager.tscn" id="15_pnca5"]
+[ext_resource type="AudioStream" uid="uid://ychbah0n164d" path="res://source/audio/sfx/world/item_hint_sound.tres" id="16_3vden"]
+[ext_resource type="AudioStream" uid="uid://uujrn1m3b4ks" path="res://assets/sfx/world/LOOP-wind.ogg" id="16_mrkiu"]
+[ext_resource type="AudioStream" uid="uid://ctd48vilm7fnv" path="res://assets/sfx/world/LOOP-birds.ogg" id="17_kt701"]
+[ext_resource type="Script" uid="uid://bt2bkc5fremxr" path="res://source/audio/sfx/world/item_hint_sound.gd" id="19_3vden"]
+[ext_resource type="AudioStream" uid="uid://swt2yl36e2fu" path="res://source/audio/sfx/world/map_hint_sound.tres" id="19_fnill"]
+[ext_resource type="Script" uid="uid://d3sd6x1ymcn56" path="res://source/entities/music_zone_trigger.gd" id="21_fnill"]
+[ext_resource type="Script" uid="uid://bhov5mflxipjk" path="res://source/audio/music/gameplay_music_setting.gd" id="21_hmu6m"]
+[ext_resource type="PackedScene" uid="uid://b8thnyftghduc" path="res://assets/char/birds/bird_01.tscn" id="29_udahs"]
+[ext_resource type="PackedScene" uid="uid://cdun15pvprsp7" path="res://assets/char/birds/bird_02.tscn" id="30_0s76t"]
+[ext_resource type="PackedScene" uid="uid://weas5ohribhv" path="res://assets/char/birds/bird_03.tscn" id="31_ne6ia"]
+[ext_resource type="PackedScene" uid="uid://b8bvymfjdvmuu" path="res://assets/props/logo/PR-logo.tscn" id="41_ctt8i"]
+
+[sub_resource type="Gradient" id="Gradient_3d4ir"]
+offsets = PackedFloat32Array(0.34773, 0.602436, 0.614618)
+colors = PackedColorArray(0, 0, 0, 1, 0.0765307, 0.0765307, 0.0765307, 1, 1, 1, 1, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_rfv24"]
+frequency = 0.0047
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_q073b"]
+invert = true
+seamless = true
+seamless_blend_skirt = 0.073
+normalize = false
+color_ramp = SubResource("Gradient_3d4ir")
+noise = SubResource("FastNoiseLite_rfv24")
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_e66ug"]
+sky_top_color = Color(0.4042, 0.502957, 0.86, 1)
+sky_horizon_color = Color(0.605372, 0.847798, 1, 1)
+sky_curve = 0.166435
+sky_cover = SubResource("NoiseTexture2D_q073b")
+sun_angle_max = 5.91
+sun_curve = 0.344609
+use_debanding = false
+energy_multiplier = 5.0
+
+[sub_resource type="Sky" id="Sky_12gwf"]
+sky_material = SubResource("ProceduralSkyMaterial_e66ug")
+radiance_size = 2
+
+[sub_resource type="Environment" id="Environment_12gwf"]
+background_mode = 2
+background_color = Color(0.28, 0.484, 1, 1)
+background_energy_multiplier = 0.5
+sky = SubResource("Sky_12gwf")
+ambient_light_source = 3
+reflected_light_source = 2
+tonemap_mode = 4
+ssr_max_steps = 128
+ssr_fade_in = 0.166435
+ssr_fade_out = 1.51572
+ssr_depth_tolerance = 0.21
+ssao_radius = 1.78
+ssao_intensity = 2.09
+ssao_power = 3.32871
+ssao_sharpness = 0.77
+ssao_light_affect = 0.75
+ssao_ao_channel_affect = 0.76
+sdfgi_use_occlusion = true
+sdfgi_bounce_feedback = 1.0
+sdfgi_min_cell_size = 0.146484
+sdfgi_cascade0_distance = 9.375
+sdfgi_max_distance = 150.0
+glow_enabled = true
+glow_levels/3 = 1.43
+glow_levels/5 = 0.0
+glow_normalized = true
+glow_strength = 0.71
+glow_bloom = 0.09
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.01
+volumetric_fog_albedo = Color(0.909804, 0.639216, 0.541176, 1)
+volumetric_fog_emission = Color(0.89, 0.653408, 0.4005, 1)
+volumetric_fog_emission_energy = 2.0
+volumetric_fog_length = 21.24
+volumetric_fog_ambient_inject = 1.08
+adjustment_enabled = true
+adjustment_color_correction = ExtResource("4_3d4ir")
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_e66ug"]
+height = 3.95703
+radius = 3.00098
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_2qcqp"]
+height = 3.29346
+radius = 2.34229
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_h5oi6"]
+height = 3.29346
+radius = 9.28711
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_weaee"]
+height = 3.29346
+radius = 5.47754
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_q073b"]
+height = 4.3242
+radius = 4.5542
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_rfv24"]
+height = 4.76855
+radius = 2.63086
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_46sdp"]
+height = 6.55063
+radius = 3.4292
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_rxiov"]
+resource_local_to_scene = true
+radius = 7.79883
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_pnca5"]
+resource_local_to_scene = true
+radius = 9.12988
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_mrkiu"]
+resource_local_to_scene = true
+radius = 7.79883
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_vjch4"]
+resource_local_to_scene = true
+radius = 5.6875
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_t483i"]
+resource_local_to_scene = true
+radius = 8.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_b5vnk"]
+random_pitch = 1.02
+streams_count = 1
+stream_0/stream = ExtResource("16_3vden")
+
+[sub_resource type="Resource" id="Resource_0s76t"]
+script = ExtResource("21_hmu6m")
+configuration = Dictionary[int, bool]({
+0: true,
+1: true,
+2: true,
+3: false,
+4: false,
+5: false,
+6: false,
+7: false,
+8: false,
+9: false,
+10: false,
+11: false,
+12: false,
+13: false
+})
+metadata/_custom_type_script = "uid://bhov5mflxipjk"
+
+[sub_resource type="Resource" id="Resource_crbcu"]
+script = ExtResource("21_hmu6m")
+configuration = Dictionary[int, bool]({
+0: true,
+1: true,
+2: true,
+3: true,
+4: false,
+5: false,
+6: false,
+7: false,
+8: false,
+9: false,
+10: true,
+11: false,
+12: false,
+13: false
+})
+metadata/_custom_type_script = "uid://bhov5mflxipjk"
+
+[sub_resource type="Resource" id="Resource_ne6ia"]
+script = ExtResource("21_hmu6m")
+configuration = Dictionary[int, bool]({
+0: true,
+1: true,
+2: true,
+3: false,
+4: false,
+5: false,
+6: false,
+7: false,
+8: false,
+9: false,
+10: true,
+11: false,
+12: false,
+13: false
+})
+metadata/_custom_type_script = "uid://bhov5mflxipjk"
+
+[sub_resource type="Resource" id="Resource_rxhut"]
+script = ExtResource("21_hmu6m")
+configuration = Dictionary[int, bool]({
+0: true,
+1: true,
+2: true,
+3: true,
+4: true,
+5: false,
+6: false,
+7: false,
+8: false,
+9: false,
+10: false,
+11: true,
+12: false,
+13: false
+})
+metadata/_custom_type_script = "uid://bhov5mflxipjk"
+
+[sub_resource type="Resource" id="Resource_sqrya"]
+script = ExtResource("21_hmu6m")
+configuration = Dictionary[int, bool]({
+0: false,
+1: false,
+2: false,
+3: true,
+4: false,
+5: false,
+6: false,
+7: false,
+8: false,
+9: false,
+10: false,
+11: false,
+12: true,
+13: true
+})
+metadata/_custom_type_script = "uid://bhov5mflxipjk"
+
+[sub_resource type="Resource" id="Resource_3ow8y"]
+script = ExtResource("21_hmu6m")
+configuration = Dictionary[int, bool]({
+0: false,
+1: false,
+2: false,
+3: true,
+4: false,
+5: false,
+6: false,
+7: false,
+8: false,
+9: false,
+10: false,
+11: false,
+12: true,
+13: true
+})
+metadata/_custom_type_script = "uid://bhov5mflxipjk"
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_hmu6m"]
+streams_count = 1
+stream_0/stream = ExtResource("19_fnill")
+
+[sub_resource type="Resource" id="Resource_udahs"]
+script = ExtResource("21_hmu6m")
+configuration = Dictionary[int, bool]({
+2: true,
+3: false,
+4: false,
+5: false,
+6: false,
+7: true,
+8: false,
+9: false,
+10: false,
+11: false,
+12: false,
+13: false
+})
+metadata/_custom_type_script = "uid://bhov5mflxipjk"
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ne6ia"]
+height = 10.0
+radius = 1.5
+
+[sub_resource type="Resource" id="Resource_wpfnn"]
+script = ExtResource("21_hmu6m")
+configuration = Dictionary[int, bool]({
+0: true,
+1: false,
+2: false,
+3: false,
+4: false,
+5: false,
+6: false,
+7: true,
+8: false,
+9: false,
+10: false,
+11: true,
+12: false,
+13: false
+})
+metadata/_custom_type_script = "uid://bhov5mflxipjk"
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_rxhut"]
+height = 5.0
+radius = 1.0
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_udahs"]
+height = 20.0
+radius = 26.0
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_rvv3o"]
+height = 15.0
+radius = 7.0
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_hmu6m"]
+height = 20.0
+radius = 14.0
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_wpfnn"]
+height = 20.0
+radius = 12.0
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_d43ix"]
+height = 20.0
+radius = 20.0
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_fnill"]
+height = 10.0
+radius = 5.0
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_3vnqk"]
+height = 10.0
+radius = 5.0
+
+[sub_resource type="Resource" id="Resource_hmu6m"]
+script = ExtResource("21_hmu6m")
+configuration = Dictionary[int, bool]({
+0: true,
+1: false,
+2: false,
+3: false,
+4: false,
+5: false,
+6: false,
+7: false,
+8: false,
+9: false,
+10: false,
+11: false,
+12: false,
+13: false
+})
+metadata/_custom_type_script = "uid://bhov5mflxipjk"
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_sqrya"]
+height = 20.0
+radius = 7.0
+
+[sub_resource type="Resource" id="Resource_d43ix"]
+script = ExtResource("21_hmu6m")
+configuration = Dictionary[int, bool]({
+0: true,
+1: false,
+2: false,
+3: false,
+4: false,
+5: false,
+6: false,
+7: false,
+8: false,
+9: false,
+10: false,
+11: false,
+12: false,
+13: false
+})
+metadata/_custom_type_script = "uid://bhov5mflxipjk"
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_3ow8y"]
+height = 10.0
+radius = 7.0
+
+[sub_resource type="Resource" id="Resource_3vnqk"]
+script = ExtResource("21_hmu6m")
+configuration = Dictionary[int, bool]({
+0: false,
+1: false,
+2: false,
+3: false,
+4: false,
+5: false,
+6: false,
+7: false,
+8: false,
+9: false,
+10: false,
+11: false,
+12: false,
+13: true
+})
+metadata/_custom_type_script = "uid://bhov5mflxipjk"
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_crbcu"]
+radius = 4.0
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_0s76t"]
+height = 15.0
+radius = 9.0
+
+[node name="World" type="Node3D"]
+script = ExtResource("1_42mg1")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_12gwf")
+
+[node name="LightAreaEnvironment" type="Area3D" parent="WorldEnvironment"]
+script = ExtResource("3_rfv24")
+INVERT = true
+DIMMING_TARGET_FACTOR = 0.6
+metadata/_custom_type_script = "uid://cjmmyghe63y22"
+
+[node name="Sun" type="DirectionalLight3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(0.690882, 0.520059, -0.502215, 0, 0.694659, 0.71934, 0.722967, -0.496979, 0.479927, 0.129636, 4.42771, 0)
+light_color = Color(1, 0.938667, 0.08, 1)
+light_energy = 1.2
+light_indirect_energy = 1.075
+light_volumetric_fog_energy = 0.0
+shadow_enabled = true
+shadow_bias = 0.02
+shadow_blur = 1.349
+directional_shadow_mode = 1
+directional_shadow_split_1 = 0.6
+directional_shadow_split_2 = 0.29
+directional_shadow_split_3 = 0.452
+directional_shadow_blend_splits = true
+directional_shadow_fade_start = 0.9
+directional_shadow_max_distance = 25.0
+directional_shadow_pancake_size = 30.0
+
+[node name="SunSoft" type="DirectionalLight3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(0.690542, 0.520513, -0.502213, -8.25892e-08, 0.694344, 0.719644, 0.723292, -0.496944, 0.479474, 0.129636, 4.42771, 0)
+light_color = Color(1, 0.727, 0.09, 1)
+light_energy = 0.656
+light_indirect_energy = 1.075
+light_volumetric_fog_energy = 0.0
+shadow_enabled = true
+shadow_bias = 0.04
+shadow_blur = 7.107
+directional_shadow_mode = 0
+directional_shadow_split_2 = 0.196
+directional_shadow_split_3 = 0.416
+directional_shadow_blend_splits = true
+directional_shadow_fade_start = 0.9
+directional_shadow_max_distance = 25.0
+directional_shadow_pancake_size = 30.0
+
+[node name="EnvironmentLights" type="DirectionalLight3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(0.953307, 6.76419e-09, -0.302004, 0.301986, 0.0108208, 0.953251, 0.00326793, -0.999941, 0.0103155, -0.418202, 3.90937, 1.63599)
+light_color = Color(0.0693, 0.483615, 0.99, 1)
+light_energy = 0.29
+shadow_blur = 6.84
+directional_shadow_mode = 0
+directional_shadow_fade_start = 0.9
+
+[node name="EnvironmentLights2" type="DirectionalLight3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(-0.979654, -0.00113127, 0.20069, 0.0355604, -0.98514, 0.168032, 0.197518, 0.17175, 0.965137, -3.79557, 2.75271, 0.979935)
+light_color = Color(0.6693, 0.799603, 0.97, 1)
+light_energy = 0.45
+shadow_blur = 6.84
+directional_shadow_mode = 0
+directional_shadow_fade_start = 0.9
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.8546, 1.49219, 35.9872)
+shape = SubResource("CylinderShape3D_e66ug")
+debug_color = Color(0.742858, 0.626713, 0.233811, 0.862745)
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.4077, 1.49219, 31.1074)
+shape = SubResource("CylinderShape3D_e66ug")
+debug_color = Color(0.742858, 0.626713, 0.233811, 0.862745)
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -72.9068, 1.49219, 31.1588)
+shape = SubResource("CylinderShape3D_e66ug")
+debug_color = Color(0.742858, 0.626713, 0.233811, 0.862745)
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.9561, 1.49219, 10.1691)
+shape = SubResource("CylinderShape3D_e66ug")
+debug_color = Color(0.742858, 0.626713, 0.233811, 0.862745)
+
+[node name="CollisionShape3D18" type="CollisionShape3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60.9127, 1.49219, 7.05062)
+shape = SubResource("CylinderShape3D_e66ug")
+debug_color = Color(0.742858, 0.626713, 0.233811, 0.862745)
+
+[node name="CollisionShape3D19" type="CollisionShape3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66.4299, 1.49219, 0.453855)
+shape = SubResource("CylinderShape3D_e66ug")
+debug_color = Color(0.742858, 0.626713, 0.233811, 0.862745)
+
+[node name="CollisionShape3D20" type="CollisionShape3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -73.5665, 1.49219, 21.3236)
+shape = SubResource("CylinderShape3D_e66ug")
+debug_color = Color(0.742858, 0.626713, 0.233811, 0.862745)
+
+[node name="CollisionShape3D21" type="CollisionShape3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66.5498, 1.49219, 22.7922)
+shape = SubResource("CylinderShape3D_e66ug")
+debug_color = Color(0.742858, 0.626713, 0.233811, 0.862745)
+
+[node name="CollisionShape3D22" type="CollisionShape3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.3008, 1.49219, 26.3822)
+shape = SubResource("CylinderShape3D_e66ug")
+debug_color = Color(0.742858, 0.626713, 0.233811, 0.862745)
+
+[node name="CollisionShape3D23" type="CollisionShape3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62.5519, 1.49219, 25.5663)
+shape = SubResource("CylinderShape3D_e66ug")
+debug_color = Color(0.742858, 0.626713, 0.233811, 0.862745)
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -71.8472, 1.49219, 56.1341)
+shape = SubResource("CylinderShape3D_e66ug")
+debug_color = Color(0.742858, 0.626713, 0.233811, 0.862745)
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.1339, 1.49219, 62.711)
+shape = SubResource("CylinderShape3D_e66ug")
+debug_color = Color(0.742858, 0.626713, 0.233811, 0.862745)
+
+[node name="CollisionShape3D24" type="CollisionShape3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -61.8141, 1.49219, 60.8237)
+shape = SubResource("CylinderShape3D_e66ug")
+debug_color = Color(0.742858, 0.626713, 0.233811, 0.862745)
+
+[node name="CollisionShape3D25" type="CollisionShape3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60.4458, 1.49219, 55.445)
+shape = SubResource("CylinderShape3D_e66ug")
+debug_color = Color(0.742858, 0.626713, 0.233811, 0.862745)
+
+[node name="CollisionShape3D26" type="CollisionShape3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63.607, 1.49219, 52.8972)
+shape = SubResource("CylinderShape3D_e66ug")
+debug_color = Color(0.742858, 0.626713, 0.233811, 0.862745)
+
+[node name="CollisionShape3D27" type="CollisionShape3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -67.1928, 1.49219, 50.3494)
+shape = SubResource("CylinderShape3D_e66ug")
+debug_color = Color(0.742858, 0.626713, 0.233811, 0.862745)
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -64.9814, 1.49219, 58.1381)
+shape = SubResource("CylinderShape3D_e66ug")
+debug_color = Color(0.742858, 0.626713, 0.233811, 0.862745)
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -72.0783, 1.49219, 47.4707)
+shape = SubResource("CylinderShape3D_e66ug")
+debug_color = Color(0.742858, 0.626713, 0.233811, 0.862745)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.8548, 1.49219, 59.7313)
+shape = SubResource("CylinderShape3D_e66ug")
+debug_color = Color(0.742858, 0.626713, 0.233811, 0.862745)
+
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.9599, 1.49219, 51.3827)
+shape = SubResource("CylinderShape3D_e66ug")
+debug_color = Color(0.742858, 0.626713, 0.233811, 0.862745)
+
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.393, 1.49219, 38.458)
+shape = SubResource("CylinderShape3D_e66ug")
+debug_color = Color(0.742858, 0.626713, 0.233811, 0.862745)
+
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.1021, 1.49219, 43.3709)
+shape = SubResource("CylinderShape3D_e66ug")
+debug_color = Color(0.742858, 0.626713, 0.233811, 0.862745)
+
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.8172, 1.49219, 46.7721)
+shape = SubResource("CylinderShape3D_e66ug")
+debug_color = Color(0.742858, 0.626713, 0.233811, 0.862745)
+
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.1673, 1.49219, 39.9397)
+shape = SubResource("CylinderShape3D_e66ug")
+debug_color = Color(0.742858, 0.626713, 0.233811, 0.862745)
+
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.7794, 1.49219, 36.6778)
+shape = SubResource("CylinderShape3D_e66ug")
+debug_color = Color(0.742858, 0.626713, 0.233811, 0.862745)
+
+[node name="CollisionShape3D16" type="CollisionShape3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56.7302, 1.49219, 33.9448)
+shape = SubResource("CylinderShape3D_e66ug")
+debug_color = Color(0.742858, 0.626713, 0.233811, 0.862745)
+
+[node name="CollisionShape3D17" type="CollisionShape3D" parent="WorldEnvironment/LightAreaEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -64.1339, 1.49219, 31.5283)
+shape = SubResource("CylinderShape3D_e66ug")
+debug_color = Color(0.742858, 0.626713, 0.233811, 0.862745)
+
+[node name="LightsClearingDarken" type="Node3D" parent="WorldEnvironment"]
+
+[node name="ClearingDarken" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -48.4677, 6.29269, 41.6865)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="ClearingDarken20" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -35.1347, 7.37474, 27.8067)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="ClearingDarken21" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -32.4609, 7.37474, 32.589)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="ClearingDarken22" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -27.8866, 7.37474, 28.0494)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="ClearingDarken23" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -32.3603, 7.37474, 22.8821)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="ClearingDarken2" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -45.4896, 6.41678, 43.9653)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="ClearingDarken4" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -51.9172, 6.41678, 45.2264)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="ClearingDarken26" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -0.407327, 0.913283, 0, -0.913283, -0.407327, -18.5961, 6.9151, 67.5163)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="ClearingDarken27" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -15.7454, 6.90909, 71.906)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="ClearingDarken28" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(0.672418, 0.707306, 0.218109, 0, -0.294674, 0.955598, 0.740171, -0.642562, -0.198144, -10.1694, 6.41678, 73.0883)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="ClearingDarken29" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -8.5259, 6.41678, 78.3381)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="ClearingDarken30" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -4.03973, 6.41678, 78.6994)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="ClearingDarken5" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -62.0987, 6.41678, 40.9722)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="ClearingDarken6" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -64.2333, 6.41678, 47.0377)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="ClearingDarken7" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -60.7837, 6.41678, 48.5437)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="ClearingDarken8" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -58.8423, 6.41678, 56.0998)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="ClearingDarken9" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -40.7186, 6.41678, 49.6711)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="ClearingDarken10" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -34.5631, 6.81363, 55.2093)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="ClearingDarken11" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -27.561, 6.41678, 57.8752)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="ClearingDarken12" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(0.987789, -6.81009e-09, 0.155797, -0.155797, -4.31776e-08, 0.987789, 0, -1, -4.37114e-08, -19.5031, 7.15254, 47.8951)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="ClearingDarken14" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -52.217, 6.41678, 18.6247)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 36.83
+
+[node name="ClearingDarken24" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -63.7307, 6.41678, 23.8961)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 36.83
+
+[node name="ClearingDarken25" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -67.8923, 6.41678, 16.3705)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 36.83
+
+[node name="ClearingDarkenEdge" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -78.0918, 8.78499, 16.7809)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 15.639
+spot_angle = 60.54
+
+[node name="ClearingDarkenEdge2" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -80.8348, 8.78499, 9.76546)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 15.639
+spot_angle = 60.54
+
+[node name="ClearingDarkenEdge3" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -77.0894, 10.0652, 23.3947)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 15.639
+spot_angle = 60.54
+
+[node name="ClearingDarkenEdge4" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -75.0218, 10.0652, 28.5289)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 15.639
+spot_angle = 60.54
+
+[node name="ClearingDarkenEdge5" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -80.7499, 10.0652, 43.1151)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 15.639
+spot_angle = 60.54
+
+[node name="ClearingDarkenEdge6" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -78.8683, 10.0652, 49.4173)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 15.639
+spot_angle = 60.54
+
+[node name="ClearingDarkenEdge7" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -73.4017, 10.0652, 54.636)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 15.639
+spot_angle = 60.54
+
+[node name="ClearingDarkenEdge9" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -62.5121, 10.0652, 67.3289)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 15.639
+spot_angle = 60.54
+
+[node name="ClearingDarkenEdge10" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -50.0197, 10.0652, 71.4013)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 15.639
+spot_angle = 60.54
+
+[node name="ClearingDarkenEdge11" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -39.3434, 10.0652, 74.8684)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 15.639
+spot_angle = 60.54
+
+[node name="ClearingDarkenEdge12" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -11.4443, 10.0652, 79.4263)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 15.639
+spot_angle = 60.54
+
+[node name="ClearingDarkenEdge14" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -72.8619, 10.0652, -4.7658)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 15.639
+spot_angle = 60.54
+
+[node name="ClearingDarkenEdge15" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -55.8804, 10.0652, -10.6668)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 15.639
+spot_angle = 60.54
+
+[node name="ClearingDarkenEdge13" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -23.8241, 10.0652, 76.0791)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 15.639
+spot_angle = 60.54
+
+[node name="ClearingDarkenEdge8" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -69.0647, 10.0652, 62.4649)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 15.639
+spot_angle = 60.54
+
+[node name="ClearingDarken15" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -55.5511, 6.41678, 10.188)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="ClearingDarken16" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -53.2257, 6.41678, 1.2242)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="ClearingDarken31" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -50.3957, 7.61737, -5.35218)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="ClearingDarken17" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -68.3361, 6.41678, 4.03343)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="ClearingDarken18" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -76.4368, 6.41678, -0.964424)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="ClearingDarken19" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -59.9599, 7.60209, -5.255)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="ClearingDarken13" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(0.967692, 3.39847e-09, 0.252137, -0.227815, -0.428509, 0.874345, 0.108043, -0.903537, -0.414665, -15.7248, 6.41678, 51.9511)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="ClearingDarken3" type="SpotLight3D" parent="WorldEnvironment/LightsClearingDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -42.9555, 7.362, 46.493)
+light_energy = 3.0
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="LightsHubDarken" type="Node3D" parent="WorldEnvironment"]
+
+[node name="HubDarken" type="SpotLight3D" parent="WorldEnvironment/LightsHubDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -10.7857, 6.29269, 5.84308)
+light_energy = 2.441
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="HubDarken17" type="SpotLight3D" parent="WorldEnvironment/LightsHubDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -47.1941, 6.29269, -4.82567)
+light_energy = 2.441
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="HubDarken18" type="SpotLight3D" parent="WorldEnvironment/LightsHubDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -43.5949, 6.29269, 4.38312)
+light_energy = 2.441
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="HubDarken24" type="SpotLight3D" parent="WorldEnvironment/LightsHubDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -40.4841, 6.29269, 7.01217)
+light_energy = 2.441
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="HubDarken19" type="SpotLight3D" parent="WorldEnvironment/LightsHubDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -34.5573, 6.29269, 7.50036)
+light_energy = 2.441
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="HubDarken20" type="SpotLight3D" parent="WorldEnvironment/LightsHubDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -31.2428, 6.29269, 11.6954)
+light_energy = 2.441
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="HubDarken21" type="SpotLight3D" parent="WorldEnvironment/LightsHubDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -36.7325, 6.29269, 9.31302)
+light_energy = 2.441
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="HubDarken22" type="SpotLight3D" parent="WorldEnvironment/LightsHubDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -45.1153, 6.29269, -11.8083)
+light_energy = 2.441
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 71.758
+
+[node name="HubDarken23" type="SpotLight3D" parent="WorldEnvironment/LightsHubDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -48.8078, 5.68716, -0.464312)
+light_energy = 2.441
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 43.9917
+
+[node name="HubDarken16" type="SpotLight3D" parent="WorldEnvironment/LightsHubDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -2.86936, 6.29269, 25.9523)
+light_energy = 2.441
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="HubDarken2" type="SpotLight3D" parent="WorldEnvironment/LightsHubDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -6.5278, 6.29269, -0.162249)
+light_energy = 2.441
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="HubDarken3" type="SpotLight3D" parent="WorldEnvironment/LightsHubDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -17.9748, 6.29269, -6.22768)
+light_energy = 2.441
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="HubDarken4" type="SpotLight3D" parent="WorldEnvironment/LightsHubDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -18.8371, 6.29269, 0.135076)
+light_energy = 2.441
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="HubDarken5" type="SpotLight3D" parent="WorldEnvironment/LightsHubDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -18.8508, 6.29269, -8.95609)
+light_energy = 2.441
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="HubDarken6" type="SpotLight3D" parent="WorldEnvironment/LightsHubDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -19.6784, 6.29269, -19.0107)
+light_energy = 2.441
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="HubDarken7" type="SpotLight3D" parent="WorldEnvironment/LightsHubDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -30.0131, 6.29269, -5.46653)
+light_energy = 2.441
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="HubDarken8" type="SpotLight3D" parent="WorldEnvironment/LightsHubDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -11.3337, 6.29269, -19.2032)
+light_energy = 2.441
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="HubDarken9" type="SpotLight3D" parent="WorldEnvironment/LightsHubDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -2.46157, 6.29269, -10.6505)
+light_energy = 2.441
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="HubDarken10" type="SpotLight3D" parent="WorldEnvironment/LightsHubDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 13.4576, 6.29269, -16.8127)
+light_energy = 2.441
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="HubDarken11" type="SpotLight3D" parent="WorldEnvironment/LightsHubDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 14.7568, 6.29269, -13.2859)
+light_energy = 2.441
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="HubDarken15" type="SpotLight3D" parent="WorldEnvironment/LightsHubDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 2.47327, 6.29269, -28.0934)
+light_energy = 2.441
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="HubDarken12" type="SpotLight3D" parent="WorldEnvironment/LightsHubDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -2.97509, 6.29269, -22.2047)
+light_energy = 2.441
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="HubDarken13" type="SpotLight3D" parent="WorldEnvironment/LightsHubDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 15.1266, 7.56255, 5.91061)
+light_energy = 2.441
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="HubDarken14" type="SpotLight3D" parent="WorldEnvironment/LightsHubDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 27.4511, 6.86819, 6.03899)
+light_energy = 2.441
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 27.15
+
+[node name="LightsAccent" type="Node3D" parent="WorldEnvironment"]
+
+[node name="SpotLight3D" type="SpotLight3D" parent="WorldEnvironment/LightsAccent"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -47.8711, 3.87441, -0.64908)
+light_color = Color(1, 0.622, 0.16, 1)
+light_energy = 8.945
+distance_fade_enabled = true
+spot_range = 4.728
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="WorldEnvironment/LightsAccent"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -47.3984, 3.87441, 4.28325)
+light_color = Color(1, 0.622, 0.16, 1)
+light_energy = 1.633
+distance_fade_enabled = true
+spot_range = 4.728
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="WorldEnvironment/LightsAccent"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -42.4327, 3.87441, 5.25866)
+light_color = Color(1, 0.622, 0.16, 1)
+light_energy = 8.128
+distance_fade_enabled = true
+spot_range = 4.728
+
+[node name="SpotLight3D4" type="SpotLight3D" parent="WorldEnvironment/LightsAccent"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -33.4425, 3.87441, 11.0102)
+light_color = Color(1, 0.622, 0.16, 1)
+light_energy = 8.128
+distance_fade_enabled = true
+spot_range = 4.728
+
+[node name="SpotLight3D5" type="SpotLight3D" parent="WorldEnvironment/LightsAccent"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -31.9197, 3.87441, 4.58437)
+light_color = Color(1, 0.622, 0.16, 1)
+light_energy = 8.128
+distance_fade_enabled = true
+spot_range = 4.728
+
+[node name="SpotLight3D6" type="SpotLight3D" parent="WorldEnvironment/LightsAccent"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -35.4667, 3.87441, 0.815722)
+light_color = Color(1, 0.622, 0.16, 1)
+light_energy = 8.128
+distance_fade_enabled = true
+spot_range = 4.728
+
+[node name="SpotLight3D7" type="SpotLight3D" parent="WorldEnvironment/LightsAccent"]
+transform = Transform3D(0.782024, 0.281035, -0.55629, 0.579651, -4.42563e-08, 0.814865, 0.229006, -0.959697, -0.162902, -37.598, 4.67833, -4.04781)
+light_color = Color(1, 0.622, 0.16, 1)
+light_energy = 8.128
+distance_fade_enabled = true
+spot_range = 4.728
+
+[node name="SpotLight3D13" type="SpotLight3D" parent="WorldEnvironment/LightsAccent"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 16.9176, 3.87441, 2.4765)
+light_color = Color(1, 0.622, 0.16, 1)
+light_energy = 5.16
+distance_fade_enabled = true
+spot_range = 4.728
+
+[node name="SpotLight3D14" type="SpotLight3D" parent="WorldEnvironment/LightsAccent"]
+transform = Transform3D(0.707325, -0.569021, -0.419411, 0.510033, -7.19827e-09, 0.860155, -0.489447, -0.822323, 0.290219, -6.45311, 3.87441, 1.05947)
+light_color = Color(1, 0.622, 0.16, 1)
+light_energy = 5.16
+distance_fade_enabled = true
+spot_range = 4.728
+
+[node name="SpotLight3D15" type="SpotLight3D" parent="WorldEnvironment/LightsAccent"]
+transform = Transform3D(0.707325, -0.569021, -0.419411, 0.510033, -2.23984e-08, 0.860155, -0.489447, -0.822323, 0.290219, -12.2444, 3.87441, 4.30426)
+light_color = Color(1, 0.622, 0.16, 1)
+light_energy = 5.16
+distance_fade_enabled = true
+spot_range = 4.728
+
+[node name="SpotLight3D16" type="SpotLight3D" parent="WorldEnvironment/LightsAccent"]
+transform = Transform3D(0.707325, -0.569021, -0.419411, 0.510033, -3.75986e-08, 0.860155, -0.489447, -0.822323, 0.290219, -48.8024, 3.87441, 36.9089)
+light_color = Color(1, 0.622, 0.16, 1)
+light_energy = 5.16
+distance_fade_enabled = true
+spot_range = 4.728
+
+[node name="SpotLight3D17" type="SpotLight3D" parent="WorldEnvironment/LightsAccent"]
+transform = Transform3D(0.707325, -0.569021, -0.419411, 0.510033, -3.75986e-08, 0.860155, -0.489447, -0.822323, 0.290219, -63.4245, 3.87441, 32.3086)
+light_color = Color(1, 0.622, 0.16, 1)
+light_energy = 5.16
+distance_fade_enabled = true
+spot_range = 4.728
+
+[node name="SpotLight3D18" type="SpotLight3D" parent="WorldEnvironment/LightsAccent"]
+transform = Transform3D(0.707325, -0.569021, -0.419411, 0.510033, -3.75986e-08, 0.860155, -0.489447, -0.822323, 0.290219, -56.3599, 3.87441, 32.5962)
+light_color = Color(1, 0.622, 0.16, 1)
+light_energy = 5.16
+distance_fade_enabled = true
+spot_range = 4.728
+
+[node name="SpotLight3D19" type="SpotLight3D" parent="WorldEnvironment/LightsAccent"]
+transform = Transform3D(0.707325, -0.569021, -0.419411, 0.510033, -3.75986e-08, 0.860155, -0.489447, -0.822323, 0.290219, -44.5102, 3.87441, 42.9877)
+light_color = Color(1, 0.622, 0.16, 1)
+light_energy = 2.708
+distance_fade_enabled = true
+spot_range = 4.728
+
+[node name="SpotLight3D22" type="SpotLight3D" parent="WorldEnvironment/LightsAccent"]
+transform = Transform3D(0.707325, -0.569021, -0.419411, 0.510033, -3.75986e-08, 0.860155, -0.489447, -0.822323, 0.290219, -52.6128, 3.87441, 43.5186)
+light_color = Color(1, 0.622, 0.16, 1)
+light_energy = 1.762
+distance_fade_enabled = true
+spot_range = 5.913
+
+[node name="SpotLight3D21" type="SpotLight3D" parent="WorldEnvironment/LightsAccent"]
+transform = Transform3D(0.707325, -0.569021, -0.419411, 0.510033, -3.75986e-08, 0.860155, -0.489447, -0.822323, 0.290219, -33.5857, 3.87441, 52.5711)
+light_color = Color(1, 0.622, 0.16, 1)
+light_energy = 2.708
+distance_fade_enabled = true
+spot_range = 4.728
+
+[node name="SpotLight3D20" type="SpotLight3D" parent="WorldEnvironment/LightsAccent"]
+transform = Transform3D(0.707325, -0.569021, -0.419411, 0.510033, -3.75986e-08, 0.860155, -0.489447, -0.822323, 0.290219, -39.0899, 3.87441, 47.8213)
+light_color = Color(1, 0.622, 0.16, 1)
+light_energy = 2.837
+distance_fade_enabled = true
+spot_range = 4.728
+
+[node name="SpotLight3D25" type="SpotLight3D" parent="WorldEnvironment/LightsAccent"]
+transform = Transform3D(0.707325, -0.569021, -0.419411, 0.510033, -3.75986e-08, 0.860155, -0.489447, -0.822323, 0.290219, -14.8313, 3.87441, 70.6309)
+light_color = Color(1, 0.622, 0.16, 1)
+light_energy = 5.504
+distance_fade_enabled = true
+spot_range = 4.728
+
+[node name="SpotLight3D26" type="SpotLight3D" parent="WorldEnvironment/LightsAccent"]
+transform = Transform3D(0.35215, 0.631881, -0.690446, 0.559251, 0.449465, 0.696577, 0.750485, -0.631433, -0.195101, 48.992, 2.45057, 9.80715)
+light_color = Color(1, 0.622, 0.16, 1)
+light_energy = 4.773
+distance_fade_enabled = true
+spot_range = 3.70321
+spot_angle = 44.8076
+
+[node name="SpotLight3D27" type="SpotLight3D" parent="WorldEnvironment/LightsAccent"]
+transform = Transform3D(0.754778, -0.616373, -0.224489, 0.652605, 0.740228, 0.161767, 0.0664642, -0.2686, 0.960956, 47.8263, 1.56904, 15.4103)
+light_color = Color(1, 0.622, 0.16, 1)
+light_energy = 4.773
+distance_fade_enabled = true
+spot_range = 6.183
+spot_angle = 22.26
+
+[node name="SpotLight3D11" type="SpotLight3D" parent="WorldEnvironment/LightsAccent"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -14.7536, 3.87441, -11.0649)
+light_color = Color(1, 0.622, 0.16, 1)
+light_energy = 3.741
+distance_fade_enabled = true
+spot_range = 4.728
+
+[node name="SpotLight3D28" type="SpotLight3D" parent="WorldEnvironment/LightsAccent"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -41.8397, 3.87441, -6.84043)
+light_color = Color(1, 0.622, 0.16, 1)
+light_energy = 3.741
+distance_fade_enabled = true
+spot_range = 4.728
+spot_angle = 36.77
+
+[node name="LightsPondDarken" type="Node3D" parent="WorldEnvironment"]
+
+[node name="PondDarken" type="SpotLight3D" parent="WorldEnvironment/LightsPondDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 25.9853, 6.29269, 53.5672)
+light_energy = 2.898
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 35.86
+
+[node name="PondDarken2" type="SpotLight3D" parent="WorldEnvironment/LightsPondDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 9.3644, 6.29269, 76.8207)
+light_energy = 2.441
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 35.86
+
+[node name="PondDarken3" type="SpotLight3D" parent="WorldEnvironment/LightsPondDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 12.0523, 6.29269, 30.3034)
+light_energy = 3.301
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 35.86
+
+[node name="PondDarken4" type="SpotLight3D" parent="WorldEnvironment/LightsPondDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -18.1959, 6.29269, 43.7803)
+light_energy = 3.301
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 35.86
+
+[node name="PondDarken5" type="SpotLight3D" parent="WorldEnvironment/LightsPondDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -8.97978, 6.29269, 42.6282)
+light_energy = 3.301
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 35.86
+
+[node name="PondDarken6" type="SpotLight3D" parent="WorldEnvironment/LightsPondDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 18.7844, 6.29269, 80.3446)
+light_energy = 2.828
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 41.18
+
+[node name="PondDarken12" type="SpotLight3D" parent="WorldEnvironment/LightsPondDarken"]
+transform = Transform3D(1, 0, 0, 0, -0.295225, 0.955428, 0, -0.955428, -0.295225, 8.94434, 6.29269, 60.8548)
+light_energy = 2.828
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 41.18
+
+[node name="PondDarken14" type="SpotLight3D" parent="WorldEnvironment/LightsPondDarken"]
+transform = Transform3D(1, 0, 0, 0, -0.295225, 0.955428, 0, -0.955428, -0.295225, 17.5004, 6.29269, 50.2948)
+light_energy = 2.607
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.2617
+spot_angle = 41.18
+
+[node name="PondDarken15" type="SpotLight3D" parent="WorldEnvironment/LightsPondDarken"]
+transform = Transform3D(1, 0, 0, 0, 0.405828, 0.91395, 0, -0.91395, 0.405828, 35.8837, 6.48914, 52.9535)
+light_color = Color(1, 0.902, 0.79, 1)
+light_energy = 3.777
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 13.262
+spot_angle = 89.1513
+
+[node name="PondDarken7" type="SpotLight3D" parent="WorldEnvironment/LightsPondDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 22.5805, 6.29269, 76.9952)
+light_energy = 2.828
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 41.18
+
+[node name="PondDarken8" type="SpotLight3D" parent="WorldEnvironment/LightsPondDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 28.3862, 6.29269, 74.7622)
+light_energy = 2.828
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 41.18
+
+[node name="PondDarken9" type="SpotLight3D" parent="WorldEnvironment/LightsPondDarken"]
+transform = Transform3D(1, 0, 0, 0, -0.577587, 0.816329, 0, -0.816329, -0.577587, 33.7699, 6.29269, 67.3991)
+light_energy = 2.828
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 41.18
+
+[node name="PondDarken10" type="SpotLight3D" parent="WorldEnvironment/LightsPondDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 31.1934, 9.41649, 64.1785)
+light_energy = 2.828
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 41.18
+
+[node name="PondDarken11" type="SpotLight3D" parent="WorldEnvironment/LightsPondDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 40.3797, 7.71169, 61.2578)
+light_energy = 2.828
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 41.18
+
+[node name="PondDarken13" type="SpotLight3D" parent="WorldEnvironment/LightsPondDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 56.1252, 7.71169, 26.46)
+light_energy = 2.828
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 41.18
+
+[node name="PondDarken16" type="SpotLight3D" parent="WorldEnvironment/LightsPondDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 65.7609, 7.71169, 27.6035)
+light_energy = 2.828
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 41.18
+
+[node name="PondDarken17" type="SpotLight3D" parent="WorldEnvironment/LightsPondDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 48.8157, 7.71169, 36.616)
+light_energy = 2.828
+light_negative = true
+light_specular = 0.0
+distance_fade_enabled = true
+spot_range = 10.0
+spot_angle = 41.18
+
+[node name="LightAreaMap" type="Area3D" parent="WorldEnvironment" groups=["LightAreas"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.6551, 0, 9.35435)
+collision_mask = 12
+script = ExtResource("3_rfv24")
+FADE_TIME = 1.0
+metadata/_custom_type_script = "uid://cjmmyghe63y22"
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="WorldEnvironment/LightAreaMap"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.224497, 1.82157, 0.560707)
+shape = SubResource("CylinderShape3D_2qcqp")
+debug_fill = false
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="WorldEnvironment/LightAreaMap"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.108915, 1.82157, 3.5376)
+shape = SubResource("CylinderShape3D_2qcqp")
+debug_fill = false
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="WorldEnvironment/LightAreaMap"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.08208, 1.82157, 3.08512)
+shape = SubResource("CylinderShape3D_2qcqp")
+debug_fill = false
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="WorldEnvironment/LightAreaMap"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.20163, 1.82157, 1.75147)
+shape = SubResource("CylinderShape3D_2qcqp")
+debug_fill = false
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="WorldEnvironment/LightAreaMap"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.82082, 1.82157, -0.749125)
+shape = SubResource("CylinderShape3D_2qcqp")
+debug_fill = false
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="WorldEnvironment/LightAreaMap"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.01437, 1.82157, 3.60905)
+shape = SubResource("CylinderShape3D_2qcqp")
+debug_fill = false
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="WorldEnvironment/LightAreaMap"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.87171, 1.82157, 1.27517)
+shape = SubResource("CylinderShape3D_2qcqp")
+debug_fill = false
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="WorldEnvironment/LightAreaMap"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.20512, 1.82157, -0.725307)
+shape = SubResource("CylinderShape3D_2qcqp")
+debug_fill = false
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="WorldEnvironment/LightAreaMap"]
+transform = Transform3D(1, 0, 0, 0, 0.643416, 0.765517, 0, -0.765517, 0.643416, -0.358088, 3.5425, 0.876781)
+light_color = Color(0.816915, 0.591995, 0.236283, 1)
+light_energy = 2.343
+spot_range = 3.419
+spot_angle = 13.79
+
+[node name="SpotLight3D4" type="SpotLight3D" parent="WorldEnvironment/LightAreaMap"]
+transform = Transform3D(0.625202, 0.405291, -0.66698, -0.0495766, 0.873492, 0.484307, 0.778887, -0.269723, 0.566202, -2.58795, 2.91077, 1.10601)
+light_color = Color(0.816915, 0.591995, 0.236283, 1)
+light_energy = 7.53
+spot_range = 4.692
+spot_angle = 4.7
+
+[node name="LightAreaMapPond" type="Area3D" parent="WorldEnvironment" groups=["LightAreas"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3377, 0, 69.0124)
+collision_mask = 12
+script = ExtResource("3_rfv24")
+FADE_TIME = 1.0
+metadata/_custom_type_script = "uid://cjmmyghe63y22"
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="WorldEnvironment/LightAreaMapPond"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0606441, 1.82157, 1.33041)
+shape = SubResource("CylinderShape3D_2qcqp")
+debug_fill = false
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="WorldEnvironment/LightAreaMapPond"]
+transform = Transform3D(0.625202, 0.405291, -0.66698, -0.0495766, 0.873492, 0.484307, 0.778887, -0.269723, 0.566202, -1.60174, 2.68723, 1.05061)
+light_color = Color(0.816915, 0.591995, 0.236283, 1)
+light_energy = 5.592
+spot_range = 3.419
+spot_angle = 36.29
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="WorldEnvironment/LightAreaMapPond"]
+transform = Transform3D(0.625202, 0.405291, -0.66698, -0.0495766, 0.873492, 0.484307, 0.778887, -0.269723, 0.566202, -2.32007, 2.42336, 1.43741)
+light_color = Color(0.816915, 0.591995, 0.236283, 1)
+light_energy = 14.838
+spot_range = 3.727
+spot_angle = 10.75
+
+[node name="LightAreaPond" type="Area3D" parent="WorldEnvironment" groups=["LightAreas"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.62199, 0, 53.3097)
+collision_mask = 12
+script = ExtResource("3_rfv24")
+FADE_TIME = 1.0
+metadata/_custom_type_script = "uid://cjmmyghe63y22"
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="WorldEnvironment/LightAreaPond"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.08789, 1.82157, -2.23979)
+shape = SubResource("CylinderShape3D_h5oi6")
+debug_fill = false
+
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="WorldEnvironment/LightAreaPond"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.580929, 1.82157, 2.08392)
+shape = SubResource("CylinderShape3D_h5oi6")
+debug_fill = false
+
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="WorldEnvironment/LightAreaPond"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.496, 1.82157, -3.75318)
+shape = SubResource("CylinderShape3D_weaee")
+debug_fill = false
+
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="WorldEnvironment/LightAreaPond"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.96052, 1.82157, -5.96658)
+shape = SubResource("CylinderShape3D_weaee")
+debug_fill = false
+
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="WorldEnvironment/LightAreaPond"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.09034, 1.82157, -10.1389)
+shape = SubResource("CylinderShape3D_weaee")
+debug_fill = false
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="WorldEnvironment/LightAreaPond"]
+transform = Transform3D(0.875498, 0.0883338, -0.475079, 0.483221, -0.160043, 0.860746, 1.26419e-08, -0.98315, -0.182802, -17.26, 9.58464, -7.36988)
+light_color = Color(0.685393, 0.756743, 0.804725, 1)
+light_energy = 2.967
+light_specular = 0.328
+spot_range = 39.0
+spot_attenuation = 0.0
+spot_angle = 58.73
+spot_angle_attenuation = 1.46409
+
+[node name="SpotLight3D5" type="SpotLight3D" parent="WorldEnvironment/LightAreaPond"]
+transform = Transform3D(0.875498, 0.0883338, -0.475079, 0.483221, -0.160043, 0.860746, 1.26419e-08, -0.98315, -0.182802, 6.00066, 9.58464, -8.40788)
+light_color = Color(0.685393, 0.756743, 0.804725, 1)
+light_energy = 2.967
+light_specular = 0.328
+spot_range = 39.0
+spot_attenuation = 0.0
+spot_angle = 58.73
+spot_angle_attenuation = 1.46409
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="WorldEnvironment/LightAreaPond"]
+transform = Transform3D(1, 0, 0, 0, -0.182802, 0.98315, 0, -0.98315, -0.182802, 17.6794, 9.58464, -2.23465)
+light_color = Color(0.685393, 0.756743, 0.804725, 1)
+light_energy = 4.86
+light_specular = 0.328
+spot_range = 16.167
+spot_attenuation = 0.0
+spot_angle = 23.89
+spot_angle_attenuation = 1.46409
+
+[node name="SpotLight3D4" type="SpotLight3D" parent="WorldEnvironment/LightAreaPond"]
+transform = Transform3D(1, 0, 0, 0, -0.182802, 0.98315, 0, -0.98315, -0.182802, 1.66291, 9.58464, -3.78954)
+light_color = Color(0.685393, 0.756743, 0.804725, 1)
+light_energy = 0.86
+light_negative = true
+light_specular = 0.0
+spot_range = 14.784
+spot_attenuation = 0.0
+spot_angle = 35.08
+spot_angle_attenuation = 1.46409
+
+[node name="LightAreaWillow" type="Area3D" parent="WorldEnvironment" groups=["LightAreas"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.492, -4.76837e-07, 57.3577)
+collision_mask = 12
+script = ExtResource("3_rfv24")
+DIMMING_TARGET_FACTOR = 0.5
+metadata/_custom_type_script = "uid://cjmmyghe63y22"
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="WorldEnvironment/LightAreaWillow"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.913317, 2.34234, -3.1328)
+shape = SubResource("CylinderShape3D_q073b")
+debug_fill = false
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="WorldEnvironment/LightAreaWillow"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0669518, 1.90973, 1.45345)
+shape = SubResource("CylinderShape3D_q073b")
+debug_fill = false
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="WorldEnvironment/LightAreaWillow"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.56757, 1.95224, -1.68347)
+shape = SubResource("CylinderShape3D_q073b")
+debug_fill = false
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="WorldEnvironment/LightAreaWillow"]
+transform = Transform3D(-0.34957, 0.717221, -0.602823, -1.77636e-15, 0.643416, 0.765517, 0.93691, 0.267602, -0.224919, -2.31526, 7.12962, 1.35958)
+light_color = Color(0.82, 0.742373, 0.2378, 1)
+light_energy = 25.0
+spot_range = 6.539
+spot_angle = 41.13
+
+[node name="SpotLight3D4" type="SpotLight3D" parent="WorldEnvironment/LightAreaWillow"]
+transform = Transform3D(0.405782, 0.582206, -0.70454, -0.0800325, 0.790531, 0.60717, 0.910459, -0.189993, 0.367379, -5.63919, 5.40174, 1.92293)
+light_color = Color(0.82, 0.742373, 0.2378, 1)
+light_energy = 10.021
+spot_range = 10.069
+spot_angle = 24.94
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="WorldEnvironment/LightAreaWillow"]
+transform = Transform3D(-0.34957, 0.717221, -0.602823, -1.77636e-15, 0.643416, 0.765517, 0.93691, 0.267602, -0.224919, -5.47702, 8.38188, -0.625755)
+light_color = Color(0.816915, 0.591995, 0.236283, 1)
+light_energy = 11.226
+spot_range = 6.539
+spot_angle = 41.13
+
+[node name="LightAreaShed" type="Area3D" parent="WorldEnvironment" groups=["LightAreas"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.1811, 0, 14.3769)
+collision_mask = 12
+script = ExtResource("3_rfv24")
+FADE_TIME = 2.0
+metadata/_custom_type_script = "uid://cjmmyghe63y22"
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="WorldEnvironment/LightAreaShed"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.20121, 1.57572, -7.4025)
+shape = SubResource("CylinderShape3D_q073b")
+debug_fill = false
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="WorldEnvironment/LightAreaShed"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.88015, 1.57572, 1.19638)
+shape = SubResource("CylinderShape3D_q073b")
+debug_fill = false
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="WorldEnvironment/LightAreaShed"]
+transform = Transform3D(0.253198, 0.630192, -0.733995, -0.0128364, 0.76084, 0.648813, 0.967329, -0.154856, 0.200733, -3.45677, 1.54867, 0.147223)
+light_color = Color(0.816915, 0.591995, 0.236283, 1)
+light_energy = 16.0
+spot_range = 3.911
+spot_angle = 14.51
+spot_angle_attenuation = 4.43828
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="WorldEnvironment/LightAreaShed"]
+transform = Transform3D(0.875911, 0.369341, -0.31043, -8.88179e-16, 0.643416, 0.765517, 0.482472, -0.670525, 0.563575, -6.67139, 6.27361, -1.89536)
+light_color = Color(0.816915, 0.591995, 0.236283, 1)
+light_energy = 14.624
+spot_range = 15.993
+spot_angle = 17.9
+
+[node name="LightAreaShowel" type="Area3D" parent="WorldEnvironment" groups=["LightAreas"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.4394, 0, 40.5966)
+collision_mask = 12
+script = ExtResource("3_rfv24")
+FADE_TIME = 2.0
+metadata/_custom_type_script = "uid://cjmmyghe63y22"
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="WorldEnvironment/LightAreaShowel"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.989758, 1.57572, -4.86)
+shape = SubResource("CylinderShape3D_q073b")
+debug_fill = false
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="WorldEnvironment/LightAreaShowel"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.0008, 1.57572, -1.23861)
+shape = SubResource("CylinderShape3D_q073b")
+debug_fill = false
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="WorldEnvironment/LightAreaShowel"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.23401, 1.57572, -2.91211)
+shape = SubResource("CylinderShape3D_q073b")
+debug_fill = false
+
+[node name="LightShowel" type="SpotLight3D" parent="WorldEnvironment/LightAreaShowel"]
+transform = Transform3D(1, 0, 0, 0, -0.32608, 0.945342, 0, -0.945342, -0.32608, -0.0629997, 2.7277, -0.841137)
+light_color = Color(0.816915, 0.591995, 0.236283, 1)
+light_energy = 4.143
+spot_range = 7.452
+spot_angle = 36.29
+spot_angle_attenuation = 2.14355
+
+[node name="LightShowelDarken" type="SpotLight3D" parent="WorldEnvironment/LightAreaShowel"]
+transform = Transform3D(1, 0, 0, 0, -0.32608, 0.945342, 0, -0.945342, -0.32608, 2.8712, 2.7277, -0.553898)
+light_color = Color(0.660006, 0.646997, 0.511024, 1)
+light_energy = 1.979
+light_negative = true
+spot_range = 18.634
+spot_angle = 58.06
+
+[node name="LightShowelDarken2" type="SpotLight3D" parent="WorldEnvironment/LightAreaShowel"]
+transform = Transform3D(1, 0, 0, 0, -0.32608, 0.945342, 0, -0.945342, -0.32608, -1.56771, 2.7277, -2.01073)
+light_color = Color(0.660006, 0.646997, 0.511024, 1)
+light_energy = 1.979
+light_negative = true
+spot_range = 18.634
+spot_angle = 58.06
+
+[node name="LightShowelDarken4" type="SpotLight3D" parent="WorldEnvironment/LightAreaShowel"]
+transform = Transform3D(1, 0, 0, 0, -0.32608, 0.945342, 0, -0.945342, -0.32608, 3.65892, 2.7277, -4.0483)
+light_color = Color(0.660006, 0.646997, 0.511024, 1)
+light_energy = 1.979
+light_negative = true
+spot_range = 18.634
+spot_angle = 58.06
+
+[node name="LightShowelDarken3" type="SpotLight3D" parent="WorldEnvironment/LightAreaShowel"]
+transform = Transform3D(1, 0, 0, 0, -0.32608, 0.945342, 0, -0.945342, -0.32608, 0.174, 2.7277, 2.43039)
+light_color = Color(0.660006, 0.646997, 0.511024, 1)
+light_energy = 1.979
+light_negative = true
+spot_range = 18.634
+spot_angle = 58.06
+
+[node name="LightAreaEarmuffs" type="Area3D" parent="WorldEnvironment" groups=["LightAreas"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.0573, -0.335094, -18.2508)
+collision_mask = 12
+script = ExtResource("3_rfv24")
+FADE_TIME = 2.0
+metadata/_custom_type_script = "uid://cjmmyghe63y22"
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="WorldEnvironment/LightAreaEarmuffs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0397491, 1.57572, 6.84459)
+shape = SubResource("CylinderShape3D_q073b")
+debug_fill = false
+
+[node name="LightEarmuffs" type="SpotLight3D" parent="WorldEnvironment/LightAreaEarmuffs"]
+transform = Transform3D(1, 0, 0, 0, -0.32608, 0.945342, 0, -0.945342, -0.32608, -0.0629997, 2.7277, -0.841137)
+light_color = Color(0.816915, 0.591995, 0.236283, 1)
+light_energy = 2.534
+spot_range = 7.452
+spot_angle = 36.29
+spot_angle_attenuation = 2.14355
+
+[node name="LightEarmuffsDarken" type="SpotLight3D" parent="WorldEnvironment/LightAreaEarmuffs"]
+transform = Transform3D(1, 0, 0, 0, -0.32608, 0.945342, 0, -0.945342, -0.32608, 0.191296, 3.64731, 4.95955)
+light_color = Color(0.660006, 0.646997, 0.511024, 1)
+light_energy = 2.108
+light_negative = true
+spot_range = 18.634
+spot_angle = 58.06
+
+[node name="LightEarmuffsDarken2" type="SpotLight3D" parent="WorldEnvironment/LightAreaEarmuffs"]
+transform = Transform3D(1, 0, 0, 0, -0.32608, 0.945342, 0, -0.945342, -0.32608, -2.53722, 3.64732, -3.03808)
+light_color = Color(0.668334, 0.659994, 0.304035, 1)
+light_energy = 3.613
+light_negative = true
+spot_range = 18.634
+spot_angle = 58.06
+
+[node name="LightEarmuffsDarken3" type="SpotLight3D" parent="WorldEnvironment/LightAreaEarmuffs"]
+transform = Transform3D(1, 0, 0, 0, -0.32608, 0.945342, 0, -0.945342, -0.32608, 2.72948, 3.64732, -0.191004)
+light_color = Color(0.668334, 0.659994, 0.304035, 1)
+light_energy = 3.14
+light_negative = true
+spot_range = 18.634
+spot_angle = 58.06
+
+[node name="LightEarmuffsDarken4" type="SpotLight3D" parent="WorldEnvironment/LightAreaEarmuffs"]
+transform = Transform3D(1, 0, 0, 0, -0.32608, 0.945342, 0, -0.945342, -0.32608, 2.72948, 3.64732, 2.69835)
+light_color = Color(0.668334, 0.659994, 0.304035, 1)
+light_energy = 3.14
+light_negative = true
+spot_range = 18.634
+spot_angle = 58.06
+
+[node name="LightAreaClearingEntrance" type="Area3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.8747, 0, 55.4307)
+script = ExtResource("3_rfv24")
+FADE_TIME = 1.0
+metadata/_custom_type_script = "uid://cjmmyghe63y22"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorldEnvironment/LightAreaClearingEntrance"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.198582, 1.84131, 0.898628)
+shape = SubResource("CylinderShape3D_rfv24")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="WorldEnvironment/LightAreaClearingEntrance"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.436466, 1.84131, -3.29531)
+shape = SubResource("CylinderShape3D_rfv24")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="WorldEnvironment/LightAreaClearingEntrance"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.04106, 1.84131, -6.26755)
+shape = SubResource("CylinderShape3D_rfv24")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="WorldEnvironment/LightAreaClearingEntrance"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.33323, 1.84131, -9.13276)
+shape = SubResource("CylinderShape3D_rfv24")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="WorldEnvironment/LightAreaClearingEntrance"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.95687, 1.84131, -11.634)
+shape = SubResource("CylinderShape3D_rfv24")
+
+[node name="LightClearingEntrance" type="SpotLight3D" parent="WorldEnvironment/LightAreaClearingEntrance"]
+transform = Transform3D(1, 0, 0, 0, -0.32608, 0.945342, 0, -0.945342, -0.32608, 0.998962, 4.07621, 2.8295)
+light_color = Color(0.816915, 0.591995, 0.236283, 1)
+light_energy = 9.462
+spot_range = 6.516
+spot_angle = 37.26
+spot_angle_attenuation = 2.14355
+
+[node name="LightClearingEntrance2" type="SpotLight3D" parent="WorldEnvironment/LightAreaClearingEntrance"]
+transform = Transform3D(1, 0, 0, 0, -0.32608, 0.945342, 0, -0.945342, -0.32608, -1.08437, 3.39664, -0.498848)
+light_color = Color(0.816915, 0.591995, 0.236283, 1)
+light_energy = 7.957
+spot_range = 6.516
+spot_angle = 30.97
+spot_angle_attenuation = 2.14355
+
+[node name="LightClearingEntrance5" type="SpotLight3D" parent="WorldEnvironment/LightAreaClearingEntrance"]
+transform = Transform3D(1, 0, 0, 0, -0.32608, 0.945342, 0, -0.945342, -0.32608, -1.07123, 3.39664, -5.44527)
+light_color = Color(0.816915, 0.591995, 0.236283, 1)
+light_energy = 7.398
+spot_range = 6.516
+spot_angle = 30.97
+spot_angle_attenuation = 2.14355
+
+[node name="LightClearingEntrance3" type="SpotLight3D" parent="WorldEnvironment/LightAreaClearingEntrance"]
+transform = Transform3D(1, 0, 0, 0, -0.32608, 0.945342, 0, -0.945342, -0.32608, -6.89285, 3.39664, -9.83453)
+light_color = Color(0.816915, 0.591995, 0.236283, 1)
+light_energy = 7.398
+spot_range = 6.516
+spot_angle = 55.16
+spot_angle_attenuation = 2.14355
+
+[node name="LightClearingEntrance4" type="SpotLight3D" parent="WorldEnvironment/LightAreaClearingEntrance"]
+transform = Transform3D(1, 0, 0, 0, -0.32608, 0.945342, 0, -0.945342, -0.32608, -2.76537, 3.39664, -15.1285)
+light_color = Color(0.816915, 0.591995, 0.236283, 1)
+light_energy = 9.075
+spot_range = 6.516
+spot_angle = 55.16
+spot_angle_attenuation = 2.14355
+
+[node name="LightAreaClearingPreEnterDarken" type="Area3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.8747, 0, 55.4307)
+script = ExtResource("3_rfv24")
+INVERT = true
+FADE_TIME = 1.0
+metadata/_custom_type_script = "uid://cjmmyghe63y22"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorldEnvironment/LightAreaClearingPreEnterDarken"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.29274, 0.894272, 1.43704)
+shape = SubResource("CylinderShape3D_46sdp")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="WorldEnvironment/LightAreaClearingPreEnterDarken"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0.0874443, 5.76664, 1.12506)
+light_color = Color(0.608905, 0.567432, 0.415999, 1)
+light_energy = 7.914
+light_negative = true
+spot_range = 13.077
+spot_angle = 40.16
+
+[node name="ShadowCasters" type="Node3D" parent="WorldEnvironment"]
+
+[node name="LI-pine_tree_alpha_02" parent="WorldEnvironment/ShadowCasters" instance=ExtResource("4_q073b")]
+transform = Transform3D(0.593956, 0.838474, 1.09559, -0.662266, 1.19667, 5.35624e-08, -0.456747, -0.644779, 1.42471, -59.9753, 9.7283, 56.8495)
+
+[node name="LI-pine_tree_alpha_11" parent="WorldEnvironment/ShadowCasters" instance=ExtResource("4_q073b")]
+transform = Transform3D(0.593956, 0.838474, 1.09559, -0.662266, 1.19667, 5.35624e-08, -0.456747, -0.644779, 1.42471, -58.9614, 9.7283, -1.17091)
+
+[node name="LI-pine_tree_alpha_12" parent="WorldEnvironment/ShadowCasters" instance=ExtResource("4_q073b")]
+transform = Transform3D(0.593956, 0.838474, 1.09559, -0.662266, 1.19667, 5.35624e-08, -0.456747, -0.644779, 1.42471, -57.6149, 9.7283, 2.14366)
+
+[node name="LI-pine_tree_alpha_13" parent="WorldEnvironment/ShadowCasters" instance=ExtResource("4_q073b")]
+transform = Transform3D(0.593956, 0.838474, 1.09559, -0.662266, 1.19667, 5.35624e-08, -0.456747, -0.644779, 1.42471, -50.5197, 9.7283, -2.36208)
+
+[node name="LI-pine_tree_alpha_14" parent="WorldEnvironment/ShadowCasters" instance=ExtResource("4_q073b")]
+transform = Transform3D(0.593956, 0.838474, 1.09559, -0.662266, 1.19667, 5.35624e-08, -0.456747, -0.644779, 1.42471, -53.8342, 9.7283, -7.74825)
+
+[node name="LI-pine_tree_alpha_15" parent="WorldEnvironment/ShadowCasters" instance=ExtResource("4_q073b")]
+transform = Transform3D(0.593956, 0.838474, 1.09559, -0.662266, 1.19667, 5.35624e-08, -0.456747, -0.644779, 1.42471, -45.9445, 9.7283, 14.195)
+
+[node name="LI-pine_tree_alpha_03" parent="WorldEnvironment/ShadowCasters" instance=ExtResource("4_q073b")]
+transform = Transform3D(0.593956, 0.838474, 1.09559, -0.662266, 1.19667, 5.35624e-08, -0.456747, -0.644779, 1.42471, -51.5696, 9.7283, 55.9749)
+
+[node name="LI-pine_tree_alpha_06" parent="WorldEnvironment/ShadowCasters" instance=ExtResource("4_q073b")]
+transform = Transform3D(0.593956, 0.838474, 1.09559, -0.662266, 1.19667, 5.35624e-08, -0.456747, -0.644779, 1.42471, -60.2079, 9.7283, 62.3118)
+
+[node name="LI-pine_tree_alpha_16" parent="WorldEnvironment/ShadowCasters" instance=ExtResource("4_q073b")]
+transform = Transform3D(0.473573, 0.688735, 1.24257, -0.528038, 0.982962, 6.07481e-08, -0.364173, -0.529631, 1.61584, -36.6924, 9.7283, 63.6235)
+
+[node name="LI-pine_tree_alpha_21" parent="WorldEnvironment/ShadowCasters" instance=ExtResource("4_q073b")]
+transform = Transform3D(0.473573, 0.688735, 1.24257, -0.528038, 0.982962, 6.07481e-08, -0.364173, -0.529631, 1.61584, 24.7076, 9.7283, 80.4711)
+
+[node name="LI-pine_tree_alpha_22" parent="WorldEnvironment/ShadowCasters" instance=ExtResource("4_q073b")]
+transform = Transform3D(0.104643, 0.152185, 2.00685, -0.528038, 0.982962, 1.69615e-07, -0.58817, -0.855397, 0.357039, 26.0541, 9.7283, 79.4776)
+
+[node name="LI-pine_tree_alpha_23" parent="WorldEnvironment/ShadowCasters" instance=ExtResource("4_q073b")]
+transform = Transform3D(0.0994101, 0.144619, 2.97773, -0.776177, 1.44534, 2.053e-06, -0.872497, -1.2693, 0.339274, 31.8521, 9.7283, 77.4379)
+
+[node name="LI-pine_tree_alpha_25" parent="WorldEnvironment/ShadowCasters" instance=ExtResource("4_q073b")]
+transform = Transform3D(0.0977509, 0.142274, 1.14646, -0.309279, 0.576187, 6.70979e-07, -0.335977, -0.489007, 0.333557, 6.47345, 9.7283, 72.4401)
+
+[node name="LI-pine_tree_alpha_26" parent="WorldEnvironment/ShadowCasters" instance=ExtResource("4_q073b")]
+transform = Transform3D(0.0977509, 0.142274, 1.14646, -0.309279, 0.576187, 6.70979e-07, -0.335977, -0.489007, 0.333557, 13.923, 9.7283, 63.9439)
+
+[node name="LI-pine_tree_alpha_27" parent="WorldEnvironment/ShadowCasters" instance=ExtResource("4_q073b")]
+transform = Transform3D(0.0977509, 0.142274, 1.14646, -0.309279, 0.576187, 6.70979e-07, -0.335977, -0.489007, 0.333557, 18.4278, 9.7283, 62.2219)
+
+[node name="LI-pine_tree_alpha_24" parent="WorldEnvironment/ShadowCasters" instance=ExtResource("4_q073b")]
+transform = Transform3D(0.107081, 0.155779, 2.97463, -0.776177, 1.44534, 2.03462e-06, -0.871589, -1.26798, 0.365454, 37.8914, 9.7283, 73.3331)
+
+[node name="LI-pine_tree_alpha_17" parent="WorldEnvironment/ShadowCasters" instance=ExtResource("4_q073b")]
+transform = Transform3D(0.473573, 0.688735, 1.24257, -0.528038, 0.982962, 6.07481e-08, -0.364173, -0.529631, 1.61584, -69.4289, 9.7283, 74.921)
+
+[node name="LI-pine_tree_alpha_18" parent="WorldEnvironment/ShadowCasters" instance=ExtResource("4_q073b")]
+transform = Transform3D(0.473573, 0.688735, 1.24257, -0.528038, 0.982962, 6.07481e-08, -0.364173, -0.529631, 1.61584, -63.3022, 9.7283, 77.0718)
+
+[node name="LI-pine_tree_alpha_19" parent="WorldEnvironment/ShadowCasters" instance=ExtResource("4_q073b")]
+transform = Transform3D(0.473573, 0.688735, 1.24257, -0.528038, 0.982962, 6.07481e-08, -0.364173, -0.529631, 1.61584, -81.3891, 9.7283, 63.2867)
+
+[node name="LI-pine_tree_alpha_20" parent="WorldEnvironment/ShadowCasters" instance=ExtResource("4_q073b")]
+transform = Transform3D(0.473573, 0.688735, 1.24257, -0.528038, 0.982962, 6.07481e-08, -0.364173, -0.529631, 1.61584, -38.4708, 9.7283, 80.7998)
+
+[node name="LI-pine_tree_alpha_04" parent="WorldEnvironment/ShadowCasters" instance=ExtResource("4_q073b")]
+transform = Transform3D(0.593956, 0.838474, 1.09559, -0.662266, 1.19667, 5.35624e-08, -0.456747, -0.644779, 1.42471, -70.4202, 9.73174, 60.253)
+
+[node name="LI-pine_tree_alpha_05" parent="WorldEnvironment/ShadowCasters" instance=ExtResource("4_q073b")]
+transform = Transform3D(0.593956, 0.838474, 1.09559, -0.662266, 1.19667, 5.35624e-08, -0.456747, -0.644779, 1.42471, -62.8837, 9.7283, 60.8436)
+
+[node name="LI-pine_tree_alpha_08" parent="WorldEnvironment/ShadowCasters" instance=ExtResource("4_q073b")]
+transform = Transform3D(0.509863, 0.733546, 0.80549, -0.568502, 1.04692, 3.93797e-08, -0.39208, -0.56409, 1.04746, -73.5078, 9.7283, 46.8517)
+
+[node name="LI-pine_tree_alpha_09" parent="WorldEnvironment/ShadowCasters" instance=ExtResource("4_q073b")]
+transform = Transform3D(0.774252, 0.303194, 0.80549, -0.863298, 0.432719, 3.93797e-08, -0.595393, -0.233154, 1.04746, -58.5367, 9.7283, 46.934)
+
+[node name="LI-pine_tree_alpha_10" parent="WorldEnvironment/ShadowCasters" instance=ExtResource("4_q073b")]
+transform = Transform3D(0.774252, 0.303194, 0.80549, -0.863298, 0.432719, 3.93797e-08, -0.595393, -0.233154, 1.04746, -64.2929, 9.7283, 42.3102)
+
+[node name="LI-pine_tree_alpha" parent="WorldEnvironment/ShadowCasters" instance=ExtResource("5_e66ug")]
+transform = Transform3D(0.549486, 0, 2.94925, 0, 3, 0, -2.94925, 0, 0.549486, -5.59765, 8.77142, 89.5257)
+
+[node name="LI-pine_tree_alpha2" parent="WorldEnvironment/ShadowCasters" instance=ExtResource("5_e66ug")]
+transform = Transform3D(0.418193, 0, 2.97071, 0, 3, 0, -2.97071, 0, 0.418193, 9.69849, 4.16996, 88.1135)
+
+[node name="LI-pine_tree_alpha3" parent="WorldEnvironment/ShadowCasters" instance=ExtResource("5_e66ug")]
+transform = Transform3D(2.80471, 0, 5.30411, 0, 6, 0, -5.30411, 0, 2.80471, 19.7912, 6.67404, 93.7719)
+
+[node name="SE-world" parent="." instance=ExtResource("4_42mg1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00113678, 0.0133801, -0.0161171)
+
+[node name="Player" parent="." instance=ExtResource("1_8s7uw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.02055, 0, 2.56698)
+
+[node name="Items" type="Node3D" parent="."]
+
+[node name="PR-branch" parent="Items" instance=ExtResource("6_3d4ir")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5383, 0.061339, 4.83713)
+
+[node name="PR-tennis_ball" parent="Items" instance=ExtResource("9_2qcqp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.1224, 0.0163981, 11.2285)
+
+[node name="PR-tennis_ball-IMPORT" parent="Items/PR-tennis_ball" index="0" node_paths=PackedStringArray("camera_magnet_zone")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.283367, 0.122137, -0.117762)
+camera_magnet_zone = NodePath("../../../MagnetZones/CameraMagnetZone_tennis_ball/CameraMagnetZone_Area")
+
+[node name="PR-traffic_cone" parent="Items" instance=ExtResource("10_weaee")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.6118, -0.031971, 51.3314)
+
+[node name="PR-traffic_cone-IMPORT" parent="Items/PR-traffic_cone" index="0" node_paths=PackedStringArray("camera_magnet_zone")]
+camera_magnet_zone = NodePath("../../../MagnetZones/CameraMagnetZone_traffic_cone/CameraMagnetZone_Area")
+
+[node name="PR-shovel" parent="Items" instance=ExtResource("12_h5oi6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.999999, -55.0417, 0.00752313, 40.5153)
+
+[node name="PR-shovel-IMPORT" parent="Items/PR-shovel" index="0" node_paths=PackedStringArray("camera_magnet_zone")]
+camera_magnet_zone = NodePath("../../../MagnetZones/CameraMagnetZone_shovel/CameraMagnetZone_Area")
+
+[node name="MagnetZones" type="Node3D" parent="."]
+
+[node name="CameraMagnetZone_shovel" parent="MagnetZones" instance=ExtResource("7_rfv24")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.5687, 0, 38.1384)
+
+[node name="CameraMagnetZone_Area" parent="MagnetZones/CameraMagnetZone_shovel" index="0"]
+magnet_position_override = 0.75
+magnet_zoom_override = 1.0
+
+[node name="CollisionShape3D" parent="MagnetZones/CameraMagnetZone_shovel/CameraMagnetZone_Area" index="0"]
+shape = SubResource("CylinderShape3D_rxiov")
+
+[node name="InterestPoint" parent="MagnetZones/CameraMagnetZone_shovel/CameraMagnetZone_Area" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.07672, 0, 3.0271)
+
+[node name="CameraMagnetZone_traffic_cone" parent="MagnetZones" instance=ExtResource("7_rfv24")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5259, 0, 51.2057)
+
+[node name="CameraMagnetZone_Area" parent="MagnetZones/CameraMagnetZone_traffic_cone" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.361855, 0, 0.731686)
+magnet_position_override = 0.0
+magnet_zoom_override = 1.5
+
+[node name="CollisionShape3D" parent="MagnetZones/CameraMagnetZone_traffic_cone/CameraMagnetZone_Area" index="0"]
+shape = SubResource("CylinderShape3D_pnca5")
+
+[node name="InterestPoint" parent="MagnetZones/CameraMagnetZone_traffic_cone/CameraMagnetZone_Area" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.298858, 0, -0.397896)
+
+[node name="CameraMagnetZone_tennis_ball" parent="MagnetZones" instance=ExtResource("7_rfv24")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.8368, 9.53674e-07, 10.2839)
+
+[node name="CameraMagnetZone_Area" parent="MagnetZones/CameraMagnetZone_tennis_ball" index="0"]
+magnet_zoom_override = 0.75
+
+[node name="CollisionShape3D" parent="MagnetZones/CameraMagnetZone_tennis_ball/CameraMagnetZone_Area" index="0"]
+shape = SubResource("CylinderShape3D_mrkiu")
+
+[node name="InterestPoint" parent="MagnetZones/CameraMagnetZone_tennis_ball/CameraMagnetZone_Area" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.49408, 4.76837e-07, 0.389989)
+
+[node name="CameraMagnetZone_branch" parent="MagnetZones" instance=ExtResource("7_rfv24")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.43917, 9.53674e-07, 4.76054)
+
+[node name="CollisionShape3D" parent="MagnetZones/CameraMagnetZone_branch/CameraMagnetZone_Area" index="0"]
+transform = Transform3D(0.68, 0, 0, 0, 0.68, 0, 0, 0, 0.68, 0, 0, 0)
+shape = SubResource("CylinderShape3D_vjch4")
+
+[node name="InterestPoint" parent="MagnetZones/CameraMagnetZone_branch/CameraMagnetZone_Area" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0681453, 0, -0.0776491)
+
+[node name="CameraMagnetZone_leash_point" parent="MagnetZones" instance=ExtResource("7_rfv24")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.150257, 1.43051e-06, 0.265971)
+
+[node name="CameraMagnetZone_Area" parent="MagnetZones/CameraMagnetZone_leash_point" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1545, 0, 0.0195475)
+
+[node name="CollisionShape3D" parent="MagnetZones/CameraMagnetZone_leash_point/CameraMagnetZone_Area" index="0"]
+shape = SubResource("CylinderShape3D_t483i")
+
+[node name="InterestPoint" parent="MagnetZones/CameraMagnetZone_leash_point/CameraMagnetZone_Area" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0450757, 0, 0.0960771)
+
+[node name="ItemHintSounds" type="Node3D" parent="."]
+
+[node name="HintSound_Branch" type="AudioStreamPlayer3D" parent="ItemHintSounds" node_paths=PackedStringArray("item", "change_music_zone_triggers")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3, 8, 11)
+stream = SubResource("AudioStreamRandomizer_b5vnk")
+volume_db = 3.0
+unit_size = 4.0
+autoplay = true
+max_distance = 5.0
+max_polyphony = 2
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 2500.0
+attenuation_filter_db = -12.0
+doppler_tracking = 1
+script = ExtResource("19_3vden")
+item = NodePath("../../Items/PR-branch/PR-branch-IMPORT")
+change_music_zone_triggers = [NodePath("../../MusicZones/MusicZoneTrigger_Clearing/MusicZoneTrigger_Area")]
+to_music_zone = 1
+instant_music_change_configuration = SubResource("Resource_0s76t")
+
+[node name="HintSound_Shovel" type="AudioStreamPlayer3D" parent="ItemHintSounds" node_paths=PackedStringArray("item", "change_music_zone_triggers")]
+transform = Transform3D(1, 0, 0, 0, 0.819552, 0.573004, 0, -0.573004, 0.819552, -54.9875, 6.89035, 45.9025)
+stream = SubResource("AudioStreamRandomizer_b5vnk")
+volume_db = 3.0
+unit_size = 5.0
+autoplay = true
+max_distance = 10.0
+max_polyphony = 2
+panning_strength = 1.5
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 2000.0
+doppler_tracking = 1
+script = ExtResource("19_3vden")
+item = NodePath("../../Items/PR-shovel/PR-shovel-IMPORT")
+change_music_zone_triggers = [NodePath("../../MusicZones/MusicZoneTrigger_Forest_HEART/MusicZoneTrigger_Area"), NodePath("../../MusicZones/MusicZoneTrigger_Forest_HEART/MusicZoneTrigger_Forest_Shovel"), NodePath("../../MusicZones/MusicZoneTrigger_Forest_HEART_Hint/MusicZoneTrigger_Area"), NodePath("../../MusicZones/MusicZoneTrigger_Forest_HEART_Hint/MusicZoneTrigger_Area2")]
+to_music_zone = 2
+to_custom_music_zone_configuration = SubResource("Resource_crbcu")
+instant_music_change_configuration = SubResource("Resource_ne6ia")
+
+[node name="HintSound_TennisBall" type="AudioStreamPlayer3D" parent="ItemHintSounds" node_paths=PackedStringArray("item", "change_music_zone_triggers")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.5627, 1.6108, 17.3562)
+stream = SubResource("AudioStreamRandomizer_b5vnk")
+volume_db = 6.0
+unit_size = 7.0
+max_db = 6.0
+autoplay = true
+max_distance = 15.0
+max_polyphony = 2
+panning_strength = 2.0
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 2000.0
+doppler_tracking = 2
+script = ExtResource("19_3vden")
+item = NodePath("../../Items/PR-tennis_ball/PR-tennis_ball-IMPORT")
+change_music_zone_triggers = [NodePath("../../MusicZones/MusicZoneTrigger_Fence_HINT/MusicZoneTrigger_Area")]
+to_music_zone = 4
+instant_music_change_configuration = SubResource("Resource_rxhut")
+
+[node name="HintSound_TrafficCone" type="AudioStreamPlayer3D" parent="ItemHintSounds" node_paths=PackedStringArray("item", "change_music_zone_triggers")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.79784, 1.82228, 57.0544)
+stream = SubResource("AudioStreamRandomizer_b5vnk")
+volume_db = 6.0
+unit_size = 6.0
+pitch_scale = 1.4
+autoplay = true
+max_distance = 15.0
+max_polyphony = 3
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 3000.0
+attenuation_filter_db = -16.0
+doppler_tracking = 2
+script = ExtResource("19_3vden")
+item = NodePath("../../Items/PR-traffic_cone/PR-traffic_cone-IMPORT")
+change_music_zone_triggers = [NodePath("../../MusicZones/MusicZoneTrigger_Pond_HINT/MusicZoneTrigger_Area")]
+to_custom_music_zone_configuration = SubResource("Resource_sqrya")
+instant_music_change_configuration = SubResource("Resource_3ow8y")
+
+[node name="MapHintSounds" type="Node3D" parent="."]
+
+[node name="MapSound_Shovel_North" type="AudioStreamPlayer3D" parent="MapHintSounds" node_paths=PackedStringArray("item", "change_music_zone_triggers")]
+transform = Transform3D(1, 0, 0, 0, 0.819552, 0.573004, 0, -0.573004, 0.819552, -13.7579, 2.27838, 11.2951)
+stream = SubResource("AudioStreamRandomizer_hmu6m")
+volume_db = 3.0
+unit_size = 5.0
+autoplay = true
+max_distance = 5.0
+max_polyphony = 3
+panning_strength = 1.5
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 2000.0
+doppler_tracking = 1
+script = ExtResource("19_3vden")
+item = NodePath("../../Items/PR-shovel/PR-shovel-IMPORT")
+change_music_zone_triggers = [NodePath("../../MusicZones/MusicZoneTrigger_Forest_HEART/MusicZoneTrigger_Area"), NodePath("../../MusicZones/MusicZoneTrigger_Forest_HEART/MusicZoneTrigger_Forest_Shovel"), NodePath("../../MusicZones/MusicZoneTrigger_Forest_HEART_Hint/MusicZoneTrigger_Area"), NodePath("../../MusicZones/MusicZoneTrigger_Forest_HEART_Hint/MusicZoneTrigger_Area2")]
+to_music_zone = 2
+to_custom_music_zone_configuration = SubResource("Resource_crbcu")
+instant_music_change_configuration = SubResource("Resource_ne6ia")
+
+[node name="MapSound_Shovel_South" type="AudioStreamPlayer3D" parent="MapHintSounds" node_paths=PackedStringArray("item", "change_music_zone_triggers")]
+transform = Transform3D(1, 0, 0, 0, 0.819552, 0.573004, 0, -0.573004, 0.819552, 8.10602, 4.6689, 72.7576)
+stream = SubResource("AudioStreamRandomizer_hmu6m")
+volume_db = -3.0
+unit_size = 5.0
+autoplay = true
+max_distance = 5.0
+max_polyphony = 2
+panning_strength = 1.5
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 2000.0
+doppler_tracking = 1
+script = ExtResource("19_3vden")
+item = NodePath("../../Items/PR-shovel/PR-shovel-IMPORT")
+change_music_zone_triggers = [NodePath("../../MusicZones/MusicZoneTrigger_Forest_HEART/MusicZoneTrigger_Area"), NodePath("../../MusicZones/MusicZoneTrigger_Forest_HEART/MusicZoneTrigger_Forest_Shovel"), NodePath("../../MusicZones/MusicZoneTrigger_Forest_HEART_Hint/MusicZoneTrigger_Area"), NodePath("../../MusicZones/MusicZoneTrigger_Forest_HEART_Hint/MusicZoneTrigger_Area2")]
+to_music_zone = 2
+to_custom_music_zone_configuration = SubResource("Resource_crbcu")
+instant_music_change_configuration = SubResource("Resource_ne6ia")
+
+[node name="MapSound_TennisBall_South" type="AudioStreamPlayer3D" parent="MapHintSounds" node_paths=PackedStringArray("item", "change_music_zone_triggers")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.6234, 4.3827, 69.8905)
+stream = SubResource("AudioStreamRandomizer_hmu6m")
+volume_db = -6.0
+unit_size = 7.0
+max_db = 6.0
+autoplay = true
+max_distance = 10.0
+max_polyphony = 2
+panning_strength = 2.0
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 2000.0
+doppler_tracking = 2
+script = ExtResource("19_3vden")
+item = NodePath("../../Items/PR-tennis_ball/PR-tennis_ball-IMPORT")
+change_music_zone_triggers = [NodePath("../../MusicZones/MusicZoneTrigger_Fence_HINT/MusicZoneTrigger_Area")]
+to_music_zone = 4
+instant_music_change_configuration = SubResource("Resource_rxhut")
+
+[node name="MusicZones" type="Node3D" parent="."]
+
+[node name="MusicZoneTrigger_Clearing" parent="MusicZones" instance=ExtResource("14_apkox")]
+
+[node name="MusicZoneTrigger_Area" parent="MusicZones/MusicZoneTrigger_Clearing" index="0"]
+music_zone_layer = 1
+custom_sync_stream_configuration = SubResource("Resource_udahs")
+
+[node name="CollisionShape3D" parent="MusicZones/MusicZoneTrigger_Clearing/MusicZoneTrigger_Area" index="0"]
+shape = SubResource("CylinderShape3D_ne6ia")
+
+[node name="MusicZoneTrigger_MAP_Area" type="Area3D" parent="MusicZones/MusicZoneTrigger_Clearing"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.8234, -1.90735e-06, 9.13581)
+collision_layer = 1024
+collision_mask = 4
+script = ExtResource("21_fnill")
+music_zone_layer = 1
+custom_sync_stream_configuration = SubResource("Resource_udahs")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MusicZones/MusicZoneTrigger_Clearing/MusicZoneTrigger_MAP_Area"]
+shape = SubResource("CylinderShape3D_ne6ia")
+debug_color = Color(0.579663, 2.05037e-05, 0.432557, 0.862745)
+
+[node name="MusicZoneTrigger_Fence_East" parent="MusicZones" instance=ExtResource("14_apkox")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.5347, 0, 28.2148)
+
+[node name="MusicZoneTrigger_Area" parent="MusicZones/MusicZoneTrigger_Fence_East" index="0"]
+music_zone_layer = 4
+
+[node name="MusicZoneTrigger_Fence_MAP_HINT" parent="MusicZones" instance=ExtResource("14_apkox")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.2766, 0, 69.0058)
+
+[node name="MusicZoneTrigger_Area" parent="MusicZones/MusicZoneTrigger_Fence_MAP_HINT" index="0"]
+custom_sync_stream_configuration = SubResource("Resource_wpfnn")
+
+[node name="CollisionShape3D" parent="MusicZones/MusicZoneTrigger_Fence_MAP_HINT/MusicZoneTrigger_Area" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.219933)
+shape = SubResource("CylinderShape3D_rxhut")
+
+[node name="MusicZoneTrigger_Fence_HINT" parent="MusicZones" instance=ExtResource("14_apkox")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56.1206, 0, 28.1109)
+
+[node name="MusicZoneTrigger_Area" parent="MusicZones/MusicZoneTrigger_Fence_HINT" index="0"]
+music_zone_layer = 5
+
+[node name="CollisionShape3D" parent="MusicZones/MusicZoneTrigger_Fence_HINT/MusicZoneTrigger_Area" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.11002, 0, -6.22742)
+shape = SubResource("CylinderShape3D_udahs")
+
+[node name="MusicZoneTrigger_Area2" type="Area3D" parent="MusicZones/MusicZoneTrigger_Fence_HINT"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.6837, -1.09419, 3.87818)
+collision_layer = 1024
+collision_mask = 4
+script = ExtResource("21_fnill")
+music_zone_layer = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MusicZones/MusicZoneTrigger_Fence_HINT/MusicZoneTrigger_Area2"]
+shape = SubResource("CylinderShape3D_rvv3o")
+debug_color = Color(0.579663, 2.05037e-05, 0.432557, 0.862745)
+
+[node name="MusicZoneTrigger_Area3" type="Area3D" parent="MusicZones/MusicZoneTrigger_Fence_HINT"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.0088, 4.76837e-07, 18.8252)
+collision_layer = 1024
+collision_mask = 4
+script = ExtResource("21_fnill")
+music_zone_layer = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MusicZones/MusicZoneTrigger_Fence_HINT/MusicZoneTrigger_Area3"]
+shape = SubResource("CylinderShape3D_rvv3o")
+debug_color = Color(0.579663, 2.05037e-05, 0.432557, 0.862745)
+
+[node name="MusicZoneTrigger_Fence_South" parent="MusicZones" instance=ExtResource("14_apkox")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.16301, 0, 72.8065)
+
+[node name="MusicZoneTrigger_Area" parent="MusicZones/MusicZoneTrigger_Fence_South" index="0"]
+monitoring = false
+monitorable = false
+music_zone_layer = 4
+
+[node name="MusicZoneTrigger_Forest_Bridge_West" parent="MusicZones" instance=ExtResource("14_apkox")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.5135, 0, 3.36361)
+
+[node name="MusicZoneTrigger_Area" parent="MusicZones/MusicZoneTrigger_Forest_Bridge_West" index="0"]
+music_zone_layer = 2
+
+[node name="MusicZoneTrigger_Area2" type="Area3D" parent="MusicZones/MusicZoneTrigger_Forest_Bridge_West"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.561, 1.90735e-06, 27.3746)
+collision_layer = 1024
+collision_mask = 4
+script = ExtResource("21_fnill")
+music_zone_layer = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MusicZones/MusicZoneTrigger_Forest_Bridge_West/MusicZoneTrigger_Area2"]
+shape = SubResource("CylinderShape3D_hmu6m")
+debug_color = Color(0.579663, 2.05037e-05, 0.432557, 0.862745)
+
+[node name="MusicZoneTrigger_Forest_Pond" parent="MusicZones" instance=ExtResource("14_apkox")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.2602, 0, 50.6029)
+
+[node name="MusicZoneTrigger_Area" parent="MusicZones/MusicZoneTrigger_Forest_Pond" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.29959, 0, -4.83886)
+music_zone_layer = 2
+
+[node name="CollisionShape3D" parent="MusicZones/MusicZoneTrigger_Forest_Pond/MusicZoneTrigger_Area" index="0"]
+transform = Transform3D(0.385423, 0, -0.92274, 0, 1, 0, 0.92274, 0, 0.385423, 0, 0, 0)
+shape = SubResource("CylinderShape3D_wpfnn")
+debug_color = Color(0.204521, 0.109773, 0.240082, 1)
+
+[node name="MusicZoneTrigger_Area2" type="Area3D" parent="MusicZones/MusicZoneTrigger_Forest_Pond"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.1432, 0, 19.1502)
+collision_layer = 1024
+collision_mask = 4
+script = ExtResource("21_fnill")
+music_zone_layer = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MusicZones/MusicZoneTrigger_Forest_Pond/MusicZoneTrigger_Area2"]
+transform = Transform3D(0.385423, 0, -0.92274, 0, 1, 0, 0.92274, 0, 0.385423, -3.99284, 0, -0.264488)
+shape = SubResource("CylinderShape3D_d43ix")
+debug_color = Color(0.204521, 0.109773, 0.240082, 1)
+
+[node name="MusicZoneTrigger_Forest_HEART" parent="MusicZones" instance=ExtResource("14_apkox")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56.6649, 0, 46.8409)
+
+[node name="MusicZoneTrigger_Area" parent="MusicZones/MusicZoneTrigger_Forest_HEART" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.544037, 0, 7.9607)
+music_zone_layer = 3
+
+[node name="CollisionShape3D" parent="MusicZones/MusicZoneTrigger_Forest_HEART/MusicZoneTrigger_Area" index="0"]
+transform = Transform3D(0.385423, 0, -0.92274, 0, 1, 0, 0.92274, 0, 0.385423, 0, 0, 0)
+shape = SubResource("CylinderShape3D_fnill")
+debug_color = Color(0.204521, 0.109773, 0.240082, 1)
+
+[node name="MusicZoneTrigger_Forest_Shovel" type="Area3D" parent="MusicZones/MusicZoneTrigger_Forest_HEART"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.56089, 0, -5.58019)
+collision_layer = 1024
+collision_mask = 4
+script = ExtResource("21_fnill")
+music_zone_layer = 3
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MusicZones/MusicZoneTrigger_Forest_HEART/MusicZoneTrigger_Forest_Shovel"]
+transform = Transform3D(0.385423, 0, -0.92274, 0, 1, 0, 0.92274, 0, 0.385423, 0, 0, 0)
+shape = SubResource("CylinderShape3D_3vnqk")
+debug_color = Color(0.204521, 0.109773, 0.240082, 1)
+
+[node name="MusicZoneTrigger_Forest_HEART_Hint" parent="MusicZones" instance=ExtResource("14_apkox")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56.6649, 0, 46.8409)
+
+[node name="MusicZoneTrigger_Area" parent="MusicZones/MusicZoneTrigger_Forest_HEART_Hint" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.63829, 0, 19.5629)
+custom_sync_stream_configuration = SubResource("Resource_hmu6m")
+
+[node name="CollisionShape3D" parent="MusicZones/MusicZoneTrigger_Forest_HEART_Hint/MusicZoneTrigger_Area" index="0"]
+transform = Transform3D(0.385423, 0, -0.92274, 0, 1, 0, 0.92274, 0, 0.385423, 10.9553, 0, 0)
+shape = SubResource("CylinderShape3D_sqrya")
+debug_color = Color(0.204521, 0.109773, 0.240082, 1)
+
+[node name="MusicZoneTrigger_Area2" type="Area3D" parent="MusicZones/MusicZoneTrigger_Forest_HEART_Hint"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.4611, 4.569, 5.2734)
+collision_layer = 1024
+collision_mask = 4
+script = ExtResource("21_fnill")
+custom_sync_stream_configuration = SubResource("Resource_d43ix")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MusicZones/MusicZoneTrigger_Forest_HEART_Hint/MusicZoneTrigger_Area2"]
+transform = Transform3D(0.385423, 0, -0.92274, 0, 1, 0, 0.92274, 0, 0.385423, 0, 0, 0)
+shape = SubResource("CylinderShape3D_3ow8y")
+debug_color = Color(0.204521, 0.109773, 0.240082, 1)
+
+[node name="MusicZoneTrigger_Forest_Bridge_South" parent="MusicZones" instance=ExtResource("14_apkox")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.45951, 0, 72.2595)
+
+[node name="MusicZoneTrigger_Area" parent="MusicZones/MusicZoneTrigger_Forest_Bridge_South" index="0"]
+music_zone_layer = 1
+
+[node name="MusicZoneTrigger_Pond_HINT" parent="MusicZones" instance=ExtResource("14_apkox")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.70185, 0, 50.8015)
+
+[node name="MusicZoneTrigger_Area" parent="MusicZones/MusicZoneTrigger_Pond_HINT" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.870503, 0, 0.372009)
+music_zone_layer = 7
+custom_sync_stream_configuration = SubResource("Resource_3vnqk")
+
+[node name="CollisionShape3D" parent="MusicZones/MusicZoneTrigger_Pond_HINT/MusicZoneTrigger_Area" index="0"]
+shape = SubResource("CylinderShape3D_crbcu")
+
+[node name="MusicZoneTrigger_Snowman_Bridge_West" parent="MusicZones" instance=ExtResource("14_apkox")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.2972, 0, 1.38007)
+
+[node name="MusicZoneTrigger_Snowman_East" parent="MusicZones" instance=ExtResource("14_apkox")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.1128, 0, 26.51)
+
+[node name="MusicZoneTrigger_Snowman_East_Fence" parent="MusicZones" instance=ExtResource("14_apkox")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.3931, 0, 0.921227)
+
+[node name="CollisionShape3D" parent="MusicZones/MusicZoneTrigger_Snowman_East_Fence/MusicZoneTrigger_Area" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.81082, 0, 0)
+shape = SubResource("CylinderShape3D_0s76t")
+
+[node name="MusicZoneTrigger_Snowman_South" parent="MusicZones" instance=ExtResource("14_apkox")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.54287, 0, 72.5623)
+
+[node name="CollisionShape3D" parent="MusicZones/MusicZoneTrigger_Snowman_South/MusicZoneTrigger_Area" index="0"]
+shape = SubResource("CylinderShape3D_ne6ia")
+
+[node name="EnvironmentSounds" type="Node3D" parent="."]
+
+[node name="Clearing" type="Node3D" parent="EnvironmentSounds"]
+
+[node name="WindSounds2" type="AudioStreamPlayer3D" parent="EnvironmentSounds/Clearing"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.04871, -9.53674e-07, 26.5367)
+stream = ExtResource("16_mrkiu")
+volume_db = -3.0
+unit_size = 8.0
+max_db = -9.0
+pitch_scale = 0.6
+max_distance = 35.0
+panning_strength = 2.0
+bus = &"Ambience"
+attenuation_filter_cutoff_hz = 8000.0
+
+[node name="BirdSounds" type="AudioStreamPlayer3D" parent="EnvironmentSounds/Clearing"]
+stream = ExtResource("17_kt701")
+autoplay = true
+max_distance = 100.0
+panning_strength = 0.2
+bus = &"Ambience"
+attenuation_filter_cutoff_hz = 6500.0
+attenuation_filter_db = -6.0
+
+[node name="Forest" type="Node3D" parent="EnvironmentSounds"]
+
+[node name="BirdSounds2" type="AudioStreamPlayer3D" parent="EnvironmentSounds/Forest"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.7646, 0, 41.6699)
+stream = ExtResource("17_kt701")
+volume_db = 18.0
+max_db = 6.0
+pitch_scale = 1.2
+autoplay = true
+max_distance = 45.0
+panning_strength = 1.5
+bus = &"Ambience"
+attenuation_filter_cutoff_hz = 4000.0
+attenuation_filter_db = -16.0
+
+[node name="BirdSounds3" type="AudioStreamPlayer3D" parent="EnvironmentSounds/Forest"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -71.2096, 4.76837e-07, 9.45733)
+stream = ExtResource("17_kt701")
+volume_db = 9.0
+unit_size = 15.0
+pitch_scale = 0.9
+autoplay = true
+max_distance = 200.0
+max_polyphony = 3
+bus = &"Ambience"
+attenuation_filter_cutoff_hz = 3000.0
+
+[node name="BirdSounds4" type="AudioStreamPlayer3D" parent="EnvironmentSounds/Forest"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.3629, 1.90735e-06, 59.9735)
+stream = ExtResource("17_kt701")
+volume_db = 9.0
+pitch_scale = 0.9
+autoplay = true
+max_distance = 60.0
+max_polyphony = 3
+bus = &"Ambience"
+attenuation_filter_cutoff_hz = 3000.0
+
+[node name="WindSounds2" type="AudioStreamPlayer3D" parent="EnvironmentSounds/Forest"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.96868, 0.568824, 57.0676)
+stream = ExtResource("16_mrkiu")
+volume_db = -6.0
+unit_size = 20.0
+autoplay = true
+max_distance = 250.0
+panning_strength = 0.5
+bus = &"Ambience"
+attenuation_filter_cutoff_hz = 6000.0
+attenuation_filter_db = -12.0
+
+[node name="Pond" type="Node3D" parent="EnvironmentSounds"]
+
+[node name="WindSounds2" type="AudioStreamPlayer3D" parent="EnvironmentSounds/Pond"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.19589, 0, 50.3186)
+stream = ExtResource("16_mrkiu")
+unit_size = 12.0
+max_db = 0.0
+pitch_scale = 0.8
+autoplay = true
+max_distance = 60.0
+panning_strength = 2.0
+bus = &"Ambience"
+attenuation_filter_cutoff_hz = 4000.0
+attenuation_filter_db = -6.0
+
+[node name="WindSounds3" type="AudioStreamPlayer3D" parent="EnvironmentSounds/Pond"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.3613, 0, 36.7096)
+stream = ExtResource("16_mrkiu")
+volume_db = -3.0
+unit_size = 15.0
+max_db = 0.0
+pitch_scale = 1.1
+autoplay = true
+max_distance = 60.0
+panning_strength = 0.75
+bus = &"Ambience"
+attenuation_filter_cutoff_hz = 4000.0
+attenuation_filter_db = -6.0
+
+[node name="BirdSounds2" type="AudioStreamPlayer3D" parent="EnvironmentSounds/Pond"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.2819, -7.62939e-06, 63.6127)
+stream = ExtResource("17_kt701")
+unit_size = 6.0
+max_db = -3.0
+autoplay = true
+max_distance = 35.0
+panning_strength = 0.8
+bus = &"Ambience"
+attenuation_filter_cutoff_hz = 10000.0
+attenuation_filter_db = -12.0
+
+[node name="RiverWest" type="Node3D" parent="EnvironmentSounds"]
+
+[node name="WaterSoundBridge" type="AudioStreamPlayer3D" parent="EnvironmentSounds/RiverWest"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.4906, 3.55642, 4.13315)
+stream = ExtResource("15_mrkiu")
+max_db = 0.0
+autoplay = true
+max_distance = 60.0
+panning_strength = 2.0
+bus = &"Ambience"
+attenuation_filter_cutoff_hz = 9500.0
+attenuation_filter_db = -18.0
+
+[node name="WaterSounds" type="AudioStreamPlayer3D" parent="EnvironmentSounds/RiverWest"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.2319, -9.53674e-07, -3.80398)
+stream = ExtResource("15_mrkiu")
+volume_db = -3.0
+unit_size = 12.5
+max_db = -6.0
+autoplay = true
+max_distance = 40.0
+panning_strength = 2.0
+bus = &"Ambience"
+attenuation_filter_cutoff_hz = 10000.0
+attenuation_filter_db = -30.0
+
+[node name="WaterSounds8" type="AudioStreamPlayer3D" parent="EnvironmentSounds/RiverWest"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.4567, -9.53674e-07, -11.5612)
+stream = ExtResource("15_mrkiu")
+max_db = -6.0
+autoplay = true
+max_distance = 50.0
+panning_strength = 2.0
+bus = &"Ambience"
+attenuation_filter_cutoff_hz = 6500.0
+attenuation_filter_db = -30.0
+
+[node name="WaterSounds7" type="AudioStreamPlayer3D" parent="EnvironmentSounds/RiverWest"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.3462, 3.73984, 12.0703)
+stream = ExtResource("15_mrkiu")
+unit_size = 12.5
+max_db = -3.0
+pitch_scale = 1.05
+autoplay = true
+max_distance = 25.0
+panning_strength = 1.5
+bus = &"Ambience"
+attenuation_filter_cutoff_hz = 4500.0
+
+[node name="WaterSounds3" type="AudioStreamPlayer3D" parent="EnvironmentSounds/RiverWest"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.8719, 3.03507, 16.8057)
+stream = ExtResource("15_mrkiu")
+volume_db = -6.0
+max_db = -3.0
+autoplay = true
+max_distance = 35.0
+panning_strength = 1.5
+bus = &"Ambience"
+attenuation_filter_cutoff_hz = 9000.0
+attenuation_filter_db = -36.0
+
+[node name="WaterSounds4" type="AudioStreamPlayer3D" parent="EnvironmentSounds/RiverWest"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.4779, 1.37183, 20.0823)
+stream = ExtResource("15_mrkiu")
+volume_db = -25.326
+max_db = -6.0
+autoplay = true
+max_distance = 25.0
+panning_strength = 2.0
+bus = &"Ambience"
+attenuation_filter_cutoff_hz = 10000.0
+attenuation_filter_db = -36.0
+
+[node name="WaterSounds5" type="AudioStreamPlayer3D" parent="EnvironmentSounds/RiverWest"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.4222, 2.90539, 28.8289)
+stream = ExtResource("15_mrkiu")
+volume_db = -3.0
+unit_size = 12.5
+max_db = -3.0
+autoplay = true
+max_distance = 30.0
+panning_strength = 2.0
+bus = &"Ambience"
+attenuation_filter_cutoff_hz = 10000.0
+attenuation_filter_db = -30.0
+
+[node name="WaterSounds6" type="AudioStreamPlayer3D" parent="EnvironmentSounds/RiverWest"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.2518, 3.91668, 36.6817)
+stream = ExtResource("15_mrkiu")
+volume_db = -3.0
+unit_size = 15.0
+max_db = -6.0
+autoplay = true
+max_distance = 15.0
+panning_strength = 2.0
+bus = &"Ambience"
+attenuation_filter_cutoff_hz = 10000.0
+attenuation_filter_db = -30.0
+
+[node name="RiverSouth" type="Node3D" parent="EnvironmentSounds"]
+
+[node name="WaterSounds3" type="AudioStreamPlayer3D" parent="EnvironmentSounds/RiverSouth"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.39352, 1.38542, 74.8746)
+stream = ExtResource("15_mrkiu")
+unit_size = 6.0
+autoplay = true
+max_distance = 20.0
+bus = &"Ambience"
+attenuation_filter_cutoff_hz = 6000.0
+
+[node name="WaterSounds2" type="AudioStreamPlayer3D" parent="EnvironmentSounds/RiverSouth"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.02752, 5.53859, 84.1916)
+stream = ExtResource("15_mrkiu")
+volume_db = -18.0
+unit_size = 3.0
+max_db = 0.0
+pitch_scale = 2.0
+autoplay = true
+max_distance = 30.0
+panning_strength = 2.0
+bus = &"Ambience"
+attenuation_filter_db = -6.0
+
+[node name="RiverEast" type="Node3D" parent="EnvironmentSounds"]
+
+[node name="WaterSounds" type="AudioStreamPlayer3D" parent="EnvironmentSounds/RiverEast"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.5089, 1.08964, 27.6646)
+stream = ExtResource("15_mrkiu")
+volume_db = -6.0
+unit_size = 12.5
+max_db = 0.0
+autoplay = true
+max_distance = 25.0
+panning_strength = 2.0
+bus = &"Ambience"
+attenuation_filter_db = -21.0
+
+[node name="WaterSounds2" type="AudioStreamPlayer3D" parent="EnvironmentSounds/RiverEast"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.0085, 0, 19.1596)
+stream = ExtResource("15_mrkiu")
+volume_db = -6.0
+unit_size = 12.5
+max_db = 0.0
+autoplay = true
+max_distance = 25.0
+panning_strength = 2.0
+bus = &"Ambience"
+attenuation_filter_db = -21.0
+
+[node name="WaterSounds3" type="AudioStreamPlayer3D" parent="EnvironmentSounds/RiverEast"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.8995, 0, 16.426)
+stream = ExtResource("15_mrkiu")
+volume_db = -6.0
+max_db = 0.0
+autoplay = true
+max_distance = 35.0
+panning_strength = 2.0
+bus = &"Ambience"
+attenuation_filter_db = -21.0
+
+[node name="WaterSounds4" type="AudioStreamPlayer3D" parent="EnvironmentSounds/RiverEast"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.4067, 0, 8.76833)
+stream = ExtResource("15_mrkiu")
+volume_db = -6.0
+unit_size = 12.5
+max_db = 0.0
+autoplay = true
+max_distance = 35.0
+panning_strength = 2.0
+bus = &"Ambience"
+attenuation_filter_db = -21.0
+
+[node name="WaterSounds5" type="AudioStreamPlayer3D" parent="EnvironmentSounds/RiverEast"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.2402, 0, 9.85443)
+stream = ExtResource("15_mrkiu")
+volume_db = -3.0
+unit_size = 12.5
+max_db = 0.0
+autoplay = true
+max_distance = 35.0
+panning_strength = 2.0
+bus = &"Ambience"
+attenuation_filter_db = -21.0
+
+[node name="WaterSounds6" type="AudioStreamPlayer3D" parent="EnvironmentSounds/RiverEast"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52.1135, 0, -0.6001)
+stream = ExtResource("15_mrkiu")
+volume_db = -6.0
+unit_size = 12.5
+max_db = 0.0
+autoplay = true
+max_distance = 35.0
+panning_strength = 2.0
+bus = &"Ambience"
+attenuation_filter_db = -21.0
+
+[node name="WaterSounds7" type="AudioStreamPlayer3D" parent="EnvironmentSounds/RiverEast"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.3496, -9.53674e-07, -5.00582)
+stream = ExtResource("15_mrkiu")
+volume_db = -6.0
+unit_size = 12.5
+max_db = 0.0
+autoplay = true
+max_distance = 30.0
+panning_strength = 2.0
+bus = &"Ambience"
+attenuation_filter_db = -21.0
+
+[node name="WaterSounds8" type="AudioStreamPlayer3D" parent="EnvironmentSounds/RiverEast"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.0006, 0, -7.91592)
+stream = ExtResource("15_mrkiu")
+volume_db = -6.0
+unit_size = 15.0
+max_db = 0.0
+autoplay = true
+max_distance = 40.0
+panning_strength = 2.0
+bus = &"Ambience"
+attenuation_filter_db = -21.0
+
+[node name="WaterSounds9" type="AudioStreamPlayer3D" parent="EnvironmentSounds/RiverEast"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.41, 0, -16.41)
+stream = ExtResource("15_mrkiu")
+volume_db = -6.0
+unit_size = 12.5
+max_db = 0.0
+autoplay = true
+max_distance = 35.0
+panning_strength = 2.0
+bus = &"Ambience"
+attenuation_filter_db = -21.0
+
+[node name="WaterSounds10" type="AudioStreamPlayer3D" parent="EnvironmentSounds/RiverEast"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.3343, -9.53674e-07, -25.1512)
+stream = ExtResource("15_mrkiu")
+volume_db = -6.0
+max_db = 0.0
+autoplay = true
+max_distance = 40.0
+panning_strength = 2.0
+bus = &"Ambience"
+attenuation_filter_db = -21.0
+
+[node name="WillowTree" type="Node3D" parent="EnvironmentSounds"]
+
+[node name="WindSounds" type="AudioStreamPlayer3D" parent="EnvironmentSounds/WillowTree"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.4842, 6.61127, 61.1242)
+stream = ExtResource("16_mrkiu")
+unit_size = 15.0
+max_db = 0.0
+pitch_scale = 2.0
+autoplay = true
+max_distance = 20.0
+panning_strength = 2.0
+bus = &"Ambience"
+attenuation_filter_cutoff_hz = 8000.0
+attenuation_filter_db = -6.0
+
+[node name="SFXManager" parent="." node_paths=PackedStringArray("hint_sound_branch", "hint_sound_shovel", "hint_sound_tennis_ball", "hint_sound_traffic_cone") instance=ExtResource("15_pnca5")]
+hint_sound_branch = NodePath("../ItemHintSounds/HintSound_Branch")
+hint_sound_shovel = NodePath("../ItemHintSounds/HintSound_Shovel")
+hint_sound_tennis_ball = NodePath("../ItemHintSounds/HintSound_TennisBall")
+hint_sound_traffic_cone = NodePath("../ItemHintSounds/HintSound_TrafficCone")
+
+[node name="MenuCamera" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.789223, 0.614107, 0, -0.614107, 0.789223, -2.98379, 9.87295, 11.7731)
+fov = 25.0
+far = 25.0
+
+[node name="EndingCamera" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.752242, 0.658887, 0, -0.658887, 0.752242, 0.283139, 10.6973, 13.3033)
+fov = 25.0
+far = 25.0
+
+[node name="PR-logo" parent="." instance=ExtResource("41_ctt8i")]
+transform = Transform3D(2.39975, -0.00161813, 0.0343507, -4.18478e-10, 2.39734, 0.11293, -0.0343888, -0.112918, 2.3971, -4.75636, 7.24969, 0.493081)
+
+[node name="birds" type="Node3D" parent="."]
+
+[node name="bird_42" parent="birds" instance=ExtResource("29_udahs")]
+transform = Transform3D(0.600748, 0, 0.475413, 0, 0.766104, 0, -0.475413, 0, 0.600748, 5.95449, 1.12779, -3.0935)
+custom_rotation = true
+
+[node name="bird_02" parent="birds" instance=ExtResource("30_0s76t")]
+transform = Transform3D(0.646544, 0, -0.501312, 0, 0.818128, 0, 0.501312, 0, 0.646544, 5.37397, 1.12368, -4.14034)
+
+[node name="bird_03" parent="birds" instance=ExtResource("31_ne6ia")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.8805, 0.0403282, 6.48984)
+
+[node name="bird_04" parent="birds" instance=ExtResource("31_ne6ia")]
+transform = Transform3D(0.464666, 0, 0.685278, 0, 0.827961, 0, -0.685278, 0, 0.464666, 47.927, 0.0347065, 7.73416)
+custom_rotation = true
+
+[node name="bird_01" parent="birds" instance=ExtResource("29_udahs")]
+transform = Transform3D(0.979848, 0, -0.199744, 0, 1, 0, 0.199744, 0, 0.979848, 48.8959, 0.0235421, 0.684735)
+custom_rotation = true
+
+[node name="bird_05" parent="birds" instance=ExtResource("30_0s76t")]
+transform = Transform3D(0.925051, 0, 0, 0, 0.925051, 0, 0, 0, 0.925051, 34.6887, 0.0275121, -5.09787)
+
+[node name="bird_07" parent="birds" instance=ExtResource("30_0s76t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52.3428, 0.0195026, 13.5212)
+custom_rotation = true
+
+[node name="bird_08" parent="birds" instance=ExtResource("30_0s76t")]
+transform = Transform3D(0.0238739, 0, 0.999715, 0, 1, 0, -0.999715, 0, 0.0238739, 54.8644, 0.0133803, 12.5792)
+
+[node name="bird_09" parent="birds" instance=ExtResource("29_udahs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.1598, 0.0276783, 16.7914)
+
+[node name="bird_10" parent="birds" instance=ExtResource("29_udahs")]
+transform = Transform3D(0.750675, 0, 0.527681, 0, 0.917584, 0, -0.527681, 0, 0.750675, 49.7216, 0.0174873, 17.6117)
+
+[node name="bird_11" parent="birds" instance=ExtResource("29_udahs")]
+transform = Transform3D(0.676187, 0.147903, 0, -0.147903, 0.676187, 0, 0, 0, 0.702158, 62.8644, 4.78805, 28.7052)
+
+[node name="bird_06" parent="birds" instance=ExtResource("31_ne6ia")]
+transform = Transform3D(0.940573, 0, -0.339592, 0, 1, 0, 0.339592, 0, 0.940573, 4.50827, 0.0151281, -2.25655)
+custom_rotation = true
+
+[node name="bird_12" parent="birds" instance=ExtResource("29_udahs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.25125, 0.0406492, 8.31692)
+
+[node name="bird_13" parent="birds" instance=ExtResource("29_udahs")]
+transform = Transform3D(0.485433, 0, 0.765097, 0, 0.906101, 0, -0.765097, 0, 0.485433, -7.7967, 0.0174875, 6.55096)
+custom_rotation = true
+
+[node name="bird_14" parent="birds" instance=ExtResource("30_0s76t")]
+transform = Transform3D(0.825479, 0, 0, 0, 0.825479, 0, 0, 0, 0.825479, -13.7326, 0.0133801, 11.2455)
+
+[node name="bird_15" parent="birds" instance=ExtResource("31_ne6ia")]
+transform = Transform3D(0.288863, 0, 0.791666, 0, 0.84272, 0, -0.791666, 0, 0.288863, 6.98502, 0.0552543, 2.76751)
+custom_rotation = true
+
+[node name="bird_16" parent="birds" instance=ExtResource("31_ne6ia")]
+transform = Transform3D(0.832309, 0, 0, 0, 0.832309, 0, 0, 0, 0.832309, -15.8753, 0.125504, 1.27345)
+
+[node name="bird_17" parent="birds" instance=ExtResource("31_ne6ia")]
+transform = Transform3D(0.386679, 0, 0.922215, 0, 1, 0, -0.922215, 0, 0.386679, -14.838, 0.143178, -0.324103)
+custom_rotation = true
+
+[node name="bird_18" parent="birds" instance=ExtResource("30_0s76t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.51436, 0.0155253, 36.0915)
+custom_rotation = true
+
+[node name="bird_19" parent="birds" instance=ExtResource("29_udahs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.6797, 0.43984, 27.2703)
+
+[node name="bird_20" parent="birds" instance=ExtResource("30_0s76t")]
+transform = Transform3D(0.833522, 0, 0, 0, 0.96435, 0.220576, 0, -0.264631, 0.803807, 53.1717, 2.43743, 25.5515)
+
+[node name="bird_21" parent="birds" instance=ExtResource("30_0s76t")]
+transform = Transform3D(0.871643, 0, 0, 0, 0.871643, 0, 0, 0, 0.871643, -23.9227, 0.0644646, 54.5934)
+
+[node name="bird_22" parent="birds" instance=ExtResource("31_ne6ia")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.9897, 0.0558373, 56.2005)
+
+[node name="bird_23" parent="birds" instance=ExtResource("31_ne6ia")]
+transform = Transform3D(0.234214, 0, -0.738738, 0, 0.774977, 0, 0.738738, 0, 0.234214, -16.9054, 0.111835, 56.9061)
+custom_rotation = true
+
+[node name="bird_24" parent="birds" instance=ExtResource("29_udahs")]
+transform = Transform3D(0.918002, -0.00670791, 0.00829296, 0.00673523, 0.918035, -0.00299801, -0.00827078, 0.00305866, 0.918022, -25.8737, 0.0275152, 44.7265)
+
+[node name="bird_25" parent="birds" instance=ExtResource("30_0s76t")]
+transform = Transform3D(0.927997, 0, 0, 0, 0.927997, 0, 0, 0, 0.927997, -21.976, 0.138199, 47.1986)
+
+[node name="bird_26" parent="birds" instance=ExtResource("30_0s76t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.8215, 0.120839, 10.0771)
+
+[node name="bird_27" parent="birds" instance=ExtResource("31_ne6ia")]
+transform = Transform3D(0.817758, 0, 0.575562, 0, 1, 0, -0.575562, 0, 0.817758, -48.822, 0.18778, 13.3056)
+
+[node name="bird_28" parent="birds" instance=ExtResource("29_udahs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.2435, 0.0174878, 24.236)
+
+[node name="bird_29" parent="birds" instance=ExtResource("29_udahs")]
+transform = Transform3D(0.65088, 0, 0.75918, 0, 1, 0, -0.75918, 0, 0.65088, 32.5153, 0.117606, 23.5027)
+
+[node name="bird_30" parent="birds" instance=ExtResource("31_ne6ia")]
+transform = Transform3D(0.864983, 0, 0, 0, 0.864983, 0, 0, 0, 0.864983, 23.4831, 0.0316465, 58.759)
+
+[node name="bird_31" parent="birds" instance=ExtResource("31_ne6ia")]
+transform = Transform3D(0.348212, 0, 0.937416, 0, 1, 0, -0.937416, 0, 0.348212, 25.2234, 0.0280012, 58.8851)
+custom_rotation = true
+
+[node name="bird_32" parent="birds" instance=ExtResource("30_0s76t")]
+transform = Transform3D(0.917507, 0, 0, 0, 0.917507, 0, 0, 0, 0.917507, 23.3032, 0.0271144, 61.9639)
+
+[node name="bird_33" parent="birds" instance=ExtResource("29_udahs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.1076, 0.0195988, 54.9911)
+
+[node name="bird_34" parent="birds" instance=ExtResource("29_udahs")]
+transform = Transform3D(0.901878, 0.098086, 7.43693e-05, -0.0980277, 0.901318, 0.0319612, 0.00338176, -0.0317819, 0.906634, -37.7753, -0.0442712, 61.9436)
+
+[node name="bird_35" parent="birds" instance=ExtResource("30_0s76t")]
+transform = Transform3D(0.946088, 0.0374827, 0.321734, -0.0620474, 0.995859, 0.0664362, -0.317912, -0.0828173, 0.944497, -34.1151, -0.0737801, 64.2298)
+custom_rotation = true
+
+[node name="bird_36" parent="birds" instance=ExtResource("30_0s76t")]
+transform = Transform3D(0.353584, 0.0123932, 0.846121, -0.0874705, 0.912637, 0.0231855, -0.841678, -0.0896386, 0.353041, -32.4585, -0.0522306, 65.8347)
+
+[node name="bird_37" parent="birds" instance=ExtResource("31_ne6ia")]
+transform = Transform3D(0.875715, 0, 0, 0, 0.875715, 0, 0, 0, 0.875715, -60.0966, 2.64209, 66.9684)
+
+[node name="bird_38" parent="birds" instance=ExtResource("29_udahs")]
+transform = Transform3D(0.841961, 0.0442828, -0.537718, -0.0573421, 0.998326, -0.00757131, 0.536482, 0.0372086, 0.843091, -71.7505, -0.212137, 32.1082)
+custom_rotation = true
+
+[node name="bird_39" parent="birds" instance=ExtResource("31_ne6ia")]
+transform = Transform3D(0.596337, 0.0232217, 0.68973, 0.0902488, 0.901109, -0.108367, -0.684195, 0.139101, 0.586868, -70.0253, 1.87039, 29.1963)
+custom_rotation = true
+
+[node name="bird_40" parent="birds" instance=ExtResource("29_udahs")]
+transform = Transform3D(0.705661, 0, -0.708549, 0, 1, 0, 0.708549, 0, 0.705661, -46.3247, 0.011653, 27.2206)
+
+[node name="PondFish" type="Node3D" parent="."]
+
+[node name="Carp" parent="PondFish" instance=ExtResource("12_kt701")]
+transform = Transform3D(0.998918, 0, -0.046514, 0, 1, 0, 0.046514, 0, 0.998918, 5.88821, -0.412519, 58.857)
+
+[node name="Carp2" parent="PondFish" instance=ExtResource("12_kt701")]
+transform = Transform3D(0.665543, 0, -0.74636, 0, 1, 0, 0.74636, 0, 0.665543, -9.63195, -0.470141, 51.8402)
+
+[connection signal="body_entered" from="MusicZones/MusicZoneTrigger_Clearing/MusicZoneTrigger_MAP_Area" to="MusicZones/MusicZoneTrigger_Clearing/MusicZoneTrigger_MAP_Area" method="_on_chocomel_entered"]
+[connection signal="body_entered" from="MusicZones/MusicZoneTrigger_Fence_HINT/MusicZoneTrigger_Area2" to="MusicZones/MusicZoneTrigger_Fence_HINT/MusicZoneTrigger_Area2" method="_on_chocomel_entered"]
+[connection signal="body_entered" from="MusicZones/MusicZoneTrigger_Fence_HINT/MusicZoneTrigger_Area3" to="MusicZones/MusicZoneTrigger_Fence_HINT/MusicZoneTrigger_Area3" method="_on_chocomel_entered"]
+[connection signal="body_entered" from="MusicZones/MusicZoneTrigger_Forest_Bridge_West/MusicZoneTrigger_Area2" to="MusicZones/MusicZoneTrigger_Forest_Bridge_West/MusicZoneTrigger_Area2" method="_on_chocomel_entered"]
+[connection signal="body_entered" from="MusicZones/MusicZoneTrigger_Forest_Pond/MusicZoneTrigger_Area2" to="MusicZones/MusicZoneTrigger_Forest_Pond/MusicZoneTrigger_Area2" method="_on_chocomel_entered"]
+[connection signal="body_entered" from="MusicZones/MusicZoneTrigger_Forest_HEART/MusicZoneTrigger_Forest_Shovel" to="MusicZones/MusicZoneTrigger_Forest_HEART/MusicZoneTrigger_Forest_Shovel" method="_on_chocomel_entered"]
+[connection signal="body_entered" from="MusicZones/MusicZoneTrigger_Forest_HEART_Hint/MusicZoneTrigger_Area2" to="MusicZones/MusicZoneTrigger_Forest_HEART_Hint/MusicZoneTrigger_Area2" method="_on_chocomel_entered"]
+
+[editable path="Player"]
+[editable path="Items/PR-branch"]
+[editable path="Items/PR-tennis_ball"]
+[editable path="Items/PR-traffic_cone"]
+[editable path="Items/PR-shovel"]
+[editable path="MagnetZones/CameraMagnetZone_shovel"]
+[editable path="MagnetZones/CameraMagnetZone_traffic_cone"]
+[editable path="MagnetZones/CameraMagnetZone_tennis_ball"]
+[editable path="MagnetZones/CameraMagnetZone_branch"]
+[editable path="MagnetZones/CameraMagnetZone_leash_point"]
+[editable path="MusicZones/MusicZoneTrigger_Clearing"]
+[editable path="MusicZones/MusicZoneTrigger_Fence_East"]
+[editable path="MusicZones/MusicZoneTrigger_Fence_MAP_HINT"]
+[editable path="MusicZones/MusicZoneTrigger_Fence_HINT"]
+[editable path="MusicZones/MusicZoneTrigger_Fence_South"]
+[editable path="MusicZones/MusicZoneTrigger_Forest_Bridge_West"]
+[editable path="MusicZones/MusicZoneTrigger_Forest_Pond"]
+[editable path="MusicZones/MusicZoneTrigger_Forest_HEART"]
+[editable path="MusicZones/MusicZoneTrigger_Forest_HEART_Hint"]
+[editable path="MusicZones/MusicZoneTrigger_Forest_Bridge_South"]
+[editable path="MusicZones/MusicZoneTrigger_Pond_HINT"]
+[editable path="MusicZones/MusicZoneTrigger_Snowman_Bridge_West"]
+[editable path="MusicZones/MusicZoneTrigger_Snowman_East"]
+[editable path="MusicZones/MusicZoneTrigger_Snowman_East_Fence"]
+[editable path="MusicZones/MusicZoneTrigger_Snowman_South"]

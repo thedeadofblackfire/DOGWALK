@@ -1,0 +1,65 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://d2wxuysl8hq7p"
+path="res://.godot/imported/PR-sign_board.gltf-e49e4406305d8c7290cf1773496715bd.scn"
+
+[deps]
+
+source_file="res://assets/props/sign_board/PR-sign_board.gltf"
+dest_files=["res://.godot/imported/PR-sign_board.gltf-e49e4406305d8c7290cf1773496715bd.scn"]
+
+[params]
+
+nodes/root_type="StaticBody3D"
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path="uid://gtfffogvk6gb"
+_subresources={
+"materials": {
+"sign_board-board": {
+"use_external/enabled": true,
+"use_external/path": "res://assets/props/sign_board/sign_board-board.tres"
+},
+"sign_board-map": {
+"use_external/enabled": true,
+"use_external/path": "res://assets/props/sign_board/sign_board-map.tres"
+},
+"sign_board-poles": {
+"use_external/enabled": true,
+"use_external/path": "res://assets/props/sign_board/sign_board-poles.tres"
+},
+"sign_board-roof": {
+"use_external/enabled": true,
+"use_external/path": "res://assets/props/sign_board/sign_board-roof.tres"
+},
+"sign_board-snow": {
+"use_external/enabled": true,
+"use_external/path": "res://assets/props/sign_board/sign_board-snow.tres"
+},
+"sign_board-tape": {
+"use_external/enabled": true,
+"use_external/path": "res://assets/props/sign_board/sign_board-tape.tres"
+}
+}
+}
+file_path="res://assets/props/sign_board/PR-sign_board.gltf"
+gltf/naming_version=0
+gltf/embedded_image_handling=1

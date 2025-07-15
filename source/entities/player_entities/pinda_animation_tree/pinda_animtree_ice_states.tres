@@ -1,0 +1,13 @@
+[gd_resource type="AnimationNodeStateMachine" load_steps=3 format=3 uid="uid://vuux1mu1qox1"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_mit7b"]
+animation = &"Pinda-anim_lib/LOOP-Pinda-idle_ice"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ncv4k"]
+advance_mode = 2
+
+[resource]
+states/Pinda-anim_lib_LOOP-Pinda-idle_ice/node = SubResource("AnimationNodeAnimation_mit7b")
+states/Pinda-anim_lib_LOOP-Pinda-idle_ice/position = Vector2(450, 100)
+transitions = ["Start", "Pinda-anim_lib_LOOP-Pinda-idle_ice", SubResource("AnimationNodeStateMachineTransition_ncv4k")]
+graph_offset = Vector2(-322, -40)

@@ -1,0 +1,78 @@
+[gd_scene load_steps=10 format=3 uid="uid://qh1jstqjb43k"]
+
+[ext_resource type="Script" uid="uid://dhpqswd5svpru" path="res://source/fx/snow_fx/snow_interaction.gd" id="1_gnodn"]
+[ext_resource type="Script" uid="uid://b0cwmui4xbofe" path="res://source/fx/snow_fx/snow_trail.gd" id="2_c22it"]
+[ext_resource type="Material" uid="uid://c8kqbpwdm5khc" path="res://source/fx/snow_fx/snow_particle_process_shader.tres" id="2_p5prr"]
+[ext_resource type="Material" uid="uid://ceg0jpnt75n80" path="res://source/fx/snow_fx/snow_particles.tres" id="3_p2mqv"]
+[ext_resource type="Material" uid="uid://gu5oh6exu3ow" path="res://source/fx/snow_fx/snow_trail-inner.tres" id="5_hfomu"]
+[ext_resource type="Material" uid="uid://cly0lvvulk0rb" path="res://source/fx/snow_fx/snow_trail-outer.tres" id="6_x7thl"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_c22it"]
+material = ExtResource("3_p2mqv")
+size = Vector2(0.2, 0.2)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_p2mqv"]
+material = ExtResource("5_hfomu")
+size = Vector2(0.4, 0.4)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ngw4p"]
+material = ExtResource("6_x7thl")
+size = Vector2(0.25, 0.25)
+
+[node name="SnowInteraction" type="Node3D" node_paths=PackedStringArray("trail", "particles")]
+script = ExtResource("1_gnodn")
+trail = NodePath("Trail-Inner")
+particles = NodePath("Particles")
+
+[node name="Trail-Inner" type="MultiMeshInstance3D" parent="." node_paths=PackedStringArray("main_interaction", "single_piece")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.04, 0)
+top_level = true
+script = ExtResource("2_c22it")
+main_interaction = NodePath("..")
+single_piece = NodePath("../TrailPiece-Inner")
+spread = 0.09
+scale_min = 0.7
+scale_max = 1.2
+snow_spawn_rate = 6.5
+random_orientation = 0.566
+random_tilt = 0.16
+
+[node name="Trail-Outer" type="MultiMeshInstance3D" parent="." node_paths=PackedStringArray("main_interaction", "single_piece")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.03, 0)
+top_level = true
+script = ExtResource("2_c22it")
+main_interaction = NodePath("..")
+single_piece = NodePath("../TrailPiece-Outer")
+center_offset = 0.13
+spread = 0.015
+scale_min = 0.4
+scale_max = 1.3
+snow_spawn_rate = 40.0
+random_orientation = 0.272
+random_tilt = 0.31
+
+[node name="Particles" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
+emitting = false
+amount = 60
+amount_ratio = 0.7087
+lifetime = 0.32
+explosiveness = 0.03
+randomness = 0.01
+fixed_fps = 12
+interpolate = false
+collision_base_size = 0.1
+process_material = ExtResource("2_p5prr")
+draw_pass_1 = SubResource("PlaneMesh_c22it")
+
+[node name="GPUParticlesCollisionBox3D" type="GPUParticlesCollisionBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.9, 0)
+size = Vector3(100, 2, 100)
+
+[node name="TrailPiece-Inner" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_p2mqv")
+
+[node name="TrailPiece-Outer" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_ngw4p")

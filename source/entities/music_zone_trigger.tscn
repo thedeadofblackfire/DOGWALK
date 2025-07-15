@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dh8ectufx18s3"]
+
+[ext_resource type="Script" uid="uid://d3sd6x1ymcn56" path="res://source/entities/music_zone_trigger.gd" id="1_we15r"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_kxr2n"]
+radius = 1.0
+
+[node name="MusicZoneTrigger" type="Node3D"]
+
+[node name="MusicZoneTrigger_Area" type="Area3D" parent="."]
+collision_layer = 1024
+collision_mask = 4
+script = ExtResource("1_we15r")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MusicZoneTrigger_Area"]
+shape = SubResource("CylinderShape3D_kxr2n")
+debug_color = Color(0.579663, 2.05037e-05, 0.432557, 0.862745)
+
+[connection signal="body_entered" from="MusicZoneTrigger_Area" to="MusicZoneTrigger_Area" method="_on_chocomel_entered"]

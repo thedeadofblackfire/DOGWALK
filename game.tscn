@@ -1,0 +1,26 @@
+[gd_scene load_steps=7 format=3 uid="uid://d3i1jbwaf8wjo"]
+
+[ext_resource type="PackedScene" uid="uid://6uq8ndnl1t7e" path="res://source/user_interface/old_mouse_cursor.tscn" id="1_7jktm"]
+[ext_resource type="PackedScene" uid="uid://ceeuq1mr33ivr" path="res://source/user_interface/menus/background_elements_ui.tscn" id="1_ryrav"]
+[ext_resource type="PackedScene" uid="uid://dnu1cw7xufgwv" path="res://source/user_interface/mouse_cursor.tscn" id="2_eow3j"]
+[ext_resource type="PackedScene" uid="uid://d1nt15f8g4oqk" path="res://source/user_interface/menus/menu_ui.tscn" id="3_7jktm"]
+[ext_resource type="PackedScene" uid="uid://cuxcvurbkofgn" path="res://source/levels/world.tscn" id="5_vef74"]
+[ext_resource type="PackedScene" uid="uid://cv6pujg1oirn2" path="res://source/audio/audio_manager.tscn" id="6_ryrav"]
+
+[node name="Game" type="Node3D"]
+
+[node name="BackgroundElementsUI" parent="." instance=ExtResource("1_ryrav")]
+
+[node name="DebugUI" parent="." instance=ExtResource("1_7jktm")]
+
+[node name="CursorUI" parent="." instance=ExtResource("2_eow3j")]
+
+[node name="MenuUI" parent="." instance=ExtResource("3_7jktm")]
+pivot_offset = Vector2(1920, 1080)
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="AudioManager" parent="." instance=ExtResource("6_ryrav")]
+process_mode = 3
+
+[node name="World" parent="." instance=ExtResource("5_vef74")]

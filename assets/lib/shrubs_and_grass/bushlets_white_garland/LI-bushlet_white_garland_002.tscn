@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bx6qb2wmcg6b0"]
+
+[ext_resource type="PackedScene" uid="uid://ds31p4lw03q8t" path="res://assets/lib/shrubs_and_grass/bushlets_white_garland/LI-bushlet_white_garland_002.gltf" id="1_7h5nk"]
+[ext_resource type="Script" uid="uid://dw6ysrlodecpb" path="res://source/obstacles/shrubs.gd" id="2_ariik"]
+
+[node name="LI-bushlet_white_garland_002" type="Node3D"]
+
+[node name="LI-bushlet_white_garland_002-IMPORT" parent="." instance=ExtResource("1_7h5nk")]
+script = ExtResource("2_ariik")

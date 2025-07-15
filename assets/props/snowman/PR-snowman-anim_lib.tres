@@ -1,0 +1,21 @@
+[gd_resource type="AnimationLibrary" load_steps=8 format=3 uid="uid://ckyykpex468sm"]
+
+[ext_resource type="Animation" uid="uid://cp1stt6cjtfej" path="res://animations/hub/CINE-chars-intro/CINE-Snowman-intro.tres" id="1_071uq"]
+[ext_resource type="Animation" uid="uid://dsnjm3bwh43er" path="res://animations/hub/CINE-pinda-attach_shovel/CINE-snowman-attach_shovel.tres" id="2_lf3p5"]
+[ext_resource type="Animation" uid="uid://xjufsyli4n62" path="res://animations/hub/SYNC-chars-attach_rock/SYNC-snowman-attach_rock.tres" id="4_axs0q"]
+[ext_resource type="Animation" uid="uid://bdt537ulk7ns5" path="res://animations/hub/CINE-pinda-attach_branch/CINE-snowman-attach_branch.tres" id="5_qttpi"]
+[ext_resource type="Animation" uid="uid://bkq8clc3ayyus" path="res://animations/hub/POSE-snowman-intro/POSE-snowman-intro.tres" id="6_st78m"]
+[ext_resource type="Animation" uid="uid://dfhrx8bvc5a8c" path="res://animations/hub/POSE-snowman-shovel/POSE-snowman-snowman_shovel.tres" id="7_ilfg4"]
+[ext_resource type="Animation" uid="uid://crsrfoqxlei13" path="res://animations/hub/POSE-snowman-intro/LOOP-chocomel-sleeping.tres" id="7_ueanh"]
+
+[resource]
+resource_name = "PR-snowman Animation Library"
+_data = {
+&"CINE-Snowman-intro": ExtResource("1_071uq"),
+&"CINE-snowman-attach_branch": ExtResource("5_qttpi"),
+&"CINE-snowman-attach_shovel": ExtResource("2_lf3p5"),
+&"LOOP-chocomel-sleeping": ExtResource("7_ueanh"),
+&"POSE-snowman-intro": ExtResource("6_st78m"),
+&"POSE-snowman-snowman_shovel": ExtResource("7_ilfg4"),
+&"SYNC-snowman-attach_rock": ExtResource("4_axs0q")
+}

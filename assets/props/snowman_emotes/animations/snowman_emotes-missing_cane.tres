@@ -1,0 +1,40 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://c04khf83bh0by"]
+
+[ext_resource type="Texture2D" uid="uid://btr5a5ix2cv44" path="res://assets/props/snowman_emotes/textures/missing_cane/missing_cane_3.png" id="1_v3llw"]
+[ext_resource type="Texture2D" uid="uid://57f1x5rbbil7" path="res://assets/props/snowman_emotes/textures/missing_cane/missing_cane_1.png" id="1_x2mdn"]
+[ext_resource type="Texture2D" uid="uid://dnv1bb3foqkwc" path="res://assets/props/snowman_emotes/textures/missing_cane/missing_cane_4.png" id="2_h57uv"]
+[ext_resource type="Texture2D" uid="uid://dfekqvcyvlwke" path="res://assets/props/snowman_emotes/textures/missing_cane/missing_cane_2.png" id="2_ixntm"]
+[ext_resource type="Texture2D" uid="uid://copjmat6xf6pr" path="res://assets/props/snowman_emotes/textures/missing_cane/missing_cane_5.png" id="5_0w52l"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 0.7,
+"texture": ExtResource("1_v3llw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_h57uv")
+}],
+"loop": true,
+"name": &"In",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_x2mdn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ixntm")
+}],
+"loop": true,
+"name": &"Loop",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_0w52l")
+}],
+"loop": true,
+"name": &"Out",
+"speed": 5.0
+}]

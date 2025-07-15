@@ -1,0 +1,302 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 1,
+                    "append_parent_collection": 1,
+                    "asset_name": "SL-hub-ground"
+                },
+                "asset_type": "ASSET",
+                "root_type": "STATIC",
+                "asset_id": "e769277e6436849e"
+            },
+            "name": "SL-hub-ground",
+            "nodes": [
+                0,
+                1
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "extras": {
+                "ant_landscape": {},
+                "collision_info": {
+                    "type": "MESH",
+                    "concave": true
+                },
+                "visibility_info": {
+                    "shadow": false
+                }
+            },
+            "mesh": 0,
+            "name": "COL-ground-hub"
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 1,
+            "name": "GEO-ground-hub"
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "yp": {
+                    "active_ypaint_node": ""
+                },
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "roughness": 0.5,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "wear_strength": 0.0,
+                    "wear_start": 0.0,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.5,
+                    "wear_distortion_scale": 100.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.6600000262260437,
+                    "normal_use_uv2": 0.0
+                },
+                "asset_id": "e7cd5be5c3b8135f"
+            },
+            "name": "ground_snow-hub",
+            "normalTexture": {
+                "index": 0
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "B\u00e9zierCircle.013",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "B\u00e9zierCircle.062",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 4,
+                        "NORMAL": 5,
+                        "TEXCOORD_0": 6
+                    },
+                    "indices": 7,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/textures/snow_gen_normal-01.png"
+            },
+            "mimeType": "image/png",
+            "name": "snow_gen_normal-01",
+            "uri": "../../textures/snow_gen_normal-01.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/textures/snow_gen_albedo-01.png"
+            },
+            "mimeType": "image/png",
+            "name": "snow_gen_albedo-01",
+            "uri": "../../textures/snow_gen_albedo-01.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 119,
+            "max": [
+                53.183135986328125,
+                4.893063385025265e-11,
+                48.48033142089844
+            ],
+            "min": [
+                -54.053314208984375,
+                -2.2331896332161705e-09,
+                -42.93244552612305
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 119,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 119,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5123,
+            "count": 375,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5126,
+            "count": 900,
+            "max": [
+                51.06446838378906,
+                0,
+                43.96979904174805
+            ],
+            "min": [
+                -54.053314208984375,
+                -2.636473483974555e-09,
+                -42.93244552612305
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5126,
+            "count": 900,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 6,
+            "componentType": 5126,
+            "count": 900,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 7,
+            "componentType": 5123,
+            "count": 4341,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 1428,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1428,
+            "byteOffset": 1428,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 952,
+            "byteOffset": 2856,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 750,
+            "byteOffset": 3808,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 10800,
+            "byteOffset": 4560,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 10800,
+            "byteOffset": 15360,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 7200,
+            "byteOffset": 26160,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 8682,
+            "byteOffset": 33360,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 42044,
+            "uri": "SL-hub-ground.bin"
+        }
+    ]
+}

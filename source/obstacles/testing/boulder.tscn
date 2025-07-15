@@ -1,0 +1,54 @@
+[gd_scene load_steps=4 format=3 uid="uid://bm25x8i47nghk"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_11hkw"]
+height = 1.651
+radius = 1.78
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f625a"]
+albedo_color = Color(0.419813, 0.419813, 0.419813, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_e2oc5"]
+top_radius = 1.16
+bottom_radius = 1.791
+height = 1.5
+
+[node name="Boulder" type="RigidBody3D"]
+collision_layer = 64
+collision_mask = 12
+freeze = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.786977, 0)
+shape = SubResource("CylinderShape3D_11hkw")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.728493, 0)
+material_override = SubResource("StandardMaterial3D_f625a")
+mesh = SubResource("CylinderMesh_e2oc5")
+
+[node name="leash_pivots" type="Node3D" parent="." groups=["LeashPivots"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.09297, 0)
+
+[node name="TreePivot" type="Marker3D" parent="leash_pivots"]
+transform = Transform3D(3.65265, 0, 0, 0, 3.65265, 0, 0, 0, 3.65265, 1.53522, -0.469713, 0)
+
+[node name="TreePivot2" type="Marker3D" parent="leash_pivots"]
+transform = Transform3D(3.65265, 0, 0, 0, 3.65265, 0, 0, 0, 3.65265, -1.53436, -0.469713, 0)
+
+[node name="TreePivot3" type="Marker3D" parent="leash_pivots"]
+transform = Transform3D(3.65265, 0, 0, 0, 3.65265, 0, 0, 0, 3.65265, -0.00024471, -0.469713, -1.53411)
+
+[node name="TreePivot4" type="Marker3D" parent="leash_pivots"]
+transform = Transform3D(3.65265, 0, 0, 0, 3.65265, 0, 0, 0, 3.65265, -0.00024471, -0.469713, 1.53411)
+
+[node name="TreePivot5" type="Marker3D" parent="leash_pivots"]
+transform = Transform3D(3.16328, 0, -1.82632, 0, 3.65265, 0, 1.82632, 0, 3.16328, 1.32955, -0.469713, 0.76756)
+
+[node name="TreePivot6" type="Marker3D" parent="leash_pivots"]
+transform = Transform3D(3.16328, 0, -1.82632, 0, 3.65265, 0, 1.82632, 0, 3.16328, -1.32878, -0.469713, -0.767224)
+
+[node name="TreePivot7" type="Marker3D" parent="leash_pivots"]
+transform = Transform3D(3.16328, 0, -1.82632, 0, 3.65265, 0, 1.82632, 0, 3.16328, 0.978711, -0.469713, -1.20616)
+
+[node name="TreePivot8" type="Marker3D" parent="leash_pivots"]
+transform = Transform3D(3.16328, 0, -1.82632, 0, 3.65265, 0, 1.82632, 0, 3.16328, -0.997723, -0.469713, 1.19307)

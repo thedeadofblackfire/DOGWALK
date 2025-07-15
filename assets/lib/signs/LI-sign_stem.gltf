@@ -1,0 +1,267 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.32",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 1,
+                    "asset_name": "LI-sign_stem",
+                    "append_parent_collection": 1
+                },
+                "asset_type": "ASSET",
+                "root_type": "STATIC",
+                "asset_id": "7bb014d34fd290b0"
+            },
+            "name": "LI-sign_stem",
+            "nodes": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "extras": {
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.17499999701976776,
+                    "height": 2.0,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive",
+            "scale": [
+                1.2000000476837158,
+                1.2000000476837158,
+                1.2000000476837158
+            ],
+            "translation": [
+                0,
+                1.1875758171081543,
+                0
+            ]
+        },
+        {
+            "mesh": 0,
+            "name": "GEO-sign_stem"
+        },
+        {
+            "name": "HLP-leash_point",
+            "translation": [
+                8.112192153930664e-05,
+                0.5049864649772644,
+                -0.07990235090255737
+            ]
+        },
+        {
+            "name": "HLP-leash_point.001",
+            "translation": [
+                8.112192153930664e-05,
+                0.5049864649772644,
+                0.08458371460437775
+            ]
+        },
+        {
+            "name": "HLP-leash_point.002",
+            "translation": [
+                0.07785442471504211,
+                0.5049864649772644,
+                -0.003022998571395874
+            ]
+        },
+        {
+            "name": "HLP-leash_point.003",
+            "translation": [
+                -0.07948008179664612,
+                0.5049864649772644,
+                -0.003022998571395874
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "aaca791ecc4a65e2",
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "roughness": 0.8115941882133484,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        0.7756630182266235,
+                        0.6860129833221436,
+                        0.539696991443634,
+                        1.0
+                    ],
+                    "wear_strength": 0.0,
+                    "wear_start": 0.0,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.5,
+                    "wear_distortion_scale": 100.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.20000000298023224,
+                    "normal_use_uv2": 0.0
+                },
+                "yp": {}
+            },
+            "name": "sign_stem",
+            "normalTexture": {
+                "index": 0
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Cylinder",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        }
+    ],
+    "images": [
+        {
+            "mimeType": "image/png",
+            "name": "paper_fine_normal",
+            "uri": "paper_fine_normal.png"
+        },
+        {
+            "mimeType": "image/png",
+            "name": "sign_board-albedo",
+            "uri": "sign_board-albedo.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 32,
+            "max": [
+                0.08547799289226532,
+                2.8806278705596924,
+                0.06909750401973724
+            ],
+            "min": [
+                -0.12294180691242218,
+                -0.016016794368624687,
+                -0.09599702060222626
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 32,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 32,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5123,
+            "count": 96,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 384,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 384,
+            "byteOffset": 384,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 256,
+            "byteOffset": 768,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 192,
+            "byteOffset": 1024,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 1216,
+            "uri": "LI-sign_stem.bin"
+        }
+    ]
+}

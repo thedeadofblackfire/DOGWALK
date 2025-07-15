@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://5u86prftir8c"]
+
+[ext_resource type="Script" uid="uid://b7scanfdscie6" path="res://source/sequences/credits/text_credits.gd" id="1_tn0sh"]
+
+[node name="GroupCredits" type="VBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 111.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+script = ExtResource("1_tn0sh")
+credits_lines = Array[String]([])

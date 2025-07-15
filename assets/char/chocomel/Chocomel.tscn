@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bnovi25sslvkf"]
+
+[ext_resource type="PackedScene" uid="uid://cnj674bj24jmg" path="res://assets/char/chocomel/Chocomel.gltf" id="1_lvt2k"]
+[ext_resource type="AnimationLibrary" uid="uid://bcic6cq71l4n3" path="res://assets/char/chocomel/Chocomel-anim_lib.tres" id="2_n3e8p"]
+
+[node name="Chocomel" type="Node3D"]
+
+[node name="Chocomel-IMPORT" parent="." instance=ExtResource("1_lvt2k")]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+deterministic = true
+root_node = NodePath("../Chocomel-IMPORT")
+libraries = {
+&"Chocomel-anim_lib": ExtResource("2_n3e8p")
+}

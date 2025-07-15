@@ -1,0 +1,1066 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 1,
+                    "append_parent_collection": 1,
+                    "asset_name": "LI-birch_tree_005"
+                },
+                "asset_type": "ASSET",
+                "root_type": "STATIC",
+                "asset_id": "72364ff6211bcdd7"
+            },
+            "name": "LI-birch_tree_005",
+            "nodes": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "extras": {
+                "dragengine_lodmesh": {},
+                "ant_landscape": {}
+            },
+            "mesh": 0,
+            "name": "GEO-birch_tree_005"
+        },
+        {
+            "extras": {
+                "dragengine_lodmesh": {},
+                "ant_landscape": {}
+            },
+            "mesh": 1,
+            "name": "GEO-birch_tree_005_unfolded"
+        },
+        {
+            "extras": {
+                "instance_asset_id": "305fc54be4d78c2e",
+                "ant_landscape": {}
+            },
+            "name": "LI-birch_branch_012.002",
+            "rotation": [
+                -0.342805415391922,
+                0.444161057472229,
+                0.3209593892097473,
+                0.7630142569541931
+            ],
+            "scale": [
+                0.926582396030426,
+                0.9206386804580688,
+                1.192618727684021
+            ],
+            "translation": [
+                0.19830019772052765,
+                4.483719348907471,
+                -0.0017927251756191254
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "d5bf525176cbfe10"
+            },
+            "name": "LI-birch_branch_006.003",
+            "rotation": [
+                -0.28031569719314575,
+                -0.8352336883544922,
+                -0.2567001283168793,
+                0.397382527589798
+            ],
+            "scale": [
+                1.2000000476837158,
+                1.2000000476837158,
+                1.2000000476837158
+            ],
+            "translation": [
+                -0.06775151938199997,
+                3.2872653007507324,
+                -0.06476825475692749
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "121d935b409a0663"
+            },
+            "name": "LI-birch_branch_001.004",
+            "rotation": [
+                -0.1077243983745575,
+                0.7411614060401917,
+                0.2557871639728546,
+                0.6112676858901978
+            ],
+            "scale": [
+                1.2000000476837158,
+                1.2000000476837158,
+                1.2000000476837158
+            ],
+            "translation": [
+                0.1948871910572052,
+                7.444267749786377,
+                -0.1407405287027359
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "62655acd1659068e"
+            },
+            "name": "LI-birch_branch_007.001",
+            "rotation": [
+                -0.47136327624320984,
+                0.4711611568927765,
+                0.3765625059604645,
+                0.6434473991394043
+            ],
+            "translation": [
+                -0.00511733815073967,
+                9.578141212463379,
+                -0.4324668347835541
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "18a24b219451c68a"
+            },
+            "name": "LI-birch_branch_011.004",
+            "rotation": [
+                -0.2029435932636261,
+                -0.836607038974762,
+                -0.17082126438617706,
+                0.4792938828468323
+            ],
+            "scale": [
+                1.2000000476837158,
+                1.2000000476837158,
+                1.2000000476837158
+            ],
+            "translation": [
+                0.14969280362129211,
+                5.449122905731201,
+                -0.07396352291107178
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "f00d1db7f3d6fe20"
+            },
+            "name": "LI-birch_branch_004.005",
+            "rotation": [
+                -0.21321730315685272,
+                -0.5974862575531006,
+                -0.22980664670467377,
+                0.738063395023346
+            ],
+            "scale": [
+                1.2000001668930054,
+                1.2000001668930054,
+                1.2000000476837158
+            ],
+            "translation": [
+                -0.06545741111040115,
+                1.9244987964630127,
+                -0.1602352112531662
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "776f5943259395e3"
+            },
+            "name": "LI-birch_branch_005.006",
+            "rotation": [
+                -0.43339553475379944,
+                0.5154504776000977,
+                0.21992558240890503,
+                0.7057704925537109
+            ],
+            "scale": [
+                1.2000001668930054,
+                1.2000000476837158,
+                1.2000000476837158
+            ],
+            "translation": [
+                0.27939969301223755,
+                6.832634449005127,
+                -0.17549073696136475
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 2,
+            "name": "GEO-pine_tree-001.018",
+            "rotation": [
+                0.051499176770448685,
+                0.4663217067718506,
+                0.09693920612335205,
+                0.8777782917022705
+            ],
+            "translation": [
+                0.04894780367612839,
+                0.559067964553833,
+                -0.05498753488063812
+            ]
+        },
+        {
+            "extras": {
+                "dragengine_lodmesh": {},
+                "ant_landscape": {}
+            },
+            "mesh": 3,
+            "name": "GEO-birch_tree_005_unfolded.001"
+        },
+        {
+            "extras": {
+                "booleans": {},
+                "ant_landscape": {},
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.4309999346733093,
+                    "height": 2.5,
+                    "size": [
+                        1.0,
+                        1.0,
+                        2.0
+                    ]
+                }
+            },
+            "name": "COL-birch_tree_005",
+            "translation": [
+                0.09030002355575562,
+                1.205588698387146,
+                0.011820676736533642
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.152",
+            "rotation": [
+                0,
+                -0.14475789666175842,
+                0,
+                0.989467203617096
+            ],
+            "translation": [
+                -0.2055555284023285,
+                0.4306374490261078,
+                -0.0520668625831604
+            ]
+        },
+        {
+            "name": "HLP-leash_point.153",
+            "translation": [
+                -0.022400736808776855,
+                0.44335949420928955,
+                0.25697654485702515
+            ]
+        },
+        {
+            "name": "HLP-leash_point.154",
+            "translation": [
+                -0.16162681579589844,
+                0.4423808753490448,
+                0.1328917145729065
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.155",
+            "rotation": [
+                0,
+                -0.14475789666175842,
+                0,
+                0.989467203617096
+            ],
+            "translation": [
+                -0.06350257992744446,
+                0.4277016818523407,
+                -0.2903831899166107
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.158",
+            "rotation": [
+                0,
+                -0.14475789666175842,
+                0,
+                0.989467203617096
+            ],
+            "translation": [
+                -0.1660068929195404,
+                0.43630728125572205,
+                -0.21138471364974976
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.159",
+            "rotation": [
+                0,
+                -0.14475789666175842,
+                0,
+                0.989467203617096
+            ],
+            "translation": [
+                0.13791626691818237,
+                0.42476582527160645,
+                -0.2409399300813675
+            ]
+        },
+        {
+            "name": "HLP-leash_point.147",
+            "translation": [
+                0.1542634516954422,
+                0.43161603808403015,
+                0.27021294832229614
+            ]
+        },
+        {
+            "name": "HLP-leash_point.148",
+            "translation": [
+                0.2860311269760132,
+                0.417915403842926,
+                0.16255329549312592
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.149",
+            "translation": [
+                0.32840365171432495,
+                0.4130224287509918,
+                -0.0244462788105011
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "d6499e9d6bf43d6b",
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        0.817531168460846,
+                        0.7303867340087891,
+                        0.5590808987617493,
+                        1.0
+                    ],
+                    "wear_strength": 0.6179401874542236,
+                    "wear_start": 0.3700000047683716,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.18000006675720215,
+                    "wear_distortion_scale": 100.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.20000000298023224,
+                    "normal_use_uv2": 1.0
+                }
+            },
+            "name": "birch_tree",
+            "normalTexture": {
+                "index": 0,
+                "texCoord": 1
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                },
+                "metallicRoughnessTexture": {
+                    "index": 2
+                }
+            }
+        },
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "emissiveTexture": {
+                "index": 3
+            },
+            "extras": {
+                "material_info": {
+                    "albedo_color": [
+                        0.5028830170631409,
+                        0.42869099974632263,
+                        0.3324519991874695,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        0.6960119009017944,
+                        0.6065898537635803,
+                        0.5103245377540588,
+                        1.0
+                    ],
+                    "wear_strength": 0.5,
+                    "wear_start": 0.6799999475479126,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.12000000476837158,
+                    "wear_distortion_scale": 100.0,
+                    "emission_strength": 0.02500000037252903,
+                    "normal_strength": 0.5,
+                    "normal_use_uv2": 1.0
+                },
+                "asset_id": "8b905e91c50a4ea0"
+            },
+            "name": "tree_stump_fade",
+            "normalTexture": {
+                "index": 4,
+                "texCoord": 1
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 5
+                },
+                "metallicRoughnessTexture": {
+                    "index": 6
+                }
+            }
+        },
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        0.8280003070831299,
+                        0.7238391041755676,
+                        0.5799745917320251,
+                        1.0
+                    ],
+                    "wear_strength": 0.6179401874542236,
+                    "wear_start": 0.3700000047683716,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.18000006675720215,
+                    "wear_distortion_scale": 100.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.20000000298023224,
+                    "normal_use_uv2": 1.0
+                },
+                "asset_id": "486f0577aa6a073c"
+            },
+            "name": "birch_tree_fade",
+            "normalTexture": {
+                "index": 7,
+                "texCoord": 1
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 8
+                },
+                "metallicRoughnessTexture": {
+                    "index": 9
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "GEO-birch_tree_003.002",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2,
+                        "TEXCOORD_1": 3,
+                        "COLOR_0": 4
+                    },
+                    "indices": 5,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "GEO-birch_tree_003.003",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 6,
+                        "NORMAL": 7,
+                        "TEXCOORD_0": 8,
+                        "TEXCOORD_1": 9,
+                        "COLOR_0": 10
+                    },
+                    "indices": 11,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "NurbsPath.044",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 12,
+                        "NORMAL": 13,
+                        "TEXCOORD_0": 14,
+                        "TEXCOORD_1": 15,
+                        "COLOR_0": 16
+                    },
+                    "indices": 17,
+                    "material": 1
+                }
+            ]
+        },
+        {
+            "name": "GEO-birch_tree_003.006",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 18,
+                        "NORMAL": 19,
+                        "TEXCOORD_0": 20,
+                        "TEXCOORD_1": 21,
+                        "COLOR_0": 22
+                    },
+                    "indices": 23,
+                    "material": 2
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        },
+        {
+            "sampler": 0,
+            "source": 2
+        },
+        {
+            "sampler": 0,
+            "source": 3
+        },
+        {
+            "sampler": 0,
+            "source": 4
+        },
+        {
+            "sampler": 0,
+            "source": 3
+        },
+        {
+            "sampler": 0,
+            "source": 5
+        },
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 6
+        },
+        {
+            "sampler": 0,
+            "source": 2
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/textures/paper_rough_256.png"
+            },
+            "mimeType": "image/png",
+            "name": "paper_rough_256",
+            "uri": "../../../textures/paper_rough_256.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/birch_tree_albedo_01.png"
+            },
+            "mimeType": "image/png",
+            "name": "birch_tree_albedo_01",
+            "uri": "../../textures/birch_tree_albedo_01.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/birch_tree_roughness_01.png"
+            },
+            "mimeType": "image/png",
+            "name": "birch_tree_roughness_01",
+            "uri": "../../textures/birch_tree_roughness_01.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/tree_stumps_albedo_01.png"
+            },
+            "mimeType": "image/png",
+            "name": "tree_stumps_albedo_01",
+            "uri": "../../textures/tree_stumps_albedo_01.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/textures/paper_rough_medium-normal.png"
+            },
+            "mimeType": "image/png",
+            "name": "paper_rough_medium-normal",
+            "uri": "../../../textures/paper_rough_medium-normal.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/tree_stumps_roughness_01.png"
+            },
+            "mimeType": "image/png",
+            "name": "tree_stumps_roughness_01",
+            "uri": "../../textures/tree_stumps_roughness_01.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/birch_albedo_ripped.png"
+            },
+            "mimeType": "image/png",
+            "name": "birch_albedo_ripped",
+            "uri": "../../textures/birch_albedo_ripped.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 135,
+            "max": [
+                0.4840351939201355,
+                6.629621982574463,
+                0.32015714049339294
+            ],
+            "min": [
+                -0.26197803020477295,
+                -0.04611396789550781,
+                -0.2846890985965729
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 135,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 135,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5126,
+            "count": 135,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5123,
+            "count": 135,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5123,
+            "count": 567,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 6,
+            "componentType": 5126,
+            "count": 595,
+            "max": [
+                0.3854832053184509,
+                9.69324779510498,
+                0.29457423090934753
+            ],
+            "min": [
+                -0.23856540024280548,
+                -0.0673055648803711,
+                -0.4858488440513611
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 7,
+            "componentType": 5126,
+            "count": 595,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 8,
+            "componentType": 5126,
+            "count": 595,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 9,
+            "componentType": 5126,
+            "count": 595,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 10,
+            "componentType": 5123,
+            "count": 595,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 11,
+            "componentType": 5123,
+            "count": 3003,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 12,
+            "componentType": 5126,
+            "count": 223,
+            "max": [
+                0.17780202627182007,
+                0.09557842463254929,
+                0.24424698948860168
+            ],
+            "min": [
+                -0.21337775886058807,
+                -0.08347301930189133,
+                -0.19962473213672638
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 13,
+            "componentType": 5126,
+            "count": 223,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 14,
+            "componentType": 5126,
+            "count": 223,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 15,
+            "componentType": 5126,
+            "count": 223,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 16,
+            "componentType": 5123,
+            "count": 223,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 17,
+            "componentType": 5123,
+            "count": 429,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 18,
+            "componentType": 5126,
+            "count": 42,
+            "max": [
+                0.2952069342136383,
+                0.8601199388504028,
+                0.2886815369129181
+            ],
+            "min": [
+                -0.2326500117778778,
+                -0.06820236891508102,
+                -0.3037639856338501
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 19,
+            "componentType": 5126,
+            "count": 42,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 20,
+            "componentType": 5126,
+            "count": 42,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 21,
+            "componentType": 5126,
+            "count": 42,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 22,
+            "componentType": 5123,
+            "count": 42,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 23,
+            "componentType": 5123,
+            "count": 156,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 1620,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1620,
+            "byteOffset": 1620,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1080,
+            "byteOffset": 3240,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1080,
+            "byteOffset": 4320,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1080,
+            "byteOffset": 5400,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1134,
+            "byteOffset": 6480,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 7140,
+            "byteOffset": 7616,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 7140,
+            "byteOffset": 14756,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 4760,
+            "byteOffset": 21896,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 4760,
+            "byteOffset": 26656,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 4760,
+            "byteOffset": 31416,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 6006,
+            "byteOffset": 36176,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2676,
+            "byteOffset": 42184,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2676,
+            "byteOffset": 44860,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1784,
+            "byteOffset": 47536,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1784,
+            "byteOffset": 49320,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1784,
+            "byteOffset": 51104,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 858,
+            "byteOffset": 52888,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 504,
+            "byteOffset": 53748,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 504,
+            "byteOffset": 54252,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 336,
+            "byteOffset": 54756,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 336,
+            "byteOffset": 55092,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 336,
+            "byteOffset": 55428,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 312,
+            "byteOffset": 55764,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 56076,
+            "uri": "LI-birch_tree_005.bin"
+        }
+    ]
+}

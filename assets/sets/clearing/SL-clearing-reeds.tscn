@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://uuxt38nx8dmw"]
+
+[ext_resource type="PackedScene" uid="uid://bb8jp40idarqp" path="res://assets/sets/clearing/SL-clearing-reeds.gltf" id="1_csn60"]
+
+[node name="SL-clearing-reeds" type="Node3D"]
+
+[node name="SL-clearing-reeds-IMPORT" type="Area3D" parent="." instance=ExtResource("1_csn60")]

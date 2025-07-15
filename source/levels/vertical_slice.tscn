@@ -1,0 +1,331 @@
+[gd_scene load_steps=7 format=3 uid="uid://d05e648uhgdew"]
+
+[ext_resource type="PackedScene" uid="uid://6uq8ndnl1t7e" path="res://source/user_interface/old_mouse_cursor.tscn" id="1_12gwf"]
+[ext_resource type="PackedScene" uid="uid://d04q83ru8ixv5" path="res://source/entities/player.tscn" id="2_xggit"]
+
+[sub_resource type="Sky" id="Sky_12gwf"]
+
+[sub_resource type="Environment" id="Environment_12gwf"]
+background_mode = 1
+background_color = Color(0.28, 0.484, 1, 1)
+background_energy_multiplier = 0.5
+sky = SubResource("Sky_12gwf")
+tonemap_mode = 4
+ssr_enabled = true
+ssr_max_steps = 128
+ssr_fade_in = 0.166435
+ssr_fade_out = 1.51572
+ssao_enabled = true
+ssao_radius = 1.78
+ssao_intensity = 2.09
+ssao_power = 3.32871
+ssao_sharpness = 0.77
+ssao_light_affect = 0.75
+ssao_ao_channel_affect = 0.76
+sdfgi_enabled = true
+sdfgi_use_occlusion = true
+sdfgi_bounce_feedback = 1.0
+sdfgi_min_cell_size = 0.146484
+glow_enabled = true
+glow_strength = 0.71
+glow_bloom = 0.09
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.004
+volumetric_fog_albedo = Color(0.909804, 0.639216, 0.541176, 1)
+volumetric_fog_gi_inject = 10.13
+volumetric_fog_length = 70.0
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_12gwf"]
+dof_blur_far_distance = 13.0
+dof_blur_far_transition = -1.0
+dof_blur_near_enabled = true
+dof_blur_near_distance = 4.0
+dof_blur_amount = 0.3
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_12gwf"]
+
+[node name="VerticalSlice" type="Node3D"]
+
+[node name="UI" parent="." instance=ExtResource("1_12gwf")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_12gwf")
+camera_attributes = SubResource("CameraAttributesPractical_12gwf")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
+transform = Transform3D(-0.322514, -0.681189, 0.657241, -1.12946e-08, 0.694344, 0.719643, -0.946565, 0.232095, -0.223935, 0.129636, 4.42771, 0)
+light_color = Color(1, 0.847, 0.49, 1)
+light_energy = 2.0
+light_indirect_energy = 1.075
+light_volumetric_fog_energy = 0.0
+light_angular_distance = 4.06
+shadow_enabled = true
+shadow_bias = 0.04
+shadow_normal_bias = 6.456
+shadow_blur = 1.245
+directional_shadow_split_2 = 0.196
+directional_shadow_split_3 = 0.416
+directional_shadow_blend_splits = true
+directional_shadow_max_distance = 25.0
+
+[node name="ItemHighlighter" type="SpotLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -53.3795, 5.08594, 42.1154)
+light_color = Color(1, 0.713726, 0.588235, 1)
+light_indirect_energy = 0.618
+light_volumetric_fog_energy = 0.0
+light_specular = 0.0
+spot_range = 6.695
+spot_attenuation = 0.23
+spot_angle = 48.9168
+
+[node name="ItemHighlighter2" type="SpotLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 12.4424, 4.89722, 74.3537)
+light_color = Color(1, 0.713726, 0.588235, 1)
+light_indirect_energy = 0.618
+light_volumetric_fog_energy = 0.0
+light_specular = 0.0
+spot_range = 6.695
+spot_attenuation = 0.23
+spot_angle = 48.9168
+
+[node name="ItemHighlighter4" type="SpotLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 31.1721, 5.08594, -17.4558)
+light_color = Color(1, 0.713726, 0.588235, 1)
+light_indirect_energy = 0.618
+light_volumetric_fog_energy = 0.0
+light_specular = 0.0
+spot_range = 6.695
+spot_attenuation = 0.23
+spot_angle = 48.9168
+
+[node name="HighlightClearing" type="SpotLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -57.809, 6.93661, 43.421)
+light_color = Color(0.932299, 0.762363, 0.651901, 1)
+light_energy = 5.053
+light_specular = 0.0
+spot_range = 12.722
+spot_angle = 52.58
+
+[node name="HighlightClearing6" type="SpotLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -40.9928, 6.93661, 34.2639)
+light_color = Color(0.932299, 0.762363, 0.651901, 1)
+light_energy = 5.053
+light_specular = 0.0
+spot_range = 12.722
+spot_angle = 52.58
+
+[node name="HighlightClearing2" type="SpotLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -70.5887, 6.93661, 38.3858)
+light_color = Color(0.932299, 0.762363, 0.651901, 1)
+light_energy = 5.053
+light_specular = 0.0
+spot_range = 12.722
+spot_angle = 52.58
+
+[node name="HighlightClearing3" type="SpotLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -57.6626, 6.93661, 25.441)
+light_color = Color(0.932299, 0.762363, 0.651901, 1)
+light_energy = 5.053
+light_specular = 0.0
+spot_range = 12.722
+spot_angle = 52.58
+
+[node name="HighlightClearing4" type="SpotLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -44.6241, 6.93661, 23.5908)
+light_color = Color(0.932299, 0.762363, 0.651901, 1)
+light_energy = 5.053
+light_specular = 0.0
+spot_range = 12.722
+spot_angle = 52.58
+
+[node name="HighlightClearing5" type="SpotLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -32.0892, 6.93661, 43.5466)
+light_color = Color(0.932299, 0.762363, 0.651901, 1)
+light_energy = 14.359
+light_specular = 0.0
+spot_range = 20.579
+spot_angle = 52.58
+
+[node name="HighlightPond" type="SpotLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -6.38158, 6.93661, 50.7132)
+light_color = Color(0.932299, 0.762363, 0.651901, 1)
+light_energy = 14.359
+light_specular = 0.0
+spot_range = 20.579
+spot_angle = 52.58
+
+[node name="HighlightPond6" type="SpotLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 3.60916, 6.93661, 44.2248)
+light_color = Color(0.932299, 0.762363, 0.651901, 1)
+light_energy = 14.359
+light_specular = 0.0
+spot_range = 20.579
+spot_angle = 52.58
+
+[node name="HighlightPond7" type="SpotLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 7.36765, 6.93661, 59.9419)
+light_color = Color(0.932299, 0.762363, 0.651901, 1)
+light_energy = 14.359
+light_specular = 0.0
+spot_range = 20.579
+spot_angle = 52.58
+
+[node name="HighlightWillow" type="SpotLight3D" parent="WorldEnvironment"]
+transform = Transform3D(0.9871, -0.0284979, 0.157548, -0.160105, -0.175699, 0.971337, 3.72529e-09, -0.984031, -0.177995, 27.4232, 8.93424, 54.7869)
+light_color = Color(0.932299, 0.762363, 0.651901, 1)
+light_energy = 9.746
+light_specular = 0.0
+shadow_blur = 9.231
+spot_range = 20.579
+spot_angle = 17.68
+
+[node name="HighlightPond9" type="SpotLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 30.8675, 11.5792, 38.3519)
+light_color = Color(0.932299, 0.762363, 0.651901, 1)
+light_energy = 14.359
+light_specular = 0.0
+spot_range = 20.579
+spot_angle = 52.58
+
+[node name="HighlightHub" type="SpotLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 4.14825, 9.21301, -1.89692)
+light_color = Color(0.932299, 0.762363, 0.651901, 1)
+light_energy = 4.073
+light_specular = 0.0
+spot_range = 38.347
+spot_angle = 17.07
+
+[node name="HighlightHub6" type="SpotLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 33.6439, 11.6643, 7.00098)
+light_color = Color(0.932299, 0.762363, 0.651901, 1)
+light_energy = 14.359
+light_specular = 0.0
+spot_range = 38.347
+spot_angle = 74.62
+
+[node name="HighlightHub4" type="SpotLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 34.3005, 9.21301, -12.6557)
+light_color = Color(0.932299, 0.762363, 0.651901, 1)
+light_energy = 14.359
+light_specular = 0.0
+spot_range = 38.347
+spot_angle = 74.62
+
+[node name="HighlightHub5" type="SpotLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 47.1948, 9.21301, 0.735592)
+light_color = Color(0.932299, 0.762363, 0.651901, 1)
+light_energy = 14.359
+light_specular = 0.0
+spot_range = 38.347
+spot_angle = 74.62
+
+[node name="HighlightHub2" type="SpotLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -8.94128, 9.95722, 36.3309)
+light_color = Color(0.879914, 0.78283, 0.689642, 1)
+light_energy = 14.359
+light_specular = 0.0
+spot_range = 38.347
+spot_angle = 74.62
+
+[node name="HighlightHub3" type="SpotLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -5.31485, 9.95722, 14.6886)
+light_color = Color(0.879914, 0.78283, 0.689642, 1)
+light_energy = 14.359
+light_specular = 0.0
+spot_range = 38.347
+spot_angle = 74.62
+
+[node name="HighlightPond2" type="SpotLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 21.1867, 6.93661, 51.1989)
+light_color = Color(0.932299, 0.762363, 0.651901, 1)
+light_energy = 14.359
+light_specular = 0.0
+spot_range = 20.579
+spot_angle = 52.58
+
+[node name="HighlightPond3" type="SpotLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 13.5461, 8.64448, 31.5176)
+light_color = Color(0.932299, 0.762363, 0.651901, 1)
+light_energy = 14.359
+light_specular = 0.0
+spot_range = 20.579
+spot_angle = 52.58
+
+[node name="HighlightPond4" type="SpotLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 3.43027, 8.64448, 72.9972)
+light_color = Color(0.932299, 0.762363, 0.651901, 1)
+light_energy = 14.359
+light_specular = 0.0
+spot_range = 20.579
+spot_angle = 52.58
+
+[node name="HighlightPond5" type="SpotLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -20.9838, 8.64448, 64.4909)
+light_color = Color(0.932299, 0.762363, 0.651901, 1)
+light_energy = 14.359
+light_specular = 0.0
+spot_range = 20.579
+spot_angle = 52.58
+
+[node name="GroundCollider" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GroundCollider"]
+shape = SubResource("WorldBoundaryShape3D_12gwf")
+
+[node name="SE-vertical_slice" parent="."]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
+script = null
+
+[node name="Player" parent="." instance=ExtResource("2_xggit")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.68518, -5.72205e-06, 3.79242)
+maxmimum_leash_length = 6.0
+
+[node name="CharacterHighlighter" type="SpotLight3D" parent="Player/Camera" index="1"]
+transform = Transform3D(1, 0, 0, 0, -0.787269, 0.61661, 0, -0.61661, -0.787269, 0, 6.30823, -0.262598)
+light_color = Color(0.948706, 0.74199, 0.593707, 1)
+light_energy = 0.541
+light_indirect_energy = 0.618
+light_volumetric_fog_energy = 0.0
+light_specular = 0.0
+shadow_enabled = true
+shadow_blur = 6.579
+spot_range = 7.976
+spot_attenuation = 0.37
+spot_angle = 84.29
+spot_angle_attenuation = 0.965936
+
+[node name="CharacterDarkenBG" type="SpotLight3D" parent="Player/Camera" index="2"]
+transform = Transform3D(1, 0, 0, 0, -0.0267005, 0.999644, 0, -0.999644, -0.0267005, 4.21797, 6.4427, -8.66032)
+light_color = Color(0.714281, 0.814988, 0.805444, 1)
+light_indirect_energy = 0.618
+light_volumetric_fog_energy = 0.0
+light_negative = true
+light_specular = 0.0
+shadow_blur = 6.579
+spot_range = 13.653
+spot_attenuation = 0.39
+spot_angle = 87.21
+spot_angle_attenuation = 0.965936
+
+[node name="CharacterDarkenBG2" type="SpotLight3D" parent="Player/Camera" index="3"]
+transform = Transform3D(1, 0, 0, 0, -0.0267005, 0.999644, 0, -0.999644, -0.0267005, -7.63663, 6.4427, -8.66032)
+light_color = Color(0.713726, 0.815686, 0.803922, 1)
+light_indirect_energy = 0.618
+light_volumetric_fog_energy = 0.0
+light_negative = true
+light_specular = 0.0
+shadow_blur = 6.579
+spot_range = 13.653
+spot_attenuation = 0.39
+spot_angle = 87.21
+spot_angle_attenuation = 0.965936
+
+[editable path="Player"]

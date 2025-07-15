@@ -1,0 +1,40 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://dfvcvhxi0vth1"]
+
+[ext_resource type="Texture2D" uid="uid://ojvcfhyl4iuc" path="res://assets/props/snowman_emotes/textures/missing_nose/missing_nose_1.png" id="1_ue7cl"]
+[ext_resource type="Texture2D" uid="uid://5b56ycharrnt" path="res://assets/props/snowman_emotes/textures/missing_nose/missing_nose_3.png" id="1_vjg0a"]
+[ext_resource type="Texture2D" uid="uid://cpdtobnnqxh81" path="res://assets/props/snowman_emotes/textures/missing_nose/missing_nose_4.png" id="2_68mg1"]
+[ext_resource type="Texture2D" uid="uid://blxlxvw2plcb2" path="res://assets/props/snowman_emotes/textures/missing_nose/missing_nose_2.png" id="2_mr72g"]
+[ext_resource type="Texture2D" uid="uid://cvweveh3fs8es" path="res://assets/props/snowman_emotes/textures/missing_nose/missing_nose_5.png" id="5_8xm31"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 0.7,
+"texture": ExtResource("1_vjg0a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_68mg1")
+}],
+"loop": true,
+"name": &"In",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ue7cl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_mr72g")
+}],
+"loop": true,
+"name": &"Loop",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 0.5,
+"texture": ExtResource("5_8xm31")
+}],
+"loop": true,
+"name": &"Out",
+"speed": 5.0
+}]

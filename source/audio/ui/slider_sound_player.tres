@@ -1,0 +1,7 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://btcxm10jy7ann"]
+
+[ext_resource type="AudioStream" uid="uid://d14hvyjq64frn" path="res://assets/sfx/ui/UI_click-0.ogg" id="1_l417b"]
+
+[resource]
+streams_count = 1
+stream_0/stream = ExtResource("1_l417b")

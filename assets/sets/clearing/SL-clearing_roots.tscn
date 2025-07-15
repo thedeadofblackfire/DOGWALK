@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjj8q2jg8jlil"]
+
+[ext_resource type="PackedScene" path="res://assets/sets/clearing/SL-clearing_roots.gltf" id="1_r0aot"]
+
+[node name="SL-clearing_roots" type="Node3D"]
+
+[node name="SL-clearing_roots-IMPORT" type="Area3D" parent="." instance=ExtResource("1_r0aot")]

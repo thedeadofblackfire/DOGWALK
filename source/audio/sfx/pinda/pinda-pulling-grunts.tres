@@ -1,0 +1,17 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=6 format=3 uid="uid://05mihxvuclp"]
+
+[ext_resource type="AudioStream" uid="uid://by4vxltg1837i" path="res://assets/sfx/pinda/ACTN-pinda-grunt-pushing_2.ogg" id="1_f5jjq"]
+[ext_resource type="AudioStream" uid="uid://c2pmhpp24qmow" path="res://assets/sfx/pinda/ACTN-pinda-grunt-pushing_1.ogg" id="2_gtsqt"]
+[ext_resource type="AudioStream" uid="uid://ylqh68bfcamx" path="res://assets/sfx/pinda/ACTN-pinda-grunt-pushing.ogg" id="3_k38c5"]
+[ext_resource type="AudioStream" uid="uid://cxyk2qjyc7e3b" path="res://assets/sfx/pinda/LOOP-pause.ogg" id="4_gtsqt"]
+[ext_resource type="AudioStream" uid="uid://bdqqp410ji2uu" path="res://assets/sfx/pinda/ACTN-pinda-hmm-angry.ogg" id="5_k38c5"]
+
+[resource]
+random_pitch = 1.05
+streams_count = 5
+stream_0/stream = ExtResource("1_f5jjq")
+stream_1/stream = ExtResource("2_gtsqt")
+stream_2/stream = ExtResource("3_k38c5")
+stream_3/stream = ExtResource("4_gtsqt")
+stream_3/weight = 3.0
+stream_4/stream = ExtResource("5_k38c5")

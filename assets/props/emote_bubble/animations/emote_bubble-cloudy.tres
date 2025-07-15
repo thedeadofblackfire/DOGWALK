@@ -1,0 +1,80 @@
+[gd_resource type="SpriteFrames" load_steps=16 format=3 uid="uid://cp2aa2y5w2oej"]
+
+[ext_resource type="Texture2D" uid="uid://8fgbw6r1r3sb" path="res://assets/props/emote_bubble/animations/cloudy/cloudy_1.png" id="1_1v0a6"]
+[ext_resource type="Texture2D" uid="uid://daqwebt2t6qb5" path="res://assets/props/emote_bubble/animations/cloudy/cloudy_2.png" id="2_e4lmr"]
+[ext_resource type="Texture2D" uid="uid://bwhoo0l3p1vn3" path="res://assets/props/emote_bubble/animations/cloudy/cloudy_3.png" id="3_18rb5"]
+[ext_resource type="Texture2D" uid="uid://rhe4shv20acg" path="res://assets/props/emote_bubble/animations/cloudy/cloudy_4.png" id="4_pmypf"]
+[ext_resource type="Texture2D" uid="uid://c7oogsf4teaex" path="res://assets/props/emote_bubble/animations/cloudy/cloudy_5.png" id="5_whhlv"]
+[ext_resource type="Texture2D" uid="uid://bvwu1pcxrhr7y" path="res://assets/props/emote_bubble/animations/cloudy/cloudy_6.png" id="6_2srg2"]
+[ext_resource type="Texture2D" uid="uid://xqjt73x3iw7s" path="res://assets/props/emote_bubble/animations/cloudy/cloudy_7.png" id="7_nq5py"]
+[ext_resource type="Texture2D" uid="uid://c3d5uq8dtit7q" path="res://assets/props/emote_bubble/animations/cloudy/cloudy_8.png" id="8_vsiey"]
+[ext_resource type="Texture2D" uid="uid://cdlrgknvsen1i" path="res://assets/props/emote_bubble/animations/cloudy/cloudy_9.png" id="9_hsk4s"]
+[ext_resource type="Texture2D" uid="uid://cxlx5tmjaa3sf" path="res://assets/props/emote_bubble/animations/cloudy/cloudy_10.png" id="10_ajrnt"]
+[ext_resource type="Texture2D" uid="uid://cg4bdmkq5ppdq" path="res://assets/props/emote_bubble/animations/cloudy/cloudy_11.png" id="11_2srg2"]
+[ext_resource type="Texture2D" uid="uid://babjt2eo5ligy" path="res://assets/props/emote_bubble/animations/cloudy/cloudy_12.png" id="12_nq5py"]
+[ext_resource type="Texture2D" uid="uid://dy6lvmrnh5k50" path="res://assets/props/emote_bubble/animations/cloudy/cloudy_13.png" id="13_vsiey"]
+[ext_resource type="Texture2D" uid="uid://od8s8v17i6hi" path="res://assets/props/emote_bubble/animations/cloudy/cloudy_14.png" id="14_hsk4s"]
+[ext_resource type="Texture2D" uid="uid://bomgwmp0vval1" path="res://assets/props/emote_bubble/animations/cloudy/cloudy_15.png" id="15_ajrnt"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_1v0a6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_e4lmr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_18rb5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_pmypf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_whhlv")
+}],
+"loop": true,
+"name": &"In",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_2srg2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_nq5py")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_vsiey")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_hsk4s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ajrnt")
+}],
+"loop": true,
+"name": &"Loop",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_2srg2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_nq5py")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vsiey")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_hsk4s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_ajrnt")
+}],
+"loop": true,
+"name": &"Out",
+"speed": 6.0
+}]

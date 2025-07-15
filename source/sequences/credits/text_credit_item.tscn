@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://b148ij0p87wfd"]
+
+[ext_resource type="Script" uid="uid://c7wiphd6tldtg" path="res://source/sequences/credits/credit_item.gd" id="1_hpmba"]
+
+[node name="Credit" type="MarginContainer"]
+script = ExtResource("1_hpmba")
+has_role = false
+
+[node name="CreditList" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Text" type="Label" parent="CreditList"]
+layout_mode = 2
+text = "Text"
+horizontal_alignment = 1

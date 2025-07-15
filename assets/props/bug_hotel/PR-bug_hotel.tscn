@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2jdfv7fvy4jd"]
+
+[ext_resource type="PackedScene" uid="uid://b2ei3eo1jlmo6" path="res://assets/props/bug_hotel/PR-bug_hotel.gltf" id="1_vohua"]
+[ext_resource type="Script" uid="uid://bj34k0ajpsopu" path="res://source/obstacles/generic_obstacle.gd" id="2_5nfwq"]
+
+[node name="PR-bug_hotel" type="Node3D"]
+
+[node name="PR-bug_hotel-IMPORT" parent="." instance=ExtResource("1_vohua")]
+script = ExtResource("2_5nfwq")

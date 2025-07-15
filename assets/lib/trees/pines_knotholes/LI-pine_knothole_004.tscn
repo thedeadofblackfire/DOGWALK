@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://hhio5l5njqw5"]
+
+[ext_resource type="PackedScene" path="res://assets/lib/trees/pines_knotholes/LI-pine_knothole_004.gltf" id="1_pi7w1"]
+
+[node name="LI-pine_knothole_004" type="Node3D"]
+
+[node name="LI-pine_knothole_004-IMPORT" type="StaticBody3D" parent="." instance=ExtResource("1_pi7w1")]

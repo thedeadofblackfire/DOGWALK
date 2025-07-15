@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://5cp4ml4nwo70"]
+
+[ext_resource type="PackedScene" uid="uid://phfrvw5nq0sv" path="res://assets/sets/world/SL-world-pond.gltf" id="1_vdatv"]
+
+[node name="SL-world-pond" type="Node3D"]
+
+[node name="SL-world-pond-IMPORT" parent="." instance=ExtResource("1_vdatv")]

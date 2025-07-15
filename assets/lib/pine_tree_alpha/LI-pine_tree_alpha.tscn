@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c3mg72q3g1ve8"]
+
+[ext_resource type="PackedScene" path="res://assets/lib/pine_tree_alpha/LI-pine_tree_alpha.gltf" id="1_jxxpl"]
+
+[node name="LI-pine_tree_alpha" type="Node3D"]
+
+[node name="LI-pine_tree_alpha-IMPORT" type="Node3D" parent="." instance=ExtResource("1_jxxpl")]

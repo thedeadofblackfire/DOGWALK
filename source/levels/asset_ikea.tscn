@@ -1,0 +1,66 @@
+[gd_scene load_steps=8 format=3 uid="uid://ciev2x7m5jis6"]
+
+[ext_resource type="PackedScene" uid="uid://6uq8ndnl1t7e" path="res://source/user_interface/old_mouse_cursor.tscn" id="1_h3cbb"]
+[ext_resource type="PackedScene" uid="uid://q3pvev5biysk" path="res://assets/sets/asset_ikea/SE-asset_ikea.tscn" id="4_ybj1g"]
+[ext_resource type="PackedScene" uid="uid://d04q83ru8ixv5" path="res://source/entities/player.tscn" id="6_yfd23"]
+
+[sub_resource type="Sky" id="Sky_12gwf"]
+
+[sub_resource type="Environment" id="Environment_12gwf"]
+background_mode = 1
+background_color = Color(0.1, 0.355, 1, 1)
+sky = SubResource("Sky_12gwf")
+tonemap_mode = 4
+ssao_enabled = true
+ssil_enabled = true
+sdfgi_enabled = true
+sdfgi_use_occlusion = true
+glow_enabled = true
+glow_normalized = true
+glow_bloom = 0.12
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.01
+volumetric_fog_length = 70.0
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_12gwf"]
+dof_blur_far_enabled = true
+dof_blur_far_distance = 11.5
+dof_blur_far_transition = -1.0
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_12gwf"]
+
+[node name="VerticalSlice" type="Node3D"]
+
+[node name="UI" parent="." instance=ExtResource("1_h3cbb")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_12gwf")
+camera_attributes = SubResource("CameraAttributesPractical_12gwf")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
+transform = Transform3D(0.474503, 0.633469, -0.611199, -1.86265e-08, 0.694344, 0.719643, 0.880254, -0.341472, 0.329468, 0.129636, 4.42771, 0)
+light_color = Color(1, 0.847, 0.49, 1)
+light_energy = 2.0
+light_volumetric_fog_energy = 2.0
+shadow_enabled = true
+shadow_bias = 0.02
+
+[node name="OmniLight3D" type="OmniLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.48293, 2.85932, -8.33892)
+light_color = Color(1, 0.647333, 0.54, 1)
+light_energy = 1.965
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.1337, 3.18853, 5.13229)
+light_color = Color(1, 0.647333, 0.54, 1)
+light_energy = 1.965
+omni_range = 4.231
+
+[node name="GroundCollider" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GroundCollider"]
+shape = SubResource("WorldBoundaryShape3D_12gwf")
+
+[node name="SE-asset_ikea" parent="." instance=ExtResource("4_ybj1g")]
+
+[node name="Player" parent="." instance=ExtResource("6_yfd23")]

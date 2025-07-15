@@ -1,0 +1,9 @@
+[gd_resource type="AnimationLibrary" load_steps=2 format=3 uid="uid://yvc8u1mqjghx"]
+
+[ext_resource type="Animation" uid="uid://dcvc8vnxbpa3k" path="res://animations/hub/CINE-chars-outro/CINE-pinda_camera-outro.tres" id="2_yixgu"]
+
+[resource]
+resource_name = "PR-pinda_camera Animation Library"
+_data = {
+&"CINE-pinda_camera-outro": ExtResource("2_yixgu")
+}

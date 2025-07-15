@@ -1,0 +1,390 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.14",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 2,
+                    "append_parent_collection": 0,
+                    "asset_name": "PR-pinda_camera"
+                },
+                "asset_type": "ASSET",
+                "root_type": "PASS_THROUGH",
+                "asset_id": "2d69b37ce1521f39"
+            },
+            "name": "PR-pinda_camera",
+            "nodes": [
+                9
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "button",
+            "rotation": [
+                0,
+                1.1920927533992653e-07,
+                0,
+                1
+            ],
+            "scale": [
+                1,
+                0.9999999403953552,
+                1
+            ],
+            "translation": [
+                0.07318299263715744,
+                0.1085360199213028,
+                0
+            ]
+        },
+        {
+            "name": "lanyard-3",
+            "rotation": [
+                1.6778018974150655e-08,
+                2.078586192055809e-08,
+                -0.09027980268001556,
+                0.995916485786438
+            ],
+            "scale": [
+                0.9999999403953552,
+                1,
+                1
+            ],
+            "translation": [
+                -3.775976864517361e-09,
+                0.059009432792663574,
+                1.3501733064913424e-10
+            ]
+        },
+        {
+            "children": [
+                1
+            ],
+            "name": "lanyard-2",
+            "rotation": [
+                -0.0042358338832855225,
+                -0.000709032523445785,
+                -0.1651008427143097,
+                0.9862673282623291
+            ],
+            "translation": [
+                -1.5265644304207626e-10,
+                0.0625111386179924,
+                4.0745362639427185e-10
+            ]
+        },
+        {
+            "children": [
+                2
+            ],
+            "name": "lanyard-1",
+            "rotation": [
+                -0.9709333181381226,
+                0.2393118292093277,
+                -0.0010277467081323266,
+                0.004169887863099575
+            ],
+            "scale": [
+                1.0000009536743164,
+                1.000000238418579,
+                0.9999999403953552
+            ],
+            "translation": [
+                -0.1496955007314682,
+                -0.12576961517333984,
+                0.004463004879653454
+            ]
+        },
+        {
+            "children": [
+                0,
+                3
+            ],
+            "name": "pivot"
+        },
+        {
+            "children": [
+                4
+            ],
+            "name": "camera"
+        },
+        {
+            "children": [
+                5
+            ],
+            "name": "subroot"
+        },
+        {
+            "children": [
+                6
+            ],
+            "name": "root"
+        },
+        {
+            "mesh": 0,
+            "name": "GEO-pinda_camera",
+            "skin": 0
+        },
+        {
+            "children": [
+                8,
+                7
+            ],
+            "name": "RIG-pinda_camera"
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "e1b255c9c01c5abb",
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "roughness": 0.800000011920929,
+                    "metallic": 0.20000000298023224,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "wear_strength": 0.0,
+                    "wear_start": 0.0,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.5,
+                    "wear_distortion_scale": 100.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_map": [
+                        0.5,
+                        0.5,
+                        1.0,
+                        1.0
+                    ],
+                    "normal_strength": 1.0
+                }
+            },
+            "name": "pinda_camera",
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 0
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Cube",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2,
+                        "COLOR_0": 3,
+                        "COLOR_1": 4,
+                        "JOINTS_0": 5,
+                        "WEIGHTS_0": 6
+                    },
+                    "indices": 7,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/props/pinda_camera/textures/pinda_camera-albedo.png"
+            },
+            "mimeType": "image/png",
+            "name": "pinda_camera-albedo",
+            "uri": "textures/pinda_camera-albedo.png"
+        }
+    ],
+    "skins": [
+        {
+            "inverseBindMatrices": 8,
+            "joints": [
+                7,
+                6,
+                5,
+                4,
+                0,
+                3,
+                2,
+                1
+            ],
+            "name": "RIG-pinda_camera"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 560,
+            "max": [
+                0.17921459674835205,
+                0.16198430955410004,
+                0.10866212844848633
+            ],
+            "min": [
+                -0.2275281697511673,
+                -0.3348607122898102,
+                -0.057612963020801544
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 560,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 560,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5121,
+            "count": 560,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5123,
+            "count": 560,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5121,
+            "count": 560,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 6,
+            "componentType": 5126,
+            "count": 560,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 7,
+            "componentType": 5123,
+            "count": 2322,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 8,
+            "componentType": 5126,
+            "count": 8,
+            "type": "MAT4"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 6720,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 6720,
+            "byteOffset": 6720,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 4480,
+            "byteOffset": 13440,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2240,
+            "byteOffset": 17920,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 4480,
+            "byteOffset": 20160,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2240,
+            "byteOffset": 24640,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 8960,
+            "byteOffset": 26880,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 4644,
+            "byteOffset": 35840,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 512,
+            "byteOffset": 40484
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 40996,
+            "uri": "PR-pinda_camera.bin"
+        }
+    ]
+}

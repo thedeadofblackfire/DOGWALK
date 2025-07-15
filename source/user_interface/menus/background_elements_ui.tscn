@@ -1,0 +1,84 @@
+[gd_scene load_steps=3 format=3 uid="uid://ceeuq1mr33ivr"]
+
+[ext_resource type="Script" uid="uid://bw0y50aoiqp51" path="res://source/sequences/background_elements/background_elements_ui.gd" id="1_lab5v"]
+[ext_resource type="Texture2D" uid="uid://bgxcebnpy7ge1" path="res://assets/textures/menu/user_interface/settings_backdrop.png" id="2_s5g7x"]
+
+[node name="BackgroundElementsUI" type="Control" node_paths=PackedStringArray("making_of", "pause", "settings", "video_container")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lab5v")
+making_of = NodePath("MakingOf")
+pause = NodePath("Pause")
+settings = NodePath("Settings")
+video_container = NodePath("MakingOf/AspectRatioContainer")
+metadata/_custom_type_script = "uid://bw0y50aoiqp51"
+metadata/_edit_vertical_guides_ = [960.0]
+
+[node name="MakingOf" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="MakingOf"]
+process_mode = 3
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+ratio = 1.7778
+stretch_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="MakingOf/AspectRatioContainer"]
+layout_mode = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Pause" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Pause"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.78, 0.7488, 0.702, 0.588235)
+
+[node name="Settings" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SettingsBackground" type="TextureRect" parent="Settings"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -806.0
+offset_top = -705.0
+offset_right = 1754.0
+offset_bottom = 735.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(806, 705)
+texture = ExtResource("2_s5g7x")
+stretch_mode = 2

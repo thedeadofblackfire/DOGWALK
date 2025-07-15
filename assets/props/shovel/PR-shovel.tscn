@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cmel4270aacuc"]
+
+[ext_resource type="PackedScene" uid="uid://bqh52x60vclpu" path="res://assets/props/shovel/PR-shovel.gltf" id="1_bo7ss"]
+[ext_resource type="Script" uid="uid://cgvpqscmnb7oi" path="res://source/utility/collectable_item.gd" id="2_iakxk"]
+[ext_resource type="AnimationLibrary" uid="uid://c5lr1hq3sbxyv" path="res://assets/props/shovel/PR-shovel-anim_lib.tres" id="3_0guil"]
+
+[node name="PR-shovel" type="Node3D"]
+
+[node name="PR-shovel-IMPORT" parent="." node_paths=PackedStringArray("collision_shape", "skeleton", "anim_player") instance=ExtResource("1_bo7ss")]
+script = ExtResource("2_iakxk")
+item_id = 13
+collision_shape = NodePath("COL-collision_primitive")
+skeleton = NodePath("RIG-shovel/Skeleton3D")
+anim_player = NodePath("../AnimationPlayer")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../PR-shovel-IMPORT")
+libraries = {
+&"PR-shovel-anim_lib": ExtResource("3_0guil")
+}

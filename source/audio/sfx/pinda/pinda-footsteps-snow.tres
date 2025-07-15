@@ -1,0 +1,7 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://cxsd6vd54lxf1"]
+
+[ext_resource type="AudioStream" uid="uid://doxfth0nyobrt" path="res://assets/sfx/pinda/LOOP-pinda-footstep-snow-0.ogg" id="1_xlcld"]
+
+[resource]
+streams_count = 1
+stream_0/stream = ExtResource("1_xlcld")

@@ -1,0 +1,211 @@
+[gd_resource type="AnimationNodeStateMachine" load_steps=59 format=3 uid="uid://b84pavhgdlape"]
+
+[ext_resource type="AnimationNodeBlendTree" uid="uid://clp7cxakg1js2" path="res://source/entities/player_entities/chocomel_animation_tree/chocomel_animtree_movement.tres" id="2_0cusv"]
+[ext_resource type="AnimationNodeStateMachine" uid="uid://be6ar2pqw8mpp" path="res://source/entities/player_entities/chocomel_animation_tree/chocomel_animtree_idle2.tres" id="2_lalah"]
+[ext_resource type="AnimationNodeBlendSpace1D" uid="uid://b1i7q2e10vf60" path="res://source/entities/player_entities/chocomel_animation_tree/petting_loops_blend_space_1d.tres" id="3_0cusv"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_4qmk7"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_1a4tn"]
+transitions = ["Start", "End", SubResource("AnimationNodeStateMachineTransition_4qmk7")]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_s5fuj"]
+animation = &"Chocomel-anim_lib/LOOP-chocomel-dig"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_16iii"]
+animation = &"Chocomel-anim_lib/CINE-chocomel-outro"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_cu0ot"]
+animation = &"Chocomel-anim_lib/SYNC-chocomel-sit_lay"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_7m4xn"]
+animation = &"Chocomel-anim_lib/SYNC-chocomel-stand_lay_crying"
+
+[sub_resource type="AnimationNodeBlendSpace1D" id="AnimationNodeBlendSpace1D_khapm"]
+blend_point_0/node = SubResource("AnimationNodeAnimation_cu0ot")
+blend_point_0/pos = 0.0
+blend_point_1/node = SubResource("AnimationNodeAnimation_7m4xn")
+blend_point_1/pos = 1.0
+blend_mode = 1
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_0cusv"]
+animation = &"Chocomel-anim_lib/SYNC-chocomel-licking"
+
+[sub_resource type="AnimationNodeTimeSeek" id="AnimationNodeTimeSeek_lalah"]
+
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_31wyo"]
+graph_offset = Vector2(-753, 83)
+"nodes/Petting Loops BlendSpace1D/node" = ExtResource("3_0cusv")
+"nodes/Petting Loops BlendSpace1D/position" = Vector2(-360, 140)
+nodes/TimeSeek/node = SubResource("AnimationNodeTimeSeek_lalah")
+nodes/TimeSeek/position = Vector2(40, 140)
+node_connections = [&"TimeSeek", 0, &"Petting Loops BlendSpace1D", &"output", 0, &"TimeSeek"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ll55u"]
+animation = &"Chocomel-anim_lib/LOOP-chocomel-pulling"
+
+[sub_resource type="AnimationNodeTimeScale" id="AnimationNodeTimeScale_31wyo"]
+
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_lalah"]
+graph_offset = Vector2(-720, -16)
+"nodes/Pulling anim/node" = SubResource("AnimationNodeAnimation_ll55u")
+"nodes/Pulling anim/position" = Vector2(-400, 140)
+"nodes/Time Scale/node" = SubResource("AnimationNodeTimeScale_31wyo")
+"nodes/Time Scale/position" = Vector2(60, 140)
+node_connections = [&"Time Scale", 0, &"Pulling anim", &"output", 0, &"Time Scale"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_xps8t"]
+animation = &"Chocomel-anim_lib/SYNC-chocomel-push_slowly"
+
+[sub_resource type="AnimationNodeTimeScale" id="AnimationNodeTimeScale_s2xwe"]
+
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_nrs76"]
+graph_offset = Vector2(-675.66, -55.36)
+"nodes/Pushing Pinda/node" = SubResource("AnimationNodeAnimation_xps8t")
+"nodes/Pushing Pinda/position" = Vector2(-400, 140)
+"nodes/Speed Scale/node" = SubResource("AnimationNodeTimeScale_s2xwe")
+"nodes/Speed Scale/position" = Vector2(80, 140)
+node_connections = [&"Speed Scale", 0, &"Pushing Pinda", &"output", 0, &"Speed Scale"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_xg0c7"]
+animation = &"Chocomel-anim_lib/LOOP-chocomel-pushing"
+
+[sub_resource type="AnimationNodeTimeScale" id="AnimationNodeTimeScale_0mwws"]
+
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_ll55u"]
+graph_offset = Vector2(-675, -34)
+nodes/Pushing/node = SubResource("AnimationNodeAnimation_xg0c7")
+nodes/Pushing/position = Vector2(-300, 160)
+"nodes/Time Scale/node" = SubResource("AnimationNodeTimeScale_0mwws")
+"nodes/Time Scale/position" = Vector2(120, 140)
+node_connections = [&"Time Scale", 0, &"Pushing", &"output", 0, &"Time Scale"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_nrs76"]
+animation = &"Chocomel-anim_lib/SYNC-chocomel-treat"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_lalah"]
+animation = &"Chocomel-anim_lib/LOOP-chocomel-sleeping"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_0mwws"]
+animation = &"Chocomel-anim_lib/SYNC-chocomel-snuggle"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_11vu4"]
+animation = &"Chocomel-anim_lib/SYNC-chocomel-stand"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_s2xwe"]
+animation = &"Chocomel-anim_lib/SYNC-chocomel-superlick"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_31wyo"]
+animation = &"Chocomel-anim_lib/ACTN-chocomel-wake_up"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ll55u"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_31wyo"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_xg0c7"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_cu0ot"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_7m4xn"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_khapm"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_11vu4"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_s5fuj"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_0cusv"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_lalah"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_nrs76"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_7opdo"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_0jqsh"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_5vg6w"]
+switch_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_xps8t"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_s2xwe"]
+switch_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_0mwws"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_16iii"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_2ub50"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_vdkr7"]
+switch_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_bkmbb"]
+switch_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_okd48"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_1a4tn"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_58y6e"]
+switch_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_qwceg"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_t4mee"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_jij1h"]
+switch_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_y7jhc"]
+switch_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_orhur"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_w8xbq"]
+switch_mode = 2
+
+[resource]
+states/(interactions)/node = SubResource("AnimationNodeStateMachine_1a4tn")
+states/(interactions)/position = Vector2(935, 107)
+states/Digging/node = SubResource("AnimationNodeAnimation_s5fuj")
+states/Digging/position = Vector2(436, 233)
+states/End/position = Vector2(-39, 176)
+states/Ending/node = SubResource("AnimationNodeAnimation_16iii")
+states/Ending/position = Vector2(194, 176)
+states/Idle/node = ExtResource("2_lalah")
+states/Idle/position = Vector2(436, 107)
+"states/Lay Down/node" = SubResource("AnimationNodeBlendSpace1D_khapm")
+"states/Lay Down/position" = Vector2(935, 19)
+"states/Licking Pinda/node" = SubResource("AnimationNodeAnimation_0cusv")
+"states/Licking Pinda/position" = Vector2(935, 223)
+states/Moving/node = ExtResource("2_0cusv")
+states/Moving/position = Vector2(436, -1)
+"states/Petting Loops/node" = SubResource("AnimationNodeBlendTree_31wyo")
+"states/Petting Loops/position" = Vector2(756, 19)
+states/Pulling/node = SubResource("AnimationNodeBlendTree_lalah")
+states/Pulling/position = Vector2(583, -116.176)
+states/Pushing/node = SubResource("AnimationNodeBlendTree_ll55u")
+states/Pushing/position = Vector2(436, -116.176)
+"states/Pushing Pinda/node" = SubResource("AnimationNodeBlendTree_nrs76")
+"states/Pushing Pinda/position" = Vector2(263, -116.176)
+states/Reward/node = SubResource("AnimationNodeAnimation_nrs76")
+states/Reward/position = Vector2(1104, 107)
+states/Sleeping/node = SubResource("AnimationNodeAnimation_lalah")
+states/Sleeping/position = Vector2(38, -1)
+states/Snuggle/node = SubResource("AnimationNodeAnimation_0mwws")
+states/Snuggle/position = Vector2(800, 223)
+"states/Stand Up/node" = SubResource("AnimationNodeAnimation_11vu4")
+"states/Stand Up/position" = Vector2(591, 19)
+states/Start/position = Vector2(-39, 107)
+states/Superlick/node = SubResource("AnimationNodeAnimation_s2xwe")
+states/Superlick/position = Vector2(1089, 223)
+"states/Wake Up/node" = SubResource("AnimationNodeAnimation_31wyo")
+"states/Wake Up/position" = Vector2(38, -76.176)
+transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition_ll55u"), "Moving", "Pushing Pinda", SubResource("AnimationNodeStateMachineTransition_31wyo"), "Moving", "Pushing", SubResource("AnimationNodeStateMachineTransition_xg0c7"), "Moving", "Pulling", SubResource("AnimationNodeStateMachineTransition_cu0ot"), "Pulling", "Moving", SubResource("AnimationNodeStateMachineTransition_7m4xn"), "Pushing", "Moving", SubResource("AnimationNodeStateMachineTransition_khapm"), "Pushing Pinda", "Moving", SubResource("AnimationNodeStateMachineTransition_11vu4"), "Moving", "Idle", SubResource("AnimationNodeStateMachineTransition_s5fuj"), "Idle", "Moving", SubResource("AnimationNodeStateMachineTransition_0cusv"), "Idle", "Digging", SubResource("AnimationNodeStateMachineTransition_lalah"), "Digging", "Idle", SubResource("AnimationNodeStateMachineTransition_nrs76"), "Idle", "Sleeping", SubResource("AnimationNodeStateMachineTransition_7opdo"), "Sleeping", "Wake Up", SubResource("AnimationNodeStateMachineTransition_0jqsh"), "Wake Up", "Idle", SubResource("AnimationNodeStateMachineTransition_5vg6w"), "(interactions)", "Snuggle", SubResource("AnimationNodeStateMachineTransition_xps8t"), "Snuggle", "(interactions)", SubResource("AnimationNodeStateMachineTransition_s2xwe"), "(interactions)", "Idle", SubResource("AnimationNodeStateMachineTransition_0mwws"), "Idle", "(interactions)", SubResource("AnimationNodeStateMachineTransition_16iii"), "(interactions)", "Superlick", SubResource("AnimationNodeStateMachineTransition_2ub50"), "Superlick", "(interactions)", SubResource("AnimationNodeStateMachineTransition_vdkr7"), "Licking Pinda", "(interactions)", SubResource("AnimationNodeStateMachineTransition_bkmbb"), "(interactions)", "Licking Pinda", SubResource("AnimationNodeStateMachineTransition_okd48"), "(interactions)", "Reward", SubResource("AnimationNodeStateMachineTransition_1a4tn"), "Reward", "(interactions)", SubResource("AnimationNodeStateMachineTransition_58y6e"), "Idle", "Ending", SubResource("AnimationNodeStateMachineTransition_qwceg"), "Ending", "End", SubResource("AnimationNodeStateMachineTransition_t4mee"), "Stand Up", "Idle", SubResource("AnimationNodeStateMachineTransition_jij1h"), "Petting Loops", "Stand Up", SubResource("AnimationNodeStateMachineTransition_y7jhc"), "(interactions)", "Lay Down", SubResource("AnimationNodeStateMachineTransition_orhur"), "Lay Down", "Petting Loops", SubResource("AnimationNodeStateMachineTransition_w8xbq")]
+graph_offset = Vector2(67, -89.176)

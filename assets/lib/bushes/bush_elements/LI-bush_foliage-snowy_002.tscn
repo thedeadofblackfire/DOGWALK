@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://d4ffuhl2lo35n"]
+
+[ext_resource type="PackedScene" uid="uid://boy8biv3dc8b8" path="res://assets/lib/bushes/bush_elements/LI-bush_foliage-snowy_002.gltf" id="1_we2xa"]
+
+[node name="LI-bush_foliage-snowy_002" type="Node3D"]
+
+[node name="LI-bush_foliage-snowy_002-IMPORT" type="StaticBody3D" parent="." instance=ExtResource("1_we2xa")]

@@ -1,0 +1,11 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=3 format=3 uid="uid://dlvprflfeebyd"]
+
+[ext_resource type="AudioStream" uid="uid://ca03686n0ihlb" path="res://assets/sfx/pinda/LOOP-pinda-walk-0.ogg" id="1_ismth"]
+[ext_resource type="AudioStream" uid="uid://boqh1xxgrymhn" path="res://assets/sfx/pinda/LOOP-pinda-walk-1.ogg" id="2_vu6d2"]
+
+[resource]
+random_pitch = 1.05
+random_volume_offset_db = 0.2
+streams_count = 2
+stream_0/stream = ExtResource("1_ismth")
+stream_1/stream = ExtResource("2_vu6d2")

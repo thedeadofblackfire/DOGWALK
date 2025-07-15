@@ -1,0 +1,405 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 2,
+                    "append_parent_collection": 1,
+                    "asset_name": "LI-root_02"
+                },
+                "asset_type": "ASSET",
+                "root_type": "PASS_THROUGH",
+                "asset_id": "7bb1434f1706b4c6"
+            },
+            "name": "LI-root_02",
+            "nodes": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "mesh": 0,
+            "name": "GEO-root_02"
+        },
+        {
+            "extras": {
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.11599999666213989,
+                    "height": 0.8720000982284546,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.003",
+            "rotation": [
+                0.019430533051490784,
+                0.019430529326200485,
+                0.7068396806716919,
+                0.7068398594856262
+            ],
+            "translation": [
+                -0.08873933553695679,
+                0.025066953152418137,
+                0.009382721036672592
+            ]
+        },
+        {
+            "extras": {
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.09699999541044235,
+                    "height": 0.5390000939369202,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.004",
+            "rotation": [
+                -0.11994995176792145,
+                -0.12129246443510056,
+                0.6975954174995422,
+                0.6958885192871094
+            ],
+            "translation": [
+                0.5462253093719482,
+                0.03944756090641022,
+                0.0010268045589327812
+            ]
+        },
+        {
+            "extras": {
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.05299999192357063,
+                    "height": 0.32300007343292236,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.005",
+            "rotation": [
+                -0.15754511952400208,
+                -0.15729719400405884,
+                0.699532151222229,
+                0.6790375113487244
+            ],
+            "translation": [
+                0.19996464252471924,
+                0.051761481910943985,
+                0.08216530084609985
+            ]
+        },
+        {
+            "extras": {
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.05299999192357063,
+                    "height": 0.32300007343292236,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.006",
+            "rotation": [
+                -0.24691933393478394,
+                -0.19892583787441254,
+                0.7931262254714966,
+                0.5200099945068359
+            ],
+            "translation": [
+                0.6987605094909668,
+                0.19180291891098022,
+                0.10587342083454132
+            ]
+        },
+        {
+            "extras": {
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.03599999099969864,
+                    "height": 0.17700006067752838,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.007",
+            "rotation": [
+                -0.30693483352661133,
+                -0.12574881315231323,
+                0.9123114347457886,
+                0.24013809859752655
+            ],
+            "translation": [
+                0.7014489769935608,
+                -0.049524880945682526,
+                0.07426508516073227
+            ]
+        },
+        {
+            "extras": {
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.07499998807907104,
+                    "height": 0.17700006067752838,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.008",
+            "rotation": [
+                0.2911921441555023,
+                0.1506456881761551,
+                -0.8914899826049805,
+                0.31266412138938904
+            ],
+            "translation": [
+                0.821117639541626,
+                -0.0424899123609066,
+                0.06396836042404175
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "72b9b7131c134000",
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "roughness": 0.5,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        0.5250983238220215,
+                        0.5005860924720764,
+                        0.4895072281360626,
+                        1.0
+                    ],
+                    "wear_strength": 0.0,
+                    "wear_start": 0.0,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.5,
+                    "wear_distortion_scale": 100.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 1.0,
+                    "normal_use_uv2": 0.0
+                }
+            },
+            "name": "roots",
+            "normalTexture": {
+                "index": 0
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Cube.001",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2,
+                        "COLOR_0": 3,
+                        "COLOR_1": 4
+                    },
+                    "indices": 5,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/roots_simple-normal.png"
+            },
+            "mimeType": "image/png",
+            "name": "roots_simple-normal",
+            "uri": "../../textures/roots_simple-normal.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/roots_simple-albedo.png"
+            },
+            "mimeType": "image/png",
+            "name": "roots_simple-albedo",
+            "uri": "../../textures/roots_simple-albedo.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 270,
+            "max": [
+                0.8906183242797852,
+                0.2602783441543579,
+                0.2041492760181427
+            ],
+            "min": [
+                -0.515643835067749,
+                -0.14173591136932373,
+                -0.1142837330698967
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 270,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 270,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5121,
+            "count": 270,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5123,
+            "count": 270,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5123,
+            "count": 768,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 3240,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 3240,
+            "byteOffset": 3240,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2160,
+            "byteOffset": 6480,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1080,
+            "byteOffset": 8640,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2160,
+            "byteOffset": 9720,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1536,
+            "byteOffset": 11880,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 13416,
+            "uri": "LI-root_02.bin"
+        }
+    ]
+}

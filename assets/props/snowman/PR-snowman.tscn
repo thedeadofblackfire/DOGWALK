@@ -1,0 +1,106 @@
+[gd_scene load_steps=20 format=3 uid="uid://lm1mcout5ae3"]
+
+[ext_resource type="PackedScene" uid="uid://dwka3mtl82521" path="res://assets/props/snowman/PR-snowman.gltf" id="1_a1dic"]
+[ext_resource type="Script" uid="uid://cetdxt04ggxm8" path="res://source/entities/snowman.gd" id="2_awioy"]
+[ext_resource type="PackedScene" uid="uid://cpmfxpiw03nlp" path="res://assets/props/snowman_emotes/PR-snowman_emotes.tscn" id="3_kuhpv"]
+[ext_resource type="AnimationLibrary" uid="uid://ckyykpex468sm" path="res://assets/props/snowman/PR-snowman-anim_lib.tres" id="4_c34a2"]
+[ext_resource type="PackedScene" uid="uid://cn48a7exjspdl" path="res://source/entities/player_entities/emote_bubble.tscn" id="4_f0ai3"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_f0ai3"]
+animation = &"PR-snowman-anim_lib/CINE-snowman-attach_branch"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_5bfdj"]
+animation = &"PR-snowman-anim_lib/SYNC-snowman-attach_rock"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_w3f1n"]
+animation = &"PR-snowman-anim_lib/CINE-snowman-attach_shovel"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_qovvi"]
+animation = &"PR-snowman-anim_lib/POSE-snowman-snowman_shovel"
+
+[sub_resource type="AnimationNodeBlendSpace1D" id="AnimationNodeBlendSpace1D_c34a2"]
+blend_mode = 1
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_c34a2"]
+animation = &"PR-snowman-anim_lib/POSE-snowman-intro"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_w3f1n"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_qovvi"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_5bfdj"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_imn0j"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_c34a2"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_3r4sk"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_gf2jm"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_f0ai3"]
+"states/Attach Branch/node" = SubResource("AnimationNodeAnimation_f0ai3")
+"states/Attach Branch/position" = Vector2(224, 13)
+"states/Attach Rock/node" = SubResource("AnimationNodeAnimation_5bfdj")
+"states/Attach Rock/position" = Vector2(224, -74)
+"states/Attach Shovel/node" = SubResource("AnimationNodeAnimation_w3f1n")
+"states/Attach Shovel/position" = Vector2(224.667, 104.667)
+states/End/position = Vector2(489, 13)
+states/Idle/node = SubResource("AnimationNodeBlendSpace1D_c34a2")
+states/Idle/position = Vector2(67, 13)
+"states/Idle with Shovel/node" = SubResource("AnimationNodeAnimation_qovvi")
+"states/Idle with Shovel/position" = Vector2(223.333, 200)
+states/Intro/node = SubResource("AnimationNodeAnimation_c34a2")
+states/Intro/position = Vector2(67, -74)
+states/Start/position = Vector2(-152.333, 13.7778)
+transitions = ["Intro", "Attach Rock", SubResource("AnimationNodeStateMachineTransition_w3f1n"), "Attach Rock", "Intro", SubResource("AnimationNodeStateMachineTransition_qovvi"), "Attach Rock", "Attach Branch", SubResource("AnimationNodeStateMachineTransition_5bfdj"), "Start", "Idle", SubResource("AnimationNodeStateMachineTransition_imn0j"), "Idle", "Intro", SubResource("AnimationNodeStateMachineTransition_c34a2"), "Attach Branch", "Attach Shovel", SubResource("AnimationNodeStateMachineTransition_3r4sk"), "Attach Shovel", "Idle with Shovel", SubResource("AnimationNodeStateMachineTransition_gf2jm")]
+graph_offset = Vector2(-455, -183.325)
+
+[node name="PR-snowman" type="Node3D"]
+
+[node name="PR-snowman-IMPORT" parent="." node_paths=PackedStringArray("skeleton", "animation_tree", "emote_bubble_hat", "emote_bubble_nose", "emote_bubble_cane") groups=["Snowman"] instance=ExtResource("1_a1dic")]
+collision_layer = 2
+collision_mask = 12
+script = ExtResource("2_awioy")
+skeleton = NodePath("RIG-Snowman/Skeleton3D")
+animation_tree = NodePath("../AnimationTree")
+emote_bubble_hat = NodePath("../PR-snowman_emotes")
+emote_bubble_nose = NodePath("../PR-snowman_emotes_nose")
+emote_bubble_cane = NodePath("../PR-snowman_emotes_cane")
+
+[node name="PR-snowman_emotes" parent="." node_paths=PackedStringArray("character") instance=ExtResource("3_kuhpv")]
+character = NodePath("../PR-snowman-IMPORT")
+parent_to_head_bone = false
+orient_to_camera = false
+
+[node name="PR-snowman_emotes_nose" parent="." node_paths=PackedStringArray("character") instance=ExtResource("3_kuhpv")]
+character = NodePath("../PR-snowman-IMPORT")
+parent_to_head_bone = false
+orient_to_camera = false
+
+[node name="PR-snowman_emotes_cane" parent="." node_paths=PackedStringArray("character") instance=ExtResource("3_kuhpv")]
+character = NodePath("../PR-snowman-IMPORT")
+parent_to_head_bone = false
+orient_to_camera = false
+
+[node name="EmoteBubble_Prompt" parent="." node_paths=PackedStringArray("character") instance=ExtResource("4_f0ai3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.34977, -0.217155, 0.855312)
+character = NodePath("../PR-snowman-IMPORT")
+parent_to_head_bone = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../PR-snowman-IMPORT")
+libraries = {
+&"PR-snowman-anim_lib": ExtResource("4_c34a2")
+}
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+root_node = NodePath("../PR-snowman-IMPORT")
+tree_root = SubResource("AnimationNodeStateMachine_f0ai3")
+anim_player = NodePath("../AnimationPlayer")
+parameters/Idle/blend_position = -0.214832

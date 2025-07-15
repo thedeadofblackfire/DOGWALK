@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxtg7fxhsljtj"]
+
+[ext_resource type="PackedScene" uid="uid://caxleotm1hasw" path="res://assets/lib/shrubs_and_grass/bushlets/LI-bush_small_flat_001.gltf" id="1_vg475"]
+[ext_resource type="Script" uid="uid://dw6ysrlodecpb" path="res://source/obstacles/shrubs.gd" id="2_ahphm"]
+
+[node name="LI-bush_small_flat_001" type="Node3D"]
+
+[node name="LI-bush_small_flat_001-IMPORT" type="Area3D" parent="." instance=ExtResource("1_vg475")]
+script = ExtResource("2_ahphm")

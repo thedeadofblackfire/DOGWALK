@@ -1,0 +1,76 @@
+[gd_scene load_steps=3 format=3 uid="uid://6uq8ndnl1t7e"]
+
+[ext_resource type="Script" uid="uid://dwilc6101dswx" path="res://source/user_interface/debug_ui.gd" id="1_iof6v"]
+[ext_resource type="LabelSettings" uid="uid://wxfev4l5utnt" path="res://source/user_interface/debug_text.tres" id="2_fw2qg"]
+
+[node name="UI" type="Control" node_paths=PackedStringArray("debug_ui", "fps_stat", "stamina_stat", "mood_stat")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_iof6v")
+debug_ui = NodePath("DebugUI")
+fps_stat = NodePath("DebugUI/Stats/VBoxContainer/FPS")
+stamina_stat = NodePath("DebugUI/Stats/VBoxContainer/Stamina")
+mood_stat = NodePath("DebugUI/Stats/VBoxContainer/Mood")
+
+[node name="DebugUI" type="HSplitContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+dragger_visibility = 1
+
+[node name="Stats" type="MarginContainer" parent="DebugUI"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+
+[node name="VBoxContainer" type="VBoxContainer" parent="DebugUI/Stats"]
+layout_mode = 2
+
+[node name="FPS" type="Label" parent="DebugUI/Stats/VBoxContainer"]
+layout_mode = 2
+text = "FPS = 60"
+label_settings = ExtResource("2_fw2qg")
+
+[node name="Stamina" type="Label" parent="DebugUI/Stats/VBoxContainer"]
+layout_mode = 2
+text = "Stamina = 10.0"
+label_settings = ExtResource("2_fw2qg")
+
+[node name="Mood" type="Label" parent="DebugUI/Stats/VBoxContainer"]
+layout_mode = 2
+text = "Mood = 10.0"
+label_settings = ExtResource("2_fw2qg")
+
+[node name="Debug Controls" type="MarginContainer" parent="DebugUI"]
+layout_mode = 2
+size_flags_horizontal = 10
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="DebugUI/Debug Controls"]
+layout_mode = 2
+
+[node name="Shortcuts" type="Label" parent="DebugUI/Debug Controls/VBoxContainer2"]
+layout_mode = 2
+text = "Debug Shortcuts:
+F1 / D-Down = Toggle Debug UI
+Tab / Select = Reset
+F8 = Quit Game
+
+1 / L1 = Decrease Stamina
+2 / L2 = Increase Stamina
+3 / L3 = Toggle Low Stamina
+
+Q / R1 = Decrease Mood
+W / R2 = Increase Mood
+E / R3 = Toggle Low Mood"
+label_settings = ExtResource("2_fw2qg")
+horizontal_alignment = 2

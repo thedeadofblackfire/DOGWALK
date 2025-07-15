@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://kdg0uxosek8r"]
+
+[ext_resource type="Script" uid="uid://b4xrh4i15k7kv" path="res://source/fx/footstep_fx/footsteps.gd" id="1_2qlhs"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_cba0e"]
+resource_local_to_scene = true
+size = Vector2(0.5, 0.5)
+
+[sub_resource type="MultiMesh" id="MultiMesh_fq01b"]
+resource_local_to_scene = true
+transform_format = 1
+use_colors = true
+mesh = SubResource("PlaneMesh_cba0e")
+
+[node name="Footsteps" type="Node3D" node_paths=PackedStringArray("footstep_instances")]
+script = ExtResource("1_2qlhs")
+footstep_instances = NodePath("FootstepInstances")
+
+[node name="FootstepInstances" type="MultiMeshInstance3D" parent="."]
+top_level = true
+multimesh = SubResource("MultiMesh_fq01b")

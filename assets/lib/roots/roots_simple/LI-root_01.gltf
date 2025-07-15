@@ -1,0 +1,293 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 2,
+                    "append_parent_collection": 1,
+                    "asset_name": "LI-root_01"
+                },
+                "asset_type": "ASSET",
+                "root_type": "PASS_THROUGH",
+                "asset_id": "2ccdd0322f96edb0"
+            },
+            "name": "LI-root_01",
+            "nodes": [
+                0,
+                1,
+                2,
+                3
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "mesh": 0,
+            "name": "GEO-root_01"
+        },
+        {
+            "extras": {
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.11599999666213989,
+                    "height": 1.1420000791549683,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive",
+            "rotation": [
+                0.019430533051490784,
+                0.019430529326200485,
+                0.7068396806716919,
+                0.7068398594856262
+            ],
+            "translation": [
+                -0.050133898854255676,
+                0.025066953152418137,
+                -0.059249162673950195
+            ]
+        },
+        {
+            "extras": {
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.09699999541044235,
+                    "height": 0.6420000791549683,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.001",
+            "rotation": [
+                0.2896527051925659,
+                0.27765628695487976,
+                0.6559473872184753,
+                0.6393288373947144
+            ],
+            "translation": [
+                0.5642438530921936,
+                0.051761481910943985,
+                -0.286731094121933
+            ]
+        },
+        {
+            "extras": {
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.09699999541044235,
+                    "height": 0.45100006461143494,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.002",
+            "rotation": [
+                -0.036128219217061996,
+                -0.039373718202114105,
+                0.7161427140235901,
+                0.6959052085876465
+            ],
+            "translation": [
+                0.5903084874153137,
+                0.051761481910943985,
+                -0.018637780100107193
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "72b9b7131c134000",
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "roughness": 0.5,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        0.5250983238220215,
+                        0.5005860924720764,
+                        0.4895072281360626,
+                        1.0
+                    ],
+                    "wear_strength": 0.0,
+                    "wear_start": 0.0,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.5,
+                    "wear_distortion_scale": 100.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 1.0,
+                    "normal_use_uv2": 0.0
+                }
+            },
+            "name": "roots",
+            "normalTexture": {
+                "index": 0
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Cube",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/roots_simple-normal.png"
+            },
+            "mimeType": "image/png",
+            "name": "roots_simple-normal",
+            "uri": "../../textures/roots_simple-normal.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/roots_simple-albedo.png"
+            },
+            "mimeType": "image/png",
+            "name": "roots_simple-albedo",
+            "uri": "../../textures/roots_simple-albedo.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 206,
+            "max": [
+                0.8065640330314636,
+                0.1329130232334137,
+                0.08875594288110733
+            ],
+            "min": [
+                -0.5830685496330261,
+                -0.09226332604885101,
+                -0.5464943051338196
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 206,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 206,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5123,
+            "count": 642,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 2472,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2472,
+            "byteOffset": 2472,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1648,
+            "byteOffset": 4944,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1284,
+            "byteOffset": 6592,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 7876,
+            "uri": "LI-root_01.bin"
+        }
+    ]
+}

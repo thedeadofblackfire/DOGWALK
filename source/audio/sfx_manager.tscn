@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://kuvpx1r3sc7"]
+
+[ext_resource type="Script" uid="uid://dykgyy3kuukhb" path="res://source/audio/sfx_manager.gd" id="1_7owiw"]
+[ext_resource type="PackedScene" uid="uid://cdqsnu8qup17g" path="res://source/audio/sfx/world/topple_sfx_player.tscn" id="12_y03ej"]
+[ext_resource type="PackedScene" uid="uid://bje7uesycia18" path="res://source/audio/sfx/world/untopple_sfx_player.tscn" id="13_malmw"]
+[ext_resource type="PackedScene" uid="uid://wxvr54kymnjf" path="res://source/audio/sfx/world/bush_sfx_player.tscn" id="19_4dn6o"]
+[ext_resource type="Script" uid="uid://hyobahgtafml" path="res://source/audio/sfx/world/object_pool.gd" id="20_ixnan"]
+
+[node name="SFXManager" type="Node3D" node_paths=PackedStringArray("bush_sound_pool", "topple_sound_pool", "untopple_sound_pool")]
+script = ExtResource("1_7owiw")
+bush_sound_pool = NodePath("BushSoundPool")
+topple_sound_pool = NodePath("ToppleSoundPool")
+untopple_sound_pool = NodePath("UnToppleSoundPool")
+
+[node name="BushSoundPool" type="Node3D" parent="."]
+script = ExtResource("20_ixnan")
+min_num_items = 5
+max_num_items = 20
+item_scene = ExtResource("19_4dn6o")
+metadata/_custom_type_script = "uid://hyobahgtafml"
+
+[node name="ToppleSoundPool" type="Node3D" parent="."]
+script = ExtResource("20_ixnan")
+min_num_items = 8
+max_num_items = 40
+item_scene = ExtResource("12_y03ej")
+metadata/_custom_type_script = "uid://hyobahgtafml"
+
+[node name="UnToppleSoundPool" type="Node3D" parent="."]
+script = ExtResource("20_ixnan")
+min_num_items = 8
+max_num_items = 40
+item_scene = ExtResource("13_malmw")
+metadata/_custom_type_script = "uid://hyobahgtafml"

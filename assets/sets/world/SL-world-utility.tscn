@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8li3fbja720j"]
+
+[ext_resource type="PackedScene" path="res://assets/sets/world/SL-world-utility.gltf" id="1_hjd3b"]
+
+[node name="SL-world-utility" type="Node3D"]
+
+[node name="SL-world-utility-IMPORT" type="Area3D" parent="." instance=ExtResource("1_hjd3b")]

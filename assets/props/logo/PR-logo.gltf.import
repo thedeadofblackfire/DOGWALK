@@ -1,0 +1,53 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://p7ah30pfaj2s"
+path="res://.godot/imported/PR-logo.gltf-4cc20f17c6144681a76c7321c214638d.scn"
+
+[deps]
+
+source_file="res://assets/props/logo/PR-logo.gltf"
+dest_files=["res://.godot/imported/PR-logo.gltf-4cc20f17c6144681a76c7321c214638d.scn"]
+
+[params]
+
+nodes/root_type="Area3D"
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path="uid://gtfffogvk6gb"
+_subresources={
+"materials": {
+"logo_cardboard": {
+"use_external/enabled": true,
+"use_external/path": "res://assets/props/logo/logo_cardboard.tres"
+},
+"logo_cardboard_inside": {
+"use_external/enabled": true,
+"use_external/path": "res://assets/props/logo/logo_cardboard_inside.tres"
+},
+"strings": {
+"use_external/enabled": true,
+"use_external/path": "res://assets/props/logo/strings.tres"
+}
+}
+}
+file_path="res://assets/props/logo/PR-logo.gltf"
+gltf/naming_version=0
+gltf/embedded_image_handling=1

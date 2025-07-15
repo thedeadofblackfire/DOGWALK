@@ -1,0 +1,597 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 1,
+                    "append_parent_collection": 1,
+                    "asset_name": "LI-pine_cut_patch_006"
+                },
+                "asset_type": "ASSET",
+                "root_type": "STATIC",
+                "asset_id": "deeda8204bcf0309"
+            },
+            "name": "LI-pine_cut_patch_006",
+            "nodes": [
+                0,
+                1,
+                2,
+                3
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 0,
+            "name": "pine_cuts_albedo_01.036",
+            "rotation": [
+                0.5773480534553528,
+                0.07909798622131348,
+                -0.08610820770263672,
+                0.8080831170082092
+            ],
+            "scale": [
+                0.7999999523162842,
+                0.7999998927116394,
+                0.8000000715255737
+            ],
+            "translation": [
+                -0.34923458099365234,
+                -0.693575382232666,
+                0.3731811046600342
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 1,
+            "name": "pine_cuts_albedo_01.037",
+            "rotation": [
+                0.5511748194694519,
+                0,
+                0,
+                0.8343899250030518
+            ],
+            "scale": [
+                1.0399997234344482,
+                1.0399998426437378,
+                1.040000081062317
+            ],
+            "translation": [
+                -0.1440119743347168,
+                -0.5582633018493652,
+                0.3333733081817627
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 2,
+            "name": "pine_cuts_albedo_01.038",
+            "rotation": [
+                0.5512749552726746,
+                -0.05573897063732147,
+                -0.03570004180073738,
+                0.8316938281059265
+            ],
+            "scale": [
+                2.0799999237060547,
+                2.0799992084503174,
+                2.0799992084503174
+            ],
+            "translation": [
+                -0.008511066436767578,
+                -0.25274109840393066,
+                0.23768866062164307
+            ]
+        },
+        {
+            "name": "Lattice.010",
+            "rotation": [
+                0.5335917472839355,
+                0,
+                0,
+                0.8457421660423279
+            ],
+            "scale": [
+                1.0174996852874756,
+                0.17883004248142242,
+                1.3993031978607178
+            ],
+            "translation": [
+                0,
+                -0.4696093201637268,
+                0.29568246006965637
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "25330e66f650d1ec",
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "metallic": 0.0,
+                    "displacement_strength": 1.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        0.5481292009353638,
+                        0.608286440372467,
+                        0.5053419470787048,
+                        1.0
+                    ],
+                    "wear_strength": 0.0,
+                    "wear_start": 0.0,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.5,
+                    "wear_distortion_scale": 100.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.20000000298023224,
+                    "normal_use_uv2": 1.0
+                }
+            },
+            "name": "pine_cuts_atlas_albedo_01",
+            "normalTexture": {
+                "index": 0,
+                "texCoord": 1
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                },
+                "metallicRoughnessTexture": {
+                    "index": 2
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "pine_cuts_albedo_01.017",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2,
+                        "TEXCOORD_1": 3,
+                        "COLOR_0": 4,
+                        "COLOR_1": 5
+                    },
+                    "indices": 6,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "pine_cuts_albedo_01.002",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 7,
+                        "NORMAL": 8,
+                        "TEXCOORD_0": 9,
+                        "TEXCOORD_1": 10,
+                        "COLOR_0": 11,
+                        "COLOR_1": 12,
+                        "COLOR_2": 13
+                    },
+                    "indices": 14,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "pine_cuts_albedo_01.005",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 15,
+                        "NORMAL": 16,
+                        "TEXCOORD_0": 17,
+                        "TEXCOORD_1": 18,
+                        "COLOR_0": 19,
+                        "COLOR_1": 20
+                    },
+                    "indices": 21,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 1,
+            "source": 1
+        },
+        {
+            "sampler": 0,
+            "source": 2
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/textures/paper_fine_normal.png"
+            },
+            "mimeType": "image/png",
+            "name": "paper_fine_normal",
+            "uri": "../../../textures/paper_fine_normal.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/pine_cuts_atlas_albedo_01.png"
+            },
+            "mimeType": "image/png",
+            "name": "pine_cuts_atlas_albedo_01",
+            "uri": "../../textures/pine_cuts_atlas_albedo_01.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/pine_cuts_atlas_roughness_01.png"
+            },
+            "mimeType": "image/png",
+            "name": "pine_cuts_atlas_roughness_01",
+            "uri": "../../textures/pine_cuts_atlas_roughness_01.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 121,
+            "max": [
+                0.30997681617736816,
+                -0.01001226156949997,
+                0.6050482988357544
+            ],
+            "min": [
+                -0.41706153750419617,
+                -0.37421485781669617,
+                -0.7320953607559204
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 121,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 121,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5126,
+            "count": 121,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5123,
+            "count": 121,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5123,
+            "count": 121,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 6,
+            "componentType": 5123,
+            "count": 369,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 7,
+            "componentType": 5126,
+            "count": 137,
+            "max": [
+                0.6451034545898438,
+                0.20837700366973877,
+                0.8545979857444763
+            ],
+            "min": [
+                -0.11586036533117294,
+                -0.28950241208076477,
+                -0.35231855511665344
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 8,
+            "componentType": 5126,
+            "count": 137,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 9,
+            "componentType": 5126,
+            "count": 137,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 10,
+            "componentType": 5126,
+            "count": 137,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 11,
+            "componentType": 5123,
+            "count": 137,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 12,
+            "componentType": 5123,
+            "count": 137,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 13,
+            "componentType": 5123,
+            "count": 137,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 14,
+            "componentType": 5123,
+            "count": 426,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 15,
+            "componentType": 5126,
+            "count": 52,
+            "max": [
+                0.0740058571100235,
+                0.0054861861281096935,
+                0.21315084397792816
+            ],
+            "min": [
+                -0.12910769879817963,
+                -0.09621972590684891,
+                -0.23879238963127136
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 16,
+            "componentType": 5126,
+            "count": 52,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 17,
+            "componentType": 5126,
+            "count": 52,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 18,
+            "componentType": 5126,
+            "count": 52,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 19,
+            "componentType": 5123,
+            "count": 52,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 20,
+            "componentType": 5123,
+            "count": 52,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 21,
+            "componentType": 5123,
+            "count": 159,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 1452,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1452,
+            "byteOffset": 1452,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 968,
+            "byteOffset": 2904,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 968,
+            "byteOffset": 3872,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 968,
+            "byteOffset": 4840,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 968,
+            "byteOffset": 5808,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 738,
+            "byteOffset": 6776,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1644,
+            "byteOffset": 7516,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1644,
+            "byteOffset": 9160,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1096,
+            "byteOffset": 10804,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1096,
+            "byteOffset": 11900,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1096,
+            "byteOffset": 12996,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1096,
+            "byteOffset": 14092,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1096,
+            "byteOffset": 15188,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 852,
+            "byteOffset": 16284,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 624,
+            "byteOffset": 17136,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 624,
+            "byteOffset": 17760,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 416,
+            "byteOffset": 18384,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 416,
+            "byteOffset": 18800,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 416,
+            "byteOffset": 19216,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 416,
+            "byteOffset": 19632,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 318,
+            "byteOffset": 20048,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        },
+        {
+            "magFilter": 9729,
+            "minFilter": 9987,
+            "wrapS": 33071,
+            "wrapT": 33071
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 20368,
+            "uri": "LI-pine_cut_patch_006.bin"
+        }
+    ]
+}

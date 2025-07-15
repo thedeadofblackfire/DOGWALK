@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://tx57c6wy71nb"]
+
+[ext_resource type="PackedScene" uid="uid://doep4hnt1h7yn" path="res://assets/props/fireplace/PR-fireplace.gltf" id="1_8eaqf"]
+
+[node name="PR-fireplace" type="Node3D"]
+
+[node name="PR-fireplace-IMPORT" parent="." instance=ExtResource("1_8eaqf")]
+collision_layer = 32
+collision_mask = 8

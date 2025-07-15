@@ -1,0 +1,35 @@
+[gd_resource type="AnimationNodeBlendSpace1D" load_steps=7 format=3 uid="uid://brdt6r5vx25bi"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ud0vl"]
+animation = &"Pinda-anim_lib/SYNC-pinda-pet01"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ubks3"]
+animation = &"Pinda-anim_lib/SYNC-pinda-pet02"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_lhpcl"]
+animation = &"Pinda-anim_lib/SYNC-pinda-pet03"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_guppy"]
+animation = &"Pinda-anim_lib/SYNC-pinda-pet04"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ucbjd"]
+animation = &"Pinda-anim_lib/SYNC-pinda-pet05"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_x47b0"]
+animation = &"Pinda-anim_lib/SYNC-pinda-pet06"
+
+[resource]
+blend_point_0/node = SubResource("AnimationNodeAnimation_ud0vl")
+blend_point_0/pos = 0.0
+blend_point_1/node = SubResource("AnimationNodeAnimation_ubks3")
+blend_point_1/pos = 0.2
+blend_point_2/node = SubResource("AnimationNodeAnimation_lhpcl")
+blend_point_2/pos = 0.4
+blend_point_3/node = SubResource("AnimationNodeAnimation_guppy")
+blend_point_3/pos = 0.6
+blend_point_4/node = SubResource("AnimationNodeAnimation_ucbjd")
+blend_point_4/pos = 0.8
+blend_point_5/node = SubResource("AnimationNodeAnimation_x47b0")
+blend_point_5/pos = 1.0
+snap = 0.2
+blend_mode = 1

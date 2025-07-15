@@ -1,0 +1,23 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=10 format=3 uid="uid://bkvr0c8sjno4g"]
+
+[ext_resource type="AudioStream" uid="uid://d4fmfc8ak5o04" path="res://assets/sfx/world/ACTN-bird-chirp-01.ogg" id="1_2yspx"]
+[ext_resource type="AudioStream" uid="uid://d8nrlar5ftb7" path="res://assets/sfx/world/ACTN-bird-chirp-02.ogg" id="2_3jls5"]
+[ext_resource type="AudioStream" uid="uid://60cjr4516iqy" path="res://assets/sfx/world/ACTN-bird-chirp-03.ogg" id="3_b350f"]
+[ext_resource type="AudioStream" uid="uid://3crfkli0tihy" path="res://assets/sfx/world/ACTN-bird-chirp-04.ogg" id="4_2tkm0"]
+[ext_resource type="AudioStream" uid="uid://dbxjbia64j32p" path="res://assets/sfx/world/ACTN-bird-chirp-05.ogg" id="5_hcm1i"]
+[ext_resource type="AudioStream" uid="uid://qrjunepcg0xd" path="res://assets/sfx/world/ACTN-bird-chirp-06.ogg" id="6_5nko0"]
+[ext_resource type="AudioStream" uid="uid://co2mnf3pxomhn" path="res://assets/sfx/world/ACTN-bird-chirp-07.ogg" id="7_l8mce"]
+[ext_resource type="AudioStream" uid="uid://dkh23b6k305c2" path="res://assets/sfx/world/ACTN-bird-chirp-08.ogg" id="8_m3lk2"]
+[ext_resource type="AudioStream" uid="uid://k7tstpw24kg8" path="res://assets/sfx/world/ACTN-bird-chirp-09.ogg" id="9_5agfa"]
+
+[resource]
+streams_count = 9
+stream_0/stream = ExtResource("1_2yspx")
+stream_1/stream = ExtResource("2_3jls5")
+stream_2/stream = ExtResource("3_b350f")
+stream_3/stream = ExtResource("4_2tkm0")
+stream_4/stream = ExtResource("5_hcm1i")
+stream_5/stream = ExtResource("6_5nko0")
+stream_6/stream = ExtResource("7_l8mce")
+stream_7/stream = ExtResource("8_m3lk2")
+stream_8/stream = ExtResource("9_5agfa")

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://betylmhshjv8e"]
+
+[ext_resource type="PackedScene" path="res://assets/sets/fence/SL-fence-trees.gltf" id="1_p7hgm"]
+
+[node name="SL-fence-trees" type="Node3D"]
+
+[node name="SL-fence-trees-IMPORT" type="Area3D" parent="." instance=ExtResource("1_p7hgm")]

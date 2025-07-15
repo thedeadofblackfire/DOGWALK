@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8dm1momnn8ly"]
+
+[ext_resource type="PackedScene" path="res://assets/sets/hub/SL-hub-cliff.gltf" id="1_cter5"]
+
+[node name="SL-hub-cliff" type="Node3D"]
+
+[node name="SL-hub-cliff-IMPORT" type="Area3D" parent="." instance=ExtResource("1_cter5")]

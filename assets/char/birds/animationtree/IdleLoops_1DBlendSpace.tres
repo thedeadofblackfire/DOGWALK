@@ -1,0 +1,35 @@
+[gd_resource type="AnimationNodeBlendSpace1D" load_steps=7 format=3 uid="uid://dagpp0bsitqyh"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_w46xq"]
+animation = &"bird_01-anim_lib/LOOP-bird-eat"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_3r7wo"]
+animation = &"bird_01-anim_lib/LOOP-bird-look"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_dtb1u"]
+animation = &"bird_01-anim_lib/LOOP-bird-sing"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_56hmi"]
+animation = &"bird_01-anim_lib/LOOP-bird-spin"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_awl88"]
+animation = &"bird_01-anim_lib/LOOP-bird-stroll01"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_extaa"]
+animation = &"bird_01-anim_lib/LOOP-bird-stroll02"
+
+[resource]
+resource_local_to_scene = true
+blend_point_0/node = SubResource("AnimationNodeAnimation_w46xq")
+blend_point_0/pos = 0.0
+blend_point_1/node = SubResource("AnimationNodeAnimation_3r7wo")
+blend_point_1/pos = 0.2
+blend_point_2/node = SubResource("AnimationNodeAnimation_dtb1u")
+blend_point_2/pos = 0.4
+blend_point_3/node = SubResource("AnimationNodeAnimation_56hmi")
+blend_point_3/pos = 0.6
+blend_point_4/node = SubResource("AnimationNodeAnimation_awl88")
+blend_point_4/pos = 0.8
+blend_point_5/node = SubResource("AnimationNodeAnimation_extaa")
+blend_point_5/pos = 1.0
+blend_mode = 1

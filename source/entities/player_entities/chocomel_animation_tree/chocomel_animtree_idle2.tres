@@ -1,0 +1,32 @@
+[gd_resource type="AnimationNodeStateMachine" load_steps=7 format=3 uid="uid://be6ar2pqw8mpp"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_0cusv"]
+animation = &"Chocomel-anim_lib/LOOP-chocomel-idle"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_lalah"]
+animation = &"Chocomel-anim_lib/LOOP-chocomel-idle_sitting"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_nrs76"]
+animation = &"Chocomel-anim_lib/ACTN-chocomel-sitting_down"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ll55u"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_31wyo"]
+advance_mode = 2
+advance_expression = "sitting_time >= 2.0"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_xps8t"]
+switch_mode = 2
+advance_mode = 2
+
+[resource]
+states/Start/position = Vector2(88, 100)
+"states/idle anim/node" = SubResource("AnimationNodeAnimation_0cusv")
+"states/idle anim/position" = Vector2(239, 100)
+"states/sitting anim/node" = SubResource("AnimationNodeAnimation_lalah")
+"states/sitting anim/position" = Vector2(634, 100)
+"states/sitting down anim/node" = SubResource("AnimationNodeAnimation_nrs76")
+"states/sitting down anim/position" = Vector2(418, 100)
+transitions = ["Start", "idle anim", SubResource("AnimationNodeStateMachineTransition_ll55u"), "idle anim", "sitting down anim", SubResource("AnimationNodeStateMachineTransition_31wyo"), "sitting down anim", "sitting anim", SubResource("AnimationNodeStateMachineTransition_xps8t")]
+graph_offset = Vector2(-366, -33)

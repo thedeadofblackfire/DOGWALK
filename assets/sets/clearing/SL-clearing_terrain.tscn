@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://juc7iclvnkyc"]
+
+[ext_resource type="PackedScene" uid="uid://gg6b312p1j2t" path="res://assets/sets/clearing/SL-clearing_terrain.gltf" id="1_xjmi5"]
+
+[node name="SL-clearing_terrain" type="Node3D"]
+
+[node name="SL-clearing_terrain-IMPORT" parent="." instance=ExtResource("1_xjmi5")]
+collision_layer = 513

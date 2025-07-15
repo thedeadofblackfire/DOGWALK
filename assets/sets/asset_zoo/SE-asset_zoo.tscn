@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cvkv1nexjk8n4"]
+
+[ext_resource type="PackedScene" uid="uid://bohtn6vae54jh" path="res://assets/sets/asset_zoo/SE-asset_zoo.gltf" id="1_3ik2y"]
+
+[node name="SE-asset_zoo" type="Node3D"]
+
+[node name="SE-asset_zoo-IMPORT" type="Node3D" parent="." instance=ExtResource("1_3ik2y")]

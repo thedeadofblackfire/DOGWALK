@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="GameplayMusicSetting" load_steps=2 format=3 uid="uid://c832lfsi4eqr3"]
+
+[ext_resource type="Script" uid="uid://bhov5mflxipjk" path="res://source/audio/music/gameplay_music_setting.gd" id="1_y4ovh"]
+
+[resource]
+script = ExtResource("1_y4ovh")
+configuration = Dictionary[int, bool]({
+0: true,
+1: false,
+2: false,
+3: false,
+4: false,
+5: false,
+6: true,
+7: false,
+8: false,
+9: false
+})
+metadata/_custom_type_script = "uid://bhov5mflxipjk"

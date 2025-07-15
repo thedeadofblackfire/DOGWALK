@@ -1,0 +1,42 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://bqvjutrvfndq2"]
+
+[ext_resource type="Shader" uid="uid://dferjeijr7g3r" path="res://source/shaders/paper-default.gdshader" id="1_l3ga6"]
+[ext_resource type="Texture2D" uid="uid://bd57hymrwcrov" path="res://assets/lib/textures/sign_forest-albedo.png" id="2_5sisv"]
+[ext_resource type="Texture2D" uid="uid://d3tlc1k866jdf" path="res://assets/textures/paper_fine_normal.png" id="3_m05hp"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_l3ga6")
+shader_parameter/fake_depth = true
+shader_parameter/flip_normals = false
+shader_parameter/depth_blend = false
+shader_parameter/paper_color = Color(0.775663, 0.686013, 0.539697, 1)
+shader_parameter/backface_color = false
+shader_parameter/albedo_color = Color(1, 1, 1, 1)
+shader_parameter/albedo_texture = ExtResource("2_5sisv")
+shader_parameter/edge_use_alpha = true
+shader_parameter/normal_texture = ExtResource("3_m05hp")
+shader_parameter/normal_strength = 0.1
+shader_parameter/invert_normal = false
+shader_parameter/normal_use_uv2 = false
+shader_parameter/albedo_texture_size = Vector2i(512, 512)
+shader_parameter/point_size = 0.0
+shader_parameter/specular = 0.5
+shader_parameter/roughness = 0.9
+shader_parameter/metallic = 0.0
+shader_parameter/wear_strength = 0.0
+shader_parameter/wear_start = 0.59
+shader_parameter/wear_end = 0.85
+shader_parameter/wear_distortion_scale = 20.0
+shader_parameter/wear_distortion_strength = 7.45058e-09
+shader_parameter/emission_strength = 0.0
+shader_parameter/emission_color = Color(1, 1, 1, 1)
+shader_parameter/displacement_strength = 0.0
+shader_parameter/displacemnent_scale = 1.0
+shader_parameter/heightmap_scale = 0.5
+shader_parameter/heightmap_min_layers = 4
+shader_parameter/heightmap_max_layers = 16
+shader_parameter/uv1_scale = Vector3(1, 1, 1)
+shader_parameter/uv1_offset = Vector3(0, 0, 0)
+shader_parameter/uv2_scale = Vector3(1, 1, 1)
+shader_parameter/uv2_offset = Vector3(0, 0, 0)

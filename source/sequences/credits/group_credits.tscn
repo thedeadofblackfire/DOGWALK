@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://cyt1ia1ttebdp"]
+
+[ext_resource type="Script" uid="uid://dcf2a004vv1s5" path="res://source/sequences/credits/group_credits.gd" id="1_xa3q7"]
+[ext_resource type="Script" uid="uid://c8fpguu61gfh0" path="res://source/user_interface/menus/label.gd" id="2_xa3q7"]
+
+[node name="GroupCredits" type="VBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 111.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+script = ExtResource("1_xa3q7")
+credits_data = {}
+
+[node name="GroupTitle" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_bottom = 100
+
+[node name="GroupTitleText" type="Label" parent="GroupTitle"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Title"
+uppercase = true
+script = ExtResource("2_xa3q7")
+font_scale = 1.4

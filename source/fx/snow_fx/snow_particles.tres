@@ -1,0 +1,31 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://ceg0jpnt75n80"]
+
+[ext_resource type="Shader" uid="uid://ch23blxxldlg4" path="res://source/shaders/paper-particles.gdshader" id="1_6dxck"]
+[ext_resource type="Texture2D" uid="uid://i6h4w5p85vf1" path="res://assets/textures/fx/snow_particles.png" id="2_d6ip0"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_6dxck")
+shader_parameter/rows = 3
+shader_parameter/columns = 3
+shader_parameter/tile_index = 0
+shader_parameter/random_tile_index = true
+shader_parameter/fake_depth = false
+shader_parameter/flip_normals = false
+shader_parameter/paper_color = Color(1, 1, 1, 1)
+shader_parameter/albedo_color = Color(1, 1, 1, 1)
+shader_parameter/albedo_texture = ExtResource("2_d6ip0")
+shader_parameter/normal_strength = 1.0
+shader_parameter/invert_normal = false
+shader_parameter/albedo_texture_size = Vector2i(300, 300)
+shader_parameter/point_size = 0.1
+shader_parameter/specular = 0.45
+shader_parameter/roughness = 0.5
+shader_parameter/metallic = 0.0
+shader_parameter/heightmap_scale = 6.138
+shader_parameter/heightmap_min_layers = 4
+shader_parameter/heightmap_max_layers = 16
+shader_parameter/uv1_scale = Vector3(1, 1, 1)
+shader_parameter/uv1_offset = Vector3(0, 0, 0)
+shader_parameter/uv2_scale = Vector3(1, 1, 1)
+shader_parameter/uv2_offset = Vector3(0, 0, 0)

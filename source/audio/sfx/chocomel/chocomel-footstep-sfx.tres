@@ -1,0 +1,9 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://s6t47283clsa"]
+
+[ext_resource type="AudioStream" uid="uid://c6ip6gium1c7y" path="res://assets/sfx/chocomel/LOOP-chocomel-footsteps-snow-0.ogg" id="1_7eq0a"]
+
+[resource]
+playback_mode = 2
+random_pitch = 1.04
+streams_count = 1
+stream_0/stream = ExtResource("1_7eq0a")

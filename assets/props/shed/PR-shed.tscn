@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dhluuugxdtgum"]
+
+[ext_resource type="PackedScene" uid="uid://cjx8qre75vk3r" path="res://assets/props/shed/PR-shed.gltf" id="1_dqccc"]
+[ext_resource type="Script" uid="uid://bj34k0ajpsopu" path="res://source/obstacles/generic_obstacle.gd" id="2_yhqlv"]
+
+[node name="PR-shed" type="Node3D"]
+
+[node name="PR-shed-IMPORT" parent="." instance=ExtResource("1_dqccc")]
+script = ExtResource("2_yhqlv")

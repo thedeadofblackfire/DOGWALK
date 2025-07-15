@@ -1,0 +1,326 @@
+[gd_scene load_steps=26 format=3 uid="uid://cnxlyx045lb2b"]
+
+[ext_resource type="PackedScene" uid="uid://chkkiuqv8a7kr" path="res://assets/props/fence_gate/PR-fence_gate.gltf" id="1_8ykbi"]
+[ext_resource type="Script" uid="uid://4c5vpcuai6ia" path="res://source/sequences/sequence_gate.gd" id="2_52uab"]
+[ext_resource type="Script" uid="uid://dn2hf58o260e2" path="res://source/entities/gate.gd" id="3_fr0ik"]
+[ext_resource type="AnimationLibrary" uid="uid://bc1am5k7lo878" path="res://assets/props/fence_gate/PR-fence_gate-anim_lib.tres" id="4_3tv0a"]
+
+[sub_resource type="Animation" id="Animation_xl8u7"]
+resource_name = "RESET"
+length = 0.0416667
+tracks/0/type = "rotation_3d"
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/path = NodePath("RIG-fence_gate/Skeleton3D:gate")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.0333333, 1, 0, 0, 0, 1, 0.0416667, 1, 0, 0, 0, 1)
+tracks/1/type = "position_3d"
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/path = NodePath("RIG-fence_gate/Skeleton3D:lock")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, 1.29943, 0.419305, -0.134516, 0.0333333, 1, 1.29943, 0.419305, -0.134516, 0.0416667, 1, 1.29943, 0.419305, -0.134516)
+tracks/2/type = "rotation_3d"
+tracks/2/imported = true
+tracks/2/enabled = true
+tracks/2/path = NodePath("RIG-fence_gate/Skeleton3D:lock")
+tracks/2/interp = 0
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array(0, 1, -0.608615, 0.608615, 0.359983, 0.359983, 0.0333333, 1, -0.608615, 0.608615, 0.359983, 0.359983, 0.0416667, 1, -0.608615, 0.608615, 0.359983, 0.359983)
+tracks/3/type = "rotation_3d"
+tracks/3/imported = true
+tracks/3/enabled = true
+tracks/3/path = NodePath("RIG-fence_gate/Skeleton3D:P-plank")
+tracks/3/interp = 0
+tracks/3/loop_wrap = true
+tracks/3/keys = PackedFloat32Array(0, 1, -2.29667e-07, -0.0216198, 4.9665e-09, 0.999766, 0.0333333, 1, -2.29667e-07, -0.0216198, 4.9665e-09, 0.999766, 0.0416667, 1, -2.29667e-07, -0.0216198, 4.9665e-09, 0.999766)
+tracks/4/type = "position_3d"
+tracks/4/imported = true
+tracks/4/enabled = true
+tracks/4/path = NodePath("RIG-fence_gate/Skeleton3D:pivot_gate_south")
+tracks/4/interp = 0
+tracks/4/loop_wrap = true
+tracks/4/keys = PackedFloat32Array(0, 1, 0, 0, 0.687439, 0.0333333, 1, 0, 0, 0.687439, 0.0416667, 1, 0, 0, 0.687439)
+tracks/5/type = "rotation_3d"
+tracks/5/imported = true
+tracks/5/enabled = true
+tracks/5/path = NodePath("RIG-fence_gate/Skeleton3D:pivot_gate_south")
+tracks/5/interp = 0
+tracks/5/loop_wrap = true
+tracks/5/keys = PackedFloat32Array(0, 1, -1.68751e-14, -1, 2.23517e-07, 7.54979e-08, 0.0333333, 1, -1.68751e-14, -1, 2.23517e-07, 7.54979e-08, 0.0416667, 1, -1.68751e-14, -1, 2.23517e-07, 7.54979e-08)
+tracks/6/type = "position_3d"
+tracks/6/imported = true
+tracks/6/enabled = true
+tracks/6/path = NodePath("RIG-fence_gate/Skeleton3D:pivot_fence")
+tracks/6/interp = 0
+tracks/6/loop_wrap = true
+tracks/6/keys = PackedFloat32Array(0, 1, -1.55552, 2.48876e-08, 0.706493, 0.0333333, 1, -1.55552, 2.48876e-08, 0.706493, 0.0416667, 1, -1.55552, 2.48876e-08, 0.706493)
+tracks/7/type = "rotation_3d"
+tracks/7/imported = true
+tracks/7/enabled = true
+tracks/7/path = NodePath("RIG-fence_gate/Skeleton3D:pivot_fence")
+tracks/7/interp = 0
+tracks/7/loop_wrap = true
+tracks/7/keys = PackedFloat32Array(0, 1, -1.68751e-14, -1, 2.23517e-07, 7.54979e-08, 0.0333333, 1, -1.68751e-14, -1, 2.23517e-07, 7.54979e-08, 0.0416667, 1, -1.68751e-14, -1, 2.23517e-07, 7.54979e-08)
+tracks/8/type = "rotation_3d"
+tracks/8/imported = true
+tracks/8/enabled = true
+tracks/8/path = NodePath("RIG-fence_gate/Skeleton3D:pivot_plank_south")
+tracks/8/interp = 0
+tracks/8/loop_wrap = true
+tracks/8/keys = PackedFloat32Array(0, 1, -1.68751e-14, -1, 2.23517e-07, 7.54979e-08, 0.0333333, 1, -1.68751e-14, -1, 2.23517e-07, 7.54979e-08, 0.0416667, 1, -1.68751e-14, -1, 2.23517e-07, 7.54979e-08)
+
+[sub_resource type="Animation" id="Animation_32qqv"]
+resource_name = "opened"
+length = 0.0416667
+tracks/0/type = "rotation_3d"
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/path = NodePath("RIG-fence_gate/Skeleton3D:gate")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0, -0.720861, 0, 0.69308, 0.0333333, 1, 0, -0.720861, 0, 0.69308, 0.0416667, 1, 0, -0.720861, 0, 0.69308)
+tracks/1/type = "position_3d"
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/path = NodePath("RIG-fence_gate/Skeleton3D:lock")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, 1.24673, 0.419305, -0.134516, 0.0333333, 1, 1.24673, 0.419305, -0.134516, 0.0416667, 1, 1.24673, 0.419305, -0.134516)
+tracks/2/type = "rotation_3d"
+tracks/2/imported = true
+tracks/2/enabled = true
+tracks/2/path = NodePath("RIG-fence_gate/Skeleton3D:lock")
+tracks/2/interp = 0
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array(0, 1, 0.054311, -0.0543111, 0.705018, 0.705018, 0.0333333, 1, 0.054311, -0.0543111, 0.705018, 0.705018, 0.0416667, 1, 0.054311, -0.0543111, 0.705018, 0.705018)
+tracks/3/type = "rotation_3d"
+tracks/3/imported = true
+tracks/3/enabled = true
+tracks/3/path = NodePath("RIG-fence_gate/Skeleton3D:P-plank")
+tracks/3/interp = 0
+tracks/3/loop_wrap = true
+tracks/3/keys = PackedFloat32Array(0, 1, -0.0153166, 0.00546504, 0.21012, 0.97754, 0.0333333, 1, -0.0153166, 0.00546504, 0.21012, 0.97754, 0.0416667, 1, -0.0153166, 0.00546504, 0.21012, 0.97754)
+tracks/4/type = "position_3d"
+tracks/4/imported = true
+tracks/4/enabled = true
+tracks/4/path = NodePath("RIG-fence_gate/Skeleton3D:pivot_gate_south")
+tracks/4/interp = 0
+tracks/4/loop_wrap = true
+tracks/4/keys = PackedFloat32Array(0, 1, 0.581895, -2.54129e-07, 0.403201, 0.0333333, 1, 0.581895, -2.54129e-07, 0.403201, 0.0416667, 1, 0.581895, -2.54129e-07, 0.403201)
+tracks/5/type = "rotation_3d"
+tracks/5/imported = true
+tracks/5/enabled = true
+tracks/5/path = NodePath("RIG-fence_gate/Skeleton3D:pivot_gate_south")
+tracks/5/interp = 0
+tracks/5/loop_wrap = true
+tracks/5/keys = PackedFloat32Array(0, 1, -1.68751e-14, -1, 2.23517e-07, 7.54979e-08, 0.0333333, 1, -1.68751e-14, -1, 2.23517e-07, 7.54979e-08, 0.0416667, 1, -1.68751e-14, -1, 2.23517e-07, 7.54979e-08)
+tracks/6/type = "position_3d"
+tracks/6/imported = true
+tracks/6/enabled = true
+tracks/6/path = NodePath("RIG-fence_gate/Skeleton3D:pivot_fence")
+tracks/6/interp = 0
+tracks/6/loop_wrap = true
+tracks/6/keys = PackedFloat32Array(0, 1, -1.55552, 2.48876e-08, 0.706493, 0.0333333, 1, -1.55552, 2.48876e-08, 0.706493, 0.0416667, 1, -1.55552, 2.48876e-08, 0.706493)
+tracks/7/type = "rotation_3d"
+tracks/7/imported = true
+tracks/7/enabled = true
+tracks/7/path = NodePath("RIG-fence_gate/Skeleton3D:pivot_fence")
+tracks/7/interp = 0
+tracks/7/loop_wrap = true
+tracks/7/keys = PackedFloat32Array(0, 1, -1.68751e-14, -1, 2.23517e-07, 7.54979e-08, 0.0333333, 1, -1.68751e-14, -1, 2.23517e-07, 7.54979e-08, 0.0416667, 1, -1.68751e-14, -1, 2.23517e-07, 7.54979e-08)
+tracks/8/type = "rotation_3d"
+tracks/8/imported = true
+tracks/8/enabled = true
+tracks/8/path = NodePath("RIG-fence_gate/Skeleton3D:pivot_plank_south")
+tracks/8/interp = 0
+tracks/8/loop_wrap = true
+tracks/8/keys = PackedFloat32Array(0, 1, -1.68751e-14, -1, 2.23517e-07, 7.54979e-08, 0.0333333, 1, -1.68751e-14, -1, 2.23517e-07, 7.54979e-08, 0.0416667, 1, -1.68751e-14, -1, 2.23517e-07, 7.54979e-08)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_yf55q"]
+_data = {
+&"RESET": SubResource("Animation_xl8u7"),
+&"opened": SubResource("Animation_32qqv")
+}
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_fr0ik"]
+animation = &"RESET"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_3tv0a"]
+animation = &"PR-fence_gate-anim_lib/ACTN-gate-gate_spot01"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_vwl8d"]
+animation = &"PR-fence_gate-anim_lib/CINE-gate-gate_spot03_open"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_vlrkm"]
+animation = &"PR-fence_gate-anim_lib/CINE-gate-gate_spot03_open"
+use_custom_timeline = true
+timeline_length = 1.0
+stretch_time_scale = true
+start_offset = 1.0
+loop_mode = 0
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_hk7hi"]
+animation = &"PR-fence_gate-anim_lib/CINE-gate-celebrate_gate"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_le8t1"]
+animation = &"opened"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_8sq4w"]
+animation = &"PR-fence_gate-anim_lib/ACTN-gate-gate_unlocking_gate"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_hk7hi"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_8sq4w"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_vlrkm"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_3tv0a"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_le8t1"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_8sgtp"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_socn7"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_vcvf8"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ympnc"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_fr0ik"]
+states/End/position = Vector2(1428, 100)
+states/default/node = SubResource("AnimationNodeAnimation_fr0ik")
+states/default/position = Vector2(372, 100)
+"states/inspect spot 1/node" = SubResource("AnimationNodeAnimation_3tv0a")
+"states/inspect spot 1/position" = Vector2(525, 100)
+"states/lift plank/node" = SubResource("AnimationNodeAnimation_vwl8d")
+"states/lift plank/position" = Vector2(687, 100)
+"states/lifted pose/node" = SubResource("AnimationNodeAnimation_vlrkm")
+"states/lifted pose/position" = Vector2(841, 100)
+"states/open gate/node" = SubResource("AnimationNodeAnimation_hk7hi")
+"states/open gate/position" = Vector2(1183, 100)
+states/opened/node = SubResource("AnimationNodeAnimation_le8t1")
+states/opened/position = Vector2(1316, 100)
+"states/unlocking gate/node" = SubResource("AnimationNodeAnimation_8sq4w")
+"states/unlocking gate/position" = Vector2(1011, 100)
+transitions = ["Start", "default", SubResource("AnimationNodeStateMachineTransition_hk7hi"), "default", "inspect spot 1", SubResource("AnimationNodeStateMachineTransition_8sq4w"), "inspect spot 1", "lift plank", SubResource("AnimationNodeStateMachineTransition_vlrkm"), "inspect spot 1", "default", SubResource("AnimationNodeStateMachineTransition_3tv0a"), "unlocking gate", "open gate", SubResource("AnimationNodeStateMachineTransition_le8t1"), "lift plank", "lifted pose", SubResource("AnimationNodeStateMachineTransition_8sgtp"), "lifted pose", "unlocking gate", SubResource("AnimationNodeStateMachineTransition_socn7"), "unlocking gate", "lifted pose", SubResource("AnimationNodeStateMachineTransition_vcvf8"), "open gate", "opened", SubResource("AnimationNodeStateMachineTransition_ympnc")]
+graph_offset = Vector2(-19, 10)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_fr0ik"]
+height = 0.726562
+radius = 0.259766
+
+[node name="PR-fence_gate" type="Node3D"]
+
+[node name="GateSequence" type="Node" parent="."]
+script = ExtResource("2_52uab")
+metadata/_custom_type_script = "uid://4c5vpcuai6ia"
+
+[node name="PR-fence_gate-IMPORT" parent="." node_paths=PackedStringArray("animation_tree", "animation_player", "skeleton", "closed_gate_collision", "open_gate_collision", "gate_inspection_spot", "fence_inspection_spot", "plank_inspection_spot", "other_side_spot", "open_gate_spot") instance=ExtResource("1_8ykbi")]
+collision_layer = 96
+collision_mask = 12
+script = ExtResource("3_fr0ik")
+animation_tree = NodePath("AnimationTree")
+animation_player = NodePath("AnimationPlayer")
+skeleton = NodePath("RIG-fence_gate/Skeleton3D")
+closed_gate_collision = NodePath("COL-collision_primitive-CLOSED")
+open_gate_collision = NodePath("COL-collision_primitive-OPEN")
+gate_inspection_spot = NodePath("GateInspectionSpot")
+fence_inspection_spot = NodePath("FenceInspectionSpot")
+plank_inspection_spot = NodePath("PlankInspectionSpot")
+other_side_spot = NodePath("OtherSideSpot")
+open_gate_spot = NodePath("OpenGateSpot")
+
+[node name="Skeleton3D" parent="PR-fence_gate-IMPORT/RIG-fence_gate" index="0"]
+bones/3/position = Vector3(1.29943, 0.419305, -0.134516)
+bones/3/rotation = Quaternion(-0.608615, 0.608615, 0.359983, 0.359983)
+bones/11/rotation = Quaternion(-2.29667e-07, -0.0216198, 4.9665e-09, 0.999766)
+bones/18/rotation = Quaternion(1.68751e-14, 1, -2.23517e-07, -7.54979e-08)
+bones/19/position = Vector3(-1.55552, 2.48876e-08, 0.706493)
+bones/19/rotation = Quaternion(1.68751e-14, 1, -2.23517e-07, -7.54979e-08)
+bones/20/rotation = Quaternion(1.68751e-14, 1, -2.23517e-07, -7.54979e-08)
+
+[node name="GEO-gate_lock" parent="PR-fence_gate-IMPORT/RIG-fence_gate/Skeleton3D" index="0"]
+transform = Transform3D(1.94707e-07, -1, -1.04616e-08, -0.481649, -1.02949e-07, 0.876364, -0.876364, -1.65596e-07, -0.481649, 0.403372, 1.02083, -0.14202)
+
+[node name="GEO-fence_gate" parent="PR-fence_gate-IMPORT/RIG-fence_gate/Skeleton3D" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.89673, 0.656636, -0.00615954)
+
+[node name="HLP-leash_point" type="Marker3D" parent="PR-fence_gate-IMPORT/RIG-fence_gate/Skeleton3D/GEO-fence_gate" index="1" groups=["LeashPivots"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.71003, 0, 0.10108)
+
+[node name="HLP-leash_point2" type="Marker3D" parent="PR-fence_gate-IMPORT/RIG-fence_gate/Skeleton3D/GEO-fence_gate" index="2" groups=["LeashPivots"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.71003, 0, -0.0820128)
+
+[node name="GEO-fence_plank_05" parent="PR-fence_gate-IMPORT/RIG-fence_gate/Skeleton3D" index="2"]
+transform = Transform3D(1, 1.24345e-14, -4.84288e-08, -1.06581e-14, 1, 8.2423e-13, 4.84288e-08, -8.81073e-13, 1, -3.82343, 0.335073, 0.18389)
+
+[node name="GEO-fence_gate_hinge" parent="PR-fence_gate-IMPORT/RIG-fence_gate/Skeleton3D" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.896058, 0.656636, -0.0068317)
+
+[node name="AnimationPlayer" parent="PR-fence_gate-IMPORT" index="20"]
+libraries = {
+&"": SubResource("AnimationLibrary_yf55q"),
+&"PR-fence_gate-anim_lib": ExtResource("4_3tv0a")
+}
+
+[node name="AnimationTree" type="AnimationTree" parent="PR-fence_gate-IMPORT"]
+tree_root = SubResource("AnimationNodeStateMachine_fr0ik")
+anim_player = NodePath("../AnimationPlayer")
+
+[node name="GateInspectionSpot" type="Area3D" parent="PR-fence_gate-IMPORT"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00135761, 0, 0.679912)
+collision_layer = 128
+collision_mask = 8
+monitoring = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PR-fence_gate-IMPORT/GateInspectionSpot"]
+shape = SubResource("CylinderShape3D_fr0ik")
+
+[node name="FenceInspectionSpot" type="Area3D" parent="PR-fence_gate-IMPORT"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.76812, 0, 0.647009)
+collision_layer = 128
+collision_mask = 8
+monitoring = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PR-fence_gate-IMPORT/FenceInspectionSpot"]
+shape = SubResource("CylinderShape3D_fr0ik")
+
+[node name="PlankInspectionSpot" type="Area3D" parent="PR-fence_gate-IMPORT"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.64634, -2.38419e-07, 0.613363)
+collision_layer = 128
+collision_mask = 8
+monitoring = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PR-fence_gate-IMPORT/PlankInspectionSpot"]
+shape = SubResource("CylinderShape3D_fr0ik")
+
+[node name="OtherSideSpot" type="Area3D" parent="PR-fence_gate-IMPORT"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.67902, -2.38419e-07, -0.501935)
+collision_layer = 128
+collision_mask = 8
+monitoring = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PR-fence_gate-IMPORT/OtherSideSpot"]
+shape = SubResource("CylinderShape3D_fr0ik")
+
+[node name="OpenGateSpot" type="Area3D" parent="PR-fence_gate-IMPORT"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.189795, -2.38419e-07, -0.799521)
+collision_layer = 128
+collision_mask = 8
+monitoring = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PR-fence_gate-IMPORT/OpenGateSpot"]
+shape = SubResource("CylinderShape3D_fr0ik")
+
+[editable path="PR-fence_gate-IMPORT"]

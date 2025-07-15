@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://cuqa7rrc7xasr"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_k336r"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_brs4v"]
+albedo_color = Color(0.381, 0.296182, 0.268783, 1)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_brs4v"]
+height = 1.62402
+radius = 0.257324
+
+[node name="Root" type="Node3D"]
+
+[node name="Area3D" type="Area3D" parent="." groups=["CollisionRoot"]]
+collision_layer = 16
+collision_mask = 8
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D"]
+transform = Transform3D(-1.78353e-08, -0.769721, 0, 0.408023, -3.36456e-08, 0, 0, 0, 0.355138, 0, 0.0222241, 0)
+mesh = SubResource("CylinderMesh_k336r")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_brs4v")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0.0267138, 0)
+shape = SubResource("CylinderShape3D_brs4v")

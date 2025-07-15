@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://cpmfxpiw03nlp"]
+
+[ext_resource type="Script" uid="uid://d4jmcu4ewysx7" path="res://source/entities/player_entities/emote_bubble.gd" id="1_34rqh"]
+[ext_resource type="PackedScene" uid="uid://dtdrns2ri314s" path="res://assets/props/snowman_emotes/PR-snowman_emotes.gltf" id="1_35uhm"]
+[ext_resource type="PackedScene" uid="uid://5v7akxx535re" path="res://source/audio/sfx/ui/emote_sounds.tscn" id="3_3ox1c"]
+
+[node name="PR-snowman_emotes" type="Node3D" node_paths=PackedStringArray("emote_sounds")]
+script = ExtResource("1_34rqh")
+emote_sounds = NodePath("EmoteSounds")
+
+[node name="PR-snowman_emotes-IMPORT" parent="." instance=ExtResource("1_35uhm")]
+
+[node name="EmoteSounds" parent="." instance=ExtResource("3_3ox1c")]

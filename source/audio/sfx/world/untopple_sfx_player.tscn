@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=3 uid="uid://bje7uesycia18"]
+
+[ext_resource type="AudioStream" uid="uid://vvqchppxoxhe" path="res://assets/sfx/world/LI-ToppleEntity-untopple-0.ogg" id="1_rlpw1"]
+[ext_resource type="AudioStream" uid="uid://bbcun4hpk3u0y" path="res://assets/sfx/world/LI-ToppleEntity-untopple-1.ogg" id="2_ivhwu"]
+[ext_resource type="AudioStream" uid="uid://5qsvp2htavfg" path="res://assets/sfx/world/LI-ToppleEntity-untopple-2.ogg" id="3_aaxc7"]
+[ext_resource type="AudioStream" uid="uid://ubhvvrjt5e4e" path="res://assets/sfx/world/LI-ToppleEntity-untopple-3.ogg" id="4_wn0ve"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_xyfqk"]
+random_pitch = 1.3
+streams_count = 4
+stream_0/stream = ExtResource("1_rlpw1")
+stream_1/stream = ExtResource("2_ivhwu")
+stream_2/stream = ExtResource("3_aaxc7")
+stream_3/stream = ExtResource("4_wn0ve")
+
+[node name="UntoppleSfxPlayer" type="AudioStreamPlayer3D"]
+stream = SubResource("AudioStreamRandomizer_xyfqk")
+volume_db = 5.0
+max_db = 4.5
+pitch_scale = 2.0
+max_distance = 40.0
+panning_strength = 2.0
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 4500.0

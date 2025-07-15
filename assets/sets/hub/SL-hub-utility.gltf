@@ -1,0 +1,45 @@
+{
+	"asset":{
+		"generator":"Khronos glTF Blender I/O v4.5.15",
+		"version":"2.0"
+	},
+	"scene":0,
+	"scenes":[
+		{
+			"extras":{
+				"gltfIOGodotAssetProperties":{
+					"export_type":2,
+					"root_type":2,
+					"append_parent_collection":1,
+					"asset_name":"SL-hub-utility"
+				},
+				"asset_type":"ASSET",
+				"root_type":"PASS_THROUGH",
+				"asset_id":"4d72af77d6f76b71"
+			},
+			"name":"SL-hub-utility",
+			"nodes":[
+				0,
+				1
+			]
+		}
+	],
+	"nodes":[
+		{
+			"name":"HLP-camera_marker_intro_01",
+			"translation":[
+				-3.056929349899292,
+				6.371230602264404,
+				6.816078186035156
+			]
+		},
+		{
+			"name":"HLP-camera_marker_intro_02",
+			"translation":[
+				-0.036483824253082275,
+				6.371229648590088,
+				6.832208633422852
+			]
+		}
+	]
+}

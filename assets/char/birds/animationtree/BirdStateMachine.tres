@@ -1,0 +1,33 @@
+[gd_resource type="AnimationNodeStateMachine" load_steps=8 format=3 uid="uid://bbbks73fwhjdn"]
+
+[ext_resource type="AnimationNodeBlendSpace1D" uid="uid://dagpp0bsitqyh" path="res://assets/char/birds/animationtree/IdleLoops_1DBlendSpace.tres" id="1_7gin2"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_cvy5o"]
+animation = &"bird_01-anim_lib/ACTN-bird-fly01"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_crqah"]
+animation = &"bird_01-anim_lib/ACTN-bird-fly02"
+
+[sub_resource type="AnimationNodeBlendSpace1D" id="AnimationNodeBlendSpace1D_wm6li"]
+blend_point_0/node = SubResource("AnimationNodeAnimation_cvy5o")
+blend_point_0/pos = 0.0
+blend_point_1/node = SubResource("AnimationNodeAnimation_crqah")
+blend_point_1/pos = 1.0
+blend_mode = 1
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_6171d"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_k4ynx"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_7gin2"]
+advance_mode = 2
+
+[resource]
+resource_local_to_scene = true
+states/End/position = Vector2(761, 100)
+"states/Fly Away/node" = SubResource("AnimationNodeBlendSpace1D_wm6li")
+"states/Fly Away/position" = Vector2(424, 209)
+"states/Idle Loops/node" = ExtResource("1_7gin2")
+"states/Idle Loops/position" = Vector2(424, 100)
+transitions = ["Idle Loops", "Fly Away", SubResource("AnimationNodeStateMachineTransition_6171d"), "Fly Away", "Idle Loops", SubResource("AnimationNodeStateMachineTransition_k4ynx"), "Start", "Idle Loops", SubResource("AnimationNodeStateMachineTransition_7gin2")]
+graph_offset = Vector2(-302, -25)

@@ -1,0 +1,53 @@
+[gd_resource type="AnimationNodeBlendTree" load_steps=11 format=3 uid="uid://clp7cxakg1js2"]
+
+[sub_resource type="AnimationNodeAdd2" id="AnimationNodeAdd2_0mskq"]
+
+[sub_resource type="AnimationNodeTimeSeek" id="AnimationNodeTimeSeek_vlo28"]
+
+[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_du5k4"]
+sync = true
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_allj7"]
+animation = &"Chocomel-anim_lib/LOOP-chocomel-walk"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ai7ql"]
+animation = &"Chocomel-anim_lib/LOOP-chocomel-trot"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_1gt4x"]
+animation = &"Chocomel-anim_lib/LOOP-chocomel-run"
+
+[sub_resource type="AnimationNodeBlendSpace1D" id="AnimationNodeBlendSpace1D_7wq4t"]
+blend_point_0/node = SubResource("AnimationNodeAnimation_allj7")
+blend_point_0/pos = 0.0
+blend_point_1/node = SubResource("AnimationNodeAnimation_ai7ql")
+blend_point_1/pos = 0.5
+blend_point_2/node = SubResource("AnimationNodeAnimation_1gt4x")
+blend_point_2/pos = 1.0
+blend_mode = 1
+
+[sub_resource type="AnimationNodeTimeScale" id="AnimationNodeTimeScale_vlo28"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_vlo28"]
+animation = &"Chocomel-anim_lib/POSE-chocomel-turn_left"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_0mskq"]
+animation = &"Chocomel-anim_lib/POSE-chocomel-turn_right"
+
+[resource]
+graph_offset = Vector2(-67.832, -221.2)
+nodes/adding_bend/node = SubResource("AnimationNodeAdd2_0mskq")
+nodes/adding_bend/position = Vector2(840, -240)
+nodes/bending_factor/node = SubResource("AnimationNodeTimeSeek_vlo28")
+nodes/bending_factor/position = Vector2(560, -60)
+nodes/is_right/node = SubResource("AnimationNodeBlend2_du5k4")
+nodes/is_right/position = Vector2(320, 20)
+nodes/movement_speed/node = SubResource("AnimationNodeBlendSpace1D_7wq4t")
+nodes/movement_speed/position = Vector2(340, -260)
+nodes/movement_speed_scale/node = SubResource("AnimationNodeTimeScale_vlo28")
+nodes/movement_speed_scale/position = Vector2(560, -260)
+nodes/output/position = Vector2(1120, -240)
+nodes/turn_left/node = SubResource("AnimationNodeAnimation_vlo28")
+nodes/turn_left/position = Vector2(-140, 20)
+nodes/turn_right/node = SubResource("AnimationNodeAnimation_0mskq")
+nodes/turn_right/position = Vector2(-140, 180)
+node_connections = [&"adding_bend", 0, &"movement_speed_scale", &"adding_bend", 1, &"bending_factor", &"bending_factor", 0, &"is_right", &"is_right", 0, &"turn_left", &"is_right", 1, &"turn_right", &"movement_speed_scale", 0, &"movement_speed", &"output", 0, &"adding_bend"]

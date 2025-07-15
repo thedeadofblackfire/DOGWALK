@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://yb7nhrf8rjf3"]
+
+[ext_resource type="PackedScene" uid="uid://bthilcs5d7bbi" path="res://assets/props/willow_tree/PR-willow_tree.gltf" id="1_pt0le"]
+[ext_resource type="Script" uid="uid://bj34k0ajpsopu" path="res://source/obstacles/generic_obstacle.gd" id="2_avyi2"]
+
+[node name="PR-willow_tree" type="Node3D"]
+
+[node name="PR-willow_tree-IMPORT" parent="." instance=ExtResource("1_pt0le")]
+collision_layer = 64
+script = ExtResource("2_avyi2")

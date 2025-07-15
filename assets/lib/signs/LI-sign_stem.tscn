@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://veplwna3o04x"]
+
+[ext_resource type="PackedScene" uid="uid://k2ijngtmivfq" path="res://assets/lib/signs/LI-sign_stem.gltf" id="1_08fcw"]
+[ext_resource type="Script" uid="uid://bj34k0ajpsopu" path="res://source/obstacles/generic_obstacle.gd" id="2_vhoqv"]
+
+[node name="LI-sign_stem" type="Node3D"]
+
+[node name="LI-sign_stem-IMPORT" parent="." instance=ExtResource("1_08fcw")]
+script = ExtResource("2_vhoqv")

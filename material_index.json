@@ -1,0 +1,724 @@
+{
+    "assets": {
+        "72b9b7131c134000": {
+            "name": "roots",
+            "filepath": "assets/lib/roots/roots"
+        },
+        "6794315e4a0ea0ba": {
+            "name": "bushlets",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets"
+        },
+        "7821071a1715aaca": {
+            "name": "pine_bark_alt",
+            "filepath": "assets/lib/trees/pine_bark_alt"
+        },
+        "173ae2405729cedf": {
+            "name": "pine_bark",
+            "filepath": "assets/lib/trees/pine_bark"
+        },
+        "4e2fb75edc208126": {
+            "name": "tree_stump",
+            "filepath": "assets/lib/trees/tree_stump"
+        },
+        "f4327e9bc994eeac": {
+            "name": "snow_patch-pond",
+            "filepath": "assets/sets/world/snow_patch-pond"
+        },
+        "ab2edb178b546958": {
+            "name": "creek_water_surface",
+            "filepath": "assets/sets/world/creek_water_surface"
+        },
+        "f02d020fd4f62fcf": {
+            "name": "creek_bed",
+            "filepath": "assets/sets/world/creek_bed"
+        },
+        "a5724f0c14bcda36": {
+            "name": "creek_edge",
+            "filepath": "assets/sets/world/creek_edge"
+        },
+        "b4be8b89db09cf80": {
+            "name": "pond_water_surface",
+            "filepath": "assets/sets/world/pond_water_surface"
+        },
+        "bd79c94c2fe09e5d": {
+            "name": "ground_snow",
+            "filepath": "assets/sets/world/ground_snow"
+        },
+        "42e4ef16eb43bb52": {
+            "name": "path",
+            "filepath": "assets/sets/world/path"
+        },
+        "30bc2525373f9b0f": {
+            "name": "willow_tree",
+            "filepath": "assets/props/willow_tree/willow_tree"
+        },
+        "a9e386996633d5f9": {
+            "name": "willow_tree_leaves",
+            "filepath": "assets/props/willow_tree/willow_tree_leaves"
+        },
+        "e4d233f78446f978": {
+            "name": "camping_table_snow",
+            "filepath": "assets/props/camping_table/camping_table_snow"
+        },
+        "7e66061d44175ad9": {
+            "name": "camping_table-nails",
+            "filepath": "assets/props/camping_table/camping_table-nails"
+        },
+        "c3e81fcc37649a8b": {
+            "name": "camping_table_wood",
+            "filepath": "assets/props/camping_table/camping_table_wood"
+        },
+        "7bd0b7549400e298": {
+            "name": "bush",
+            "filepath": "assets/lib/bushes/bush"
+        },
+        "f8d92897471b516e": {
+            "name": "snow_wall_top",
+            "filepath": "assets/lib/stone_walls/snow_wall_top"
+        },
+        "55cee31db7bc98ca": {
+            "name": "stone_wall",
+            "filepath": "assets/lib/stone_walls/stone_wall"
+        },
+        "90c6c62dc24549bf": {
+            "name": "boulders_albedo_01",
+            "filepath": "assets/lib/boulders/boulders_albedo_01"
+        },
+        "9a30d4a486e8b9c6": {
+            "name": "creek_bridge_snow",
+            "filepath": "assets/props/creek_bridge/creek_bridge_snow"
+        },
+        "f5565f808a3d188c": {
+            "name": "bridge_wood",
+            "filepath": "assets/props/creek_bridge/bridge_wood"
+        },
+        "029a4a57a712a942": {
+            "name": "pine_bark_simplified",
+            "filepath": "assets/lib/trees/pine_bark_simplified"
+        },
+        "25330e66f650d1ec": {
+            "name": "pine_cuts_atlas_albedo_01",
+            "filepath": "assets/lib/trees/pine_cuts_atlas_albedo_01"
+        },
+        "7fdaf3c9308b8f2b": {
+            "name": "pine_cuts_albedo_01",
+            "filepath": "assets/lib/trees/pine_cuts_albedo_01"
+        },
+        "8cafaf214130b3ed": {
+            "name": "pine_tree",
+            "filepath": "assets/lib/trees/pine_tree"
+        },
+        "d6499e9d6bf43d6b": {
+            "name": "birch_tree",
+            "filepath": "assets/lib/trees/birch_tree"
+        },
+        "5b0c7141484ecd4c": {
+            "name": "pinda-mouths",
+            "filepath": "assets/char/pinda/pinda-mouths"
+        },
+        "484ce8acc40f2ccc": {
+            "name": "pinda",
+            "filepath": "assets/char/pinda/pinda"
+        },
+        "ce4a3b016546aa07": {
+            "name": "chocomel",
+            "filepath": "assets/char/chocomel/chocomel"
+        },
+        "39c2b47a3998985d": {
+            "name": "traffic_cone_tennis_ball",
+            "filepath": "assets/props/tennis_ball/traffic_cone_tennis_ball"
+        },
+        "72558e7c6827c02e": {
+            "name": "traffic_cone_tennis_ball",
+            "filepath": "assets/props/traffic_cone/traffic_cone_tennis_ball"
+        },
+        "671b4cd9584f7573": {
+            "name": "shovel_blade",
+            "filepath": "assets/props/shovel/shovel_blade"
+        },
+        "749312c251331635": {
+            "name": "shovel_metal",
+            "filepath": "assets/props/shovel/shovel_metal"
+        },
+        "a9670bc1a5d0cca9": {
+            "name": "shovel_black_plastic",
+            "filepath": "assets/props/shovel/shovel_black_plastic"
+        },
+        "0b580d996c495668": {
+            "name": "shovel_handle",
+            "filepath": "assets/props/shovel/shovel_handle"
+        },
+        "0d0053e129ab4c3d": {
+            "name": "asset_zoo-ground_snow",
+            "filepath": "assets/sets/asset_zoo/asset_zoo-ground_snow"
+        },
+        "8196c21aaa677e8d": {
+            "name": "tears-3",
+            "filepath": "assets/char/pinda/tears-3"
+        },
+        "92651a2f1dfd28f7": {
+            "name": "tears-2",
+            "filepath": "assets/char/pinda/tears-2"
+        },
+        "a027194ec7449825": {
+            "name": "tears-1",
+            "filepath": "assets/char/pinda/tears-1"
+        },
+        "2a30527b70fe77de": {
+            "name": "snowman_pebble",
+            "filepath": "assets/props/snowman/snowman_pebble"
+        },
+        "6b01e1b05636477b": {
+            "name": "snowman_snow",
+            "filepath": "assets/props/snowman/snowman_snow"
+        },
+        "e5eab01b33abd1fb": {
+            "name": "snowman_branch",
+            "filepath": "assets/props/snowman/snowman_branch"
+        },
+        "925aaa6053a29310": {
+            "name": "grass",
+            "filepath": "assets/lib/shrubs_and_grass/grass"
+        },
+        "e905485113b92d0c": {
+            "name": "reed",
+            "filepath": "assets/lib/shrubs_and_grass/reed"
+        },
+        "584980e58f667fce": {
+            "name": "boulder_cut",
+            "filepath": "assets/lib/boulders/boulder_cut"
+        },
+        "a9a7fc83b8d91036": {
+            "name": "pond_snow_edge",
+            "filepath": "assets/sets/world/pond_snow_edge"
+        },
+        "158b6138a600fecc": {
+            "name": "invisible",
+            "filepath": "assets/sets/world/invisible"
+        },
+        "164574d6d581ef3c": {
+            "name": "dogwood",
+            "filepath": "assets/lib/shrubs_and_grass/dogwood"
+        },
+        "cb2b0cc5a9e3b4d5": {
+            "name": "bushlets_branched",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets_branched"
+        },
+        "43bf9b9fd1438782": {
+            "name": "bushlets_blue_fan",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets_blue_fan"
+        },
+        "d1f69e03f81856bf": {
+            "name": "bushlets_white_garland",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets_white_garland"
+        },
+        "aa4588998a079634": {
+            "name": "bushlets_blue_delicate",
+            "filepath": "assets/lib/shrubs_and_grass/bushlets_blue_delicate"
+        },
+        "05ee844e2b1800a9": {
+            "name": "gate_tape",
+            "filepath": "assets/props/fence_gate/gate_tape"
+        },
+        "1ad3c4ad3f0bbf2c": {
+            "name": "gate_pin",
+            "filepath": "assets/props/fence_gate/gate_pin"
+        },
+        "f31b88458d0e9999": {
+            "name": "gate_parts",
+            "filepath": "assets/props/fence_gate/gate_parts"
+        },
+        "a3e966d1686a2f8c": {
+            "name": "ear_muff",
+            "filepath": "assets/props/ear_muffs/ear_muff"
+        },
+        "ab857b0a7c159b93": {
+            "name": "fence_parts-snow",
+            "filepath": "assets/lib/fence_parts/fence_parts-snow"
+        },
+        "11271e8932030dc8": {
+            "name": "fence_parts-wood",
+            "filepath": "assets/lib/fence_parts/fence_parts-wood"
+        },
+        "e56a887d00d1653e": {
+            "name": "gate_parts",
+            "filepath": "assets/props/fence_gate/gate_parts"
+        },
+        "f44b03bdc0dfa9f1": {
+            "name": "gate_snow",
+            "filepath": "assets/props/fence_gate/gate_snow"
+        },
+        "fffa944f0781ead6": {
+            "name": "gate_tape",
+            "filepath": "assets/props/fence_gate/gate_tape"
+        },
+        "951b5332f3084fef": {
+            "name": "pines_knotholes_albedo",
+            "filepath": "assets/lib/trees/pines_knotholes_albedo"
+        },
+        "fab95156a4eb5524": {
+            "name": "birch_branches_albedo_01",
+            "filepath": "assets/lib/trees/birch_branches_albedo_01"
+        },
+        "3d06eb07132309da": {
+            "name": "snow_elements",
+            "filepath": "assets/lib/trees/snow_elements"
+        },
+        "4518fce615849142": {
+            "name": "snow_patch-pond",
+            "filepath": "assets/sets/world/snow_patch-pond"
+        },
+        "6ffe1eda98f18429": {
+            "name": "snow_patch",
+            "filepath": "assets/sets/world/snow_patch"
+        },
+        "6df4a5597fcff7c5": {
+            "name": "pond_water_surface",
+            "filepath": "assets/sets/world/pond_water_surface"
+        },
+        "1a21ee8045af0578": {
+            "name": "pond_ice_floes",
+            "filepath": "assets/sets/world/pond_ice_floes"
+        },
+        "c1bc79e1be73f8ce": {
+            "name": "shed_parts",
+            "filepath": "assets/props/shed/shed_parts"
+        },
+        "598f5b3d95e7f61c": {
+            "name": "shed_snow",
+            "filepath": "assets/props/shed/shed_snow"
+        },
+        "178d52d4b28927fb": {
+            "name": "snow_pieces_albedo_01",
+            "filepath": "assets/lib/snow/snow_pieces_albedo_01"
+        },
+        "49574747a0cc2582": {
+            "name": "snow_ripped_piles_albedo_01",
+            "filepath": "assets/lib/snow/snow_ripped_piles_albedo_01"
+        },
+        "9c7d2dd8f629814c": {
+            "name": "leash_handle",
+            "filepath": "assets/props/leash_handle/leash_handle"
+        },
+        "5a7f22f396333a96": {
+            "name": "shed_nails",
+            "filepath": "assets/props/shed/shed_nails"
+        },
+        "8aa46b4fd91dce14": {
+            "name": "white",
+            "filepath": "assets/props/snowman/white"
+        },
+        "06ea2223c1d6b62a": {
+            "name": "creek_bridge_snow",
+            "filepath": "assets/props/creek_bridge/creek_bridge_snow"
+        },
+        "5493de6d07e3913c": {
+            "name": "birds",
+            "filepath": "assets/char/birds/birds"
+        },
+        "ee41d69f194e8b04": {
+            "name": "birds_beak",
+            "filepath": "assets/char/birds/birds_beak"
+        },
+        "43f773025f57387e": {
+            "name": "emote_bubble-crash",
+            "filepath": "assets/props/emote_bubble/emote_bubble-crash"
+        },
+        "05f6fe8c455b463a": {
+            "name": "emote_bubble-complaining",
+            "filepath": "assets/props/emote_bubble/emote_bubble-complaining"
+        },
+        "16bcde8ccf73d950": {
+            "name": "emote_bubble-snowman",
+            "filepath": "assets/props/emote_bubble/emote_bubble-snowman"
+        },
+        "05dc0cfa1482818a": {
+            "name": "emote_bubble-doom_spiral",
+            "filepath": "assets/props/emote_bubble/emote_bubble-doom_spiral"
+        },
+        "3cc570b3ca3b3c8f": {
+            "name": "emote_bubble-chocomel",
+            "filepath": "assets/props/emote_bubble/emote_bubble-chocomel"
+        },
+        "d358efb155a407b5": {
+            "name": "emote_bubble-cloudy",
+            "filepath": "assets/props/emote_bubble/emote_bubble-cloudy"
+        },
+        "c9ae24d25a0f757a": {
+            "name": "emote_bubble-hourglass",
+            "filepath": "assets/props/emote_bubble/emote_bubble-hourglass"
+        },
+        "363a9fd5382037c8": {
+            "name": "emote_bubble-sweat",
+            "filepath": "assets/props/emote_bubble/emote_bubble-sweat"
+        },
+        "97779822e9d92ae7": {
+            "name": "emote_bubble-exclamation",
+            "filepath": "assets/props/emote_bubble/emote_bubble-exclamation"
+        },
+        "ddc03c5f54f53490": {
+            "name": "emote_bubble-hearts",
+            "filepath": "assets/props/emote_bubble/emote_bubble-hearts"
+        },
+        "ba4116fafe100618": {
+            "name": "pinda_camera_strap",
+            "filepath": "assets/props/pinda_camera/pinda_camera_strap"
+        },
+        "e1b255c9c01c5abb": {
+            "name": "pinda_camera",
+            "filepath": "assets/props/pinda_camera/pinda_camera"
+        },
+        "de3f186f2f2d994b": {
+            "name": "leash_handle-base",
+            "filepath": "assets/props/leash_handle/leash_handle-base"
+        },
+        "c682f0272886ea53": {
+            "name": "leash_handle-button",
+            "filepath": "assets/props/leash_handle/leash_handle-button"
+        },
+        "f698ff6da1941010": {
+            "name": "branch_snowman",
+            "filepath": "assets/props/branch/branch_snowman"
+        },
+        "90a56301314cd678": {
+            "name": "traffic_cone",
+            "filepath": "assets/props/traffic_cone/traffic_cone"
+        },
+        "d202839cdaf85aaf": {
+            "name": "tennis_ball",
+            "filepath": "assets/props/tennis_ball/tennis_ball"
+        },
+        "77054674f23db8a2": {
+            "name": "emote_bubble-treat",
+            "filepath": "assets/props/emote_bubble/emote_bubble-treat"
+        },
+        "279621069292a79d": {
+            "name": "path-hub",
+            "filepath": "assets/lib/paths/path-hub"
+        },
+        "c5ee880d9702e91d": {
+            "name": "treat",
+            "filepath": "assets/char/pinda/treat"
+        },
+        "a15b6a6a28e335d0": {
+            "name": "path-faint",
+            "filepath": "assets/lib/paths/path-faint"
+        },
+        "ab2b9945403eb7f0": {
+            "name": "path-fence",
+            "filepath": "assets/lib/paths/path-fence"
+        },
+        "3e67c267d38b5116": {
+            "name": "treat",
+            "filepath": "assets/props/treat/treat"
+        },
+        "e5831f6ad1cd8ef2": {
+            "name": "hay-shed",
+            "filepath": "assets/props/shed/hay-shed"
+        },
+        "fa6ae1656032f70b": {
+            "name": "pond_underwater",
+            "filepath": "assets/sets/world/pond_underwater"
+        },
+        "8b6e380127d9cef7": {
+            "name": "pond_underwater_bubbles",
+            "filepath": "assets/sets/world/pond_underwater_bubbles"
+        },
+        "6f3742ce554d5f94": {
+            "name": "sign_board-board",
+            "filepath": "assets/props/sign_board/sign_board-board"
+        },
+        "8d8feaee0be4ae18": {
+            "name": "sign_board-snow",
+            "filepath": "assets/props/sign_board/sign_board-snow"
+        },
+        "497737551aa6cc26": {
+            "name": "sign_board-poles",
+            "filepath": "assets/props/sign_board/sign_board-poles"
+        },
+        "972f0cdaa1dfeda0": {
+            "name": "sign_board-map",
+            "filepath": "assets/props/sign_board/sign_board-map"
+        },
+        "b9602d56638fa0f1": {
+            "name": "sign_board-roof",
+            "filepath": "assets/props/sign_board/sign_board-roof"
+        },
+        "27b7d776dfc8e0df": {
+            "name": "leash_handle-metal",
+            "filepath": "assets/props/leash_handle/leash_handle-metal"
+        },
+        "3053707756113194": {
+            "name": "sign_board-tape",
+            "filepath": "assets/props/sign_board/sign_board-tape"
+        },
+        "f39475275ea92170": {
+            "name": "fireplace_sign",
+            "filepath": "assets/lib/signs/fireplace_sign"
+        },
+        "aaca791ecc4a65e2": {
+            "name": "sign_stem",
+            "filepath": "assets/lib/signs/sign_stem"
+        },
+        "e8d9659abf122291": {
+            "name": "pinda_tears",
+            "filepath": "assets/char/pinda/pinda_tears"
+        },
+        "e7cd5be5c3b8135f": {
+            "name": "ground_snow-hub",
+            "filepath": "assets/sets/hub/ground_snow-hub"
+        },
+        "676a27051c620332": {
+            "name": "snow_patch-fence",
+            "filepath": "assets/sets/fence/snow_patch-fence"
+        },
+        "1245e4d25be3fea3": {
+            "name": "ground_snow-fence",
+            "filepath": "assets/sets/fence/ground_snow-fence"
+        },
+        "fccbeb2bc3ed4afc": {
+            "name": "snow_patch_pond-fence",
+            "filepath": "assets/sets/fence/snow_patch_pond-fence"
+        },
+        "2ca4c4bbc9cb74d9": {
+            "name": "path-faint-hub",
+            "filepath": "assets/sets/hub/path-faint-hub"
+        },
+        "f16d0ac632d30e60": {
+            "name": "path-hub",
+            "filepath": "assets/sets/hub/path-hub"
+        },
+        "55f532cd71c67141": {
+            "name": "snow_patch-hub",
+            "filepath": "assets/sets/hub/snow_patch-hub"
+        },
+        "d7896fe42089abcc": {
+            "name": "emote_bubble-treat",
+            "filepath": "assets/props/emote_bubble/emote_bubble-treat"
+        },
+        "b406b7270f113e2a": {
+            "name": "emote_bubble-button_press",
+            "filepath": "assets/props/emote_bubble/emote_bubble-button_press"
+        },
+        "8b610e6ab0f71b2a": {
+            "name": "emote_bubble-click_prompt",
+            "filepath": "assets/props/emote_bubble/emote_bubble-click_prompt"
+        },
+        "5fb5e63b5e95ef4a": {
+            "name": "emote_bubble-button_prompt",
+            "filepath": "assets/props/emote_bubble/emote_bubble-button_prompt"
+        },
+        "fd13e873f51799c2": {
+            "name": "emote_bubble-click_press",
+            "filepath": "assets/props/emote_bubble/emote_bubble-click_press"
+        },
+        "9395b0617e5d6387": {
+            "name": "emote_bubble-missing_hat",
+            "filepath": "assets/props/snowman_emotes/emote_bubble-missing_hat"
+        },
+        "e07a1ff32edad548": {
+            "name": "emote_bubble-missing_arm",
+            "filepath": "assets/props/snowman_emotes/emote_bubble-missing_arm"
+        },
+        "aabf02f825847817": {
+            "name": "fireplace_ground_marks",
+            "filepath": "assets/props/fireplace/fireplace_ground_marks"
+        },
+        "45903d90dac8635e": {
+            "name": "snow_patch_01",
+            "filepath": "assets/lib/snow_patches/snow_patch_01"
+        },
+        "c5ac7721f98dd416": {
+            "name": "snow_patch_02",
+            "filepath": "assets/lib/snow_patches/snow_patch_02"
+        },
+        "ab64c37cb4cf61dc": {
+            "name": "test_path_1",
+            "filepath": "assets/lib/paths/test_path_1"
+        },
+        "ced1801ae130cad8": {
+            "name": "test_path_2",
+            "filepath": "assets/lib/paths/test_path_2"
+        },
+        "1fa485e957133612": {
+            "name": "path-snowman",
+            "filepath": "assets/lib/paths/path-snowman"
+        },
+        "1bab71b12c43c43f": {
+            "name": "path-hub_connection",
+            "filepath": "assets/lib/paths/path-hub_connection"
+        },
+        "c8d06f94a1cbdca0": {
+            "name": "ground_snow-clearing",
+            "filepath": "assets/sets/clearing/ground_snow-clearing"
+        },
+        "9a9b2737a030d116": {
+            "name": "path-pond",
+            "filepath": "assets/lib/paths/path-pond"
+        },
+        "51ad21e7ed0162c0": {
+            "name": "pine_tree_shadow_caster",
+            "filepath": "assets/lib/pine_tree_alpha/pine_tree_shadow_caster"
+        },
+        "fd68d6ded72e43fc": {
+            "name": "snow_edge_plateau",
+            "filepath": "assets/lib/stone_plateaus/snow_edge_plateau"
+        },
+        "e31f3ff114fe875e": {
+            "name": "fence_parts-nails",
+            "filepath": "assets/lib/fence_parts/fence_parts-nails"
+        },
+        "5f10d33d0fcc345e": {
+            "name": "creek_bridge-nails",
+            "filepath": "assets/props/creek_bridge/creek_bridge-nails"
+        },
+        "56d7ce96acbedc97": {
+            "name": "sign_board-pin",
+            "filepath": "assets/props/sign_board/sign_board-pin"
+        },
+        "5314e9e53b2ce6c1": {
+            "name": "birch_tree_outgrowths",
+            "filepath": "assets/lib/trees/birch_tree_outgrowths"
+        },
+        "bb0cb28735b2bfb9": {
+            "name": "snow_edge_stone_wall",
+            "filepath": "assets/lib/stone_walls/snow_edge_stone_wall"
+        },
+        "c1f27af263b4e3e9": {
+            "name": "snow_edge_plateau",
+            "filepath": "assets/lib/stone_plateaus/snow_edge_plateau"
+        },
+        "f5ab7335b5626c27": {
+            "name": "pond_crack",
+            "filepath": "assets/sets/world/pond_crack"
+        },
+        "960ef7431d36260c": {
+            "name": "pine_bark_alt-log",
+            "filepath": "assets/lib/trees/pine_bark_alt-log"
+        },
+        "030e7b547823f2e3": {
+            "name": "pine_bark-stump",
+            "filepath": "assets/lib/trees/pine_bark-stump"
+        },
+        "a9b685a5be55a9a6": {
+            "name": "pine_bark-stump",
+            "filepath": "assets/lib/trees/pine_bark-stump"
+        },
+        "324c227a470c9078": {
+            "name": "pine_bark_alt-stump",
+            "filepath": "assets/lib/trees/pine_bark_alt-stump"
+        },
+        "cde71f1f8b377adf": {
+            "name": "emote_bubble-fireworks",
+            "filepath": "assets/props/snowman_emotes/emote_bubble-fireworks"
+        },
+        "70c35d1b1877aae1": {
+            "name": "emote_bubble-missing_cane",
+            "filepath": "assets/props/snowman_emotes/emote_bubble-missing_cane"
+        },
+        "d7e260c5cb13c74b": {
+            "name": "emote_bubble-missing_nose",
+            "filepath": "assets/props/snowman_emotes/emote_bubble-missing_nose"
+        },
+        "daf8d400ab3e93b7": {
+            "name": "snow_piles",
+            "filepath": "assets/props/snow_piles/snow_piles"
+        },
+        "d216280b2464ba20": {
+            "name": "pond_creek_transition",
+            "filepath": "assets/sets/world/pond_creek_transition"
+        },
+        "eeb1df7d7cde79f1": {
+            "name": "strings",
+            "filepath": "assets/props/logo/strings"
+        },
+        "6d4c80ac60231f09": {
+            "name": "logo_cardboard_inside",
+            "filepath": "assets/props/logo/logo_cardboard_inside"
+        },
+        "79a3fface3bfc075": {
+            "name": "logo_cardboard",
+            "filepath": "assets/props/logo/logo_cardboard"
+        },
+        "b162b388f53a0722": {
+            "name": "fish_albedo",
+            "filepath": "assets/char/fish/fish_albedo"
+        },
+        "662f071de5ca3519": {
+            "name": "stone_wall_snowy",
+            "filepath": "assets/lib/stone_plateaus/stone_wall_snowy"
+        },
+        "5de5d6528f5f06d9": {
+            "name": "fireplace_ground_marks_burned",
+            "filepath": "assets/props/fireplace/fireplace_ground_marks_burned"
+        },
+        "9a5309d9a553eaa3": {
+            "name": "fireplace_burnt_log",
+            "filepath": "assets/props/fireplace/fireplace_burnt_log"
+        },
+        "cb8fe9cd27b69852": {
+            "name": "tree_shrooms",
+            "filepath": "assets/lib/tree_shrooms/tree_shrooms"
+        },
+        "50f99e2a62290829": {
+            "name": "bug_hotel",
+            "filepath": "assets/props/bug_hotel/bug_hotel"
+        },
+        "92de2fe575928211": {
+            "name": "pond_sign",
+            "filepath": "assets/lib/signs/pond_sign"
+        },
+        "e14aa3a57e2fc6c0": {
+            "name": "forest_sign",
+            "filepath": "assets/lib/signs/forest_sign"
+        },
+        "b6f578d7f79596a1": {
+            "name": "fence_sign",
+            "filepath": "assets/lib/signs/fence_sign"
+        },
+        "0460578e07152afc": {
+            "name": "pine_bark_fade",
+            "filepath": "assets/lib/trees/pine_bark_fade"
+        },
+        "8b905e91c50a4ea0": {
+            "name": "tree_stump_fade",
+            "filepath": "assets/lib/trees/tree_stump_fade"
+        },
+        "8154ffe4bcfa39da": {
+            "name": "pine_bark_alt_fade",
+            "filepath": "assets/lib/trees/pine_bark_alt_fade"
+        },
+        "486f0577aa6a073c": {
+            "name": "birch_tree_fade",
+            "filepath": "assets/lib/trees/birch_tree_fade"
+        },
+        "025de0ec4a896677": {
+            "name": "willow_tree_inner_stump",
+            "filepath": "assets/props/willow_tree/willow_tree_inner_stump"
+        },
+        "8dbc9c48932ed737": {
+            "name": "willow_tree_stump",
+            "filepath": "assets/props/willow_tree/willow_tree_stump"
+        },
+        "20a536f1e0311c27": {
+            "name": "emote_bubble-move_mouse",
+            "filepath": "assets/props/emote_bubble/emote_bubble-move_mouse"
+        },
+        "f4b64c2d972ac187": {
+            "name": "emote_bubble-move_stick",
+            "filepath": "assets/props/emote_bubble/emote_bubble-move_stick"
+        },
+        "b423c2a0efd19bf1": {
+            "name": "birch_tree_outer_layer",
+            "filepath": "assets/lib/trees/birch_tree_outer_layer"
+        },
+        "4c7a63d7389c1411": {
+            "name": "birch_tree_outer_layer",
+            "filepath": "assets/lib/trees/birch_tree_outer_layer"
+        },
+        "691f6905cea49762": {
+            "name": "bird_houses",
+            "filepath": "assets/lib/bird_houses/bird_houses"
+        }
+    }
+}

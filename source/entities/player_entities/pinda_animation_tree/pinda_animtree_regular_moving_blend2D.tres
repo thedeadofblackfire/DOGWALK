@@ -1,0 +1,44 @@
+[gd_resource type="AnimationNodeBlendSpace2D" load_steps=9 format=3 uid="uid://wbi4xgvrwe3r"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_g0e0p"]
+animation = &"Pinda-anim_lib/LOOP-pinda-walk_tired"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_br5yc"]
+animation = &"Pinda-anim_lib/LOOP-pinda-walk"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_uldcn"]
+animation = &"Pinda-anim_lib/LOOP-pinda-run"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_rags6"]
+animation = &"Pinda-anim_lib/LOOP-Pinda-run_tired"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ndye6"]
+animation = &"Pinda-anim_lib/LOOP-pinda-run_dragged_tired"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_b8fq3"]
+animation = &"Pinda-anim_lib/LOOP-pinda-run_dragged"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_h4o6p"]
+animation = &"Pinda-anim_lib/LOOP-pinda-idle_tired"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_s1ng5"]
+animation = &"Pinda-anim_lib/LOOP-pinda-idle_happy"
+
+[resource]
+blend_point_0/node = SubResource("AnimationNodeAnimation_g0e0p")
+blend_point_0/pos = Vector2(0, 0.3)
+blend_point_1/node = SubResource("AnimationNodeAnimation_br5yc")
+blend_point_1/pos = Vector2(1, 0.3)
+blend_point_2/node = SubResource("AnimationNodeAnimation_uldcn")
+blend_point_2/pos = Vector2(1, 0.7)
+blend_point_3/node = SubResource("AnimationNodeAnimation_rags6")
+blend_point_3/pos = Vector2(0, 0.7)
+blend_point_4/node = SubResource("AnimationNodeAnimation_ndye6")
+blend_point_4/pos = Vector2(0, 1)
+blend_point_5/node = SubResource("AnimationNodeAnimation_b8fq3")
+blend_point_5/pos = Vector2(1, 1)
+blend_point_6/node = SubResource("AnimationNodeAnimation_h4o6p")
+blend_point_6/pos = Vector2(0, 0)
+blend_point_7/node = SubResource("AnimationNodeAnimation_s1ng5")
+blend_point_7/pos = Vector2(1, 0)
+blend_mode = 1

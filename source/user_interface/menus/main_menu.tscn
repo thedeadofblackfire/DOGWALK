@@ -1,0 +1,91 @@
+[gd_scene load_steps=3 format=3 uid="uid://t2dkngwv8t38"]
+
+[ext_resource type="Theme" uid="uid://dn50ucqdaqlr1" path="res://source/user_interface/menus/menu_theme.tres" id="1_dpc8s"]
+[ext_resource type="Script" uid="uid://gutbs8qp1ldk" path="res://source/user_interface/menus/main_menu.gd" id="2_dpc8s"]
+
+[node name="Main" type="Control" node_paths=PackedStringArray("continue_button", "new_game_button", "settings_button", "quit_button", "main_screen", "main_menu", "transition_timer")]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_dpc8s")
+script = ExtResource("2_dpc8s")
+continue_button = NodePath("MainScreen/MainMenu/VBoxContainer/ContinueButton")
+new_game_button = NodePath("MainScreen/MainMenu/VBoxContainer/NewGameButton")
+settings_button = NodePath("MainScreen/MainMenu/VBoxContainer/SettingsButton")
+quit_button = NodePath("MainScreen/MainMenu/VBoxContainer/QuitButton")
+main_screen = NodePath("MainScreen")
+main_menu = NodePath("MainScreen/MainMenu")
+transition_timer = NodePath("TransitionTimer")
+metadata/_edit_vertical_guides_ = [960.0]
+
+[node name="MainScreen" type="HSplitContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+split_offset = 1920
+dragging_enabled = false
+dragger_visibility = 2
+
+[node name="MainMenu" type="Control" parent="MainScreen"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainScreen/MainMenu"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.011
+anchor_top = 0.533
+anchor_right = 1.245
+anchor_bottom = 0.85
+offset_left = -0.360001
+offset_top = 0.359924
+offset_right = -0.200073
+grow_horizontal = 2
+size_flags_horizontal = 4
+
+[node name="ContinueButton" type="Button" parent="MainScreen/MainMenu/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 2
+text = "Continue"
+
+[node name="NewGameButton" type="Button" parent="MainScreen/MainMenu/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+text = "New Game"
+
+[node name="SettingsButton" type="Button" parent="MainScreen/MainMenu/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+text = "Settings"
+
+[node name="CreditsButton" type="Button" parent="MainScreen/MainMenu/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+text = "Credits"
+
+[node name="QuitButton" type="Button" parent="MainScreen/MainMenu/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+text = "Quit"
+
+[node name="SettingsDummy" type="Control" parent="MainScreen"]
+layout_mode = 2
+
+[node name="TransitionTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="drag_ended" from="MainScreen" to="." method="_on_pause_screen_drag_ended"]
+[connection signal="drag_started" from="MainScreen" to="." method="_on_pause_screen_drag_started"]
+[connection signal="dragged" from="MainScreen" to="." method="_on_pause_screen_dragged"]
+[connection signal="pressed" from="MainScreen/MainMenu/VBoxContainer/CreditsButton" to="." method="_on_credits_button_pressed"]

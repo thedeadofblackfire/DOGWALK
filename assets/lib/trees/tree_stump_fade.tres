@@ -1,0 +1,46 @@
+[gd_resource type="ShaderMaterial" load_steps=5 format=3 uid="uid://krsnjwsmx8kw"]
+
+[ext_resource type="Shader" uid="uid://dferjeijr7g3r" path="res://source/shaders/paper-default.gdshader" id="1_4yfcl"]
+[ext_resource type="Texture2D" uid="uid://ygg4ta5ecg3r" path="res://assets/lib/textures/tree_stumps_albedo_01.png" id="2_7ndul"]
+[ext_resource type="Texture2D" uid="uid://iwqyc7o0rqkj" path="res://assets/lib/textures/tree_stumps_roughness_01.png" id="3_78bev"]
+[ext_resource type="Texture2D" uid="uid://jmsojyuo7l1e" path="res://assets/textures/paper_rough_medium-normal.png" id="4_4cpmv"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_4yfcl")
+shader_parameter/fake_depth = true
+shader_parameter/flip_normals = false
+shader_parameter/depth_blend = false
+shader_parameter/paper_color = Color(0.696012, 0.60659, 0.510325, 1)
+shader_parameter/backface_color = false
+shader_parameter/albedo_color = Color(0.502883, 0.428691, 0.332452, 1)
+shader_parameter/albedo_texture = ExtResource("2_7ndul")
+shader_parameter/edge_use_alpha = true
+shader_parameter/normal_texture = ExtResource("4_4cpmv")
+shader_parameter/normal_strength = 0.5
+shader_parameter/invert_normal = false
+shader_parameter/normal_use_uv2 = true
+shader_parameter/albedo_texture_size = Vector2i(1024, 1024)
+shader_parameter/point_size = 0.0
+shader_parameter/specular = 0.5
+shader_parameter/roughness = 1.0
+shader_parameter/roughness_texture = ExtResource("3_78bev")
+shader_parameter/metallic = 0.0
+shader_parameter/metallic_texture = ExtResource("3_78bev")
+shader_parameter/wear_strength = 0.5
+shader_parameter/wear_start = 0.68
+shader_parameter/wear_end = 1.0
+shader_parameter/wear_distortion_scale = 100.0
+shader_parameter/wear_distortion_strength = 0.12
+shader_parameter/emission_strength = 0.025
+shader_parameter/emission_texture = ExtResource("2_7ndul")
+shader_parameter/emission_color = Color(1, 1, 1, 1)
+shader_parameter/displacement_strength = 0.0
+shader_parameter/displacemnent_scale = 1.0
+shader_parameter/heightmap_scale = 0.5
+shader_parameter/heightmap_min_layers = 4
+shader_parameter/heightmap_max_layers = 16
+shader_parameter/uv1_scale = Vector3(1, 1, 1)
+shader_parameter/uv1_offset = Vector3(0, 0, 0)
+shader_parameter/uv2_scale = Vector3(1, 1, 1)
+shader_parameter/uv2_offset = Vector3(0, 0, 0)

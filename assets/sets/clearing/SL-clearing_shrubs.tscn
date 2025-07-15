@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bq8d51ui7ytd3"]
+
+[ext_resource type="PackedScene" path="res://assets/sets/clearing/SL-clearing_shrubs.gltf" id="1_takl8"]
+
+[node name="SL-clearing_shrubs" type="Node3D"]
+
+[node name="SL-clearing_shrubs-IMPORT" type="Area3D" parent="." instance=ExtResource("1_takl8")]

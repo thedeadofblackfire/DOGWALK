@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://17viaf2nja0x"]
+
+[ext_resource type="PackedScene" uid="uid://dfqfbb7r3dmkh" path="res://assets/lib/trees/pine_leaves/LI-tree_foliage_branch_small_003.gltf" id="1_q2a8y"]
+
+[node name="LI-tree_foliage_branch_small_003" type="Node3D"]
+
+[node name="LI-tree_foliage_branch_small_003-IMPORT" type="StaticBody3D" parent="." instance=ExtResource("1_q2a8y")]

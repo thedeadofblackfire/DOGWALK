@@ -1,0 +1,9 @@
+[gd_resource type="AnimationLibrary" load_steps=2 format=3 uid="uid://deyderjc607ro"]
+
+[ext_resource type="Animation" uid="uid://dv8sf0c7f8hjv" path="res://animations/hub/ACTN-pinda-pick_up_branch/POSE-branch-pick_up_branch.tres" id="1_blkqw"]
+
+[resource]
+resource_name = "PR-branch Animation Library"
+_data = {
+&"POSE-branch-pick_up_branch": ExtResource("1_blkqw")
+}

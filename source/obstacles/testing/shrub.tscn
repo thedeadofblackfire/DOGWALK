@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://b1pntgaisffgc"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_k336r"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t8cmk"]
+albedo_color = Color(0.523852, 0.610093, 0.459059, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_k336r"]
+size = Vector3(1.55664, 1.2948, 0.944336)
+
+[node name="Shrub" type="Node3D"]
+
+[node name="Area3D" type="Area3D" parent="." groups=["CollisionShrub"]]
+collision_layer = 16
+collision_mask = 8
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D"]
+transform = Transform3D(1.50366, 0, 0, 0, 1.30876, 0, 0, 0, 1.30876, 0, 0.577536, 0)
+mesh = SubResource("QuadMesh_k336r")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_t8cmk")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.622009, 0)
+shape = SubResource("BoxShape3D_k336r")

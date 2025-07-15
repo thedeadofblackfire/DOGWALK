@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://lj3p5lgy1t2a"]
+
+[ext_resource type="Script" uid="uid://c1o3gyomjfpvf" path="res://tools/batch_reimport.gd" id="1_aqyjq"]
+[ext_resource type="Script" uid="uid://00yhr211d2ko" path="res://tools/batch_rename_imports.gd" id="1_cb8l3"]
+
+[node name="ScriptTools" type="Node"]
+
+[node name="BatchReimport" type="Node" parent="."]
+script = ExtResource("1_aqyjq")
+
+[node name="BatchRenameImports" type="Node" parent="."]
+script = ExtResource("1_cb8l3")

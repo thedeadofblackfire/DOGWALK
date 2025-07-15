@@ -1,0 +1,103 @@
+[gd_scene load_steps=4 format=3 uid="uid://ckxmims6xnmqf"]
+
+[ext_resource type="Script" uid="uid://0ln4hh1q2klt" path="res://source/user_interface/menus/pause.gd" id="1_8tyc6"]
+[ext_resource type="Theme" uid="uid://dn50ucqdaqlr1" path="res://source/user_interface/menus/menu_theme.tres" id="1_ccdrd"]
+[ext_resource type="Script" uid="uid://c8fpguu61gfh0" path="res://source/user_interface/menus/label.gd" id="3_ccdrd"]
+
+[node name="Pause" type="Control" node_paths=PackedStringArray("continue_button", "save_button", "load_button", "main_menu_button", "settings_button", "quit_button", "pause_screen", "pause_menu")]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_ccdrd")
+script = ExtResource("1_8tyc6")
+continue_button = NodePath("PauseScreen/PauseMenu/VBoxContainer/ContinueButton")
+save_button = NodePath("PauseScreen/PauseMenu/VBoxContainer/SaveButton")
+load_button = NodePath("PauseScreen/PauseMenu/VBoxContainer/LoadButton")
+main_menu_button = NodePath("PauseScreen/PauseMenu/VBoxContainer/MainMenuButton")
+settings_button = NodePath("PauseScreen/PauseMenu/VBoxContainer/SettingsButton")
+quit_button = NodePath("PauseScreen/PauseMenu/VBoxContainer/QuitButton")
+pause_screen = NodePath("PauseScreen")
+pause_menu = NodePath("PauseScreen/PauseMenu")
+metadata/_edit_vertical_guides_ = [960.0]
+
+[node name="PauseScreen" type="HSplitContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+split_offset = 1920
+
+[node name="PauseMenu" type="Control" parent="PauseScreen"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="PauseScreen/PauseMenu"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -333.0
+offset_top = -593.0
+offset_right = 333.0
+offset_bottom = -305.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 240
+text = "Paused."
+horizontal_alignment = 1
+vertical_alignment = 1
+language = "en"
+script = ExtResource("3_ccdrd")
+font_scale = 2.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseScreen/PauseMenu"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.437
+anchor_top = 0.384
+anchor_right = 0.563
+anchor_bottom = 0.617
+offset_left = 8.95996
+offset_top = 75.28
+offset_right = -8.96008
+offset_bottom = -75.36
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+
+[node name="ContinueButton" type="Button" parent="PauseScreen/PauseMenu/VBoxContainer"]
+layout_mode = 2
+text = "Continue"
+
+[node name="SaveButton" type="Button" parent="PauseScreen/PauseMenu/VBoxContainer"]
+visible = false
+layout_mode = 2
+text = "Save Game"
+
+[node name="LoadButton" type="Button" parent="PauseScreen/PauseMenu/VBoxContainer"]
+visible = false
+layout_mode = 2
+text = "Load Game"
+
+[node name="MainMenuButton" type="Button" parent="PauseScreen/PauseMenu/VBoxContainer"]
+layout_mode = 2
+text = "Main Menu"
+
+[node name="SettingsButton" type="Button" parent="PauseScreen/PauseMenu/VBoxContainer"]
+layout_mode = 2
+text = "Settings"
+
+[node name="QuitButton" type="Button" parent="PauseScreen/PauseMenu/VBoxContainer"]
+layout_mode = 2
+text = "Save & Quit"
+
+[connection signal="drag_ended" from="PauseScreen" to="." method="_on_pause_screen_drag_ended"]
+[connection signal="drag_started" from="PauseScreen" to="." method="_on_pause_screen_drag_started"]
+[connection signal="dragged" from="PauseScreen" to="." method="_on_pause_screen_dragged"]

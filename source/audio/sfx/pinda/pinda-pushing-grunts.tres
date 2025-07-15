@@ -1,0 +1,12 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=4 format=3 uid="uid://dhb6tduk4fbvk"]
+
+[ext_resource type="AudioStream" uid="uid://by4vxltg1837i" path="res://assets/sfx/pinda/ACTN-pinda-grunt-pushing_2.ogg" id="1_slucy"]
+[ext_resource type="AudioStream" uid="uid://c2pmhpp24qmow" path="res://assets/sfx/pinda/ACTN-pinda-grunt-pushing_1.ogg" id="2_ahcox"]
+[ext_resource type="AudioStream" uid="uid://ylqh68bfcamx" path="res://assets/sfx/pinda/ACTN-pinda-grunt-pushing.ogg" id="3_2bufm"]
+
+[resource]
+random_pitch = 1.05
+streams_count = 3
+stream_0/stream = ExtResource("1_slucy")
+stream_1/stream = ExtResource("2_ahcox")
+stream_2/stream = ExtResource("3_2bufm")

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxhm5vp47f0ue"]
+
+[ext_resource type="PackedScene" path="res://assets/lib/bird_houses/LI-bird_house-small_green_01.gltf" id="1_k1dey"]
+
+[node name="LI-bird_house-small_green_01" type="Node3D"]
+
+[node name="LI-bird_house-small_green_01-IMPORT" type="Node3D" parent="." instance=ExtResource("1_k1dey")]

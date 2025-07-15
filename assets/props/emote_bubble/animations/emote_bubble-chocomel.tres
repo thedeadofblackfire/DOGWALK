@@ -1,0 +1,40 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://bup7lblqpedw2"]
+
+[ext_resource type="Texture2D" uid="uid://ueytonus78wp" path="res://assets/props/emote_bubble/animations/chocomel/chocomel_1.png" id="1_ybxe1"]
+[ext_resource type="Texture2D" uid="uid://b5mikkmedq7yw" path="res://assets/props/emote_bubble/animations/chocomel/chocomel_2.png" id="2_r4vp6"]
+[ext_resource type="Texture2D" uid="uid://d0t6vlvavd60s" path="res://assets/props/emote_bubble/animations/chocomel/chocomel_3.png" id="3_io8h5"]
+[ext_resource type="Texture2D" uid="uid://cm5iomg04qg8t" path="res://assets/props/emote_bubble/animations/chocomel/chocomel_4.png" id="4_xxla0"]
+[ext_resource type="Texture2D" uid="uid://b7py6rd8iuknk" path="res://assets/props/emote_bubble/animations/chocomel/chocomel_5.png" id="5_gahoq"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ybxe1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_r4vp6")
+}],
+"loop": false,
+"name": &"In",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 2.0,
+"texture": ExtResource("3_io8h5")
+}, {
+"duration": 2.0,
+"texture": ExtResource("4_xxla0")
+}],
+"loop": true,
+"name": &"Loop",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 0.4,
+"texture": ExtResource("5_gahoq")
+}],
+"loop": false,
+"name": &"Out",
+"speed": 8.0
+}]

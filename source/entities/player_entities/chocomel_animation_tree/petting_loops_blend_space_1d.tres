@@ -1,0 +1,35 @@
+[gd_resource type="AnimationNodeBlendSpace1D" load_steps=7 format=3 uid="uid://b1i7q2e10vf60"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_khapm"]
+animation = &"Chocomel-anim_lib/SYNC-chocomel-pet01"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_7opdo"]
+animation = &"Chocomel-anim_lib/SYNC-chocomel-pet02"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_0jqsh"]
+animation = &"Chocomel-anim_lib/SYNC-chocomel-pet03"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_5vg6w"]
+animation = &"Chocomel-anim_lib/SYNC-chocomel-pet04"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_2ub50"]
+animation = &"Chocomel-anim_lib/SYNC-chocomel-pet05"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_vdkr7"]
+animation = &"Chocomel-anim_lib/SYNC-chocomel-pet06"
+
+[resource]
+blend_point_0/node = SubResource("AnimationNodeAnimation_khapm")
+blend_point_0/pos = 0.0
+blend_point_1/node = SubResource("AnimationNodeAnimation_7opdo")
+blend_point_1/pos = 0.2
+blend_point_2/node = SubResource("AnimationNodeAnimation_0jqsh")
+blend_point_2/pos = 0.4
+blend_point_3/node = SubResource("AnimationNodeAnimation_5vg6w")
+blend_point_3/pos = 0.6
+blend_point_4/node = SubResource("AnimationNodeAnimation_2ub50")
+blend_point_4/pos = 0.8
+blend_point_5/node = SubResource("AnimationNodeAnimation_vdkr7")
+blend_point_5/pos = 1.0
+snap = 0.2
+blend_mode = 1

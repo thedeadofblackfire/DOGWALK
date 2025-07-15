@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bkfjglsn0ub2x"]
+
+[ext_resource type="PackedScene" uid="uid://b2q4c2o6rreww" path="res://assets/lib/trees/pine_cuts/LI-pine_cut_patch_012.gltf" id="1_ntyhl"]
+
+[node name="LI-pine_cut_patch_012" type="Node3D"]
+
+[node name="LI-pine_cut_patch_012-IMPORT" type="StaticBody3D" parent="." instance=ExtResource("1_ntyhl")]

@@ -1,0 +1,227 @@
+{
+	"Direction": {
+		"type": "GROUP",
+		"group_title": "",
+		"credits": {
+			"Julien Kaspar": "Directed by",
+			"Vivien Lulkowski": "Art Direction"
+		}
+	},
+	"Production1": {
+		"type": "GROUP",
+		"group_title": "",
+		"credits": {
+			"Fiona Cohen": "Producer",
+			"": "",
+		}
+	},
+	"Production2": {
+		"type": "GROUP",
+		"group_title": "",
+		"credits": {
+			"Francesco Siddi": "Executive Producer",
+			"Ton Roosendaal": "Executive Producer",
+		}
+	},
+	"BlenderStudio1": {
+		"type": "GROUP",
+		"group_title": "Blender Studio Team",
+		"credits": {
+			"Andy Goralczyk": "3D Art",
+			"Beau Gerbrands": "3D Art"
+		}
+	},
+	"BlenderStudio2": {
+		"type": "GROUP",
+		"group_title": "Blender Studio Team",
+		"credits": {
+			"Hjalti Hjálmarsson": "Rigging / Animation",
+			"Julien Kaspar": "Programming"
+		}
+	},
+	"BlenderStudio3": {
+		"type": "GROUP",
+		"group_title": "Blender Studio Team",
+		"credits": {
+			"Lukas Tönne": "Additional Programming",
+			"Max de Kroon": "Composition / Sound Design / Programming"
+		}
+	},
+	"BlenderStudio4": {
+		"type": "GROUP",
+		"group_title": "Blender Studio Team",
+		"credits": {
+			"Márton Lente": "Additional Typography",
+			"Pablo Fournier": "Animation"
+		}
+	},
+	"BlenderStudio5": {
+		"type": "GROUP",
+		"group_title": "Blender Studio Team",
+		"credits": {
+			"Rik Schutte": "Project Coordination / Animation",
+			"Sebastian Parborg": "Git & Infra Wizardry"
+		}
+	},
+	"BlenderStudio6": {
+		"type": "GROUP",
+		"group_title": "Blender Studio Team",
+		"credits": {
+			"Simon Thommes": "Technical Art / Programming / Pipeline TD",
+			"Vivien Lulkowski": "Art / Paper Craft / Font"
+		}
+	},
+	"BlenderDevelopment1": {
+		"type": "GROUP",
+		"group_title": "Blender Development",
+		"credits": {
+			"Bastien Montagne": "",
+			"Brecht Van Lommel": "",
+			"Campbell Barton": "",
+			"Christoph Lendenfeld": "",
+			"Clément Foucault": "",
+			"Dalai Felinto": ""
+		}
+	},
+	"BlenderDevelopment2": {
+		"type": "GROUP",
+		"group_title": "Blender Development",
+		"credits": {
+			"Falk David": "",
+			"Germano Cavalcante de Sousa": "",
+			"Habib Gahbiche": "",
+			"Hans Goudey": "",
+			"Harley Acheson": "",
+			"Jack Rushton": ""
+		}
+	},
+	"BlenderDevelopment3": {
+		"type": "GROUP",
+		"group_title": "Blender Development",
+		"credits": {
+			"Jacques Lucke": "",
+			"Jeroen Bakker": "",
+			"Jesse Yurkovich": "",
+			"John Kiril Swenson": "",
+			"Julian Eisel": "",
+			"Lukas Stockner": ""
+		}
+	},
+	"BlenderDevelopment4": {
+		"type": "GROUP",
+		"group_title": "Blender Development",
+		"credits": {
+			"Miguel Pozo Cantón": "",
+			"Nathan Vegdahl": "",
+			"Nika Kutsniashvili": "",
+			"Omar Emara": "",
+			"Pablo Vazquez": "",
+			"Philipp Oeser": ""
+		}
+	},
+	"BlenderDevelopment5": {
+		"type": "GROUP",
+		"group_title": "Blender Development",
+		"credits": {
+			"Pratik Borhade": "",
+			"Richard Antalík": "",
+			"Sean Kim": "",
+			"Sergey Sharybin": "",
+			"Sybren Stüvel": "",
+			"Thomas Dinges": ""
+		}
+	},
+	"BlenderDevelopment6": {
+		"type": "GROUP",
+		"group_title": "Blender Development",
+		"credits": {
+			"Weizhen Huang": "",
+			"Yiming Wu": "",
+			" ": "",
+			"  ": "",
+			"   ": "",
+			"    ": ""
+		}
+	},
+	"OperationsCommunication1": {
+		"type": "GROUP",
+		"group_title": "Operations and Communication Team",
+		"credits": {
+			"Aaron Carlisle": "",
+			"Anja Vugts-Verstappen": "",
+			"Anna Sirota": "",
+			"Arnd Marijnissen": "",
+			"Bart van der Braak": "",
+		}
+	},
+	"OperationsCommunication2": {
+		"type": "GROUP",
+		"group_title": "Operations and Communication Team",
+		"credits": {
+			"Harukaze Legouge": "",
+			"Joke Van Der Helm": "",
+			"Maaike Kleverlaan": "",
+			"Márton Lente": "",
+			"Oleg Komarov": "",
+		}
+	},
+	"OperationsCommunication3": {
+		"type": "GROUP",
+		"group_title": "Operations and Communication Team",
+		"credits": {
+			"Trisha Partogi": "",
+			"Wietske Peelen": "",
+			" ": "",
+			" ": "",
+			"  ": "",
+		}
+	},
+	"SpecialThanks1": {
+		"type": "GROUP",
+		"group_title": "Special Thanks",
+		"credits": {
+			"Aaron Franke": "",
+			"Emilio Coppola": "",
+			"Ivan Bushmin (Nozomu Games)": "",
+			"Julien Duroure": "",
+			"Lyuma": "",
+		}
+	},
+	"SpecialThanks2": {
+		"type": "GROUP",
+		"group_title": "Special Thanks",
+		"credits": {
+			"Nathan Lovato": "",
+			"Rémi Verschelde": "",
+			"Zi Ye (MajorMcDoom)": "",
+			"  ": "",
+			"   ": ""
+		}
+	},
+	"ThanksToSubscribers": {
+		"type": "TEXT",
+		"lines": [
+			"Special thanks to all Blender Studio supporters!",
+		]
+	},
+	"OpenProject": {
+		"type": "TEXT",
+		"lines": [
+			"'DOGWALK' is an Open Project",
+			"Source code and files availible at studio.blender.org",
+		]
+	},
+	"ThanksToGodot": {
+		"type": "TEXT",
+		"lines": [
+			"Thanks to Godot developers and community!"
+		]
+	},
+	"License": {
+		"type": "TEXT",
+		"lines": [
+			"Licensed as Creative Commons Attribution 4.0",
+			"© Blender Foundation - studio.blender.org/dogwalk",
+		]
+	},
+}

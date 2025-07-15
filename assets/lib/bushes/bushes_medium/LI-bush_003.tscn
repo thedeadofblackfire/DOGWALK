@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://b08174prexp2l"]
+
+[ext_resource type="PackedScene" uid="uid://eev4n6u4mdeg" path="res://assets/lib/bushes/bushes_medium/LI-bush_003.gltf" id="1_nxkbd"]
+[ext_resource type="Script" uid="uid://bwws3rhy7jxc8" path="res://source/obstacles/bushes.gd" id="2_domd6"]
+
+[node name="LI-bush_003" type="Node3D"]
+
+[node name="LI-bush_003-IMPORT" type="StaticBody3D" parent="." instance=ExtResource("1_nxkbd")]
+script = ExtResource("2_domd6")

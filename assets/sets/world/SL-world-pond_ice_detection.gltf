@@ -1,0 +1,211 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "asset_name": "SL-world-pond_ice_detection",
+                    "export_type": 2,
+                    "root_type": 2
+                },
+                "asset_type": "ASSET",
+                "root_type": "PASS_THROUGH",
+                "asset_id": "dd239433acbdb1ee"
+            },
+            "name": "SL-world-pond_ice_detection",
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "extras": {
+                "collision_info": {
+                    "type": "MESH",
+                    "concave": true
+                },
+                "visibility_info": {
+                    "shadow": false
+                },
+                "ant_landscape": {}
+            },
+            "mesh": 0,
+            "name": "COL-pond_ice_detection",
+            "translation": [
+                9,
+                -0.19466936588287354,
+                45
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "extras": {
+                "yp": {
+                    "active_ypaint_node": ""
+                },
+                "material_info": {
+                    "alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "metallic": 0.6271899938583374,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "wear_strength": 0.0,
+                    "wear_start": 0.0,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.5,
+                    "wear_distortion_scale": 100.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_map": [
+                        0.5,
+                        0.5,
+                        1.0,
+                        1.0
+                    ],
+                    "strength": 1.0
+                },
+                "asset_id": "6df4a5597fcff7c5"
+            },
+            "name": "pond_water_surface",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    1,
+                    1,
+                    1,
+                    0.20000000298023224
+                ],
+                "baseColorTexture": {
+                    "index": 0
+                },
+                "metallicFactor": 0.9000000357627869,
+                "metallicRoughnessTexture": {
+                    "index": 1
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "GEO-water_surface-pond.004",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1
+                    },
+                    "indices": 2,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/textures/ice_surface_squiggles-albedo.png"
+            },
+            "mimeType": "image/png",
+            "name": "ice_surface_squiggles-albedo",
+            "uri": "../../textures/ice_surface_squiggles-albedo.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/textures/ice_surface_squiggles-roughness.png"
+            },
+            "mimeType": "image/png",
+            "name": "ice_surface_squiggles-roughness",
+            "uri": "../../textures/ice_surface_squiggles-roughness.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 418,
+            "max": [
+                15.06969165802002,
+                0.770413339138031,
+                23.02991485595703
+            ],
+            "min": [
+                -28.857887268066406,
+                -0.03541329875588417,
+                -12.846033096313477
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 418,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5123,
+            "count": 504,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 5016,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 5016,
+            "byteOffset": 5016,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1008,
+            "byteOffset": 10032,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 11040,
+            "uri": "SL-world-pond_ice_detection.bin"
+        }
+    ]
+}

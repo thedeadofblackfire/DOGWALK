@@ -1,0 +1,349 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 2,
+                    "append_parent_collection": 1,
+                    "asset_name": "LI-root_05"
+                },
+                "asset_type": "ASSET",
+                "root_type": "PASS_THROUGH",
+                "asset_id": "7ed0f7ad81e6dc86"
+            },
+            "name": "LI-root_05",
+            "nodes": [
+                0,
+                1,
+                2,
+                3,
+                4
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "mesh": 0,
+            "name": "GEO-root_05"
+        },
+        {
+            "extras": {
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.08100000023841858,
+                    "height": 0.4360000789165497,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.020",
+            "rotation": [
+                -0.3449677526950836,
+                -0.3118116855621338,
+                0.6979441046714783,
+                0.5446510910987854
+            ],
+            "translation": [
+                -0.08229143172502518,
+                0.08572959899902344,
+                -0.08172549307346344
+            ]
+        },
+        {
+            "extras": {
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.05999999865889549,
+                    "height": 0.4240000545978546,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.021",
+            "rotation": [
+                -0.006600479129701853,
+                -0.028161341324448586,
+                0.7732928991317749,
+                0.633388876914978
+            ],
+            "translation": [
+                0.23408250510692596,
+                0.07413683831691742,
+                0.005332288332283497
+            ]
+        },
+        {
+            "extras": {
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.038999997079372406,
+                    "height": 0.26200005412101746,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.022",
+            "rotation": [
+                0.2604515552520752,
+                0.1389002501964569,
+                0.7902835607528687,
+                0.5369577407836914
+            ],
+            "translation": [
+                0.3116881549358368,
+                0.13294444978237152,
+                -0.08480892330408096
+            ]
+        },
+        {
+            "extras": {
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.050999999046325684,
+                    "height": 0.2780000567436218,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.023",
+            "rotation": [
+                -0.18577732145786285,
+                -0.4051898717880249,
+                0.25446057319641113,
+                0.8582295775413513
+            ],
+            "translation": [
+                0.08895841240882874,
+                0.0824688971042633,
+                0.12133722007274628
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "72b9b7131c134000",
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "roughness": 0.5,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        0.5250983238220215,
+                        0.5005860924720764,
+                        0.4895072281360626,
+                        1.0
+                    ],
+                    "wear_strength": 0.0,
+                    "wear_start": 0.0,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.5,
+                    "wear_distortion_scale": 100.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 1.0,
+                    "normal_use_uv2": 0.0
+                }
+            },
+            "name": "roots",
+            "normalTexture": {
+                "index": 0
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Cube.004",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2,
+                        "COLOR_0": 3,
+                        "COLOR_1": 4
+                    },
+                    "indices": 5,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/roots_simple-normal.png"
+            },
+            "mimeType": "image/png",
+            "name": "roots_simple-normal",
+            "uri": "../../textures/roots_simple-normal.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/roots_simple-albedo.png"
+            },
+            "mimeType": "image/png",
+            "name": "roots_simple-albedo",
+            "uri": "../../textures/roots_simple-albedo.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 109,
+            "max": [
+                0.44712337851524353,
+                0.18266825377941132,
+                0.19165237247943878
+            ],
+            "min": [
+                -0.21616040170192719,
+                -0.02555159479379654,
+                -0.26838964223861694
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 109,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 109,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5121,
+            "count": 109,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5123,
+            "count": 109,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5123,
+            "count": 342,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 1308,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1308,
+            "byteOffset": 1308,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 872,
+            "byteOffset": 2616,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 436,
+            "byteOffset": 3488,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 872,
+            "byteOffset": 3924,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 684,
+            "byteOffset": 4796,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 5480,
+            "uri": "LI-root_05.bin"
+        }
+    ]
+}

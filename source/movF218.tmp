@@ -1,0 +1,81 @@
+[gd_scene load_steps=12 format=3 uid="uid://bb5osdksmoist"]
+
+[ext_resource type="Script" path="res://movement_test_1/camera.gd" id="1_2hqw6"]
+[ext_resource type="Texture2D" uid="uid://islu4v3jy7dy" path="res://addons/kenney_prototype_textures/green/texture_09.png" id="1_tw84o"]
+[ext_resource type="Script" path="res://movement_test_1/character.gd" id="2_vn0cn"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_5bqri"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_pkbeb"]
+sky_material = SubResource("ProceduralSkyMaterial_5bqri")
+
+[sub_resource type="Environment" id="Environment_sxa1i"]
+background_mode = 2
+sky = SubResource("Sky_pkbeb")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_rpwwy"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_fuhfd"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_c0epy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tvbj8"]
+albedo_color = Color(0.377919, 0.377919, 0.377919, 1)
+albedo_texture = ExtResource("1_tw84o")
+uv1_scale = Vector3(0.1, 0.1, 0.1)
+uv1_triplanar = true
+uv1_world_triplanar = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_efyh1"]
+material = SubResource("StandardMaterial3D_tvbj8")
+
+[node name="Game" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_sxa1i")
+
+[node name="PlayerCamera" type="CharacterBody3D" parent="."]
+collision_layer = 2
+script = ExtResource("1_2hqw6")
+
+[node name="CharacterCollisionShape" type="CollisionShape3D" parent="PlayerCamera"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_rpwwy")
+
+[node name="CameraPivot" type="Node3D" parent="PlayerCamera"]
+transform = Transform3D(1, 0, 0, 0, 0.952699, 0.303916, 0, -0.303916, 0.952699, 0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="PlayerCamera/CameraPivot"]
+transform = Transform3D(1, 0, 0, 0, 0.888777, 0.458339, 0, -0.458339, 0.888777, 0, 4.56732, 5.81249)
+fov = 60.0
+
+[node name="Character" type="CharacterBody3D" parent="."]
+collision_layer = 4
+script = ExtResource("2_vn0cn")
+
+[node name="CharacterCollisionShape" type="CollisionShape3D" parent="Character"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_rpwwy")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Character"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("CapsuleMesh_fuhfd")
+
+[node name="Ground" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
+shape = SubResource("WorldBoundaryShape3D_c0epy")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground"]
+transform = Transform3D(1306.38, 0, 0, 0, 1306.38, 0, 0, 0, 1306.38, 0, 0, 0)
+mesh = SubResource("PlaneMesh_efyh1")
+
+[connection signal="camera_moved" from="PlayerCamera" to="Character" method="_on_camera_moved"]

@@ -1,0 +1,9 @@
+[gd_resource type="AnimationLibrary" load_steps=2 format=3 uid="uid://b72vxhttm4ft"]
+
+[ext_resource type="Animation" uid="uid://18evn2vxiadn" path="res://animations/hub/CINE-chars-outro/CINE-treat-outro.tres" id="1_ysb66"]
+
+[resource]
+resource_name = "PR-treat Animation Library"
+_data = {
+&"CINE-treat-outro": ExtResource("1_ysb66")
+}

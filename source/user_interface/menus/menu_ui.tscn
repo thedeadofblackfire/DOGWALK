@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=3 uid="uid://d1nt15f8g4oqk"]
+
+[ext_resource type="PackedScene" uid="uid://t2dkngwv8t38" path="res://source/user_interface/menus/main_menu.tscn" id="1_8x1vr"]
+[ext_resource type="Script" uid="uid://bi2bro1l3r6aj" path="res://source/user_interface/menus/menu_ui.gd" id="1_ctj6r"]
+[ext_resource type="PackedScene" uid="uid://ckxmims6xnmqf" path="res://source/user_interface/menus/pause.tscn" id="2_ctj6r"]
+[ext_resource type="PackedScene" uid="uid://ex3rvm02h8vw" path="res://source/user_interface/menus/support_button.tscn" id="3_5v1er"]
+
+[node name="MenuUI" type="SubViewportContainer" node_paths=PackedStringArray("support_button", "main_menu", "pause_menu")]
+process_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1920.0
+offset_top = -1080.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+stretch = true
+mouse_target = true
+script = ExtResource("1_ctj6r")
+support_button = NodePath("Main/Support")
+main_menu = NodePath("Main")
+pause_menu = NodePath("Pause")
+metadata/_edit_vertical_guides_ = [-960.0, 960.0]
+metadata/_edit_horizontal_guides_ = [-540.0, 540.0]
+
+[node name="SubViewport" type="SubViewport" parent="."]
+disable_3d = true
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(3840, 2160)
+size_2d_override = Vector2i(3840, 2160)
+render_target_update_mode = 4
+
+[node name="Main" parent="." instance=ExtResource("1_8x1vr")]
+layout_mode = 2
+
+[node name="Support" parent="Main" instance=ExtResource("3_5v1er")]
+offset_left = -1340.0
+offset_top = -716.0
+offset_right = -1340.0
+offset_bottom = -716.0
+scale = Vector2(1.37, 1.37)
+
+[node name="CreditsDummy" type="Control" parent="."]
+layout_mode = 2
+
+[node name="Pause" parent="." instance=ExtResource("2_ctj6r")]
+layout_mode = 2

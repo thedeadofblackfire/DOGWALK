@@ -1,0 +1,86 @@
+[gd_scene load_steps=10 format=3 uid="uid://dnu1cw7xufgwv"]
+
+[ext_resource type="Texture2D" uid="uid://bgcbavqmf0ltn" path="res://assets/testing/cursor_tests/c1_0.png" id="2_3meht"]
+[ext_resource type="Texture2D" uid="uid://eov7kgiotc12" path="res://assets/testing/cursor_tests/c1_1.png" id="3_hulnf"]
+[ext_resource type="Texture2D" uid="uid://cgffahq3jf0o6" path="res://assets/testing/cursor_tests/c1_2.png" id="4_3meht"]
+[ext_resource type="Texture2D" uid="uid://krv7ipurumpp" path="res://assets/testing/cursor_tests/c1_3.png" id="5_aq71b"]
+[ext_resource type="Texture2D" uid="uid://djojhdufqqiso" path="res://assets/testing/cursor_tests/c1_4.png" id="6_r2i86"]
+[ext_resource type="Script" uid="uid://ddbarwv0vox5v" path="res://source/user_interface/mouse_cursor.gd" id="7_3meht"]
+[ext_resource type="Texture2D" uid="uid://bcbqqcbhb3w8p" path="res://assets/testing/cursor_tests/c1_5.png" id="7_r2i86"]
+[ext_resource type="Texture2D" uid="uid://dth4gcv8aelw4" path="res://assets/testing/cursor_tests/c1_6.png" id="8_fuht7"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fuht7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_3meht")
+}],
+"loop": true,
+"name": &"Arrow_0",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_hulnf")
+}],
+"loop": true,
+"name": &"Arrow_1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_aq71b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3meht")
+}],
+"loop": true,
+"name": &"Arrow_2",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_aq71b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3meht")
+}],
+"loop": true,
+"name": &"Arrow_3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_r2i86")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_r2i86")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_fuht7")
+}],
+"loop": true,
+"name": &"Arrow_4",
+"speed": 7.0
+}]
+
+[node name="CursorUI" type="Control" node_paths=PackedStringArray("cursor", "movement_cursor")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("7_3meht")
+cursor = NodePath("Cursor")
+movement_cursor = NodePath("Cursor/MovementCursor")
+
+[node name="Cursor" type="Node2D" parent="."]
+position = Vector2(960, 540)
+
+[node name="MovementCursor" type="AnimatedSprite2D" parent="Cursor"]
+scale = Vector2(0.085, 0.085)
+sprite_frames = SubResource("SpriteFrames_fuht7")
+animation = &"Arrow_2"

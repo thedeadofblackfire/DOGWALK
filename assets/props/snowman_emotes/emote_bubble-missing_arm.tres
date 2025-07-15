@@ -1,0 +1,27 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://du7yw70k7ynry"]
+
+[ext_resource type="Shader" uid="uid://dj6frawgwo5ry" path="res://source/shaders/paper-interface.gdshader" id="1_s6kgj"]
+[ext_resource type="Texture2D" uid="uid://dd8tlbbdw5nme" path="res://assets/props/snowman_emotes/textures/missing_arm/missing_arm_1.png" id="2_okuv7"]
+
+[resource]
+render_priority = 10
+shader = ExtResource("1_s6kgj")
+shader_parameter/fake_depth = true
+shader_parameter/flip_normals = false
+shader_parameter/paper_color = Color(0.602629, 0.521096, 0.441255, 1)
+shader_parameter/albedo_color = Color(1, 1, 1, 1)
+shader_parameter/albedo_texture = ExtResource("2_okuv7")
+shader_parameter/normal_strength = 1.0
+shader_parameter/invert_normal = false
+shader_parameter/albedo_texture_size = Vector2i(843, 843)
+shader_parameter/point_size = 0.0
+shader_parameter/specular = 0.5
+shader_parameter/roughness = 0.929091
+shader_parameter/metallic = 0.0
+shader_parameter/heightmap_scale = 0.5
+shader_parameter/heightmap_min_layers = 4
+shader_parameter/heightmap_max_layers = 16
+shader_parameter/uv1_scale = Vector3(1, 1, 1)
+shader_parameter/uv1_offset = Vector3(0, 0, 0)
+shader_parameter/uv2_scale = Vector3(1, 1, 1)
+shader_parameter/uv2_offset = Vector3(0, 0, 0)

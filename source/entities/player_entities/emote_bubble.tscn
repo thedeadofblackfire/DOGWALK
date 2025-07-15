@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://cn48a7exjspdl"]
+
+[ext_resource type="Script" uid="uid://d4jmcu4ewysx7" path="res://source/entities/player_entities/emote_bubble.gd" id="1_0upk4"]
+[ext_resource type="PackedScene" uid="uid://qp2qtokjdyhk" path="res://assets/props/emote_bubble/PR-emote_bubble.tscn" id="2_4m8bv"]
+[ext_resource type="PackedScene" uid="uid://5v7akxx535re" path="res://source/audio/sfx/ui/emote_sounds.tscn" id="3_nmwxl"]
+
+[node name="EmoteBubble" type="Node3D" node_paths=PackedStringArray("emote_sounds")]
+visible = false
+script = ExtResource("1_0upk4")
+emote_sounds = NodePath("EmoteSounds")
+metadata/_custom_type_script = "uid://d4jmcu4ewysx7"
+
+[node name="PR-emote_bubble" parent="." instance=ExtResource("2_4m8bv")]
+
+[node name="EmoteSounds" parent="." instance=ExtResource("3_nmwxl")]
+panning_strength = 2.0

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://ch6qy8mx0w0rg"]
+
+[ext_resource type="PackedScene" uid="uid://cctebibfi8o0s" path="res://assets/lib/shrubs_and_grass/bushlets_blue_fan/LI-bushlet_blue_fan_004.gltf" id="1_sg5k4"]
+[ext_resource type="Script" uid="uid://dw6ysrlodecpb" path="res://source/obstacles/shrubs.gd" id="2_l3426"]
+
+[node name="LI-bushlet_blue_fan_004" type="Node3D"]
+
+[node name="LI-bushlet_blue_fan_004-IMPORT" parent="." instance=ExtResource("1_sg5k4")]
+script = ExtResource("2_l3426")

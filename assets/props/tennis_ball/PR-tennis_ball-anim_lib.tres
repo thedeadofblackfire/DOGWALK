@@ -1,0 +1,11 @@
+[gd_resource type="AnimationLibrary" load_steps=3 format=3 uid="uid://bmvb615r71eh1"]
+
+[ext_resource type="Animation" uid="uid://bha0ljwyrjv60" path="res://animations/world/POSE-tennis_ball-zero/POSE-tennis_ball-zero.tres" id="2_atavy"]
+[ext_resource type="Animation" uid="uid://djk328takahb0" path="res://animations/world/POSE-tennis_ball-world/POSE-tennis_ball-world.tres" id="3_lphb4"]
+
+[resource]
+resource_name = "PR-tennis_ball Animation Library"
+_data = {
+&"POSE-tennis_ball-world": ExtResource("3_lphb4"),
+&"POSE-tennis_ball-zero": ExtResource("2_atavy")
+}

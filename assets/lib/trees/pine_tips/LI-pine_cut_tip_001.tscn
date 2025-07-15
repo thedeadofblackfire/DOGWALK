@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://byf4g8prab4w5"]
+
+[ext_resource type="PackedScene" path="res://assets/lib/trees/pine_tips/LI-pine_cut_tip_001.gltf" id="1_tle57"]
+
+[node name="LI-pine_cut_tip_001" type="Node3D"]
+
+[node name="LI-pine_cut_tip_001-IMPORT" type="StaticBody3D" parent="." instance=ExtResource("1_tle57")]

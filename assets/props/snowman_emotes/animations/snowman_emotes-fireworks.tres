@@ -1,0 +1,62 @@
+[gd_resource type="SpriteFrames" load_steps=14 format=3 uid="uid://cmgho5re7ljja"]
+
+[ext_resource type="Texture2D" uid="uid://b085pkoih66tt" path="res://assets/props/snowman_emotes/textures/fireworks/fireworks_1.png" id="1_ay046"]
+[ext_resource type="Texture2D" uid="uid://dqfapaiub2a7e" path="res://assets/props/snowman_emotes/textures/fireworks/fireworks_2.png" id="2_4u53r"]
+[ext_resource type="Texture2D" uid="uid://bnwx7rc14f33d" path="res://assets/props/snowman_emotes/textures/fireworks/fireworks_3.png" id="3_4m6rk"]
+[ext_resource type="Texture2D" uid="uid://cefjnfcmyf1bc" path="res://assets/props/snowman_emotes/textures/fireworks/fireworks_4.png" id="4_pp2oo"]
+[ext_resource type="Texture2D" uid="uid://cvwdxc730jgjf" path="res://assets/props/snowman_emotes/textures/fireworks/fireworks_5.png" id="5_yddxm"]
+[ext_resource type="Texture2D" uid="uid://dmci6wwfdmd87" path="res://assets/props/snowman_emotes/textures/fireworks/fireworks_6.png" id="6_of8q6"]
+[ext_resource type="Texture2D" uid="uid://bm3hsvutjo5mm" path="res://assets/props/snowman_emotes/textures/fireworks/fireworks_7.png" id="7_fhrog"]
+[ext_resource type="Texture2D" uid="uid://dw5fe1p53orcj" path="res://assets/props/snowman_emotes/textures/fireworks/fireworks_8.png" id="8_hyyng"]
+[ext_resource type="Texture2D" uid="uid://1n80u8o8qaam" path="res://assets/props/snowman_emotes/textures/fireworks/fireworks_9.png" id="9_y8klj"]
+[ext_resource type="Texture2D" uid="uid://dhl4f8s2ekmyp" path="res://assets/props/snowman_emotes/textures/fireworks/fireworks_10.png" id="10_wgmfi"]
+[ext_resource type="Texture2D" uid="uid://g86se833xrh5" path="res://assets/props/snowman_emotes/textures/fireworks/fireworks_11.png" id="11_hyyng"]
+[ext_resource type="Texture2D" uid="uid://dscjhyxsivpc6" path="res://assets/props/snowman_emotes/textures/fireworks/fireworks_12.png" id="12_y8klj"]
+[ext_resource type="Texture2D" uid="uid://dpy7ill6b31yo" path="res://assets/props/snowman_emotes/textures/fireworks/fireworks_13.png" id="13_wgmfi"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ay046")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_4u53r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_4m6rk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_pp2oo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_yddxm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_of8q6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_fhrog")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_hyyng")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_y8klj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_wgmfi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_hyyng")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_y8klj")
+}, {
+"duration": 0.9,
+"texture": ExtResource("13_wgmfi")
+}],
+"loop": true,
+"name": &"In",
+"speed": 6.0
+}]

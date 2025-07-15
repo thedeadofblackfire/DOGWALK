@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bll6msjaylfma"]
+
+[ext_resource type="PackedScene" uid="uid://cde6ww1gwf3sg" path="res://assets/lib/trees/pine_trees/LI-pine_tree_004.gltf" id="1_u6urh"]
+
+[node name="LI-pine_tree_004" type="Node3D"]
+
+[node name="LI-pine_tree_004-IMPORT" type="StaticBody3D" parent="." instance=ExtResource("1_u6urh")]

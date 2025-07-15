@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://q3pvev5biysk"]
+
+[ext_resource type="PackedScene" uid="uid://bt7a1564e5eal" path="res://assets/sets/asset_ikea/SE-asset_ikea.gltf" id="1_qm78a"]
+
+[node name="SE-asset_ikea" type="Node3D"]
+
+[node name="SE-asset_ikea-IMPORT" type="Node3D" parent="." instance=ExtResource("1_qm78a")]

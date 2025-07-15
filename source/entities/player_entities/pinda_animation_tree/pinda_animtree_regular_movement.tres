@@ -1,0 +1,133 @@
+[gd_resource type="AnimationNodeBlendTree" load_steps=28 format=3 uid="uid://b2dhsismt1gee"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_irmj2"]
+animation = &"Pinda-anim_lib/ACTN-Pinda-yanked"
+
+[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_g278s"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_y6cae"]
+animation = &"Pinda-anim_lib/LOOP-pinda-walk"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_on30r"]
+animation = &"Pinda-anim_lib/LOOP-pinda-run"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_2kfqg"]
+animation = &"Pinda-anim_lib/LOOP-pinda-run_dragged"
+
+[sub_resource type="AnimationNodeBlendSpace1D" id="AnimationNodeBlendSpace1D_pdbt5"]
+blend_point_0/node = SubResource("AnimationNodeAnimation_y6cae")
+blend_point_0/pos = 0.0
+blend_point_1/node = SubResource("AnimationNodeAnimation_on30r")
+blend_point_1/pos = 0.5
+blend_point_2/node = SubResource("AnimationNodeAnimation_2kfqg")
+blend_point_2/pos = 1.0
+blend_mode = 1
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_weng1"]
+animation = &"Pinda-anim_lib/LOOP-pinda-walk_tired"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_q2ssy"]
+animation = &"Pinda-anim_lib/LOOP-Pinda-run_tired"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_vaf4n"]
+animation = &"Pinda-anim_lib/LOOP-pinda-run_dragged_tired"
+
+[sub_resource type="AnimationNodeBlendSpace1D" id="AnimationNodeBlendSpace1D_xg6ca"]
+blend_point_0/node = SubResource("AnimationNodeAnimation_weng1")
+blend_point_0/pos = 0.0
+blend_point_1/node = SubResource("AnimationNodeAnimation_q2ssy")
+blend_point_1/pos = 0.5
+blend_point_2/node = SubResource("AnimationNodeAnimation_vaf4n")
+blend_point_2/pos = 1.0
+blend_mode = 1
+
+[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_on30r"]
+
+[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_irmj2"]
+filter_enabled = true
+filters = ["RIG-Pinda/Skeleton3D:GDT-mouth", "RIG-Pinda/Skeleton3D:eyebrow-1-L", "RIG-Pinda/Skeleton3D:eyebrow-1-R", "RIG-Pinda/Skeleton3D:eyebrow-2-L", "RIG-Pinda/Skeleton3D:eyebrow-2-R", "RIG-Pinda/Skeleton3D:eyebrow-3-L", "RIG-Pinda/Skeleton3D:eyebrow-3-R", "RIG-Pinda/Skeleton3D:eyebrow-4-L", "RIG-Pinda/Skeleton3D:eyebrow-4-R", "RIG-Pinda/Skeleton3D:eyebrow-L", "RIG-Pinda/Skeleton3D:eyebrow-R", "RIG-Pinda/Skeleton3D:mouth", "RIG-Pinda/Skeleton3D:mouth-01", "RIG-Pinda/Skeleton3D:mouth-03", "RIG-Pinda/Skeleton3D:mouth-04", "RIG-Pinda/Skeleton3D:mouth-05", "RIG-Pinda/Skeleton3D:mouth-07", "RIG-Pinda/Skeleton3D:mouth-08", "RIG-Pinda/Skeleton3D:mouth-09", "RIG-Pinda/Skeleton3D:mouth-10", "RIG-Pinda/Skeleton3D:mouth-11", "RIG-Pinda/Skeleton3D:mouth-12", "RIG-Pinda/Skeleton3D:mouth-13", "RIG-Pinda/Skeleton3D:mouth-14", "RIG-Pinda/Skeleton3D:mouth-15", "RIG-Pinda/Skeleton3D:mouth-18", "RIG-Pinda/Skeleton3D:mouth-20", "RIG-Pinda/Skeleton3D:mouth-22", "RIG-Pinda/Skeleton3D:mouth-24", "RIG-Pinda/Skeleton3D:mouth_target"]
+
+[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_mllf4"]
+
+[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_odoy8"]
+
+[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_cdfjb"]
+
+[sub_resource type="AnimationNodeBlend3" id="AnimationNodeBlend3_mllf4"]
+
+[sub_resource type="AnimationNodeOneShot" id="AnimationNodeOneShot_br5yc"]
+
+[sub_resource type="AnimationNodeTimeScale" id="AnimationNodeTimeScale_br5yc"]
+
+[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_y6cae"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_odoy8"]
+animation = &"Pinda-anim_lib/LOOP-pinda-idle_happy"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_pdbt5"]
+animation = &"Pinda-anim_lib/LOOP-pinda-idle_tired"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_cdfjb"]
+animation = &"Pinda-anim_lib/LOOP-pinda-idle_unhappy"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_g278s"]
+animation = &"Pinda-anim_lib/LOOP-pinda-walk_pushing"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_xg6ca"]
+animation = &"Pinda-anim_lib/LOOP-pinda-run_branch"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_mllf4"]
+animation = &"Pinda-anim_lib/POSE-pinda-sad_face"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_uldcn"]
+animation = &"Pinda-anim_lib/ACTN-Pinda-tripping"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_rags6"]
+animation = &"Pinda-anim_lib/ACTN-Pinda-rolling"
+
+[resource]
+graph_offset = Vector2(-966.432, -53.4632)
+nodes/Animation/node = SubResource("AnimationNodeAnimation_irmj2")
+nodes/Animation/position = Vector2(-440, 760)
+"nodes/Idle - Moving Factor/node" = SubResource("AnimationNodeBlend2_g278s")
+"nodes/Idle - Moving Factor/position" = Vector2(-720, 140)
+"nodes/Moving 1D Regular/node" = SubResource("AnimationNodeBlendSpace1D_pdbt5")
+"nodes/Moving 1D Regular/position" = Vector2(-2200, 460)
+"nodes/Moving 1D Tired/node" = SubResource("AnimationNodeBlendSpace1D_xg6ca")
+"nodes/Moving 1D Tired/position" = Vector2(-1780, 620)
+"nodes/Pushing Chocomel/node" = SubResource("AnimationNodeBlend2_on30r")
+"nodes/Pushing Chocomel/position" = Vector2(-220, 60)
+"nodes/Sad Face/node" = SubResource("AnimationNodeBlend2_irmj2")
+"nodes/Sad Face/position" = Vector2(-1560, 280)
+"nodes/Sad Idle/node" = SubResource("AnimationNodeBlend2_mllf4")
+"nodes/Sad Idle/position" = Vector2(-1200, -293.333)
+"nodes/Stamina Idle/node" = SubResource("AnimationNodeBlend2_odoy8")
+"nodes/Stamina Idle/position" = Vector2(-906.667, -146.667)
+"nodes/Stamina Movement/node" = SubResource("AnimationNodeBlend2_cdfjb")
+"nodes/Stamina Movement/position" = Vector2(-1340, 380)
+nodes/Tripping/node = SubResource("AnimationNodeOneShot_br5yc")
+nodes/Tripping/position = Vector2(280, 140)
+"nodes/Tripping Type/node" = SubResource("AnimationNodeBlend3_mllf4")
+"nodes/Tripping Type/position" = Vector2(-20, 440)
+"nodes/Walking Speed Factor/node" = SubResource("AnimationNodeTimeScale_br5yc")
+"nodes/Walking Speed Factor/position" = Vector2(-1140, 380)
+"nodes/Without Leash/node" = SubResource("AnimationNodeBlend2_y6cae")
+"nodes/Without Leash/position" = Vector2(-1960, 440)
+"nodes/idle happy/node" = SubResource("AnimationNodeAnimation_odoy8")
+"nodes/idle happy/position" = Vector2(-1560, -213.333)
+"nodes/idle tired/node" = SubResource("AnimationNodeAnimation_pdbt5")
+"nodes/idle tired/position" = Vector2(-1386.67, 0)
+"nodes/idle unhappy/node" = SubResource("AnimationNodeAnimation_cdfjb")
+"nodes/idle unhappy/position" = Vector2(-1573.33, -386.667)
+nodes/output/position = Vector2(500, 140)
+nodes/pushing/node = SubResource("AnimationNodeAnimation_g278s")
+nodes/pushing/position = Vector2(-680, -80)
+"nodes/run without leash/node" = SubResource("AnimationNodeAnimation_xg6ca")
+"nodes/run without leash/position" = Vector2(-2380, 680)
+"nodes/sad face/node" = SubResource("AnimationNodeAnimation_mllf4")
+"nodes/sad face/position" = Vector2(-1940, 240)
+"nodes/tripping regular/node" = SubResource("AnimationNodeAnimation_uldcn")
+"nodes/tripping regular/position" = Vector2(-440, 420)
+"nodes/tripping rolling/node" = SubResource("AnimationNodeAnimation_rags6")
+"nodes/tripping rolling/position" = Vector2(-440, 580)
+node_connections = [&"Idle - Moving Factor", 0, &"Stamina Idle", &"Idle - Moving Factor", 1, &"Walking Speed Factor", &"Pushing Chocomel", 0, &"Idle - Moving Factor", &"Pushing Chocomel", 1, &"pushing", &"Sad Face", 0, &"Without Leash", &"Sad Face", 1, &"sad face", &"Sad Idle", 0, &"idle happy", &"Sad Idle", 1, &"idle unhappy", &"Stamina Idle", 0, &"idle tired", &"Stamina Idle", 1, &"Sad Idle", &"Stamina Movement", 0, &"Moving 1D Tired", &"Stamina Movement", 1, &"Sad Face", &"Tripping", 0, &"Pushing Chocomel", &"Tripping", 1, &"Tripping Type", &"Tripping Type", 0, &"tripping regular", &"Tripping Type", 1, &"tripping rolling", &"Tripping Type", 2, &"Animation", &"Walking Speed Factor", 0, &"Stamina Movement", &"Without Leash", 0, &"Moving 1D Regular", &"Without Leash", 1, &"run without leash", &"output", 0, &"Tripping"]

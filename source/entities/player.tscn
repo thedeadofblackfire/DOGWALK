@@ -1,0 +1,51 @@
+[gd_scene load_steps=7 format=3 uid="uid://d04q83ru8ixv5"]
+
+[ext_resource type="Script" uid="uid://codcap2p56ex" path="res://source/entities/player.gd" id="1_ejdf5"]
+[ext_resource type="PackedScene" uid="uid://dvcsc6kwmthux" path="res://source/entities/player_entities/camera.tscn" id="1_w2iad"]
+[ext_resource type="PackedScene" uid="uid://fe281sx015sp" path="res://source/entities/player_entities/chocomel.tscn" id="2_ejdf5"]
+[ext_resource type="PackedScene" uid="uid://cmge5e3trwrm4" path="res://source/entities/player_entities/pinda.tscn" id="3_gh10h"]
+[ext_resource type="PackedScene" uid="uid://nmoufaf2akp6" path="res://source/entities/player_entities/leash.tscn" id="4_6iik2"]
+[ext_resource type="PackedScene" uid="uid://ojbcb2e70q4i" path="res://source/utility/debug_settings.tscn" id="6_gh10h"]
+
+[node name="Player" type="Node3D" node_paths=PackedStringArray("camera", "chocomel", "pinda", "leash") groups=["Player"]]
+script = ExtResource("1_ejdf5")
+maxmimum_leash_length = 6.0
+camera = NodePath("Camera")
+chocomel = NodePath("Chocomel")
+pinda = NodePath("Pinda")
+leash = NodePath("Leash")
+
+[node name="Chocomel" parent="." node_paths=PackedStringArray("player") instance=ExtResource("2_ejdf5")]
+player = NodePath("..")
+
+[node name="Pinda" parent="." node_paths=PackedStringArray("player") instance=ExtResource("3_gh10h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.63332, 0, 0)
+player = NodePath("..")
+
+[node name="Camera" parent="." node_paths=PackedStringArray("player") instance=ExtResource("1_w2iad")]
+player = NodePath("..")
+
+[node name="Leash" parent="." instance=ExtResource("4_6iik2")]
+
+[node name="DebugSettings" parent="." instance=ExtResource("6_gh10h")]
+
+[connection signal="confirmed_interaction" from="Chocomel" to="Pinda" method="_on_chocomel_confirmed_interaction"]
+[connection signal="ended_interaction" from="Chocomel" to="Pinda" method="_on_chocomel_ended_interaction"]
+[connection signal="entered_camera_magnet_zone" from="Chocomel" to="Camera" method="_on_chocomel_entered_camera_magnet_zone"]
+[connection signal="exited_camera_magnet_zone" from="Chocomel" to="Camera" method="_on_chocomel_exited_camera_magnet_zone"]
+[connection signal="has_barked" from="Chocomel" to="Pinda" method="_on_chocomel_has_barked"]
+[connection signal="has_been_digging" from="Chocomel" to="Pinda" method="_on_chocomel_has_been_digging"]
+[connection signal="has_moved" from="Chocomel" to="Pinda" method="_on_chocomel_has_moved"]
+[connection signal="has_moved" from="Chocomel" to="Camera" method="_on_chocomel_has_moved"]
+[connection signal="has_moved" from="Chocomel" to="Leash" method="_on_chocomel_has_moved"]
+[connection signal="request_interaction" from="Chocomel" to="Pinda" method="_on_chocomel_request_interaction"]
+[connection signal="set_new_petting_loop" from="Chocomel" to="Pinda" method="_on_chocomel_set_new_petting_loop"]
+[connection signal="call_for_help" from="Pinda" to="Chocomel" method="_on_pinda_call_for_help"]
+[connection signal="confirmed_interaction" from="Pinda" to="Chocomel" method="_on_pinda_confirmed_interaction"]
+[connection signal="has_moved" from="Pinda" to="Chocomel" method="_on_pinda_has_moved"]
+[connection signal="has_moved" from="Pinda" to="Camera" method="_on_pinda_has_moved"]
+[connection signal="has_moved" from="Pinda" to="Leash" method="_on_pinda_has_moved"]
+[connection signal="request_interaction" from="Pinda" to="Chocomel" method="_on_pinda_request_interaction"]
+[connection signal="started_petting_loops" from="Pinda" to="Chocomel" method="_on_pinda_started_petting_loops"]
+[connection signal="changed_leash_points" from="Leash" to="Chocomel" method="_on_leash_changed_leash_points"]
+[connection signal="changed_leash_points" from="Leash" to="Pinda" method="_on_leash_changed_leash_points"]

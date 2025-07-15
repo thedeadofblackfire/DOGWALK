@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bso7mvchpi8sq"]
+
+[ext_resource type="PackedScene" uid="uid://bpnkbtc10ujk" path="res://assets/lib/bushes/bush_elements/LI-bush_foliage_top_001.gltf" id="1_pevuo"]
+
+[node name="LI-bush_foliage_top_001" type="Node3D"]
+
+[node name="LI-bush_foliage_top_001-IMPORT" type="StaticBody3D" parent="." instance=ExtResource("1_pevuo")]

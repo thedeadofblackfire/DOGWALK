@@ -1,0 +1,292 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 1,
+                    "append_parent_collection": 1,
+                    "asset_name": "LI-tree_foliage_large_002"
+                },
+                "asset_type": "ASSET",
+                "root_type": "STATIC",
+                "asset_id": "4a24a910ec49a35e"
+            },
+            "name": "LI-tree_foliage_large_002",
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 0,
+            "name": "GEO-tree_foliage_large_002",
+            "rotation": [
+                -0.4896250367164612,
+                0,
+                0,
+                0.8719332218170166
+            ],
+            "translation": [
+                0,
+                0.003279385855421424,
+                0.0016396928112953901
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "8cafaf214130b3ed",
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.5,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        0.6488332152366638,
+                        0.6860437393188477,
+                        0.574231743812561,
+                        1.0
+                    ],
+                    "wear_strength": 0.0,
+                    "wear_start": 0.0,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.5,
+                    "wear_distortion_scale": 100.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.20000000298023224,
+                    "normal_use_uv2": 1.0
+                }
+            },
+            "name": "pine_tree",
+            "normalTexture": {
+                "index": 0,
+                "texCoord": 1
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                },
+                "metallicRoughnessTexture": {
+                    "index": 2
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "bark_foilage_atlas_01.015",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2,
+                        "TEXCOORD_1": 3,
+                        "COLOR_0": 4,
+                        "COLOR_1": 5,
+                        "COLOR_2": 6
+                    },
+                    "indices": 7,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        },
+        {
+            "sampler": 0,
+            "source": 2
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/textures/paper_rough_256.png"
+            },
+            "mimeType": "image/png",
+            "name": "paper_rough_256",
+            "uri": "../../../textures/paper_rough_256.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/pine_leaves_albedo_01.png"
+            },
+            "mimeType": "image/png",
+            "name": "pine_leaves_albedo_01",
+            "uri": "../../textures/pine_leaves_albedo_01.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/pine_leaves_roughness_01.png"
+            },
+            "mimeType": "image/png",
+            "name": "pine_leaves_roughness_01",
+            "uri": "../../textures/pine_leaves_roughness_01.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 262,
+            "max": [
+                0.2851860523223877,
+                0.006566495168954134,
+                0.37969809770584106
+            ],
+            "min": [
+                -0.27737200260162354,
+                -1.5858806371688843,
+                -0.3824450969696045
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 262,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 262,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5126,
+            "count": 262,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5123,
+            "count": 262,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5123,
+            "count": 262,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 6,
+            "componentType": 5123,
+            "count": 262,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 7,
+            "componentType": 5123,
+            "count": 861,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 3144,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 3144,
+            "byteOffset": 3144,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2096,
+            "byteOffset": 6288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2096,
+            "byteOffset": 8384,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2096,
+            "byteOffset": 10480,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2096,
+            "byteOffset": 12576,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2096,
+            "byteOffset": 14672,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1722,
+            "byteOffset": 16768,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 18492,
+            "uri": "LI-tree_foliage_large_002.bin"
+        }
+    ]
+}

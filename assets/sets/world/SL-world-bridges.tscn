@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4jatqnnlbqyt"]
+
+[ext_resource type="PackedScene" uid="uid://mjslvqkn11lf" path="res://assets/sets/world/SL-world-bridges.gltf" id="1_wtche"]
+
+[node name="SL-world-bridges" type="Node3D"]
+
+[node name="SL-world-bridges-IMPORT" type="Node3D" parent="." instance=ExtResource("1_wtche")]

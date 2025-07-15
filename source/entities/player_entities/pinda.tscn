@@ -1,0 +1,1006 @@
+[gd_scene load_steps=125 format=3 uid="uid://cmge5e3trwrm4"]
+
+[ext_resource type="Script" uid="uid://bdunxgenkqhkq" path="res://source/entities/player_entities/pinda.gd" id="1_pgsm1"]
+[ext_resource type="PackedScene" uid="uid://cn48a7exjspdl" path="res://source/entities/player_entities/emote_bubble.tscn" id="3_iifib"]
+[ext_resource type="Script" uid="uid://dmwb4wcys0jtf" path="res://source/entities/player_entities/interest_detector.gd" id="4_hi5sd"]
+[ext_resource type="Script" uid="uid://81oxvfyvd2x0" path="res://source/entities/player_entities/terrain_detector.gd" id="5_frg5b"]
+[ext_resource type="AnimationNodeStateMachine" uid="uid://bte7n5p0ykjxt" path="res://source/entities/player_entities/pinda_animation_tree/pinda_animation_tree_parent.tres" id="6_2cphi"]
+[ext_resource type="Script" uid="uid://uda18dn88lpy" path="res://source/entities/player_entities/touch_detector.gd" id="7_hi5sd"]
+[ext_resource type="Script" uid="uid://b7533wg1ao53n" path="res://source/utility/value_slicer.gd" id="8_3hphs"]
+[ext_resource type="Script" uid="uid://c1q4hlr40x23v" path="res://source/entities/player_entities/pinda_animation_tree/pinda_animation_tree.gd" id="9_frg5b"]
+[ext_resource type="Script" uid="uid://dfidldvsjfu8i" path="res://source/audio/sfx/pinda/pinda_sfx.gd" id="9_okvq1"]
+[ext_resource type="AudioStream" uid="uid://dlvprflfeebyd" path="res://source/audio/sfx/pinda/pinda-footsteps-ground.tres" id="10_efgfi"]
+[ext_resource type="AudioStream" uid="uid://bsgq7od2ntmp5" path="res://assets/sfx/pinda/ACTN-pinda-rolling.ogg" id="10_frg5b"]
+[ext_resource type="AudioStream" uid="uid://cxsd6vd54lxf1" path="res://source/audio/sfx/pinda/pinda-footsteps-snow.tres" id="10_ifjiy"]
+[ext_resource type="PackedScene" uid="uid://qh1jstqjb43k" path="res://source/fx/snow_fx/snow_interaction.tscn" id="11_8i6uh"]
+[ext_resource type="PackedScene" uid="uid://kdg0uxosek8r" path="res://source/fx/footstep_fx/footsteps.tscn" id="11_bbx5v"]
+[ext_resource type="AudioStream" uid="uid://brctunyxdbbbf" path="res://source/audio/sfx/pinda/pinda-footsteps-ice.tres" id="11_ifjiy"]
+[ext_resource type="Material" uid="uid://da6cx3puri7oi" path="res://source/fx/footstep_fx/footsteps-pinda.tres" id="12_2vvcm"]
+[ext_resource type="Script" uid="uid://bhov5mflxipjk" path="res://source/audio/music/gameplay_music_setting.gd" id="13_eybie"]
+[ext_resource type="AudioStream" uid="uid://c0uauu6iyxsap" path="res://assets/sfx/pinda/ACTN-pinda-hahaa-proud.ogg" id="13_oeiav"]
+[ext_resource type="AudioStream" uid="uid://dbmfcmcefs3or" path="res://assets/sfx/pinda/LOOP-pinda-stuck_snow-new.ogg" id="14_c64fc"]
+[ext_resource type="AudioStream" uid="uid://dfeqidinnswp8" path="res://assets/sfx/pinda/ACTN-pinda-dug_out.ogg" id="16_i0bb6"]
+[ext_resource type="AudioStream" uid="uid://bhvq2h0m8dpef" path="res://assets/sfx/pinda/LOOP-pinda-idle-tired-0.ogg" id="20_pxp1k"]
+[ext_resource type="AudioStream" uid="uid://cmj5ptqk2wlvd" path="res://assets/sfx/pinda/LOOP-pinda-idle-tired-1.ogg" id="21_gwtcs"]
+[ext_resource type="AudioStream" uid="uid://ka0s6c8f8u5i" path="res://assets/sfx/pinda/LOOP-pinda-idle-tired-2.ogg" id="22_e0j08"]
+[ext_resource type="AudioStream" uid="uid://cry6lu634cmqn" path="res://assets/sfx/pinda/ACTN-pinda-yanked.ogg" id="23_gwtcs"]
+[ext_resource type="AudioStream" uid="uid://csa3t8tnqvayo" path="res://assets/sfx/pinda/ACTN-pinda-move-tired-0.ogg" id="24_1mdgi"]
+[ext_resource type="AudioStream" uid="uid://cbffelh10cqa1" path="res://assets/sfx/pinda/ACTN-pinda-move-tired-1.ogg" id="25_l0r0p"]
+[ext_resource type="AudioStream" uid="uid://djgqewldeqq64" path="res://assets/sfx/pinda/ACTN-pinda-move-tired-2.ogg" id="26_efgfi"]
+[ext_resource type="PackedScene" uid="uid://uqrq6hxgu4qs" path="res://assets/char/pinda/Pinda.tscn" id="27_mit7b"]
+[ext_resource type="AudioStream" uid="uid://bcr0l6wruvywr" path="res://assets/sfx/pinda/ACTN-pinda-fall_flat.ogg" id="28_l0r0p"]
+[ext_resource type="PackedScene" uid="uid://dtmf7m54cb5d3" path="res://source/entities/player_entities/terrain_detector.tscn" id="28_mit7b"]
+[ext_resource type="AudioStream" uid="uid://chscq5tg3ejlg" path="res://assets/sfx/pinda/ACTN-pinda-UGH-tired.ogg" id="30_q3cg2"]
+[ext_resource type="AudioStream" uid="uid://4kjrrsq76gbs" path="res://assets/sfx/pinda/LOOP-pinda-footstep-SNOW-LIFT-0.ogg" id="32_lvm6i"]
+[ext_resource type="AudioStream" uid="uid://do1pbkl8d4p0e" path="res://assets/sfx/pinda/ACTN-pinda-hihi-happy-giggle_1.ogg" id="32_tmh8y"]
+[ext_resource type="AudioStream" uid="uid://dydqtwswwj1ux" path="res://assets/sfx/pinda/ACTN-pinda-hihi-happy-giggle.ogg" id="33_68qio"]
+[ext_resource type="AudioStream" uid="uid://b0mdtt12682ak" path="res://assets/sfx/pinda/ACTN-pinda-laugh.ogg" id="33_eibtm"]
+[ext_resource type="AudioStream" uid="uid://djner4vw25e7n" path="res://assets/sfx/pinda/ACTN-pinda-hihi-happy-giggle-long.ogg" id="34_3h0v1"]
+[ext_resource type="AudioStream" uid="uid://d7qwlpkhxogb" path="res://assets/sfx/pinda/LOOP-pinda-stuck_in_snow_0.ogg" id="34_vfxc4"]
+[ext_resource type="AudioStream" uid="uid://cxra280rckic7" path="res://assets/sfx/pinda/LOOP-pinda-stuck_in_snow_1.ogg" id="35_c64fc"]
+[ext_resource type="AudioStream" uid="uid://cv1kqanjob1et" path="res://assets/sfx/pinda/LOOP-pinda-stuck_in_snow_2.ogg" id="36_c64fc"]
+[ext_resource type="AudioStream" uid="uid://tprkjana8ei" path="res://assets/sfx/pinda/LOOP-pinda-snow-sliding.ogg" id="37_8wovw"]
+[ext_resource type="AudioStream" uid="uid://b7kx4wpayfx16" path="res://assets/sfx/pinda/ACTN-pinda-dug_out_ah.ogg" id="37_j4jn2"]
+[ext_resource type="AudioStream" uid="uid://bcvkp0vlqh52a" path="res://assets/sfx/pinda/LOOP-pinda-crying-0.ogg" id="39_hblda"]
+[ext_resource type="AudioStream" uid="uid://dnyxa7rcd5yn2" path="res://assets/sfx/pinda/LOOP-pinda-crying-1.ogg" id="40_5ourx"]
+[ext_resource type="AudioStream" uid="uid://cab1jh0d063wr" path="res://assets/sfx/pinda/LOOP-pinda-crying-2.ogg" id="41_gj0k7"]
+[ext_resource type="AudioStream" uid="uid://b6rmn4ve6iq5n" path="res://assets/sfx/pinda/LOOP-pinda-crying-3.ogg" id="42_00n7w"]
+[ext_resource type="AudioStream" uid="uid://kxdv441wdohi" path="res://assets/sfx/pinda/LOOP-pinda-crying-4.ogg" id="43_umflq"]
+[ext_resource type="AudioStream" uid="uid://c0quexci3nk46" path="res://assets/sfx/pinda/LOOP-pinda-crying-5.ogg" id="44_2s6ma"]
+[ext_resource type="AudioStream" uid="uid://dglhidt7hnro1" path="res://assets/sfx/pinda/ACTN-pinda-ouch.ogg" id="45_uxx5m"]
+[ext_resource type="AudioStream" uid="uid://cgkhhuc6xaonc" path="res://assets/sfx/pinda/ACTN-pinda-ouch-2.ogg" id="46_oeiav"]
+[ext_resource type="AudioStream" uid="uid://cucaf7mht67yg" path="res://assets/sfx/pinda/ACTN-pinda-ouch-3.ogg" id="47_hlks8"]
+[ext_resource type="AudioStream" uid="uid://dag7xbbj2vcdy" path="res://assets/sfx/pinda/ACTN-pinda-ouch-4.ogg" id="48_4wmrm"]
+[ext_resource type="AudioStream" uid="uid://dkcuk0b2q36ow" path="res://assets/sfx/pinda/ACTN-pinda-reaction-HUH.ogg" id="48_umflq"]
+[ext_resource type="AudioStream" uid="uid://dmnleywmf1htj" path="res://assets/sfx/pinda/ACTN-pinda-ouch-5.ogg" id="49_fljka"]
+[ext_resource type="AudioStream" uid="uid://dw768nrbkopeb" path="res://assets/sfx/pinda/ACTN-pinda-whistle-01.ogg" id="49_s5tnx"]
+[ext_resource type="AudioStream" uid="uid://cd7hl0gekg2q7" path="res://assets/sfx/pinda/ACTN-pinda-wooh-oops.ogg" id="50_o2ccj"]
+[ext_resource type="AudioStream" uid="uid://3ofe4stxeafn" path="res://assets/sfx/pinda/ACTN-pinda-whistle-02.ogg" id="50_q3cg2"]
+[ext_resource type="AudioStream" uid="uid://cs01qx5cm6bbt" path="res://assets/sfx/ui/UI_click-2.ogg" id="51_c8nkh"]
+[ext_resource type="AudioStream" uid="uid://dwsyp6j61ccyl" path="res://assets/sfx/pinda/ACTN-pinda-react-aha.ogg" id="51_uxx5m"]
+[ext_resource type="AudioStream" uid="uid://cj0pfuf7aq84h" path="res://assets/sfx/ui/UI-cardboard-click-3.ogg" id="52_0i40n"]
+[ext_resource type="AudioStream" uid="uid://60wse8w0sr5x" path="res://assets/sfx/pinda/ACTN-pinda-whistle-04.ogg" id="52_o2ccj"]
+[ext_resource type="AudioStream" uid="uid://csoaoqtdsj5fk" path="res://assets/sfx/pinda/LOOP-pinda-floor_dragged.ogg" id="52_s5tnx"]
+[ext_resource type="AudioStream" uid="uid://bx2f65ky5jb6v" path="res://assets/sfx/ui/UI-cardboard-click-4.ogg" id="53_gtbkt"]
+[ext_resource type="AudioStream" uid="uid://euakf53o1t7e" path="res://assets/sfx/pinda/CINE-pinda-unlocking-gate.ogg" id="54_eybie"]
+[ext_resource type="AudioStream" uid="uid://c1ydgcgdaeava" path="res://assets/sfx/ui/UI-cardboard-click-0.ogg" id="54_xrrj8"]
+[ext_resource type="AudioStream" uid="uid://bi2ddvd8mfwd5" path="res://assets/sfx/pinda/ACTN-pinda-calling-chocomel-come-here-happy.ogg" id="55_7n7q2"]
+[ext_resource type="AudioStream" uid="uid://bxaw6d4wx4fub" path="res://assets/sfx/pinda/LOOP-pinda-thinking-2.ogg" id="56_6lxtn"]
+[ext_resource type="AudioStream" uid="uid://d7fri33j2ad4" path="res://assets/sfx/pinda/ACTN-pinda-calling-chocomel-come-here-neutral.ogg" id="56_uxx5m"]
+[ext_resource type="AudioStream" uid="uid://d14cid00amvi5" path="res://assets/sfx/pinda/LOOP-pinda-thinking.ogg" id="57_lmeeg"]
+[ext_resource type="AudioStream" uid="uid://bq2pe6s10j750" path="res://assets/sfx/pinda/LOOP-pinda-thinking-3.ogg" id="58_iy2yi"]
+[ext_resource type="AudioStream" uid="uid://b6unodhr5pihr" path="res://assets/sfx/pinda/LOOP-pinda-thinking-4.ogg" id="59_iy2yi"]
+[ext_resource type="AudioStream" uid="uid://cxyk2qjyc7e3b" path="res://assets/sfx/pinda/LOOP-pause.ogg" id="60_rtscw"]
+[ext_resource type="AudioStream" uid="uid://cy8xmdnuui0so" path="res://assets/sfx/pinda/ACTN-pinda-hum-happy-melody-HARMONY.ogg" id="62_oeiav"]
+[ext_resource type="AudioStream" uid="uid://bjqnnrk7nuwtw" path="res://assets/sfx/pinda/ACTN-pinda-hum-happy-melody_1.ogg" id="62_uxx5m"]
+[ext_resource type="AudioStream" uid="uid://d03vc6uk0owry" path="res://assets/sfx/pinda/ACTN-pinda-hum-happy-melody-TRIPLE-HARMONY.ogg" id="63_hlks8"]
+[ext_resource type="AudioStream" uid="uid://bkvfd5w18hou7" path="res://assets/sfx/pinda/ACTN-pinda-hum-happy-melody_2.ogg" id="63_oeiav"]
+[ext_resource type="AudioStream" uid="uid://c0pt52gf3mtt4" path="res://assets/sfx/pinda/ACTN-pinda-hum-happy-melody_3.ogg" id="64_hlks8"]
+[ext_resource type="AudioStream" uid="uid://c1b50kx58g1up" path="res://source/audio/sfx/pinda/pinda-emote-cloudy.tres" id="66_hlks8"]
+[ext_resource type="AudioStream" uid="uid://dhb6tduk4fbvk" path="res://source/audio/sfx/pinda/pinda-pushing-grunts.tres" id="66_oeiav"]
+[ext_resource type="AudioStream" uid="uid://btto1cu8bgdrc" path="res://source/audio/sfx/pinda/pinda-pickup-item-sfx.tres" id="67_hlks8"]
+[ext_resource type="AudioStream" uid="uid://05mihxvuclp" path="res://source/audio/sfx/pinda/pinda-pulling-grunts.tres" id="69_fljka"]
+[ext_resource type="AudioStream" uid="uid://cxu1ff73ucfgw" path="res://assets/sfx/pinda/ACTN-pinda-wow-wonder-03.ogg" id="71_gq8wx"]
+[ext_resource type="AudioStream" uid="uid://drg888kyw8ltp" path="res://assets/sfx/pinda/ACTN-pinda-brrr-cold-01.ogg" id="74_nep0e"]
+[ext_resource type="AudioStream" uid="uid://dugjgrcus8juh" path="res://assets/sfx/pinda/ACTN-pinda-brrr-cold-02.ogg" id="75_rkrgh"]
+[ext_resource type="AudioStream" uid="uid://shl201e1kued" path="res://assets/sfx/pinda/ACTN-pinda-brrr-cold-03.ogg" id="76_4vjoi"]
+[ext_resource type="AudioStream" uid="uid://bmxjeu11bnimk" path="res://assets/sfx/pinda/ACTN-pinda-brrr-cold-04.ogg" id="77_fi1r2"]
+[ext_resource type="AudioStream" uid="uid://dqjd82awlggfw" path="res://assets/sfx/pinda/ACTN-pinda-brrr-cold-05.ogg" id="78_7nv3u"]
+[ext_resource type="AudioStream" uid="uid://couahnqgw80mx" path="res://assets/sfx/pinda/ACTN-pinda-wow-gliding-01.ogg" id="79_7nv3u"]
+[ext_resource type="AudioStream" uid="uid://jhm4bp7ay27l" path="res://assets/sfx/pinda/ACTN-pinda-wow-gliding-02.ogg" id="80_hi5sd"]
+[ext_resource type="AudioStream" uid="uid://ctcibaaxleebr" path="res://assets/sfx/pinda/ACTN-pinda-wow-gliding-03.ogg" id="81_0f32h"]
+[ext_resource type="AudioStream" uid="uid://2n4fbbptjdhf" path="res://assets/sfx/pinda/ACTN-pinda-wow-gliding-04.ogg" id="82_tmh8y"]
+[ext_resource type="PackedScene" uid="uid://ssr4t4b60n8y" path="res://source/fx/ice_fx/ice_interaction.tscn" id="87_0f32h"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_rpwwy"]
+radius = 0.35
+height = 1.2
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_3hphs"]
+radius = 1.2
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_5j6c4"]
+height = 1.0
+radius = 4.0
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_hi5sd"]
+radius = 0.39
+height = 1.2
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_8i6uh"]
+animation = &"Pinda-anim_lib/POSE-pinda-pumpum_scale_down"
+
+[sub_resource type="AnimationNodeAdd2" id="AnimationNodeAdd2_2cphi"]
+filter_enabled = true
+filters = ["../..", "../../SoundEffects", "../../SoundEffects/CallingFarSound", "../../SoundEffects/DugOutSound", "../../SoundEffects/FallFlatSound", "../../SoundEffects/FootstepSound", "../../SoundEffects/IdleTiredSound", "../../SoundEffects/MopingSound", "../../SoundEffects/MoveTiredSound", "../../SoundEffects/RollingSound", "../../SoundEffects/SnowStuckSound", "../../SoundEffects/WalkSound", "../../SoundEffects/YankedSound", "RIG-Pinda/Skeleton3D:hat_ball"]
+
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_ey0eq"]
+nodes/AnimationStates/node = ExtResource("6_2cphi")
+nodes/AnimationStates/position = Vector2(-280, 100)
+"nodes/pompom scaled down/node" = SubResource("AnimationNodeAnimation_8i6uh")
+"nodes/pompom scaled down/position" = Vector2(-400, 320)
+"nodes/pompom small/node" = SubResource("AnimationNodeAdd2_2cphi")
+"nodes/pompom small/position" = Vector2(80, 120)
+node_connections = [&"output", 0, &"pompom small", &"pompom small", 0, &"AnimationStates", &"pompom small", 1, &"pompom scaled down"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_3hphs"]
+size = Vector3(0.28, 1.765, 0.2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3hphs"]
+albedo_color = Color(0.346458, 0.58439, 0.814102, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_2cphi"]
+top_radius = 0.155
+bottom_radius = 0.0
+height = 1.09
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_frg5b"]
+albedo_color = Color(0.830886, 0.376165, 0.507368, 1)
+
+[sub_resource type="Resource" id="Resource_7aml2"]
+script = ExtResource("13_eybie")
+configuration = Dictionary[int, bool]({
+0: true,
+1: true,
+2: false,
+3: false,
+4: false,
+5: false,
+6: false,
+7: false,
+8: false,
+9: false,
+10: false,
+11: true,
+12: false,
+13: false
+})
+metadata/_custom_type_script = "uid://bhov5mflxipjk"
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_oeiav"]
+random_pitch = 1.07
+streams_count = 1
+stream_0/stream = ExtResource("13_oeiav")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_mit7b"]
+random_pitch = 1.02
+streams_count = 3
+stream_0/stream = ExtResource("20_pxp1k")
+stream_1/stream = ExtResource("21_gwtcs")
+stream_2/stream = ExtResource("22_e0j08")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_ifjiy"]
+random_pitch = 1.03
+streams_count = 4
+stream_0/stream = ExtResource("24_1mdgi")
+stream_1/stream = ExtResource("25_l0r0p")
+stream_2/stream = ExtResource("26_efgfi")
+stream_3/stream = ExtResource("30_q3cg2")
+stream_3/weight = 0.5
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_eibtm"]
+streams_count = 1
+stream_0/stream = ExtResource("32_lvm6i")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_vpb0g"]
+random_pitch = 1.05
+streams_count = 1
+stream_0/stream = ExtResource("33_eibtm")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_c8nkh"]
+random_pitch = 1.05
+streams_count = 4
+stream_0/stream = ExtResource("33_eibtm")
+stream_1/stream = ExtResource("32_tmh8y")
+stream_2/stream = ExtResource("33_68qio")
+stream_3/stream = ExtResource("34_3h0v1")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_j4jn2"]
+random_pitch = 1.1
+streams_count = 3
+stream_0/stream = ExtResource("34_vfxc4")
+stream_1/stream = ExtResource("35_c64fc")
+stream_2/stream = ExtResource("36_c64fc")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_8wovw"]
+random_pitch = 1.04
+streams_count = 6
+stream_0/stream = ExtResource("39_hblda")
+stream_1/stream = ExtResource("40_5ourx")
+stream_2/stream = ExtResource("41_gj0k7")
+stream_3/stream = ExtResource("42_00n7w")
+stream_4/stream = ExtResource("43_umflq")
+stream_5/stream = ExtResource("44_2s6ma")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_uousa"]
+random_pitch = 1.07
+random_volume_offset_db = 0.5
+streams_count = 5
+stream_0/stream = ExtResource("45_uxx5m")
+stream_1/stream = ExtResource("46_oeiav")
+stream_2/stream = ExtResource("47_hlks8")
+stream_3/stream = ExtResource("48_4wmrm")
+stream_4/stream = ExtResource("49_fljka")
+stream_4/weight = 0.5
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_o2ccj"]
+random_pitch = 1.05
+streams_count = 1
+stream_0/stream = ExtResource("50_o2ccj")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_0f32h"]
+random_pitch = 1.1
+streams_count = 4
+stream_0/stream = ExtResource("51_c8nkh")
+stream_1/stream = ExtResource("52_0i40n")
+stream_2/stream = ExtResource("53_gtbkt")
+stream_3/stream = ExtResource("54_xrrj8")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_2s6ma"]
+random_pitch = 1.05
+streams_count = 1
+stream_0/stream = ExtResource("48_umflq")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_oculk"]
+random_pitch = 1.15
+streams_count = 3
+stream_0/stream = ExtResource("49_s5tnx")
+stream_1/stream = ExtResource("50_q3cg2")
+stream_2/stream = ExtResource("52_o2ccj")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_l87oa"]
+random_pitch = 1.02
+streams_count = 1
+stream_0/stream = ExtResource("55_7n7q2")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_7n7q2"]
+random_pitch = 1.06
+streams_count = 1
+stream_0/stream = ExtResource("56_uxx5m")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_rtscw"]
+random_pitch = 1.1
+streams_count = 5
+stream_0/stream = ExtResource("56_6lxtn")
+stream_1/stream = ExtResource("57_lmeeg")
+stream_2/stream = ExtResource("58_iy2yi")
+stream_3/stream = ExtResource("59_iy2yi")
+stream_4/stream = ExtResource("60_rtscw")
+stream_4/weight = 2.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_fljka"]
+playback_mode = 2
+random_volume_offset_db = 1.5
+streams_count = 4
+stream_0/stream = ExtResource("62_uxx5m")
+stream_1/stream = ExtResource("63_oeiav")
+stream_2/stream = ExtResource("64_hlks8")
+stream_3/stream = ExtResource("60_rtscw")
+stream_3/weight = 1.5
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_4wmrm"]
+playback_mode = 2
+random_volume_offset_db = 1.5
+streams_count = 3
+stream_0/stream = ExtResource("62_uxx5m")
+stream_1/stream = ExtResource("62_oeiav")
+stream_2/stream = ExtResource("63_hlks8")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_gq8wx"]
+random_pitch = 1.07
+streams_count = 1
+stream_0/stream = ExtResource("71_gq8wx")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_hi5sd"]
+streams_count = 5
+stream_0/stream = ExtResource("74_nep0e")
+stream_1/stream = ExtResource("75_rkrgh")
+stream_2/stream = ExtResource("76_4vjoi")
+stream_3/stream = ExtResource("77_fi1r2")
+stream_4/stream = ExtResource("78_7nv3u")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_68qio"]
+streams_count = 4
+stream_0/stream = ExtResource("79_7nv3u")
+stream_1/stream = ExtResource("80_hi5sd")
+stream_2/stream = ExtResource("81_0f32h")
+stream_3/stream = ExtResource("82_tmh8y")
+
+[node name="Pinda" type="CharacterBody3D" node_paths=PackedStringArray("character_asset", "skeleton", "collision_shape", "shapecast_obstacles", "touch_detector", "emote_bubbles", "item_detector", "terrain_detector", "animation_player", "animation_tree", "character_rotation_slicer", "arm_rotation_slicer", "pull_blend_slicer", "walking_speed_slicer", "footstep_fx", "sound_effects", "debug_direction", "debug_position") groups=["Persist", "Signaling"]]
+collision_layer = 8
+collision_mask = 631
+wall_min_slide_angle = 0.0174533
+script = ExtResource("1_pgsm1")
+character_asset = NodePath("PindaAsset")
+skeleton = NodePath("PindaAsset/Pinda-IMPORT/RIG-Pinda/Skeleton3D")
+collision_shape = NodePath("CollisionShape")
+shapecast_obstacles = NodePath("ObstacleAvoidanceShapeCast")
+touch_detector = NodePath("TouchDetector")
+emote_bubbles = NodePath("EmoteBubble")
+item_detector = NodePath("InterestDetector")
+terrain_detector = NodePath("TerrainDetector")
+animation_player = NodePath("PindaAsset/AnimationPlayer")
+animation_tree = NodePath("AnimationTree")
+character_rotation_slicer = NodePath("ValueSlicers/CharacterRotationSlicer")
+arm_rotation_slicer = NodePath("ValueSlicers/ArmRotationSlicer")
+pull_blend_slicer = NodePath("ValueSlicers/PullBlendSlicer")
+walking_speed_slicer = NodePath("ValueSlicers/WalkingSpeedSlicer")
+footstep_fx = NodePath("VisualFX/Footsteps")
+sound_effects = NodePath("SoundEffects")
+debug_direction = NodePath("DebugDirection")
+debug_position = NodePath("DebugMovementTarget")
+
+[node name="CollisionShape" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0)
+shape = SubResource("CapsuleShape3D_rpwwy")
+
+[node name="ObstacleAvoidanceShapeCast" type="ShapeCast3D" parent="."]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("SphereShape3D_3hphs")
+target_position = Vector3(0, 0, 0)
+max_results = 4
+collision_mask = 112
+
+[node name="PindaAsset" parent="." instance=ExtResource("27_mit7b")]
+
+[node name="EmoteBubble" parent="." node_paths=PackedStringArray("character") instance=ExtResource("3_iifib")]
+character = NodePath("../PindaAsset")
+
+[node name="InterestDetector" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 130
+script = ExtResource("4_hi5sd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InterestDetector"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("CylinderShape3D_5j6c4")
+
+[node name="TerrainDetector" parent="." instance=ExtResource("28_mit7b")]
+script = ExtResource("5_frg5b")
+
+[node name="TouchDetector" type="ShapeCast3D" parent="."]
+shape = SubResource("CapsuleShape3D_hi5sd")
+target_position = Vector3(0, 0.6, 0)
+margin = 0.1
+max_results = 8
+collision_mask = 102
+script = ExtResource("7_hi5sd")
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+root_node = NodePath("../PindaAsset/Pinda-IMPORT")
+callback_mode_process = 0
+tree_root = SubResource("AnimationNodeBlendTree_ey0eq")
+advance_expression_base_node = NodePath("..")
+anim_player = NodePath("../PindaAsset/AnimationPlayer")
+parameters/AnimationStates/Building/blend_position = 0
+"parameters/AnimationStates/Calling Out/blend_position" = 1.00604
+"parameters/AnimationStates/Getting Up/blend_position" = 0
+"parameters/AnimationStates/Ice Movement/Excited Face/blend_amount" = 0.0
+"parameters/AnimationStates/Ice Movement/Idle - Moving/blend_amount" = 0.0
+"parameters/AnimationStates/Ice Movement/Tripping/active" = false
+"parameters/AnimationStates/Ice Movement/Tripping/internal_active" = false
+"parameters/AnimationStates/Ice Movement/Tripping/request" = 0
+"parameters/AnimationStates/Lay Down/blend_position" = 0.00255108
+"parameters/AnimationStates/Petting Loops/Petting_BlendSpace1D/blend_position" = 0
+"parameters/AnimationStates/Petting Loops/TimeSeek/seek_request" = -1.0
+"parameters/AnimationStates/Seeking and Catching Up/Idle - Moving Factor/blend_amount" = 0
+"parameters/AnimationStates/Seeking and Catching Up/Moving 1D Regular/blend_position" = 0
+"parameters/AnimationStates/Seeking and Catching Up/Moving 1D Tired/blend_position" = 0
+"parameters/AnimationStates/Seeking and Catching Up/Pushing Chocomel/blend_amount" = 0
+"parameters/AnimationStates/Seeking and Catching Up/Sad Face/blend_amount" = 0
+"parameters/AnimationStates/Seeking and Catching Up/Sad Idle/blend_amount" = 0
+"parameters/AnimationStates/Seeking and Catching Up/Stamina Idle/blend_amount" = 1.0
+"parameters/AnimationStates/Seeking and Catching Up/Stamina Movement/blend_amount" = 0
+"parameters/AnimationStates/Seeking and Catching Up/Tripping/active" = false
+"parameters/AnimationStates/Seeking and Catching Up/Tripping/internal_active" = false
+"parameters/AnimationStates/Seeking and Catching Up/Tripping/request" = 0
+"parameters/AnimationStates/Seeking and Catching Up/Tripping Type/blend_amount" = 0
+"parameters/AnimationStates/Seeking and Catching Up/Walking Speed Factor/scale" = 1.0
+"parameters/AnimationStates/Seeking and Catching Up/Without Leash/blend_amount" = 0
+parameters/AnimationStates/Stuck/Fallen/blend_position = Vector2(0.996176, 0.99536)
+parameters/AnimationStates/Stuck/Falling/blend_position = 0
+"parameters/pompom small/add_amount" = 0.0
+script = ExtResource("9_frg5b")
+
+[node name="ValueSlicers" type="Node" parent="."]
+
+[node name="CharacterRotationSlicer" type="Node" parent="ValueSlicers"]
+script = ExtResource("8_3hphs")
+_range_minimum = -3.142
+_range_maximum = 3.142
+_slice_numbers = 16
+_threshold_factor = 0.25
+_use_looping_range = true
+
+[node name="ArmRotationSlicer" type="Node" parent="ValueSlicers"]
+script = ExtResource("8_3hphs")
+_range_minimum = -3.142
+_range_maximum = 3.142
+_slice_numbers = 16
+_use_looping_range = true
+
+[node name="PullBlendSlicer" type="Node" parent="ValueSlicers"]
+script = ExtResource("8_3hphs")
+_range_maximum = 1.4
+_slice_numbers = 5
+_threshold_factor = 0.08
+
+[node name="WalkingSpeedSlicer" type="Node" parent="ValueSlicers"]
+script = ExtResource("8_3hphs")
+_range_maximum = 4.0
+_threshold_factor = 0.5
+metadata/_custom_type_script = "uid://b7533wg1ao53n"
+
+[node name="DebugDirection" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.228, 0)
+visible = false
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="DebugDirection"]
+transform = Transform3D(0.472655, 0, 0, 0, -2.06604e-08, -0.472655, 0, 0.472655, -2.06604e-08, 0, 0, 0.386954)
+mesh = SubResource("PrismMesh_3hphs")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_3hphs")
+
+[node name="DebugMovementTarget" type="Node3D" parent="."]
+visible = false
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="DebugMovementTarget"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.54, 0)
+mesh = SubResource("CylinderMesh_2cphi")
+surface_material_override/0 = SubResource("StandardMaterial3D_frg5b")
+
+[node name="SoundEffects" type="Node3D" parent="." node_paths=PackedStringArray("footstep_sfx", "footstep_snow_lift_sfx", "terrain_detector", "ice_sliding_sfx", "floor_dragging_sfx", "brrr_cold_sfx", "wow_fast_sfx", "impact_sfx", "ouch_sfx", "fall_flat_sfx", "rolling_sfx", "stuck_in_snow_sfx", "stuck_in_snow_voice", "emote_hearts_sfx", "emote_cloudy_sfx", "emote_exclamation_sfx", "pickup_item_sound")]
+script = ExtResource("9_okvq1")
+footstep_audio_wood = ExtResource("10_ifjiy")
+footstep_audio_ice = ExtResource("11_ifjiy")
+footstep_audio_ground = ExtResource("10_efgfi")
+footstep_audio_snow = ExtResource("10_ifjiy")
+footstep_sfx = NodePath("FootstepSound")
+footstep_snow_lift_sfx = NodePath("FootstepSnowLiftSound")
+terrain_detector = NodePath("../TerrainDetector")
+ice_sliding_sfx = NodePath("IceSlidingSound")
+floor_dragging_sfx = NodePath("DraggedSound")
+brrr_cold_sfx = NodePath("BrrrColdSounds")
+wow_fast_sfx = NodePath("SprintingWowSounds")
+impact_sfx = NodePath("ImpactSounds")
+ouch_sfx = NodePath("OuchSounds")
+fall_flat_sfx = NodePath("FallFlatSound")
+rolling_sfx = NodePath("RollingSound")
+stuck_in_snow_sfx = NodePath("SnowStuckSound")
+stuck_in_snow_voice = NodePath("StuckInSnowVoice")
+emote_hearts_sfx = NodePath("EmoteSounds/EmoteHearts")
+emote_cloudy_sfx = NodePath("EmoteSounds/EmoteCloudy")
+emote_exclamation_sfx = NodePath("EmoteSounds/EmoteExclamation")
+pickup_item_sound = NodePath("PickupItemSound")
+gate_unlock_music_conf = SubResource("Resource_7aml2")
+
+[node name="PickupBranchSequence" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = SubResource("AudioStreamRandomizer_oeiav")
+max_distance = 40.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="RollingSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = ExtResource("10_frg5b")
+volume_db = 6.0
+unit_size = 12.0
+pitch_scale = 0.9
+max_distance = 45.0
+panning_strength = 2.0
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 6000.0
+attenuation_filter_db = -12.0
+
+[node name="SnowStuckSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = ExtResource("14_c64fc")
+volume_db = 3.0
+max_db = 0.0
+max_distance = 60.0
+max_polyphony = 2
+panning_strength = 2.5
+bus = &"SFX"
+
+[node name="FootstepSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = ExtResource("10_efgfi")
+volume_db = -6.0
+max_db = 0.0
+pitch_scale = 1.4
+max_distance = 40.0
+max_polyphony = 2
+panning_strength = 2.5
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 7500.0
+attenuation_filter_db = -12.0
+
+[node name="DugOutSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = ExtResource("16_i0bb6")
+bus = &"SFX"
+
+[node name="MopingSounds" type="AudioStreamPlayer3D" parent="SoundEffects"]
+max_distance = 40.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="IdleTiredSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = SubResource("AudioStreamRandomizer_mit7b")
+max_db = 0.0
+pitch_scale = 1.1
+max_distance = 35.0
+panning_strength = 2.0
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 7000.0
+
+[node name="HooTiredSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+volume_db = 1.5
+max_db = 1.5
+pitch_scale = 1.05
+max_distance = 35.0
+panning_strength = 2.0
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 7000.0
+
+[node name="YankedLeashSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = ExtResource("23_gwtcs")
+max_db = 0.0
+pitch_scale = 1.05
+max_distance = 50.0
+panning_strength = 2.0
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 3500.0
+attenuation_filter_db = -12.0
+
+[node name="MoveTiredSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = SubResource("AudioStreamRandomizer_ifjiy")
+volume_db = 4.5
+max_db = 0.0
+pitch_scale = 1.1
+max_distance = 45.0
+panning_strength = 2.5
+bus = &"SFX"
+attenuation_filter_db = -16.0
+
+[node name="FallFlatSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = ExtResource("28_l0r0p")
+volume_db = 6.0
+pitch_scale = 1.05
+max_distance = 55.0
+panning_strength = 2.5
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 7500.0
+attenuation_filter_db = -12.0
+
+[node name="FootstepSnowLiftSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = SubResource("AudioStreamRandomizer_eibtm")
+volume_db = 3.0
+max_distance = 40.0
+max_polyphony = 2
+panning_strength = 2.5
+bus = &"SFX"
+
+[node name="LaughSounds" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = SubResource("AudioStreamRandomizer_vpb0g")
+volume_db = 6.0
+pitch_scale = 1.1
+max_distance = 35.0
+panning_strength = 2.5
+bus = &"SFX"
+
+[node name="LickingGiggle" type="AudioStreamPlayer3D" parent="SoundEffects/LaughSounds"]
+stream = SubResource("AudioStreamRandomizer_c8nkh")
+pitch_scale = 1.05
+max_distance = 35.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="StuckInSnowVoice" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = SubResource("AudioStreamRandomizer_j4jn2")
+volume_db = -3.0
+max_db = 0.0
+pitch_scale = 1.1
+max_distance = 35.0
+max_polyphony = 2
+panning_strength = 2.5
+bus = &"SFX"
+
+[node name="DugOutAhSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = ExtResource("37_j4jn2")
+volume_db = 3.0
+pitch_scale = 1.15
+max_distance = 35.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="IceSlidingSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = ExtResource("37_8wovw")
+unit_size = 12.0
+max_distance = 40.0
+panning_strength = 2.5
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 7500.0
+attenuation_filter_db = -12.0
+doppler_tracking = 2
+
+[node name="CryingSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = SubResource("AudioStreamRandomizer_8wovw")
+max_db = 0.0
+pitch_scale = 1.1
+max_distance = 45.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="BuildingLeftSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+volume_db = -3.0
+max_db = -3.0
+pitch_scale = 1.03
+panning_strength = 2.0
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 3000.0
+attenuation_filter_db = -18.0
+
+[node name="BuildingRightSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+volume_db = -3.0
+max_db = -3.0
+pitch_scale = 1.02
+panning_strength = 2.0
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 3000.0
+attenuation_filter_db = -18.0
+
+[node name="OuchSounds" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = SubResource("AudioStreamRandomizer_uousa")
+volume_db = 4.5
+max_db = 6.0
+max_distance = 40.0
+max_polyphony = 2
+panning_strength = 2.0
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 3000.0
+
+[node name="RollingSounds" type="AudioStreamPlayer3D" parent="SoundEffects/OuchSounds"]
+volume_db = 3.0
+unit_size = 12.5
+max_db = 6.0
+max_distance = 50.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="YankedVoiceSound" type="AudioStreamPlayer3D" parent="SoundEffects/OuchSounds"]
+max_db = 0.0
+max_distance = 35.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="FallWahSound" type="AudioStreamPlayer3D" parent="SoundEffects/OuchSounds"]
+volume_db = 3.0
+max_distance = 45.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="FallOofSound" type="AudioStreamPlayer3D" parent="SoundEffects/OuchSounds"]
+pitch_scale = 1.05
+max_distance = 45.0
+panning_strength = 2.0
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 7500.0
+
+[node name="FallWooSound" type="AudioStreamPlayer3D" parent="SoundEffects/OuchSounds"]
+stream = SubResource("AudioStreamRandomizer_o2ccj")
+volume_db = 3.0
+pitch_scale = 1.05
+max_distance = 45.0
+panning_strength = 2.0
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 7500.0
+
+[node name="ImpactSounds" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = SubResource("AudioStreamRandomizer_0f32h")
+volume_db = 6.0
+unit_size = 12.0
+max_db = 6.0
+pitch_scale = 0.8
+max_distance = 45.0
+max_polyphony = 2
+panning_strength = 2.0
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 3000.0
+
+[node name="ReactAhaSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = ExtResource("51_uxx5m")
+volume_db = -3.0
+max_distance = 45.0
+panning_strength = 2.5
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 7000.0
+
+[node name="ReactHuhSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = SubResource("AudioStreamRandomizer_2s6ma")
+volume_db = -3.0
+max_db = 0.0
+pitch_scale = 1.05
+max_distance = 35.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="HuhTreats" type="AudioStreamPlayer3D" parent="SoundEffects/ReactHuhSound"]
+max_distance = 2.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="ReactHuhRock" type="AudioStreamPlayer3D" parent="SoundEffects"]
+volume_db = -3.0
+max_db = 0.0
+pitch_scale = 1.05
+max_distance = 35.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="WhistleSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = SubResource("AudioStreamRandomizer_oculk")
+max_db = 0.0
+pitch_scale = 1.2
+max_distance = 40.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="DraggedSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = ExtResource("52_s5tnx")
+max_db = 0.0
+pitch_scale = 4.0
+max_distance = 45.0
+max_polyphony = 2
+panning_strength = 2.5
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 6500.0
+
+[node name="AttachRockSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+volume_db = 3.0
+unit_size = 9.0
+max_db = 6.0
+pitch_scale = 0.9
+max_distance = 30.0
+panning_strength = 1.5
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 8000.0
+
+[node name="GateSequence" type="AudioStreamPlayer3D" parent="SoundEffects"]
+volume_db = 3.0
+max_distance = 45.0
+max_polyphony = 3
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="GateSpot1" type="AudioStreamPlayer3D" parent="SoundEffects/GateSequence"]
+volume_db = 3.0
+max_distance = 40.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="GateSpot2" type="AudioStreamPlayer3D" parent="SoundEffects/GateSequence"]
+volume_db = 3.0
+max_distance = 40.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="GateSpot3" type="AudioStreamPlayer3D" parent="SoundEffects/GateSequence"]
+volume_db = 3.0
+max_distance = 40.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="GateUnlock" type="AudioStreamPlayer3D" parent="SoundEffects/GateSequence"]
+stream = ExtResource("54_eybie")
+volume_db = 3.0
+max_distance = 40.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="CallingChocomelSounds" type="AudioStreamPlayer3D" parent="SoundEffects"]
+max_distance = 45.0
+panning_strength = 2.2
+bus = &"SFX"
+
+[node name="CallingUnhappy" type="AudioStreamPlayer3D" parent="SoundEffects/CallingChocomelSounds"]
+max_distance = 40.0
+max_polyphony = 2
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="CallingFar" type="AudioStreamPlayer3D" parent="SoundEffects/CallingChocomelSounds"]
+stream = SubResource("AudioStreamRandomizer_l87oa")
+max_distance = 50.0
+panning_strength = 2.5
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 7500.0
+attenuation_filter_db = -12.0
+
+[node name="CallingNeutral" type="AudioStreamPlayer3D" parent="SoundEffects/CallingChocomelSounds"]
+stream = SubResource("AudioStreamRandomizer_7n7q2")
+pitch_scale = 1.05
+max_distance = 35.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="ReactBarkSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+max_distance = 35.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="GruntSounds" type="AudioStreamPlayer3D" parent="SoundEffects"]
+max_distance = 50.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="UnhappyGruntSound" type="AudioStreamPlayer3D" parent="SoundEffects/GruntSounds"]
+max_db = -3.0
+pitch_scale = 0.95
+max_distance = 35.0
+panning_strength = 2.0
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 8000.0
+attenuation_filter_db = -12.0
+
+[node name="ReliefWoohSound" type="AudioStreamPlayer3D" parent="SoundEffects/GruntSounds"]
+max_distance = 35.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="GettingUpSound" type="AudioStreamPlayer3D" parent="SoundEffects/GruntSounds"]
+max_distance = 35.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="AttachGrunts" type="AudioStreamPlayer3D" parent="SoundEffects/GruntSounds"]
+max_distance = 35.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="SighGrunts" type="AudioStreamPlayer3D" parent="SoundEffects/GruntSounds"]
+max_db = 0.0
+max_distance = 35.0
+bus = &"SFX"
+
+[node name="ThinkingSounds" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = SubResource("AudioStreamRandomizer_rtscw")
+pitch_scale = 1.1
+max_distance = 35.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="IntroHumming" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = SubResource("AudioStreamRandomizer_fljka")
+volume_db = -6.0
+max_db = 0.0
+max_distance = 35.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="HummingHarmonies" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = SubResource("AudioStreamRandomizer_4wmrm")
+volume_db = -6.0
+max_db = 0.0
+max_distance = 35.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="HmmSounds" type="AudioStreamPlayer3D" parent="SoundEffects"]
+max_distance = 50.0
+bus = &"SFX"
+
+[node name="HmmIntro" type="AudioStreamPlayer3D" parent="SoundEffects/HmmSounds"]
+bus = &"SFX"
+
+[node name="HmmSnuggle" type="AudioStreamPlayer3D" parent="SoundEffects/HmmSounds"]
+bus = &"SFX"
+
+[node name="AttachBranchSequence" type="AudioStreamPlayer3D" parent="SoundEffects"]
+max_distance = 35.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="PushingSounds" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = ExtResource("66_oeiav")
+max_distance = 35.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="EmoteSounds" type="AudioStreamPlayer3D" parent="SoundEffects"]
+bus = &"SFX"
+
+[node name="EmoteCloudy" type="AudioStreamPlayer3D" parent="SoundEffects/EmoteSounds"]
+stream = ExtResource("66_hlks8")
+volume_db = 3.0
+max_distance = 50.0
+panning_strength = 0.75
+bus = &"SFX"
+
+[node name="EmoteHearts" type="AudioStreamPlayer3D" parent="SoundEffects/EmoteSounds"]
+stream = ExtResource("67_hlks8")
+volume_db = 3.0
+max_db = -3.0
+max_distance = 50.0
+panning_strength = 0.75
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 12000.0
+attenuation_filter_db = -36.0
+
+[node name="EmoteExclamation" type="AudioStreamPlayer3D" parent="SoundEffects/EmoteSounds"]
+stream = SubResource("AudioStreamRandomizer_gq8wx")
+volume_db = 3.0
+max_db = -3.0
+max_distance = 45.0
+panning_strength = 0.75
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 12000.0
+attenuation_filter_db = -36.0
+
+[node name="PickupItemYahaa" type="AudioStreamPlayer3D" parent="SoundEffects"]
+bus = &"SFX"
+
+[node name="PickupItemSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+panning_strength = 0.75
+bus = &"SFX"
+
+[node name="HahaSounds" type="AudioStreamPlayer3D" parent="SoundEffects"]
+max_distance = 50.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="PullingSounds" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = ExtResource("69_fljka")
+max_distance = 30.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="LeashSounds" type="AudioStreamPlayer3D" parent="SoundEffects"]
+
+[node name="OutroWahSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+
+[node name="AttachTrafficConeSound" type="AudioStreamPlayer3D" parent="SoundEffects"]
+max_distance = 45.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="BrrrColdSounds" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = SubResource("AudioStreamRandomizer_hi5sd")
+volume_db = -6.0
+unit_size = 6.0
+max_db = 0.0
+max_distance = 35.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="SprintingWowSounds" type="AudioStreamPlayer3D" parent="SoundEffects"]
+stream = SubResource("AudioStreamRandomizer_68qio")
+volume_db = -3.0
+unit_size = 9.0
+max_distance = 40.0
+panning_strength = 2.0
+bus = &"SFX"
+
+[node name="PettingSounds" type="AudioStreamPlayer3D" parent="SoundEffects"]
+max_db = 0.0
+max_distance = 25.0
+panning_strength = 1.5
+bus = &"SFX"
+
+[node name="VisualFX" type="Node3D" parent="."]
+
+[node name="Footsteps" parent="VisualFX" node_paths=PackedStringArray("entity") instance=ExtResource("11_bbx5v")]
+entity = NodePath("../..")
+size = 0.21
+aspect = 0.8
+material = ExtResource("12_2vvcm")
+
+[node name="SnowInteraction" parent="VisualFX" node_paths=PackedStringArray("entity") instance=ExtResource("11_8i6uh")]
+entity = NodePath("../..")
+
+[node name="IceInteraction" parent="VisualFX" node_paths=PackedStringArray("entity") instance=ExtResource("87_0f32h")]
+entity = NodePath("../..")
+
+[connection signal="area_entered" from="InterestDetector" to="." method="_on_interest_detector_area_entered"]
+[connection signal="area_exited" from="InterestDetector" to="." method="_on_interest_detector_area_exited"]
+[connection signal="body_entered" from="InterestDetector" to="." method="_on_interest_detector_body_entered"]
+[connection signal="body_exited" from="InterestDetector" to="." method="_on_interest_detector_body_exited"]
+[connection signal="body_entered" from="TouchDetector" to="." method="_on_touch_detector_body_entered"]
+[connection signal="body_exited" from="TouchDetector" to="." method="_on_touch_detector_body_exited"]
+[connection signal="animation_finished" from="AnimationTree" to="." method="_on_animation_tree_animation_finished"]

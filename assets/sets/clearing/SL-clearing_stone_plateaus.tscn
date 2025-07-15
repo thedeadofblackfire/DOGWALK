@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfjmfedp6j3wq"]
+
+[ext_resource type="PackedScene" path="res://assets/sets/clearing/SL-clearing_stone_plateaus.gltf" id="1_nsgus"]
+
+[node name="SL-clearing_stone_plateaus" type="Node3D"]
+
+[node name="SL-clearing_stone_plateaus-IMPORT" type="StaticBody3D" parent="." instance=ExtResource("1_nsgus")]

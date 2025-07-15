@@ -1,0 +1,79 @@
+[gd_scene load_steps=7 format=3 uid="uid://weas5ohribhv"]
+
+[ext_resource type="Script" uid="uid://clak2gm3c1on4" path="res://assets/char/birds/bird.gd" id="1_0vg8e"]
+[ext_resource type="PackedScene" uid="uid://c10sge46ul8hp" path="res://assets/char/birds/bird_03.gltf" id="1_iyf1c"]
+[ext_resource type="AnimationLibrary" uid="uid://bqgbqk4x78avw" path="res://assets/char/birds/bird_01-anim_lib.tres" id="2_k8g5k"]
+[ext_resource type="AnimationNodeStateMachine" uid="uid://bbbks73fwhjdn" path="res://assets/char/birds/animationtree/BirdStateMachine.tres" id="3_mygg2"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_0vg8e"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.06
+radial_segments = 16
+rings = 0
+cap_bottom = false
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lcr62"]
+transparency = 1
+albedo_color = Color(0.359069, 0.359069, 0.359069, 0.227451)
+emission_enabled = true
+emission = Color(0.5125, 1, 0.25, 1)
+
+[node name="bird_03" type="Node3D" node_paths=PackedStringArray("animation_player", "animation_tree", "debug_radius")]
+script = ExtResource("1_0vg8e")
+animation_player = NodePath("AnimationPlayer")
+animation_tree = NodePath("AnimationTree")
+debug_radius = NodePath("DebugRadius")
+
+[node name="CH-bird_03-IMPORT" parent="." instance=ExtResource("1_iyf1c")]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../CH-bird_03-IMPORT")
+libraries = {
+&"bird_01-anim_lib": ExtResource("2_k8g5k")
+}
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+root_node = NodePath("../CH-bird_03-IMPORT")
+tree_root = ExtResource("3_mygg2")
+anim_player = NodePath("../AnimationPlayer")
+"parameters/Fly Away/blend_position" = 0
+"parameters/Idle Loops/blend_position" = 0
+
+[node name="DebugRadius" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0310374, 0)
+mesh = SubResource("CylinderMesh_0vg8e")
+surface_material_override/0 = SubResource("StandardMaterial3D_lcr62")
+
+[node name="PitterPatterSounds" type="AudioStreamPlayer3D" parent="."]
+volume_db = -12.0
+unit_size = 6.0
+max_db = -3.0
+pitch_scale = 1.4
+max_distance = 35.0
+panning_strength = 2.0
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 3000.0
+attenuation_filter_db = -30.0
+
+[node name="ChirpSounds" type="AudioStreamPlayer3D" parent="."]
+volume_db = -6.0
+unit_size = 6.0
+max_db = -3.0
+pitch_scale = 1.4
+max_distance = 40.0
+panning_strength = 2.0
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 3000.0
+attenuation_filter_db = -30.0
+
+[node name="FlySounds" type="AudioStreamPlayer3D" parent="."]
+volume_db = -12.0
+unit_size = 6.0
+max_db = -3.0
+pitch_scale = 1.4
+max_distance = 35.0
+panning_strength = 2.0
+bus = &"SFX"
+attenuation_filter_cutoff_hz = 3000.0
+attenuation_filter_db = -30.0

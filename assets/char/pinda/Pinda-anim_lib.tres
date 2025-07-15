@@ -1,0 +1,193 @@
+[gd_resource type="AnimationLibrary" load_steps=94 format=3 uid="uid://bqux4xtj8geuw"]
+
+[ext_resource type="Animation" uid="uid://duemkju8lr0ho" path="res://animations/world/LOOP-pinda-crying/LOOP-pinda-crying.tres" id="1_nosu5"]
+[ext_resource type="Animation" uid="uid://bkyxlqta6qb3x" path="res://animations/world/LOOP-pinda-fallen/LOOP-pinda-fallen.tres" id="2_ydru2"]
+[ext_resource type="Animation" uid="uid://b4ytkauxvcvg3" path="res://animations/world/LOOP-pinda-fallen_dragged/LOOP-pinda-fallen_dragged.tres" id="3_cwedt"]
+[ext_resource type="Animation" uid="uid://648rx15ul5j4" path="res://animations/world/LOOP-pinda-ice_dragged/LOOP-pinda-ice_dragged.tres" id="4_dwje4"]
+[ext_resource type="Animation" uid="uid://ols0vpw3g1up" path="res://animations/world/LOOP-pinda-idle_ice/LOOP-Pinda-idle_ice.tres" id="6_ig8jh"]
+[ext_resource type="Animation" uid="uid://bgk1qgp7kd1id" path="res://animations/world/LOOP-pinda-idle_tired/LOOP-pinda-idle_tired.tres" id="7_34y47"]
+[ext_resource type="Animation" uid="uid://dfo3j3bwinsux" path="res://animations/world/LOOP-pinda-idle_unhappy/LOOP-pinda-idle_unhappy.tres" id="8_c4ct3"]
+[ext_resource type="Animation" uid="uid://bdgxup7wjp83o" path="res://animations/world/LOOP-pinda-moping/LOOP-pinda-moping.tres" id="9_2qp14"]
+[ext_resource type="Animation" uid="uid://c4b7n7jlwns51" path="res://animations/world/LOOP-pinda-run_dragged/LOOP-pinda-run_dragged.tres" id="11_7g1me"]
+[ext_resource type="Animation" uid="uid://deurcefb4mw46" path="res://animations/world/LOOP-pinda-run_dragged_tired/LOOP-pinda-run_dragged_tired.tres" id="12_0nswt"]
+[ext_resource type="Animation" uid="uid://cdgub6u2gq0ut" path="res://animations/world/LOOP-pinda-run_tired/LOOP-Pinda-run_tired.tres" id="13_oacje"]
+[ext_resource type="Animation" uid="uid://dminddcvd7h8u" path="res://animations/world/LOOP-pinda-stuck_snow/LOOP-pinda-stuck_snow.tres" id="14_3dbmm"]
+[ext_resource type="Animation" uid="uid://ctok08qwa74qe" path="res://animations/world/LOOP-pinda-waiting/LOOP-pinda-waiting.tres" id="15_ekioj"]
+[ext_resource type="Animation" uid="uid://b71j0rtgbobbo" path="res://animations/world/LOOP-pinda-walk/LOOP-pinda-walk.tres" id="16_cdadt"]
+[ext_resource type="Animation" uid="uid://d3qlbbmt03pan" path="res://animations/world/LOOP-pinda-walk_tired/LOOP-pinda-walk_tired.tres" id="17_yvyr0"]
+[ext_resource type="Animation" uid="uid://bso607fioqorv" path="res://animations/world/LOOP-pinda_snow_dragged/LOOP-pinda-snow_dragged.tres" id="18_k5ras"]
+[ext_resource type="Animation" uid="uid://cvimptcoqr4s3" path="res://animations/world/POSE-pinda-sad_face/POSE-pinda-sad_face.tres" id="19_xlwyv"]
+[ext_resource type="Animation" uid="uid://dh05udbeivi1j" path="res://animations/world/POSE-pinda-turn_left/POSE-pinda-turn_left.tres" id="20_kik4o"]
+[ext_resource type="Animation" uid="uid://fwduglxnsd8p" path="res://animations/world/POSE-pinda-turn_right/POSE-pinda-turn_right.tres" id="21_d04hr"]
+[ext_resource type="Animation" uid="uid://cxkq5vo5gfty2" path="res://animations/world/SYNC-chars-push_slowly/SYNC-pinda-push_slowly.tres" id="23_t6e2q"]
+[ext_resource type="Animation" uid="uid://dol2o0otbp0m2" path="res://animations/world/SYNC-chars-snuggle/SYNC-pinda-snuggle.tres" id="24_trsa5"]
+[ext_resource type="Animation" uid="uid://ctnpyf3j27d4b" path="res://animations/world/SYNC-chars-treat/SYNC-pinda-treat.tres" id="25_0sypl"]
+[ext_resource type="Animation" uid="uid://fhdqrpe5mw7o" path="res://animations/hub/CINE-pinda-attach-in/CINE-pinda-attach-in.tres" id="27_c0str"]
+[ext_resource type="Animation" uid="uid://bnognp46r7c3r" path="res://animations/hub/CINE-pinda-attach-out/CINE-pinda-attach-out.tres" id="28_h5q5p"]
+[ext_resource type="Animation" uid="uid://dqc4m7v8sfl6n" path="res://animations/hub/CINE-pinda-attach_tennis_ball/CINE-pinda-attach_tennis_ball.tres" id="29_c2xwp"]
+[ext_resource type="Animation" uid="uid://b6t83cgowajl3" path="res://animations/hub/CINE-pinda-attach_traffic_cone/CINE-pinda-attach_traffic_cone.tres" id="30_rmevu"]
+[ext_resource type="Animation" uid="uid://lfna3ogojnil" path="res://animations/world/ACTN-pinda-calling_far/ACTN-Pinda-calling_far.tres" id="31_immpt"]
+[ext_resource type="Animation" uid="uid://cfwornhoyy50b" path="res://animations/world/ACTN-pinda-calling_unhappy/ACTN-pinda-calling_unhappy.tres" id="32_pjbp7"]
+[ext_resource type="Animation" uid="uid://cqopjffurplxi" path="res://animations/world/ACTN-pinda-dug_out/ACTN-pinda-dug_out.tres" id="33_lxo0o"]
+[ext_resource type="Animation" uid="uid://c04kr70j71ule" path="res://animations/world/ACTN-pinda-fall_flat/ACTN-pinda-fall_flat.tres" id="34_85xhv"]
+[ext_resource type="Animation" uid="uid://dnomnyakff107" path="res://animations/world/ACTN-pinda-fall_snow/ACTN-pinda-fall_snow.tres" id="35_2lsiw"]
+[ext_resource type="Animation" uid="uid://dq26gnijfrn7x" path="res://animations/world/ACTN-pinda-getting_up/ACTN-pinda-getting_up.tres" id="36_yw0lf"]
+[ext_resource type="Animation" uid="uid://h0hy5yj12bfv" path="res://animations/world/ACTN-pinda-pick_up/LOOP-pinda-pick_up.tres" id="37_ffb1t"]
+[ext_resource type="Animation" uid="uid://dr74cll8esuyh" path="res://animations/world/ACTN-pinda-pushed_over/LOOP-pinda-push_over.tres" id="38_ro1bh"]
+[ext_resource type="Animation" uid="uid://c6lou4tnh2evg" path="res://animations/world/ACTN-pinda-react_bark/ACTN-Pinda-react_bark.tres" id="39_dmf1t"]
+[ext_resource type="Animation" uid="uid://mss31go8armx" path="res://animations/world/ACTN-pinda-rolling/ACTN-Pinda-rolling.tres" id="40_8u0i6"]
+[ext_resource type="Animation" uid="uid://r7gwmb8vj70" path="res://animations/world/ACTN-pinda-stuck_ground_snow/ACTN-pinda-stuck_ground_snow.tres" id="41_px23j"]
+[ext_resource type="Animation" uid="uid://kg0twvsqs2ch" path="res://animations/world/ACTN-pinda-stuck_snow_ground/ACTN-pinda-stuck_snow_ground.tres" id="42_re2od"]
+[ext_resource type="Animation" uid="uid://2dobffqox5rx" path="res://animations/world/ACTN-pinda-tripping/ACTN-Pinda-tripping.tres" id="43_pi2gc"]
+[ext_resource type="Animation" uid="uid://c8o30yely7abh" path="res://animations/world/ACTN-pinda-yanked/ACTN-Pinda-yanked.tres" id="44_n0u40"]
+[ext_resource type="Animation" uid="uid://6xyak3nxlbw0" path="res://animations/world/LOOP-pinda-run/LOOP-pinda-run.tres" id="44_s3adk"]
+[ext_resource type="Animation" uid="uid://g1h7a37qsya8" path="res://animations/world/SYNC-chars-licking/SYNC-pinda-licking.tres" id="45_s3adk"]
+[ext_resource type="Animation" uid="uid://cmglqxx4ysog0" path="res://animations/world/ACTN-pinda-pick_up/ACTN-pinda-pick_up.tres" id="45_yxvyp"]
+[ext_resource type="Animation" uid="uid://6cym7ijgiisi" path="res://animations/world/ACTN-pinda-pushed_over/ACTN-pinda-push_over.tres" id="46_ya3h4"]
+[ext_resource type="Animation" uid="uid://bmioi3pglucks" path="res://animations/hub/CINE-chars-intro/CINE-pinda-intro.tres" id="46_yxvyp"]
+[ext_resource type="Animation" uid="uid://cjxlutxlr1of8" path="res://animations/hub/CINE-pinda-attach_shovel/CINE-pinda-attach_shovel.tres" id="48_hyvi7"]
+[ext_resource type="Animation" uid="uid://dbqcc1q0qv2ku" path="res://animations/world/POSE-pinda-neutral_face/POSE-pinda-neutral_face.tres" id="49_06v8k"]
+[ext_resource type="Animation" uid="uid://cue2w5q2lu76g" path="res://animations/world/POSE-pinda-angry-face/POSE-pinda-angry_face.tres" id="50_lsvof"]
+[ext_resource type="Animation" uid="uid://b42771shm8230" path="res://animations/hub/CINE-pinda-attach_proud/CINE-pinda-attach_proud.tres" id="51_xxpro"]
+[ext_resource type="Animation" uid="uid://dxekxe0qneqvy" path="res://animations/world/LOOP-pinda-run_branch/LOOP-pinda-run_branch.tres" id="52_rhw8f"]
+[ext_resource type="Animation" uid="uid://1epo8gabyndu" path="res://animations/hub/LOOP-pinda-bulding_left/LOOP-pinda-building_left.tres" id="54_14vr5"]
+[ext_resource type="Animation" uid="uid://d4fmrlgetx8sx" path="res://animations/hub/LOOP-pinda-bulding_right/LOOP-pinda-building_right.tres" id="55_k3dno"]
+[ext_resource type="Animation" uid="uid://dmqj63364nq8y" path="res://animations/hub/SYNC-chars-attach_rock/SYNC-pinda-attach_rock.tres" id="56_hkw06"]
+[ext_resource type="Animation" uid="uid://ddwwwjmnyvgg1" path="res://animations/hub/LOOP-pinda-thinking/LOOP-pinda-thinking.tres" id="57_c2f7n"]
+[ext_resource type="Animation" uid="uid://begostut5n3ll" path="res://animations/hub/ACTN-pinda-reaction_bark_turn/ACTN-pinda-reaction_bark_turn.tres" id="58_1bean"]
+[ext_resource type="Animation" uid="uid://c1ckmr8lp806e" path="res://animations/hub/CINE-pinda-attach_branch/CINE-pinda-attach_branch.tres" id="59_50csj"]
+[ext_resource type="Animation" uid="uid://dxxf4yodgqf06" path="res://animations/hub/ACTN-pinda-reaction_bark_aha/ACTN-pinda-reaction_bark_aha.tres" id="60_3iqs8"]
+[ext_resource type="Animation" uid="uid://cdrtllp7ar8bm" path="res://animations/world/POSE-pinda-pumpum_scale_down/POSE-pinda-pumpum_scale_down.tres" id="61_kwwys"]
+[ext_resource type="Animation" uid="uid://dyxvddonlj6dy" path="res://animations/world/LOOP-pinda-walk_pushing/LOOP-pinda-walk_pushing.tres" id="62_yq5du"]
+[ext_resource type="Animation" uid="uid://cbweo8rxwkgsm" path="res://animations/world/SYNC-chars-push_slowly/SYNC-chocomel-push_slowly.tres" id="63_3xtef"]
+[ext_resource type="Animation" uid="uid://desmbl15gax3u" path="res://animations/hub/ACTN-pinda-pick_up_branch/ACTN-pinda-pick_up_branch.tres" id="63_gjsek"]
+[ext_resource type="Animation" uid="uid://x3quh3cbspj3" path="res://animations/hub/CINE-pinda-attach_out_point/CINE-pinda-attach-out_point.tres" id="63_wyqgf"]
+[ext_resource type="Animation" uid="uid://bs2wr4a4pm54c" path="res://animations/world/SYNC-chars-superlick/SYNC-pinda-superlick.tres" id="64_gjsek"]
+[ext_resource type="Animation" uid="uid://fevd8knvvedu" path="res://animations/hub/CINE-chars-outro/CINE-pinda-outro.tres" id="65_3xtef"]
+[ext_resource type="Animation" uid="uid://dlvls11i8eedw" path="res://animations/world/LOOP-pinda-fallen_dragged_panic/LOOP-pinda-fallen_dragged_panic.tres" id="66_13ikg"]
+[ext_resource type="Animation" uid="uid://c4cuqgr4yaewk" path="res://animations/world/LOOP-pinda-pulling/LOOP-pinda-pulling.tres" id="67_jag5f"]
+[ext_resource type="Animation" uid="uid://c6f2jrbebocd6" path="res://animations/gate/ACTN-pinda-gate_spot02/ACTN-gate-gate_spot02.tres" id="69_akpj6"]
+[ext_resource type="Animation" uid="uid://qq8hluaohn17" path="res://animations/world/CINE-pinda-pickup_tennisball/CINE-pinda-pick_up_tennisball.tres" id="70_2wy6x"]
+[ext_resource type="Animation" uid="uid://b8w1q0tytcn70" path="res://animations/gate/ACTN-pinda-gate_spot03/ACTN-pinda-gate_spot03.tres" id="71_qgwjv"]
+[ext_resource type="Animation" uid="uid://pxjlju5itvfm" path="res://animations/gate/CINE-pinda-gate_spot03_open/CINE-pinda-gate_spot03_open.tres" id="72_l5jf3"]
+[ext_resource type="Animation" uid="uid://di72v26hjme0f" path="res://animations/clearing/CINE-pinda-pickup_shovel/CINE-pinda-pickup_shovel.tres" id="73_32irs"]
+[ext_resource type="Animation" uid="uid://rp5i8tyn55j6" path="res://animations/gate/ACTN-pinda-through_fence_in/ACTN-pinda-though_fence_in.tres" id="73_wyyiw"]
+[ext_resource type="Animation" uid="uid://bgbr8am3di4jv" path="res://animations/gate/ACTN-pinda-through_fence_fallen/ACTN-pinda-though_fence_fallen.tres" id="76_ngf2d"]
+[ext_resource type="Animation" uid="uid://ckmqh08qyha3p" path="res://animations/pond/CINE-pinda-pulling_cone/CINE-pinda-pulling_cone.tres" id="77_3n3p0"]
+[ext_resource type="Animation" uid="uid://7euuksa012iq" path="res://animations/pond/CINE-pinda-grab_cone/CINE-pinda-grab_cone.tres" id="78_gqr35"]
+[ext_resource type="Animation" uid="uid://bhgt328cf3h55" path="res://animations/gate/ACTN-pinda-gate_spot01/ACTN-pinda-gate_spot01.tres" id="78_rwxla"]
+[ext_resource type="Animation" uid="uid://x8as5wlt2r5m" path="res://animations/pond/ACTN-pinda-pickup_cone/ACTN-pinda-pickup_cone.tres" id="79_rwxla"]
+[ext_resource type="Animation" uid="uid://c6y3kuocr2hkx" path="res://animations/world/LOOP-pinda-idle_happy/LOOP-pinda-idle_happy.tres" id="80_e38b3"]
+[ext_resource type="Animation" uid="uid://cad6j7jcuq28i" path="res://animations/gate/CINE-pinda-celebrate_gate/CINE-pinda-celebrate_gate.tres" id="80_rwxla"]
+[ext_resource type="Animation" uid="uid://fkm0td4d4308" path="res://animations/pond/POSE-pinda-excited_pond/POSE-pinda-excited_pond.tres" id="81_e38b3"]
+[ext_resource type="Animation" uid="uid://602u1p2so61a" path="res://animations/gate/CINE-pinda-unlocking_gate/CINE-pinda-unlocking_gate.tres" id="81_uj0fk"]
+[ext_resource type="Animation" uid="uid://cxpjko6i4kmnd" path="res://animations/world/LOOP-pinda-neutral/LOOP-pinda-idle_neutral.tres" id="82_uj0fk"]
+[ext_resource type="Animation" uid="uid://cc13wsfy7p8ou" path="res://animations/world/SYNC-chars-sit_lay/SYNC-pinda-sit_lay.tres" id="83_c1kck"]
+[ext_resource type="Animation" uid="uid://dk28buusvsfpq" path="res://animations/world/SYNC-chars-stand_lay_moping/SYNC-pinda-stand_lay_moping.tres" id="84_yay0u"]
+[ext_resource type="Animation" uid="uid://csyf5kemal81f" path="res://animations/world/SYNC-chars-stand_lay_crying/SYNC-pinda-stand_lay_crying.tres" id="85_nq8wb"]
+[ext_resource type="Animation" uid="uid://c6cvxlcrgnfi8" path="res://animations/world/SYNC-chars-turn/SYNC-pinda-turn.tres" id="86_nltah"]
+[ext_resource type="Animation" uid="uid://tb7dtxxejt4p" path="res://animations/world/SYNC-chars-pet01/SYNC-pinda-pet01.tres" id="87_rjl7d"]
+[ext_resource type="Animation" uid="uid://buf53lbpb0cbn" path="res://animations/world/SYNC-chars-pet02/SYNC-pinda-pet02.tres" id="88_5v4jf"]
+[ext_resource type="Animation" uid="uid://dmyu2hfn8ngus" path="res://animations/world/SYNC-chars-pet03/SYNC-pinda-pet03.tres" id="89_wower"]
+[ext_resource type="Animation" uid="uid://blalxb4mpxs1k" path="res://animations/world/SYNC-chars-pet04/SYNC-pinda-pet04.tres" id="90_qsna8"]
+[ext_resource type="Animation" uid="uid://dl3qc7gaqgvtv" path="res://animations/world/SYNC-chars-pet05/SYNC-pinda-pet05.tres" id="91_k8bwa"]
+[ext_resource type="Animation" uid="uid://fhsd10jhiujd" path="res://animations/world/SYNC-chars-pet06/SYNC-pinda-pet06.tres" id="92_8n0fa"]
+[ext_resource type="Animation" uid="uid://bnm7vyyndojyo" path="res://animations/world/SYNC-chars-stand/SYNC-pinda-stand.tres" id="93_ttek1"]
+
+[resource]
+resource_name = "Pinda Animation Library"
+_data = {
+&"ACTN-Pinda-calling_far": ExtResource("31_immpt"),
+&"ACTN-Pinda-react_bark": ExtResource("39_dmf1t"),
+&"ACTN-Pinda-rolling": ExtResource("40_8u0i6"),
+&"ACTN-Pinda-tripping": ExtResource("43_pi2gc"),
+&"ACTN-Pinda-yanked": ExtResource("44_n0u40"),
+&"ACTN-gate-gate_spot02": ExtResource("69_akpj6"),
+&"ACTN-pinda-calling_unhappy": ExtResource("32_pjbp7"),
+&"ACTN-pinda-dug_out": ExtResource("33_lxo0o"),
+&"ACTN-pinda-fall_flat": ExtResource("34_85xhv"),
+&"ACTN-pinda-fall_snow": ExtResource("35_2lsiw"),
+&"ACTN-pinda-gate_spot01": ExtResource("78_rwxla"),
+&"ACTN-pinda-gate_spot03": ExtResource("71_qgwjv"),
+&"ACTN-pinda-getting_up": ExtResource("36_yw0lf"),
+&"ACTN-pinda-pick_up": ExtResource("45_yxvyp"),
+&"ACTN-pinda-pick_up_branch": ExtResource("63_gjsek"),
+&"ACTN-pinda-pickup_cone": ExtResource("79_rwxla"),
+&"ACTN-pinda-push_over": ExtResource("46_ya3h4"),
+&"ACTN-pinda-reaction_bark_aha": ExtResource("60_3iqs8"),
+&"ACTN-pinda-reaction_bark_turn": ExtResource("58_1bean"),
+&"ACTN-pinda-stuck_ground_snow": ExtResource("41_px23j"),
+&"ACTN-pinda-stuck_snow_ground": ExtResource("42_re2od"),
+&"ACTN-pinda-though_fence_fallen": ExtResource("76_ngf2d"),
+&"ACTN-pinda-though_fence_in": ExtResource("73_wyyiw"),
+&"CINE-pinda-attach-in": ExtResource("27_c0str"),
+&"CINE-pinda-attach-out": ExtResource("28_h5q5p"),
+&"CINE-pinda-attach-out_point": ExtResource("63_wyqgf"),
+&"CINE-pinda-attach_branch": ExtResource("59_50csj"),
+&"CINE-pinda-attach_proud": ExtResource("51_xxpro"),
+&"CINE-pinda-attach_shovel": ExtResource("48_hyvi7"),
+&"CINE-pinda-attach_tennis_ball": ExtResource("29_c2xwp"),
+&"CINE-pinda-attach_traffic_cone": ExtResource("30_rmevu"),
+&"CINE-pinda-celebrate_gate": ExtResource("80_rwxla"),
+&"CINE-pinda-gate_spot03_open": ExtResource("72_l5jf3"),
+&"CINE-pinda-grab_cone": ExtResource("78_gqr35"),
+&"CINE-pinda-intro": ExtResource("46_yxvyp"),
+&"CINE-pinda-outro": ExtResource("65_3xtef"),
+&"CINE-pinda-pick_up_tennisball": ExtResource("70_2wy6x"),
+&"CINE-pinda-pickup_shovel": ExtResource("73_32irs"),
+&"CINE-pinda-pulling_cone": ExtResource("77_3n3p0"),
+&"CINE-pinda-unlocking_gate": ExtResource("81_uj0fk"),
+&"LOOP-Pinda-idle_ice": ExtResource("6_ig8jh"),
+&"LOOP-Pinda-run_tired": ExtResource("13_oacje"),
+&"LOOP-pinda-building_left": ExtResource("54_14vr5"),
+&"LOOP-pinda-building_right": ExtResource("55_k3dno"),
+&"LOOP-pinda-crying": ExtResource("1_nosu5"),
+&"LOOP-pinda-fallen": ExtResource("2_ydru2"),
+&"LOOP-pinda-fallen_dragged": ExtResource("3_cwedt"),
+&"LOOP-pinda-fallen_dragged_panic": ExtResource("66_13ikg"),
+&"LOOP-pinda-ice_dragged": ExtResource("4_dwje4"),
+&"LOOP-pinda-idle_happy": ExtResource("80_e38b3"),
+&"LOOP-pinda-idle_neutral": ExtResource("82_uj0fk"),
+&"LOOP-pinda-idle_tired": ExtResource("7_34y47"),
+&"LOOP-pinda-idle_unhappy": ExtResource("8_c4ct3"),
+&"LOOP-pinda-moping": ExtResource("9_2qp14"),
+&"LOOP-pinda-pick_up": ExtResource("37_ffb1t"),
+&"LOOP-pinda-pulling": ExtResource("67_jag5f"),
+&"LOOP-pinda-push_over": ExtResource("38_ro1bh"),
+&"LOOP-pinda-run": ExtResource("44_s3adk"),
+&"LOOP-pinda-run_branch": ExtResource("52_rhw8f"),
+&"LOOP-pinda-run_dragged": ExtResource("11_7g1me"),
+&"LOOP-pinda-run_dragged_tired": ExtResource("12_0nswt"),
+&"LOOP-pinda-snow_dragged": ExtResource("18_k5ras"),
+&"LOOP-pinda-stuck_snow": ExtResource("14_3dbmm"),
+&"LOOP-pinda-thinking": ExtResource("57_c2f7n"),
+&"LOOP-pinda-waiting": ExtResource("15_ekioj"),
+&"LOOP-pinda-walk": ExtResource("16_cdadt"),
+&"LOOP-pinda-walk_pushing": ExtResource("62_yq5du"),
+&"LOOP-pinda-walk_tired": ExtResource("17_yvyr0"),
+&"POSE-pinda-angry_face": ExtResource("50_lsvof"),
+&"POSE-pinda-excited_pond": ExtResource("81_e38b3"),
+&"POSE-pinda-neutral_face": ExtResource("49_06v8k"),
+&"POSE-pinda-pumpum_scale_down": ExtResource("61_kwwys"),
+&"POSE-pinda-sad_face": ExtResource("19_xlwyv"),
+&"POSE-pinda-turn_left": ExtResource("20_kik4o"),
+&"POSE-pinda-turn_right": ExtResource("21_d04hr"),
+&"SYNC-chocomel-push_slowly": ExtResource("63_3xtef"),
+&"SYNC-pinda-attach_rock": ExtResource("56_hkw06"),
+&"SYNC-pinda-licking": ExtResource("45_s3adk"),
+&"SYNC-pinda-pet01": ExtResource("87_rjl7d"),
+&"SYNC-pinda-pet02": ExtResource("88_5v4jf"),
+&"SYNC-pinda-pet03": ExtResource("89_wower"),
+&"SYNC-pinda-pet04": ExtResource("90_qsna8"),
+&"SYNC-pinda-pet05": ExtResource("91_k8bwa"),
+&"SYNC-pinda-pet06": ExtResource("92_8n0fa"),
+&"SYNC-pinda-push_slowly": ExtResource("23_t6e2q"),
+&"SYNC-pinda-sit_lay": ExtResource("83_c1kck"),
+&"SYNC-pinda-snuggle": ExtResource("24_trsa5"),
+&"SYNC-pinda-stand": ExtResource("93_ttek1"),
+&"SYNC-pinda-stand_lay_crying": ExtResource("85_nq8wb"),
+&"SYNC-pinda-stand_lay_moping": ExtResource("84_yay0u"),
+&"SYNC-pinda-superlick": ExtResource("64_gjsek"),
+&"SYNC-pinda-treat": ExtResource("25_0sypl"),
+&"SYNC-pinda-turn": ExtResource("86_nltah")
+}

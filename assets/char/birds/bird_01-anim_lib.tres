@@ -1,0 +1,27 @@
+[gd_resource type="AnimationLibrary" load_steps=11 format=3 uid="uid://bqgbqk4x78avw"]
+
+[ext_resource type="Animation" uid="uid://cr1u7weq4ltgd" path="res://animations/world/ACTN-bird-fly01/ACTN-bird-fly01.tres" id="1_4kir6"]
+[ext_resource type="Animation" uid="uid://cx4cpx40t2wq8" path="res://animations/world/ACTN-bird-fly02/ACTN-bird-fly02.tres" id="2_oggnm"]
+[ext_resource type="Animation" uid="uid://dnnbvwnj8gxy4" path="res://animations/world/ACTN-bird-turn_left/ACTN-bird-turn_left.tres" id="3_2xuxc"]
+[ext_resource type="Animation" uid="uid://ug083mpufsfj" path="res://animations/world/ACTN-bird-turn_right/ACTN-bird-turn_right.tres" id="4_k0ift"]
+[ext_resource type="Animation" uid="uid://dhphhlu61mcfi" path="res://animations/world/LOOP-bird-eat/LOOP-bird-eat.tres" id="5_gutgx"]
+[ext_resource type="Animation" uid="uid://deta6l4clendp" path="res://animations/world/LOOP-bird-look/LOOP-bird-look.tres" id="6_aaykd"]
+[ext_resource type="Animation" uid="uid://1rhmqg3hjybx" path="res://animations/world/LOOP-bird-sing/LOOP-bird-sing.tres" id="7_kpo6p"]
+[ext_resource type="Animation" uid="uid://dgb1rse3vidif" path="res://animations/world/LOOP-bird-spin/LOOP-bird-spin.tres" id="8_sftir"]
+[ext_resource type="Animation" uid="uid://hnjsi5vbucj8" path="res://animations/world/LOOP-bird-stroll01/LOOP-bird-stroll01.tres" id="9_fu7my"]
+[ext_resource type="Animation" uid="uid://bavpitt735rtq" path="res://animations/world/LOOP-bird-stroll02/LOOP-bird-stroll02.tres" id="10_8e3vs"]
+
+[resource]
+resource_name = "bird_01 Animation Library"
+_data = {
+&"ACTN-bird-fly01": ExtResource("1_4kir6"),
+&"ACTN-bird-fly02": ExtResource("2_oggnm"),
+&"ACTN-bird-turn_left": ExtResource("3_2xuxc"),
+&"ACTN-bird-turn_right": ExtResource("4_k0ift"),
+&"LOOP-bird-eat": ExtResource("5_gutgx"),
+&"LOOP-bird-look": ExtResource("6_aaykd"),
+&"LOOP-bird-sing": ExtResource("7_kpo6p"),
+&"LOOP-bird-spin": ExtResource("8_sftir"),
+&"LOOP-bird-stroll01": ExtResource("9_fu7my"),
+&"LOOP-bird-stroll02": ExtResource("10_8e3vs")
+}

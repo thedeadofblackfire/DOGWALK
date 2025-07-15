@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://ct7x7fjrtg8va"]
+
+[ext_resource type="Script" uid="uid://chwtp3a726pyx" path="res://source/entities/camera_magnet_zone.gd" id="1_qsj7p"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_docje"]
+resource_local_to_scene = true
+radius = 7.79883
+
+[node name="CameraMagnetZone" type="Node3D"]
+
+[node name="CameraMagnetZone_Area" type="Area3D" parent="." node_paths=PackedStringArray("interest_point", "collision_shape")]
+collision_layer = 256
+collision_mask = 4
+script = ExtResource("1_qsj7p")
+interest_point = NodePath("InterestPoint")
+collision_shape = NodePath("CollisionShape3D")
+metadata/_custom_type_script = "uid://chwtp3a726pyx"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CameraMagnetZone_Area"]
+shape = SubResource("CylinderShape3D_docje")
+
+[node name="InterestPoint" type="Marker3D" parent="CameraMagnetZone_Area"]
+
+[connection signal="body_entered" from="CameraMagnetZone_Area" to="CameraMagnetZone_Area" method="_on_chocomel_entered"]
+[connection signal="body_exited" from="CameraMagnetZone_Area" to="CameraMagnetZone_Area" method="_on_chocomel_exited"]

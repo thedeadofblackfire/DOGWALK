@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://ssr4t4b60n8y"]
+
+[ext_resource type="Script" uid="uid://dgyf2nc43a2e0" path="res://source/fx/ice_fx/ice_interaction.gd" id="1_cs1eh"]
+[ext_resource type="Script" uid="uid://5ijejf6yyhs8" path="res://addons/lines_and_trails_3d/line_3d.gd" id="1_g8ynt"]
+
+[sub_resource type="Curve" id="Curve_cs1eh"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), -0.918788, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Gradient" id="Gradient_2uwhe"]
+colors = PackedColorArray(0.568627, 0.870588, 1, 0.470588, 1, 1, 1, 0)
+
+[node name="IceInteraction" type="Node3D" node_paths=PackedStringArray("line_3d")]
+script = ExtResource("1_cs1eh")
+line_3d = NodePath("IceTrail")
+
+[node name="IceTrail" type="MeshInstance3D" parent="."]
+top_level = true
+script = ExtResource("1_g8ynt")
+width = 0.04
+width_curve = SubResource("Curve_cs1eh")
+color = Color(1, 1, 1, 0.156863)
+gradient = SubResource("Gradient_2uwhe")
+material_type = 2
+points = PackedVector3Array(2, 0, 0, 0, 0, 0)
+metadata/_custom_type_script = "uid://5ijejf6yyhs8"

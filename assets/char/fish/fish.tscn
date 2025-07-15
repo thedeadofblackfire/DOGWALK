@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://crtpc70dhj7i6"]
+
+[ext_resource type="PackedScene" uid="uid://q6b0y27tstwk" path="res://assets/char/fish/fish.gltf" id="1_1g1yw"]
+[ext_resource type="AnimationLibrary" uid="uid://bp6kxhliuo8oh" path="res://assets/char/fish/fish-anim_lib.tres" id="2_qafpn"]
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tdfax"]
+
+[node name="fish" type="Node3D"]
+
+[node name="CH-fish-IMPORT" parent="." instance=ExtResource("1_1g1yw")]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../CH-fish-IMPORT")
+libraries = {
+&"": SubResource("AnimationLibrary_tdfax"),
+&"fish-anim_lib": ExtResource("2_qafpn")
+}
+autoplay = "fish-anim_lib/LOOP-fish-swim"
+speed_scale = 0.4

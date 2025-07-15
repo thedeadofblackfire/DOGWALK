@@ -1,0 +1,195 @@
+[gd_scene load_steps=21 format=3 uid="uid://cssr2jgmv4m2j"]
+
+[ext_resource type="PackedScene" uid="uid://6uq8ndnl1t7e" path="res://source/user_interface/old_mouse_cursor.tscn" id="1_034he"]
+[ext_resource type="Script" uid="uid://c86l071gnt0b7" path="res://source/levels/clearing.gd" id="1_sfvvd"]
+[ext_resource type="PackedScene" uid="uid://t2dkngwv8t38" path="res://source/user_interface/menus/main_menu.tscn" id="3_otoux"]
+[ext_resource type="PackedScene" uid="uid://ckxmims6xnmqf" path="res://source/user_interface/menus/pause.tscn" id="4_emrws"]
+[ext_resource type="PackedScene" uid="uid://d04q83ru8ixv5" path="res://source/entities/player.tscn" id="4_sfvvd"]
+[ext_resource type="PackedScene" uid="uid://ct7x7fjrtg8va" path="res://source/entities/camera_magnet_zone.tscn" id="5_034he"]
+[ext_resource type="PackedScene" uid="uid://2fykpfun3obh" path="res://assets/sets/clearing/SE-clearing.tscn" id="5_kdcj6"]
+[ext_resource type="PackedScene" uid="uid://lm1mcout5ae3" path="res://assets/props/snowman/PR-snowman.tscn" id="6_otoux"]
+[ext_resource type="CompressedTexture3D" uid="uid://utrpmymid8n4" path="res://assets/textures/lut_world_01.png" id="7_64ay3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xvq65"]
+specular_mode = 2
+emission_enabled = true
+emission = Color(1, 0.713726, 0, 1)
+emission_energy_multiplier = 15.64
+
+[sub_resource type="BoxMesh" id="BoxMesh_3a343"]
+
+[sub_resource type="Curve" id="Curve_2dlcj"]
+_limits = [-360.0, 360.0, 0.0, 1.0]
+_data = [Vector2(0, -360), 0.0, 0.0, 0, 0, Vector2(0.4875, 316.74), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Curve" id="Curve_t7n2a"]
+_limits = [-1.0, 1.0, 0.0, 1.0]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.483929, -1), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Gradient" id="Gradient_sfvvd"]
+offsets = PackedFloat32Array(0.34773, 0.602436, 0.614618)
+colors = PackedColorArray(0, 0, 0, 1, 0.0765307, 0.0765307, 0.0765307, 1, 1, 1, 1, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_kdcj6"]
+frequency = 0.0047
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_q073b"]
+invert = true
+seamless = true
+seamless_blend_skirt = 0.073
+normalize = false
+color_ramp = SubResource("Gradient_sfvvd")
+noise = SubResource("FastNoiseLite_kdcj6")
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_otoux"]
+sky_top_color = Color(0, 0.557328, 0.860837, 1)
+sky_horizon_color = Color(0.605372, 0.847798, 1, 1)
+sky_curve = 0.166435
+sky_cover = SubResource("NoiseTexture2D_q073b")
+sun_angle_max = 5.91
+sun_curve = 0.344609
+use_debanding = false
+
+[sub_resource type="Sky" id="Sky_12gwf"]
+sky_material = SubResource("ProceduralSkyMaterial_otoux")
+radiance_size = 2
+
+[sub_resource type="Environment" id="Environment_emrws"]
+background_mode = 2
+background_color = Color(0.28, 0.484, 1, 1)
+sky = SubResource("Sky_12gwf")
+ambient_light_source = 3
+reflected_light_source = 2
+tonemap_mode = 4
+ssr_enabled = true
+ssr_max_steps = 128
+ssr_fade_in = 0.166435
+ssr_fade_out = 1.51572
+ssr_depth_tolerance = 0.21
+ssao_enabled = true
+ssao_radius = 1.78
+ssao_intensity = 2.09
+ssao_power = 3.32871
+ssao_sharpness = 0.77
+ssao_light_affect = 0.75
+ssao_ao_channel_affect = 0.76
+sdfgi_enabled = true
+sdfgi_use_occlusion = true
+sdfgi_bounce_feedback = 1.0
+sdfgi_min_cell_size = 0.146484
+glow_enabled = true
+glow_strength = 0.71
+glow_bloom = 0.09
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.004
+volumetric_fog_albedo = Color(0.909804, 0.639216, 0.541176, 1)
+volumetric_fog_gi_inject = 10.13
+volumetric_fog_length = 70.0
+adjustment_enabled = true
+adjustment_color_correction = ExtResource("7_64ay3")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_xvq65"]
+radius = 2.46003
+
+[node name="clearing" type="Node3D"]
+script = ExtResource("1_sfvvd")
+
+[node name="UI" parent="." instance=ExtResource("1_034he")]
+
+[node name="Main" parent="UI" instance=ExtResource("3_otoux")]
+layout_mode = 1
+
+[node name="Pause" parent="UI" instance=ExtResource("4_emrws")]
+layout_mode = 1
+
+[node name="SE-clearing" parent="." instance=ExtResource("5_kdcj6")]
+
+[node name="PR-snowman" parent="." instance=ExtResource("6_otoux")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.0392, 0.371983, 16.3965)
+
+[node name="Player" parent="." instance=ExtResource("4_sfvvd")]
+<<<<<<< HEAD
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.8063, 0.170556, 56.4648)
+=======
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.4225, 0.170556, 53.8085)
+maxmimum_leash_length = 6.5
+>>>>>>> e36a22d0 (clearing update: added signs)
+
+[node name="Sparkle" type="CPUParticles3D" parent="."]
+transform = Transform3D(0.734812, 1.63913e-07, -4.17233e-07, 1.49012e-07, 0.273181, -2.38419e-07, 3.57628e-07, 3.57628e-07, 1, -55.4316, 1.09478, 40.7705)
+material_override = SubResource("StandardMaterial3D_xvq65")
+amount = 7
+lifetime = 1.68
+randomness = 0.18
+mesh = SubResource("BoxMesh_3a343")
+emission_shape = 3
+emission_box_extents = Vector3(0.555, 2.085, 0.67)
+gravity = Vector3(0, -0.205, 0)
+tangential_accel_min = -0.05
+tangential_accel_max = 0.1
+angle_min = -254.3
+angle_max = 720.0
+angle_curve = SubResource("Curve_2dlcj")
+scale_amount_min = 0.01
+scale_amount_max = 0.03
+color = Color(1, 0.779096, 0.545223, 1)
+hue_variation_min = -0.7
+hue_variation_max = 0.87
+hue_variation_curve = SubResource("Curve_t7n2a")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Sparkle"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.217084, 0)
+light_color = Color(1, 0.745098, 0.207843, 1)
+light_energy = 0.3
+light_indirect_energy = 0.0
+light_volumetric_fog_energy = 0.0
+light_size = 0.086
+
+[node name="CameraMagnetZone" parent="." instance=ExtResource("5_034he")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.5038, 1.90735e-06, 35.1477)
+
+[node name="CameraMagnetZone_Area" parent="CameraMagnetZone" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.224072, 0.098835, 0.442574)
+
+[node name="CollisionShape3D" parent="CameraMagnetZone/CameraMagnetZone_Area" index="0"]
+transform = Transform3D(0.703767, 0, 0.710431, 0, 1, 0, -0.710431, 0, 0.703767, -1.71148, 0, 2.936)
+
+[node name="InterestPoint" parent="CameraMagnetZone/CameraMagnetZone_Area" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.753258, 0, 5.97081)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_emrws")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
+transform = Transform3D(0.541224, 0.605132, -0.583859, -5.03297e-08, 0.694344, 0.719643, 0.840878, -0.389489, 0.375796, 0.129636, 4.42771, 0)
+light_color = Color(1, 0.861876, 0.544079, 1)
+light_energy = 2.0
+light_indirect_energy = 1.075
+light_volumetric_fog_energy = 0.0
+shadow_enabled = true
+shadow_bias = 0.04
+shadow_blur = 2.231
+directional_shadow_split_2 = 0.196
+directional_shadow_split_3 = 0.416
+directional_shadow_blend_splits = true
+directional_shadow_max_distance = 25.0
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.9789, 2.75428, 53.097)
+light_color = Color(0.96, 1, 0.52, 1)
+light_energy = 0.628
+light_indirect_energy = 1.235
+light_size = 0.151
+light_specular = 0.0
+
+[node name="Area3D" type="Area3D" parent="OmniLight3D"]
+transform = Transform3D(162.36, 0, 0, 0, 162.36, 0, 0, 0, 162.36, 0.411526, -2.48352, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="OmniLight3D/Area3D"]
+shape = SubResource("SphereShape3D_xvq65")
+
+[editable path="Player"]
+[editable path="Player/Camera"]
+[editable path="CameraMagnetZone"]

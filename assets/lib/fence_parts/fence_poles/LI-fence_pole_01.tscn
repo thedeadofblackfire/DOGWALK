@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://8muqgwur1os2"]
+
+[ext_resource type="PackedScene" uid="uid://dcnlhi8jnjd42" path="res://assets/lib/fence_parts/fence_poles/LI-fence_pole_01.gltf" id="1_dxpyl"]
+[ext_resource type="Script" uid="uid://bj34k0ajpsopu" path="res://source/obstacles/generic_obstacle.gd" id="2_mnxbb"]
+
+[node name="LI-fence_pole_01" type="Node3D"]
+
+[node name="LI-fence_pole_01-IMPORT" parent="." instance=ExtResource("1_dxpyl")]
+script = ExtResource("2_mnxbb")

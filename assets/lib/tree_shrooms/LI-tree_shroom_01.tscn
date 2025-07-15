@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://6m80l6txgk0v"]
+
+[ext_resource type="PackedScene" uid="uid://c3nsyvajks7go" path="res://assets/lib/tree_shrooms/LI-tree_shroom_01.gltf" id="1_6rcpy"]
+
+[node name="LI-tree_shroom_01" type="Node3D"]
+
+[node name="LI-tree_shroom_01-IMPORT" type="Node3D" parent="." instance=ExtResource("1_6rcpy")]

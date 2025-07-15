@@ -1,0 +1,31 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3 uid="uid://cnmj2il3t7ajs"]
+
+[ext_resource type="Texture2D" uid="uid://c5jcquri7hn6d" path="res://assets/props/emote_bubble/animations/button_press/button_press_1.png" id="1_82ab7"]
+[ext_resource type="Texture2D" uid="uid://hy26k6c6qqd3" path="res://assets/props/emote_bubble/animations/button_press/button_press_2.png" id="2_chqfe"]
+[ext_resource type="Texture2D" uid="uid://bwj3funqdb6aq" path="res://assets/props/emote_bubble/animations/button_press/button_press_3.png" id="3_oj1ps"]
+[ext_resource type="Texture2D" uid="uid://dawigqgfo7slf" path="res://assets/props/emote_bubble/animations/button_press/button_press_4.png" id="4_18cxc"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_82ab7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_chqfe")
+}],
+"loop": true,
+"name": &"Loop",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_oj1ps")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_18cxc")
+}],
+"loop": true,
+"name": &"Out",
+"speed": 7.0
+}]

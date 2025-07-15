@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://kqgchf7xb740"]
+
+[ext_resource type="Script" uid="uid://dfga73q5ibgl4" path="res://source/sequences/credits/single_credits.gd" id="1_bsex7"]
+
+[node name="SingleCredits" type="VBoxContainer"]
+alignment = 1
+script = ExtResource("1_bsex7")

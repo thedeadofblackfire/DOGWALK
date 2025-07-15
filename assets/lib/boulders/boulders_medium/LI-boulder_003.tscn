@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dii0sl2onnmdw"]
+
+[ext_resource type="PackedScene" uid="uid://d0pi4t7ubu5fp" path="res://assets/lib/boulders/boulders_medium/LI-boulder_003.gltf" id="1_qdsot"]
+[ext_resource type="Script" uid="uid://bj34k0ajpsopu" path="res://source/obstacles/generic_obstacle.gd" id="2_vdbxn"]
+
+[node name="LI-boulder_003" type="Node3D"]
+
+[node name="LI-boulder_003-IMPORT" type="StaticBody3D" parent="." instance=ExtResource("1_qdsot")]
+script = ExtResource("2_vdbxn")

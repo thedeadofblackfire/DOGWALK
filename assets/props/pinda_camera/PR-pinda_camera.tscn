@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://3ii1kpf414km"]
+
+[ext_resource type="PackedScene" uid="uid://bxtdo34w78414" path="res://assets/props/pinda_camera/PR-pinda_camera.gltf" id="1_teewr"]
+[ext_resource type="AnimationLibrary" uid="uid://yvc8u1mqjghx" path="res://assets/props/pinda_camera/PR-pinda_camera-anim_lib.tres" id="2_imxdg"]
+
+[node name="PR-pinda_camera" type="Node3D"]
+
+[node name="PR-pinda_camera-IMPORT" parent="." instance=ExtResource("1_teewr")]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../PR-pinda_camera-IMPORT")
+libraries = {
+&"PR-pinda_camera-anim_lib": ExtResource("2_imxdg")
+}

@@ -1,0 +1,44 @@
+[gd_resource type="ShaderMaterial" load_steps=5 format=3 uid="uid://b3hesqnojwmd"]
+
+[ext_resource type="Shader" uid="uid://dferjeijr7g3r" path="res://source/shaders/paper-default.gdshader" id="1_ja4tb"]
+[ext_resource type="Texture2D" uid="uid://btes4r7o6urk2" path="res://assets/textures/snow_gen_albedo-01.png" id="2_hp6gl"]
+[ext_resource type="Texture2D" uid="uid://c8e1q06bnrrx5" path="res://assets/textures/paper_tear_tilable.png" id="3_hp6gl"]
+[ext_resource type="Texture2D" uid="uid://d3tlc1k866jdf" path="res://assets/textures/paper_fine_normal.png" id="4_31rm1"]
+
+[resource]
+render_priority = -5
+shader = ExtResource("1_ja4tb")
+shader_parameter/fake_depth = false
+shader_parameter/flip_normals = false
+shader_parameter/depth_blend = false
+shader_parameter/paper_color = Color(0.268898, 0.412112, 0.672246, 1)
+shader_parameter/backface_color = false
+shader_parameter/albedo_color = Color(0.92, 0.970999, 1, 1)
+shader_parameter/albedo_texture = ExtResource("2_hp6gl")
+shader_parameter/edge_texture = ExtResource("3_hp6gl")
+shader_parameter/edge_use_alpha = true
+shader_parameter/normal_texture = ExtResource("4_31rm1")
+shader_parameter/normal_strength = 0.1
+shader_parameter/invert_normal = false
+shader_parameter/normal_use_uv2 = false
+shader_parameter/albedo_texture_size = Vector2i(2048, 2048)
+shader_parameter/point_size = 0.0
+shader_parameter/specular = 0.5
+shader_parameter/roughness = 0.8
+shader_parameter/metallic = 0.0
+shader_parameter/wear_strength = 0.5
+shader_parameter/wear_start = 0.0
+shader_parameter/wear_end = 0.8
+shader_parameter/wear_distortion_scale = 17.0
+shader_parameter/wear_distortion_strength = 0.3
+shader_parameter/emission_strength = 0.0
+shader_parameter/emission_color = Color(1, 1, 1, 1)
+shader_parameter/displacement_strength = 0.0
+shader_parameter/displacemnent_scale = 1.0
+shader_parameter/heightmap_scale = 0.5
+shader_parameter/heightmap_min_layers = 4
+shader_parameter/heightmap_max_layers = 16
+shader_parameter/uv1_scale = Vector3(1, 1, 1)
+shader_parameter/uv1_offset = Vector3(0, 0, 0)
+shader_parameter/uv2_scale = Vector3(1, 1, 1)
+shader_parameter/uv2_offset = Vector3(0, 0, 0)

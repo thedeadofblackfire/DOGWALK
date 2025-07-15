@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsso5iykjkju2"]
+
+[ext_resource type="PackedScene" uid="uid://b35b4q8njoqnp" path="res://assets/sets/world/SE-world.gltf" id="1_abyn7"]
+
+[node name="SE-world" type="Node3D"]
+
+[node name="SE-world-IMPORT" type="Node3D" parent="." instance=ExtResource("1_abyn7")]

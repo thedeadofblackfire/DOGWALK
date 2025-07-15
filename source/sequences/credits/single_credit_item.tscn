@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://bytd6gj0m4rw2"]
+
+[ext_resource type="Script" uid="uid://c7wiphd6tldtg" path="res://source/sequences/credits/credit_item.gd" id="1_hpmba"]
+
+[node name="Credit" type="MarginContainer"]
+theme_override_constants/margin_top = 200
+script = ExtResource("1_hpmba")
+
+[node name="CreditList" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Role" type="Label" parent="CreditList"]
+layout_mode = 2
+text = "Role"
+horizontal_alignment = 1
+
+[node name="Name" type="Label" parent="CreditList"]
+layout_mode = 2
+text = "Name"
+horizontal_alignment = 1
+uppercase = true

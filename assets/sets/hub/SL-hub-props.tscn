@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://o2as5lyid7fi"]
+
+[ext_resource type="PackedScene" path="res://assets/sets/hub/SL-hub-props.gltf" id="1_nfyb3"]
+
+[node name="SL-hub-props" type="Node3D"]
+
+[node name="SL-hub-props-IMPORT" type="Area3D" parent="." instance=ExtResource("1_nfyb3")]

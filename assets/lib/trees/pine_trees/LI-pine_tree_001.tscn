@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bktwolrlweakh"]
+
+[ext_resource type="PackedScene" uid="uid://bi2813jv1owxr" path="res://assets/lib/trees/pine_trees/LI-pine_tree_001.gltf" id="1_x3whd"]
+[ext_resource type="Script" uid="uid://dkg08i1qnhu6b" path="res://source/obstacles/trees.gd" id="2_uenyf"]
+
+[node name="LI-pine_tree_001" type="Node3D"]
+
+[node name="LI-pine_tree_001-IMPORT" parent="." instance=ExtResource("1_x3whd")]
+script = ExtResource("2_uenyf")

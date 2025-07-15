@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cj51s2nwpojte"]
+
+[ext_resource type="PackedScene" uid="uid://ds8mxq7dnpsfx" path="res://assets/props/creek_bridge/PR-creek_bridge.gltf" id="1_vhabv"]
+[ext_resource type="Script" uid="uid://bj34k0ajpsopu" path="res://source/obstacles/generic_obstacle.gd" id="2_24mkt"]
+
+[node name="PR-creek_bridge" type="Node3D"]
+
+[node name="PR-creek_bridge-IMPORT" parent="." instance=ExtResource("1_vhabv")]
+script = ExtResource("2_24mkt")

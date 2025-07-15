@@ -1,0 +1,36 @@
+{
+	"asset":{
+		"generator":"Khronos glTF Blender I/O v4.5.14",
+		"version":"2.0"
+	},
+	"scene":0,
+	"scenes":[
+		{
+			"extras":{
+				"gltfIOGodotAssetProperties":{
+					"export_type":2,
+					"root_type":2,
+					"append_parent_collection":1,
+					"asset_name":"LI-snow_ripped_pile_012"
+				},
+				"asset_type":"ASSET",
+				"root_type":"PASS_THROUGH",
+				"asset_id":"d25c560e59948909"
+			},
+			"name":"LI-snow_ripped_pile_012",
+			"nodes":[
+				0
+			]
+		}
+	],
+	"nodes":[
+		{
+			"name":"GEO-snow_ripped_pile-012",
+			"scale":[
+				2.799999952316284,
+				2.799999952316284,
+				2.799999952316284
+			]
+		}
+	]
+}

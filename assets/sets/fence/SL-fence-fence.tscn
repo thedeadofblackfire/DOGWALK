@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://ct034j3t725us"]
+
+[ext_resource type="PackedScene" uid="uid://cbngpwve31prt" path="res://assets/sets/fence/SL-fence-fence.gltf" id="1_ieo4s"]
+
+[node name="SL-fence-fence" type="Node3D"]
+
+[node name="SL-fence-fence-IMPORT" parent="." instance=ExtResource("1_ieo4s")]

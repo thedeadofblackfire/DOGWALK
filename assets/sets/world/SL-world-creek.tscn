@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2i51ykmful6r"]
+
+[ext_resource type="PackedScene" uid="uid://cfr74lsobjac0" path="res://assets/sets/world/SL-world-creek.gltf" id="1_q6agy"]
+[ext_resource type="Script" uid="uid://d271f2nmf8eh6" path="res://source/utility/animate_creek.gd" id="2_mvkpt"]
+
+[node name="SL-world-creek" type="Node3D"]
+
+[node name="SL-world-creek-IMPORT" parent="." instance=ExtResource("1_q6agy")]
+script = ExtResource("2_mvkpt")

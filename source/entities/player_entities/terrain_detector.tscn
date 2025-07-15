@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dtmf7m54cb5d3"]
+
+[node name="RayCast3D" type="RayCast3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+target_position = Vector3(0, -5, 0)
+collision_mask = 16
+collide_with_areas = true
+collide_with_bodies = false

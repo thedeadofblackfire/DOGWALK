@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://n6w4tppp3lqp"]
+
+[ext_resource type="PackedScene" path="res://assets/sets/hub/SL-hub-vegetation.gltf" id="1_i6vpy"]
+
+[node name="SL-hub-vegetation" type="Node3D"]
+
+[node name="SL-hub-vegetation-IMPORT" type="Area3D" parent="." instance=ExtResource("1_i6vpy")]

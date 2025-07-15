@@ -1,0 +1,45 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://kovpwn28lgrg"]
+
+[ext_resource type="Texture2D" uid="uid://bfptu4w1jnirk" path="res://assets/textures/creek_water_surface-albedo.png" id="1_vyf3j"]
+[ext_resource type="Texture2D" uid="uid://sa8yn76l75kg" path="res://assets/textures/creek_water_surface-roughness.png" id="2_fv7be"]
+[ext_resource type="Texture2D" uid="uid://b4f1ti7iehmkq" path="res://assets/textures/creek_water_surface-normal.png" id="2_rvvdn"]
+
+[resource]
+resource_name = "creek_water_surface"
+render_priority = -10
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_color = Color(1, 1, 1, 0.4)
+albedo_texture = ExtResource("1_vyf3j")
+metallic = 1.0
+metallic_specular = 1.0
+metallic_texture = ExtResource("2_fv7be")
+roughness_texture = ExtResource("2_fv7be")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("2_rvvdn")
+refraction_enabled = true
+refraction_scale = 0.06
+metadata/extras = {
+"asset_id": "ab2edb178b546958",
+"material_info": {
+"albedo_color": [0.141262, 0.141263, 0.141263, 1.0],
+"alpha": 0.698039,
+"alpha_influence": 0.0,
+"backface_color": 0.0,
+"displacement_scale": 1.0,
+"displacement_strength": 0.0,
+"edge_alpha": 1.0,
+"emission_color": [0.0, 0.0, 0.0, 1.0],
+"emission_strength": 0.0,
+"metallic": 1.0,
+"paper_color": [1.0, 1.0, 1.0, 1.0],
+"roughness": 0.0,
+"strength": 0.5,
+"wear_distortion_scale": 100.0,
+"wear_distortion_strength": 0.5,
+"wear_end": 1.0,
+"wear_start": 0.0,
+"wear_strength": 0.0
+}
+}

@@ -1,0 +1,559 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 0,
+                    "append_parent_collection": 1,
+                    "asset_name": "LI-bird_house-tall_yellow_01"
+                },
+                "asset_type": "ASSET",
+                "root_type": "NONE",
+                "asset_id": "6784792ba112560d"
+            },
+            "name": "LI-bird_house-tall_yellow_01",
+            "nodes": [
+                0,
+                1,
+                2,
+                3
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "mesh": 0,
+            "name": "GEO-bird_house-body_yellow",
+            "rotation": [
+                0.011435365304350853,
+                0,
+                0,
+                0.9999346137046814
+            ],
+            "scale": [
+                1.2000000476837158,
+                1.2000000476837158,
+                1.2000000476837158
+            ],
+            "translation": [
+                -0.01618351973593235,
+                -0.7110487818717957,
+                0.1116008535027504
+            ]
+        },
+        {
+            "mesh": 1,
+            "name": "GEO-bird_house-roof_brown",
+            "rotation": [
+                0.27957308292388916,
+                -0.6494912505149841,
+                -0.2795730531215668,
+                0.6494912505149841
+            ],
+            "scale": [
+                1.5600001811981201,
+                1.5600001811981201,
+                1.5600001811981201
+            ],
+            "translation": [
+                -0.016207553446292877,
+                -0.28991544246673584,
+                0.20865260064601898
+            ]
+        },
+        {
+            "mesh": 2,
+            "name": "GEO-bird_house-porch_02.002",
+            "rotation": [
+                0.03338554501533508,
+                0.01686788722872734,
+                0.0031113300938159227,
+                0.9992953538894653
+            ],
+            "scale": [
+                1.0900516510009766,
+                1.0900517702102661,
+                1.0900516510009766
+            ],
+            "translation": [
+                -0.0018043041927739978,
+                -0.978783905506134,
+                0.30120545625686646
+            ]
+        },
+        {
+            "mesh": 3,
+            "name": "GEO-bird_house-hook_01.002",
+            "rotation": [
+                0.011428744532167912,
+                0.00038892304291948676,
+                -0.03400793671607971,
+                0.9993561506271362
+            ],
+            "scale": [
+                1.5600001811981201,
+                1.559999942779541,
+                1.5600000619888306
+            ],
+            "translation": [
+                -0.004333162680268288,
+                -0.10662958025932312,
+                0.014729809947311878
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "691f6905cea49762",
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "roughness": 0.8824701309204102,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "wear_strength": 0.0,
+                    "wear_start": 0.0,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.5,
+                    "wear_distortion_scale": 100.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.20000000298023224,
+                    "normal_use_uv2": 0.0
+                }
+            },
+            "name": "bird_houses",
+            "normalTexture": {
+                "index": 0
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Plane.001",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "Plane.003",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 4,
+                        "NORMAL": 5,
+                        "TEXCOORD_0": 6
+                    },
+                    "indices": 7,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "Plane.007",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 8,
+                        "NORMAL": 9,
+                        "TEXCOORD_0": 10,
+                        "COLOR_0": 11,
+                        "COLOR_1": 12
+                    },
+                    "indices": 13,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "Plane.012",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 14,
+                        "NORMAL": 15,
+                        "TEXCOORD_0": 16,
+                        "COLOR_0": 17,
+                        "COLOR_1": 18
+                    },
+                    "indices": 19,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/textures/paper_rough_large-normal.png"
+            },
+            "mimeType": "image/png",
+            "name": "paper_rough_large-normal",
+            "uri": "../../textures/paper_rough_large-normal.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/bird_houses_albedo.png"
+            },
+            "mimeType": "image/png",
+            "name": "bird_houses_albedo",
+            "uri": "../textures/bird_houses_albedo.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 30,
+            "max": [
+                0.13950780034065247,
+                0.41039133071899414,
+                0.16650912165641785
+            ],
+            "min": [
+                -0.12340036034584045,
+                -0.28497451543807983,
+                -0.0950344055891037
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 30,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 30,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5123,
+            "count": 81,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5126,
+            "count": 28,
+            "max": [
+                0.1922711431980133,
+                0.0009506942587904632,
+                0.14729832112789154
+            ],
+            "min": [
+                -0.1940789818763733,
+                -0.06961309909820557,
+                -0.14107228815555573
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5126,
+            "count": 28,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 6,
+            "componentType": 5126,
+            "count": 28,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 7,
+            "componentType": 5123,
+            "count": 84,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 8,
+            "componentType": 5126,
+            "count": 25,
+            "max": [
+                0.04278872534632683,
+                0.03161649778485298,
+                0.23743797838687897
+            ],
+            "min": [
+                -0.03608708456158638,
+                -0.026905251666903496,
+                -0.0024908464401960373
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 9,
+            "componentType": 5126,
+            "count": 25,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 10,
+            "componentType": 5126,
+            "count": 25,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 11,
+            "componentType": 5121,
+            "count": 25,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 12,
+            "componentType": 5123,
+            "count": 25,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 13,
+            "componentType": 5123,
+            "count": 66,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 14,
+            "componentType": 5126,
+            "count": 43,
+            "max": [
+                0.03689006343483925,
+                0.12659558653831482,
+                -0.001283705118112266
+            ],
+            "min": [
+                -0.05572022497653961,
+                -0.005266375839710236,
+                -0.020904215052723885
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 15,
+            "componentType": 5126,
+            "count": 43,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 16,
+            "componentType": 5126,
+            "count": 43,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 17,
+            "componentType": 5121,
+            "count": 43,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 18,
+            "componentType": 5123,
+            "count": 43,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 19,
+            "componentType": 5123,
+            "count": 117,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 360,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 360,
+            "byteOffset": 360,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 240,
+            "byteOffset": 720,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 162,
+            "byteOffset": 960,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 336,
+            "byteOffset": 1124,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 336,
+            "byteOffset": 1460,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 224,
+            "byteOffset": 1796,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 168,
+            "byteOffset": 2020,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 300,
+            "byteOffset": 2188,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 300,
+            "byteOffset": 2488,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 200,
+            "byteOffset": 2788,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 100,
+            "byteOffset": 2988,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 200,
+            "byteOffset": 3088,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 132,
+            "byteOffset": 3288,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 516,
+            "byteOffset": 3420,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 516,
+            "byteOffset": 3936,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 344,
+            "byteOffset": 4452,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 172,
+            "byteOffset": 4796,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 344,
+            "byteOffset": 4968,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 234,
+            "byteOffset": 5312,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 5548,
+            "uri": "LI-bird_house-tall_yellow_01.bin"
+        }
+    ]
+}

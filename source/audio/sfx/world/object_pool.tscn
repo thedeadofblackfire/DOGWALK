@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b7x4pqfgs60cu"]
+
+[ext_resource type="Script" uid="uid://hyobahgtafml" path="res://source/audio/sfx/world/object_pool.gd" id="1_wqoam"]
+
+[node name="ObjectPool" type="Node3D"]
+script = ExtResource("1_wqoam")

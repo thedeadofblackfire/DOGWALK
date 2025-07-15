@@ -1,0 +1,25 @@
+[gd_resource type="AnimationLibrary" load_steps=10 format=3 uid="uid://bc1am5k7lo878"]
+
+[ext_resource type="Animation" uid="uid://cp8jcw20bni03" path="res://animations/gate/CINE-pinda-gate_spot03_open/CINE-gate-gate_spot03_open.tres" id="2_xq4f0"]
+[ext_resource type="Animation" uid="uid://l5l1cxhgbi3c" path="res://animations/gate/CINE-pinda-celebrate_gate/ACTN-gate-gate_celebrate_gate.tres" id="4_1s1ud"]
+[ext_resource type="Animation" uid="uid://b2f5nlv8ak5m0" path="res://animations/gate/ACTN-pinda-gate_spot01/ACTN-gate-gate_spot01.tres" id="5_ba0x3"]
+[ext_resource type="Animation" uid="uid://dreempuahnseb" path="res://animations/gate/ACTN-pinda-gate_spot02/no.tres" id="5_fn0qb"]
+[ext_resource type="Animation" uid="uid://cakrk1tg2jjry" path="res://animations/gate/CINE-pinda-celebrate_gate/ACTN-gate-celebrate_gate.tres" id="6_ba0x3"]
+[ext_resource type="Animation" uid="uid://ic5307op3c1k" path="res://animations/gate/CINE-pinda-unlocking_gate/ACTN-gate-gate_unlocking_gate.tres" id="7_mu0o1"]
+[ext_resource type="Animation" uid="uid://uvuvgmiwt2ub" path="res://animations/gate/CINE-pinda-celebrate_gate/CINE-gate-celebrate_gate.tres" id="7_v1ku5"]
+[ext_resource type="Animation" uid="uid://dbo2rmhvm42aq" path="res://animations/gate/CINE-pinda-unlocking_gate/CINE-gate-gate_unlocking_gate.tres" id="8_mu0o1"]
+[ext_resource type="Animation" uid="uid://c3mfmn6238bpq" path="res://animations/gate/POSE-gate-world/POSE-gate-world.tres" id="9_4e5bh"]
+
+[resource]
+resource_name = "PR-fence_gate Animation Library"
+_data = {
+&"ACTN-gate-celebrate_gate": ExtResource("6_ba0x3"),
+&"ACTN-gate-gate_celebrate_gate": ExtResource("4_1s1ud"),
+&"ACTN-gate-gate_spot01": ExtResource("5_ba0x3"),
+&"ACTN-gate-gate_unlocking_gate": ExtResource("7_mu0o1"),
+&"CINE-gate-celebrate_gate": ExtResource("7_v1ku5"),
+&"CINE-gate-gate_spot03_open": ExtResource("2_xq4f0"),
+&"CINE-gate-gate_unlocking_gate": ExtResource("8_mu0o1"),
+&"POSE-gate-world": ExtResource("9_4e5bh"),
+&"no": ExtResource("5_fn0qb")
+}

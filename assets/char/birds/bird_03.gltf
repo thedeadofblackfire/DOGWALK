@@ -1,0 +1,1156 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 3,
+                    "asset_name": "bird_03",
+                    "append_parent_collection": 0
+                },
+                "asset_type": "CHARACTER",
+                "asset_id": "07994d110bacd598",
+                "root_type": "NONE"
+            },
+            "name": "CH-bird_03",
+            "nodes": [
+                30
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "beak-top",
+            "rotation": [
+                -0.027165062725543976,
+                0.6418884992599487,
+                0.7647000551223755,
+                0.049750082194805145
+            ],
+            "scale": [
+                1,
+                1.0000001192092896,
+                1
+            ],
+            "translation": [
+                0.0009142927592620254,
+                0.025977781042456627,
+                9.176251478493214e-05
+            ]
+        },
+        {
+            "name": "beak-bottom",
+            "rotation": [
+                -0.0231357142329216,
+                0.6955139636993408,
+                0.7163418531417847,
+                0.050787899643182755
+            ],
+            "scale": [
+                1,
+                1.000000238418579,
+                1
+            ],
+            "translation": [
+                -0.001037872047163546,
+                -0.02746552601456642,
+                -0.00010408274829387665
+            ]
+        },
+        {
+            "children": [
+                0,
+                1
+            ],
+            "name": "beak",
+            "rotation": [
+                -0.18500716984272003,
+                0.05269947648048401,
+                0.009935861453413963,
+                0.9812728762626648
+            ],
+            "translation": [
+                -0.020968105643987656,
+                0.22017815709114075,
+                0.11458268761634827
+            ]
+        },
+        {
+            "name": "tail-3",
+            "rotation": [
+                0.11350294202566147,
+                -2.9840165893801895e-08,
+                3.4089722156238622e-09,
+                0.9935376644134521
+            ],
+            "translation": [
+                1.0521084004011527e-10,
+                0.09759794175624847,
+                1.6640173683413195e-08
+            ]
+        },
+        {
+            "children": [
+                3
+            ],
+            "name": "tail-2",
+            "rotation": [
+                0.5976132750511169,
+                -9.711700776904308e-09,
+                4.3136385130537747e-08,
+                0.8017845153808594
+            ],
+            "scale": [
+                1,
+                1,
+                0.9999999403953552
+            ],
+            "translation": [
+                5.227329680224102e-11,
+                0.11105005443096161,
+                7.2770873771332845e-09
+            ]
+        },
+        {
+            "children": [
+                4
+            ],
+            "name": "tail-1",
+            "rotation": [
+                -0.9790099859237671,
+                8.590045119660772e-09,
+                -4.126217945099597e-08,
+                0.20381228625774384
+            ],
+            "scale": [
+                1,
+                1,
+                1.0000003576278687
+            ],
+            "translation": [
+                -0.0020582014694809914,
+                0.14142706990242004,
+                -0.14077740907669067
+            ]
+        },
+        {
+            "name": "toe-2-R",
+            "rotation": [
+                -0.03660570830106735,
+                0.6298274993896484,
+                0.7753019332885742,
+                0.029737189412117004
+            ],
+            "scale": [
+                1,
+                0.9999999403953552,
+                1
+            ],
+            "translation": [
+                -0.030900118872523308,
+                0.0006823045550845563,
+                0.009351632557809353
+            ]
+        },
+        {
+            "name": "toe-1-R",
+            "rotation": [
+                -0.01600463315844536,
+                0.6401633620262146,
+                0.7679562568664551,
+                0.013341184705495834
+            ],
+            "scale": [
+                1,
+                0.9999997615814209,
+                0.9999998807907104
+            ],
+            "translation": [
+                0.03289475291967392,
+                0.0014029490994289517,
+                -0.0012127882800996304
+            ]
+        },
+        {
+            "name": "toe-3-R",
+            "rotation": [
+                -0.7426237463951111,
+                -0.024162134155631065,
+                -0.026831842958927155,
+                0.6687347888946533
+            ],
+            "scale": [
+                0.9999999403953552,
+                1.0000001192092896,
+                1
+            ],
+            "translation": [
+                0.0029670612420886755,
+                -0.008205528371036053,
+                0.007471129298210144
+            ]
+        },
+        {
+            "children": [
+                6,
+                7,
+                8
+            ],
+            "name": "DEF-foot-R",
+            "rotation": [
+                -9.7315449920643e-08,
+                -1.1920928244535389e-07,
+                1.1600904800321537e-14,
+                1
+            ],
+            "translation": [
+                -0.05826494097709656,
+                -0.15097105503082275,
+                -0.010595873929560184
+            ]
+        },
+        {
+            "name": "toe-2-L",
+            "rotation": [
+                -0.03660570830106735,
+                -0.6298274993896484,
+                -0.7753019332885742,
+                0.029737189412117004
+            ],
+            "scale": [
+                1,
+                0.9999999403953552,
+                1
+            ],
+            "translation": [
+                0.030900118872523308,
+                0.0006823045550845563,
+                0.009351632557809353
+            ]
+        },
+        {
+            "name": "toe-1-L",
+            "rotation": [
+                -0.01600463315844536,
+                -0.6401633620262146,
+                -0.7679562568664551,
+                0.013341184705495834
+            ],
+            "scale": [
+                1,
+                0.9999997615814209,
+                0.9999998807907104
+            ],
+            "translation": [
+                -0.03289475291967392,
+                0.0014029490994289517,
+                -0.0012127882800996304
+            ]
+        },
+        {
+            "name": "toe-3-L",
+            "rotation": [
+                -0.7426237463951111,
+                0.024162134155631065,
+                0.026831842958927155,
+                0.6687347888946533
+            ],
+            "scale": [
+                0.9999999403953552,
+                1.0000001192092896,
+                1
+            ],
+            "translation": [
+                -0.0029670612420886755,
+                -0.008205528371036053,
+                0.007471129298210144
+            ]
+        },
+        {
+            "children": [
+                10,
+                11,
+                12
+            ],
+            "name": "DEF-foot-L",
+            "rotation": [
+                -9.7315449920643e-08,
+                1.1920928244535389e-07,
+                -1.1600904800321537e-14,
+                1
+            ],
+            "translation": [
+                0.05826494097709656,
+                -0.15097105503082275,
+                -0.010595873929560184
+            ]
+        },
+        {
+            "name": "FK-foot-R",
+            "rotation": [
+                -9.7315449920643e-08,
+                -1.1920928244535389e-07,
+                1.1600904800321537e-14,
+                1
+            ],
+            "translation": [
+                -0.05826494097709656,
+                -0.15097105503082275,
+                -0.010595873929560184
+            ]
+        },
+        {
+            "name": "FK-foot-L",
+            "rotation": [
+                -9.7315449920643e-08,
+                1.1920928244535389e-07,
+                -1.1600904800321537e-14,
+                1
+            ],
+            "translation": [
+                0.05826494097709656,
+                -0.15097105503082275,
+                -0.010595873929560184
+            ]
+        },
+        {
+            "name": "wing-R",
+            "rotation": [
+                -0.17328312993049622,
+                0.22835387289524078,
+                -0.6268284320831299,
+                0.7245092391967773
+            ],
+            "scale": [
+                1,
+                1,
+                1.0000001192092896
+            ],
+            "translation": [
+                1.3668248755038803e-09,
+                0,
+                -2.998904014006598e-09
+            ]
+        },
+        {
+            "children": [
+                16
+            ],
+            "name": "P-wing-R",
+            "rotation": [
+                -0.5,
+                0.5,
+                0.5,
+                0.5
+            ],
+            "scale": [
+                1,
+                0.9999999403953552,
+                1
+            ],
+            "translation": [
+                -0.1286948174238205,
+                0.1363898515701294,
+                0.04324372485280037
+            ]
+        },
+        {
+            "name": "wing-L",
+            "rotation": [
+                -0.17328312993049622,
+                -0.22835387289524078,
+                0.6268284320831299,
+                0.7245092391967773
+            ],
+            "scale": [
+                1,
+                1,
+                1.0000001192092896
+            ],
+            "translation": [
+                -1.3668248755038803e-09,
+                0,
+                -2.998904014006598e-09
+            ]
+        },
+        {
+            "children": [
+                18
+            ],
+            "name": "P-wing-L",
+            "rotation": [
+                -0.5,
+                -0.5,
+                -0.5,
+                0.5
+            ],
+            "scale": [
+                1,
+                0.9999999403953552,
+                1
+            ],
+            "translation": [
+                0.1286948174238205,
+                0.1363898515701294,
+                0.04324372485280037
+            ]
+        },
+        {
+            "children": [
+                2,
+                5,
+                9,
+                13,
+                14,
+                15,
+                17,
+                19
+            ],
+            "name": "pivot"
+        },
+        {
+            "children": [
+                20
+            ],
+            "name": "body",
+            "translation": [
+                7.654779019402471e-18,
+                0.17323967814445496,
+                0.025363203138113022
+            ]
+        },
+        {
+            "name": "IK-foot-R",
+            "rotation": [
+                -9.731549965863451e-08,
+                -1.1920927533992653e-07,
+                1.160090988251922e-14,
+                1
+            ],
+            "scale": [
+                1,
+                0.9999999403953552,
+                1
+            ],
+            "translation": [
+                -0.05826494097709656,
+                0.022268634289503098,
+                0.014767329208552837
+            ]
+        },
+        {
+            "name": "IK-foot-L",
+            "rotation": [
+                -9.731549965863451e-08,
+                1.1920927533992653e-07,
+                -1.160090988251922e-14,
+                1
+            ],
+            "scale": [
+                1,
+                0.9999999403953552,
+                1
+            ],
+            "translation": [
+                0.05826494097709656,
+                0.022268634289503098,
+                0.014767329208552837
+            ]
+        },
+        {
+            "children": [
+                21,
+                22,
+                23
+            ],
+            "name": "subroot"
+        },
+        {
+            "children": [
+                24
+            ],
+            "name": "root"
+        },
+        {
+            "mesh": 0,
+            "name": "GEO-bird_01-beak.002",
+            "skin": 0
+        },
+        {
+            "mesh": 1,
+            "name": "GEO-bird_03-body",
+            "skin": 0
+        },
+        {
+            "mesh": 2,
+            "name": "GEO-bird_03-legs",
+            "skin": 0
+        },
+        {
+            "mesh": 3,
+            "name": "GEO-bird_03-wings",
+            "skin": 0
+        },
+        {
+            "children": [
+                26,
+                27,
+                28,
+                29,
+                25
+            ],
+            "extras": {
+                "cloudrig": {},
+                "selection_order": 0
+            },
+            "name": "RIG-bird"
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "ee41d69f194e8b04",
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "roughness": 0.800000011920929,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        0.09654876589775085,
+                        0.03602525591850281,
+                        0.02592206373810768,
+                        1.0
+                    ],
+                    "wear_strength": 0.12279412150382996,
+                    "wear_start": 0.5299999713897705,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.1899999976158142,
+                    "wear_distortion_scale": 95.97000122070312,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_map": [
+                        0.5,
+                        0.5,
+                        1.0,
+                        1.0
+                    ],
+                    "normal_strength": 1.0,
+                    "normal_use_uv2": 0.0
+                },
+                "yp": {}
+            },
+            "name": "birds_beak",
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 0
+                }
+            }
+        },
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "5493de6d07e3913c",
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "roughness": 0.699999988079071,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        0.8025225400924683,
+                        0.6907180547714233,
+                        0.5617701411247253,
+                        1.0
+                    ],
+                    "wear_strength": 0.12279412150382996,
+                    "wear_start": 0.5299999713897705,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.1899999976158142,
+                    "wear_distortion_scale": 95.97000122070312,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_map": [
+                        0.5,
+                        0.5,
+                        1.0,
+                        1.0
+                    ],
+                    "normal_strength": 1.0,
+                    "normal_use_uv2": 0.0
+                },
+                "yp": {}
+            },
+            "name": "birds",
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "birds-albedo.007",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2,
+                        "JOINTS_0": 3,
+                        "WEIGHTS_0": 4
+                    },
+                    "indices": 5,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "birds-albedo.005",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 7,
+                        "NORMAL": 8,
+                        "TEXCOORD_0": 9,
+                        "COLOR_0": 10,
+                        "JOINTS_0": 11,
+                        "WEIGHTS_0": 12
+                    },
+                    "indices": 13,
+                    "material": 1
+                }
+            ]
+        },
+        {
+            "name": "birds-albedo.012",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 14,
+                        "NORMAL": 15,
+                        "TEXCOORD_0": 16,
+                        "JOINTS_0": 17,
+                        "WEIGHTS_0": 18
+                    },
+                    "indices": 19,
+                    "material": 1
+                }
+            ]
+        },
+        {
+            "name": "birds-albedo.006",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 20,
+                        "NORMAL": 21,
+                        "TEXCOORD_0": 22,
+                        "COLOR_0": 23,
+                        "COLOR_1": 24,
+                        "JOINTS_0": 25,
+                        "WEIGHTS_0": 26
+                    },
+                    "indices": 27,
+                    "material": 1
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 0
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/char/birds/textures/birds-albedo.png"
+            },
+            "mimeType": "image/png",
+            "name": "birds-albedo",
+            "uri": "textures/birds-albedo.png"
+        }
+    ],
+    "skins": [
+        {
+            "inverseBindMatrices": 6,
+            "joints": [
+                25,
+                24,
+                21,
+                20,
+                2,
+                0,
+                1,
+                5,
+                4,
+                3,
+                9,
+                6,
+                7,
+                8,
+                13,
+                10,
+                11,
+                12,
+                14,
+                15,
+                17,
+                16,
+                19,
+                18,
+                22,
+                23
+            ],
+            "name": "RIG-bird"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 19,
+            "max": [
+                0.02483462542295456,
+                0.4415997564792633,
+                0.24053460359573364
+            ],
+            "min": [
+                -0.06677083671092987,
+                0.34339889883995056,
+                0.12121637910604477
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 19,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 19,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5121,
+            "count": 19,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5126,
+            "count": 19,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5123,
+            "count": 30,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 6,
+            "componentType": 5126,
+            "count": 26,
+            "type": "MAT4"
+        },
+        {
+            "bufferView": 7,
+            "componentType": 5126,
+            "count": 179,
+            "max": [
+                0.17452409863471985,
+                0.4649472236633301,
+                0.155309796333313
+            ],
+            "min": [
+                -0.17633211612701416,
+                0.13359516859054565,
+                -0.3665328919887543
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 8,
+            "componentType": 5126,
+            "count": 179,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 9,
+            "componentType": 5126,
+            "count": 179,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 10,
+            "componentType": 5123,
+            "count": 179,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 11,
+            "componentType": 5121,
+            "count": 179,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 12,
+            "componentType": 5126,
+            "count": 179,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 13,
+            "componentType": 5123,
+            "count": 360,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 14,
+            "componentType": 5126,
+            "count": 96,
+            "max": [
+                0.114991195499897,
+                0.1645624190568924,
+                0.1449079066514969
+            ],
+            "min": [
+                -0.11877954751253128,
+                -0.0017467737197875977,
+                -0.10110904276371002
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 15,
+            "componentType": 5126,
+            "count": 96,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 16,
+            "componentType": 5126,
+            "count": 96,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 17,
+            "componentType": 5121,
+            "count": 96,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 18,
+            "componentType": 5126,
+            "count": 96,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 19,
+            "componentType": 5123,
+            "count": 144,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 20,
+            "componentType": 5126,
+            "count": 44,
+            "max": [
+                0.15479375422000885,
+                0.33241191506385803,
+                0.0999150276184082
+            ],
+            "min": [
+                -0.17661626636981964,
+                0.16221952438354492,
+                -0.12958085536956787
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 21,
+            "componentType": 5126,
+            "count": 44,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 22,
+            "componentType": 5126,
+            "count": 44,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 23,
+            "componentType": 5121,
+            "count": 44,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 24,
+            "componentType": 5123,
+            "count": 44,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 25,
+            "componentType": 5121,
+            "count": 44,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 26,
+            "componentType": 5126,
+            "count": 44,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 27,
+            "componentType": 5123,
+            "count": 96,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 228,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 228,
+            "byteOffset": 228,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 152,
+            "byteOffset": 456,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 76,
+            "byteOffset": 608,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 304,
+            "byteOffset": 684,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 60,
+            "byteOffset": 988,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1664,
+            "byteOffset": 1048
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2148,
+            "byteOffset": 2712,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2148,
+            "byteOffset": 4860,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1432,
+            "byteOffset": 7008,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1432,
+            "byteOffset": 8440,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 716,
+            "byteOffset": 9872,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2864,
+            "byteOffset": 10588,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 720,
+            "byteOffset": 13452,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1152,
+            "byteOffset": 14172,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1152,
+            "byteOffset": 15324,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 768,
+            "byteOffset": 16476,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 384,
+            "byteOffset": 17244,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1536,
+            "byteOffset": 17628,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 288,
+            "byteOffset": 19164,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 528,
+            "byteOffset": 19452,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 528,
+            "byteOffset": 19980,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 352,
+            "byteOffset": 20508,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 176,
+            "byteOffset": 20860,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 352,
+            "byteOffset": 21036,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 176,
+            "byteOffset": 21388,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 704,
+            "byteOffset": 21564,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 192,
+            "byteOffset": 22268,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987,
+            "wrapS": 33071,
+            "wrapT": 33071
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 22460,
+            "uri": "bird_03.bin"
+        }
+    ]
+}

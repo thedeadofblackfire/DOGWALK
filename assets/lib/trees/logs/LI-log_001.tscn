@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cw8ddi4ydc0f4"]
+
+[ext_resource type="PackedScene" uid="uid://bqatmdwtrrfly" path="res://assets/lib/trees/logs/LI-log_001.gltf" id="1_56hmi"]
+[ext_resource type="Script" uid="uid://bj34k0ajpsopu" path="res://source/obstacles/generic_obstacle.gd" id="2_e4glb"]
+
+[node name="LI-log_001" type="Node3D"]
+
+[node name="LI-log_001-IMPORT" parent="." instance=ExtResource("1_56hmi")]
+script = ExtResource("2_e4glb")

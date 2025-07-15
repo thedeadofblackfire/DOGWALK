@@ -1,0 +1,1165 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 1,
+                    "append_parent_collection": 1,
+                    "asset_name": "LI-pine_tree_003"
+                },
+                "asset_type": "ASSET",
+                "root_type": "STATIC",
+                "asset_id": "7665b9ec9a84b6d4"
+            },
+            "name": "LI-pine_tree_003",
+            "nodes": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "extras": {
+                "ant_landscape": {},
+                "instance_asset_id": "b68e6acd42c5ee7d"
+            },
+            "name": "LI-pine_knothole_002",
+            "rotation": [
+                -0.02853967621922493,
+                0.3592674434185028,
+                0.008459988981485367,
+                0.9327598214149475
+            ],
+            "scale": [
+                1.1695754528045654,
+                1.1695754528045654,
+                1.1695754528045654
+            ],
+            "translation": [
+                0.22980430722236633,
+                1.4286179542541504,
+                0.3072667419910431
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 0,
+            "name": "GEO-pine_tree-003"
+        },
+        {
+            "extras": {
+                "instance_asset_id": "f8e59c944b01f3b7",
+                "ant_landscape": {}
+            },
+            "name": "LI-pine_knothole_003.001",
+            "rotation": [
+                0,
+                -0.6457442045211792,
+                0,
+                0.7635537981987
+            ],
+            "translation": [
+                -0.19418549537658691,
+                3.58862042427063,
+                0.07423091679811478
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "7f97804ec1f235bd"
+            },
+            "name": "LI-pine_cut_patch_008.001",
+            "rotation": [
+                0,
+                -0.35126742720603943,
+                0,
+                0.9362751841545105
+            ],
+            "scale": [
+                1.2640793323516846,
+                1.2640793323516846,
+                1.2640793323516846
+            ],
+            "translation": [
+                -0.09441512823104858,
+                3.100667715072632,
+                0.20832723379135132
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {},
+                "instance_asset_id": "0788345bdfadbdd9"
+            },
+            "name": "LI-pine_cut_patch_004.001",
+            "rotation": [
+                0.006357099860906601,
+                0.9993203282356262,
+                -0.006872867699712515,
+                0.035653892904520035
+            ],
+            "scale": [
+                1.1152178049087524,
+                1.1152175664901733,
+                1.1152178049087524
+            ],
+            "translation": [
+                0.1264972686767578,
+                3.4788336753845215,
+                -0.2292260378599167
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "f766ffba2a643bd4"
+            },
+            "name": "LI-pine_cut_patch_005",
+            "rotation": [
+                0.06484659016132355,
+                0.6058667302131653,
+                -0.005013942252844572,
+                0.7929031252861023
+            ],
+            "scale": [
+                1.1152175664901733,
+                1.1152175664901733,
+                1.1152175664901733
+            ],
+            "translation": [
+                0.3098960220813751,
+                3.1426568031311035,
+                0.13252168893814087
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "7f97804ec1f235bd"
+            },
+            "name": "LI-pine_cut_patch_008.002",
+            "rotation": [
+                0.0017423807876184583,
+                -0.06988966464996338,
+                -0.12826618552207947,
+                0.9892725944519043
+            ],
+            "scale": [
+                0.9993937015533447,
+                0.9993936419487,
+                0.9993934631347656
+            ],
+            "translation": [
+                0.1374015361070633,
+                4.649909973144531,
+                0.20601794123649597
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "6a08df34a6b9af4e"
+            },
+            "name": "LI-pine_cut_patch_002",
+            "rotation": [
+                0.047054458409547806,
+                0.9197470545768738,
+                0.031227227300405502,
+                0.3884277641773224
+            ],
+            "translation": [
+                0.2535300552845001,
+                4.654735565185547,
+                -0.07880401611328125
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "331451c8b5c62d45"
+            },
+            "name": "LI-pine_cut_patch_007",
+            "rotation": [
+                -0.06696300953626633,
+                0.7120354771614075,
+                0.04121331498026848,
+                0.6977269649505615
+            ],
+            "translation": [
+                0.28919538855552673,
+                5.426427841186523,
+                -0.017263663932681084
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "6a08df34a6b9af4e"
+            },
+            "name": "LI-pine_cut_patch_002.001",
+            "rotation": [
+                -0.03546307608485222,
+                -0.9899663925170898,
+                0.043100543320178986,
+                0.1298123300075531
+            ],
+            "scale": [
+                0.8245230913162231,
+                0.8245231509208679,
+                0.8245231509208679
+            ],
+            "translation": [
+                0.12883427739143372,
+                5.763053894042969,
+                -0.15279735624790192
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {},
+                "instance_asset_id": "2362b7f9eeda924f"
+            },
+            "name": "LI-pine_cut_patch_013",
+            "rotation": [
+                0.07198130339384079,
+                0.18255627155303955,
+                0.055535051971673965,
+                0.9789830446243286
+            ],
+            "translation": [
+                0.1313622146844864,
+                7.713014602661133,
+                -0.07546047866344452
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "046830ebc130a427"
+            },
+            "name": "LI-pine_cut_patch_001",
+            "rotation": [
+                0.010198745876550674,
+                0.8322541117668152,
+                -0.060056645423173904,
+                0.5510375499725342
+            ],
+            "scale": [
+                0.6952329874038696,
+                0.6952330470085144,
+                0.6952329874038696
+            ],
+            "translation": [
+                0.14400991797447205,
+                7.604163646697998,
+                -0.13600429892539978
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "93583805f51dc5fc"
+            },
+            "name": "LI-pine_cut_patch_011.001",
+            "rotation": [
+                -0.014430663548409939,
+                0.927547037601471,
+                -0.009282782673835754,
+                0.3733123242855072
+            ],
+            "translation": [
+                0.17943820357322693,
+                6.57172155380249,
+                -0.15069696307182312
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "0788345bdfadbdd9"
+            },
+            "name": "LI-pine_cut_patch_004.002",
+            "rotation": [
+                -0.004601776134222746,
+                -0.7612325549125671,
+                -0.030132867395877838,
+                0.6477621793746948
+            ],
+            "scale": [
+                0.7638264298439026,
+                0.9992254972457886,
+                0.7642797827720642
+            ],
+            "translation": [
+                0.006359384395182133,
+                6.624195575714111,
+                -0.07856403291225433
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "046830ebc130a427"
+            },
+            "name": "LI-pine_cut_patch_001.001",
+            "rotation": [
+                -0.07226162403821945,
+                0.31157612800598145,
+                -0.03566857799887657,
+                0.9467980265617371
+            ],
+            "translation": [
+                0.18624404072761536,
+                6.826494216918945,
+                -0.036339156329631805
+            ]
+        },
+        {
+            "extras": {
+                "instance_asset_id": "f8e59c944b01f3b7"
+            },
+            "name": "LI-pine_knothole_003.002",
+            "rotation": [
+                0,
+                -0.6457442045211792,
+                0,
+                0.7635537981987
+            ],
+            "translation": [
+                -0.19418549537658691,
+                3.58862042427063,
+                0.07423091679811478
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 1,
+            "name": "GEO-pine_tree-001.004",
+            "translation": [
+                0.013512270525097847,
+                0.3756868541240692,
+                0.009306411258876324
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 2,
+            "name": "GEO-pine_tree-003.001"
+        },
+        {
+            "extras": {
+                "booleans": {},
+                "ant_landscape": {},
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.4650000035762787,
+                    "height": 2.5,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-pine_tree_003",
+            "translation": [
+                0.0019219368696212769,
+                0.9572349190711975,
+                0.03435974568128586
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.016",
+            "rotation": [
+                0,
+                -0.14475789666175842,
+                0,
+                0.989467203617096
+            ],
+            "translation": [
+                -0.26136642694473267,
+                0.414073646068573,
+                0.11410319805145264
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.017",
+            "rotation": [
+                0,
+                0.18380257487297058,
+                0,
+                0.9829632043838501
+            ],
+            "translation": [
+                -0.18845753371715546,
+                0.4001986086368561,
+                -0.24224016070365906
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.018",
+            "translation": [
+                0.06649888306856155,
+                0.4127947688102722,
+                -0.34259581565856934
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.019",
+            "translation": [
+                0.2711629569530487,
+                0.4091798663139343,
+                -0.17844252288341522
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.020",
+            "translation": [
+                0.26933184266090393,
+                0.3977903723716736,
+                0.1476360559463501
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.021",
+            "translation": [
+                -0.14877760410308838,
+                0.4077374339103699,
+                0.2427864819765091
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.022",
+            "translation": [
+                0.0023658231366425753,
+                0.4005851745605469,
+                0.2901258170604706
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.024",
+            "translation": [
+                -0.2855978310108185,
+                0.41115525364875793,
+                -0.0883636474609375
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.025",
+            "translation": [
+                0.17238199710845947,
+                0.3977903723716736,
+                0.2508386969566345
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.023",
+            "translation": [
+                0.32118692994117737,
+                0.4091798663139343,
+                -0.015416055917739868
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.026",
+            "rotation": [
+                0,
+                0.18380257487297058,
+                0,
+                0.9829632043838501
+            ],
+            "translation": [
+                -0.06063994765281677,
+                0.4001986086368561,
+                -0.30094340443611145
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "173ae2405729cedf",
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        0.5034461617469788,
+                        0.4278636574745178,
+                        0.3311903774738312,
+                        1.0
+                    ],
+                    "wear_strength": 0.7254544496536255,
+                    "wear_start": 0.05000000074505806,
+                    "wear_end": 0.15000000596046448,
+                    "wear_distortion_strength": -0.1499999463558197,
+                    "wear_distortion_scale": 505.8999938964844,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.20000000298023224,
+                    "normal_use_uv2": 1.0
+                }
+            },
+            "name": "pine_bark",
+            "normalTexture": {
+                "index": 0,
+                "texCoord": 1
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                },
+                "metallicRoughnessTexture": {
+                    "index": 2
+                }
+            }
+        },
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "emissiveTexture": {
+                "index": 3
+            },
+            "extras": {
+                "material_info": {
+                    "albedo_color": [
+                        0.5028830170631409,
+                        0.42869099974632263,
+                        0.3324519991874695,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        0.6960119009017944,
+                        0.6065898537635803,
+                        0.5103245377540588,
+                        1.0
+                    ],
+                    "wear_strength": 0.5,
+                    "wear_start": 0.6799999475479126,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.12000000476837158,
+                    "wear_distortion_scale": 100.0,
+                    "emission_strength": 0.02500000037252903,
+                    "normal_strength": 0.5,
+                    "normal_use_uv2": 1.0
+                },
+                "asset_id": "8b905e91c50a4ea0"
+            },
+            "name": "tree_stump_fade",
+            "normalTexture": {
+                "index": 4,
+                "texCoord": 1
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 5
+                },
+                "metallicRoughnessTexture": {
+                    "index": 6
+                }
+            }
+        },
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        0.5028833746910095,
+                        0.4286908805370331,
+                        0.332451730966568,
+                        1.0
+                    ],
+                    "wear_strength": 0.7254544496536255,
+                    "wear_start": 0.05000000074505806,
+                    "wear_end": 0.15000000596046448,
+                    "wear_distortion_strength": -0.1499999463558197,
+                    "wear_distortion_scale": 505.8999938964844,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.20000000298023224,
+                    "normal_use_uv2": 1.0
+                },
+                "asset_id": "0460578e07152afc"
+            },
+            "name": "pine_bark_fade",
+            "normalTexture": {
+                "index": 7,
+                "texCoord": 1
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 8
+                },
+                "metallicRoughnessTexture": {
+                    "index": 9
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "NurbsPath.035",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2,
+                        "TEXCOORD_1": 3,
+                        "COLOR_0": 4,
+                        "COLOR_1": 5
+                    },
+                    "indices": 6,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "NurbsPath.014",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 7,
+                        "NORMAL": 8,
+                        "TEXCOORD_0": 9,
+                        "TEXCOORD_1": 10,
+                        "COLOR_0": 11
+                    },
+                    "indices": 12,
+                    "material": 1
+                }
+            ]
+        },
+        {
+            "name": "NurbsPath.016",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 13,
+                        "NORMAL": 14,
+                        "TEXCOORD_0": 15,
+                        "TEXCOORD_1": 16,
+                        "COLOR_0": 17,
+                        "COLOR_1": 18
+                    },
+                    "indices": 19,
+                    "material": 2
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        },
+        {
+            "sampler": 0,
+            "source": 2
+        },
+        {
+            "sampler": 0,
+            "source": 3
+        },
+        {
+            "sampler": 0,
+            "source": 4
+        },
+        {
+            "sampler": 0,
+            "source": 3
+        },
+        {
+            "sampler": 0,
+            "source": 5
+        },
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 6
+        },
+        {
+            "sampler": 0,
+            "source": 2
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/textures/paper_rough_256.png"
+            },
+            "mimeType": "image/png",
+            "name": "paper_rough_256",
+            "uri": "../../../textures/paper_rough_256.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/pine_bark_albedo.png"
+            },
+            "mimeType": "image/png",
+            "name": "pine_bark_albedo",
+            "uri": "../../textures/pine_bark_albedo.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/pine_bark_roughness.png"
+            },
+            "mimeType": "image/png",
+            "name": "pine_bark_roughness",
+            "uri": "../../textures/pine_bark_roughness.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/tree_stumps_albedo_01.png"
+            },
+            "mimeType": "image/png",
+            "name": "tree_stumps_albedo_01",
+            "uri": "../../textures/tree_stumps_albedo_01.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/textures/paper_rough_medium-normal.png"
+            },
+            "mimeType": "image/png",
+            "name": "paper_rough_medium-normal",
+            "uri": "../../../textures/paper_rough_medium-normal.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/tree_stumps_roughness_01.png"
+            },
+            "mimeType": "image/png",
+            "name": "tree_stumps_roughness_01",
+            "uri": "../../textures/tree_stumps_roughness_01.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/pine_bark_albedo_ripped.png"
+            },
+            "mimeType": "image/png",
+            "name": "pine_bark_albedo_ripped",
+            "uri": "../../textures/pine_bark_albedo_ripped.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 648,
+            "max": [
+                0.3495749235153198,
+                8.24543285369873,
+                0.3465762436389923
+            ],
+            "min": [
+                -0.3188186585903168,
+                -0.06097101792693138,
+                -0.33546537160873413
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 648,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 648,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5126,
+            "count": 648,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5123,
+            "count": 648,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5123,
+            "count": 648,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 6,
+            "componentType": 5123,
+            "count": 3222,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 7,
+            "componentType": 5126,
+            "count": 433,
+            "max": [
+                0.28324368596076965,
+                0.06286326050758362,
+                0.2581561207771301
+            ],
+            "min": [
+                -0.28257647156715393,
+                -0.07902804017066956,
+                -0.28853437304496765
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 8,
+            "componentType": 5126,
+            "count": 433,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 9,
+            "componentType": 5126,
+            "count": 433,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 10,
+            "componentType": 5126,
+            "count": 433,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 11,
+            "componentType": 5123,
+            "count": 433,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 12,
+            "componentType": 5123,
+            "count": 1074,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 13,
+            "componentType": 5126,
+            "count": 42,
+            "max": [
+                0.3187832832336426,
+                0.6573957204818726,
+                0.3150605261325836
+            ],
+            "min": [
+                -0.3067489266395569,
+                -0.06141716241836548,
+                -0.3228629231452942
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 14,
+            "componentType": 5126,
+            "count": 42,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 15,
+            "componentType": 5126,
+            "count": 42,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 16,
+            "componentType": 5126,
+            "count": 42,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 17,
+            "componentType": 5123,
+            "count": 42,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 18,
+            "componentType": 5123,
+            "count": 42,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 19,
+            "componentType": 5123,
+            "count": 156,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 7776,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 7776,
+            "byteOffset": 7776,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 5184,
+            "byteOffset": 15552,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 5184,
+            "byteOffset": 20736,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 5184,
+            "byteOffset": 25920,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 5184,
+            "byteOffset": 31104,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 6444,
+            "byteOffset": 36288,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 5196,
+            "byteOffset": 42732,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 5196,
+            "byteOffset": 47928,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 3464,
+            "byteOffset": 53124,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 3464,
+            "byteOffset": 56588,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 3464,
+            "byteOffset": 60052,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2148,
+            "byteOffset": 63516,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 504,
+            "byteOffset": 65664,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 504,
+            "byteOffset": 66168,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 336,
+            "byteOffset": 66672,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 336,
+            "byteOffset": 67008,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 336,
+            "byteOffset": 67344,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 336,
+            "byteOffset": 67680,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 312,
+            "byteOffset": 68016,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 68328,
+            "uri": "LI-pine_tree_003.bin"
+        }
+    ]
+}

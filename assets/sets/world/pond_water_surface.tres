@@ -1,0 +1,41 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://gacsgwk1crwq"]
+
+[ext_resource type="Texture2D" uid="uid://cihtw4sypopmn" path="res://assets/textures/ice_surface_squiggles-albedo.png" id="1_did74"]
+[ext_resource type="Texture2D" uid="uid://djedrc5nxmhbf" path="res://assets/textures/ice_surface_squiggles-roughness.png" id="2_df14m"]
+
+[resource]
+resource_name = "pond_water_surface"
+render_priority = -9
+transparency = 1
+cull_mode = 2
+albedo_color = Color(1, 1, 1, 0.2)
+albedo_texture = ExtResource("1_did74")
+metallic = 0.9
+metallic_texture = ExtResource("2_df14m")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_df14m")
+roughness_texture_channel = 1
+refraction_scale = 0.08
+metadata/extras = {
+"asset_id": "6df4a5597fcff7c5",
+"material_info": {
+"alpha": 1.0,
+"alpha_influence": 0.0,
+"displacement_scale": 1.0,
+"displacement_strength": 0.0,
+"emission_color": [1.0, 1.0, 1.0, 1.0],
+"emission_strength": 0.0,
+"metallic": 0.62719,
+"normal_map": [0.5, 0.5, 1.0, 1.0],
+"paper_color": [1.0, 1.0, 1.0, 1.0],
+"strength": 1.0,
+"wear_distortion_scale": 100.0,
+"wear_distortion_strength": 0.5,
+"wear_end": 1.0,
+"wear_start": 0.0,
+"wear_strength": 0.0
+},
+"yp": {
+"active_ypaint_node": ""
+}
+}

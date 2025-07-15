@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvb37nqlf3xig"]
+
+[ext_resource type="PackedScene" path="res://assets/sets/clearing/SL-clearing_logs.gltf" id="1_ithot"]
+
+[node name="SL-clearing_logs" type="Node3D"]
+
+[node name="SL-clearing_logs-IMPORT" type="Area3D" parent="." instance=ExtResource("1_ithot")]

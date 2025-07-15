@@ -1,0 +1,556 @@
+[gd_scene load_steps=9 format=3 uid="uid://c3a7b1vdnemft"]
+
+[ext_resource type="Theme" uid="uid://dn50ucqdaqlr1" path="res://source/user_interface/menus/menu_theme.tres" id="1_mcl84"]
+[ext_resource type="Script" uid="uid://cls8gmplk6i8m" path="res://source/user_interface/menus/settings_menu.gd" id="2_ayl54"]
+[ext_resource type="Script" uid="uid://c8fpguu61gfh0" path="res://source/user_interface/menus/label.gd" id="3_sg10u"]
+[ext_resource type="Texture2D" uid="uid://djhpess3sp7m4" path="res://assets/textures/menu/user_interface/all_controls.png" id="4_np5aw"]
+[ext_resource type="Texture2D" uid="uid://blo6re746ev86" path="res://assets/textures/menu/user_interface/Esc.png" id="4_sg10u"]
+[ext_resource type="Texture2D" uid="uid://2214h4fysm20" path="res://assets/textures/menu/user_interface/LB.png" id="4_yb41m"]
+[ext_resource type="Texture2D" uid="uid://bxs8n3eue56cx" path="res://assets/textures/menu/user_interface/RB.png" id="5_np5aw"]
+[ext_resource type="Texture2D" uid="uid://brm1xj41qs3qb" path="res://assets/textures/menu/user_interface/tab_reset.png" id="5_ygdif"]
+
+[node name="SettingsMenu" type="Control" node_paths=PackedStringArray("general_tab", "graphics_tab", "sounds_tab", "controls_tab", "auto_save_button", "window_mode_setting", "resolution_setting", "shadow_quality_setting", "dof_button", "ss_aa_button", "master_volume_slider", "music_volume_slider", "ambience_volume_slider", "sfx_volume_slider", "ui_volume_slider", "bass_cut_button", "bass_freq_slider", "audio_mono_button", "mouse_sensitivity_slider")]
+process_mode = 3
+layout_mode = 3
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_right = 960.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_mcl84")
+script = ExtResource("2_ayl54")
+general_tab = NodePath("TabContainer/General")
+graphics_tab = NodePath("TabContainer/Graphics")
+sounds_tab = NodePath("TabContainer/Sounds")
+controls_tab = NodePath("TabContainer/Controls")
+auto_save_button = NodePath("TabContainer/General/VBoxContainerGeneralSettings/AutoSaveSetting/HBoxContainer/AutoSaveButton")
+window_mode_setting = NodePath("TabContainer/Graphics/ScrollContainerGraphics/VBoxContainerGraphicsSettings/WindowSetting/HBoxContainer/WindowModes")
+resolution_setting = NodePath("TabContainer/Graphics/ScrollContainerGraphics/VBoxContainerGraphicsSettings/ResolutionSetting/HBoxContainer/Resolutions")
+shadow_quality_setting = NodePath("TabContainer/Graphics/ScrollContainerGraphics/VBoxContainerGraphicsSettings/ShadowSetting/HBoxContainer/ShadowSetting")
+dof_button = NodePath("TabContainer/Graphics/ScrollContainerGraphics/VBoxContainerGraphicsSettings/DOFSetting/HBoxContainer/DOFButton")
+ss_aa_button = NodePath("TabContainer/Graphics/ScrollContainerGraphics/VBoxContainerGraphicsSettings/AASetting/HBoxContainer/AAButton")
+master_volume_slider = NodePath("TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer/VolumeSlider_Master")
+music_volume_slider = NodePath("TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer/VolumeSlider_Music")
+ambience_volume_slider = NodePath("TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer/VolumeSlider_Ambience")
+sfx_volume_slider = NodePath("TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer/VolumeSlider_SFX")
+ui_volume_slider = NodePath("TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer/VolumeSlider_UI")
+bass_cut_button = NodePath("TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer/BassCutButton")
+bass_freq_slider = NodePath("TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer/FrequencySliderBass")
+audio_mono_button = NodePath("TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer/MonoButton")
+mouse_sensitivity_slider = NodePath("TabContainer/Controls/ScrollContainer/ContainerControls/GridContainer/MouseSensitivitySlider")
+metadata/_edit_vertical_guides_ = [1920.0, 960.0]
+metadata/_edit_horizontal_guides_ = [2160.0]
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.08
+anchor_right = 1.0
+anchor_bottom = 0.08
+offset_left = 271.0
+offset_top = -72.4
+offset_right = -271.0
+offset_bottom = 71.6
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 180
+text = "Settings"
+horizontal_alignment = 1
+vertical_alignment = 1
+language = "en"
+script = ExtResource("3_sg10u")
+font_scale = 1.5
+
+[node name="TabContainer" type="TabContainer" parent="."]
+layout_mode = 2
+anchor_top = 0.145
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 45.0
+offset_top = 0.800018
+offset_right = -50.0
+offset_bottom = -263.0
+size_flags_vertical = 4
+tab_alignment = 1
+current_tab = 3
+
+[node name="General" type="MarginContainer" parent="TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="VBoxContainerGeneralSettings" type="VBoxContainer" parent="TabContainer/General"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="AutoSaveSetting" type="MarginContainer" parent="TabContainer/General/VBoxContainerGeneralSettings"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/General/VBoxContainerGeneralSettings/AutoSaveSetting"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="AutoSaveLabel" type="Label" parent="TabContainer/General/VBoxContainerGeneralSettings/AutoSaveSetting/HBoxContainer"]
+layout_mode = 2
+text = "Auto-Save"
+
+[node name="AutoSaveButton" type="CheckBox" parent="TabContainer/General/VBoxContainerGeneralSettings/AutoSaveSetting/HBoxContainer"]
+layout_mode = 2
+text = "(enables auto saving)"
+clip_text = true
+
+[node name="Graphics" type="MarginContainer" parent="TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="ScrollContainerGraphics" type="ScrollContainer" parent="TabContainer/Graphics"]
+layout_mode = 2
+
+[node name="VBoxContainerGraphicsSettings" type="VBoxContainer" parent="TabContainer/Graphics/ScrollContainerGraphics"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="WindowSetting" type="MarginContainer" parent="TabContainer/Graphics/ScrollContainerGraphics/VBoxContainerGraphicsSettings"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Graphics/ScrollContainerGraphics/VBoxContainerGraphicsSettings/WindowSetting"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="WindowLabel" type="Label" parent="TabContainer/Graphics/ScrollContainerGraphics/VBoxContainerGraphicsSettings/WindowSetting/HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_mcl84")
+text = "Window"
+
+[node name="WindowModes" type="OptionButton" parent="TabContainer/Graphics/ScrollContainerGraphics/VBoxContainerGraphicsSettings/WindowSetting/HBoxContainer"]
+layout_mode = 2
+item_count = 3
+popup/item_0/text = "Fullscreen"
+popup/item_0/id = 0
+popup/item_1/text = "Borderless"
+popup/item_1/id = 1
+popup/item_2/text = "Windowed"
+popup/item_2/id = 2
+
+[node name="ResolutionSetting" type="MarginContainer" parent="TabContainer/Graphics/ScrollContainerGraphics/VBoxContainerGraphicsSettings"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Graphics/ScrollContainerGraphics/VBoxContainerGraphicsSettings/ResolutionSetting"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="ResolutionLabel" type="Label" parent="TabContainer/Graphics/ScrollContainerGraphics/VBoxContainerGraphicsSettings/ResolutionSetting/HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_mcl84")
+text = "Resolution"
+
+[node name="Resolutions" type="OptionButton" parent="TabContainer/Graphics/ScrollContainerGraphics/VBoxContainerGraphicsSettings/ResolutionSetting/HBoxContainer"]
+layout_mode = 2
+
+[node name="ShadowSetting" type="MarginContainer" parent="TabContainer/Graphics/ScrollContainerGraphics/VBoxContainerGraphicsSettings"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Graphics/ScrollContainerGraphics/VBoxContainerGraphicsSettings/ShadowSetting"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="ShadowLabel" type="Label" parent="TabContainer/Graphics/ScrollContainerGraphics/VBoxContainerGraphicsSettings/ShadowSetting/HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_mcl84")
+text = "Shadow Quality"
+
+[node name="ShadowSetting" type="OptionButton" parent="TabContainer/Graphics/ScrollContainerGraphics/VBoxContainerGraphicsSettings/ShadowSetting/HBoxContainer"]
+layout_mode = 2
+item_count = 2
+popup/item_0/text = "LOW"
+popup/item_0/id = 0
+popup/item_1/text = "DEFAULT"
+popup/item_1/id = 1
+
+[node name="DOFSetting" type="MarginContainer" parent="TabContainer/Graphics/ScrollContainerGraphics/VBoxContainerGraphicsSettings"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Graphics/ScrollContainerGraphics/VBoxContainerGraphicsSettings/DOFSetting"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="DOFLabel" type="Label" parent="TabContainer/Graphics/ScrollContainerGraphics/VBoxContainerGraphicsSettings/DOFSetting/HBoxContainer"]
+layout_mode = 2
+text = "Depth of Field"
+
+[node name="DOFButton" type="CheckBox" parent="TabContainer/Graphics/ScrollContainerGraphics/VBoxContainerGraphicsSettings/DOFSetting/HBoxContainer"]
+layout_mode = 2
+text = "(enables auto saving)"
+clip_text = true
+
+[node name="AASetting" type="MarginContainer" parent="TabContainer/Graphics/ScrollContainerGraphics/VBoxContainerGraphicsSettings"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Graphics/ScrollContainerGraphics/VBoxContainerGraphicsSettings/AASetting"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="AALabel" type="Label" parent="TabContainer/Graphics/ScrollContainerGraphics/VBoxContainerGraphicsSettings/AASetting/HBoxContainer"]
+layout_mode = 2
+text = "Anti-Aliasing"
+
+[node name="AAButton" type="CheckBox" parent="TabContainer/Graphics/ScrollContainerGraphics/VBoxContainerGraphicsSettings/AASetting/HBoxContainer"]
+layout_mode = 2
+text = "(enables auto saving)"
+clip_text = true
+
+[node name="Sounds" type="MarginContainer" parent="TabContainer"]
+visible = false
+layout_mode = 2
+theme = ExtResource("1_mcl84")
+metadata/_tab_index = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Sounds"]
+layout_mode = 2
+
+[node name="VBoxContainerSounds" type="MarginContainer" parent="TabContainer/Sounds/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="GridContainer" type="GridContainer" parent="TabContainer/Sounds/ScrollContainer/VBoxContainerSounds"]
+layout_mode = 2
+theme_override_constants/h_separation = 50
+columns = 2
+
+[node name="MasterVolumeLabel" type="Label" parent="TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer"]
+layout_mode = 2
+theme = ExtResource("1_mcl84")
+text = "Master"
+horizontal_alignment = 2
+
+[node name="VolumeSlider_Master" type="HSlider" parent="TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.3
+step = 0.1
+value = 1.1
+ticks_on_borders = true
+
+[node name="MusicVolumeLabel" type="Label" parent="TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer"]
+layout_mode = 2
+theme = ExtResource("1_mcl84")
+text = "Music"
+horizontal_alignment = 2
+
+[node name="VolumeSlider_Music" type="HSlider" parent="TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.3
+step = 0.1
+value = 0.8
+ticks_on_borders = true
+
+[node name="AmbienceVolumeLabel" type="Label" parent="TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer"]
+layout_mode = 2
+theme = ExtResource("1_mcl84")
+text = "Ambience"
+horizontal_alignment = 2
+
+[node name="VolumeSlider_Ambience" type="HSlider" parent="TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.3
+step = 0.1
+value = 1.1
+ticks_on_borders = true
+
+[node name="SfxVolumeLabel" type="Label" parent="TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer"]
+layout_mode = 2
+theme = ExtResource("1_mcl84")
+text = "SFX"
+horizontal_alignment = 2
+
+[node name="VolumeSlider_SFX" type="HSlider" parent="TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.3
+step = 0.1
+value = 1.0
+ticks_on_borders = true
+
+[node name="UiVolumeLabel" type="Label" parent="TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer"]
+layout_mode = 2
+theme = ExtResource("1_mcl84")
+text = "UI"
+horizontal_alignment = 2
+
+[node name="VolumeSlider_UI" type="HSlider" parent="TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.3
+step = 0.1
+value = 1.0
+ticks_on_borders = true
+
+[node name="BassCutLabel" type="Label" parent="TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer"]
+layout_mode = 2
+text = "Cut Bass"
+horizontal_alignment = 2
+
+[node name="BassCutButton" type="CheckButton" parent="TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer"]
+layout_mode = 2
+
+[node name="BassFreqLabel" type="Label" parent="TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer"]
+layout_mode = 2
+text = "Cut Freq"
+horizontal_alignment = 2
+
+[node name="FrequencySliderBass" type="HSlider" parent="TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+min_value = 20.0
+max_value = 120.0
+step = 10.0
+value = 70.0
+ticks_on_borders = true
+
+[node name="MonoLabel" type="Label" parent="TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer"]
+layout_mode = 2
+text = "Mono"
+horizontal_alignment = 2
+
+[node name="MonoButton" type="CheckButton" parent="TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer"]
+layout_mode = 2
+clip_text = true
+
+[node name="Controls" type="MarginContainer" parent="TabContainer"]
+layout_mode = 2
+metadata/_tab_index = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Controls"]
+layout_mode = 2
+
+[node name="ContainerControls" type="MarginContainer" parent="TabContainer/Controls/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ControlsGraphic" type="Control" parent="TabContainer/Controls/ScrollContainer/ContainerControls"]
+layout_mode = 2
+
+[node name="ControlsGraphicImage" type="Sprite2D" parent="TabContainer/Controls/ScrollContainer/ContainerControls/ControlsGraphic"]
+position = Vector2(841, 832)
+texture = ExtResource("4_np5aw")
+
+[node name="MoveController" type="Label" parent="TabContainer/Controls/ScrollContainer/ContainerControls/ControlsGraphic"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.075
+anchor_top = -3.471
+anchor_right = 1.078
+anchor_bottom = 10.465
+offset_left = 214.875
+offset_top = 973.005
+offset_right = -1341.87
+offset_bottom = -937.075
+theme_override_font_sizes/font_size = 96
+text = "Move"
+horizontal_alignment = 2
+vertical_alignment = 1
+script = ExtResource("3_sg10u")
+font_scale = 0.8
+
+[node name="PauseController" type="Label" parent="TabContainer/Controls/ScrollContainer/ContainerControls/ControlsGraphic"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.075
+anchor_top = -3.471
+anchor_right = 1.078
+anchor_bottom = 10.465
+offset_left = 809.875
+offset_top = 676.005
+offset_right = -746.87
+offset_bottom = -1234.08
+theme_override_font_sizes/font_size = 96
+text = "Pause"
+horizontal_alignment = 1
+vertical_alignment = 2
+script = ExtResource("3_sg10u")
+font_scale = 0.8
+
+[node name="BarkController" type="Label" parent="TabContainer/Controls/ScrollContainer/ContainerControls/ControlsGraphic"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.075
+anchor_top = -3.471
+anchor_right = 1.078
+anchor_bottom = 10.465
+offset_left = 1184.88
+offset_top = 708.005
+offset_right = -118.87
+offset_bottom = -1202.08
+theme_override_font_sizes/font_size = 96
+text = "Bark / Interact"
+vertical_alignment = 2
+script = ExtResource("3_sg10u")
+font_scale = 0.8
+
+[node name="MoveMouse" type="Label" parent="TabContainer/Controls/ScrollContainer/ContainerControls/ControlsGraphic"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.075
+anchor_top = -3.471
+anchor_right = 1.078
+anchor_bottom = 10.465
+offset_left = 366.875
+offset_top = 1744.01
+offset_right = -936.87
+offset_bottom = -166.075
+theme_override_font_sizes/font_size = 96
+text = "Move"
+horizontal_alignment = 2
+script = ExtResource("3_sg10u")
+font_scale = 0.8
+
+[node name="PauseMouse" type="Label" parent="TabContainer/Controls/ScrollContainer/ContainerControls/ControlsGraphic"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.075
+anchor_top = -3.471
+anchor_right = 1.078
+anchor_bottom = 10.465
+offset_left = 382.875
+offset_top = 1615.01
+offset_right = -1116.87
+offset_bottom = -295.075
+theme_override_font_sizes/font_size = 96
+text = "Pause"
+horizontal_alignment = 1
+script = ExtResource("3_sg10u")
+font_scale = 0.8
+
+[node name="BarkMouse" type="Label" parent="TabContainer/Controls/ScrollContainer/ContainerControls/ControlsGraphic"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.075
+anchor_top = -3.471
+anchor_right = 1.078
+anchor_bottom = 10.465
+offset_left = 1028.88
+offset_top = 1406.01
+offset_right = -470.87
+offset_bottom = -504.075
+theme_override_font_sizes/font_size = 96
+text = "Bark / Interact"
+script = ExtResource("3_sg10u")
+font_scale = 0.8
+
+[node name="GridContainer" type="GridContainer" parent="TabContainer/Controls/ScrollContainer/ContainerControls"]
+layout_mode = 2
+theme_override_constants/h_separation = 50
+columns = 2
+
+[node name="MouseSensitivityLabel" type="Label" parent="TabContainer/Controls/ScrollContainer/ContainerControls/GridContainer"]
+layout_mode = 2
+theme = ExtResource("1_mcl84")
+text = "Mouse Sensitivity"
+horizontal_alignment = 2
+
+[node name="MouseSensitivitySlider" type="HSlider" parent="TabContainer/Controls/ScrollContainer/ContainerControls/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+min_value = 0.1
+max_value = 2.0
+step = 0.1
+value = 1.0
+ticks_on_borders = true
+
+[node name="TabButtonLeft" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 46.0
+offset_top = -735.83
+offset_right = 230.0
+offset_bottom = -614.83
+grow_vertical = 2
+icon = ExtResource("4_yb41m")
+
+[node name="TabButtonRight" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -235.0
+offset_top = -735.83
+offset_right = -51.0
+offset_bottom = -614.83
+grow_horizontal = 0
+grow_vertical = 2
+icon = ExtResource("5_np5aw")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 129.0
+offset_top = 1831.0
+offset_right = -132.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Control"]
+layout_mode = 2
+offset_top = 69.5
+offset_right = 404.0
+offset_bottom = 259.5
+
+[node name="BackButton" type="Button" parent="Control/MarginContainer"]
+layout_mode = 2
+text = "Back"
+icon = ExtResource("4_sg10u")
+
+[node name="MarginContainer2" type="MarginContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -471.0
+offset_top = -95.0
+offset_bottom = 95.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="ResetButton" type="Button" parent="Control/MarginContainer2"]
+layout_mode = 2
+text = "Reset"
+icon = ExtResource("5_ygdif")
+
+[connection signal="toggled" from="TabContainer/General/VBoxContainerGeneralSettings/AutoSaveSetting/HBoxContainer/AutoSaveButton" to="." method="_on_auto_save_button_toggled"]
+[connection signal="item_selected" from="TabContainer/Graphics/ScrollContainerGraphics/VBoxContainerGraphicsSettings/WindowSetting/HBoxContainer/WindowModes" to="." method="_on_window_modes_item_selected"]
+[connection signal="item_selected" from="TabContainer/Graphics/ScrollContainerGraphics/VBoxContainerGraphicsSettings/ResolutionSetting/HBoxContainer/Resolutions" to="." method="_on_resolutions_item_selected"]
+[connection signal="item_selected" from="TabContainer/Graphics/ScrollContainerGraphics/VBoxContainerGraphicsSettings/ShadowSetting/HBoxContainer/ShadowSetting" to="." method="_on_shadow_setting_item_selected"]
+[connection signal="toggled" from="TabContainer/Graphics/ScrollContainerGraphics/VBoxContainerGraphicsSettings/DOFSetting/HBoxContainer/DOFButton" to="." method="_on_dof_button_toggled"]
+[connection signal="toggled" from="TabContainer/Graphics/ScrollContainerGraphics/VBoxContainerGraphicsSettings/AASetting/HBoxContainer/AAButton" to="." method="_on_aa_button_toggled"]
+[connection signal="value_changed" from="TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer/VolumeSlider_Master" to="." method="_on_master_volume_slider_value_changed"]
+[connection signal="value_changed" from="TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer/VolumeSlider_Music" to="." method="_on_music_volume_slider_value_changed"]
+[connection signal="value_changed" from="TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer/VolumeSlider_Ambience" to="." method="_on_ambience_volume_slider_value_changed"]
+[connection signal="value_changed" from="TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer/VolumeSlider_SFX" to="." method="_on_sfx_volume_slider_value_changed"]
+[connection signal="value_changed" from="TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer/VolumeSlider_UI" to="." method="_on_ui_volume_slider_value_changed"]
+[connection signal="toggled" from="TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer/BassCutButton" to="." method="_on_bass_cut_button_toggled"]
+[connection signal="value_changed" from="TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer/FrequencySliderBass" to="." method="_on_bass_freq_slider_value_changed"]
+[connection signal="toggled" from="TabContainer/Sounds/ScrollContainer/VBoxContainerSounds/GridContainer/MonoButton" to="." method="_on_audio_mono_button_toggled"]
+[connection signal="value_changed" from="TabContainer/Controls/ScrollContainer/ContainerControls/GridContainer/MouseSensitivitySlider" to="." method="_on_mouse_sensitivity_slider_value_changed"]
+[connection signal="pressed" from="TabButtonLeft" to="." method="_on_tab_button_left_pressed"]
+[connection signal="pressed" from="TabButtonRight" to="." method="_on_tab_button_right_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="Control/MarginContainer2/ResetButton" to="." method="_on_reset_button_pressed"]

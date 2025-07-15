@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8a5wrtrod6c2"]
+
+[ext_resource type="PackedScene" uid="uid://27lgoatebiu" path="res://assets/props/sign_board/PR-sign_board_pin.gltf" id="1_d8d03"]
+
+[node name="PR-sign_board_pin" type="Node3D"]
+
+[node name="PR-sign_board_pin-IMPORT" type="StaticBody3D" parent="." instance=ExtResource("1_d8d03")]

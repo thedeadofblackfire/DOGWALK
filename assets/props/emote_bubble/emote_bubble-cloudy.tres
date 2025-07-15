@@ -1,0 +1,27 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://c0kjoh53bwkwp"]
+
+[ext_resource type="Shader" uid="uid://dj6frawgwo5ry" path="res://source/shaders/paper-interface.gdshader" id="1_fa6i5"]
+[ext_resource type="Texture2D" uid="uid://c8gxvfis8rt2t" path="res://assets/props/emote_bubble/cloudy.png" id="2_fa6i5"]
+
+[resource]
+render_priority = 10
+shader = ExtResource("1_fa6i5")
+shader_parameter/fake_depth = true
+shader_parameter/flip_normals = false
+shader_parameter/paper_color = Color(0.602629, 0.521096, 0.441255, 1)
+shader_parameter/albedo_color = Color(1, 1, 1, 1)
+shader_parameter/albedo_texture = ExtResource("2_fa6i5")
+shader_parameter/normal_strength = 1.0
+shader_parameter/invert_normal = false
+shader_parameter/albedo_texture_size = Vector2i(271, 266)
+shader_parameter/point_size = 0.0
+shader_parameter/specular = 0.5
+shader_parameter/roughness = 0.5
+shader_parameter/metallic = 0.0
+shader_parameter/heightmap_scale = 0.5
+shader_parameter/heightmap_min_layers = 4
+shader_parameter/heightmap_max_layers = 16
+shader_parameter/uv1_scale = Vector3(1, 1, 1)
+shader_parameter/uv1_offset = Vector3(0, 0, 0)
+shader_parameter/uv2_scale = Vector3(1, 1, 1)
+shader_parameter/uv2_offset = Vector3(0, 0, 0)

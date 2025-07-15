@@ -1,0 +1,1332 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 1,
+                    "append_parent_collection": 1,
+                    "asset_name": "LI-tree_stump_002"
+                },
+                "asset_type": "ASSET",
+                "root_type": "STATIC",
+                "asset_id": "69accd380e9d9c36"
+            },
+            "name": "LI-tree_stump_002",
+            "nodes": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 0,
+            "name": "GEO-tree_stump_snow_002",
+            "scale": [
+                2.2485058307647705,
+                2.2485058307647705,
+                2.2485058307647705
+            ],
+            "translation": [
+                0.00012765538122039288,
+                1.6627835035324097,
+                -0.02414904534816742
+            ]
+        },
+        {
+            "children": [
+                0
+            ],
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 1,
+            "name": "GEO-tree_stump_hull_002",
+            "scale": [
+                0.44473981857299805,
+                0.44473981857299805,
+                0.44473981857299805
+            ]
+        },
+        {
+            "mesh": 2,
+            "name": "GEO-tree_stump_center_002",
+            "scale": [
+                0.44473981857299805,
+                0.44473981857299805,
+                0.44473981857299805
+            ]
+        },
+        {
+            "extras": {
+                "booleans": {},
+                "ant_landscape": {}
+            },
+            "mesh": 3,
+            "name": "GEO-tree_stump-root.001",
+            "rotation": [
+                0,
+                -0.35955965518951416,
+                0,
+                0.9331220984458923
+            ],
+            "translation": [
+                0,
+                -0.04038044065237045,
+                0
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 4,
+            "name": "GEO-tree_stump-root_003.001",
+            "rotation": [
+                0,
+                -0.9489771723747253,
+                0,
+                0.31534484028816223
+            ],
+            "translation": [
+                0,
+                -0.050740428268909454,
+                0
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 5,
+            "name": "GEO-tree_stump-root_004.001",
+            "rotation": [
+                -0.021590031683444977,
+                0.5621679425239563,
+                0.008769255131483078,
+                0.8266947865486145
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 6,
+            "name": "GEO-tree_stump-root_004.006",
+            "rotation": [
+                0.0041084992699325085,
+                0.7843512296676636,
+                0.013470015488564968,
+                0.6201571822166443
+            ],
+            "translation": [
+                0.000722542405128479,
+                -0.012943893671035767,
+                -0.003168076276779175
+            ]
+        },
+        {
+            "extras": {
+                "booleans": {},
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.42500001192092896,
+                    "height": 1.5,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                "ant_landscape": {}
+            },
+            "name": "COL-tree_trump_collision_primitive_002",
+            "translation": [
+                0,
+                0.7456914782524109,
+                0
+            ]
+        },
+        {
+            "name": "HLP-leash_point.178",
+            "translation": [
+                -0.002007664181292057,
+                0.4581230580806732,
+                0.41233667731285095
+            ]
+        },
+        {
+            "name": "HLP-leash_point.179",
+            "translation": [
+                0.3080900311470032,
+                0.4467174708843231,
+                0.2863888442516327
+            ]
+        },
+        {
+            "name": "HLP-leash_point.182",
+            "translation": [
+                0.44081729650497437,
+                0.44201377034187317,
+                -0.09830792248249054
+            ]
+        },
+        {
+            "name": "HLP-leash_point.188",
+            "translation": [
+                0.20892365276813507,
+                0.4534302353858948,
+                -0.3788345158100128
+            ]
+        },
+        {
+            "name": "HLP-leash_point.189",
+            "translation": [
+                -0.22612053155899048,
+                0.4534302353858948,
+                -0.3749721944332123
+            ]
+        },
+        {
+            "name": "HLP-leash_point.190",
+            "translation": [
+                -0.4204663932323456,
+                0.4534302353858948,
+                -0.0852331593632698
+            ]
+        },
+        {
+            "name": "HLP-leash_point.192",
+            "translation": [
+                -0.3370554745197296,
+                0.47253692150115967,
+                0.26179903745651245
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "3d06eb07132309da",
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "roughness": 0.5,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "wear_strength": 0.0,
+                    "wear_start": 0.0,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.5,
+                    "wear_distortion_scale": 100.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.15000000596046448,
+                    "normal_use_uv2": 0.0
+                }
+            },
+            "name": "snow_elements",
+            "normalTexture": {
+                "index": 0
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                }
+            }
+        },
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "4e2fb75edc208126",
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "wear_strength": 0.5,
+                    "wear_start": 0.6799999475479126,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.12000000476837158,
+                    "wear_distortion_scale": 100.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.5,
+                    "normal_use_uv2": 1.0
+                }
+            },
+            "name": "tree_stump",
+            "normalTexture": {
+                "index": 2,
+                "texCoord": 1
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 3
+                },
+                "metallicRoughnessTexture": {
+                    "index": 4
+                }
+            }
+        },
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        0.561026394367218,
+                        0.561026394367218,
+                        0.561026394367218,
+                        1.0
+                    ],
+                    "wear_strength": 0.20181818306446075,
+                    "wear_start": 0.6399999856948853,
+                    "wear_end": 1.5,
+                    "wear_distortion_strength": 0.05000004172325134,
+                    "wear_distortion_scale": 84.20000457763672,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.20000000298023224,
+                    "normal_use_uv2": 1.0
+                },
+                "asset_id": "a9b685a5be55a9a6"
+            },
+            "name": "pine_bark-stump",
+            "normalTexture": {
+                "index": 5,
+                "texCoord": 1
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 6
+                },
+                "metallicRoughnessTexture": {
+                    "index": 7
+                }
+            }
+        },
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "4e2fb75edc208126",
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "wear_strength": 0.5,
+                    "wear_start": 0.6799999475479126,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.12000000476837158,
+                    "wear_distortion_scale": 100.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.5,
+                    "normal_use_uv2": 1.0
+                }
+            },
+            "name": "tree_stump",
+            "normalTexture": {
+                "index": 2
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 3
+                },
+                "metallicRoughnessTexture": {
+                    "index": 4
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Plane.002",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "Circle.039",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 4,
+                        "NORMAL": 5,
+                        "TEXCOORD_0": 6,
+                        "TEXCOORD_1": 7,
+                        "COLOR_0": 8
+                    },
+                    "indices": 9,
+                    "material": 1
+                },
+                {
+                    "attributes": {
+                        "POSITION": 10,
+                        "NORMAL": 11,
+                        "TEXCOORD_0": 12,
+                        "TEXCOORD_1": 13,
+                        "COLOR_0": 14
+                    },
+                    "indices": 15,
+                    "material": 2
+                }
+            ]
+        },
+        {
+            "name": "Circle.060",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 16,
+                        "NORMAL": 17,
+                        "TEXCOORD_0": 18,
+                        "COLOR_0": 19
+                    },
+                    "indices": 20,
+                    "material": 3
+                }
+            ]
+        },
+        {
+            "name": "Circle.061",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 21,
+                        "NORMAL": 22,
+                        "TEXCOORD_0": 23,
+                        "TEXCOORD_1": 24,
+                        "COLOR_0": 25
+                    },
+                    "indices": 26,
+                    "material": 2
+                }
+            ]
+        },
+        {
+            "name": "Circle.063",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 27,
+                        "NORMAL": 28,
+                        "TEXCOORD_0": 29,
+                        "TEXCOORD_1": 30,
+                        "COLOR_0": 31
+                    },
+                    "indices": 32,
+                    "material": 2
+                }
+            ]
+        },
+        {
+            "name": "Circle.064",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 33,
+                        "NORMAL": 34,
+                        "TEXCOORD_0": 35,
+                        "TEXCOORD_1": 36,
+                        "COLOR_0": 37
+                    },
+                    "indices": 38,
+                    "material": 2
+                }
+            ]
+        },
+        {
+            "name": "Circle.065",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 39,
+                        "NORMAL": 40,
+                        "TEXCOORD_0": 41,
+                        "TEXCOORD_1": 42,
+                        "COLOR_0": 43
+                    },
+                    "indices": 44,
+                    "material": 2
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        },
+        {
+            "sampler": 0,
+            "source": 2
+        },
+        {
+            "sampler": 0,
+            "source": 3
+        },
+        {
+            "sampler": 0,
+            "source": 4
+        },
+        {
+            "sampler": 0,
+            "source": 5
+        },
+        {
+            "sampler": 0,
+            "source": 6
+        },
+        {
+            "sampler": 0,
+            "source": 7
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/textures/snow_gen_normal-01.png"
+            },
+            "mimeType": "image/png",
+            "name": "snow_gen_normal-01",
+            "uri": "../../../textures/snow_gen_normal-01.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/textures/snow_gen_albedo-01.png"
+            },
+            "mimeType": "image/png",
+            "name": "snow_gen_albedo-01",
+            "uri": "../../../textures/snow_gen_albedo-01.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/textures/paper_rough_medium-normal.png"
+            },
+            "mimeType": "image/png",
+            "name": "paper_rough_medium-normal",
+            "uri": "../../../textures/paper_rough_medium-normal.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/tree_stumps_albedo_01.png"
+            },
+            "mimeType": "image/png",
+            "name": "tree_stumps_albedo_01",
+            "uri": "../../textures/tree_stumps_albedo_01.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/tree_stumps_roughness_01.png"
+            },
+            "mimeType": "image/png",
+            "name": "tree_stumps_roughness_01",
+            "uri": "../../textures/tree_stumps_roughness_01.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/textures/paper_rough_256.png"
+            },
+            "mimeType": "image/png",
+            "name": "paper_rough_256",
+            "uri": "../../../textures/paper_rough_256.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/pine_bark_albedo.png"
+            },
+            "mimeType": "image/png",
+            "name": "pine_bark_albedo",
+            "uri": "../../textures/pine_bark_albedo.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/pine_bark_roughness.png"
+            },
+            "mimeType": "image/png",
+            "name": "pine_bark_roughness",
+            "uri": "../../textures/pine_bark_roughness.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 217,
+            "max": [
+                0.6505545377731323,
+                0.14143039286136627,
+                0.5786914229393005
+            ],
+            "min": [
+                -0.6948292255401611,
+                -0.7168450355529785,
+                -0.6764412522315979
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 217,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 217,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5123,
+            "count": 969,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5126,
+            "count": 119,
+            "max": [
+                0.8436490893363953,
+                2.0293145179748535,
+                0.7853211760520935
+            ],
+            "min": [
+                -0.7704464197158813,
+                1.616039514541626,
+                -0.8025076985359192
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5126,
+            "count": 119,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 6,
+            "componentType": 5126,
+            "count": 119,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 7,
+            "componentType": 5126,
+            "count": 119,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 8,
+            "componentType": 5123,
+            "count": 119,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 9,
+            "componentType": 5123,
+            "count": 411,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 10,
+            "componentType": 5126,
+            "count": 141,
+            "max": [
+                0.9054809212684631,
+                2.0293145179748535,
+                0.8771436214447021
+            ],
+            "min": [
+                -0.8856024742126465,
+                -0.008608262054622173,
+                -0.880480170249939
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 11,
+            "componentType": 5126,
+            "count": 141,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 12,
+            "componentType": 5126,
+            "count": 141,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 13,
+            "componentType": 5126,
+            "count": 141,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 14,
+            "componentType": 5123,
+            "count": 141,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 15,
+            "componentType": 5123,
+            "count": 618,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 16,
+            "componentType": 5126,
+            "count": 72,
+            "max": [
+                0.732837438583374,
+                1.9839240312576294,
+                0.7310689687728882
+            ],
+            "min": [
+                -0.75307697057724,
+                1.5599170923233032,
+                -0.7810786366462708
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 17,
+            "componentType": 5126,
+            "count": 72,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 18,
+            "componentType": 5126,
+            "count": 72,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 19,
+            "componentType": 5123,
+            "count": 72,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 20,
+            "componentType": 5123,
+            "count": 246,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 21,
+            "componentType": 5126,
+            "count": 77,
+            "max": [
+                0.9012421369552612,
+                0.4076702892780304,
+                0.192597433924675
+            ],
+            "min": [
+                0.3441823124885559,
+                0.014313544146716595,
+                -0.20334653556346893
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 22,
+            "componentType": 5126,
+            "count": 77,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 23,
+            "componentType": 5126,
+            "count": 77,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 24,
+            "componentType": 5126,
+            "count": 77,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 25,
+            "componentType": 5123,
+            "count": 77,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 26,
+            "componentType": 5123,
+            "count": 378,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 27,
+            "componentType": 5126,
+            "count": 76,
+            "max": [
+                0.9063439965248108,
+                0.39190173149108887,
+                0.2071399688720703
+            ],
+            "min": [
+                0.33678776025772095,
+                0.008731171488761902,
+                -0.15040704607963562
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 28,
+            "componentType": 5126,
+            "count": 76,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 29,
+            "componentType": 5126,
+            "count": 76,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 30,
+            "componentType": 5126,
+            "count": 76,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 31,
+            "componentType": 5123,
+            "count": 76,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 32,
+            "componentType": 5123,
+            "count": 348,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 33,
+            "componentType": 5126,
+            "count": 61,
+            "max": [
+                0.8059984445571899,
+                0.36739054322242737,
+                0.2177690714597702
+            ],
+            "min": [
+                0.3174934685230255,
+                -0.0010171718895435333,
+                -0.14024628698825836
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 34,
+            "componentType": 5126,
+            "count": 61,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 35,
+            "componentType": 5126,
+            "count": 61,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 36,
+            "componentType": 5126,
+            "count": 61,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 37,
+            "componentType": 5123,
+            "count": 61,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 38,
+            "componentType": 5123,
+            "count": 264,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 39,
+            "componentType": 5126,
+            "count": 64,
+            "max": [
+                0.7096356153488159,
+                0.29649463295936584,
+                0.02576766349375248
+            ],
+            "min": [
+                0.3259258270263672,
+                0.008256551809608936,
+                -0.2534754276275635
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 40,
+            "componentType": 5126,
+            "count": 64,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 41,
+            "componentType": 5126,
+            "count": 64,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 42,
+            "componentType": 5126,
+            "count": 64,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 43,
+            "componentType": 5123,
+            "count": 64,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 44,
+            "componentType": 5123,
+            "count": 276,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 2604,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2604,
+            "byteOffset": 2604,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1736,
+            "byteOffset": 5208,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1938,
+            "byteOffset": 6944,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1428,
+            "byteOffset": 8884,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1428,
+            "byteOffset": 10312,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 952,
+            "byteOffset": 11740,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 952,
+            "byteOffset": 12692,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 952,
+            "byteOffset": 13644,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 822,
+            "byteOffset": 14596,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1692,
+            "byteOffset": 15420,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1692,
+            "byteOffset": 17112,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1128,
+            "byteOffset": 18804,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1128,
+            "byteOffset": 19932,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1128,
+            "byteOffset": 21060,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1236,
+            "byteOffset": 22188,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 864,
+            "byteOffset": 23424,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 864,
+            "byteOffset": 24288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 576,
+            "byteOffset": 25152,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 576,
+            "byteOffset": 25728,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 492,
+            "byteOffset": 26304,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 924,
+            "byteOffset": 26796,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 924,
+            "byteOffset": 27720,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 616,
+            "byteOffset": 28644,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 616,
+            "byteOffset": 29260,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 616,
+            "byteOffset": 29876,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 756,
+            "byteOffset": 30492,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 912,
+            "byteOffset": 31248,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 912,
+            "byteOffset": 32160,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 608,
+            "byteOffset": 33072,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 608,
+            "byteOffset": 33680,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 608,
+            "byteOffset": 34288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 696,
+            "byteOffset": 34896,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 732,
+            "byteOffset": 35592,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 732,
+            "byteOffset": 36324,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 488,
+            "byteOffset": 37056,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 488,
+            "byteOffset": 37544,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 488,
+            "byteOffset": 38032,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 528,
+            "byteOffset": 38520,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 768,
+            "byteOffset": 39048,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 768,
+            "byteOffset": 39816,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 512,
+            "byteOffset": 40584,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 512,
+            "byteOffset": 41096,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 512,
+            "byteOffset": 41608,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 552,
+            "byteOffset": 42120,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 42672,
+            "uri": "LI-tree_stump_002.bin"
+        }
+    ]
+}

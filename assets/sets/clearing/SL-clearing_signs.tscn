@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwgfx7uwikpc8"]
+
+[ext_resource type="PackedScene" uid="uid://c4ggt4p2iisbr" path="res://assets/sets/clearing_blocking/clearing-blocking/SL-clearing_signs.gltf" id="1_ynp1y"]
+
+[node name="SL-clearing_signs" type="Node3D"]
+
+[node name="SL-clearing_signs-IMPORT" type="StaticBody3D" parent="." instance=ExtResource("1_ynp1y")]

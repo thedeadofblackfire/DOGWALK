@@ -1,0 +1,53 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dy4dn874ee4ml"
+path="res://.godot/imported/LI-birch_tree_003.gltf-c5b02468c507cd8447b7a5fc7a7211f4.scn"
+
+[deps]
+
+source_file="res://assets/lib/trees/birch_trees/LI-birch_tree_003.gltf"
+dest_files=["res://.godot/imported/LI-birch_tree_003.gltf-c5b02468c507cd8447b7a5fc7a7211f4.scn"]
+
+[params]
+
+nodes/root_type="StaticBody3D"
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path="uid://gtfffogvk6gb"
+_subresources={
+"materials": {
+"birch_tree": {
+"use_external/enabled": true,
+"use_external/path": "res://assets/lib/trees/birch_tree.tres"
+},
+"birch_tree_fade": {
+"use_external/enabled": true,
+"use_external/path": "res://assets/lib/trees/birch_tree_fade.tres"
+},
+"tree_stump_fade": {
+"use_external/enabled": true,
+"use_external/path": "res://assets/lib/trees/tree_stump_fade.tres"
+}
+}
+}
+file_path="res://assets/lib/trees/birch_trees/LI-birch_tree_003.gltf"
+gltf/naming_version=0
+gltf/embedded_image_handling=1

@@ -1,0 +1,753 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 1,
+                    "append_parent_collection": 1,
+                    "asset_name": "LI-stone_plateau_002"
+                },
+                "asset_type": "ASSET",
+                "root_type": "STATIC",
+                "asset_id": "8f92b93f1cf721c7"
+            },
+            "name": "LI-stone_plateau_002",
+            "nodes": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 0,
+            "name": "GEO-stone_plateau_002"
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 1,
+            "name": "GEO-stone_plateau_snow_002",
+            "translation": [
+                0,
+                -0.16325229406356812,
+                0
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {},
+                "booleans": {
+                    "slice_of": {}
+                },
+                "cloudrig_prefs": {},
+                "cloudrig": {
+                    "generator": {
+                        "target_rig": {},
+                        "custom_script": {},
+                        "widget_collection": {},
+                        "test_action": {}
+                    }
+                },
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 1.6949999332427979,
+                    "height": 2.259999990463257,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.003",
+            "translation": [
+                1.5308680534362793,
+                0.9368126392364502,
+                0.1920332908630371
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {},
+                "booleans": {
+                    "slice_of": {}
+                },
+                "cloudrig_prefs": {},
+                "cloudrig": {
+                    "generator": {
+                        "target_rig": {},
+                        "custom_script": {},
+                        "widget_collection": {},
+                        "test_action": {}
+                    }
+                },
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 1.680999755859375,
+                    "height": 2.259999990463257,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.004",
+            "translation": [
+                -0.38666433095932007,
+                0.9368126392364502,
+                -0.10734346508979797
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {},
+                "booleans": {
+                    "slice_of": {}
+                },
+                "cloudrig_prefs": {},
+                "cloudrig": {
+                    "generator": {
+                        "target_rig": {},
+                        "custom_script": {},
+                        "widget_collection": {},
+                        "test_action": {}
+                    }
+                },
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 1.4519997835159302,
+                    "height": 2.259999990463257,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.005",
+            "translation": [
+                -1.7784156799316406,
+                0.9368126392364502,
+                0.06741589307785034
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {},
+                "booleans": {
+                    "slice_of": {}
+                },
+                "cloudrig_prefs": {},
+                "cloudrig": {
+                    "generator": {
+                        "target_rig": {},
+                        "custom_script": {},
+                        "widget_collection": {},
+                        "test_action": {}
+                    }
+                },
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 1.4209997653961182,
+                    "height": 2.259999990463257,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.006",
+            "translation": [
+                0.3089844882488251,
+                0.9368126392364502,
+                -0.63042813539505
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {},
+                "booleans": {
+                    "slice_of": {}
+                },
+                "cloudrig_prefs": {},
+                "cloudrig": {
+                    "generator": {
+                        "target_rig": {},
+                        "custom_script": {},
+                        "widget_collection": {},
+                        "test_action": {}
+                    }
+                },
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 1.2009997367858887,
+                    "height": 2.259999990463257,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.007",
+            "translation": [
+                0.7727503180503845,
+                0.9368126392364502,
+                0.766261875629425
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.011",
+            "translation": [
+                0.45631539821624756,
+                0.31750714778900146,
+                1.8678419589996338
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.012",
+            "translation": [
+                -1.9290071725845337,
+                0.3310602605342865,
+                1.4335625171661377
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.013",
+            "translation": [
+                -2.856201410293579,
+                0.2904013991355896,
+                0.834156334400177
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.014",
+            "translation": [
+                -3.0830576419830322,
+                0.28498023748397827,
+                -0.7293737530708313
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.015",
+            "translation": [
+                0.055147647857666016,
+                0.3120861053466797,
+                -2.0619518756866455
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.016",
+            "translation": [
+                1.856374740600586,
+                0.30771854519844055,
+                -1.3099796772003174
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.017",
+            "translation": [
+                2.7523255348205566,
+                0.30105727910995483,
+                -0.9589083194732666
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.018",
+            "translation": [
+                2.8121912479400635,
+                0.2943960130214691,
+                0.9688339233398438
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.019",
+            "translation": [
+                3.1359636783599854,
+                0.2877344787120819,
+                0.13949674367904663
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.020",
+            "translation": [
+                1.950810432434082,
+                0.36434000730514526,
+                1.7582679986953735
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.021",
+            "translation": [
+                1.2280546426773071,
+                0.3243720531463623,
+                1.8675233125686646
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "wear_strength": 1.0,
+                    "wear_start": 0.23000000417232513,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 1.0,
+                    "wear_distortion_scale": 0.010002285242080688,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.20000000298023224,
+                    "normal_use_uv2": 1.0
+                },
+                "asset_id": "662f071de5ca3519"
+            },
+            "name": "stone_wall_snowy",
+            "normalTexture": {
+                "index": 0,
+                "texCoord": 1
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                },
+                "metallicRoughnessTexture": {
+                    "index": 2
+                }
+            }
+        },
+        {
+            "alphaMode": "BLEND",
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "roughness": 0.800000011920929,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "wear_strength": 0.0,
+                    "wear_start": 0.0,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.5,
+                    "wear_distortion_scale": 100.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.10000000149011612,
+                    "normal_use_uv2": 1.0
+                },
+                "asset_id": "c1f27af263b4e3e9"
+            },
+            "name": "snow_edge_plateau",
+            "normalTexture": {
+                "index": 3,
+                "texCoord": 1
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 4
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Cube.001",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2,
+                        "TEXCOORD_1": 3,
+                        "COLOR_0": 4
+                    },
+                    "indices": 5,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "Cube.002",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 6,
+                        "NORMAL": 7,
+                        "TEXCOORD_0": 8,
+                        "TEXCOORD_1": 9,
+                        "COLOR_0": 10
+                    },
+                    "indices": 11,
+                    "material": 1
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        },
+        {
+            "sampler": 0,
+            "source": 2
+        },
+        {
+            "sampler": 0,
+            "source": 3
+        },
+        {
+            "sampler": 0,
+            "source": 4
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/textures/paper_rough_256.png"
+            },
+            "mimeType": "image/png",
+            "name": "paper_rough_256",
+            "uri": "../../textures/paper_rough_256.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/cliff_albedo_02.png"
+            },
+            "mimeType": "image/png",
+            "name": "cliff_albedo_02",
+            "uri": "../textures/cliff_albedo_02.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/cliff_roughness_01.png"
+            },
+            "mimeType": "image/png",
+            "name": "cliff_roughness_01",
+            "uri": "../textures/cliff_roughness_01.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/textures/paper_rough_medium-normal.png"
+            },
+            "mimeType": "image/png",
+            "name": "paper_rough_medium-normal",
+            "uri": "../../textures/paper_rough_medium-normal.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/stone_plateau_albedo.png"
+            },
+            "mimeType": "image/png",
+            "name": "stone_plateau_albedo",
+            "uri": "../stone_plateau_albedo.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 287,
+            "max": [
+                3.1842615604400635,
+                1.9182945489883423,
+                1.9350898265838623
+            ],
+            "min": [
+                -3.1801390647888184,
+                -0.02795645222067833,
+                -2.20754337310791
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 287,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 287,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5126,
+            "count": 287,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5123,
+            "count": 287,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5123,
+            "count": 561,
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 6,
+            "componentType": 5126,
+            "count": 919,
+            "max": [
+                3.1624088287353516,
+                2.2534327507019043,
+                1.8745230436325073
+            ],
+            "min": [
+                -3.038205862045288,
+                0.9821619391441345,
+                -1.7183829545974731
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 7,
+            "componentType": 5126,
+            "count": 919,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 8,
+            "componentType": 5126,
+            "count": 919,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 9,
+            "componentType": 5126,
+            "count": 919,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 10,
+            "componentType": 5123,
+            "count": 919,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 11,
+            "componentType": 5123,
+            "count": 2058,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 3444,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 3444,
+            "byteOffset": 3444,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2296,
+            "byteOffset": 6888,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2296,
+            "byteOffset": 9184,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2296,
+            "byteOffset": 11480,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1122,
+            "byteOffset": 13776,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 11028,
+            "byteOffset": 14900,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 11028,
+            "byteOffset": 25928,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 7352,
+            "byteOffset": 36956,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 7352,
+            "byteOffset": 44308,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 7352,
+            "byteOffset": 51660,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 4116,
+            "byteOffset": 59012,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 63128,
+            "uri": "LI-stone_plateau_002.bin"
+        }
+    ]
+}

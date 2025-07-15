@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bw6y1y17rqlev"]
+
+[ext_resource type="PackedScene" uid="uid://dwjl7s11ntmq5" path="res://assets/props/traffic_cone/PR-traffic_cone.gltf" id="1_ac8rg"]
+[ext_resource type="Script" uid="uid://cgvpqscmnb7oi" path="res://source/utility/collectable_item.gd" id="1_q8mdb"]
+[ext_resource type="AnimationLibrary" uid="uid://dnouumhs5g4k7" path="res://assets/props/traffic_cone/PR-traffic_cone-anim_lib.tres" id="3_o6ttr"]
+
+[node name="PR-traffic_cone" type="Node3D"]
+
+[node name="PR-traffic_cone-IMPORT" parent="." node_paths=PackedStringArray("collision_shape", "skeleton", "anim_player") instance=ExtResource("1_ac8rg")]
+script = ExtResource("1_q8mdb")
+item_id = 14
+collision_shape = NodePath("COL-collision_primitive")
+skeleton = NodePath("RIG-traffic_cone/Skeleton3D")
+anim_player = NodePath("../AnimationPlayer")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../PR-traffic_cone-IMPORT")
+libraries = {
+&"PR-traffic_cone-anim_lib": ExtResource("3_o6ttr")
+}

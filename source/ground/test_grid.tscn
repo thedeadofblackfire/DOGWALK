@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://uuev1x62rdwc"]
+
+[ext_resource type="Texture2D" uid="uid://dyw7jmoirjg4m" path="res://assets/testing/texture_06_v2.png" id="1_ckf18"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_c0epy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tvbj8"]
+albedo_color = Color(0.377919, 0.377919, 0.377919, 1)
+albedo_texture = ExtResource("1_ckf18")
+roughness = 0.94
+rim_enabled = true
+rim = 0.61
+rim_tint = 0.58
+uv1_scale = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+uv1_world_triplanar = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_efyh1"]
+material = SubResource("StandardMaterial3D_tvbj8")
+
+[node name="TestGrid" type="StaticBody3D"]
+collision_mask = 15
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("WorldBoundaryShape3D_c0epy")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1306.38, 0, 0, 0, 1306.38, 0, 0, 0, 1306.38, 0, 0, 0)
+mesh = SubResource("PlaneMesh_efyh1")

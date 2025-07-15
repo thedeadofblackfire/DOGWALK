@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvcsc6kwmthux"]
+
+[ext_resource type="Script" uid="uid://ckphts041efmo" path="res://source/entities/player_entities/camera.gd" id="1_2lr7p"]
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_briqn"]
+dof_blur_far_distance = 13.0
+dof_blur_far_transition = -1.0
+dof_blur_near_enabled = true
+dof_blur_near_distance = 8.0
+dof_blur_amount = 0.15
+
+[node name="Camera" type="Node3D" node_paths=PackedStringArray("camera_pivot", "camera3D") groups=["Signaling"]]
+script = ExtResource("1_2lr7p")
+camera_pivot = NodePath("CameraPivot")
+camera3D = NodePath("CameraPivot/Camera3D")
+
+[node name="CameraPivot" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10.781)
+cull_mask = 1047551
+attributes = SubResource("CameraAttributesPractical_briqn")
+fov = 60.0
+far = 25.0

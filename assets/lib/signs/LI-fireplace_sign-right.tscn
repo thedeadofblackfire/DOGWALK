@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://d382lnhf0tqde"]
+
+[ext_resource type="PackedScene" path="res://assets/lib/signs/LI-fireplace_sign-right.gltf" id="1_qkq4t"]
+
+[node name="LI-fireplace_sign-right" type="Node3D"]
+
+[node name="LI-fireplace_sign-right-IMPORT" type="StaticBody3D" parent="." instance=ExtResource("1_qkq4t")]

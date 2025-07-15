@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://ccwm041fgkrcp"]
+
+[ext_resource type="PackedScene" path="res://assets/sets/fence/SL-fence-boulders.gltf" id="1_t7nqj"]
+
+[node name="SL-fence-boulders" type="Node3D"]
+
+[node name="SL-fence-boulders-IMPORT" type="Area3D" parent="." instance=ExtResource("1_t7nqj")]

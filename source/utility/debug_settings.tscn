@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ojbcb2e70q4i"]
+
+[ext_resource type="Script" uid="uid://cdjmwcnqgs7oe" path="res://source/utility/debug_settings.gd" id="1_gptjx"]
+
+[node name="DebugSettings" type="Node"]
+script = ExtResource("1_gptjx")

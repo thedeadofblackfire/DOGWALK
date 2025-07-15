@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cn56mkq3dkmn7"]
+
+[ext_resource type="PackedScene" uid="uid://bkx6v4bgi46tg" path="res://assets/lib/boulders/boulders_small/LI-boulder_small_005.gltf" id="1_50ru6"]
+[ext_resource type="Script" uid="uid://dfsl85ryumbwu" path="res://source/obstacles/rocks.gd" id="2_ayi1w"]
+
+[node name="LI-boulder_small_005" type="Node3D"]
+
+[node name="LI-boulder_small_005-IMPORT" type="Area3D" parent="." instance=ExtResource("1_50ru6")]
+script = ExtResource("2_ayi1w")

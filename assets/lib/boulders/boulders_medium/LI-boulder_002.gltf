@@ -1,0 +1,522 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 1,
+                    "append_parent_collection": 1,
+                    "asset_name": "LI-boulder_002"
+                },
+                "asset_type": "ASSET",
+                "root_type": "STATIC",
+                "asset_id": "fd952c5800f8048c"
+            },
+            "name": "LI-boulder_002",
+            "nodes": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 0,
+            "name": "GEO-boulder_002"
+        },
+        {
+            "extras": {
+                "booleans": {},
+                "ant_landscape": {},
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.8109999895095825,
+                    "height": 1.6719999313354492,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.005",
+            "translation": [
+                0.015142295509576797,
+                0.6959453821182251,
+                -0.02550172433257103
+            ]
+        },
+        {
+            "extras": {
+                "booleans": {},
+                "ant_landscape": {},
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.47200000286102295,
+                    "height": 1.6719999313354492,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.006",
+            "translation": [
+                0.4852137267589569,
+                0.6959453821182251,
+                0.020719513297080994
+            ]
+        },
+        {
+            "extras": {
+                "booleans": {},
+                "ant_landscape": {},
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.6019999980926514,
+                    "height": 1.6719999313354492,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.007",
+            "translation": [
+                -0.3595479726791382,
+                0.6959453821182251,
+                -0.10904060304164886
+            ]
+        },
+        {
+            "extras": {
+                "booleans": {},
+                "ant_landscape": {},
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.42899996042251587,
+                    "height": 1.6719999313354492,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.008",
+            "translation": [
+                -0.1044793576002121,
+                0.6959453821182251,
+                0.41391003131866455
+            ]
+        },
+        {
+            "extras": {
+                "booleans": {},
+                "ant_landscape": {},
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.5169999599456787,
+                    "height": 1.6719999313354492,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.009",
+            "translation": [
+                -0.2384619116783142,
+                0.6959453821182251,
+                -0.45177674293518066
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.017",
+            "rotation": [
+                0,
+                0.1655300110578537,
+                0,
+                0.9862048029899597
+            ],
+            "translation": [
+                0.3397834599018097,
+                0.45502230525016785,
+                0.5472455024719238
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.021",
+            "rotation": [
+                0,
+                0.1655300110578537,
+                0,
+                0.9862048029899597
+            ],
+            "translation": [
+                -0.19091254472732544,
+                0.28676968812942505,
+                0.804140031337738
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.022",
+            "rotation": [
+                0,
+                0.1655300110578537,
+                0,
+                0.9862048029899597
+            ],
+            "translation": [
+                -0.7920332551002502,
+                0.4018787145614624,
+                0.11194256693124771
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.023",
+            "rotation": [
+                0,
+                0.1655300110578537,
+                0,
+                0.9862048029899597
+            ],
+            "translation": [
+                -0.6871097087860107,
+                0.3584419786930084,
+                0.4032307267189026
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.025",
+            "rotation": [
+                0,
+                0.1655300110578537,
+                0,
+                0.9862048029899597
+            ],
+            "translation": [
+                -0.8614028096199036,
+                0.45743995904922485,
+                -0.3177427649497986
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.026",
+            "rotation": [
+                0,
+                0.39924609661102295,
+                0,
+                0.9168437719345093
+            ],
+            "translation": [
+                -0.4972575306892395,
+                0.39766407012939453,
+                -0.610099732875824
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.028",
+            "rotation": [
+                0,
+                0.1655300110578537,
+                0,
+                0.9862048029899597
+            ],
+            "translation": [
+                0.10823526978492737,
+                0.37401944398880005,
+                -0.7440869212150574
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.029",
+            "rotation": [
+                0,
+                -0.31337279081344604,
+                0,
+                0.9496302008628845
+            ],
+            "translation": [
+                0.6929416656494141,
+                0.39299049973487854,
+                -0.350480318069458
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.121",
+            "rotation": [
+                0,
+                0.1655300110578537,
+                0,
+                0.9862048029899597
+            ],
+            "translation": [
+                0.8395328521728516,
+                0.4429677426815033,
+                0.042354948818683624
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "584980e58f667fce",
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "roughness": 0.4000000059604645,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "wear_strength": 0.0,
+                    "wear_start": 0.15000000596046448,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.10000000149011612,
+                    "wear_distortion_scale": 64.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.20000000298023224,
+                    "normal_use_uv2": 1.0
+                }
+            },
+            "name": "boulder_cut",
+            "normalTexture": {
+                "index": 0,
+                "texCoord": 1
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "boulders_albedo_01.002",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2,
+                        "TEXCOORD_1": 3,
+                        "COLOR_0": 4
+                    },
+                    "indices": 5,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/textures/paper_rough_256.png"
+            },
+            "mimeType": "image/png",
+            "name": "paper_rough_256",
+            "uri": "../../../textures/paper_rough_256.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/boulders_cut_albedo.png"
+            },
+            "mimeType": "image/png",
+            "name": "boulders_cut_albedo",
+            "uri": "../../textures/boulders_cut_albedo.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 733,
+            "max": [
+                0.9752274751663208,
+                0.7120387554168701,
+                0.8371782898902893
+            ],
+            "min": [
+                -0.9626851081848145,
+                0.002794939558953047,
+                -0.9876689314842224
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 733,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 733,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5126,
+            "count": 733,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5123,
+            "count": 733,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5123,
+            "count": 1584,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 8796,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 8796,
+            "byteOffset": 8796,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 5864,
+            "byteOffset": 17592,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 5864,
+            "byteOffset": 23456,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 5864,
+            "byteOffset": 29320,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 3168,
+            "byteOffset": 35184,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 38352,
+            "uri": "LI-boulder_002.bin"
+        }
+    ]
+}

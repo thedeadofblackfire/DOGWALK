@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://da4efo6l4bx04"]
+
+[ext_resource type="PackedScene" uid="uid://bvwjsqjst3d6x" path="res://assets/lib/trees/pine_leaves/LI-tree_foliage-square_001.gltf" id="1_4j24t"]
+
+[node name="LI-tree_foliage-square_001" type="Node3D"]
+
+[node name="LI-tree_foliage-square_001-IMPORT" type="StaticBody3D" parent="." instance=ExtResource("1_4j24t")]

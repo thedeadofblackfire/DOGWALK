@@ -1,0 +1,271 @@
+[gd_scene load_steps=25 format=3 uid="uid://cpdxjng6h6jet"]
+
+[ext_resource type="PackedScene" uid="uid://6uq8ndnl1t7e" path="res://source/user_interface/old_mouse_cursor.tscn" id="1_atwg3"]
+[ext_resource type="PackedScene" uid="uid://uuev1x62rdwc" path="res://source/ground/test_grid.tscn" id="1_j18ub"]
+[ext_resource type="PackedScene" uid="uid://d04q83ru8ixv5" path="res://source/entities/player.tscn" id="2_cc8xt"]
+[ext_resource type="PackedScene" uid="uid://cj8gc1rr7pxee" path="res://assets/lib/boulders/boulders_medium/LI-boulder_001.tscn" id="3_onhup"]
+[ext_resource type="PackedScene" uid="uid://cme1kgdkmknlg" path="res://assets/lib/bushes/bushes_medium/LI-bush_001.tscn" id="4_atwg3"]
+[ext_resource type="PackedScene" uid="uid://c3tnfik1ix0yj" path="res://assets/lib/snow/ripped_snow_piles/LI-snow_ripped_pile_001.tscn" id="5_vcgqr"]
+[ext_resource type="PackedScene" uid="uid://bktwolrlweakh" path="res://assets/lib/trees/pine_trees/LI-pine_tree_001.tscn" id="6_rhuxk"]
+[ext_resource type="PackedScene" uid="uid://cu6gjbtmj6ei4" path="res://assets/lib/shrubs_and_grass/bushlets/LI-bush_small_flat_002.tscn" id="8_vcgqr"]
+[ext_resource type="PackedScene" uid="uid://dl40jf3lyg03i" path="res://assets/props/tennis_ball/PR-tennis_ball.tscn" id="9_jv6j0"]
+[ext_resource type="PackedScene" uid="uid://lm1mcout5ae3" path="res://assets/props/snowman/PR-snowman.tscn" id="10_7ur24"]
+[ext_resource type="PackedScene" uid="uid://bw6y1y17rqlev" path="res://assets/props/traffic_cone/PR-traffic_cone.tscn" id="10_mrkg7"]
+[ext_resource type="PackedScene" uid="uid://cmel4270aacuc" path="res://assets/props/shovel/PR-shovel.tscn" id="11_k107x"]
+[ext_resource type="PackedScene" uid="uid://bcqkd6f2hpk7x" path="res://assets/props/ear_muffs/PR-ear_muffs.tscn" id="12_hrolx"]
+[ext_resource type="PackedScene" uid="uid://ct7x7fjrtg8va" path="res://source/entities/camera_magnet_zone.tscn" id="14_mrkg7"]
+[ext_resource type="PackedScene" uid="uid://q1rgofw5ru8p" path="res://assets/lib/trees/logs/LI-log_003.tscn" id="16_hrolx"]
+[ext_resource type="Script" uid="uid://cjmmyghe63y22" path="res://source/utility/light_area.gd" id="17_27wd0"]
+[ext_resource type="PackedScene" uid="uid://c2276tusne3r" path="res://assets/lib/trees/tree_stumps/LI-tree_stump_001.tscn" id="17_idrln"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_onhup"]
+sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+
+[sub_resource type="Sky" id="Sky_atwg3"]
+sky_material = SubResource("ProceduralSkyMaterial_onhup")
+
+[sub_resource type="Environment" id="Environment_vcgqr"]
+background_mode = 2
+sky = SubResource("Sky_atwg3")
+tonemap_mode = 2
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_7ur24"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_qtcdg"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_idrln"]
+radius = 3.07178
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_hrolx"]
+radius = 1.79883
+
+[node name="AnimationTesting" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_vcgqr")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.615662, 0.72697, -0.304098, 0, 0.385906, 0.922538, 0.788011, -0.567971, 0.237588, 0, 0, 0)
+shadow_enabled = true
+
+[node name="UI" parent="." instance=ExtResource("1_atwg3")]
+display_debug_text = true
+
+[node name="TestGrid" parent="." instance=ExtResource("1_j18ub")]
+
+[node name="LI-boulder_001" parent="." instance=ExtResource("3_onhup")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.9722, 0.0147879, 3.08197)
+
+[node name="LI-bush_001" parent="." instance=ExtResource("4_atwg3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.87958, 0.013025, -0.488414)
+
+[node name="LI-bush_002" parent="." instance=ExtResource("4_atwg3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.2129, 0.013025, -1.61546)
+
+[node name="LI-snow_ripped_pile_001" parent="." instance=ExtResource("5_vcgqr")]
+transform = Transform3D(2.72494, 0, 0, 0, 0.999999, 0, 0, 0, 2.65341, -8.75488, 0.0113764, 2.03094)
+
+[node name="LI-snow_ripped_pile_002" parent="." instance=ExtResource("5_vcgqr")]
+transform = Transform3D(2.72494, 0, 0, 0, 0.999999, 0, 0, 0, 2.65341, -11.4693, 0.0113764, 2.03094)
+
+[node name="LI-snow_ripped_pile_003" parent="." instance=ExtResource("5_vcgqr")]
+transform = Transform3D(2.72494, 0, 0, 0, 0.999999, 0, 0, 0, 2.65341, -14.1254, 0.0113764, 2.03094)
+
+[node name="LI-snow_ripped_pile_004" parent="." instance=ExtResource("5_vcgqr")]
+transform = Transform3D(2.72494, 0, 0, 0, 0.999999, 0, 0, 0, 2.65341, -16.3203, 0.0113764, 2.03094)
+
+[node name="LI-snow_ripped_pile_005" parent="." instance=ExtResource("5_vcgqr")]
+transform = Transform3D(2.72494, 0, 0, 0, 0.999999, 0, 0, 0, 2.65341, -21.3847, 0.0113764, 2.03094)
+
+[node name="LI-snow_ripped_pile_007" parent="." instance=ExtResource("5_vcgqr")]
+transform = Transform3D(2.72494, 0, 0, 0, 0.999999, 0, 0, 0, 2.65341, -23.7529, 0.0113764, 2.03094)
+
+[node name="LI-snow_ripped_pile_008" parent="." instance=ExtResource("5_vcgqr")]
+transform = Transform3D(2.72494, 0, 0, 0, 0.999999, 0, 0, 0, 2.65341, -8.75488, 0.0113764, 5.66853)
+
+[node name="LI-snow_ripped_pile_009" parent="." instance=ExtResource("5_vcgqr")]
+transform = Transform3D(2.72494, 0, 0, 0, 0.999999, 0, 0, 0, 2.65341, -11.4693, 0.0113764, 5.66853)
+
+[node name="LI-snow_ripped_pile_010" parent="." instance=ExtResource("5_vcgqr")]
+transform = Transform3D(2.72494, 0, 0, 0, 0.999999, 0, 0, 0, 2.65341, -14.1254, 0.0113764, 5.66853)
+
+[node name="LI-snow_ripped_pile_011" parent="." instance=ExtResource("5_vcgqr")]
+transform = Transform3D(2.72494, 0, 0, 0, 0.999999, 0, 0, 0, 2.65341, -16.3203, 0.0113764, 5.66853)
+
+[node name="LI-snow_ripped_pile_012" parent="." instance=ExtResource("5_vcgqr")]
+transform = Transform3D(2.72494, 0, 0, 0, 0.999999, 0, 0, 0, 2.65341, -21.3847, 0.0113764, 5.66853)
+
+[node name="LI-snow_ripped_pile_013" parent="." instance=ExtResource("5_vcgqr")]
+transform = Transform3D(2.72494, 0, 0, 0, 0.999999, 0, 0, 0, 2.65341, -23.7529, 0.0113764, 5.66853)
+
+[node name="LI-snow_ripped_pile_006" parent="." instance=ExtResource("5_vcgqr")]
+transform = Transform3D(2.72494, 0, 0, 0, 0.999999, 0, 0, 0, 2.65341, -18.9598, 0.0113764, 2.03094)
+
+[node name="LI-snow_ripped_pile_014" parent="." instance=ExtResource("5_vcgqr")]
+transform = Transform3D(2.72494, 0, 0, 0, 0.999999, 0, 0, 0, 2.65341, -18.9598, 0.0113764, 5.58027)
+
+[node name="LI-pine_tree_001" parent="." instance=ExtResource("6_rhuxk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.75845, 0.0910535, 12.0022)
+
+[node name="LI-bush_small_flat_002" parent="." instance=ExtResource("8_vcgqr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.110238, 0.0259523, 7.4978)
+
+[node name="LI-bush_small_flat_003" parent="." instance=ExtResource("8_vcgqr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.03238, 0.0259523, 9.74863)
+
+[node name="LI-bush_small_flat_004" parent="." instance=ExtResource("8_vcgqr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.695592, 0.0259523, 11.9974)
+
+[node name="LI-bush_small_flat_005" parent="." instance=ExtResource("8_vcgqr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.851515, 0.0259523, 13.9647)
+
+[node name="LI-bush_small_flat_006" parent="." instance=ExtResource("8_vcgqr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.459688, 0.0259523, 15.8249)
+
+[node name="LI-bush_small_flat_007" parent="." instance=ExtResource("8_vcgqr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.41409, 0.0259528, 18.062)
+
+[node name="PR-snowman" parent="." instance=ExtResource("10_7ur24")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.147, 0, -8.51)
+
+[node name="Player" parent="." instance=ExtResource("2_cc8xt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.421278, 0, 1.19583)
+maxmimum_leash_length = 6.0
+
+[node name="Node3D" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.92604, 0, -8.62488)
+
+[node name="PR-tennis_ball" parent="Node3D" instance=ExtResource("9_jv6j0")]
+
+[node name="Node3D2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.239339, 0, -14.8264)
+
+[node name="PR-traffic_cone" parent="Node3D2" instance=ExtResource("10_mrkg7")]
+
+[node name="Node3D3" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.56948, 0, -17.0133)
+
+[node name="PR-shovel" parent="Node3D3" instance=ExtResource("11_k107x")]
+
+[node name="Node3D4" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.1649, 0, -15.0223)
+
+[node name="PR-ear_muffs" parent="Node3D4" instance=ExtResource("12_hrolx")]
+
+[node name="non_wall_collision" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.8809, 9.53674e-07, 5.42871)
+collision_layer = 64
+collision_mask = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="non_wall_collision"]
+shape = SubResource("CylinderShape3D_7ur24")
+debug_color = Color(0.937255, 0.0862745, 0.576471, 0.964706)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="non_wall_collision"]
+transform = Transform3D(1, 0, 0, 0, 0.275909, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("CylinderMesh_qtcdg")
+
+[node name="non_wall_collision2" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9374, 9.53674e-07, 6.08207)
+collision_layer = 64
+collision_mask = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="non_wall_collision2"]
+shape = SubResource("CylinderShape3D_7ur24")
+debug_color = Color(0.937255, 0.0862745, 0.576471, 0.964706)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="non_wall_collision2"]
+transform = Transform3D(1, 0, 0, 0, 0.275909, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("CylinderMesh_qtcdg")
+
+[node name="CameraMagnetZone" parent="." instance=ExtResource("14_mrkg7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.25641, 9.53674e-07, -8.91277)
+
+[node name="InterestPoint" parent="CameraMagnetZone/CameraMagnetZone_Area" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.154768, 0, 0.487906)
+
+[node name="Fireplace" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.84156, 0, 6.48674)
+collision_layer = 32
+collision_mask = 8
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Fireplace"]
+shape = SubResource("CylinderShape3D_idrln")
+
+[node name="LI-log_004" parent="Fireplace" instance=ExtResource("16_hrolx")]
+transform = Transform3D(0.707625, 0, -0.706588, 0, 1, 0, 0.706588, 0, 0.707625, 1.61126, 0.153341, -1.79726)
+
+[node name="LI-log_009" parent="Fireplace" instance=ExtResource("16_hrolx")]
+transform = Transform3D(-0.386952, 0, -0.9221, 0, 1, 0, 0.9221, 0, -0.386952, -2.39852, 0.153341, -1.08267)
+
+[node name="LI-log_011" parent="Fireplace" instance=ExtResource("16_hrolx")]
+transform = Transform3D(-0.73405, 0, -0.679095, 0, 1, 0, 0.679095, 0, -0.73405, 1.24755, 0.153341, 2.05013)
+
+[node name="LI-tree_stump_001" parent="Fireplace" instance=ExtResource("17_idrln")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.05639, -0.446962, 2.5558)
+
+[node name="LI-tree_stump_004" parent="Fireplace" instance=ExtResource("17_idrln")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.484675, -0.446962, -2.46665)
+
+[node name="LI-tree_stump_005" parent="Fireplace" instance=ExtResource("17_idrln")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.44589, -0.446962, 1.28564)
+
+[node name="LI-tree_stump_003" parent="Fireplace" instance=ExtResource("17_idrln")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.74697, -0.446962, 0.270673)
+
+[node name="LightArea" type="Area3D" parent="." groups=["LightAreas"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.4575, 0, 11.1357)
+collision_mask = 12
+script = ExtResource("17_27wd0")
+FADE_TIME = 2.0
+metadata/_custom_type_script = "uid://cjmmyghe63y22"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LightArea"]
+shape = SubResource("CylinderShape3D_hrolx")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="LightArea"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 1.92146, 0)
+light_energy = 8.0
+
+[node name="LightArea2" type="Area3D" parent="." groups=["LightAreas"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.76197, 0, 12.7806)
+collision_mask = 12
+script = ExtResource("17_27wd0")
+FADE_TIME = 3.0
+metadata/_custom_type_script = "uid://cjmmyghe63y22"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LightArea2"]
+shape = SubResource("CylinderShape3D_hrolx")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="LightArea2"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 1.92146, 0)
+light_energy = 8.0
+shadow_enabled = true
+
+[node name="LightArea3" type="Area3D" parent="." groups=["LightAreas"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.83521, 0, 15.4068)
+collision_mask = 12
+script = ExtResource("17_27wd0")
+INVERT = true
+metadata/_custom_type_script = "uid://cjmmyghe63y22"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LightArea3"]
+shape = SubResource("CylinderShape3D_hrolx")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="LightArea3"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 1.92146, 0)
+light_energy = 8.0
+shadow_enabled = true
+
+[connection signal="area_entered" from="LightArea2" to="LightArea2" method="_on_area_entered"]
+[connection signal="area_exited" from="LightArea2" to="LightArea2" method="_on_area_exited"]
+[connection signal="body_entered" from="LightArea2" to="LightArea2" method="_on_body_entered"]
+[connection signal="body_exited" from="LightArea2" to="LightArea2" method="_on_body_exited"]
+[connection signal="area_entered" from="LightArea3" to="LightArea3" method="_on_area_entered"]
+[connection signal="area_exited" from="LightArea3" to="LightArea3" method="_on_area_exited"]
+[connection signal="body_entered" from="LightArea3" to="LightArea3" method="_on_body_entered"]
+[connection signal="body_exited" from="LightArea3" to="LightArea3" method="_on_body_exited"]
+
+[editable path="Player"]
+[editable path="CameraMagnetZone"]

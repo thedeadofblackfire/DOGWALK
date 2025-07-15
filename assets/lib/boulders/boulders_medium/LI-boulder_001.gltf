@@ -1,0 +1,545 @@
+{
+    "asset": {
+        "generator": "Khronos glTF Blender I/O v4.5.15",
+        "version": "2.0"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "gltfIOGodotAssetProperties": {
+                    "export_type": 2,
+                    "root_type": 1,
+                    "append_parent_collection": 1,
+                    "asset_name": "LI-boulder_001"
+                },
+                "asset_type": "ASSET",
+                "root_type": "STATIC",
+                "asset_id": "45de49be9c951da3"
+            },
+            "name": "LI-boulder_001",
+            "nodes": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "mesh": 0,
+            "name": "GEO-boulder_001",
+            "translation": [
+                -0.0017439196817576885,
+                0.000983427045866847,
+                -0.0006764188292436302
+            ]
+        },
+        {
+            "extras": {
+                "booleans": {},
+                "ant_landscape": {},
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.3709999918937683,
+                    "height": 1.6719999313354492,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive",
+            "translation": [
+                -0.5642461776733398,
+                0.6959453821182251,
+                0.008460426703095436
+            ]
+        },
+        {
+            "extras": {
+                "booleans": {},
+                "ant_landscape": {},
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.3400000035762787,
+                    "height": 1.6719999313354492,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.001",
+            "translation": [
+                0.43760865926742554,
+                0.6959453821182251,
+                -0.012081537395715714
+            ]
+        },
+        {
+            "extras": {
+                "booleans": {},
+                "ant_landscape": {},
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.4209999740123749,
+                    "height": 1.6719999313354492,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.002",
+            "translation": [
+                0.19777953624725342,
+                0.6959453821182251,
+                -0.0016389340162277222
+            ]
+        },
+        {
+            "extras": {
+                "booleans": {},
+                "ant_landscape": {},
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.42899996042251587,
+                    "height": 1.6719999313354492,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.003",
+            "translation": [
+                -0.2060244083404541,
+                0.6959453821182251,
+                0.009682671166956425
+            ]
+        },
+        {
+            "extras": {
+                "booleans": {},
+                "ant_landscape": {},
+                "collision_info": {
+                    "type": "PRIMITIVE",
+                    "shape": 3,
+                    "radius": 0.4569999575614929,
+                    "height": 1.6719999313354492,
+                    "size": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                }
+            },
+            "name": "COL-collision_primitive.004",
+            "translation": [
+                -0.00034856703132390976,
+                0.6959453821182251,
+                -0.009186671115458012
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point",
+            "rotation": [
+                0,
+                -0.7071067094802856,
+                0,
+                0.7071068286895752
+            ],
+            "translation": [
+                -0.38000863790512085,
+                0.3193361759185791,
+                0.35322603583335876
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.004",
+            "rotation": [
+                0,
+                -0.7071067094802856,
+                0,
+                0.7071068286895752
+            ],
+            "translation": [
+                -0.8116501569747925,
+                0.3050520122051239,
+                0.21822085976600647
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.007",
+            "rotation": [
+                0,
+                -0.7071067094802856,
+                0,
+                0.7071068286895752
+            ],
+            "translation": [
+                -0.8044490218162537,
+                0.293298602104187,
+                -0.1489025056362152
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.008",
+            "rotation": [
+                0,
+                -0.7071067094802856,
+                0,
+                0.7071068286895752
+            ],
+            "translation": [
+                0.06608465313911438,
+                0.33791252970695496,
+                -0.33229678869247437
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.009",
+            "rotation": [
+                0,
+                -0.7071067094802856,
+                0,
+                0.7071068286895752
+            ],
+            "translation": [
+                0.2421746551990509,
+                0.34056520462036133,
+                -0.2956521213054657
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.011",
+            "rotation": [
+                0,
+                -0.8848992586135864,
+                0,
+                0.46578243374824524
+            ],
+            "translation": [
+                0.535785973072052,
+                0.35274189710617065,
+                -0.05115563049912453
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.012",
+            "rotation": [
+                0,
+                -0.7071067094802856,
+                0,
+                0.7071068286895752
+            ],
+            "translation": [
+                0.5492971539497375,
+                0.3486905097961426,
+                0.11721721291542053
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.015",
+            "rotation": [
+                0,
+                -0.7071067094802856,
+                0,
+                0.7071068286895752
+            ],
+            "translation": [
+                -0.14233100414276123,
+                0.34451740980148315,
+                0.36230793595314026
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.116",
+            "rotation": [
+                0,
+                -0.7071067094802856,
+                0,
+                0.7071068286895752
+            ],
+            "translation": [
+                0.3459780514240265,
+                0.3590998947620392,
+                0.34533563256263733
+            ]
+        },
+        {
+            "extras": {
+                "ant_landscape": {}
+            },
+            "name": "HLP-leash_point.117",
+            "rotation": [
+                0,
+                -0.7071067094802856,
+                0,
+                0.7071068286895752
+            ],
+            "translation": [
+                0.5014892816543579,
+                0.3610588610172272,
+                0.3306611180305481
+            ]
+        }
+    ],
+    "materials": [
+        {
+            "alphaMode": "BLEND",
+            "doubleSided": true,
+            "emissiveFactor": [
+                1,
+                1,
+                1
+            ],
+            "extras": {
+                "asset_id": "584980e58f667fce",
+                "material_info": {
+                    "albedo_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "alpha": 1.0,
+                    "edge_alpha": 1.0,
+                    "alpha_influence": 0.0,
+                    "backface_color": 0.0,
+                    "roughness": 0.4000000059604645,
+                    "metallic": 0.0,
+                    "displacement_strength": 0.0,
+                    "displacement_scale": 1.0,
+                    "paper_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "wear_strength": 0.0,
+                    "wear_start": 0.15000000596046448,
+                    "wear_end": 1.0,
+                    "wear_distortion_strength": 0.10000000149011612,
+                    "wear_distortion_scale": 64.0,
+                    "emission_color": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "emission_strength": 0.0,
+                    "normal_strength": 0.20000000298023224,
+                    "normal_use_uv2": 1.0
+                }
+            },
+            "name": "boulder_cut",
+            "normalTexture": {
+                "index": 0,
+                "texCoord": 1
+            },
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 1
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "boulders_albedo_01.001",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2,
+                        "TEXCOORD_1": 3,
+                        "COLOR_0": 4
+                    },
+                    "indices": 5,
+                    "material": 0
+                }
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0
+        },
+        {
+            "sampler": 0,
+            "source": 1
+        }
+    ],
+    "images": [
+        {
+            "extras": {
+                "source_path": "assets/textures/paper_rough_256.png"
+            },
+            "mimeType": "image/png",
+            "name": "paper_rough_256",
+            "uri": "../../../textures/paper_rough_256.png"
+        },
+        {
+            "extras": {
+                "source_path": "assets/lib/textures/boulders_cut_albedo.png"
+            },
+            "mimeType": "image/png",
+            "name": "boulders_cut_albedo",
+            "uri": "../../textures/boulders_cut_albedo.png"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 390,
+            "max": [
+                0.8133018016815186,
+                0.5164000391960144,
+                0.44857510924339294
+            ],
+            "min": [
+                -0.9482479691505432,
+                0.014407557435333729,
+                -0.4574480950832367
+            ],
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 390,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 390,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5126,
+            "count": 390,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5123,
+            "count": 390,
+            "normalized": true,
+            "type": "VEC4"
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5123,
+            "count": 813,
+            "type": "SCALAR"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 4680,
+            "byteOffset": 0,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 4680,
+            "byteOffset": 4680,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 3120,
+            "byteOffset": 9360,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 3120,
+            "byteOffset": 12480,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 3120,
+            "byteOffset": 15600,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1626,
+            "byteOffset": 18720,
+            "target": 34963
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 20348,
+            "uri": "LI-boulder_001.bin"
+        }
+    ]
+}

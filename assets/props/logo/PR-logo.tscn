@@ -1,0 +1,207 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8bvymfjdvmuu"]
+
+[ext_resource type="PackedScene" uid="uid://p7ah30pfaj2s" path="res://assets/props/logo/PR-logo.gltf" id="1_olvsr"]
+[ext_resource type="Script" uid="uid://cy6kc1323slss" path="res://source/fx/title.gd" id="1_wjus4"]
+
+[node name="PR-logo" type="Node3D" node_paths=PackedStringArray("skeleton", "cursor_pivot")]
+script = ExtResource("1_wjus4")
+skeleton = NodePath("PR-logo-IMPORT/RIG-logo/Skeleton3D")
+cursor_pivot = NodePath("CursorPivot")
+
+[node name="PR-logo-IMPORT" parent="." instance=ExtResource("1_olvsr")]
+
+[node name="SpringBone-D" type="SpringBoneSimulator3D" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="0"]
+transform = Transform3D(-0.40391, -0.554995, -0.727212, 0.102525, 0.762471, -0.638848, 0.909035, -0.332594, -0.251069, -0.145035, -2.0562, 1.88202e-05)
+setting_count = 1
+settings/0/root_bone_name = "letter_D"
+settings/0/root_bone = 2
+settings/0/end_bone_name = "GEO-logo-letter_W"
+settings/0/end_bone = 4
+settings/0/extend_end_bone = false
+settings/0/center_from = 1
+settings/0/center_node = NodePath("../../../..")
+settings/0/individual_config = false
+settings/0/rotation_axis = 3
+settings/0/radius/value = 0.189
+settings/0/radius/damping_curve = null
+settings/0/stiffness/value = 2.0
+settings/0/stiffness/damping_curve = null
+settings/0/drag/value = 0.0
+settings/0/drag/damping_curve = null
+settings/0/gravity/value = 0.1
+settings/0/gravity/damping_curve = null
+settings/0/gravity/direction = Vector3(0, -1, 0)
+settings/0/enable_all_child_collisions = true
+settings/0/exclude_collision_count = 0
+
+[node name="SpringBone-O" type="SpringBoneSimulator3D" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="1"]
+transform = Transform3D(-0.40391, -0.554995, -0.727212, 0.102525, 0.762471, -0.638848, 0.909035, -0.332594, -0.251069, -0.145035, -2.0562, 1.88202e-05)
+setting_count = 1
+settings/0/root_bone_name = "letter_O"
+settings/0/root_bone = 13
+settings/0/end_bone_name = "GEO-logo-letter_A"
+settings/0/end_bone = 15
+settings/0/extend_end_bone = false
+settings/0/center_from = 1
+settings/0/center_node = NodePath("../../../..")
+settings/0/individual_config = false
+settings/0/rotation_axis = 3
+settings/0/radius/value = 0.189
+settings/0/radius/damping_curve = null
+settings/0/stiffness/value = 2.0
+settings/0/stiffness/damping_curve = null
+settings/0/drag/value = 0.0
+settings/0/drag/damping_curve = null
+settings/0/gravity/value = 0.1
+settings/0/gravity/damping_curve = null
+settings/0/gravity/direction = Vector3(-0.032, -1, 0)
+settings/0/enable_all_child_collisions = true
+settings/0/exclude_collision_count = 0
+
+[node name="SpringBone-G" type="SpringBoneSimulator3D" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="2"]
+transform = Transform3D(-0.40391, -0.554995, -0.727212, 0.102525, 0.762471, -0.638848, 0.909035, -0.332594, -0.251069, -0.145035, -2.0562, 1.88202e-05)
+setting_count = 1
+settings/0/root_bone_name = "letter_G"
+settings/0/root_bone = 30
+settings/0/end_bone_name = "GEO-logo-letter_K"
+settings/0/end_bone = 32
+settings/0/extend_end_bone = false
+settings/0/center_from = 1
+settings/0/center_node = NodePath("../../../..")
+settings/0/individual_config = false
+settings/0/rotation_axis = 3
+settings/0/radius/value = 0.216
+settings/0/radius/damping_curve = null
+settings/0/stiffness/value = 2.0
+settings/0/stiffness/damping_curve = null
+settings/0/drag/value = 0.0
+settings/0/drag/damping_curve = null
+settings/0/gravity/value = 0.1
+settings/0/gravity/damping_curve = null
+settings/0/gravity/direction = Vector3(0.06, -1, 0)
+settings/0/enable_all_child_collisions = true
+settings/0/exclude_collision_count = 0
+
+[node name="SpringBone-L" type="SpringBoneSimulator3D" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="3"]
+transform = Transform3D(-0.40391, -0.554995, -0.727212, 0.102525, 0.762471, -0.638848, 0.909035, -0.332594, -0.251069, -0.145035, -2.0562, 1.88202e-05)
+setting_count = 1
+settings/0/root_bone_name = "letter_L"
+settings/0/root_bone = 20
+settings/0/end_bone_name = "GEO-logo-letter_L"
+settings/0/end_bone = 21
+settings/0/extend_end_bone = false
+settings/0/center_from = 1
+settings/0/center_node = NodePath("../../../..")
+settings/0/individual_config = false
+settings/0/rotation_axis = 3
+settings/0/radius/value = 0.101
+settings/0/radius/damping_curve = null
+settings/0/stiffness/value = 2.0
+settings/0/stiffness/damping_curve = null
+settings/0/drag/value = 0.0
+settings/0/drag/damping_curve = null
+settings/0/gravity/value = 0.1
+settings/0/gravity/damping_curve = null
+settings/0/gravity/direction = Vector3(0, -1, 0)
+settings/0/enable_all_child_collisions = true
+settings/0/exclude_collision_count = 0
+
+[node name="GEO-logo-letter_W" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="4"]
+transform = Transform3D(1, -0.000470187, 2.60005e-07, 0.000470187, 0.999998, -0.00181888, 5.95211e-07, 0.00181888, 0.999998, -0.428248, -2.2376, 0.00952411)
+
+[node name="GEO-knot_007" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="5"]
+transform = Transform3D(0.87073, -0.0572787, 0.346818, 0.154862, 0.894212, -0.241117, -0.315565, 0.280782, 0.838638, -0.277064, -2.07292, -0.00112093)
+
+[node name="GEO-knot_008" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="6"]
+transform = Transform3D(-0.667951, -0.175948, -0.413265, -0.0973058, 0.779694, -0.174682, 0.438494, -0.0949977, -0.668284, -0.557054, -2.07531, -0.000514265)
+
+[node name="GEO-logo-letter_W-inside" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="7"]
+transform = Transform3D(1, -0.000470187, 2.60005e-07, 0.000470187, 0.999998, -0.00181888, 5.95211e-07, 0.00181888, 0.999998, -0.428248, -2.23759, -0.000475874)
+
+[node name="GEO-logo-letter_W_back" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="8"]
+transform = Transform3D(1, -0.000470187, 2.60005e-07, 0.000470187, 0.999998, -0.00181888, 5.95211e-07, 0.00181888, 0.999998, -0.428248, -2.23757, -0.0104759)
+
+[node name="GEO-logo-letter_D" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="9"]
+transform = Transform3D(0.997171, 0.0751637, 1.01215e-08, -0.0751636, 0.997171, -3.80073e-10, -1.01215e-08, -3.81775e-10, 1, -0.434104, -1.78884, 0.01)
+
+[node name="GEO-knot" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="10"]
+transform = Transform3D(1, -0.000168502, 1.01215e-08, 0.000168577, 1, -3.80073e-10, -1.01215e-08, 3.81778e-10, 1, -0.420498, -1.5281, 0)
+
+[node name="GEO-logo-letter_D-inside" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="11"]
+transform = Transform3D(0.997171, 0.0751637, 1.01215e-08, -0.0751636, 0.997171, -3.80073e-10, -1.01215e-08, -3.81775e-10, 1, -0.434104, -1.78884, 0)
+
+[node name="GEO-logo-letter_D_back" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="12"]
+transform = Transform3D(0.997171, 0.0751637, 1.01215e-08, -0.0751636, 0.997171, -3.80073e-10, -1.01215e-08, -3.81775e-10, 1, -0.434104, -1.78884, -0.01)
+
+[node name="GEO-logo-letter_A" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="13"]
+transform = Transform3D(0.99998, -0.00632532, -5.8076e-05, 0.00632519, 0.999978, -0.00201287, 7.08068e-05, 0.00201246, 0.999998, -0.112249, -2.22117, 0.00952774)
+
+[node name="GEO-knot_005" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="14"]
+transform = Transform3D(0.644538, 0.167935, -0.595515, -0.185859, 0.872757, 0.0449587, 0.590167, 0.0914469, 0.664537, -0.0067844, -2.23127, -0.00207473)
+
+[node name="GEO-knot_006" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="15"]
+transform = Transform3D(-0.404603, -0.559787, -0.723142, 0.098138, 0.759613, -0.642928, 0.909211, -0.331099, -0.252405, -0.14453, -2.05665, -0.000124183)
+
+[node name="GEO-logo-letter_A-inside" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="16"]
+transform = Transform3D(0.99998, -0.00632532, -5.8076e-05, 0.00632519, 0.999978, -0.00201287, 7.08068e-05, 0.00201246, 0.999998, -0.112249, -2.22115, -0.000472238)
+
+[node name="GEO-logo-letter_A_back" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="17"]
+transform = Transform3D(0.99998, -0.00632532, -5.8076e-05, 0.00632519, 0.999978, -0.00201287, 7.08068e-05, 0.00201246, 0.999998, -0.112248, -2.22113, -0.0104722)
+
+[node name="GEO-logo-letter_L" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="18"]
+transform = Transform3D(0.999985, 0.00539833, -5.23145e-06, -0.00539833, 0.999984, -0.00192359, -5.15282e-06, 0.00192359, 0.999998, 0.166978, -2.20593, 0.00952695)
+
+[node name="GEO-knot_004" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="19"]
+transform = Transform3D(0.898767, -0.0366649, -0.436891, 0.0518407, 0.998394, 0.0228585, 0.435352, -0.0431932, 0.899224, 0.0871727, -2.05239, -3.55663e-05)
+
+[node name="GEO-knot_010" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="20"]
+transform = Transform3D(-0.790352, -0.14777, -0.220372, -0.027907, 0.734893, -0.392695, 0.263858, -0.3649, -0.701629, 0.239102, -2.28436, -0.00142221)
+
+[node name="GEO-logo-letter_L-inside" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="21"]
+transform = Transform3D(0.999985, 0.00539833, -5.23145e-06, -0.00539833, 0.999984, -0.00192359, -5.15282e-06, 0.00192359, 0.999998, 0.166979, -2.20591, -0.000473033)
+
+[node name="GEO-logo-letter_L_back" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="22"]
+transform = Transform3D(0.999985, 0.00539833, -5.23145e-06, -0.00539833, 0.999984, -0.00192359, -5.15282e-06, 0.00192359, 0.999998, 0.166979, -2.20589, -0.010473)
+
+[node name="GEO-logo-letter_O" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="23"]
+transform = Transform3D(0.995247, 0.0973858, 1.31417e-08, -0.0973858, 0.995247, 9.97281e-10, -1.29821e-08, -2.27235e-09, 1, -0.0357176, -1.83561, 0.01)
+
+[node name="GEO-knot_001" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="24"]
+transform = Transform3D(0.915888, 0.523786, -0.259185, -0.392976, 0.908634, 0.447586, 0.432549, -0.283569, 0.955442, -0.0117594, -1.59417, -0.000449501)
+
+[node name="GEO-logo-letter_O-inside" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="25"]
+transform = Transform3D(0.995247, 0.0973858, 1.31417e-08, -0.0973858, 0.995247, 9.97281e-10, -1.29821e-08, -2.27235e-09, 1, -0.0357176, -1.83561, 6.51926e-09)
+
+[node name="GEO-logo-letter_O_back" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="26"]
+transform = Transform3D(0.995247, 0.0973858, 1.31417e-08, -0.0973858, 0.995247, 9.97281e-10, -1.29821e-08, -2.27235e-09, 1, -0.0357176, -1.83561, -0.00999999)
+
+[node name="GEO-logo-letter_K" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="27"]
+transform = Transform3D(1, -0.000558186, 0.000146805, 0.000558547, 0.999997, -0.00246968, -0.000145426, 0.00246976, 0.999997, 0.41959, -2.20901, 0.00952368)
+
+[node name="GEO-knot_003" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="28"]
+transform = Transform3D(-0.605283, -0.400389, -0.218251, -0.281129, 0.613221, -0.345311, 0.359043, -0.194838, -0.63831, 0.484465, -2.10298, -0.000168125)
+
+[node name="GEO-knot_009" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="29"]
+transform = Transform3D(0.653752, 0.0558262, 0.309086, -0.243895, 0.539952, 0.418341, -0.197904, -0.481017, 0.505469, 0.333189, -2.07795, -0.000369006)
+
+[node name="GEO-logo-letter_K-inside" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="30"]
+transform = Transform3D(1, -0.000558186, 0.000146805, 0.000558547, 0.999997, -0.00246968, -0.000145426, 0.00246976, 0.999997, 0.419589, -2.20899, -0.000476289)
+
+[node name="GEO-logo-letter_K_back" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="31"]
+transform = Transform3D(1, -0.000558186, 0.000146805, 0.000558547, 0.999997, -0.00246968, -0.000145426, 0.00246976, 0.999997, 0.419587, -2.20896, -0.0104763)
+
+[node name="GEO-logo-letter_G" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="32"]
+transform = Transform3D(0.995271, -0.0971417, -1.29158e-08, 0.0971418, 0.99527, 8.06541e-10, 1.27763e-08, -2.05739e-09, 1, 0.365089, -1.78741, 0.01)
+
+[node name="GEO-knot_002" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="33"]
+transform = Transform3D(0.999999, -0.00166567, -1.29158e-08, 0.0016657, 0.999999, 8.06541e-10, 1.29144e-08, -8.28053e-10, 1, 0.351799, -1.54811, -0.000961405)
+
+[node name="GEO-logo-letter_G-inside" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="34"]
+transform = Transform3D(0.995271, -0.0971417, -1.29158e-08, 0.0971418, 0.99527, 8.06541e-10, 1.27763e-08, -2.05739e-09, 1, 0.365089, -1.78741, -2.79397e-09)
+
+[node name="GEO-logo-letter_G_back" parent="PR-logo-IMPORT/RIG-logo/Skeleton3D" index="35"]
+transform = Transform3D(0.995271, -0.0971417, -1.29158e-08, 0.0971418, 0.99527, 8.06541e-10, 1.27763e-08, -2.05739e-09, 1, 0.365089, -1.78741, -0.01)
+
+[node name="CursorPivot" type="Node3D" parent="."]
+
+[editable path="PR-logo-IMPORT"]

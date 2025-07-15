@@ -1,0 +1,68 @@
+[gd_resource type="AnimationNodeStateMachine" load_steps=16 format=3 uid="uid://5m7o0b7qdcss"]
+
+[ext_resource type="AnimationNodeBlendSpace2D" uid="uid://ymoyfye8pd3k" path="res://source/entities/player_entities/pinda_animation_tree/pinda_animtree_regular_stuck_tree_fallend_blendspace2d.tres" id="1_ki24x"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_0xx3g"]
+animation = &"Pinda-anim_lib/LOOP-pinda-fallen_dragged_panic"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_7248o"]
+animation = &"Pinda-anim_lib/ACTN-pinda-fall_snow"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_7xcaq"]
+animation = &"Pinda-anim_lib/ACTN-pinda-fall_flat"
+
+[sub_resource type="AnimationNodeBlendSpace1D" id="AnimationNodeBlendSpace1D_47vx5"]
+blend_point_0/node = SubResource("AnimationNodeAnimation_7248o")
+blend_point_0/pos = 0.0
+blend_point_1/node = SubResource("AnimationNodeAnimation_7xcaq")
+blend_point_1/pos = 1.0
+blend_mode = 1
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ki24x"]
+animation = &"Pinda-anim_lib/ACTN-pinda-push_over"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_br5yc"]
+priority = 3
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ki24x"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_0xx3g"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_j5saf"]
+advance_mode = 2
+advance_expression = "previous_character_state == character_states.GETTING_UP"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_sq2k7"]
+priority = 2
+advance_mode = 2
+advance_expression = "previous_character_state == character_states.PUSHED"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_t32w7"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_64kyq"]
+advance_mode = 2
+advance_expression = "mood < previous_mood or mood == 0.0"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_yhsnv"]
+advance_mode = 2
+advance_expression = "mood >= previous_mood and mood != 0.0"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_d68eb"]
+
+[resource]
+"states/Dragged Distressed/node" = SubResource("AnimationNodeAnimation_0xx3g")
+"states/Dragged Distressed/position" = Vector2(590.83, 190.432)
+states/End/position = Vector2(855.667, 98.6836)
+states/Fallen/node = ExtResource("1_ki24x")
+states/Fallen/position = Vector2(590.83, 98.6836)
+states/Falling/node = SubResource("AnimationNodeBlendSpace1D_47vx5")
+states/Falling/position = Vector2(380, 33)
+"states/Pushed Over/node" = SubResource("AnimationNodeAnimation_ki24x")
+"states/Pushed Over/position" = Vector2(380, 172.432)
+transitions = ["Start", "Falling", SubResource("AnimationNodeStateMachineTransition_br5yc"), "Falling", "Fallen", SubResource("AnimationNodeStateMachineTransition_ki24x"), "Fallen", "End", SubResource("AnimationNodeStateMachineTransition_0xx3g"), "Start", "Fallen", SubResource("AnimationNodeStateMachineTransition_j5saf"), "Start", "Pushed Over", SubResource("AnimationNodeStateMachineTransition_sq2k7"), "Pushed Over", "Fallen", SubResource("AnimationNodeStateMachineTransition_t32w7"), "Fallen", "Dragged Distressed", SubResource("AnimationNodeStateMachineTransition_64kyq"), "Dragged Distressed", "Fallen", SubResource("AnimationNodeStateMachineTransition_yhsnv"), "Dragged Distressed", "End", SubResource("AnimationNodeStateMachineTransition_d68eb")]
+graph_offset = Vector2(-199.506, -120.568)

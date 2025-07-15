@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://b50lgi3lmq1hq"]
+
+[ext_resource type="PackedScene" uid="uid://732qsy04hdgy" path="res://assets/lib/fence_parts/fence_planks/LI-fence_plank_06.gltf" id="1_8nf8s"]
+[ext_resource type="Script" uid="uid://bj34k0ajpsopu" path="res://source/obstacles/generic_obstacle.gd" id="2_jyann"]
+
+[node name="LI-fence_plank_06" type="Node3D"]
+
+[node name="LI-fence_plank_06-IMPORT" parent="." instance=ExtResource("1_8nf8s")]
+script = ExtResource("2_jyann")
