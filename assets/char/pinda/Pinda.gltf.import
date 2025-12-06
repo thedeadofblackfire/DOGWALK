@@ -15,9 +15,11 @@ dest_files=["res://.godot/imported/Pinda.gltf-884644a6f7d4081f47e45059eac65805.s
 
 nodes/root_type="Node3D"
 nodes/root_name=""
+nodes/root_script=null
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
 nodes/use_node_type_suffixes=true
 meshes/ensure_tangents=true
 meshes/generate_lods=true
@@ -32,12 +34,16 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path="uid://gtfffogvk6gb"
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
 _subresources={
 "animations": {
 "RESET": {
 "save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://assets/char/pinda/RESET-pinda.tres",
 "save_to_file/keep_custom_tracks": "",
-"save_to_file/path": "res://assets/char/pinda/RESET-pinda.tres",
+"save_to_file/path": "uid://duhuc54cp7ly8",
 "settings/loop_mode": 0,
 "slice_1/end_frame": 0,
 "slice_1/loop_mode": 0,
@@ -1837,19 +1843,23 @@ _subresources={
 "materials": {
 "pinda": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/char/pinda/pinda.tres"
+"use_external/fallback_path": "res://assets/char/pinda/pinda.tres",
+"use_external/path": "uid://iis72dktou10"
 },
 "pinda-mouths": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/char/pinda/pinda-mouths.tres"
+"use_external/fallback_path": "res://assets/char/pinda/pinda-mouths.tres",
+"use_external/path": "uid://c5ubpoy3hdq2d"
 },
 "pinda_tears": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/char/pinda/pinda_tears.tres"
+"use_external/fallback_path": "res://assets/char/pinda/pinda_tears.tres",
+"use_external/path": "uid://cofadflrwwty6"
 },
 "treat": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/char/pinda/treat.tres"
+"use_external/fallback_path": "res://assets/char/pinda/treat.tres",
+"use_external/path": "uid://beqy1e27fm1vr"
 }
 }
 }

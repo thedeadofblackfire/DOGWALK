@@ -15,9 +15,11 @@ dest_files=["res://.godot/imported/bird_01.gltf-04893ecb693f03f7f84453c90a9009cf
 
 nodes/root_type="Node3D"
 nodes/root_name=""
+nodes/root_script=null
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
 nodes/use_node_type_suffixes=true
 meshes/ensure_tangents=true
 meshes/generate_lods=true
@@ -32,15 +34,20 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path="uid://gtfffogvk6gb"
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
 _subresources={
 "materials": {
 "birds": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/char/birds/birds.tres"
+"use_external/fallback_path": "res://assets/char/birds/birds.tres",
+"use_external/path": "uid://d03y5yu4pn1c7"
 },
 "birds_beak": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/char/birds/birds_beak.tres"
+"use_external/fallback_path": "res://assets/char/birds/birds_beak.tres",
+"use_external/path": "uid://c2mhqbrllli6m"
 }
 }
 }

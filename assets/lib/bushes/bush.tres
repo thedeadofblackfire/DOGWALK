@@ -1,9 +1,9 @@
 [gd_resource type="ShaderMaterial" load_steps=5 format=3 uid="uid://bprm1f2e7i6aa"]
 
 [ext_resource type="Shader" uid="uid://dferjeijr7g3r" path="res://source/shaders/paper-default.gdshader" id="1_d8h7y"]
-[ext_resource type="Texture2D" uid="uid://b68vp6rm3h80e" path="res://assets/sets/clearing/textures/bush_foliage_atlas_albedo_01.png" id="2_vc41r"]
-[ext_resource type="Texture2D" uid="uid://bb5rjbijuwayf" path="res://assets/sets/clearing/textures/bush_foliage_atlas_roughness_01.png" id="3_eeo74"]
-[ext_resource type="Texture2D" uid="uid://bf5qjltw1bu0f" path="res://assets/sets/textures/paper_rough_256.png" id="4_f5ihy"]
+[ext_resource type="Texture2D" uid="uid://bhdsnxtoemtbi" path="res://assets/lib/textures/bush_foliage_atlas_albedo_01.png" id="2_vc41r"]
+[ext_resource type="Texture2D" uid="uid://86mno502ypww" path="res://assets/lib/textures/bush_foliage_atlas_roughness_01.png" id="3_eeo74"]
+[ext_resource type="Texture2D" uid="uid://bih4j6ilg4br2" path="res://assets/textures/paper_rough_256.png" id="4_f5ihy"]
 
 [resource]
 render_priority = 0
@@ -11,7 +11,7 @@ shader = ExtResource("1_d8h7y")
 shader_parameter/fake_depth = true
 shader_parameter/flip_normals = false
 shader_parameter/depth_blend = false
-shader_parameter/paper_color = Color(1, 1, 1, 1)
+shader_parameter/paper_color = Color(0.7246307, 0.85923487, 0.6143836, 1)
 shader_parameter/backface_color = false
 shader_parameter/albedo_color = Color(1, 1, 1, 1)
 shader_parameter/albedo_texture = ExtResource("2_vc41r")

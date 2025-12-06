@@ -15,9 +15,11 @@ dest_files=["res://.godot/imported/POSE-pinda-sad_face.gltf-20d66178c2a33418c2b9
 
 nodes/root_type=""
 nodes/root_name=""
+nodes/root_script=null
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
 nodes/use_node_type_suffixes=true
 meshes/ensure_tangents=true
 meshes/generate_lods=true
@@ -32,12 +34,16 @@ animation/trimming=false
 animation/remove_immutable_tracks=false
 animation/import_rest_as_RESET=false
 import_script/path="uid://gtfffogvk6gb"
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
 _subresources={
 "animations": {
 "POSE-pinda-sad_face": {
 "save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://animations/world/POSE-pinda-sad_face/POSE-pinda-sad_face.tres",
 "save_to_file/keep_custom_tracks": true,
-"save_to_file/path": "res://animations/world/POSE-pinda-sad_face/POSE-pinda-sad_face.tres",
+"save_to_file/path": "uid://cvimptcoqr4s3",
 "settings/loop_mode": 0,
 "slice_1/end_frame": 0,
 "slice_1/loop_mode": 0,

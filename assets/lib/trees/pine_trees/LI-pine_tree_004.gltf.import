@@ -15,9 +15,11 @@ dest_files=["res://.godot/imported/LI-pine_tree_004.gltf-5cae38e331d81a513aa7d59
 
 nodes/root_type="StaticBody3D"
 nodes/root_name=""
+nodes/root_script=null
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
 nodes/use_node_type_suffixes=true
 meshes/ensure_tangents=true
 meshes/generate_lods=true
@@ -32,19 +34,25 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path="uid://gtfffogvk6gb"
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
 _subresources={
 "materials": {
 "pine_bark": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/lib/trees/pine_bark.tres"
+"use_external/fallback_path": "res://assets/lib/trees/pine_bark.tres",
+"use_external/path": "uid://5xsb0nfc1ekk"
 },
 "pine_bark_fade": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/lib/trees/pine_bark_fade.tres"
+"use_external/fallback_path": "res://assets/lib/trees/pine_bark_fade.tres",
+"use_external/path": "uid://c71st67aq4pgl"
 },
 "tree_stump_fade": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/lib/trees/tree_stump_fade.tres"
+"use_external/fallback_path": "res://assets/lib/trees/tree_stump_fade.tres",
+"use_external/path": "uid://krsnjwsmx8kw"
 }
 }
 }

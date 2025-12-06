@@ -15,9 +15,11 @@ dest_files=["res://.godot/imported/LI-bush_foliage-snowy_001.gltf-556d234ef38f9d
 
 nodes/root_type="StaticBody3D"
 nodes/root_name=""
+nodes/root_script=null
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
 nodes/use_node_type_suffixes=true
 meshes/ensure_tangents=true
 meshes/generate_lods=true
@@ -32,11 +34,15 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path="uid://gtfffogvk6gb"
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
 _subresources={
 "materials": {
 "bush": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/lib/bushes/bush.tres"
+"use_external/fallback_path": "res://assets/lib/bushes/bush.tres",
+"use_external/path": "uid://bprm1f2e7i6aa"
 }
 }
 }

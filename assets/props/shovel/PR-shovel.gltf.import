@@ -15,9 +15,11 @@ dest_files=["res://.godot/imported/PR-shovel.gltf-61ad00c5291a4815977c1997f17667
 
 nodes/root_type="Area3D"
 nodes/root_name=""
+nodes/root_script=null
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
 nodes/use_node_type_suffixes=true
 meshes/ensure_tangents=true
 meshes/generate_lods=true
@@ -32,23 +34,30 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path="uid://gtfffogvk6gb"
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
 _subresources={
 "materials": {
 "shovel_black_plastic": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/props/shovel/shovel_black_plastic.tres"
+"use_external/fallback_path": "res://assets/props/shovel/shovel_black_plastic.tres",
+"use_external/path": "uid://dl30gyqkyejam"
 },
 "shovel_blade": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/props/shovel/shovel_blade.tres"
+"use_external/fallback_path": "res://assets/props/shovel/shovel_blade.tres",
+"use_external/path": "uid://b36av8urm6fob"
 },
 "shovel_handle": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/props/shovel/shovel_handle.tres"
+"use_external/fallback_path": "res://assets/props/shovel/shovel_handle.tres",
+"use_external/path": "uid://pv5cqp3her4p"
 },
 "shovel_metal": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/props/shovel/shovel_metal.tres"
+"use_external/fallback_path": "res://assets/props/shovel/shovel_metal.tres",
+"use_external/path": "uid://bj2ga4c8lbgvd"
 }
 }
 }

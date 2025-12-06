@@ -15,9 +15,11 @@ dest_files=["res://.godot/imported/PR-emote_bubble.gltf-38c77c1a10b4635e11aec59a
 
 nodes/root_type="Node3D"
 nodes/root_name=""
+nodes/root_script=null
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
 nodes/use_node_type_suffixes=true
 meshes/ensure_tangents=true
 meshes/generate_lods=true
@@ -32,75 +34,95 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path="uid://gtfffogvk6gb"
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
 _subresources={
 "materials": {
 "emote_bubble-button_press": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/props/emote_bubble/emote_bubble-button_press.tres"
+"use_external/fallback_path": "res://assets/props/emote_bubble/emote_bubble-button_press.tres",
+"use_external/path": "uid://c6bl7yemhgjs7"
 },
 "emote_bubble-button_prompt": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/props/emote_bubble/emote_bubble-button_prompt.tres"
+"use_external/fallback_path": "res://assets/props/emote_bubble/emote_bubble-button_prompt.tres",
+"use_external/path": "uid://bmdsiju87ebou"
 },
 "emote_bubble-chocomel": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/props/emote_bubble/emote_bubble-chocomel.tres"
+"use_external/fallback_path": "res://assets/props/emote_bubble/emote_bubble-chocomel.tres",
+"use_external/path": "uid://dr317ufx8kqus"
 },
 "emote_bubble-click_press": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/props/emote_bubble/emote_bubble-click_press.tres"
+"use_external/fallback_path": "res://assets/props/emote_bubble/emote_bubble-click_press.tres",
+"use_external/path": "uid://d35086fy16b3n"
 },
 "emote_bubble-click_prompt": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/props/emote_bubble/emote_bubble-click_prompt.tres"
+"use_external/fallback_path": "res://assets/props/emote_bubble/emote_bubble-click_prompt.tres",
+"use_external/path": "uid://ck3wclx262cqp"
 },
 "emote_bubble-cloudy": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/props/emote_bubble/emote_bubble-cloudy.tres"
+"use_external/fallback_path": "res://assets/props/emote_bubble/emote_bubble-cloudy.tres",
+"use_external/path": "uid://c0kjoh53bwkwp"
 },
 "emote_bubble-complaining": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/props/emote_bubble/emote_bubble-complaining.tres"
+"use_external/fallback_path": "res://assets/props/emote_bubble/emote_bubble-complaining.tres",
+"use_external/path": "uid://caps3k88823l2"
 },
 "emote_bubble-crash": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/props/emote_bubble/emote_bubble-crash.tres"
+"use_external/fallback_path": "res://assets/props/emote_bubble/emote_bubble-crash.tres",
+"use_external/path": "uid://djdxoe67s6wnk"
 },
 "emote_bubble-doom_spiral": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/props/emote_bubble/emote_bubble-doom_spiral.tres"
+"use_external/fallback_path": "res://assets/props/emote_bubble/emote_bubble-doom_spiral.tres",
+"use_external/path": "uid://c6x4qbdkhtknt"
 },
 "emote_bubble-exclamation": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/props/emote_bubble/emote_bubble-exclamation.tres"
+"use_external/fallback_path": "res://assets/props/emote_bubble/emote_bubble-exclamation.tres",
+"use_external/path": "uid://cbimf76l7r86n"
 },
 "emote_bubble-hearts": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/props/emote_bubble/emote_bubble-hearts.tres"
+"use_external/fallback_path": "res://assets/props/emote_bubble/emote_bubble-hearts.tres",
+"use_external/path": "uid://dhbsd3sm548w"
 },
 "emote_bubble-hourglass": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/props/emote_bubble/emote_bubble-hourglass.tres"
+"use_external/fallback_path": "res://assets/props/emote_bubble/emote_bubble-hourglass.tres",
+"use_external/path": "uid://dq3qhxreanhhw"
 },
 "emote_bubble-move_mouse": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/props/emote_bubble/emote_bubble-move_mouse.tres"
+"use_external/fallback_path": "res://assets/props/emote_bubble/emote_bubble-move_mouse.tres",
+"use_external/path": "uid://yv15dctokxbt"
 },
 "emote_bubble-move_stick": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/props/emote_bubble/emote_bubble-move_stick.tres"
+"use_external/fallback_path": "res://assets/props/emote_bubble/emote_bubble-move_stick.tres",
+"use_external/path": "uid://yt6yisht35sl"
 },
 "emote_bubble-snowman": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/props/emote_bubble/emote_bubble-snowman.tres"
+"use_external/fallback_path": "res://assets/props/emote_bubble/emote_bubble-snowman.tres",
+"use_external/path": "uid://dwndtp3js2l81"
 },
 "emote_bubble-sweat": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/props/emote_bubble/emote_bubble-sweat.tres"
+"use_external/fallback_path": "res://assets/props/emote_bubble/emote_bubble-sweat.tres",
+"use_external/path": "uid://grs5grcndxyj"
 },
 "emote_bubble-treat": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/props/emote_bubble/emote_bubble-treat.tres"
+"use_external/fallback_path": "res://assets/props/emote_bubble/emote_bubble-treat.tres",
+"use_external/path": "uid://2563exdyyav0"
 }
 }
 }

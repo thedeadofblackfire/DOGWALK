@@ -15,9 +15,11 @@ dest_files=["res://.godot/imported/SL-world-pond.gltf-fe3bd54b0a7b989053870d02b5
 
 nodes/root_type="StaticBody3D"
 nodes/root_name=""
+nodes/root_script=null
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
 nodes/use_node_type_suffixes=true
 meshes/ensure_tangents=true
 meshes/generate_lods=true
@@ -32,35 +34,45 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path="uid://gtfffogvk6gb"
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
 _subresources={
 "materials": {
 "pond_crack": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/sets/world/pond_crack.tres"
+"use_external/fallback_path": "res://assets/sets/world/pond_crack.tres",
+"use_external/path": "uid://cerfmy4fld0t"
 },
 "pond_creek_transition": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/sets/world/pond_creek_transition.tres"
+"use_external/fallback_path": "res://assets/sets/world/pond_creek_transition.tres",
+"use_external/path": "uid://dx4x4684vcrgc"
 },
 "pond_ice_floes": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/sets/world/pond_ice_floes.tres"
+"use_external/fallback_path": "res://assets/sets/world/pond_ice_floes.tres",
+"use_external/path": "uid://bxvmb3gc36bbn"
 },
 "pond_snow_edge": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/sets/world/pond_snow_edge.tres"
+"use_external/fallback_path": "res://assets/sets/world/pond_snow_edge.tres",
+"use_external/path": "uid://54b6bndr1f5x"
 },
 "pond_underwater": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/sets/world/pond_underwater.tres"
+"use_external/fallback_path": "res://assets/sets/world/pond_underwater.tres",
+"use_external/path": "uid://dyejg4rfqou84"
 },
 "pond_underwater_bubbles": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/sets/world/pond_underwater_bubbles.tres"
+"use_external/fallback_path": "res://assets/sets/world/pond_underwater_bubbles.tres",
+"use_external/path": "uid://bjd5s1lgasnw7"
 },
 "pond_water_surface": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/sets/world/pond_water_surface.tres"
+"use_external/fallback_path": "res://assets/sets/world/pond_water_surface.tres",
+"use_external/path": "uid://gacsgwk1crwq"
 }
 }
 }

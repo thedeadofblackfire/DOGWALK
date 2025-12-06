@@ -15,9 +15,11 @@ dest_files=["res://.godot/imported/LI-fence_pole_01.gltf-fe58e68be7368e3780fd0f7
 
 nodes/root_type="StaticBody3D"
 nodes/root_name=""
+nodes/root_script=null
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
 nodes/use_node_type_suffixes=true
 meshes/ensure_tangents=true
 meshes/generate_lods=true
@@ -32,15 +34,20 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path="uid://gtfffogvk6gb"
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
 _subresources={
 "materials": {
 "fence_parts-snow": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/lib/fence_parts/fence_parts-snow.tres"
+"use_external/fallback_path": "res://assets/lib/fence_parts/fence_parts-snow.tres",
+"use_external/path": "uid://5aaeev7urvhq"
 },
 "fence_parts-wood": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/lib/fence_parts/fence_parts-wood.tres"
+"use_external/fallback_path": "res://assets/lib/fence_parts/fence_parts-wood.tres",
+"use_external/path": "uid://bgcl5dxkjladp"
 }
 }
 }

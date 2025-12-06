@@ -15,9 +15,11 @@ dest_files=["res://.godot/imported/LI-paths.gltf-8bbd4eef84478b1680b9d8f1498efb8
 
 nodes/root_type="Node3D"
 nodes/root_name=""
+nodes/root_script=null
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
 nodes/use_node_type_suffixes=true
 meshes/ensure_tangents=true
 meshes/generate_lods=true
@@ -32,39 +34,50 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path="uid://gtfffogvk6gb"
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
 _subresources={
 "materials": {
 "path-faint": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/lib/paths/path-faint.tres"
+"use_external/fallback_path": "res://assets/lib/paths/path-faint.tres",
+"use_external/path": "uid://t8dqv258flvq"
 },
 "path-fence": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/lib/paths/path-fence.tres"
+"use_external/fallback_path": "res://assets/lib/paths/path-fence.tres",
+"use_external/path": "uid://cj5720ci27ath"
 },
 "path-hub": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/lib/paths/path-hub.tres"
+"use_external/fallback_path": "res://assets/lib/paths/path-hub.tres",
+"use_external/path": "uid://7d5v1383p7r2"
 },
 "path-hub_connection": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/lib/paths/path-hub_connection.tres"
+"use_external/fallback_path": "res://assets/lib/paths/path-hub_connection.tres",
+"use_external/path": "uid://873tqb76lyhy"
 },
 "path-pond": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/lib/paths/path-pond.tres"
+"use_external/fallback_path": "res://assets/lib/paths/path-pond.tres",
+"use_external/path": "uid://b7lp7812llbn7"
 },
 "path-snowman": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/lib/paths/path-snowman.tres"
+"use_external/fallback_path": "res://assets/lib/paths/path-snowman.tres",
+"use_external/path": "uid://b0lrncmc74u5m"
 },
 "test_path_1": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/lib/paths/test_path_1.tres"
+"use_external/fallback_path": "res://assets/lib/paths/test_path_1.tres",
+"use_external/path": "uid://bku3s35e61af1"
 },
 "test_path_2": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/lib/paths/test_path_2.tres"
+"use_external/fallback_path": "res://assets/lib/paths/test_path_2.tres",
+"use_external/path": "uid://chqxohqunyg77"
 }
 }
 }

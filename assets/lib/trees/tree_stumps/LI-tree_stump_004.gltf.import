@@ -15,9 +15,11 @@ dest_files=["res://.godot/imported/LI-tree_stump_004.gltf-08d781f88a6ace8b450055
 
 nodes/root_type="StaticBody3D"
 nodes/root_name=""
+nodes/root_script=null
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
 nodes/use_node_type_suffixes=true
 meshes/ensure_tangents=true
 meshes/generate_lods=true
@@ -32,23 +34,30 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path="uid://gtfffogvk6gb"
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
 _subresources={
 "materials": {
 "pine_bark_alt": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/lib/trees/pine_bark_alt.tres"
+"use_external/fallback_path": "res://assets/lib/trees/pine_bark_alt.tres",
+"use_external/path": "uid://bcw3b1cwbusyu"
 },
 "pine_bark_alt-stump": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/lib/trees/pine_bark_alt-stump.tres"
+"use_external/fallback_path": "res://assets/lib/trees/pine_bark_alt-stump.tres",
+"use_external/path": "uid://dgkic5mccwrpe"
 },
 "snow_elements": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/lib/trees/snow_elements.tres"
+"use_external/fallback_path": "res://assets/lib/trees/snow_elements.tres",
+"use_external/path": "uid://dgsjxwkrpf67l"
 },
 "tree_stump": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/lib/trees/tree_stump.tres"
+"use_external/fallback_path": "res://assets/lib/trees/tree_stump.tres",
+"use_external/path": "uid://b7pq064patrhf"
 }
 }
 }

@@ -75,7 +75,6 @@
 [ext_resource type="Animation" uid="uid://bgbr8am3di4jv" path="res://animations/gate/ACTN-pinda-through_fence_fallen/ACTN-pinda-though_fence_fallen.tres" id="76_ngf2d"]
 [ext_resource type="Animation" uid="uid://ckmqh08qyha3p" path="res://animations/pond/CINE-pinda-pulling_cone/CINE-pinda-pulling_cone.tres" id="77_3n3p0"]
 [ext_resource type="Animation" uid="uid://7euuksa012iq" path="res://animations/pond/CINE-pinda-grab_cone/CINE-pinda-grab_cone.tres" id="78_gqr35"]
-[ext_resource type="Animation" uid="uid://bhgt328cf3h55" path="res://animations/gate/ACTN-pinda-gate_spot01/ACTN-pinda-gate_spot01.tres" id="78_rwxla"]
 [ext_resource type="Animation" uid="uid://x8as5wlt2r5m" path="res://animations/pond/ACTN-pinda-pickup_cone/ACTN-pinda-pickup_cone.tres" id="79_rwxla"]
 [ext_resource type="Animation" uid="uid://c6y3kuocr2hkx" path="res://animations/world/LOOP-pinda-idle_happy/LOOP-pinda-idle_happy.tres" id="80_e38b3"]
 [ext_resource type="Animation" uid="uid://cad6j7jcuq28i" path="res://animations/gate/CINE-pinda-celebrate_gate/CINE-pinda-celebrate_gate.tres" id="80_rwxla"]
@@ -92,6 +91,7 @@
 [ext_resource type="Animation" uid="uid://blalxb4mpxs1k" path="res://animations/world/SYNC-chars-pet04/SYNC-pinda-pet04.tres" id="90_qsna8"]
 [ext_resource type="Animation" uid="uid://dl3qc7gaqgvtv" path="res://animations/world/SYNC-chars-pet05/SYNC-pinda-pet05.tres" id="91_k8bwa"]
 [ext_resource type="Animation" uid="uid://fhsd10jhiujd" path="res://animations/world/SYNC-chars-pet06/SYNC-pinda-pet06.tres" id="92_8n0fa"]
+[ext_resource type="Animation" uid="uid://dt2cpracu1ey7" path="res://animations/gate/ACTN-pinda-gate_spot01.tres" id="93_nxnlu"]
 [ext_resource type="Animation" uid="uid://bnm7vyyndojyo" path="res://animations/world/SYNC-chars-stand/SYNC-pinda-stand.tres" id="93_ttek1"]
 
 [resource]
@@ -107,7 +107,7 @@ _data = {
 &"ACTN-pinda-dug_out": ExtResource("33_lxo0o"),
 &"ACTN-pinda-fall_flat": ExtResource("34_85xhv"),
 &"ACTN-pinda-fall_snow": ExtResource("35_2lsiw"),
-&"ACTN-pinda-gate_spot01": ExtResource("78_rwxla"),
+&"ACTN-pinda-gate_spot01": ExtResource("93_nxnlu"),
 &"ACTN-pinda-gate_spot03": ExtResource("71_qgwjv"),
 &"ACTN-pinda-getting_up": ExtResource("36_yw0lf"),
 &"ACTN-pinda-pick_up": ExtResource("45_yxvyp"),

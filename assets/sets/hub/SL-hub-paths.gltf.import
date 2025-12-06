@@ -15,9 +15,11 @@ dest_files=["res://.godot/imported/SL-hub-paths.gltf-fd5e531f8db9cb9d162bf4236c1
 
 nodes/root_type="Area3D"
 nodes/root_name=""
+nodes/root_script=null
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
 nodes/use_node_type_suffixes=true
 meshes/ensure_tangents=true
 meshes/generate_lods=true
@@ -32,23 +34,30 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path="uid://gtfffogvk6gb"
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
 _subresources={
 "materials": {
 "DUMMY-path-faint": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/lib/paths/path-faint.tres"
+"use_external/fallback_path": "res://assets/lib/paths/path-faint.tres",
+"use_external/path": "uid://t8dqv258flvq"
 },
 "DUMMY-path-hub": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/lib/paths/path-hub.tres"
+"use_external/fallback_path": "res://assets/lib/paths/path-hub.tres",
+"use_external/path": "uid://7d5v1383p7r2"
 },
 "DUMMY-path-hub_connection": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/lib/paths/path-hub_connection.tres"
+"use_external/fallback_path": "res://assets/lib/paths/path-hub_connection.tres",
+"use_external/path": "uid://873tqb76lyhy"
 },
 "DUMMY-path-snowman": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/lib/paths/path-snowman.tres"
+"use_external/fallback_path": "res://assets/lib/paths/path-snowman.tres",
+"use_external/path": "uid://b0lrncmc74u5m"
 }
 }
 }

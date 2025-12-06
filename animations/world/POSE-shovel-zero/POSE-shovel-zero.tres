@@ -3,7 +3,7 @@
 [resource]
 resource_name = "POSE-shovel-zero"
 length = 0.001
-step = 0.0416667
+step = 0.041666668
 tracks/0/type = "position_3d"
 tracks/0/imported = true
 tracks/0/enabled = true
@@ -59,7 +59,7 @@ tracks/7/enabled = true
 tracks/7/path = NodePath("RIG-shovel/Skeleton3D:Spade")
 tracks/7/interp = 0
 tracks/7/loop_wrap = true
-tracks/7/keys = PackedFloat32Array(0, 1, 0, 1.19209e-07, 0, 1)
+tracks/7/keys = PackedFloat32Array(0, 1, 0, 1.1920929e-07, 0, 1)
 tracks/8/type = "scale_3d"
 tracks/8/imported = true
 tracks/8/enabled = true
@@ -94,7 +94,7 @@ tracks/12/enabled = true
 tracks/12/path = NodePath("RIG-shovel/Skeleton3D:Handle")
 tracks/12/interp = 0
 tracks/12/loop_wrap = true
-tracks/12/keys = PackedFloat32Array(0, 1, 0, 0.227566, 0)
+tracks/12/keys = PackedFloat32Array(0, 1, 0, 0.2275658, 0)
 tracks/13/type = "rotation_3d"
 tracks/13/imported = true
 tracks/13/enabled = true

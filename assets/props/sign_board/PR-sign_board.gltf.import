@@ -15,9 +15,11 @@ dest_files=["res://.godot/imported/PR-sign_board.gltf-e49e4406305d8c7290cf177349
 
 nodes/root_type="StaticBody3D"
 nodes/root_name=""
+nodes/root_script=null
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
 nodes/use_node_type_suffixes=true
 meshes/ensure_tangents=true
 meshes/generate_lods=true
@@ -32,31 +34,40 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path="uid://gtfffogvk6gb"
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
 _subresources={
 "materials": {
 "sign_board-board": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/props/sign_board/sign_board-board.tres"
+"use_external/fallback_path": "res://assets/props/sign_board/sign_board-board.tres",
+"use_external/path": "uid://cgm7c0ur6hmrx"
 },
 "sign_board-map": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/props/sign_board/sign_board-map.tres"
+"use_external/fallback_path": "res://assets/props/sign_board/sign_board-map.tres",
+"use_external/path": "uid://cat47lnkv0nw8"
 },
 "sign_board-poles": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/props/sign_board/sign_board-poles.tres"
+"use_external/fallback_path": "res://assets/props/sign_board/sign_board-poles.tres",
+"use_external/path": "uid://7d6clb6hrtws"
 },
 "sign_board-roof": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/props/sign_board/sign_board-roof.tres"
+"use_external/fallback_path": "res://assets/props/sign_board/sign_board-roof.tres",
+"use_external/path": "uid://2ii5dptblwdx"
 },
 "sign_board-snow": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/props/sign_board/sign_board-snow.tres"
+"use_external/fallback_path": "res://assets/props/sign_board/sign_board-snow.tres",
+"use_external/path": "uid://bc6l26n62lu4f"
 },
 "sign_board-tape": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/props/sign_board/sign_board-tape.tres"
+"use_external/fallback_path": "res://assets/props/sign_board/sign_board-tape.tres",
+"use_external/path": "uid://b71sjftugkyre"
 }
 }
 }

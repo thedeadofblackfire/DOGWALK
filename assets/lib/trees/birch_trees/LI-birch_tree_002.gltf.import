@@ -15,9 +15,11 @@ dest_files=["res://.godot/imported/LI-birch_tree_002.gltf-d1353a39d23c46bc899f65
 
 nodes/root_type="StaticBody3D"
 nodes/root_name=""
+nodes/root_script=null
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
 nodes/use_node_type_suffixes=true
 meshes/ensure_tangents=true
 meshes/generate_lods=true
@@ -32,23 +34,30 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path="uid://gtfffogvk6gb"
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
 _subresources={
 "materials": {
 "birch_tree": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/lib/trees/birch_tree.tres"
+"use_external/fallback_path": "res://assets/lib/trees/birch_tree.tres",
+"use_external/path": "uid://buhb5wx8ietm3"
 },
 "birch_tree_fade": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/lib/trees/birch_tree_fade.tres"
+"use_external/fallback_path": "res://assets/lib/trees/birch_tree_fade.tres",
+"use_external/path": "uid://dtaq8t87sp5pw"
 },
 "birch_tree_outer_layer": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/lib/trees/birch_tree_outer_layer.tres"
+"use_external/fallback_path": "res://assets/lib/trees/birch_tree_outer_layer.tres",
+"use_external/path": "uid://bxx7q4pykqpx7"
 },
 "tree_stump_fade": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/lib/trees/tree_stump_fade.tres"
+"use_external/fallback_path": "res://assets/lib/trees/tree_stump_fade.tres",
+"use_external/path": "uid://krsnjwsmx8kw"
 }
 }
 }

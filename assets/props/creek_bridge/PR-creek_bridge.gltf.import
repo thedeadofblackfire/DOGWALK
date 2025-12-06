@@ -15,9 +15,11 @@ dest_files=["res://.godot/imported/PR-creek_bridge.gltf-78f3bb8c6c25b84b353a0126
 
 nodes/root_type="StaticBody3D"
 nodes/root_name=""
+nodes/root_script=null
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
 nodes/use_node_type_suffixes=true
 meshes/ensure_tangents=true
 meshes/generate_lods=true
@@ -32,19 +34,25 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path="uid://gtfffogvk6gb"
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
 _subresources={
 "materials": {
 "bridge_wood": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/props/creek_bridge/bridge_wood.tres"
+"use_external/fallback_path": "res://assets/props/creek_bridge/bridge_wood.tres",
+"use_external/path": "uid://ebhgxjky6ibx"
 },
 "creek_bridge-nails": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/props/creek_bridge/creek_bridge-nails.tres"
+"use_external/fallback_path": "res://assets/props/creek_bridge/creek_bridge-nails.tres",
+"use_external/path": "uid://ck635r0qqdcna"
 },
 "creek_bridge_snow": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/props/creek_bridge/creek_bridge_snow.tres"
+"use_external/fallback_path": "res://assets/props/creek_bridge/creek_bridge_snow.tres",
+"use_external/path": "uid://cvdeibtri4nrs"
 }
 }
 }
