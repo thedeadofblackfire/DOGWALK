@@ -11,6 +11,7 @@ config_version=5
 [animation]
 
 warnings/check_invalid_track_paths=false
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 [application]
 
@@ -20,10 +21,10 @@ A short, free, open source project brought to you by Blender Studio."
 config/version="v1.0.1"
 run/main_scene="uid://d3i1jbwaf8wjo"
 config/project_settings_override="user://project_overrides.cfg"
-config/features=PackedStringArray("4.5", "Forward Plus")
+config/features=PackedStringArray("4.6", "Forward Plus")
 run/max_fps=60
 boot_splash/show_image=false
-boot_splash/fullsize=false
+boot_splash/stretch_mode=0
 boot_splash/use_filter=false
 config/icon="uid://ch3u8f3yk05k2"
 
